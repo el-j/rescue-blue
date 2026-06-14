@@ -5,6 +5,8 @@ import {
 } from 'lucide-react';
 
 const PETITION_URL = 'https://weact.campact.de/petitions/rettet-das-blau-medien-mussen-die-afd-farblich-passend-darstellen';
+const SIGNATURE_FALLBACK = 14832;
+const SIGNATURE_GOAL = 15000;
 
 // ── i18n ──────────────────────────────────────────────────────────────────────
 const translations = {
@@ -199,7 +201,7 @@ const openLetters = {
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function App() {
   const [lang, setLang] = useState('de');
-  const [signatureCount, setSignatureCount] = useState(14832);
+  const [signatureCount, setSignatureCount] = useState(SIGNATURE_FALLBACK);
   const [isLive, setIsLive] = useState(false);
   const [isLoadingSignatures, setIsLoadingSignatures] = useState(true);
   const [isBrownActive, setIsBrownActive] = useState(false);
@@ -548,16 +550,16 @@ export default function App() {
           {/* Progress bar */}
           <div className="bg-neutral-950 border border-neutral-800 rounded-2xl p-6">
             <div className="flex justify-between items-center mb-3">
-              <span className="text-sm font-bold text-neutral-300">{lang === 'de' ? 'Ziel: 15.000' : 'Goal: 15,000'}</span>
-              <span className="text-sm font-black text-blue-400">{Math.round((signatureCount / 15000) * 100)} %</span>
+              <span className="text-sm font-bold text-neutral-300">{lang === 'de' ? `Ziel: ${SIGNATURE_GOAL.toLocaleString('de-DE')}` : `Goal: ${SIGNATURE_GOAL.toLocaleString('en-GB')}`}</span>
+              <span className="text-sm font-black text-blue-400">{Math.round((signatureCount / SIGNATURE_GOAL) * 100)} %</span>
             </div>
             <div className="w-full bg-neutral-800 rounded-full h-3 overflow-hidden">
               <div
                 className="h-3 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full transition-all duration-1000 shimmer-bg"
-                style={{ width: `${Math.min((signatureCount / 15000) * 100, 100)}%` }}
+                style={{ width: `${Math.min((signatureCount / SIGNATURE_GOAL) * 100, 100)}%` }}
               />
             </div>
-            <p className="text-neutral-600 text-xs mt-2">{lang === 'de' ? `${(15000 - signatureCount).toLocaleString('de-DE')} weitere Unterschriften bis zum Ziel` : `${(15000 - signatureCount).toLocaleString('en-GB')} more signatures to the goal`}</p>
+            <p className="text-neutral-600 text-xs mt-2">{lang === 'de' ? `${(SIGNATURE_GOAL - signatureCount).toLocaleString('de-DE')} weitere Unterschriften bis zum Ziel` : `${(SIGNATURE_GOAL - signatureCount).toLocaleString('en-GB')} more signatures to the goal`}</p>
           </div>
 
           {/* Facts */}
