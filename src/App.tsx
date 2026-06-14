@@ -20,8 +20,6 @@ const PETITION_PROXY_URLS = [
   `https://corsproxy.io/?url=${encodeURIComponent(PETITION_JSON_URL)}`,
   `https://api.allorigins.win/get?url=${encodeURIComponent(PETITION_JSON_URL)}`,
 ]
-const SIGNATURE_STATIC_URL = `${import.meta.env.BASE_URL}signature-count.json`
-const SIGNATURE_FALLBACK = 14832
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`
 const LETTER_TARGETS = ['oeffentlich', 'privat', 'rundfunkrat'] as const
 
@@ -68,6 +66,7 @@ const translations = {
     ctaBanner: 'Jetzt unterzeichnen und Blau retten!',
     ctaBodyPre: 'Über',
     ctaBodyMid: 'Menschen haben diese Petition bereits unterzeichnet. Zeige auch du, dass du für eine ehrliche visuelle Berichterstattung einstehst.',
+    ctaBodyLoading: 'Aktuelle Unterzeichnerzahl wird von WeAct geladen.',
     ctaBtn: 'Jetzt auf WeAct unterzeichnen',
     ctaInfo: 'Kostenlos · Keine Werbung · Nur deine Stimme zählt',
     footerTagline: 'Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.',
@@ -115,6 +114,7 @@ const translations = {
     ctaBanner: 'Sign now and rescue Blue!',
     ctaBodyPre: 'Over',
     ctaBodyMid: 'people have already signed this petition. Show that you stand for honest visual reporting.',
+    ctaBodyLoading: 'Loading current signature count from WeAct.',
     ctaBtn: 'Sign now on WeAct',
     ctaInfo: 'Free · No ads · Only your voice counts',
     footerTagline: 'A campaign for media integrity and the protection of the cultural heritage of the colour blue.',
@@ -291,7 +291,7 @@ function getLocaleCode(lang: Locale) {
 
 export default function App() {
   const [lang, setLang] = useState<Locale>('de')
-  const [signatureCount, setSignatureCount] = useState(SIGNATURE_FALLBACK)
+  const [signatureCount, setSignatureCount] = useState<number | null>(null)
   const [isLive, setIsLive] = useState(false)
   const [isLoadingSignatures, setIsLoadingSignatures] = useState(true)
   const [isBrownActive, setIsBrownActive] = useState(false)
@@ -304,7 +304,10 @@ export default function App() {
   const letters = openLetters[lang]
   const faqs = FAQS[lang]
   const facts = FACTS[lang]
-  const ctaBody = `${t.ctaBodyPre} ${signatureCount.toLocaleString(getLocaleCode(lang))} ${t.ctaBodyMid}`
+  const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
+  const ctaBody = formattedSignatureCount
+    ? `${t.ctaBodyPre} ${formattedSignatureCount} ${t.ctaBodyMid}`
+    : t.ctaBodyLoading
 
   useEffect(() => {
     let isCancelled = false
@@ -329,7 +332,6 @@ export default function App() {
 
       try {
         const results = await Promise.allSettled([
-          tryFetch(SIGNATURE_STATIC_URL),
           ...PETITION_PROXY_URLS.map(tryFetch),
         ])
 
@@ -420,7 +422,7 @@ export default function App() {
                 <strong className="text-base font-black text-white md:text-lg">
                   {isLoadingSignatures
                     ? <span className="inline-block h-5 w-12 rounded bg-neutral-800 align-middle animate-pulse" />
-                    : signatureCount.toLocaleString(getLocaleCode(lang))}
+                    : (formattedSignatureCount ?? '—')}
                 </strong>{' '}
                 {t.sigSupport}
               </span>
@@ -636,12 +638,15 @@ export default function App() {
               <span className="text-sm font-bold text-neutral-300">
                 {lang === 'de' ? 'Unterschriften' : 'Signatures'}
               </span>
-              <Users size={16} className="text-blue-400 animate-pulse" />
+              <Users size={16} className="text-blue-400" aria-hidden="true" />
             </div>
-            <p className="text-3xl font-black text-white">
+            <p
+              className="text-3xl font-black text-white"
+              aria-live="polite"
+            >
               {isLoadingSignatures
                 ? <span className="inline-block h-8 w-24 rounded bg-neutral-800 animate-pulse" />
-                : signatureCount.toLocaleString(getLocaleCode(lang))}
+                : (formattedSignatureCount ?? '—')}
             </p>
             <p className="mt-1 text-xs text-neutral-500">
               {lang === 'de' ? 'und es werden täglich mehr!' : 'and growing every day!'}
