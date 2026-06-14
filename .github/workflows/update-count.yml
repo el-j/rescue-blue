@@ -2,7 +2,7 @@ name: Update Signature Count
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '1 * * * *'
   workflow_dispatch:
 
 permissions:
