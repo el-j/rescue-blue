@@ -350,7 +350,9 @@ export default function App() {
             </div>
             <img
               src={HERO_IMAGE_URL}
-              alt={lang === 'de' ? 'Kampagnenmotiv Rettet das Blau' : 'Rescue the Blue campaign visual'}
+              alt={lang === 'de'
+                ? 'Kampagnenmotiv der Aktion Rettet das Blau mit Herzsymbol und blauem Farbraum'
+                : 'Campaign visual for Rescue the Blue with a heart symbol and blue colour field'}
               className="block w-full aspect-[11/10] md:aspect-[16/9] object-cover object-center select-none"
             />
             <div className="relative z-20 p-4 md:p-0">
