@@ -15,7 +15,12 @@ import {
 } from 'lucide-react'
 
 const PETITION_URL = 'https://weact.campact.de/petitions/rettet-das-blau-medien-mussen-die-afd-farblich-passend-darstellen'
-const PETITION_PROXY_URL = `https://api.allorigins.win/get?url=${encodeURIComponent(`${PETITION_URL}.json`)}`
+const PETITION_JSON_URL = `${PETITION_URL}.json`
+const PETITION_PROXY_URLS = [
+  `https://corsproxy.io/?url=${encodeURIComponent(PETITION_JSON_URL)}`,
+  `https://api.allorigins.win/get?url=${encodeURIComponent(PETITION_JSON_URL)}`,
+]
+const SIGNATURE_STATIC_URL = `${import.meta.env.BASE_URL}signature-count.json`
 const SIGNATURE_FALLBACK = 14832
 const SIGNATURE_GOAL = 15000
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`
@@ -271,6 +276,11 @@ function parseSignatureCount(payload: unknown): number | null {
     return Number.isFinite(count) && count > 0 ? count : null
   }
 
+  if ('count' in payload) {
+    const count = Number((payload as { count: unknown }).count)
+    return Number.isFinite(count) && count > 0 ? count : null
+  }
+
   return null
 }
 
@@ -304,25 +314,36 @@ export default function App() {
     async function fetchSignatureCount() {
       setIsLoadingSignatures(true)
 
+      async function tryFetch(url: string): Promise<number | null> {
+        try {
+          const response = await fetch(url, {
+            signal: controller.signal,
+            cache: 'no-store',
+          })
+          if (!response.ok) return null
+          const data = (await response.json()) as unknown
+          return parseSignatureCount(data)
+        } catch {
+          return null
+        }
+      }
+
       try {
-        const response = await fetch(PETITION_PROXY_URL, {
-          signal: controller.signal,
-          cache: 'no-store',
-        })
+        const results = await Promise.allSettled([
+          tryFetch(SIGNATURE_STATIC_URL),
+          ...PETITION_PROXY_URLS.map(tryFetch),
+        ])
 
-        if (!response.ok) {
-          return
-        }
+        if (isCancelled) return
 
-        const data = (await response.json()) as unknown
-        const count = parseSignatureCount(data)
+        const counts = results
+          .map((r) => (r.status === 'fulfilled' ? r.value : null))
+          .filter((c): c is number => typeof c === 'number')
 
-        if (!isCancelled && count !== null) {
-          setSignatureCount(count)
+        if (counts.length > 0) {
+          setSignatureCount(Math.max(...counts))
           setIsLive(true)
-        }
-      } catch {
-        if (!controller.signal.aborted && !isCancelled) {
+        } else {
           setIsLive(false)
         }
       } finally {

@@ -1,0 +1,44 @@
+name: Update Signature Count
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch signature count from WeAct
+        id: fetch
+        run: |
+          RESPONSE=$(curl -sf --max-time 15 \
+            "https://weact.campact.de/petitions/rettet-das-blau-medien-mussen-die-afd-farblich-passend-darstellen.json" \
+            || echo "")
+          COUNT=$(echo "$RESPONSE" | jq -r '.signature_count // empty' 2>/dev/null || echo "")
+          if [ -n "$COUNT" ] && [ "$COUNT" -gt 0 ] 2>/dev/null; then
+            echo "{\"count\":$COUNT}" > public/signature-count.json
+            echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+            echo "Updated signature count to $COUNT"
+          else
+            echo "Failed to fetch a valid count; marking job as failed"
+            exit 1
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet public/signature-count.json; then
+            echo "No change in count, skipping commit"
+          else
+            git add public/signature-count.json
+            git commit -m "chore: update signature count to ${{ steps.fetch.outputs.count }}"
+            git push
+          fi
