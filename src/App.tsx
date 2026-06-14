@@ -338,7 +338,7 @@ export default function App() {
 
         const counts = results
           .map((r) => (r.status === 'fulfilled' ? r.value : null))
-          .filter((c): c is number => c !== null)
+          .filter((c): c is number => typeof c === 'number')
 
         if (counts.length > 0) {
           setSignatureCount(Math.max(...counts))

@@ -27,7 +27,7 @@ jobs:
             echo "count=$COUNT" >> "$GITHUB_OUTPUT"
             echo "Updated signature count to $COUNT"
           else
-            echo "Failed to fetch a valid count; keeping existing file"
+            echo "Failed to fetch a valid count; marking job as failed"
             exit 1
           fi
 
