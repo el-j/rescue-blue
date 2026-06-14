@@ -1,0 +1,57 @@
+import { cleanup, render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import App from './App'
+
+describe('App', () => {
+  beforeEach(() => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue({
+        ok: false,
+        json: vi.fn().mockResolvedValue({}),
+      }),
+    )
+  })
+
+  afterEach(() => {
+    vi.unstubAllGlobals()
+    cleanup()
+  })
+
+  it('switches between German and English copy', async () => {
+    const user = userEvent.setup()
+
+    render(<App />)
+
+    expect(screen.getByRole('heading', { name: 'Blau retten.' })).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Toggle language' }))
+
+    expect(screen.getByRole('heading', { name: 'Rescue Blue.' })).toBeInTheDocument()
+    expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(2)
+  })
+
+  it('toggles the interactive colour demo', async () => {
+    const user = userEvent.setup()
+
+    render(<App />)
+
+    const toggleButton = screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })[1]
+    await user.click(toggleButton)
+
+    expect(screen.getAllByRole('button', { name: 'Zurücksetzen auf Blau' })).toHaveLength(2)
+  })
+
+  it('opens a FAQ answer', async () => {
+    const user = userEvent.setup()
+
+    render(<App />)
+
+    await user.click(screen.getByRole('button', { name: 'Warum sollte Blau überhaupt problematisch sein?' }))
+
+    expect(
+      screen.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
+    ).toBeInTheDocument()
+  })
+})
