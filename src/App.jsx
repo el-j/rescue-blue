@@ -7,6 +7,7 @@ import {
 const PETITION_URL = 'https://weact.campact.de/petitions/rettet-das-blau-medien-mussen-die-afd-farblich-passend-darstellen';
 const SIGNATURE_FALLBACK = 14832;
 const SIGNATURE_GOAL = 15000;
+const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`;
 
 // ── i18n ──────────────────────────────────────────────────────────────────────
 const translations = {
@@ -312,12 +313,12 @@ export default function App() {
           <p className="text-neutral-300 text-base md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">{t.heroBody}</p>
 
           {/* Signature counter */}
-          <div className="flex justify-center gap-3 mb-10">
-            <div className="flex items-center gap-3 bg-neutral-950 border border-neutral-800 px-5 py-3 rounded-full text-sm md:text-base font-semibold shadow-inner">
+          <div className="flex justify-center mb-8 md:mb-10 px-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 bg-neutral-950 border border-neutral-800 px-4 md:px-5 py-3 rounded-2xl md:rounded-full text-xs md:text-sm font-semibold shadow-inner">
               <Users size={18} className="text-blue-400 animate-pulse" />
-              <span className="text-neutral-300">
+              <span className="text-neutral-300 text-center">
                 {t.sigCount}{' '}
-                <strong className="text-white font-black text-lg">
+                <strong className="text-white font-black text-base md:text-lg">
                   {isLoadingSignatures
                     ? <span className="inline-block w-12 h-5 rounded bg-neutral-800 animate-pulse align-middle" />
                     : signatureCount.toLocaleString('de-DE')}
@@ -347,28 +348,13 @@ export default function App() {
                 <div key={i} className="rain-drop" style={{ left: r.left, animationDelay: r.delay, animationDuration: r.dur }} />
               ))}
             </div>
-            {/* Gradient placeholder hero image */}
-            <div
-              className="w-full select-none"
-              style={{
-                height: '380px',
-                background: 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 30%, #0ea5e9 60%, #7c3aed 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                gap: '16px',
-              }}
-            >
-              <div style={{ fontSize: '80px' }}>💙</div>
-              <p className="text-white font-black text-2xl md:text-4xl uppercase tracking-widest text-center px-4">
-                {lang === 'de' ? 'Rettet das Blau' : 'Rescue the Blue'}
-              </p>
-              <p className="text-blue-200 text-sm md:text-base tracking-wider text-center px-4 max-w-md">
-                {lang === 'de' ? 'Für ehrliche Farbwahl in den Medien' : 'For honest colour choices in the media'}
-              </p>
-            </div>
-            <div className="absolute bottom-6 left-4 md:left-6 right-4 md:right-6 z-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-neutral-950/80 backdrop-blur-md p-4 rounded-xl border border-neutral-800/80">
+            <img
+              src={HERO_IMAGE_URL}
+              alt={lang === 'de' ? 'Kampagnenmotiv Rettet das Blau' : 'Rescue the Blue campaign visual'}
+              className="block w-full aspect-[11/10] md:aspect-[16/9] object-cover object-center select-none"
+            />
+            <div className="relative z-20 p-4 md:p-0">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-neutral-950/85 backdrop-blur-md p-4 rounded-xl border border-neutral-800/80 md:absolute md:bottom-6 md:left-6 md:right-6">
               <div className="text-left">
                 <p className="text-white font-black text-sm uppercase tracking-wide">{t.heroImgCaption}</p>
                 <p className="text-neutral-400 text-xs">{t.heroImgSub}</p>
@@ -381,6 +367,7 @@ export default function App() {
               >
                 {t.heroImgCta} <ArrowUpRight size={14} />
               </a>
+              </div>
             </div>
           </div>
         </div>
