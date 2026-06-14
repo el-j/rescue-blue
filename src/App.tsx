@@ -20,9 +20,6 @@ const PETITION_PROXY_URLS = [
   `https://corsproxy.io/?url=${encodeURIComponent(PETITION_JSON_URL)}`,
   `https://api.allorigins.win/get?url=${encodeURIComponent(PETITION_JSON_URL)}`,
 ]
-const SIGNATURE_STATIC_URL = `${import.meta.env.BASE_URL}signature-count.json`
-const SIGNATURE_FALLBACK = 14832
-const SIGNATURE_GOAL = 15000
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`
 const LETTER_TARGETS = ['oeffentlich', 'privat', 'rundfunkrat'] as const
 
@@ -67,7 +64,9 @@ const translations = {
     targetPrivate: 'Private Medien',
     targetCouncil: 'Rundfunkräte',
     ctaBanner: 'Jetzt unterzeichnen und Blau retten!',
-    ctaBody: 'Über 14.000 Menschen haben diese Petition bereits unterzeichnet. Zeige auch du, dass du für eine ehrliche visuelle Berichterstattung einstehst.',
+    ctaBodyPre: 'Über',
+    ctaBodyMid: 'Menschen haben diese Petition bereits unterzeichnet. Zeige auch du, dass du für eine ehrliche visuelle Berichterstattung einstehst.',
+    ctaBodyLoading: 'Aktuelle Unterzeichnerzahl wird von WeAct geladen.',
     ctaBtn: 'Jetzt auf WeAct unterzeichnen',
     ctaInfo: 'Kostenlos · Keine Werbung · Nur deine Stimme zählt',
     footerTagline: 'Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.',
@@ -113,7 +112,9 @@ const translations = {
     targetPrivate: 'Private Media',
     targetCouncil: 'Broadcasting Councils',
     ctaBanner: 'Sign now and rescue Blue!',
-    ctaBody: 'Over 14,000 people have already signed this petition. Show that you stand for honest visual reporting.',
+    ctaBodyPre: 'Over',
+    ctaBodyMid: 'people have already signed this petition. Show that you stand for honest visual reporting.',
+    ctaBodyLoading: 'Loading current signature count from WeAct.',
     ctaBtn: 'Sign now on WeAct',
     ctaInfo: 'Free · No ads · Only your voice counts',
     footerTagline: 'A campaign for media integrity and the protection of the cultural heritage of the colour blue.',
@@ -290,7 +291,7 @@ function getLocaleCode(lang: Locale) {
 
 export default function App() {
   const [lang, setLang] = useState<Locale>('de')
-  const [signatureCount, setSignatureCount] = useState(SIGNATURE_FALLBACK)
+  const [signatureCount, setSignatureCount] = useState<number | null>(null)
   const [isLive, setIsLive] = useState(false)
   const [isLoadingSignatures, setIsLoadingSignatures] = useState(true)
   const [isBrownActive, setIsBrownActive] = useState(false)
@@ -303,9 +304,10 @@ export default function App() {
   const letters = openLetters[lang]
   const faqs = FAQS[lang]
   const facts = FACTS[lang]
-  const progressPercentage = Math.min(Math.round((signatureCount / SIGNATURE_GOAL) * 100), 100)
-  const progressWidth = Math.min((signatureCount / SIGNATURE_GOAL) * 100, 100)
-  const remainingSignatures = Math.max(SIGNATURE_GOAL - signatureCount, 0)
+  const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
+  const ctaBody = formattedSignatureCount
+    ? `${t.ctaBodyPre} ${formattedSignatureCount} ${t.ctaBodyMid}`
+    : t.ctaBodyLoading
 
   useEffect(() => {
     let isCancelled = false
@@ -330,7 +332,6 @@ export default function App() {
 
       try {
         const results = await Promise.allSettled([
-          tryFetch(SIGNATURE_STATIC_URL),
           ...PETITION_PROXY_URLS.map(tryFetch),
         ])
 
@@ -421,7 +422,7 @@ export default function App() {
                 <strong className="text-base font-black text-white md:text-lg">
                   {isLoadingSignatures
                     ? <span className="inline-block h-5 w-12 rounded bg-neutral-800 align-middle animate-pulse" />
-                    : signatureCount.toLocaleString(getLocaleCode(lang))}
+                    : (formattedSignatureCount ?? '—')}
                 </strong>{' '}
                 {t.sigSupport}
               </span>
@@ -620,7 +621,7 @@ export default function App() {
               <span className="text-2xl">✍️</span>
             </div>
             <h3 className="mb-2 text-lg font-black tracking-tight text-white uppercase">{t.ctaBanner}</h3>
-            <p className="mb-5 text-sm leading-relaxed text-neutral-400">{t.ctaBody}</p>
+            <p className="mb-5 text-sm leading-relaxed text-neutral-400">{ctaBody}</p>
             <a
               href={PETITION_URL}
               target="_blank"
@@ -634,16 +635,22 @@ export default function App() {
 
           <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="mb-3 flex items-center justify-between">
-              <span className="text-sm font-bold text-neutral-300">{lang === 'de' ? `Ziel: ${SIGNATURE_GOAL.toLocaleString('de-DE')}` : `Goal: ${SIGNATURE_GOAL.toLocaleString('en-GB')}`}</span>
-              <span className="text-sm font-black text-blue-400">{progressPercentage} %</span>
+              <span className="text-sm font-bold text-neutral-300">
+                {lang === 'de' ? 'Unterschriften' : 'Signatures'}
+              </span>
+              <Users size={16} className="text-blue-400" aria-hidden="true" />
             </div>
-            <div className="h-3 w-full overflow-hidden rounded-full bg-neutral-800">
-              <div
-                className="h-3 rounded-full bg-linear-to-r from-blue-600 to-blue-400 transition-all duration-1000 shimmer-bg"
-                style={{ width: `${progressWidth}%` }}
-              />
-            </div>
-            <p className="mt-2 text-xs text-neutral-600">{lang === 'de' ? `${remainingSignatures.toLocaleString('de-DE')} weitere Unterschriften bis zum Ziel` : `${remainingSignatures.toLocaleString('en-GB')} more signatures to the goal`}</p>
+            <p
+              className="text-3xl font-black text-white"
+              aria-live="polite"
+            >
+              {isLoadingSignatures
+                ? <span className="inline-block h-8 w-24 rounded bg-neutral-800 animate-pulse" />
+                : (formattedSignatureCount ?? '—')}
+            </p>
+            <p className="mt-1 text-xs text-neutral-500">
+              {lang === 'de' ? 'und es werden täglich mehr!' : 'and growing every day!'}
+            </p>
           </div>
 
           <div className="space-y-4 rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
@@ -687,7 +694,7 @@ export default function App() {
 
       <div className="border-t border-neutral-800 bg-linear-to-r from-blue-950/40 via-neutral-950 to-blue-950/40 px-4 py-10 text-center md:px-6">
         <h2 className="mb-3 text-2xl font-black tracking-tight text-white uppercase md:text-4xl">{t.ctaBanner}</h2>
-        <p className="mx-auto mb-6 max-w-xl text-base text-neutral-400">{t.ctaBody}</p>
+        <p className="mx-auto mb-6 max-w-xl text-base text-neutral-400">{ctaBody}</p>
         <a
           href={PETITION_URL}
           target="_blank"
