@@ -22,6 +22,7 @@ const translations = {
   de: {
     navCampaign: 'Change.org Kampagne',
     navWhy: 'Warum Blau?',
+    navScience: 'Wissenschaft & Recht',
     navLetter: 'Offener Brief',
     navCulture: 'Kulturerbe',
     navSign: 'Jetzt unterzeichnen',
@@ -70,6 +71,7 @@ const translations = {
   en: {
     navCampaign: 'Change.org Campaign',
     navWhy: 'Why Blue?',
+    navScience: 'Science & Law',
     navLetter: 'Open Letter',
     navCulture: 'Cultural Heritage',
     navSign: 'Sign Now',
@@ -254,6 +256,101 @@ const FAQS = {
   ],
 } as const
 
+const SCIENCE_CONTENT = {
+  de: {
+    sectionH: 'Wissenschaftlicher & Medienrechtlicher Hintergrund',
+    sectionSub: 'Faktenblatt: Visuelles Framing und die Verpflichtung zur sachgetreuen politischen Farbkodierung',
+    part1H: 'Teil 1: Kommunikationswissenschaftliche und medienethische Grundlagen',
+    foundations: [
+      {
+        title: 'Die psychologische Dimension des „Visual Framing" (Halo-Effekt)',
+        points: [
+          { label: 'Farbpsychologie von Blau', text: 'Helle Cyan- und Blautöne werden universell mit Attributen wie Seriosität, Sachlichkeit, Vertrauenswürdigkeit, Deeskalation und staatstragender Harmonie assoziiert – vergleichbar mit der Farbwahl der Vereinten Nationen oder der europäischen Institutionen.' },
+          { label: 'Die visuelle Verharmlosungsfalle', text: 'Wird eine politische Kraft, die vom Bundesamt für Verfassungsschutz (BfV) sowie mehreren Landesämtern offiziell als gesichert rechtsextremistisch eingestuft wird, in Nachrichtengrafiken konsequent in dieser beruhigenden Primärfarbe dargestellt, entsteht ein kognitiver Kontrast: Die visuelle Rahmung überdeckt die inhaltliche Radikalität der Akteure (Halo-Effekt).' },
+        ],
+      },
+      {
+        title: 'Redaktionelle Autonomie und journalistische Präzedenzfälle',
+        points: [
+          { label: 'Präzedenzfall taz', text: 'Im Bundestagswahlkampf traf die taz die bewusste redaktionelle Entscheidung, den AfD-Balken in Diagrammen braun statt blau darzustellen. Dies belegt, dass Abweichungen von der Partei-Eigendarstellung im deutschen Journalismus bereits praktiziert und als legitimes Mittel der Einordnung anerkannt werden.' },
+          { label: 'Etablierte farbliche Varianz', text: 'Medienhäuser weichen bei Visualisierungen regelmäßig von den offiziellen CI-Vorgaben ab. Das BSW wird je nach Redaktion lila oder orange-rot gezeigt, die Linke oft dunkelrot zur Abgrenzung von der SPD. Die CDU/CSU nutzt Türkis, wird aber konsequent in Schwarz dargestellt. Farbkodierung ist ein flexibles journalistisches Gestaltungsmittel.' },
+        ],
+      },
+    ],
+    part2H: 'Teil 2: Systematische Entkräftung rechtlicher und strategischer Einwände',
+    objections: [
+      {
+        title: 'Einwand 1: „Das Neutralitätsgebot verbietet eine Umfärbung."',
+        rebuttals: [
+          { label: 'Keine absolute Symmetriepflicht', text: 'Nach ständiger Rechtsprechung des BVerfG gebietet Art. 21 Abs. 1 GG i.V.m. § 5 PartG eine abgestufte Chancengleichheit und fairen Zugang – keine blinde, rein formale Symmetrie. Journalismus darf und muss Unterschiede benennen, wenn objektive Gründe vorliegen.' },
+          { label: 'Verfassungsschutz als Sachlichkeitsmaßstab', text: 'Die gerichtlich bestätigte Einstufung als „gesichert rechtsextremistisch" ist ein objektiver, verifizierter Befund. Eine Visualisierung, die dies durch eine historisch etablierte Farbe abbildet, dient dem gesetzlichen Auftrag zur sachlichen, wahrheitsgemäßen Berichterstattung (vgl. Medienstaatsvertrag – MStV).' },
+          { label: 'Kein Recht auf visuelle Schonung', text: 'Parteien haben keinen verfassungsrechtlichen Anspruch darauf, dass unabhängige Medien ihre Selbstdarstellung ungefiltert übernehmen. Die Programmautonomie der Sender (Rundfunkfreiheit nach Art. 5 Abs. 1 Satz 2 GG) umfasst das Recht, Grafiken nach sachgerechten journalistischen Kriterien zu gestalten.' },
+        ],
+      },
+      {
+        title: 'Einwand 2: „Medien müssen sich an der Corporate Identity (CI) der Parteien orientieren."',
+        rebuttals: [
+          { label: 'Journalistisches Distanzgebot vs. PR-Übernahme', text: 'Eine blinde Übernahme der CI politischer Akteure widerspricht dem journalistischen Distanzgebot. Parteien nutzen visuelles Branding als strategisches Kommunikationswerkzeug. Die ungeprüfte Reproduktion dieses Marketings macht Medienhäuser zu unfreiwilligen Multiplikatoren politischer Kommunikationsstrategien.' },
+          { label: 'Visuelle Wahrheit als Auftrag', text: 'Wenn Verfassungsschutzbehörden erhebliche Unterschiede in der Verfassungstreue der Akteure belegen, führt die Gleichbehandlung im unschuldigen „Standard-Blau" das Publikum in die Irre. Visuelle Wahrheit erfordert eine Farbwahl, die den verfassungsrechtlichen Status widerspiegelt.' },
+        ],
+      },
+      {
+        title: 'Einwand 3: „Eine Umfärbung liefert der Partei eine Steilvorlage für ihr Opfer-Narrativ."',
+        rebuttals: [
+          { label: 'Proaktive Kernstrategie', text: 'Analysen rechtsextremer Kommunikation (u. a. von Dr. Johannes Hillje) zeigen: Das „Medienopfer-Narrativ" ist eine proaktive, strukturelle Kernstrategie, die vollkommen unabhängig von tatsächlichen redaktionellen Handlungen konstruiert und instrumentalisiert wird.' },
+          { label: 'Kein vorauseilender Gehorsam', text: 'Wenn Redaktionen notwendige medienethische Anpassungen aus Angst vor der Reaktion einer Partei unterlassen, unterwerfen sie ihre redaktionelle Unabhängigkeit deren Kommunikationsstrategie. Der wirksamste Schutz ist nicht Tatenlosigkeit, sondern eine transparente, wissenschaftlich und juristisch sauber begründete Offenlegung der redaktionellen Gestaltungsentscheidung.' },
+        ],
+      },
+    ],
+  },
+  en: {
+    sectionH: 'Scientific & Media Law Background',
+    sectionSub: 'Fact Sheet: Visual Framing and the Obligation for Accurate Political Colour Coding',
+    part1H: 'Part 1: Communication Science and Media Ethics Foundations',
+    foundations: [
+      {
+        title: 'The Psychological Dimension of "Visual Framing" (Halo Effect)',
+        points: [
+          { label: 'The Psychology of Blue', text: 'Light cyan and blue tones are universally associated with attributes such as credibility, trustworthiness, de-escalation, and institutional reliability – comparable to the colour choices of the United Nations or European institutions.' },
+          { label: 'The Visual Downplaying Trap', text: 'When a political force officially classified as proven far-right extremist by the Federal Office for the Protection of the Constitution (BfV) and several state offices is consistently depicted in this calming primary colour in news graphics, a cognitive contrast arises: the visual framing masks the ideological radicalism of the actors (halo effect).' },
+        ],
+      },
+      {
+        title: 'Editorial Autonomy and Journalistic Precedents',
+        points: [
+          { label: 'The taz Precedent', text: 'During the federal election campaign, the national daily taz deliberately decided to depict the AfD bar in their charts in brown rather than blue – in both print and web. This demonstrates that conscious departures from parties\' self-presentation are already practised in German journalism and recognised as a legitimate editorial tool.' },
+          { label: 'Established Colour Variance', text: 'Media outlets regularly deviate from official CI guidelines. The BSW is shown in purple or orange-red depending on the outlet; the Left Party often appears in dark red to distinguish it from the SPD. The CDU/CSU uses turquoise but is consistently depicted in black. Colour coding is a flexible journalistic design tool.' },
+        ],
+      },
+    ],
+    part2H: 'Part 2: Systematic Refutation of Legal and Strategic Objections',
+    objections: [
+      {
+        title: 'Objection 1: "The media-law neutrality principle forbids recolouring."',
+        rebuttals: [
+          { label: 'No Absolute Symmetry Obligation', text: 'According to consistent rulings of the Federal Constitutional Court (BVerfG), Art. 21(1) GG in conjunction with § 5 PartG requires graduated equal opportunity and fair access – not blind, purely formal symmetry. Journalism may and must name differences when objective, factual grounds exist.' },
+          { label: 'Constitutional Protection Office as Benchmark', text: 'The court-confirmed classification as "proven far-right extremist" is an objective, verified finding. A visualisation that reflects this through a historically established colour serves the statutory obligation for factual, truthful reporting (cf. State Media Treaty – MStV).' },
+          { label: 'No Right to Visual Protection', text: 'Political parties have no constitutional entitlement to have independent media adopt their self-presentation unfiltered. The broadcasters\' programming autonomy (freedom of broadcasting under Art. 5(1)(2) GG) explicitly includes the right to design information graphics according to sound journalistic criteria.' },
+        ],
+      },
+      {
+        title: 'Objection 2: "Media must follow the corporate identity (CI) of parties."',
+        rebuttals: [
+          { label: 'Journalistic Distance vs. PR Adoption', text: 'Blindly adopting the CI of political actors contradicts the journalistic principle of distance. Parties use visual branding as a strategic communication tool. Uncritical reproduction of this marketing by media outlets makes them unwitting amplifiers of political communication strategies.' },
+          { label: 'Visual Truth as a Duty', text: 'When constitutional protection agencies document significant differences in parties\' constitutional loyalty, treating all parties equally in an innocent "standard blue" misleads the audience. Visual truth requires a colour choice that reflects the constitutional status.' },
+        ],
+      },
+      {
+        title: 'Objection 3: "Recolouring gives the party ammunition for its victim narrative."',
+        rebuttals: [
+          { label: 'Proactive Core Strategy', text: 'Analyses of far-right communication (including by Dr Johannes Hillje) show: the "media victim narrative" is a proactive, structural core strategy that is constructed and exploited completely independently of actual editorial decisions.' },
+          { label: 'No Preemptive Submission', text: 'When editorial teams forgo necessary media-ethics adjustments out of fear of a party\'s reaction, they subordinate their editorial independence to that party\'s communication strategy. The most effective protection is not inaction, but transparent, scientifically and legally rigorous disclosure of the editorial design decision.' },
+        ],
+      },
+    ],
+  },
+} as const
+
 function getLocaleCode(lang: Locale) {
   return lang === 'de' ? 'de-DE' : 'en-GB'
 }
@@ -267,8 +364,10 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<ContentTab>('sprache')
   const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [openObjection, setOpenObjection] = useState<number | null>(null)
 
   const t = translations[lang]
+  const science = SCIENCE_CONTENT[lang]
   const sayings = blueSayings[lang]
   const letters = openLetters[lang]
   const faqs = FAQS[lang]
@@ -349,6 +448,7 @@ export default function App() {
           </div>
           <div className="flex flex-wrap items-center justify-end gap-2 md:gap-4">
             <a href="#warum" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navWhy}</a>
+            <a href="#hintergrund" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navScience}</a>
             <a href="#brief" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navLetter}</a>
             <a href="#kultur" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navCulture}</a>
             <button
@@ -519,6 +619,71 @@ export default function App() {
                 </div>
                 <h3 className="mb-2 text-lg font-bold text-white">{t.whyCard2H}</h3>
                 <p className="text-sm leading-relaxed text-neutral-400">{t.whyCard2}</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="hintergrund" className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-black tracking-tight text-white uppercase">{science.sectionH}</h2>
+              <p className="mt-1 text-sm text-neutral-500">{science.sectionSub}</p>
+            </div>
+
+            <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 md:p-8">
+              <h3 className="mb-5 flex items-center gap-2 text-base font-black tracking-tight text-blue-400 uppercase md:text-lg">
+                <BookOpen size={18} /> {science.part1H}
+              </h3>
+              <div className="space-y-5">
+                {science.foundations.map((foundation, fi) => (
+                  <div key={fi} className="rounded-xl border border-neutral-800 bg-neutral-900 p-5">
+                    <h4 className="mb-4 text-sm font-bold text-white md:text-base">{foundation.title}</h4>
+                    <div className="space-y-3">
+                      {foundation.points.map((point, pi) => (
+                        <div key={pi} className="flex gap-3">
+                          <div className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-blue-500" />
+                          <div>
+                            <span className="text-xs font-bold text-blue-300">{point.label}: </span>
+                            <span className="text-xs leading-relaxed text-neutral-400">{point.text}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 md:p-8">
+              <h3 className="mb-5 flex items-center gap-2 text-base font-black tracking-tight text-amber-400 uppercase md:text-lg">
+                <Shield size={18} /> {science.part2H}
+              </h3>
+              <div className="space-y-3">
+                {science.objections.map((obj, oi) => (
+                  <div key={oi} className="overflow-hidden rounded-xl border border-neutral-800">
+                    <button
+                      onClick={() => setOpenObjection(openObjection === oi ? null : oi)}
+                      className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left text-sm font-semibold text-neutral-300 transition-all hover:bg-neutral-900 hover:text-white"
+                      aria-expanded={openObjection === oi}
+                      type="button"
+                    >
+                      <span>{obj.title}</span>
+                      {openObjection === oi ? <ChevronUp size={14} className="shrink-0 text-amber-400" /> : <ChevronDown size={14} className="shrink-0 text-neutral-500" />}
+                    </button>
+                    {openObjection === oi && (
+                      <div className="space-y-3 border-t border-neutral-800 px-4 pt-3 pb-4">
+                        {obj.rebuttals.map((rebuttal, ri) => (
+                          <div key={ri} className="flex gap-3">
+                            <div className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-amber-500" />
+                            <div>
+                              <span className="text-xs font-bold text-amber-300">{rebuttal.label}: </span>
+                              <span className="text-xs leading-relaxed text-neutral-400">{rebuttal.text}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </section>
