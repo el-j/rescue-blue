@@ -60,6 +60,7 @@ export const translations = {
     ctaInfo: 'Kostenlos · Keine Werbung · Nur deine Stimme zählt',
     footerTagline: 'Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.',
     footerLink: 'Zur Petition auf Change.org',
+    footerImprint: 'Impressum',
   },
   en: {
     navCampaign: 'Change.org Campaign',
@@ -122,6 +123,7 @@ export const translations = {
     ctaInfo: 'Free · No ads · Only your voice counts',
     footerTagline: 'A campaign for media integrity and the protection of the cultural heritage of the colour blue.',
     footerLink: 'View petition on Change.org',
+    footerImprint: 'Legal Notice',
   },
 } as const
 
