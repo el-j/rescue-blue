@@ -1,7 +1,7 @@
 import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import App from './App'
+import App, { parseSignatureCount } from './App'
 
 describe('App', () => {
   beforeEach(() => {
@@ -53,5 +53,17 @@ describe('App', () => {
     expect(
       screen.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
     ).toBeInTheDocument()
+  })
+
+  it('parses signature counts from Change.org html responses', () => {
+    expect(
+      parseSignatureCount('<div data-cy="petition-signature-count">12,345 supporters</div>'),
+    ).toBe(12345)
+
+    expect(
+      parseSignatureCount({
+        contents: '<section aria-label="Signatures"><span>67.890</span></section>',
+      }),
+    ).toBe(67890)
   })
 })

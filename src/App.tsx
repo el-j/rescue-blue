@@ -14,18 +14,27 @@ import {
   Users,
 } from 'lucide-react'
 
-const PETITION_URL = 'https://weact.campact.de/petitions/rettet-das-blau-medien-mussen-die-afd-farblich-passend-darstellen'
-const PETITION_JSON_URL = `${PETITION_URL}.json`
-const PETITION_PROXY_URLS = [
-  `https://corsproxy.io/?url=${encodeURIComponent(PETITION_JSON_URL)}`,
-  `https://api.allorigins.win/get?url=${encodeURIComponent(PETITION_JSON_URL)}`,
-]
+const PETITION_URL = 'https://c.org/thnnqJ2GND'
+const PETITION_SOURCES = [
+  {
+    url: `https://corsproxy.io/?url=${encodeURIComponent(PETITION_URL)}`,
+    responseType: 'text',
+  },
+  {
+    url: `https://api.allorigins.win/raw?url=${encodeURIComponent(PETITION_URL)}`,
+    responseType: 'text',
+  },
+  {
+    url: `https://api.allorigins.win/get?url=${encodeURIComponent(PETITION_URL)}`,
+    responseType: 'json',
+  },
+] as const
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`
 const LETTER_TARGETS = ['oeffentlich', 'privat', 'rundfunkrat'] as const
 
 const translations = {
   de: {
-    navCampaign: 'WeAct Kampagne',
+    navCampaign: 'Change.org Kampagne',
     navWhy: 'Warum Blau?',
     navLetter: 'Offener Brief',
     navCulture: 'Kulturerbe',
@@ -40,7 +49,7 @@ const translations = {
     sigFallback: 'Stand lokal',
     heroImgCaption: 'Unser Kampagnen-Visual',
     heroImgSub: 'Visuelle Wahrheit schaffen, das sprachliche Blau bewahren.',
-    heroImgCta: 'Auf Campact unterzeichnen',
+    heroImgCta: 'Auf Change.org unterzeichnen',
     demoSandbox: 'Sandbox-Modus',
     demoH2: 'Interaktiver Farbvergleich',
     demoDesc: 'Klicke auf den Schalter oder den Balken, um den blauen Verharmlosungs-Code durch das historisch zutreffende Braun zu ersetzen.',
@@ -66,14 +75,14 @@ const translations = {
     ctaBanner: 'Jetzt unterzeichnen und Blau retten!',
     ctaBodyPre: 'Über',
     ctaBodyMid: 'Menschen haben diese Petition bereits unterzeichnet. Zeige auch du, dass du für eine ehrliche visuelle Berichterstattung einstehst.',
-    ctaBodyLoading: 'Aktuelle Unterzeichnerzahl wird von WeAct geladen.',
-    ctaBtn: 'Jetzt auf WeAct unterzeichnen',
+    ctaBodyLoading: 'Aktuelle Unterzeichnerzahl wird von Change.org geladen.',
+    ctaBtn: 'Jetzt auf Change.org unterzeichnen',
     ctaInfo: 'Kostenlos · Keine Werbung · Nur deine Stimme zählt',
     footerTagline: 'Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.',
-    footerLink: 'Zur Petition auf WeAct',
+    footerLink: 'Zur Petition auf Change.org',
   },
   en: {
-    navCampaign: 'WeAct Campaign',
+    navCampaign: 'Change.org Campaign',
     navWhy: 'Why Blue?',
     navLetter: 'Open Letter',
     navCulture: 'Cultural Heritage',
@@ -88,7 +97,7 @@ const translations = {
     sigFallback: 'Local snapshot',
     heroImgCaption: 'Our Campaign Visual',
     heroImgSub: 'Creating visual truth, preserving the linguistic Blue.',
-    heroImgCta: 'Sign on Campact',
+    heroImgCta: 'Sign on Change.org',
     demoSandbox: 'Sandbox Mode',
     demoH2: 'Interactive Colour Comparison',
     demoDesc: 'Click the toggle or the bar to replace the blue soft-pedalling code with the historically accurate brown.',
@@ -114,11 +123,11 @@ const translations = {
     ctaBanner: 'Sign now and rescue Blue!',
     ctaBodyPre: 'Over',
     ctaBodyMid: 'people have already signed this petition. Show that you stand for honest visual reporting.',
-    ctaBodyLoading: 'Loading current signature count from WeAct.',
-    ctaBtn: 'Sign now on WeAct',
+    ctaBodyLoading: 'Loading current signature count from Change.org.',
+    ctaBtn: 'Sign now on Change.org',
     ctaInfo: 'Free · No ads · Only your voice counts',
     footerTagline: 'A campaign for media integrity and the protection of the cultural heritage of the colour blue.',
-    footerLink: 'View petition on WeAct',
+    footerLink: 'View petition on Change.org',
   },
 } as const
 
@@ -249,37 +258,113 @@ const FAQS = {
     { q: 'Warum sollte Blau überhaupt problematisch sein?', a: 'Blau ist die Selbstwahlfarbe der AfD, aber eben auch die Farbe des Friedens, des Himmels und der UN-Friedenstruppen. Durch die unkritische Übernahme dieser Selbstzuschreibung durch Medien wird die emotionale Unbedenklichkeits-Assoziation auf die Partei übertragen.' },
     { q: 'Ist das nicht Zensur oder politische Einflussnahme?', a: 'Nein. Es geht um medienethische Standards und historische Ehrlichkeit. Medien entscheiden täglich über Darstellungsformen – die Forderung nach historisch korrekten Farbcodes ist eine legitime gesellschaftliche Debatte, keine Zensur.' },
     { q: 'Hat die Kampagne eine Chance auf Erfolg?', a: 'Bereits tausende Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt.' },
-    { q: 'Wer steckt hinter dieser Kampagne?', a: 'Die Petition wurde auf WeAct/Campact gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten.' },
+    { q: 'Wer steckt hinter dieser Kampagne?', a: 'Die Petition wurde auf Change.org gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten.' },
   ],
   en: [
     { q: 'Why should blue be problematic?', a: 'Blue is the AfD\'s self-chosen colour, but it is also the colour of peace, the sky, and UN peacekeeping forces. By uncritically adopting this self-description, media transfers the emotional harmlessness association to the party.' },
     { q: 'Is this not censorship or political interference?', a: 'No. This is about media-ethics standards and historical honesty. Media make editorial decisions every day – demanding historically accurate colour codes is a legitimate societal debate, not censorship.' },
     { q: 'Does the campaign have a chance of success?', a: 'Thousands of people have already signed. Media organisations respond to public pressure. Every signature counts.' },
-    { q: 'Who is behind this campaign?', a: 'The petition was started on WeAct/Campact – an open platform for civic engagement. These are engaged citizens standing up for media integrity.' },
+    { q: 'Who is behind this campaign?', a: 'The petition was started on Change.org – an open platform for civic engagement. These are engaged citizens standing up for media integrity.' },
   ],
 } as const
 
-function parseSignatureCount(payload: unknown): number | null {
+function extractCount(value: string): number | null {
+  const digitsOnly = value.replace(/[^\d]/g, '')
+  if (!digitsOnly) {
+    return null
+  }
+
+  const count = Number(digitsOnly)
+  return Number.isFinite(count) && count > 0 ? count : null
+}
+
+function parseSignatureCountFromHtml(html: string): number | null {
+  const document = new DOMParser().parseFromString(html, 'text/html')
+  const selectors = [
+    '[data-cy="petition-signature-count"]',
+    '[data-testid="petition-signature-count"]',
+    '[aria-label*="signature" i]',
+    '[aria-label*="supporter" i]',
+    '[class*="signature"]',
+    '[class*="supporter"]',
+  ]
+
+  for (const selector of selectors) {
+    for (const element of document.querySelectorAll(selector)) {
+      const count = extractCount(element.textContent ?? '')
+      if (count) {
+        return count
+      }
+    }
+  }
+
+  const htmlMatch = html.match(/"(?:displayed_)?signature_count"\s*:\s*"?([\d.,]+)"?/i)
+    ?? html.match(/"supporters?_count"\s*:\s*"?([\d.,]+)"?/i)
+    ?? html.match(/"supporters?Count"\s*:\s*"?([\d.,]+)"?/i)
+
+  return htmlMatch ? extractCount(htmlMatch[1]) : null
+}
+
+export function parseSignatureCount(payload: unknown): number | null {
+  if (typeof payload === 'string') {
+    const trimmedPayload = payload.trim()
+    if (!trimmedPayload) {
+      return null
+    }
+
+    if (trimmedPayload.startsWith('<')) {
+      return parseSignatureCountFromHtml(trimmedPayload)
+    }
+
+    try {
+      return parseSignatureCount(JSON.parse(trimmedPayload))
+    } catch {
+      return extractCount(trimmedPayload)
+    }
+  }
+
+  if (Array.isArray(payload)) {
+    for (const entry of payload) {
+      const count = parseSignatureCount(entry)
+      if (count) {
+        return count
+      }
+    }
+
+    return null
+  }
+
   if (!payload || typeof payload !== 'object') {
     return null
   }
 
   if ('contents' in payload && typeof payload.contents === 'string') {
-    try {
-      return parseSignatureCount(JSON.parse(payload.contents))
-    } catch {
-      return null
+    return parseSignatureCount(payload.contents)
+  }
+
+  const signatureKeys = [
+    'signature_count',
+    'displayed_signature_count',
+    'supporter_count',
+    'supporters_count',
+    'supportersCount',
+    'count',
+  ] as const
+
+  for (const key of signatureKeys) {
+    if (key in payload) {
+      const count = Number((payload as Record<typeof key, unknown>)[key])
+      if (Number.isFinite(count) && count > 0) {
+        return count
+      }
     }
   }
 
-  if ('signature_count' in payload) {
-    const count = Number(payload.signature_count)
-    return Number.isFinite(count) && count > 0 ? count : null
-  }
-
-  if ('count' in payload) {
-    const count = Number((payload as { count: unknown }).count)
-    return Number.isFinite(count) && count > 0 ? count : null
+  for (const value of Object.values(payload)) {
+    const count = parseSignatureCount(value)
+    if (count) {
+      return count
+    }
   }
 
   return null
@@ -316,14 +401,16 @@ export default function App() {
     async function fetchSignatureCount() {
       setIsLoadingSignatures(true)
 
-      async function tryFetch(url: string): Promise<number | null> {
+      async function tryFetch(source: typeof PETITION_SOURCES[number]): Promise<number | null> {
         try {
-          const response = await fetch(url, {
+          const response = await fetch(source.url, {
             signal: controller.signal,
             cache: 'no-store',
           })
           if (!response.ok) return null
-          const data = (await response.json()) as unknown
+          const data = source.responseType === 'json'
+            ? (await response.json()) as unknown
+            : await response.text()
           return parseSignatureCount(data)
         } catch {
           return null
@@ -332,7 +419,7 @@ export default function App() {
 
       try {
         const results = await Promise.allSettled([
-          ...PETITION_PROXY_URLS.map(tryFetch),
+          ...PETITION_SOURCES.map(tryFetch),
         ])
 
         if (isCancelled) return
