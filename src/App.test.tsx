@@ -67,4 +67,19 @@ describe('App', () => {
       }),
     ).toBe(67890)
   })
+
+  it('parses signature counts from json payload variants', () => {
+    expect(
+      parseSignatureCount('{"petition":{"signature_count":4321}}'),
+    ).toBe(4321)
+
+    expect(
+      parseSignatureCount([{ ignored: true }, { displayed_signature_count: 9876 }]),
+    ).toBe(9876)
+  })
+
+  it('returns null for malformed petition payloads', () => {
+    expect(parseSignatureCount('not valid json')).toBeNull()
+    expect(parseSignatureCount({ petition: { id: 1234 } })).toBeNull()
+  })
 })
