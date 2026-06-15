@@ -1,7 +1,8 @@
 import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import App, { parseSignatureCount } from './App'
+import App from './App'
+import { parseSignatureCount } from './petition'
 
 describe('App', () => {
   beforeEach(() => {
