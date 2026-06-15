@@ -1,5 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { PETITION_SOURCES, parseSignatureCount } from './petition'
+import {
+  POLLING_API_DOCS_URL,
+  POLLING_LOCKED_INSTITUTE,
+  POLLING_REFRESH_MS,
+  POLLING_SOURCES,
+  getDefaultPollingBars,
+  parsePollingSnapshot,
+  type PollingSnapshot,
+} from './polling'
 import {
   BottomCta,
   CultureSection,
@@ -27,6 +36,34 @@ import {
 
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`
 
+function formatDisplayDate(value: string, lang: Locale): string {
+  const parsedDate = new Date(value)
+  if (Number.isNaN(parsedDate.getTime())) {
+    return value
+  }
+
+  return parsedDate.toLocaleDateString(getLocaleCode(lang), {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  })
+}
+
+function formatDisplayDateTime(value: string, lang: Locale): string {
+  const parsedDate = new Date(value)
+  if (Number.isNaN(parsedDate.getTime())) {
+    return value
+  }
+
+  return parsedDate.toLocaleString(getLocaleCode(lang), {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+  })
+}
+
 export default function App() {
   const [lang, setLang] = useState<Locale>('de')
   const [signatureCount, setSignatureCount] = useState<number | null>(null)
@@ -37,6 +74,8 @@ export default function App() {
   const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [openObjection, setOpenObjection] = useState<number | null>(null)
+  const [pollingSnapshot, setPollingSnapshot] = useState<PollingSnapshot | null>(null)
+  const [isLivePollingData, setIsLivePollingData] = useState(false)
 
   const t = translations[lang]
   const science = SCIENCE_CONTENT[lang]
@@ -44,10 +83,41 @@ export default function App() {
   const letters = openLetters[lang]
   const faqs = FAQS[lang]
   const facts = FACTS[lang]
+  const pollingBars = pollingSnapshot?.bars ?? getDefaultPollingBars()
   const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
   const ctaBody = formattedSignatureCount
     ? `${t.ctaBodyPre} ${formattedSignatureCount} ${t.ctaBodyMid}`
     : t.ctaBodyLoading
+  const pollSourceInfo = useMemo(() => {
+    if (!pollingSnapshot) {
+      return `${t.demoSourceApi} · ${t.demoSourceInstitute}: ${POLLING_LOCKED_INSTITUTE}`
+    }
+
+    const segments = [
+      t.demoSourceApi,
+      `${t.demoSourceInstitute}: ${pollingSnapshot.instituteName}`,
+      `${t.demoSourceDate}: ${formatDisplayDate(pollingSnapshot.surveyDate, lang)}`,
+    ]
+
+    if (pollingSnapshot.surveyPeriod?.start && pollingSnapshot.surveyPeriod?.end) {
+      segments.push(
+        `${t.demoSourceFieldwork}: ${formatDisplayDate(pollingSnapshot.surveyPeriod.start, lang)} - ${formatDisplayDate(pollingSnapshot.surveyPeriod.end, lang)}`,
+      )
+    }
+
+    if (pollingSnapshot.surveyedPersons) {
+      segments.push(`${t.demoSourceSample}: n=${Math.round(pollingSnapshot.surveyedPersons)}`)
+    }
+
+    if (pollingSnapshot.methodName) {
+      segments.push(`${t.demoSourceMethod}: ${pollingSnapshot.methodName}`)
+    }
+
+    return segments.join(' · ')
+  }, [lang, pollingSnapshot, t.demoSourceApi, t.demoSourceDate, t.demoSourceFieldwork, t.demoSourceInstitute, t.demoSourceMethod, t.demoSourceSample])
+  const pollingStandInfo = pollingSnapshot?.apiUpdatedAt
+    ? formatDisplayDateTime(pollingSnapshot.apiUpdatedAt, lang)
+    : t.demoSourceFallback
 
   useEffect(() => {
     let isCancelled = false
@@ -108,6 +178,59 @@ export default function App() {
     }
   }, [])
 
+  useEffect(() => {
+    let isCancelled = false
+    const controller = new AbortController()
+
+    async function fetchPollingSnapshot() {
+      async function tryFetch(source: typeof POLLING_SOURCES[number]): Promise<PollingSnapshot | null> {
+        try {
+          const response = await fetch(source.url, {
+            signal: controller.signal,
+            cache: 'no-store',
+          })
+          if (!response.ok) return null
+
+          const payload = source.responseType === 'json'
+            ? (await response.json()) as unknown
+            : await response.text()
+
+          return parsePollingSnapshot(payload)
+        } catch {
+          return null
+        }
+      }
+
+      const snapshots = await Promise.allSettled([
+        ...POLLING_SOURCES.map(tryFetch),
+      ])
+
+      if (isCancelled) return
+
+      const validSnapshot = snapshots
+        .map((result) => (result.status === 'fulfilled' ? result.value : null))
+        .find((snapshot): snapshot is PollingSnapshot => snapshot !== null)
+
+      if (validSnapshot) {
+        setPollingSnapshot(validSnapshot)
+        setIsLivePollingData(true)
+      } else {
+        setIsLivePollingData(false)
+      }
+    }
+
+    void fetchPollingSnapshot()
+    const interval = window.setInterval(() => {
+      void fetchPollingSnapshot()
+    }, POLLING_REFRESH_MS)
+
+    return () => {
+      isCancelled = true
+      controller.abort()
+      window.clearInterval(interval)
+    }
+  }, [])
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-neutral-900 text-neutral-100 antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
       <div className="pointer-events-none fixed top-0 left-1/2 h-112.5 w-full max-w-7xl -translate-x-1/2 rounded-full bg-blue-500/10 blur-[150px] animate-pulse-glow" />
@@ -127,6 +250,12 @@ export default function App() {
           <InteractiveDemoSection
             lang={lang}
             t={t}
+            bars={pollingBars}
+            sourceInfo={pollSourceInfo}
+            isLivePollData={isLivePollingData}
+            standInfo={pollingStandInfo}
+            sourceUrl={pollingSnapshot?.sourceUrl ?? 'https://dawum.de/Bundestag/'}
+            sourceMethodUrl={POLLING_API_DOCS_URL}
             isBrownActive={isBrownActive}
             onToggleBrown={() => setIsBrownActive((current) => !current)}
           />
