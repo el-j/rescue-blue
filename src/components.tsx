@@ -1,24 +1,31 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   AlertTriangle,
   ArrowUpRight,
   BookOpen,
-  CircleHelp,
+  Check,
   CheckCircle,
   ChevronDown,
   ChevronUp,
+  CircleHelp,
+  Copy,
+  Download,
   ExternalLink,
   Globe,
   MessageSquare,
   Paintbrush,
+  Share2,
   Shield,
   Users,
+  X,
 } from 'lucide-react'
 import { PETITION_URL } from './petition'
 import type { PollBar } from './polling'
 import { type ContentTab, type Facts, type Faqs, type LetterTarget, type Letters, type Locale, type ScienceContent, type Sayings, type Translation } from './i18n'
 
 const IMPRINT_URL = `${import.meta.env.BASE_URL}imprint.html`
+const QR_CODE_URL = `${import.meta.env.BASE_URL}petition-qrcode.png`
+const SHARE_LINK = 'https://change.org/rette-blau'
 
 interface HeaderProps {
   lang: Locale
@@ -90,40 +97,138 @@ interface FooterProps {
 }
 
 export function SiteHeader({ lang, t, onToggleLanguage }: HeaderProps) {
+  const [isVisible, setIsVisible] = useState(true)
+  const [isShareOpen, setIsShareOpen] = useState(false)
+  const [isCopied, setIsCopied] = useState(false)
+  const lastScrollY = useRef(0)
+
+  useEffect(() => {
+    function onScroll() {
+      const y = window.scrollY
+      if (y < 60) {
+        setIsVisible(true)
+      } else if (y > lastScrollY.current) {
+        setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
+      lastScrollY.current = y
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    if (!isShareOpen) return
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setIsShareOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [isShareOpen])
+
+  function copyLink() {
+    void navigator.clipboard.writeText(SHARE_LINK).then(() => {
+      setIsCopied(true)
+      setTimeout(() => setIsCopied(false), 2000)
+    })
+  }
+
   return (
-    <nav className="sticky top-0 z-40 border-b border-neutral-800 bg-neutral-950/80 px-4 py-3 backdrop-blur-md md:px-6 md:py-4">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
-        <div className="flex items-center gap-2">
-          <span className="h-3 w-3 rounded-full bg-blue-500 shadow-md shadow-blue-500/50 animate-pulse" />
-          <span className="text-sm font-bold tracking-wider text-white uppercase">{t.navCampaign}</span>
+    <>
+      <nav className={`sticky top-0 z-40 border-b border-neutral-800 bg-neutral-950/80 px-4 py-3 backdrop-blur-md transition-transform duration-300 md:px-6 md:py-4 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <span className="h-3 w-3 animate-pulse rounded-full bg-blue-500 shadow-md shadow-blue-500/50" />
+            <span className="text-sm font-bold tracking-wider text-white uppercase">{t.navCampaign}</span>
+          </div>
+          <div className="flex flex-wrap items-center justify-end gap-2 md:gap-4">
+            <a href="#warum" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navWhy}</a>
+            <a href="#hintergrund" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navScience}</a>
+            <a href="#brief" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navLetter}</a>
+            <a href="#kultur" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navCulture}</a>
+            <button
+              onClick={onToggleLanguage}
+              className="flex items-center gap-1.5 rounded-lg border border-neutral-700 bg-neutral-800 px-3 py-1.5 text-xs font-bold text-neutral-300 transition-all hover:bg-neutral-700"
+              aria-label="Toggle language"
+              type="button"
+            >
+              <Globe size={13} />
+              {lang === 'de' ? 'EN' : 'DE'}
+            </button>
+            <button
+              onClick={() => setIsShareOpen(true)}
+              className="flex items-center gap-1.5 rounded-lg border border-neutral-700 bg-neutral-800 px-3 py-1.5 text-xs font-bold text-neutral-300 transition-all hover:bg-neutral-700"
+              aria-label={t.navShare}
+              type="button"
+            >
+              <Share2 size={14} />
+            </button>
+            <a
+              href={PETITION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-bold text-white transition-all hover:bg-blue-500 md:px-3.5"
+            >
+              <span className="hidden md:inline">{t.navSign}</span>
+              <span className="md:hidden">✍️</span>
+              <ArrowUpRight size={14} />
+            </a>
+          </div>
         </div>
-        <div className="flex flex-wrap items-center justify-end gap-2 md:gap-4">
-          <a href="#warum" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navWhy}</a>
-          <a href="#hintergrund" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navScience}</a>
-          <a href="#brief" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navLetter}</a>
-          <a href="#kultur" className="hidden text-xs text-neutral-400 transition-colors hover:text-white md:block md:text-sm">{t.navCulture}</a>
-          <button
-            onClick={onToggleLanguage}
-            className="flex items-center gap-1.5 rounded-lg border border-neutral-700 bg-neutral-800 px-3 py-1.5 text-xs font-bold text-neutral-300 transition-all hover:bg-neutral-700"
-            aria-label="Toggle language"
-            type="button"
+      </nav>
+
+      {isShareOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-950/90 backdrop-blur-md"
+          onClick={() => setIsShareOpen(false)}
+        >
+          <div
+            className="relative mx-4 w-full max-w-sm rounded-2xl border border-neutral-700 bg-neutral-900 p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
           >
-            <Globe size={13} />
-            {lang === 'de' ? 'EN' : 'DE'}
-          </button>
-          <a
-            href={PETITION_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-bold text-white transition-all hover:bg-blue-500 md:px-3.5"
-          >
-            <span className="hidden md:inline">{t.navSign}</span>
-            <span className="md:hidden">✍️</span>
-            <ArrowUpRight size={14} />
-          </a>
+            <button
+              onClick={() => setIsShareOpen(false)}
+              className="absolute top-4 right-4 rounded-lg p-1.5 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-white"
+              aria-label={t.shareClose}
+              type="button"
+            >
+              <X size={18} />
+            </button>
+
+            <h2 className="mb-1 text-center text-lg font-bold text-white">{t.shareTitle}</h2>
+            <p className="mb-4 text-center text-xs text-neutral-400">{t.shareSubtitle}</p>
+
+            <img
+              src={QR_CODE_URL}
+              alt="QR-Code zur Petition"
+              className="mx-auto w-56 rounded-xl border border-neutral-700"
+            />
+
+            <div className="mt-4 flex items-center gap-2 rounded-lg bg-neutral-800 px-3 py-2">
+              <span className="flex-1 truncate text-sm text-blue-400">{SHARE_LINK}</span>
+              <button
+                onClick={copyLink}
+                className="shrink-0 rounded p-1 text-neutral-400 transition-colors hover:text-white"
+                aria-label={t.shareCopyLink}
+                type="button"
+              >
+                {isCopied ? <Check size={15} className="text-emerald-400" /> : <Copy size={15} />}
+              </button>
+            </div>
+
+            <a
+              href={QR_CODE_URL}
+              download="petition-qrcode.png"
+              className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-bold text-white transition-colors hover:bg-blue-500"
+            >
+              <Download size={15} />
+              {t.shareDownloadQr}
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      )}
+    </>
   )
 }
 

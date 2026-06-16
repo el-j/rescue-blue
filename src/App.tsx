@@ -30,7 +30,7 @@ import {
   type Locale,
 } from './i18n'
 
-const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}Gemini_Generated_Image_vc7befvc7befvc7b.png`
+const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-rescue-blue.png`
 
 function formatDisplayDate(value: string, lang: Locale): string {
   const parsedDate = new Date(value)
