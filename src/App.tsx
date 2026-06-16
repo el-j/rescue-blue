@@ -2,10 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
-  POLLING_REFRESH_MS,
-  POLLING_SOURCES,
   getDefaultPollingBars,
-  parsePollingSnapshot,
   type PollingSnapshot,
 } from './polling'
 import {
@@ -154,54 +151,27 @@ export default function App() {
 
   useEffect(() => {
     let isCancelled = false
-    const controller = new AbortController()
 
-    async function fetchPollingSnapshot() {
-      async function tryFetch(source: typeof POLLING_SOURCES[number]): Promise<PollingSnapshot | null> {
-        try {
-          const response = await fetch(source.url, {
-            signal: controller.signal,
-            cache: 'no-store',
-          })
-          if (!response.ok) return null
-
-          const payload = source.responseType === 'json'
-            ? (await response.json()) as unknown
-            : await response.text()
-
-          return parsePollingSnapshot(payload)
-        } catch {
-          return null
+    async function loadPollingSnapshot() {
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}polling-snapshot.json`, {
+          cache: 'no-store',
+        })
+        if (!response.ok) throw new Error('not ok')
+        const snapshot = (await response.json()) as PollingSnapshot
+        if (!isCancelled) {
+          setPollingSnapshot(snapshot)
+          setIsLivePollingData(true)
         }
-      }
-
-      const snapshots = await Promise.allSettled([
-        ...POLLING_SOURCES.map(tryFetch),
-      ])
-
-      if (isCancelled) return
-
-      const validSnapshot = snapshots
-        .map((result) => (result.status === 'fulfilled' ? result.value : null))
-        .find((snapshot): snapshot is PollingSnapshot => snapshot !== null)
-
-      if (validSnapshot) {
-        setPollingSnapshot(validSnapshot)
-        setIsLivePollingData(true)
-      } else {
-        setIsLivePollingData(false)
+      } catch {
+        if (!isCancelled) setIsLivePollingData(false)
       }
     }
 
-    void fetchPollingSnapshot()
-    const interval = window.setInterval(() => {
-      void fetchPollingSnapshot()
-    }, POLLING_REFRESH_MS)
+    void loadPollingSnapshot()
 
     return () => {
       isCancelled = true
-      controller.abort()
-      window.clearInterval(interval)
     }
   }, [])
 

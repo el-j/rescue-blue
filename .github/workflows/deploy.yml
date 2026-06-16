@@ -32,16 +32,16 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Restore current signature count from gh-pages
+      - name: Restore live data files from gh-pages
         run: |
           git fetch origin gh-pages --depth=1 2>/dev/null || true
-          COUNT=$(git show origin/gh-pages:signature-count.json 2>/dev/null \
-            | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('count',''))" 2>/dev/null \
-            || echo "")
-          if [ -n "$COUNT" ] && [ "$COUNT" -gt 0 ] 2>/dev/null; then
-            echo "{\"count\":$COUNT}" > dist/signature-count.json
-            echo "Preserved live signature count: $COUNT"
-          fi
+          for file in signature-count.json polling-snapshot.json; do
+            content=$(git show "origin/gh-pages:$file" 2>/dev/null || echo "")
+            if [ -n "$content" ]; then
+              printf '%s' "$content" > "dist/$file"
+              echo "Preserved $file from gh-pages"
+            fi
+          done
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
