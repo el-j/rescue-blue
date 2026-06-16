@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react'
-import { PETITION_SOURCES, parseSignatureCount } from './petition'
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
@@ -121,60 +120,35 @@ export default function App() {
 
   useEffect(() => {
     let isCancelled = false
-    const controller = new AbortController()
 
-    async function fetchSignatureCount() {
+    async function loadSignatureCount() {
       setIsLoadingSignatures(true)
-
-      async function tryFetch(source: typeof PETITION_SOURCES[number]): Promise<number | null> {
-        try {
-          const response = await fetch(source.url, {
-            signal: controller.signal,
-            cache: 'no-store',
-          })
-          if (!response.ok) return null
-          const data = source.responseType === 'json'
-            ? (await response.json()) as unknown
-            : await response.text()
-          return parseSignatureCount(data)
-        } catch {
-          return null
-        }
-      }
-
       try {
-        const results = await Promise.allSettled([
-          ...PETITION_SOURCES.map(tryFetch),
-        ])
-
-        if (isCancelled) return
-
-        const counts = results
-          .map((r) => (r.status === 'fulfilled' ? r.value : null))
-          .filter((c): c is number => typeof c === 'number')
-
-        if (counts.length > 0) {
-          setSignatureCount(Math.max(...counts))
-          setIsLive(true)
-        } else {
-          setIsLive(false)
-        }
-      } finally {
+        const response = await fetch(`${import.meta.env.BASE_URL}signature-count.json`, {
+          cache: 'no-store',
+        })
+        if (!response.ok) throw new Error('not ok')
+        const data = (await response.json()) as { count?: unknown }
+        const count = Number(data.count)
         if (!isCancelled) {
-          setIsLoadingSignatures(false)
+          if (Number.isFinite(count) && count > 0) {
+            setSignatureCount(count)
+            setIsLive(true)
+          } else {
+            setIsLive(false)
+          }
         }
+      } catch {
+        if (!isCancelled) setIsLive(false)
+      } finally {
+        if (!isCancelled) setIsLoadingSignatures(false)
       }
     }
 
-    void fetchSignatureCount()
-    const interval = window.setInterval(() => {
-      void fetchSignatureCount()
-    }, 120000)
+    void loadSignatureCount()
 
     return () => {
       isCancelled = true
-      controller.abort()
-      window.clearInterval(interval)
     }
   }, [])
 

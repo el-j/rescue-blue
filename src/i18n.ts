@@ -268,13 +268,13 @@ export const FAQS = {
   de: [
     { q: 'Warum sollte Blau überhaupt problematisch sein?', a: 'Blau ist die Selbstwahlfarbe der AfD, aber eben auch die Farbe des Friedens, des Himmels und der UN-Friedenstruppen. Durch die unkritische Übernahme dieser Selbstzuschreibung durch Medien wird die emotionale Unbedenklichkeits-Assoziation auf die Partei übertragen.' },
     { q: 'Ist das nicht Zensur oder politische Einflussnahme?', a: 'Nein. Es geht um medienethische Standards und historische Ehrlichkeit. Medien entscheiden täglich über Darstellungsformen – die Forderung nach historisch korrekten Farbcodes ist eine legitime gesellschaftliche Debatte, keine Zensur.' },
-    { q: 'Hat die Kampagne eine Chance auf Erfolg?', a: 'Bereits tausende Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt.' },
+    { q: 'Hat die Kampagne eine Chance auf Erfolg?', a: 'Viele Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt.' },
     { q: 'Wer steckt hinter dieser Kampagne?', a: 'Die Petition wurde auf Change.org gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten.' },
   ],
   en: [
     { q: 'Why should blue be problematic?', a: 'Blue is the AfD\'s self-chosen colour, but it is also the colour of peace, the sky, and UN peacekeeping forces. By uncritically adopting this self-description, media transfers the emotional harmlessness association to the party.' },
     { q: 'Is this not censorship or political interference?', a: 'No. This is about media-ethics standards and historical honesty. Media make editorial decisions every day – demanding historically accurate colour codes is a legitimate societal debate, not censorship.' },
-    { q: 'Does the campaign have a chance of success?', a: 'Thousands of people have already signed. Media organisations respond to public pressure. Every signature counts.' },
+    { q: 'Does the campaign have a chance of success?', a: 'Many people have already signed. Media organisations respond to public pressure. Every signature counts.' },
     { q: 'Who is behind this campaign?', a: 'The petition was started on Change.org – an open platform for civic engagement. These are engaged citizens standing up for media integrity.' },
   ],
 } as const

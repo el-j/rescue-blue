@@ -12,22 +12,28 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout gh-pages branch
         uses: actions/checkout@v4
+        with:
+          ref: gh-pages
 
-      - name: Fetch signature count from WeAct
+      - name: Fetch signature count from Change.org
         id: fetch
         run: |
-          RESPONSE=$(curl -sf --max-time 15 \
-            "https://weact.campact.de/petitions/rettet-das-blau-medien-mussen-die-afd-farblich-passend-darstellen.json" \
-            || echo "")
-          COUNT=$(echo "$RESPONSE" | jq -r '.signature_count // empty' 2>/dev/null || echo "")
+          RESPONSE=$(curl -sL --max-time 30 \
+            -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0" \
+            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
+            "https://c.org/thnnqJ2GND" || echo "")
+          COUNT=$(printf '%s' "$RESPONSE" | grep -oP '"(?:displayed_)?signature_count"\s*:\s*"?\K[\d,]+' | head -1 | tr -d ',')
+          if [ -z "$COUNT" ]; then
+            COUNT=$(printf '%s' "$RESPONSE" | grep -oP '"supporters?_count"\s*:\s*"?\K[\d,]+' | head -1 | tr -d ',')
+          fi
           if [ -n "$COUNT" ] && [ "$COUNT" -gt 0 ] 2>/dev/null; then
-            echo "{\"count\":$COUNT}" > public/signature-count.json
+            echo "{\"count\":$COUNT}" > signature-count.json
             echo "count=$COUNT" >> "$GITHUB_OUTPUT"
             echo "Updated signature count to $COUNT"
           else
-            echo "Failed to fetch a valid count; marking job as failed"
+            echo "Failed to fetch a valid count from Change.org; skipping update"
             exit 1
           fi
 
@@ -35,10 +41,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet public/signature-count.json; then
+          if git diff --quiet signature-count.json; then
             echo "No change in count, skipping commit"
           else
-            git add public/signature-count.json
+            git add signature-count.json
             git commit -m "chore: update signature count to ${{ steps.fetch.outputs.count }}"
             git push
           fi
