@@ -263,13 +263,13 @@ export type ScienceContent = Widen<typeof SCIENCE_CONTENT.de>
 export const FACTS = {
   de: [
     { emoji: '🎨', label: 'Blau', desc: 'Farbe des Himmels, des Friedens, der UN' },
-    { emoji: '📺', label: 'ARD & ZDF', desc: 'Nutzen Blau für AfD-Grafiken' },
+    { emoji: '📺', label: 'ARD & ZDF & Andere Medien', desc: 'Nutzen Blau für AfD-Grafiken' },
     { emoji: '🏛️', label: 'Historisch', desc: 'Braun = Symbol des Rechtsextremismus' },
     { emoji: '⚖️', label: 'Verfassungsschutz', desc: 'Teile der AfD als gesichert extremistisch eingestuft' },
   ],
   en: [
     { emoji: '🎨', label: 'Blue', desc: 'Colour of the sky, peace, and the UN' },
-    { emoji: '📺', label: 'ARD & ZDF', desc: 'Use blue for AfD in graphics' },
+    { emoji: '📺', label: 'ARD & ZDF & Other Media', desc: 'Use blue for AfD in graphics' },
     { emoji: '🏛️', label: 'Historically', desc: 'Brown = symbol of far-right extremism' },
     { emoji: '⚖️', label: 'Constitution Protection', desc: 'Parts of AfD classified as proven extremist' },
   ],
