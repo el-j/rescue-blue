@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
   getDefaultPollingBars,
-  type PollingSnapshot,
 } from './polling'
 import {
+  AlsoSupportSection,
   BottomCta,
   CultureSection,
   HeroSection,
@@ -29,49 +29,22 @@ import {
   type LetterTarget,
   type Locale,
 } from './i18n'
+import { useSignatureCount } from './hooks/useSignatureCount'
+import { usePollingSnapshot } from './hooks/usePollingSnapshot'
+import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
 
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-rescue-blue.png`
 
-function formatDisplayDate(value: string, lang: Locale): string {
-  const parsedDate = new Date(value)
-  if (Number.isNaN(parsedDate.getTime())) {
-    return value
-  }
-
-  return parsedDate.toLocaleDateString(getLocaleCode(lang), {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-  })
-}
-
-function formatDisplayDateTime(value: string, lang: Locale): string {
-  const parsedDate = new Date(value)
-  if (Number.isNaN(parsedDate.getTime())) {
-    return value
-  }
-
-  return parsedDate.toLocaleString(getLocaleCode(lang), {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-  })
-}
-
 export default function App() {
   const [lang, setLang] = useState<Locale>('de')
-  const [signatureCount, setSignatureCount] = useState<number | null>(null)
-  const [isLive, setIsLive] = useState(false)
-  const [isLoadingSignatures, setIsLoadingSignatures] = useState(true)
   const [isBrownActive, setIsBrownActive] = useState(false)
   const [activeTab, setActiveTab] = useState<ContentTab>('sprache')
   const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [openObjection, setOpenObjection] = useState<number | null>(null)
-  const [pollingSnapshot, setPollingSnapshot] = useState<PollingSnapshot | null>(null)
-  const [isLivePollingData, setIsLivePollingData] = useState(false)
+
+  const { signatureCount, isLive, isLoading: isLoadingSignatures } = useSignatureCount()
+  const { pollingSnapshot, isLive: isLivePollingData } = usePollingSnapshot()
 
   const t = translations[lang]
   const science = SCIENCE_CONTENT[lang]
@@ -84,6 +57,7 @@ export default function App() {
   const ctaBody = formattedSignatureCount
     ? `${t.ctaBodyPre} ${formattedSignatureCount} ${t.ctaBodyMid}`
     : t.ctaBodyLoading
+
   const pollSourceInfo = useMemo(() => {
     if (!pollingSnapshot) {
       return `${t.demoSourceApi} · ${t.demoSourceInstitute}: ${POLLING_LOCKED_INSTITUTE}`
@@ -111,75 +85,17 @@ export default function App() {
 
     return segments.join(' · ')
   }, [lang, pollingSnapshot, t.demoSourceApi, t.demoSourceDate, t.demoSourceFieldwork, t.demoSourceInstitute, t.demoSourceMethod, t.demoSourceSample])
+
   const pollingStandInfo = pollingSnapshot?.apiUpdatedAt
     ? formatDisplayDateTime(pollingSnapshot.apiUpdatedAt, lang)
     : t.demoSourceFallback
-
-  useEffect(() => {
-    let isCancelled = false
-
-    async function loadSignatureCount() {
-      setIsLoadingSignatures(true)
-      try {
-        const response = await fetch(`${import.meta.env.BASE_URL}signature-count.json`, {
-          cache: 'no-store',
-        })
-        if (!response.ok) throw new Error('not ok')
-        const data = (await response.json()) as { count?: unknown }
-        const count = Number(data.count)
-        if (!isCancelled) {
-          if (Number.isFinite(count) && count > 0) {
-            setSignatureCount(count)
-            setIsLive(true)
-          } else {
-            setIsLive(false)
-          }
-        }
-      } catch {
-        if (!isCancelled) setIsLive(false)
-      } finally {
-        if (!isCancelled) setIsLoadingSignatures(false)
-      }
-    }
-
-    void loadSignatureCount()
-
-    return () => {
-      isCancelled = true
-    }
-  }, [])
-
-  useEffect(() => {
-    let isCancelled = false
-
-    async function loadPollingSnapshot() {
-      try {
-        const response = await fetch(`${import.meta.env.BASE_URL}polling-snapshot.json`, {
-          cache: 'no-store',
-        })
-        if (!response.ok) throw new Error('not ok')
-        const snapshot = (await response.json()) as PollingSnapshot
-        if (!isCancelled) {
-          setPollingSnapshot(snapshot)
-          setIsLivePollingData(true)
-        }
-      } catch {
-        if (!isCancelled) setIsLivePollingData(false)
-      }
-    }
-
-    void loadPollingSnapshot()
-
-    return () => {
-      isCancelled = true
-    }
-  }, [])
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-neutral-900 text-neutral-100 antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
       <div className="pointer-events-none fixed top-0 left-1/2 h-112.5 w-full max-w-7xl -translate-x-1/2 rounded-full bg-blue-500/10 blur-[150px] animate-pulse-glow" />
 
       <SiteHeader lang={lang} t={t} onToggleLanguage={() => setLang((current) => (current === 'de' ? 'en' : 'de'))} />
+      <div className="h-14 md:h-16" aria-hidden="true" />
       <HeroSection
         lang={lang}
         t={t}
@@ -239,6 +155,7 @@ export default function App() {
         />
       </main>
 
+      <AlsoSupportSection lang={lang} t={t} />
       <BottomCta t={t} ctaBody={ctaBody} />
       <SiteFooter t={t} />
     </div>

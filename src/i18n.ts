@@ -68,6 +68,9 @@ export const translations = {
     footerTagline: 'Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.',
     footerLink: 'Zur Petition auf Change.org',
     footerImprint: 'Impressum',
+    alsoSupportH: 'Weitere Petitionen unterstützen',
+    alsoSupportSub: 'Andere Petitionen, die für ein starkes demokratisches Deutschland kämpfen.',
+    alsoSupportBtn: 'Unterzeichnen',
   },
   en: {
     navCampaign: 'Change.org Campaign',
@@ -138,6 +141,9 @@ export const translations = {
     footerTagline: 'A campaign for media integrity and the protection of the cultural heritage of the colour blue.',
     footerLink: 'View petition on Change.org',
     footerImprint: 'Legal Notice',
+    alsoSupportH: 'Support More Petitions',
+    alsoSupportSub: 'Other petitions fighting for a strong democratic Germany.',
+    alsoSupportBtn: 'Sign',
   },
 } as const
 
