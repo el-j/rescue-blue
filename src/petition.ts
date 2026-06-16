@@ -1,4 +1,4 @@
-export const PETITION_URL = 'https://www.change.org/p/%C3%A4ndern-sie-die-afd-darstellung-in-medien-von-blau-zu-braun/'
+export const PETITION_URL = 'https://www.change.org/p/%C3%A4ndern-der-afd-darstellung-in-medien-von-blau-zu-braun'
 
 export const PETITION_SOURCES = [
   {
