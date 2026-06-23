@@ -1,137 +1,163 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impressum | Rettet das Blau</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #0a0d14;
-        --card: #121621;
-        --text: #e5e7eb;
-        --muted: #9ca3af;
-        --line: #1f2937;
-        --accent: #38bdf8;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum | Rettet das Blau</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0d14;
+      --card: #121621;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --line: #1f2937;
+      --accent: #38bdf8;
+    }
 
-      body {
-        margin: 0;
-        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
-        background: radial-gradient(circle at 20% -10%, #123 0%, var(--bg) 55%);
-        color: var(--text);
-        line-height: 1.6;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      .wrap {
-        max-width: 880px;
-        margin: 0 auto;
-        padding: 2rem 1rem 3rem;
-      }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 20% -10%, #123 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-      .top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-      }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
 
-      .back {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 700;
-      }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
 
-      .card {
-        background: linear-gradient(180deg, #121621, #0f141e);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 1.25rem;
-        margin-bottom: 1rem;
-      }
+    .back {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
 
-      h1 {
-        margin: 0;
-        font-size: clamp(1.6rem, 4vw, 2.1rem);
-      }
+    .card {
+      background: linear-gradient(180deg, #121621, #0f141e);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
 
-      h2 {
-        margin-top: 0;
-        font-size: 1.05rem;
-        color: var(--accent);
-      }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+    }
 
-      p,
-      li {
-        color: var(--text);
-      }
+    h2 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      color: var(--accent);
+    }
 
-      .muted {
-        color: var(--muted);
-      }
+    p,
+    li {
+      color: var(--text);
+    }
 
-      code {
-        background: #0b1020;
-        border: 1px solid var(--line);
-        padding: 0.1rem 0.3rem;
-        border-radius: 4px;
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <div class="top">
-        <h1>Impressum</h1>
-        <a class="back" href="./">Zurück zur Kampagne</a>
-      </div>
+    .muted {
+      color: var(--muted);
+    }
 
-      <section class="card">
-        <h2>Angaben gemäß § 5 DDG</h2>
-        <p>
-          <strong>Name:</strong> Fabian Althaus<br />
-          <strong>E-Mail:</strong> bluearc.in.sky@gmail.com<br />
-          <strong>Ladungsfähige Anschrift:</strong> für ein rechtssicheres Impressum erforderlich, derzeit hier nicht veröffentlicht
-        </p>
-      </section>
+    code {
+      background: #0b1020;
+      border: 1px solid var(--line);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
 
-      <section class="card">
-        <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-        <p>
-          <strong>Name:</strong> Fabian Althaus<br />
-          <strong>Anschrift:</strong> für journalistisch-redaktionelle Inhalte ebenfalls als ladungsfähige Anschrift erforderlich
-        </p>
-      </section>
+<body>
+  <main class="wrap">
+    <div class="top">
+      <h1>Impressum</h1>
+      <a class="back" href="./">Zurück zur Kampagne</a>
+    </div>
 
-      <section class="card">
-        <h2>Hinweis zur Petition</h2>
-        <p>
-          Die eigentliche Petition wird auf Change.org betrieben. Für die Petition selbst sowie deren Plattformfunktionen gelten die rechtlichen Hinweise, Datenschutzinformationen und Anbieterangaben von Change.org.
-        </p>
-        <p>
-          Change.org: <a href="https://www.change.org/policies/privacy" target="_blank" rel="noopener noreferrer">Datenschutz</a> ·
-          <a href="https://www.change.org/policies/terms" target="_blank" rel="noopener noreferrer">Nutzungsbedingungen</a>
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Technisches Hosting</h2>
-        <p>
-          Diese Informationsseite wird technisch über GitHub Pages ausgeliefert. Informationen zur Datenverarbeitung durch GitHub finden sich in den Datenschutzhinweisen von GitHub.
-        </p>
-        <p>
-          GitHub Datenschutz: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub General Privacy Statement</a>
-        </p>
-      </section>
-
-      <p class="muted">
-        Präziser Hinweis: Der Link auf Change.org ersetzt nicht das eigene Impressum dieser Website. Wenn die Wohnanschrift nicht öffentlich erscheinen soll, ist für ein rechtssicheres Impressum regelmäßig nur eine alternative ladungsfähige Zustelladresse sinnvoll, etwa c/o, Kanzlei oder Impressumsservice. 
-        Bitte melden sie sich per E-Mail, wenn Sie eine solche Adresse zur Veröffentlichung bereitstellen können oder weitere Fragen zum Impressum haben. Vielen Dank!
+    <section class="card">
+      <h2>Angaben gemäß § 5 DDG</h2>
+      <p>
+        <strong>Name:</strong> Fabian Althaus<br />
+        <strong>E-Mail:</strong> bluearc.in.sky@gmail.com (diese E-Mailadresse existiert seit 2004)<br />
+        <strong>Ladungsfähige Anschrift:</strong> für ein rechtssicheres Impressum erforderlich, derzeit hier nicht
+        veröffentlicht
       </p>
-    </main>
-  </body>
+    </section>
+
+    <section class="card">
+      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <p>
+        <strong>Name:</strong> Fabian Althaus<br />
+        <strong>Anschrift:</strong> für journalistisch-redaktionelle Inhalte ebenfalls als ladungsfähige Anschrift
+        erforderlich
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Hinweis zur Petition</h2>
+      <p>
+        Die eigentliche Petition wird auf Change.org betrieben. Für die Petition selbst sowie deren Plattformfunktionen
+        gelten die rechtlichen Hinweise, Datenschutzinformationen und Anbieterangaben von Change.org.
+      </p>
+      <p>
+        Change.org: <a href="https://www.change.org/policies/privacy" target="_blank"
+          rel="noopener noreferrer">Datenschutz</a> ·
+        <a href="https://www.change.org/policies/terms" target="_blank"
+          rel="noopener noreferrer">Nutzungsbedingungen</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Haftungsausschluss für externe Links</h2>
+      <p>
+        Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb
+        können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist
+        stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum
+        Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+        Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
+        Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir
+        derartige Links umgehend entfernen.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Technisches Hosting</h2>
+      <p>
+        Diese Informationsseite wird technisch über GitHub Pages ausgeliefert. Informationen zur Datenverarbeitung durch
+        GitHub finden sich in den Datenschutzhinweisen von GitHub.
+      </p>
+      <p>
+        GitHub Datenschutz: <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank" rel="noopener noreferrer">GitHub General Privacy Statement</a>
+      </p>
+    </section>
+
+    <p class="muted">
+      Da die Wohnanschrift zum Schutz vor Belästigung und aus Privatsphärengründen nicht öffentlich erscheinen soll,
+      wird nach einer c/o, Kanzlei oder einem Impressumsservice gesucht.
+      Bitte melden sie sich per E-Mail, wenn Sie eine solche Adresse zur Veröffentlichung bereitstellen können oder
+      falls Sie weitere Fragen zum Impressum haben. Vielen Dank!
+    </p>
+  </main>
+</body>
+
 </html>
