@@ -180,7 +180,7 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
 
       {/* Main bar chart */}
       <div className="mb-4 rounded-xl border border-neutral-800/80 bg-neutral-900 p-5 md:p-8">
-        <div className="relative flex h-56 items-end justify-between border-b border-neutral-800 pb-2 md:h-64">
+        <div className="relative flex h-64 items-end justify-between border-b border-neutral-800 pb-2 md:h-72">
           {displayBars.map((bar, index) => {
             const heightPx = Math.round((bar.pct / maxPct) * 200)
             const barColor = bar.isAfd
@@ -234,7 +234,7 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
           <p className="mb-4 text-center text-xs font-bold tracking-wider text-neutral-400 uppercase">
             {t.comparisonTitle}
           </p>
-          <div className="flex items-end justify-center gap-8 sm:gap-16" style={{ height: '240px' }}>
+          <div className="flex items-end justify-center gap-8 sm:gap-16" style={{ height: '280px' }}>
             {/* AfD bar */}
             <div className="flex flex-col items-center" style={{ width: '120px' }}>
               <span className="mb-2 text-lg font-black text-white">{displayAfdPct.toFixed(1)} %</span>
