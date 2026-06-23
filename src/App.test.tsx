@@ -182,7 +182,7 @@ describe('App', () => {
     expect(snapshot?.bars.find((bar) => bar.key === 'others')?.pct).toBe(10)
   })
 
-  it('ignores non-locked institutes and keeps INSA-only selection', () => {
+  it('selects the latest valid survey across all institutes', () => {
     const snapshot = parsePollingSnapshot({
       Database: {},
       Institutes: {
@@ -219,8 +219,8 @@ describe('App', () => {
     })
 
     expect(snapshot).not.toBeNull()
-    expect(snapshot?.instituteName).toBe('INSA')
-    expect(snapshot?.surveyDate).toBe('2026-06-13')
-    expect(snapshot?.bars.find((bar) => bar.key === 'afd')?.pct).toBe(29)
+    expect(snapshot?.instituteName).toBe('Forsa')
+    expect(snapshot?.surveyDate).toBe('2026-06-14')
+    expect(snapshot?.bars.find((bar) => bar.key === 'afd')?.pct).toBe(34)
   })
 })

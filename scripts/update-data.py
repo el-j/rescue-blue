@@ -194,22 +194,32 @@ def fetch_polling_snapshot(output_dir):
         inst = institutes.get(str(inst_id), {})
         return inst.get('Name', '') if isinstance(inst, dict) else ''
 
-    bundestag_insa = [
+    bundestag_surveys = [
         s for s in surveys.values()
         if isinstance(s, dict)
         and str(s.get('Parliament_ID', '')) == BUNDESTAG_PARLIAMENT_ID
-        and institute_name(s.get('Institute_ID')) == INSA_INSTITUTE
         and 'Date' in s
     ]
-    if not bundestag_insa:
-        raise ValueError('No INSA Bundestag surveys found in dawum.de response')
+    if not bundestag_surveys:
+        raise ValueError('No Bundestag surveys found in dawum.de response')
 
-    latest = max(bundestag_insa, key=lambda s: str(s.get('Date', '')))
-    results = latest.get('Results', {})
+    bundestag_surveys.sort(key=lambda s: str(s.get('Date', '')), reverse=True)
 
-    pcts = {k: to_float(results.get(pid)) for k, pid in PARTY_IDS.items()}
-    if any(v is None for v in pcts.values()):
-        raise ValueError(f'Missing party percentages: {pcts}')
+    latest = None
+    pcts = None
+    for survey in bundestag_surveys:
+        results = survey.get('Results', {})
+        try:
+            cand_pcts = {k: to_float(results.get(pid)) for k, pid in PARTY_IDS.items()}
+            if all(v is not None for v in cand_pcts.values()):
+                latest = survey
+                pcts = cand_pcts
+                break
+        except Exception:
+            continue
+
+    if not latest or not pcts:
+        raise ValueError('No Bundestag survey with all required party percentages found')
 
     total = sum(pcts.values())
     pcts['others'] = max(0.0, round_one(100 - total))
@@ -219,9 +229,9 @@ def fetch_polling_snapshot(output_dir):
     inst_id = str(latest.get('Institute_ID', ''))
     institute = institutes.get(inst_id, {})
     inst_name = (
-        institute.get('Name', INSA_INSTITUTE)
-        if isinstance(institute, dict)
-        else INSA_INSTITUTE
+        institute.get('Name', 'Dawum')
+        if isinstance(institute, dict) and institute.get('Name')
+        else 'Dawum'
     )
 
     method_id = str(latest.get('Method_ID', ''))

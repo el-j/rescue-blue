@@ -120,14 +120,6 @@ export function parsePollingSnapshot(payload: unknown): PollingSnapshot | null {
   const bundestagSurveys = Object.values(surveys as Record<string, unknown>)
     .filter((survey): survey is Record<string, unknown> => !!survey && typeof survey === 'object')
     .filter((survey) => String(survey.Parliament_ID ?? '') === '0')
-    .filter((survey) => {
-      const instituteId = String(survey.Institute_ID ?? '')
-      const institute = institutes?.[instituteId]
-      const instituteName = institute && typeof institute === 'object'
-        ? String((institute as Record<string, unknown>).Name ?? '')
-        : ''
-      return instituteName === POLLING_LOCKED_INSTITUTE
-    })
     .filter((survey) => typeof survey.Date === 'string')
     .sort((a, b) => String(b.Date).localeCompare(String(a.Date)))
 
@@ -135,34 +127,51 @@ export function parsePollingSnapshot(payload: unknown): PollingSnapshot | null {
     return null
   }
 
-  const latest = bundestagSurveys[0]
-  const results = latest.Results
-  if (!results || typeof results !== 'object') {
+  let latest: Record<string, unknown> | null = null
+  let cdu: number | null = null
+  let afd: number | null = null
+  let spd: number | null = null
+  let greens: number | null = null
+  let left: number | null = null
+
+  for (const survey of bundestagSurveys) {
+    const results = survey.Results
+    if (!results || typeof results !== 'object') {
+      continue
+    }
+
+    const resultMap = results as Record<string, unknown>
+    const tempCdu = asNumber(resultMap[PARTY_IDS.cdu])
+    const tempAfd = asNumber(resultMap[PARTY_IDS.afd])
+    const tempSpd = asNumber(resultMap[PARTY_IDS.spd])
+    const tempGreens = asNumber(resultMap[PARTY_IDS.greens])
+    const tempLeft = asNumber(resultMap[PARTY_IDS.left])
+
+    if ([tempCdu, tempAfd, tempSpd, tempGreens, tempLeft].every((value) => value !== null)) {
+      latest = survey
+      cdu = tempCdu
+      afd = tempAfd
+      spd = tempSpd
+      greens = tempGreens
+      left = tempLeft
+      break
+    }
+  }
+
+  if (!latest || cdu === null || afd === null || spd === null || greens === null || left === null) {
     return null
   }
 
-  const resultMap = results as Record<string, unknown>
-
-  const cdu = asNumber(resultMap[PARTY_IDS.cdu])
-  const afd = asNumber(resultMap[PARTY_IDS.afd])
-  const spd = asNumber(resultMap[PARTY_IDS.spd])
-  const greens = asNumber(resultMap[PARTY_IDS.greens])
-  const left = asNumber(resultMap[PARTY_IDS.left])
-
-  if ([cdu, afd, spd, greens, left].some((value) => value === null)) {
-    return null
-  }
-
-  const selectedTotal = (cdu ?? 0) + (afd ?? 0) + (spd ?? 0) + (greens ?? 0) + (left ?? 0)
+  const selectedTotal = cdu + afd + spd + greens + left
   const others = Math.max(0, roundOne(100 - selectedTotal))
 
   const bars = BASE_BARS.map((bar) => {
     const pctByKey: Record<PollBar['key'], number> = {
-      cdu: cdu ?? bar.pct,
-      afd: afd ?? bar.pct,
-      spd: spd ?? bar.pct,
-      greens: greens ?? bar.pct,
-      left: left ?? bar.pct,
+      cdu: cdu!,
+      afd: afd!,
+      spd: spd!,
+      greens: greens!,
+      left: left!,
       others,
     }
 

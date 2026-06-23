@@ -150,6 +150,7 @@ export default function App() {
             sourceMethodUrl={POLLING_API_DOCS_URL}
             isBrownActive={isBrownActive}
             onToggleBrown={() => setIsBrownActive((current) => !current)}
+            instituteName={pollingSnapshot?.instituteName ?? POLLING_LOCKED_INSTITUTE}
           />
 
           <WhySection t={t} />
