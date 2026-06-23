@@ -276,6 +276,12 @@
   color: #b45309 !important;
 }
 
+/* Ensure CDU bar stays black when switched to light theme */
+.light-theme .cdu-bar {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
 @layer utilities {
   .animate-float { animation: floatSubtle 6s ease-in-out infinite; }
   .animate-pulse-glow { animation: pulseGlow 8s ease-in-out infinite; }

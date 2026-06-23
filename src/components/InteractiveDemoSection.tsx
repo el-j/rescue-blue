@@ -196,7 +196,7 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
                 <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-white' : 'text-neutral-400'}`}>{pctLabel} %</span>
                 <button
                   onClick={bar.isAfd ? () => onToggleBrown() : undefined}
-                  className={`w-full rounded-t-md transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''}`}
+                  className={`w-full rounded-t-md transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
                   style={{ height: `${heightPx}px` }}
                   aria-label={bar.isAfd ? (isBrownActive ? t.demoReset : t.demoSwitch) : label}
                   disabled={!bar.isAfd}
