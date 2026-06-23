@@ -11,13 +11,22 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#1d4ed8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/rescue-blue/assets/index-ip8fBDAM.js"></script>
-    <link rel="stylesheet" crossorigin href="/rescue-blue/assets/index-CaKrASWV.css">
+    <script>
+      (function() {
+        const stored = localStorage.getItem('rescue-blue-theme');
+        const theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        if (theme === 'light') {
+          document.documentElement.classList.add('light-theme');
+          document.documentElement.style.backgroundColor = '#f8fafc';
+        } else {
+          document.documentElement.style.backgroundColor = '#171717';
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/rescue-blue/assets/index-_ILewGH2.js"></script>
+    <link rel="stylesheet" crossorigin href="/rescue-blue/assets/index-1nNs6LaV.css">
   </head>
-  <body style="font-family: 'Inter', system-ui, sans-serif; background: #171717; margin: 0;">
+  <body style="font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg-primary, #171717); margin: 0; color: var(--text-primary, #f5f5f5);">
     <div id="root"></div>
   </body>
 </html>
