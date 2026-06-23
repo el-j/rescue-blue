@@ -55,7 +55,7 @@ describe('App', () => {
     // Open language picker
     await user.click(screen.getByRole('button', { name: 'Sprache' }))
     // Click English option
-    await user.click(screen.getByRole('button', { name: /🇬🇧\s*English/i }))
+    await user.click(screen.getByRole('button', { name: /en\s*English/i }))
 
     expect(screen.getByRole('heading', { name: 'Rescue Blue.' })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(2)
