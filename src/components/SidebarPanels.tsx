@@ -1,20 +1,16 @@
-import { ChevronDown, ChevronUp, ExternalLink, Users } from 'lucide-react'
+import { ExternalLink, Users } from 'lucide-react'
 import { PETITION_URL } from '../petition'
-import type { Facts, Faqs, Locale, Translation } from '../i18n'
+import type { Facts, Translation } from '../i18n'
 
 interface SidebarProps {
-  lang: Locale
   t: Translation
   ctaBody: string
   formattedSignatureCount: string | undefined
   isLoadingSignatures: boolean
   facts: Facts
-  faqs: Faqs
-  openFaq: number | null
-  onToggleFaq: (index: number) => void
 }
 
-export function SidebarPanels({ lang, t, ctaBody, formattedSignatureCount, isLoadingSignatures, facts, faqs, openFaq, onToggleFaq }: SidebarProps) {
+export function SidebarPanels({ t, ctaBody, formattedSignatureCount, isLoadingSignatures, facts }: SidebarProps) {
   return (
     <aside className="space-y-6 lg:col-span-4 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pr-0.5">
       <div className="rounded-2xl border border-blue-800/40 bg-linear-to-br from-blue-900/40 to-blue-950/60 p-6 shadow-xl">

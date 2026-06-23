@@ -182,15 +182,11 @@ export default function App() {
         </div>
 
         <SidebarPanels
-          lang={lang}
           t={t}
           ctaBody={ctaBody}
           formattedSignatureCount={formattedSignatureCount}
           isLoadingSignatures={isLoadingSignatures}
           facts={facts}
-          faqs={faqs}
-          openFaq={openFaq}
-          onToggleFaq={setOpenFaq}
         />
       </main>
 

@@ -30,7 +30,6 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
   useEffect(() => {
     if (isBrownActive && !hasStartedDrainRef.current) {
       hasStartedDrainRef.current = true
-      setAnimatedAfdPct(originalAfdPct)
 
       const totalDuration = 300000 // 5 minutes in milliseconds
       const intervalMs = 50
@@ -39,6 +38,7 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
 
       // Small delay before starting the drain for dramatic effect
       const startDelay = setTimeout(() => {
+        setAnimatedAfdPct(originalAfdPct)
         timerRef.current = setInterval(() => {
           setAnimatedAfdPct((prev) => {
             if (prev === null) return null
@@ -60,10 +60,17 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
 
     if (!isBrownActive) {
       hasStartedDrainRef.current = false
-      setAnimatedAfdPct(null)
       if (timerRef.current) {
         clearInterval(timerRef.current)
         timerRef.current = null
+      }
+      
+      const resetTimeout = setTimeout(() => {
+        setAnimatedAfdPct(null)
+      }, 0)
+
+      return () => {
+        clearTimeout(resetTimeout)
       }
     }
   }, [isBrownActive, originalAfdPct])
