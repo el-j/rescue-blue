@@ -16,8 +16,8 @@ interface SidebarProps {
 
 export function SidebarPanels({ lang, t, ctaBody, formattedSignatureCount, isLoadingSignatures, facts, faqs, openFaq, onToggleFaq }: SidebarProps) {
   return (
-    <aside className="space-y-6 lg:col-span-4">
-      <div className="sticky top-20 rounded-2xl border border-blue-800/40 bg-linear-to-br from-blue-900/40 to-blue-950/60 p-6 shadow-xl">
+    <aside className="space-y-6 lg:col-span-4 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pr-0.5">
+      <div className="rounded-2xl border border-blue-800/40 bg-linear-to-br from-blue-900/40 to-blue-950/60 p-6 shadow-xl">
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/20">
           <span className="text-2xl">✍️</span>
         </div>
@@ -32,12 +32,12 @@ export function SidebarPanels({ lang, t, ctaBody, formattedSignatureCount, isLoa
           {t.ctaBtn} <ExternalLink size={15} />
         </a>
         <p className="text-center text-xs text-neutral-600">{t.ctaInfo}</p>
-      </div>
+      </div> 
 
       <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
         <div className="mb-3 flex items-center justify-between">
           <span className="text-sm font-bold text-neutral-300">
-            {lang === 'de' ? 'Unterschriften' : 'Signatures'}
+            {t.sidebarSignatures}
           </span>
           <Users size={16} className="text-blue-400" aria-hidden="true" />
         </div>
@@ -47,13 +47,13 @@ export function SidebarPanels({ lang, t, ctaBody, formattedSignatureCount, isLoa
             : (formattedSignatureCount ?? '—')}
         </p>
         <p className="mt-1 text-xs text-neutral-500">
-          {lang === 'de' ? 'und es werden täglich mehr!' : 'and growing every day!'}
+          {t.sidebarGrowing}
         </p>
       </div>
 
       <div className="space-y-4 rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
         <h4 className="text-sm font-black tracking-wider text-white uppercase">
-          {lang === 'de' ? 'Schnell-Fakten' : 'Quick Facts'}
+          {t.sidebarQuickFacts}
         </h4>
         {facts.map((fact, index) => (
           <div key={index} className="flex items-start gap-3">
@@ -64,28 +64,6 @@ export function SidebarPanels({ lang, t, ctaBody, formattedSignatureCount, isLoa
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
-        <h4 className="mb-4 text-sm font-black tracking-wider text-white uppercase">FAQ</h4>
-        <div className="space-y-2">
-          {faqs.map((faq, index) => (
-            <div key={index} className="overflow-hidden rounded-xl border border-neutral-800">
-              <button
-                onClick={() => onToggleFaq(index)}
-                className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left text-sm font-semibold text-neutral-300 transition-all hover:bg-neutral-900 hover:text-white"
-                aria-expanded={openFaq === index}
-                type="button"
-              >
-                <span>{faq.q}</span>
-                {openFaq === index ? <ChevronUp size={14} className="shrink-0 text-blue-400" /> : <ChevronDown size={14} className="shrink-0 text-neutral-500" />}
-              </button>
-              {openFaq === index && (
-                <div className="border-t border-neutral-800 px-4 pt-3 pb-3 text-xs leading-relaxed text-neutral-400">{faq.a}</div>
-              )}
-            </div>
-          ))}
-        </div>
       </div>
     </aside>
   )

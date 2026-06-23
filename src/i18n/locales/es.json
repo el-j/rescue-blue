@@ -1,0 +1,192 @@
+{
+  "translations": {
+    "navCampaign": "Campaña Change.org",
+    "navWhy": "¿Por qué azul?",
+    "navScience": "Ciencia y Derecho",
+    "navLetter": "Carta abierta",
+    "navCulture": "Patrimonio cultural",
+    "navSign": "Firmar ahora",
+    "navShare": "Compartir petición",
+    "shareTitle": "Compartir petición",
+    "shareSubtitle": "Escanea el código QR o copia el enlace",
+    "shareDownloadQr": "Descargar código QR",
+    "shareCopyLink": "Copiar enlace",
+    "shareLinkCopied": "¡Copiado!",
+    "shareClose": "Cerrar",
+    "badge": "Ética visual de medios y Preservación cultural",
+    "heroH1": "Salvemos el Azul.",
+    "heroSub": "Por una elección de color justa.",
+    "heroBody": "Nuestro lenguaje y simbolismo del color están históricamente arraigados en la positividad. Exigimos a ARD, ZDF y las cadenas privadas que corrijan sus códigos de color políticos: la AfD debe representarse en marrón en los gráficos, no en azul.",
+    "sigCount": "Ya",
+    "sigSupport": "firmantes",
+    "sigLive": "Datos en tiempo real",
+    "sigFallback": "Datos locales",
+    "heroImgCaption": "Nuestro visual de campaña",
+    "heroImgSub": "Crear verdad visual, preservar el Azul lingüístico.",
+    "heroImgCta": "Firmar en Change.org",
+    "demoSandbox": "Modo sandbox",
+    "demoH2": "Comparación interactiva de colores",
+    "demoDesc": "Haz clic en el botón o la barra para reemplazar el código azul de minimización por el marrón históricamente exacto.",
+    "demoSourceLabel": "Base de datos",
+    "demoSourceLive": "En vivo desde la API de encuestas",
+    "demoSourceFallback": "Valor de respaldo local",
+    "demoSourceApi": "Fuente: encuesta dominical DAWUM (Bundestag)",
+    "demoSourceInstitute": "Instituto",
+    "demoSourceDate": "Fecha de encuesta",
+    "demoSourceFieldwork": "Trabajo de campo",
+    "demoSourceSample": "Muestra",
+    "demoSourceMethod": "Método",
+    "demoSourceStand": "Actualizado",
+    "demoSourceButton": "Abrir fuente y método",
+    "demoSourceWhyInstituteLabel": "¿Por qué INSA?",
+    "demoSourceWhyInstituteTooltip": "Este gráfico utiliza intencionalmente un solo instituto fijo (INSA) para mantener la consistencia metodológica de la serie temporal.",
+    "demoOption": "Opción de visualización",
+    "demoQuestion": "¿Qué elección de color es precisa e históricamente honesta?",
+    "demoReset": "Restablecer a azul",
+    "demoSwitch": "Cambiar a marrón",
+    "dreamBanner": "Escenario soñado — Lo que nuestra petición podría lograr",
+    "dreamBody": "Con cada firma crece la presión sobre los medios. Este escenario muestra cómo podría ser un mundo donde los votantes ven a través del fascismo y se alejan.",
+    "comparisonToggle": "Mostrar mayoría",
+    "comparisonTitle": "AfD vs. Mayoría democrática",
+    "comparisonRatio": "× más personas NO votan por la AfD",
+    "comparisonMessage": "La abrumadora mayoría apoya la democracia.",
+    "allOthersLabel": "Todos los demás",
+    "whyH2": "Los antecedentes de la mascarada del color",
+    "whyIntro": "La investigación científica sobre encuadre muestra: la percepción de los actores políticos está sustancialmente influenciada por las señales visuales utilizadas para representarlos.",
+    "whyCard1H": "La minimización visual",
+    "whyCard1": "El azul es el color del cielo, del mar y de las fuerzas de paz. Calma, genera confianza y señala inocuidad. Usar esta codificación emocional para un grupo völkisch-nacionalista y en parte anticonstitucional es un error fatal de ética mediática.",
+    "whyCard2H": "La asignación histórica",
+    "whyCard2": "El color político marrón está firmemente asociado en la memoria colectiva de Alemania con el nacionalismo völkisch y el extremismo de derecha. Los estándares gráficos honestos deben hacer visible esta continuidad histórica.",
+    "cultureH": "Salvar el patrimonio cultural",
+    "cultureSub": "Esta es la propiedad lingüística de nuestra comunidad.",
+    "tabLang": "Tesoro lingüístico",
+    "tabSym": "Simbolismo e Historia",
+    "letterH": "La carta abierta",
+    "letterSub": "Elige el público objetivo para ver cómo responsabilizamos a las redacciones y órganos de control:",
+    "targetPublic": "Radiodifusores públicos",
+    "targetPrivate": "Medios privados",
+    "targetCouncil": "Consejos de radiodifusión",
+    "ctaBanner": "¡Firma ahora y salva el Azul!",
+    "ctaBodyPre": "Más de",
+    "ctaBodyMid": "personas ya han firmado esta petición. Demuestra que apoyas un reportaje visual honesto.",
+    "ctaBodyLoading": "Cargando recuento de firmas desde Change.org.",
+    "ctaBtn": "Firmar en Change.org",
+    "ctaInfo": "Gratis · Sin publicidad · Solo tu voz cuenta",
+    "footerTagline": "Una campaña por la integridad mediática y la protección del patrimonio cultural del color azul.",
+    "footerLink": "Ver petición en Change.org",
+    "footerImprint": "Aviso legal",
+    "alsoSupportH": "Apoyar más peticiones",
+    "alsoSupportSub": "Otras peticiones que luchan por una Alemania democrática fuerte.",
+    "alsoSupportBtn": "Firmar",
+    "sidebarSignatures": "Firmas",
+    "sidebarGrowing": "¡y creciendo cada día!",
+    "sidebarQuickFacts": "Datos rápidos",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "langLabel": "Idioma",
+    "faqTitle": "Preguntas frecuentes",
+    "faqSub": "Preguntas frecuentes sobre la campaña y nuestras demandas."
+  },
+  "sayings": {
+    "sprache": [
+      { "phrase": "«Blau machen» (Hacer novillos)", "origin": "Edad Media / Artesanía de tintorería", "desc": "El término proviene del lunes libre de los tintoreros. Mientras la lana se oxidaba al aire y se volvía azul, el trabajo descansaba. Una hermosa metáfora alemana para el descanso." },
+      { "phrase": "«Ins Blaue hinein» (Hacia lo azul)", "origin": "Romanticismo natural", "desc": "Un viaje o acto despreocupado sin destino fijo, llevado por la pura confianza, curiosidad y espíritu aventurero pacífico." },
+      { "phrase": "«Das Blaue vom Himmel versprechen» (Prometer el azul del cielo)", "origin": "Metáfora poética", "desc": "El azul representa aquí la bóveda celeste infinita y majestuosa — una imagen maravillosa llena de sueños y anhelos." }
+    ],
+    "symbolik": [
+      { "phrase": "La Flor Azul", "origin": "Romanticismo (Novalis)", "desc": "El símbolo más importante de la nostalgia, el amor, el conocimiento y el desarrollo del espíritu humano. Un patrimonio cultural invaluable." },
+      { "phrase": "Los Cascos Azules de la ONU", "origin": "Trabajo de paz mundial", "desc": "El azul fue elegido deliberadamente por la ONU porque representa universalmente la neutralidad, la desescalada y la voluntad de una paz duradera." },
+      { "phrase": "Azul real y Ultramar", "origin": "Historia del arte y la cultura", "desc": "Durante siglos más valioso que el oro (del lapislázuli). En el Renacimiento, este azul precioso estaba reservado exclusivamente para las representaciones más nobles." }
+    ]
+  },
+  "openLetters": {
+    "oeffentlich": {
+      "to": "A: Redacciones de ARD-aktuell y ZDF",
+      "subject": "Asunto: Distorsión visual y Responsabilidad de encuadre",
+      "body": [
+        "Estimados señoras y señores,",
+        "Como radiodifusores públicos, ustedes tienen la responsabilidad legal de proporcionar información objetiva e históricamente contextualizada al público.",
+        "El uso del color azul para actores que los tribunales han confirmado como extremistas de derecha probados constituye una minimización visual de su ideología.",
+        "Les pedimos: Pongan fin a esta práctica y cambien al color marrón históricamente auténtico en sus informes."
+      ]
+    },
+    "privat": {
+      "to": "A: Redacciones de ProSiebenSat.1, RTL Group y dpa",
+      "subject": "Asunto: Valores de color predeterminados en infografías",
+      "body": [
+        "Estimados señoras y señores,",
+        "A través de sus portales de noticias y canales dpa, ustedes moldean la percepción diaria de millones de personas en Alemania.",
+        "Al elegir el azul como color para la AfD en infografías, contribuyen a la minimización visual de un partido en parte anticonstitucional.",
+        "Exigimos: Ajusten sus estándares editoriales de color a la realidad histórica."
+      ]
+    },
+    "rundfunkrat": {
+      "to": "A: Consejos de Radiodifusión ARD y Consejo de Televisión ZDF",
+      "subject": "Asunto: Deber de supervisión sobre el encuadre visual",
+      "body": [
+        "Estimados señoras y señores,",
+        "Como órganos de supervisión de los radiodifusores públicos, están obligados a supervisar el cumplimiento de los principios periodísticos.",
+        "El uso consistente del azul para la AfD en todas las representaciones gráficas viola el principio de la formación de opinión no distorsionada.",
+        "Les pedimos que ejerzan su deber de supervisión e introduzcan una directriz vinculante para la asignación históricamente exacta de colores a los partidos políticos."
+      ]
+    }
+  },
+  "faqs": [
+    { "q": "¿Por qué el azul debería ser problemático?", "a": "El azul es el color autoelegido de la AfD, pero también es el color de la paz, del cielo y de las fuerzas de paz de la ONU. Al adoptar esta autodescripción sin crítica, los medios transfieren la asociación emocional de inocuidad al partido." },
+    { "q": "¿No es esto censura?", "a": "No. Se trata de estándares de ética mediática y honestidad histórica. Los medios toman decisiones editoriales cada día — exigir códigos de color históricamente exactos es un debate social legítimo, no censura." },
+    { "q": "¿Tiene la campaña posibilidades de éxito?", "a": "Muchas personas ya han firmado. Las organizaciones de medios responden a la presión pública. Cada firma cuenta." },
+    { "q": "¿Quién está detrás de esta campaña?", "a": "La petición fue iniciada en Change.org — una plataforma abierta para el compromiso cívico. Son ciudadanos comprometidos que defienden la integridad de los medios." }
+  ],
+  "facts": [
+    { "emoji": "🎨", "label": "Azul", "desc": "Color del cielo, la paz y la ONU" },
+    { "emoji": "📺", "label": "ARD, ZDF y otros medios", "desc": "Usan azul para la AfD en gráficos" },
+    { "emoji": "🏛️", "label": "Históricamente", "desc": "Marrón = símbolo del extremismo de derecha" },
+    { "emoji": "⚖️", "label": "Protección constitucional", "desc": "Partes de la AfD clasificadas como extremistas probadas" }
+  ],
+  "science": {
+    "sectionH": "Contexto científico y jurídico de medios",
+    "sectionSub": "Hoja informativa: Encuadre visual y la obligación de codificación de color político exacta",
+    "part1H": "Parte 1: Fundamentos de ciencias de la comunicación y ética de medios",
+    "foundations": [
+      {
+        "title": "La dimensión psicológica del \"encuadre visual\" (efecto halo)",
+        "points": [
+          { "label": "La psicología del azul", "text": "Los tonos cian claro y azul están universalmente asociados con atributos como credibilidad, fiabilidad, desescalada y fiabilidad institucional." },
+          { "label": "La trampa de la minimización visual", "text": "Cuando una fuerza política oficialmente clasificada como extremista de derecha probada es consistentemente representada en este color primario calmante, surge un contraste cognitivo: el encuadre visual enmascara el radicalismo ideológico de los actores (efecto halo)." }
+        ]
+      },
+      {
+        "title": "Autonomía editorial y precedentes periodísticos",
+        "points": [
+          { "label": "El precedente taz", "text": "Durante la campaña electoral federal, el diario taz decidió deliberadamente representar la barra de la AfD en marrón en lugar de azul, demostrando que estas desviaciones ya son prácticas reconocidas en el periodismo alemán." },
+          { "label": "Varianza de color establecida", "text": "Los medios se desvían regularmente de las directrices oficiales de CI. La codificación de color es una herramienta de diseño periodístico flexible." }
+        ]
+      }
+    ],
+    "part2H": "Parte 2: Refutación sistemática de objeciones legales y estratégicas",
+    "objections": [
+      {
+        "title": "Objeción 1: \"El principio de neutralidad mediática prohíbe el recoloreado.\"",
+        "rebuttals": [
+          { "label": "Sin obligación de simetría absoluta", "text": "Según la jurisprudencia constante del Tribunal Constitucional Federal, se requiere igualdad de oportunidades graduada y acceso justo — no simetría puramente formal y ciega." },
+          { "label": "La Oficina de Protección Constitucional como referencia", "text": "La clasificación confirmada por tribunales como «extremista de derecha probada» es un hallazgo objetivo y verificado." },
+          { "label": "Sin derecho a protección visual", "text": "Los partidos políticos no tienen derecho constitucional a que los medios independientes adopten su autopresentación sin filtrar." }
+        ]
+      },
+      {
+        "title": "Objeción 2: \"Los medios deben seguir la identidad corporativa de los partidos.\"",
+        "rebuttals": [
+          { "label": "Distancia periodística vs. adopción de PR", "text": "Adoptar ciegamente la identidad visual de los actores políticos contradice el principio de distancia periodística." },
+          { "label": "La verdad visual como deber", "text": "Cuando las agencias de protección constitucional documentan diferencias significativas, tratar a todos los partidos por igual en un «azul estándar» induce a error al público." }
+        ]
+      },
+      {
+        "title": "Objeción 3: \"El recoloreado da munición al narrativo victimista del partido.\"",
+        "rebuttals": [
+          { "label": "Estrategia central proactiva", "text": "Los análisis de la comunicación de extrema derecha muestran: el «narrativo de víctima mediática» es una estrategia estructural proactiva, construida independientemente de las decisiones editoriales reales." },
+          { "label": "Sin sumisión preventiva", "text": "Cuando las redacciones renuncian a los ajustes éticos necesarios por miedo a la reacción de un partido, subordinan su independencia editorial a la estrategia de comunicación de ese partido." }
+        ]
+      }
+    ]
+  }
+}

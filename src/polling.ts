@@ -44,7 +44,7 @@ export const POLLING_SOURCES = [
 ] as const
 
 const BASE_BARS: PollBar[] = [
-  { key: 'cdu', pct: 22, labelDe: 'CDU/CSU', labelEn: 'CDU/CSU', defaultColor: 'bg-neutral-950 border border-neutral-700', isAfd: false },
+  { key: 'cdu', pct: 22, labelDe: 'CDU/CSU', labelEn: 'CDU/CSU', defaultColor: 'bg-black border border-black', isAfd: false },
   { key: 'afd', pct: 29, labelDe: 'AfD', labelEn: 'AfD', defaultColor: 'bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20', isAfd: true },
   { key: 'spd', pct: 13, labelDe: 'SPD', labelEn: 'SPD', defaultColor: 'bg-red-600', isAfd: false },
   { key: 'greens', pct: 14, labelDe: 'GRÜNE', labelEn: 'GREENS', defaultColor: 'bg-green-600', isAfd: false },

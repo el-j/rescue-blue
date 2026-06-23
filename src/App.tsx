@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
@@ -16,18 +16,25 @@ import {
   SiteFooter,
   SiteHeader,
   WhySection,
+  FaqSection,
 } from './components'
 import {
-  FAQS,
-  FACTS,
-  SCIENCE_CONTENT,
-  blueSayings,
+  getTranslation,
+  getSayings,
+  getOpenLetters,
+  getFaqs,
+  getFacts,
+  getScienceContent,
   getLocaleCode,
-  openLetters,
-  translations,
+  detectLocale,
+  persistLocale,
+  detectTheme,
+  persistTheme,
+  applyTheme,
   type ContentTab,
   type LetterTarget,
   type Locale,
+  type Theme,
 } from './i18n'
 import { useSignatureCount } from './hooks/useSignatureCount'
 import { usePollingSnapshot } from './hooks/usePollingSnapshot'
@@ -36,7 +43,8 @@ import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
 const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-rescue-blue.png`
 
 export default function App() {
-  const [lang, setLang] = useState<Locale>('de')
+  const [lang, setLang] = useState<Locale>(detectLocale)
+  const [theme, setTheme] = useState<Theme>(detectTheme)
   const [isBrownActive, setIsBrownActive] = useState(false)
   const [activeTab, setActiveTab] = useState<ContentTab>('sprache')
   const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
@@ -46,12 +54,30 @@ export default function App() {
   const { signatureCount, isLive, isLoading: isLoadingSignatures } = useSignatureCount()
   const { pollingSnapshot, isLive: isLivePollingData } = usePollingSnapshot()
 
-  const t = translations[lang]
-  const science = SCIENCE_CONTENT[lang]
-  const sayings = blueSayings[lang]
-  const letters = openLetters[lang]
-  const faqs = FAQS[lang]
-  const facts = FACTS[lang]
+  // Apply theme on mount and whenever it changes
+  useEffect(() => {
+    applyTheme(theme)
+  }, [theme])
+
+  const handleChangeLanguage = (newLang: Locale) => {
+    setLang(newLang)
+    persistLocale(newLang)
+  }
+
+  const handleToggleTheme = () => {
+    setTheme((current) => {
+      const next = current === 'dark' ? 'light' : 'dark'
+      persistTheme(next)
+      return next
+    })
+  }
+
+  const t = getTranslation(lang)
+  const science = getScienceContent(lang)
+  const sayings = getSayings(lang)
+  const letters = getOpenLetters(lang)
+  const faqs = getFaqs(lang)
+  const facts = getFacts(lang)
   const pollingBars = pollingSnapshot?.bars ?? getDefaultPollingBars()
   const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
   const ctaBody = formattedSignatureCount
@@ -91,10 +117,16 @@ export default function App() {
     : t.demoSourceFallback
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-neutral-900 text-neutral-100 antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
+    <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
       <div className="pointer-events-none fixed top-0 left-1/2 h-112.5 w-full max-w-7xl -translate-x-1/2 rounded-full bg-blue-500/10 blur-[150px] animate-pulse-glow" />
 
-      <SiteHeader lang={lang} t={t} onToggleLanguage={() => setLang((current) => (current === 'de' ? 'en' : 'de'))} />
+      <SiteHeader
+        lang={lang}
+        t={t}
+        theme={theme}
+        onChangeLanguage={handleChangeLanguage}
+        onToggleTheme={handleToggleTheme}
+      />
       <div className="h-14 md:h-16" aria-hidden="true" />
       <HeroSection
         lang={lang}
@@ -139,6 +171,13 @@ export default function App() {
             letters={letters}
             activeLetterTarget={activeLetterTarget}
             onChangeTarget={setActiveLetterTarget}
+          />
+
+          <FaqSection
+            t={t}
+            faqs={faqs}
+            openFaq={openFaq}
+            onToggleFaq={setOpenFaq}
           />
         </div>
 

@@ -1,0 +1,192 @@
+{
+  "translations": {
+    "navCampaign": "Change.org Kampagne",
+    "navWhy": "Warum Blau?",
+    "navScience": "Wissenschaft & Recht",
+    "navLetter": "Offener Brief",
+    "navCulture": "Kulturerbe",
+    "navSign": "Jetzt unterzeichnen",
+    "navShare": "Petition teilen",
+    "shareTitle": "Petition teilen",
+    "shareSubtitle": "Scanne den QR-Code oder kopiere den Link",
+    "shareDownloadQr": "QR-Code herunterladen",
+    "shareCopyLink": "Link kopieren",
+    "shareLinkCopied": "Kopiert!",
+    "shareClose": "Schließen",
+    "badge": "Visuelle Medienethik & Kulturpflege",
+    "heroH1": "Blau retten.",
+    "heroSub": "Für eine treffende Farbwahl.",
+    "heroBody": "Unsere Sprache und Farbsymbolik sind historisch verankert. Wir fordern von ARD, ZDF und den privaten Sendern die Richtigstellung politischer Farbcodes: Die AfD gehört in Diagrammen in Braun dargestellt, nicht Blau.",
+    "sigCount": "Bereits",
+    "sigSupport": "Unterstützer",
+    "sigLive": "Echtzeit-Daten",
+    "sigFallback": "Stand lokal",
+    "heroImgCaption": "Unser Kampagnen-Visual",
+    "heroImgSub": "Visuelle Wahrheit schaffen, das sprachliche Blau bewahren.",
+    "heroImgCta": "Auf Change.org unterzeichnen",
+    "demoSandbox": "Sandbox-Modus",
+    "demoH2": "Interaktiver Farbvergleich",
+    "demoDesc": "Klicke auf den Schalter oder den Balken, um den blauen Verharmlosungs-Code durch das historisch zutreffende Braun zu ersetzen.",
+    "demoSourceLabel": "Datengrundlage",
+    "demoSourceLive": "Live aus Sonntagsfrage-API",
+    "demoSourceFallback": "Lokaler Fallback-Wert",
+    "demoSourceApi": "Quelle: DAWUM Sonntagsfrage (Bundestag)",
+    "demoSourceInstitute": "Institut",
+    "demoSourceDate": "Erhebung",
+    "demoSourceFieldwork": "Feldzeit",
+    "demoSourceSample": "Stichprobe",
+    "demoSourceMethod": "Methode",
+    "demoSourceStand": "Stand",
+    "demoSourceButton": "Quelle & Methode öffnen",
+    "demoSourceWhyInstituteLabel": "Warum INSA?",
+    "demoSourceWhyInstituteTooltip": "Die Grafik nutzt bewusst nur ein festes Institut (INSA), damit die Zeitreihe methodisch konsistent bleibt und keine Sprünge durch Institutwechsel entstehen.",
+    "demoOption": "Visualisierungs-Option",
+    "demoQuestion": "Welche Farbwahl ist treffend und historisch ehrlich?",
+    "demoReset": "Zurücksetzen auf Blau",
+    "demoSwitch": "Jetzt umfärben auf Braun",
+    "dreamBanner": "Zukunftsvision — Was unsere Petition bewirken kann",
+    "dreamBody": "Mit jeder Unterschrift wächst der Druck auf die Medien. Dieses Szenario zeigt, wie eine Welt aussehen könnte, in der Wähler Faschismus durchschauen und sich abwenden.",
+    "comparisonToggle": "Mehrheit zeigen",
+    "comparisonTitle": "AfD vs. Demokratische Mehrheit",
+    "comparisonRatio": "× so viele Menschen wählen NICHT die AfD",
+    "comparisonMessage": "Die überwältigende Mehrheit steht für Demokratie.",
+    "allOthersLabel": "Alle Anderen",
+    "whyH2": "Die Hintergründe des Farb-Fasching",
+    "whyIntro": "Wissenschaftliche Frame-Forschung belegt: Die Wahrnehmung politischer Akteure wird maßgeblich von den visuellen Signalen bestimmt, mit denen sie in Sendungen wie dem ZDF heute-journal oder der ARD Tagesschau konfiguriert werden.",
+    "whyCard1H": "Die visuelle Verharmlosung",
+    "whyCard1": "Blau ist die Farbe des Himmels, des Meeres und der Friedenskräfte. Sie beruhigt, schafft Vertrauen und signalisiert Unbedenklichkeit. Diese emotionale Kodierung für eine völkisch-nationalistische und in Teilen verfassungsfeindliche Gruppierung zu verwenden, ist ein fataler medienethischer Fehler.",
+    "whyCard2H": "Die historische Zuordnung",
+    "whyCard2": "Die politische Farbe Braun ist im kollektiven Gedächtnis Deutschlands fest mit völkischem Nationalismus und Rechtsextremismus assoziiert. Eine ehrliche Grafikordnung muss Mut beweisen und diese historische Kontinuität visuell kenntlich machen.",
+    "cultureH": "Kulturelles Erbe retten",
+    "cultureSub": "Das ist das sprachliche Eigentum unserer Gemeinschaft.",
+    "tabLang": "Sprachschatz",
+    "tabSym": "Symbolik & Geschichte",
+    "letterH": "Der Offene Brief",
+    "letterSub": "Wähle die Zielgruppe aus, um zu sehen, wie wir die Redaktionen und Kontrollgremien in die Pflicht nehmen:",
+    "targetPublic": "Öffentl.-Rechtliche",
+    "targetPrivate": "Private Medien",
+    "targetCouncil": "Rundfunkräte",
+    "ctaBanner": "Jetzt unterzeichnen und Blau retten!",
+    "ctaBodyPre": "Über",
+    "ctaBodyMid": "Menschen haben diese Petition bereits unterzeichnet. Zeige auch du, dass du für eine ehrliche visuelle Berichterstattung einstehst.",
+    "ctaBodyLoading": "Aktuelle Unterzeichnerzahl wird von Change.org geladen.",
+    "ctaBtn": "Jetzt auf Change.org unterzeichnen",
+    "ctaInfo": "Kostenlos · Keine Werbung · Nur deine Stimme zählt",
+    "footerTagline": "Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.",
+    "footerLink": "Zur Petition auf Change.org",
+    "footerImprint": "Impressum",
+    "alsoSupportH": "Weitere Petitionen unterstützen",
+    "alsoSupportSub": "Andere Petitionen, die für ein starkes demokratisches Deutschland kämpfen.",
+    "alsoSupportBtn": "Unterzeichnen",
+    "sidebarSignatures": "Unterschriften",
+    "sidebarGrowing": "und es werden täglich mehr!",
+    "sidebarQuickFacts": "Schnell-Fakten",
+    "themeLight": "Hell",
+    "themeDark": "Dunkel",
+    "langLabel": "Sprache",
+    "faqTitle": "FAQ",
+    "faqSub": "Häufig gestellte Fragen rund um die Kampagne und unsere Forderungen."
+  },
+  "sayings": {
+    "sprache": [
+      { "phrase": "Blau machen", "origin": "Mittelalter / Färberhandwerk", "desc": "Der Begriff stammt vom freien Montag der Färber. Während die Wolle an der Luft oxidierte und blau wurde, ruhte die Arbeit. Ein schönes deutsches Sinnbild für Erholung und Selbstfürsorge." },
+      { "phrase": "Ins Blaue hinein", "origin": "Naturromantik", "desc": "Eine unbeschwerte Reise oder Tat ohne festes Ziel, getragen von purem Vertrauen, Neugierde und friedlicher Abenteuerlust." },
+      { "phrase": "Das Blaue vom Himmel versprechen", "origin": "Poetische Metaphorik", "desc": "Blau steht hier für das unendliche, majestätische Himmelsgewölbe – ein wunderbares Bild voller Träume und Sehnsüchte." }
+    ],
+    "symbolik": [
+      { "phrase": "Die blaue Blume", "origin": "Epoche der Romantik (Novalis)", "desc": "Das wichtigste Symbol für Sehnsucht, Liebe, Erkenntnis und die Entfaltung des menschlichen Geistes. Ein unschätzbares Kulturgut." },
+      { "phrase": "Blauhelme der Vereinten Nationen", "origin": "Globale Friedensarbeit", "desc": "Blau wurde von der UN gezielt gewählt, weil es universell für Neutralität, Deeskalation, Zuversicht und den Willen zum dauerhaften Frieden steht." },
+      { "phrase": "Königsblau & Ultramarin", "origin": "Kunst- und Kulturgeschichte", "desc": "Jahrhundertelang wertvoller als Gold (aus Lapislazuli). In der Renaissance war dieses kostbare Blau ausschließlich der Darstellung des Erhabensten vorbehalten." }
+    ]
+  },
+  "openLetters": {
+    "oeffentlich": {
+      "to": "AN: Chefredaktionen ARD-aktuell & ZDF-Hauptredaktion",
+      "subject": "Betreff: Visuelle Verzerrung & Frame-Verantwortung",
+      "body": [
+        "Sehr geehrte Damen und Herren,",
+        "als öffentlich-rechtliche Medienhäuser tragen Sie die gesetzliche Verantwortung für die objektive, historisch und analytisch einordnende Information der Bevölkerung.",
+        "Die Verwendung der Farbe Blau für Akteure, die in Teilen gerichtlich bestätigt als gesichert rechtsextremistisch bezeichnet und eingestuft werden dürfen, bildet eine visuelle Verharmlosung ab.",
+        "Wir fordern Sie auf: Beenden Sie diese verharmlosende Praxis und weichen Sie auf die historisch authentische Repräsentation der Farbe Braun in Ihren Berichten aus."
+      ]
+    },
+    "privat": {
+      "to": "AN: Chefredaktionen ProSiebenSat.1, RTL Group & dpa",
+      "subject": "Betreff: Standard-Farbwerte in der Infografik-Belieferung",
+      "body": [
+        "Sehr geehrte Damen und Herren,",
+        "über Ihre Nachrichtenportale und über die dpa-Meldungskanäle steuern Sie täglich die Wahrnehmung von Millionen von Menschen in Deutschland.",
+        "Durch die Wahl von Blau als Farbe für die AfD in Infografiken tragen Sie zur visuellen Verharmlosung einer in Teilen verfassungsfeindlichen Partei bei.",
+        "Wir fordern: Passen Sie Ihre redaktionellen Farbstandards an die historische Realität an und stellen Sie die Farbe Braun als Kürzel für die AfD in Grafiken ein."
+      ]
+    },
+    "rundfunkrat": {
+      "to": "AN: ARD-Rundfunkräte & ZDF-Fernsehrat",
+      "subject": "Betreff: Aufsichtspflicht bei visueller Frame-Setzung",
+      "body": [
+        "Sehr geehrte Damen und Herren,",
+        "als Kontrollgremien der öffentlich-rechtlichen Rundfunkanstalten sind Sie verpflichtet, die Einhaltung der journalistischen Grundsätze zu überwachen.",
+        "Die konsequente Verwendung der Farbe Blau für die AfD in allen grafischen Darstellungen verletzt den Grundsatz der unverfälschten Meinungsbildung.",
+        "Wir fordern Sie auf, Ihre Aufsichtspflicht wahrzunehmen und eine verbindliche Leitlinie für die historisch korrekte Farbzuordnung politischer Parteien einzuführen."
+      ]
+    }
+  },
+  "faqs": [
+    { "q": "Warum sollte Blau überhaupt problematisch sein?", "a": "Blau ist die Selbstwahlfarbe der AfD, aber eben auch die Farbe des Friedens, des Himmels und der UN-Friedenstruppen. Durch die unkritische Übernahme dieser Selbstzuschreibung durch Medien wird die emotionale Unbedenklichkeits-Assoziation auf die Partei übertragen." },
+    { "q": "Ist das nicht Zensur oder politische Einflussnahme?", "a": "Nein. Es geht um medienethische Standards und historische Ehrlichkeit. Medien entscheiden täglich über Darstellungsformen – die Forderung nach historisch korrekten Farbcodes ist eine legitime gesellschaftliche Debatte, keine Zensur." },
+    { "q": "Hat die Kampagne eine Chance auf Erfolg?", "a": "Viele Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt." },
+    { "q": "Wer steckt hinter dieser Kampagne?", "a": "Die Petition wurde auf Change.org gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten." }
+  ],
+  "facts": [
+    { "emoji": "🎨", "label": "Blau", "desc": "Farbe des Himmels, des Friedens, der UN" },
+    { "emoji": "📺", "label": "ARD & ZDF & Andere Medien", "desc": "Nutzen Blau für AfD-Grafiken" },
+    { "emoji": "🏛️", "label": "Historisch", "desc": "Braun = Symbol des Rechtsextremismus" },
+    { "emoji": "⚖️", "label": "Verfassungsschutz", "desc": "Teile der AfD als gesichert extremistisch eingestuft" }
+  ],
+  "science": {
+    "sectionH": "Wissenschaftlicher & Medienrechtlicher Hintergrund",
+    "sectionSub": "Faktenblatt: Visuelles Framing und die Verpflichtung zur sachgetreuen politischen Farbkodierung",
+    "part1H": "Teil 1: Kommunikationswissenschaftliche und medienethische Grundlagen",
+    "foundations": [
+      {
+        "title": "Die psychologische Dimension des „Visual Framing\" (Halo-Effekt)",
+        "points": [
+          { "label": "Farbpsychologie von Blau", "text": "Helle Cyan- und Blautöne werden universell mit Attributen wie Seriosität, Sachlichkeit, Vertrauenswürdigkeit, Deeskalation und staatstragender Harmonie assoziiert – vergleichbar mit der Farbwahl der Vereinten Nationen oder der europäischen Institutionen." },
+          { "label": "Die visuelle Verharmlosungsfalle", "text": "Wird eine politische Kraft, die vom Bundesamt für Verfassungsschutz (BfV) sowie mehreren Landesämtern offiziell als gesichert rechtsextremistisch eingestuft wird, in Nachrichtengrafiken konsequent in dieser beruhigenden Primärfarbe dargestellt, entsteht ein kognitiver Kontrast: Die visuelle Rahmung überdeckt die inhaltliche Radikalität der Akteure (Halo-Effekt)." }
+        ]
+      },
+      {
+        "title": "Redaktionelle Autonomie und journalistische Präzedenzfälle",
+        "points": [
+          { "label": "Präzedenzfall taz", "text": "Im Bundestagswahlkampf traf die taz die bewusste redaktionelle Entscheidung, den AfD-Balken in Diagrammen braun statt blau darzustellen. Dies belegt, dass Abweichungen von der Partei-Eigendarstellung im deutschen Journalismus bereits praktiziert und als legitimes Mittel der Einordnung anerkannt werden." },
+          { "label": "Etablierte farbliche Varianz", "text": "Medienhäuser weichen bei Visualisierungen regelmäßig von den offiziellen CI-Vorgaben ab. Das BSW wird je nach Redaktion lila oder orange-rot gezeigt, die Linke oft dunkelrot zur Abgrenzung von der SPD. Die CDU/CSU nutzt Türkis, wird aber konsequent in Schwarz dargestellt. Farbkodierung ist ein flexibles journalistisches Gestaltungsmittel." }
+        ]
+      }
+    ],
+    "part2H": "Teil 2: Systematische Entkräftung rechtlicher und strategischer Einwände",
+    "objections": [
+      {
+        "title": "Einwand 1: „Das Neutralitätsgebot verbietet eine Umfärbung.\"",
+        "rebuttals": [
+          { "label": "Keine absolute Symmetriepflicht", "text": "Nach ständiger Rechtsprechung des BVerfG gebietet Art. 21 Abs. 1 GG i.V.m. § 5 PartG eine abgestufte Chancengleichheit und fairen Zugang – keine blinde, rein formale Symmetrie. Journalismus darf und muss Unterschiede benennen, wenn objektive Gründe vorliegen." },
+          { "label": "Verfassungsschutz als Sachlichkeitsmaßstab", "text": "Die gerichtlich bestätigte Einstufung als „gesichert rechtsextremistisch\" ist ein objektiver, verifizierter Befund. Eine Visualisierung, die dies durch eine historisch etablierte Farbe abbildet, dient dem gesetzlichen Auftrag zur sachlichen, wahrheitsgemäßen Berichterstattung (vgl. Medienstaatsvertrag – MStV)." },
+          { "label": "Kein Recht auf visuelle Schonung", "text": "Parteien haben keinen verfassungsrechtlichen Anspruch darauf, dass unabhängige Medien ihre Selbstdarstellung ungefiltert übernehmen. Die Programmautonomie der Sender (Rundfunkfreiheit nach Art. 5 Abs. 1 Satz 2 GG) umfasst das Recht, Grafiken nach sachgerechten journalistischen Kriterien zu gestalten." }
+        ]
+      },
+      {
+        "title": "Einwand 2: „Medien müssen sich an der Corporate Identity (CI) der Parteien orientieren.\"",
+        "rebuttals": [
+          { "label": "Journalistisches Distanzgebot vs. PR-Übernahme", "text": "Eine blinde Übernahme der CI politischer Akteure widerspricht dem journalistischen Distanzgebot. Parteien nutzen visuelles Branding als strategisches Kommunikationswerkzeug. Die ungeprüfte Reproduktion dieses Marketings macht Medienhäuser zu unfreiwilligen Multiplikatoren politischer Kommunikationsstrategien." },
+          { "label": "Visuelle Wahrheit als Auftrag", "text": "Wenn Verfassungsschutzbehörden erhebliche Unterschiede in der Verfassungstreue der Akteure belegen, führt die Gleichbehandlung im unschuldigen „Standard-Blau\" das Publikum in die Irre. Visuelle Wahrheit erfordert eine Farbwahl, die den verfassungsrechtlichen Status widerspiegelt." }
+        ]
+      },
+      {
+        "title": "Einwand 3: „Eine Umfärbung liefert der Partei eine Steilvorlage für ihr Opfer-Narrativ.\"",
+        "rebuttals": [
+          { "label": "Proaktive Kernstrategie", "text": "Analysen rechtsextremer Kommunikation (u. a. von Dr. Johannes Hillje) zeigen: Das „Medienopfer-Narrativ\" ist eine proaktive, strukturelle Kernstrategie, die vollkommen unabhängig von tatsächlichen redaktionellen Handlungen konstruiert und instrumentalisiert wird." },
+          { "label": "Kein vorauseilender Gehorsam", "text": "Wenn Redaktionen notwendige medienethische Anpassungen aus Angst vor der Reaktion einer Partei unterlassen, unterwerfen sie ihre redaktionelle Unabhängigkeit deren Kommunikationsstrategie. Der wirksamste Schutz ist nicht Tatenlosigkeit, sondern eine transparente, wissenschaftlich und juristisch sauber begründete Offenlegung der redaktionellen Gestaltungsentscheidung." }
+        ]
+      }
+    ]
+  }
+}

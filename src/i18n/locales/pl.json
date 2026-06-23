@@ -1,0 +1,192 @@
+{
+  "translations": {
+    "navCampaign": "Kampania Change.org",
+    "navWhy": "Dlaczego niebieski?",
+    "navScience": "Nauka i Prawo",
+    "navLetter": "List otwarty",
+    "navCulture": "Dziedzictwo kulturowe",
+    "navSign": "Podpisz teraz",
+    "navShare": "Udostępnij petycję",
+    "shareTitle": "Udostępnij petycję",
+    "shareSubtitle": "Zeskanuj kod QR lub skopiuj link",
+    "shareDownloadQr": "Pobierz kod QR",
+    "shareCopyLink": "Kopiuj link",
+    "shareLinkCopied": "Skopiowano!",
+    "shareClose": "Zamknij",
+    "badge": "Wizualna etyka mediów i Ochrona kultury",
+    "heroH1": "Ratujmy Niebieski.",
+    "heroSub": "Za trafny wybór koloru.",
+    "heroBody": "Nasz język i symbolika kolorów są historycznie zakorzenione w pozytywności. Wymagamy od ARD, ZDF i prywatnych nadawców korekty ich politycznych kodów kolorystycznych: AfD musi być przedstawiana na wykresach w kolorze brązowym, nie niebieskim.",
+    "sigCount": "Już",
+    "sigSupport": "sygnatariuszy",
+    "sigLive": "Dane w czasie rzeczywistym",
+    "sigFallback": "Lokalna migawka",
+    "heroImgCaption": "Nasz wizuał kampanii",
+    "heroImgSub": "Tworzymy wizualną prawdę, chronimy językowy Niebieski.",
+    "heroImgCta": "Podpisz na Change.org",
+    "demoSandbox": "Tryb piaskownicy",
+    "demoH2": "Interaktywne porównanie kolorów",
+    "demoDesc": "Kliknij przełącznik lub słupek, aby zastąpić niebieski kod łagodzenia historycznie dokładnym brązowym.",
+    "demoSourceLabel": "Baza danych",
+    "demoSourceLive": "Na żywo z API ankiet",
+    "demoSourceFallback": "Lokalna wartość zapasowa",
+    "demoSourceApi": "Źródło: niedzielna ankieta DAWUM (Bundestag)",
+    "demoSourceInstitute": "Instytut",
+    "demoSourceDate": "Data ankiety",
+    "demoSourceFieldwork": "Praca terenowa",
+    "demoSourceSample": "Próba",
+    "demoSourceMethod": "Metoda",
+    "demoSourceStand": "Zaktualizowano",
+    "demoSourceButton": "Otwórz źródło i metodę",
+    "demoSourceWhyInstituteLabel": "Dlaczego INSA?",
+    "demoSourceWhyInstituteTooltip": "Ten wykres celowo używa jednego stałego instytutu (INSA), aby zachować spójność metodologiczną serii czasowej.",
+    "demoOption": "Opcja wizualizacji",
+    "demoQuestion": "Który wybór koloru jest dokładny i historycznie uczciwy?",
+    "demoReset": "Resetuj do niebieskiego",
+    "demoSwitch": "Przełącz na brązowy",
+    "dreamBanner": "Scenariusz marzeń — Co nasza petycja może osiągnąć",
+    "dreamBody": "Z każdym podpisem rośnie presja na media. Ten scenariusz pokazuje, jak mógłby wyglądać świat, w którym wyborcy widzą faszyzm na wylot i odwracają się.",
+    "comparisonToggle": "Pokaż większość",
+    "comparisonTitle": "AfD vs. Demokratyczna większość",
+    "comparisonRatio": "× więcej ludzi NIE głosuje na AfD",
+    "comparisonMessage": "Przytłaczająca większość stoi za demokracją.",
+    "allOthersLabel": "Wszyscy inni",
+    "whyH2": "Tło maskarady kolorów",
+    "whyIntro": "Badania naukowe nad framingiem pokazują: postrzeganie aktorów politycznych jest znacząco kształtowane przez sygnały wizualne używane do ich reprezentacji.",
+    "whyCard1H": "Wizualne bagatelizowanie",
+    "whyCard1": "Niebieski to kolor nieba, morza i sił pokojowych. Uspokaja, buduje zaufanie i sygnalizuje nieszkodliwość. Używanie tego emocjonalnego kodowania dla grupy volkish-nacjonalistycznej jest fatalnym błędem etyki medialnej.",
+    "whyCard2H": "Przyporządkowanie historyczne",
+    "whyCard2": "Polityczny kolor brązowy jest mocno kojarzony w zbiorowej pamięci Niemiec z nacjonalizmem volkish i skrajnym prawicowym ekstremizmem. Uczciwe standardy graficzne muszą wizualnie ukazywać tę historyczną ciągłość.",
+    "cultureH": "Ratowanie dziedzictwa kulturowego",
+    "cultureSub": "To jest własność językowa naszej społeczności.",
+    "tabLang": "Skarbiec językowy",
+    "tabSym": "Symbolizm i Historia",
+    "letterH": "List otwarty",
+    "letterSub": "Wybierz grupę docelową, aby zobaczyć, jak pociągamy do odpowiedzialności redakcje i organy nadzorcze:",
+    "targetPublic": "Nadawcy publiczni",
+    "targetPrivate": "Media prywatne",
+    "targetCouncil": "Rady nadawcze",
+    "ctaBanner": "Podpisz teraz i uratuj Niebieski!",
+    "ctaBodyPre": "Ponad",
+    "ctaBodyMid": "osób już podpisało tę petycję. Pokaż, że opowiadasz się za uczciwą wizualną sprawozdawczością.",
+    "ctaBodyLoading": "Ładowanie liczby podpisów z Change.org.",
+    "ctaBtn": "Podpisz na Change.org",
+    "ctaInfo": "Za darmo · Bez reklam · Liczy się tylko Twój głos",
+    "footerTagline": "Kampania na rzecz uczciwości medialnej i ochrony kulturowego dziedzictwa koloru niebieskiego.",
+    "footerLink": "Zobacz petycję na Change.org",
+    "footerImprint": "Nota prawna",
+    "alsoSupportH": "Wesprzyj więcej petycji",
+    "alsoSupportSub": "Inne petycje walczące o silne demokratyczne Niemcy.",
+    "alsoSupportBtn": "Podpisz",
+    "sidebarSignatures": "Podpisy",
+    "sidebarGrowing": "i rośnie każdego dnia!",
+    "sidebarQuickFacts": "Szybkie fakty",
+    "themeLight": "Jasny",
+    "themeDark": "Ciemny",
+    "langLabel": "Język",
+    "faqTitle": "FAQ",
+    "faqSub": "Najczęściej zadawane pytania dotyczące kampanii i naszych żądań."
+  },
+  "sayings": {
+    "sprache": [
+      { "phrase": "«Blau machen» (Urwać się z pracy)", "origin": "Średniowiecze / Farbiarski", "desc": "Termin pochodzi od wolnego poniedziałku farbiarzy. Gdy wełna utleniała się na powietrzu i stawała się niebieska, praca odpoczywała. Piękna niemiecka metafora odpoczynku." },
+      { "phrase": "«Ins Blaue hinein» (W siną dal)", "origin": "Romantyzm natury", "desc": "Beztroska podróż bez ustalonego celu, niesiona czystym zaufaniem, ciekawością i pokojowym duchem przygody." },
+      { "phrase": "«Das Blaue vom Himmel versprechen» (Obiecywać gruszki na wierzbie)", "origin": "Metafora poetycka", "desc": "Niebieski oznacza tu nieskończone, majestatyczne sklepienie nieba — wspaniały obraz pełen marzeń i tęsknoty." }
+    ],
+    "symbolik": [
+      { "phrase": "Niebieski Kwiat", "origin": "Romantyzm (Novalis)", "desc": "Najważniejszy symbol tęsknoty, miłości, poznania i rozwoju ludzkiego ducha. Bezcenny zasób kulturowy." },
+      { "phrase": "Błękitne Hełmy ONZ", "origin": "Globalna praca na rzecz pokoju", "desc": "Niebieski został celowo wybrany przez ONZ, ponieważ uniwersalnie oznacza neutralność, deeskalację i wolę trwałego pokoju." },
+      { "phrase": "Błękit królewski i Ultramaryyna", "origin": "Historia sztuki i kultury", "desc": "Przez wieki cenniejszy od złota (z lapis lazuli). W renesansie ten cenny niebieski był zarezerwowany wyłącznie dla najwznioślejszych przedstawień." }
+    ]
+  },
+  "openLetters": {
+    "oeffentlich": {
+      "to": "DO: Redakcji ARD-aktuell i ZDF",
+      "subject": "Temat: Zniekształcenie wizualne i odpowiedzialność za framing",
+      "body": [
+        "Szanowni Państwo,",
+        "Jako nadawcy publiczni ponosicie ustawową odpowiedzialność za obiektywne, historycznie i analitycznie kontekstowane informowanie społeczeństwa.",
+        "Używanie koloru niebieskiego dla aktorów, których sądy potwierdziły jako udowodnionych prawicowych ekstremistów, stanowi wizualne bagatelizowanie ich ideologii.",
+        "Wzywamy Was: Zakończcie tę bagatelizującą praktykę i przejdźcie na historycznie autentyczny kolor brązowy w swoich raportach."
+      ]
+    },
+    "privat": {
+      "to": "DO: Redakcji ProSiebenSat.1, RTL Group i dpa",
+      "subject": "Temat: Domyślne wartości kolorów w infografikach",
+      "body": [
+        "Szanowni Państwo,",
+        "Poprzez swoje portale informacyjne i kanały dpa kształtujecie codzienną percepcję milionów ludzi w Niemczech.",
+        "Wybierając niebieski jako kolor dla AfD w infografikach, przyczyniajecie się do wizualnego bagatelizowania częściowo antytkonstytucyjnej partii.",
+        "Wymagamy: Dostosujcie swoje redakcyjne standardy kolorów do historycznej rzeczywistości."
+      ]
+    },
+    "rundfunkrat": {
+      "to": "DO: Rad Nadawczych ARD i Rady Telewizyjnej ZDF",
+      "subject": "Temat: Obowiązek nadzoru nad wizualnym framingiem",
+      "body": [
+        "Szanowni Państwo,",
+        "Jako organy nadzorcze nadawców publicznych jesteście zobowiązani do monitorowania przestrzegania zasad dziennikarskich.",
+        "Konsekwentne stosowanie niebieskiego dla AfD we wszystkich reprezentacjach graficznych narusza zasadę nieskażonego kształtowania opinii.",
+        "Wzywamy Was do wykonania obowiązku nadzoru i wprowadzenia wiążących wytycznych dotyczących historycznie dokładnego przyporządkowania kolorów partiom politycznym."
+      ]
+    }
+  },
+  "faqs": [
+    { "q": "Dlaczego niebieski miałby być problematyczny?", "a": "Niebieski to kolor wybrany przez samą AfD, ale to także kolor pokoju, nieba i sił pokojowych ONZ. Bezkrytycznie przyjmując ten samopis, media przenoszą emocjonalną asocjację nieszkodliwości na partię." },
+    { "q": "Czy to nie jest cenzura?", "a": "Nie. Chodzi o standardy etyki medialnej i uczciwość historyczną. Wymaganie historycznie dokładnych kodów kolorów to uzasadniona debata społeczna, nie cenzura." },
+    { "q": "Czy kampania ma szansę na sukces?", "a": "Wiele osób już podpisało. Organizacje medialne reagują na presję publiczną. Każdy podpis się liczy." },
+    { "q": "Kto stoi za tą kampanią?", "a": "Petycja została uruchomiona na Change.org — otwartej platformie zaangażowania obywatelskiego. To zaangażowani obywatele broniący uczciwości medialnej." }
+  ],
+  "facts": [
+    { "emoji": "🎨", "label": "Niebieski", "desc": "Kolor nieba, pokoju i ONZ" },
+    { "emoji": "📺", "label": "ARD, ZDF i inne media", "desc": "Używają niebieskiego dla AfD na wykresach" },
+    { "emoji": "🏛️", "label": "Historycznie", "desc": "Brązowy = symbol prawicowego ekstremizmu" },
+    { "emoji": "⚖️", "label": "Ochrona konstytucji", "desc": "Części AfD sklasyfikowane jako udowodnieni ekstremiści" }
+  ],
+  "science": {
+    "sectionH": "Kontekst naukowy i medialnoprawny",
+    "sectionSub": "Arkusz informacyjny: Wizualny framing i obowiązek dokładnego politycznego kodowania kolorów",
+    "part1H": "Część 1: Podstawy nauk o komunikacji i etyki mediów",
+    "foundations": [
+      {
+        "title": "Psychologiczny wymiar \"wizualnego framingu\" (efekt aureoli)",
+        "points": [
+          { "label": "Psychologia niebieskiego", "text": "Jasne odcienie cyjanu i niebieskiego są uniwersalnie kojarzone z takimi atrybutami jak wiarygodność, solidność i niezawodność instytucjonalna." },
+          { "label": "Pułapka wizualnego bagatelizowania", "text": "Gdy siła polityczna oficjalnie sklasyfikowana jako udowodniony prawicowy ekstremista jest konsekwentnie przedstawiana w tym uspokajającym kolorze podstawowym, powstaje kontrast poznawczy: framing wizualny maskuje radykalizm ideologiczny aktorów." }
+        ]
+      },
+      {
+        "title": "Autonomia redakcyjna i precedensy dziennikarskie",
+        "points": [
+          { "label": "Precedens taz", "text": "Podczas federalnej kampanii wyborczej dziennik taz celowo zdecydował się przedstawiać słupek AfD w brązie zamiast niebieskiego, demonstrując, że takie świadome odchylenia są już praktykowane w niemieckim dziennikarstwie." },
+          { "label": "Ustaloona wariancja kolorów", "text": "Media regularnie odchodzą od oficjalnych wytycznych CI. Kodowanie kolorów jest elastycznym narzędziem projektowania dziennikarskiego." }
+        ]
+      }
+    ],
+    "part2H": "Część 2: Systematyczne obalanie prawnych i strategicznych zarzutów",
+    "objections": [
+      {
+        "title": "Zarzut 1: \"Zasada neutralności prawa mediów zabrania przekolorowania.\"",
+        "rebuttals": [
+          { "label": "Brak obowiązku absolutnej symetrii", "text": "Zgodnie ze stałym orzecznictwem Federalnego Trybunału Konstytucyjnego wymagana jest stopniowa równość szans i uczciwy dostęp — nie ślepa, czysto formalna symetria." },
+          { "label": "Urząd Ochrony Konstytucji jako punkt odniesienia", "text": "Potwierdzona przez sąd klasyfikacja jako «udowodniony prawicowy ekstremista» jest obiektywnym, zweryfikowanym ustaleniem." },
+          { "label": "Brak prawa do wizualnej ochrony", "text": "Partie polityczne nie mają konstytucyjnego prawa do tego, aby niezależne media bezkrytycznie przejmowały ich autoprezentację." }
+        ]
+      },
+      {
+        "title": "Zarzut 2: \"Media muszą przestrzegać identyfikacji wizualnej partii.\"",
+        "rebuttals": [
+          { "label": "Dystans dziennikarski vs. przejęcie PR", "text": "Ślepe przyjęcie identyfikacji wizualnej aktorów politycznych jest sprzeczne z zasadą dystansu dziennikarskiego." },
+          { "label": "Prawda wizualna jako obowiązek", "text": "Gdy organy ochrony konstytucji dokumentują istotne różnice w lojalności konstytucyjnej, równe traktowanie wszystkich partii w «standardowym niebieskim» wprowadza publiczność w błąd." }
+        ]
+      },
+      {
+        "title": "Zarzut 3: \"Przekolorowanie daje partii amunicję do narracji ofiary.\"",
+        "rebuttals": [
+          { "label": "Proaktywna strategia podstawowa", "text": "Analizy komunikacji skrajnej prawicy pokazują: «narracja ofiary medialnej» to proaktywna strategia strukturalna, konstruowana niezależnie od faktycznych decyzji redakcyjnych." },
+          { "label": "Bez prewencyjnego podporządkowania", "text": "Gdy zespoły redakcyjne rezygnują z niezbędnych korekt etycznych ze strachu przed reakcją partii, podporządkowują swoją niezależność redakcyjną strategii komunikacyjnej tej partii." }
+        ]
+      }
+    ]
+  }
+}

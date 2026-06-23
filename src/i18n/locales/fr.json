@@ -1,0 +1,192 @@
+{
+  "translations": {
+    "navCampaign": "Campagne Change.org",
+    "navWhy": "Pourquoi le bleu ?",
+    "navScience": "Science & Droit",
+    "navLetter": "Lettre ouverte",
+    "navCulture": "Patrimoine culturel",
+    "navSign": "Signer maintenant",
+    "navShare": "Partager la pétition",
+    "shareTitle": "Partager la pétition",
+    "shareSubtitle": "Scannez le QR code ou copiez le lien",
+    "shareDownloadQr": "Télécharger le QR code",
+    "shareCopyLink": "Copier le lien",
+    "shareLinkCopied": "Copié !",
+    "shareClose": "Fermer",
+    "badge": "Éthique visuelle des médias & Préservation culturelle",
+    "heroH1": "Sauvons le Bleu.",
+    "heroSub": "Pour un choix de couleur juste.",
+    "heroBody": "Notre langage et notre symbolisme des couleurs sont historiquement ancrés dans la positivité. Nous exigeons de l'ARD, du ZDF et des chaînes privées qu'ils corrigent leurs codes couleur politiques : l'AfD doit être représentée en brun dans les graphiques, pas en bleu.",
+    "sigCount": "Déjà",
+    "sigSupport": "signataires",
+    "sigLive": "Données en temps réel",
+    "sigFallback": "Données locales",
+    "heroImgCaption": "Notre visuel de campagne",
+    "heroImgSub": "Créer la vérité visuelle, préserver le Bleu linguistique.",
+    "heroImgCta": "Signer sur Change.org",
+    "demoSandbox": "Mode bac à sable",
+    "demoH2": "Comparaison interactive des couleurs",
+    "demoDesc": "Cliquez sur le bouton ou la barre pour remplacer le code bleu de minimisation par le brun historiquement exact.",
+    "demoSourceLabel": "Base de données",
+    "demoSourceLive": "En direct depuis l'API de sondage",
+    "demoSourceFallback": "Valeur de repli locale",
+    "demoSourceApi": "Source : sondage du dimanche DAWUM (Bundestag)",
+    "demoSourceInstitute": "Institut",
+    "demoSourceDate": "Date de l'enquête",
+    "demoSourceFieldwork": "Terrain",
+    "demoSourceSample": "Échantillon",
+    "demoSourceMethod": "Méthode",
+    "demoSourceStand": "Mis à jour",
+    "demoSourceButton": "Ouvrir source & méthode",
+    "demoSourceWhyInstituteLabel": "Pourquoi INSA ?",
+    "demoSourceWhyInstituteTooltip": "Ce graphique utilise intentionnellement un seul institut fixe (INSA) pour maintenir la cohérence méthodologique de la série temporelle et éviter les sauts causés par le changement d'institut.",
+    "demoOption": "Option de visualisation",
+    "demoQuestion": "Quel choix de couleur est exact et historiquement honnête ?",
+    "demoReset": "Réinitialiser en bleu",
+    "demoSwitch": "Passer au brun",
+    "dreamBanner": "Scénario de rêve — Ce que notre pétition pourrait accomplir",
+    "dreamBody": "Chaque signature augmente la pression sur les médias. Ce scénario montre à quoi pourrait ressembler un monde où les électeurs voient clair dans le fascisme et s'en détournent.",
+    "comparisonToggle": "Afficher la majorité",
+    "comparisonTitle": "AfD vs. Majorité démocratique",
+    "comparisonRatio": "× plus de personnes ne votent PAS pour l'AfD",
+    "comparisonMessage": "L'écrasante majorité est pour la démocratie.",
+    "allOthersLabel": "Tous les autres",
+    "whyH2": "Les dessous de la mascarade des couleurs",
+    "whyIntro": "La recherche scientifique sur le cadrage montre : la perception des acteurs politiques est fortement influencée par les signaux visuels utilisés pour les représenter dans des émissions comme le ZDF heute-journal ou l'ARD Tagesschau.",
+    "whyCard1H": "La minimisation visuelle",
+    "whyCard1": "Le bleu est la couleur du ciel, de la mer et des forces de maintien de la paix. Il apaise, inspire confiance et signale l'innocuité. Utiliser ce codage émotionnel pour un groupe völkisch-nationaliste et en partie anticonstitutionnel est une erreur fatale d'éthique médiatique.",
+    "whyCard2H": "L'attribution historique",
+    "whyCard2": "La couleur politique brune est fermement associée dans la mémoire collective allemande au nationalisme völkisch et à l'extrémisme de droite. Des normes graphiques honnêtes doivent faire preuve de courage et rendre cette continuité historique visuellement apparente.",
+    "cultureH": "Sauver le patrimoine culturel",
+    "cultureSub": "C'est la propriété linguistique de notre communauté.",
+    "tabLang": "Trésor linguistique",
+    "tabSym": "Symbolisme & Histoire",
+    "letterH": "La lettre ouverte",
+    "letterSub": "Choisissez le public cible pour voir comment nous interpellons les rédactions et les organes de contrôle :",
+    "targetPublic": "Radiodiffuseurs publics",
+    "targetPrivate": "Médias privés",
+    "targetCouncil": "Conseils de radiodiffusion",
+    "ctaBanner": "Signez maintenant et sauvez le Bleu !",
+    "ctaBodyPre": "Plus de",
+    "ctaBodyMid": "personnes ont déjà signé cette pétition. Montrez que vous défendez un reportage visuel honnête.",
+    "ctaBodyLoading": "Chargement du nombre de signatures depuis Change.org.",
+    "ctaBtn": "Signer sur Change.org",
+    "ctaInfo": "Gratuit · Sans publicité · Seule votre voix compte",
+    "footerTagline": "Une campagne pour l'intégrité médiatique et la protection du patrimoine culturel de la couleur bleue.",
+    "footerLink": "Voir la pétition sur Change.org",
+    "footerImprint": "Mentions légales",
+    "alsoSupportH": "Soutenir d'autres pétitions",
+    "alsoSupportSub": "D'autres pétitions luttant pour une Allemagne démocratique forte.",
+    "alsoSupportBtn": "Signer",
+    "sidebarSignatures": "Signatures",
+    "sidebarGrowing": "et ça augmente chaque jour !",
+    "sidebarQuickFacts": "Faits rapides",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "langLabel": "Langue",
+    "faqTitle": "FAQ",
+    "faqSub": "Foire aux questions sur la campagne et nos revendications."
+  },
+  "sayings": {
+    "sprache": [
+      { "phrase": "« Blau machen » (Faire l'école buissonnière)", "origin": "Moyen Âge / Artisanat de teinture", "desc": "Le terme provient du lundi libre des teinturiers. Pendant que la laine s'oxydait à l'air et devenait bleue, le travail s'arrêtait. Une belle métaphore allemande pour le repos et le soin de soi." },
+      { "phrase": "« Ins Blaue hinein » (Dans le bleu)", "origin": "Romantisme naturel", "desc": "Un voyage ou un acte insouciant sans destination fixe, porté par la pure confiance, la curiosité et un esprit d'aventure paisible." },
+      { "phrase": "« Das Blaue vom Himmel versprechen » (Promettre le bleu du ciel)", "origin": "Métaphore poétique", "desc": "Le bleu représente ici la voûte céleste infinie et majestueuse — une image merveilleuse pleine de rêves et de nostalgie." }
+    ],
+    "symbolik": [
+      { "phrase": "La Fleur Bleue", "origin": "Romantisme (Novalis)", "desc": "Le symbole le plus important de la nostalgie, de l'amour, de la connaissance et de l'épanouissement de l'esprit humain. Un patrimoine culturel inestimable." },
+      { "phrase": "Les Casques bleus de l'ONU", "origin": "Travail de paix mondial", "desc": "Le bleu a été délibérément choisi par l'ONU car il représente universellement la neutralité, la désescalade, l'optimisme et la volonté d'une paix durable." },
+      { "phrase": "Bleu royal & Outremer", "origin": "Histoire de l'art & de la culture", "desc": "Pendant des siècles, plus précieux que l'or (issu du lapis-lazuli). À la Renaissance, ce bleu précieux était exclusivement réservé aux représentations les plus nobles." }
+    ]
+  },
+  "openLetters": {
+    "oeffentlich": {
+      "to": "À : Rédactions en chef d'ARD-aktuell & ZDF",
+      "subject": "Objet : Distorsion visuelle & Responsabilité de cadrage",
+      "body": [
+        "Mesdames, Messieurs,",
+        "En tant que radiodiffuseurs publics, vous portez la responsabilité légale d'une information objective, historiquement et analytiquement contextualisée pour le public.",
+        "L'utilisation de la couleur bleue pour des acteurs que les tribunaux ont confirmé comme pouvant être classés extrémistes de droite avérés constitue une minimisation visuelle de leur idéologie.",
+        "Nous vous demandons : Mettez fin à cette pratique de minimisation et passez à la couleur brune historiquement authentique dans vos reportages."
+      ]
+    },
+    "privat": {
+      "to": "À : Rédactions en chef de ProSiebenSat.1, RTL Group & dpa",
+      "subject": "Objet : Valeurs de couleur par défaut dans les infographies",
+      "body": [
+        "Mesdames, Messieurs,",
+        "Par vos portails d'information et les canaux dpa, vous façonnez quotidiennement la perception de millions de personnes en Allemagne.",
+        "En choisissant le bleu comme couleur pour l'AfD dans les infographies, vous contribuez à la minimisation visuelle d'un parti en partie anticonstitutionnel.",
+        "Nous exigeons : Adaptez vos normes éditoriales de couleur à la réalité historique et définissez le brun comme identifiant de l'AfD dans les graphiques."
+      ]
+    },
+    "rundfunkrat": {
+      "to": "À : Conseils de radiodiffusion ARD & Conseil de télévision ZDF",
+      "subject": "Objet : Devoir de surveillance sur le cadrage visuel",
+      "body": [
+        "Mesdames, Messieurs,",
+        "En tant qu'organes de surveillance des radiodiffuseurs publics, vous êtes tenus de contrôler le respect des principes journalistiques.",
+        "L'utilisation systématique du bleu pour l'AfD dans toutes les représentations graphiques viole le principe de la formation d'opinion non faussée.",
+        "Nous vous demandons d'exercer votre devoir de surveillance et d'introduire une directive contraignante pour l'attribution historiquement exacte des couleurs des partis politiques."
+      ]
+    }
+  },
+  "faqs": [
+    { "q": "Pourquoi le bleu devrait-il être problématique ?", "a": "Le bleu est la couleur auto-choisie de l'AfD, mais c'est aussi la couleur de la paix, du ciel et des forces de maintien de la paix de l'ONU. En adoptant cette auto-description de manière non critique, les médias transfèrent l'association émotionnelle d'innocuité au parti." },
+    { "q": "N'est-ce pas de la censure ?", "a": "Non. Il s'agit de normes d'éthique médiatique et d'honnêteté historique. Les médias prennent des décisions éditoriales chaque jour — exiger des codes couleur historiquement exacts est un débat sociétal légitime, pas de la censure." },
+    { "q": "La campagne a-t-elle une chance de succès ?", "a": "De nombreuses personnes ont déjà signé. Les organisations médiatiques réagissent à la pression publique. Chaque signature compte." },
+    { "q": "Qui est derrière cette campagne ?", "a": "La pétition a été lancée sur Change.org — une plateforme ouverte pour l'engagement civique. Ce sont des citoyens engagés qui défendent l'intégrité des médias." }
+  ],
+  "facts": [
+    { "emoji": "🎨", "label": "Bleu", "desc": "Couleur du ciel, de la paix et de l'ONU" },
+    { "emoji": "📺", "label": "ARD & ZDF & autres médias", "desc": "Utilisent le bleu pour l'AfD dans les graphiques" },
+    { "emoji": "🏛️", "label": "Historiquement", "desc": "Brun = symbole de l'extrémisme de droite" },
+    { "emoji": "⚖️", "label": "Protection constitutionnelle", "desc": "Des parties de l'AfD classées comme extrémistes avérées" }
+  ],
+  "science": {
+    "sectionH": "Contexte scientifique & juridique des médias",
+    "sectionSub": "Fiche d'information : Cadrage visuel et obligation de codage couleur politique exact",
+    "part1H": "Partie 1 : Fondements en sciences de la communication et éthique des médias",
+    "foundations": [
+      {
+        "title": "La dimension psychologique du « cadrage visuel » (effet de halo)",
+        "points": [
+          { "label": "La psychologie du bleu", "text": "Les tons cyan clair et bleu sont universellement associés à des attributs tels que la crédibilité, la fiabilité, la désescalade et la fiabilité institutionnelle — comparable aux choix de couleurs des Nations Unies ou des institutions européennes." },
+          { "label": "Le piège de la minimisation visuelle", "text": "Lorsqu'une force politique officiellement classée extrémiste de droite avérée est systématiquement représentée dans cette couleur primaire apaisante dans les graphiques d'information, un contraste cognitif apparaît : le cadrage visuel masque le radicalisme idéologique des acteurs (effet de halo)." }
+        ]
+      },
+      {
+        "title": "Autonomie éditoriale et précédents journalistiques",
+        "points": [
+          { "label": "Le précédent taz", "text": "Lors de la campagne électorale fédérale, le quotidien taz a délibérément décidé de représenter la barre de l'AfD en brun plutôt qu'en bleu. Cela démontre que des écarts conscients de la présentation propre des partis sont déjà pratiqués dans le journalisme allemand." },
+          { "label": "Variance de couleur établie", "text": "Les médias s'écartent régulièrement des directives officielles de CI. Le BSW est montré en violet ou orange-rouge selon la rédaction. Le codage couleur est un outil de conception journalistique flexible." }
+        ]
+      }
+    ],
+    "part2H": "Partie 2 : Réfutation systématique des objections juridiques et stratégiques",
+    "objections": [
+      {
+        "title": "Objection 1 : « Le principe de neutralité médiatique interdit le recoloriage. »",
+        "rebuttals": [
+          { "label": "Pas d'obligation de symétrie absolue", "text": "Selon la jurisprudence constante de la Cour constitutionnelle fédérale, l'art. 21(1) GG exige l'égalité des chances graduée et un accès équitable — pas une symétrie purement formelle et aveugle." },
+          { "label": "L'Office de protection constitutionnelle comme référence", "text": "La classification confirmée par les tribunaux comme « extrémiste de droite avéré » est un constat objectif et vérifié. Une visualisation qui reflète cela sert l'obligation légale de reportage factuel et véridique." },
+          { "label": "Pas de droit à la protection visuelle", "text": "Les partis politiques n'ont pas de droit constitutionnel à ce que les médias indépendants adoptent leur auto-présentation sans filtre." }
+        ]
+      },
+      {
+        "title": "Objection 2 : « Les médias doivent suivre l'identité corporate des partis. »",
+        "rebuttals": [
+          { "label": "Distance journalistique vs. adoption PR", "text": "Adopter aveuglément l'identité visuelle des acteurs politiques contredit le principe de distance journalistique. Les partis utilisent le branding visuel comme outil de communication stratégique." },
+          { "label": "La vérité visuelle comme devoir", "text": "Lorsque les agences de protection constitutionnelle documentent des différences significatives dans la loyauté constitutionnelle des partis, traiter tous les partis de manière égale dans un « bleu standard » innocent induit le public en erreur." }
+        ]
+      },
+      {
+        "title": "Objection 3 : « Le recoloriage donne des munitions au narratif victimaire du parti. »",
+        "rebuttals": [
+          { "label": "Stratégie de base proactive", "text": "Les analyses de la communication d'extrême droite montrent : le « narratif de victime médiatique » est une stratégie structurelle proactive, construite et exploitée indépendamment des décisions éditoriales réelles." },
+          { "label": "Pas de soumission préventive", "text": "Lorsque les rédactions renoncent aux ajustements éthiques nécessaires par peur de la réaction d'un parti, elles subordonnent leur indépendance éditoriale à la stratégie de communication de ce parti." }
+        ]
+      }
+    ]
+  }
+}

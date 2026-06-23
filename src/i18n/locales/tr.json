@@ -1,0 +1,192 @@
+{
+  "translations": {
+    "navCampaign": "Change.org Kampanyası",
+    "navWhy": "Neden Mavi?",
+    "navScience": "Bilim ve Hukuk",
+    "navLetter": "Açık Mektup",
+    "navCulture": "Kültürel Miras",
+    "navSign": "Şimdi İmzala",
+    "navShare": "Dilekçeyi paylaş",
+    "shareTitle": "Dilekçeyi paylaş",
+    "shareSubtitle": "QR kodunu tarayın veya bağlantıyı kopyalayın",
+    "shareDownloadQr": "QR kodu indir",
+    "shareCopyLink": "Bağlantıyı kopyala",
+    "shareLinkCopied": "Kopyalandı!",
+    "shareClose": "Kapat",
+    "badge": "Görsel Medya Etiği ve Kültürel Koruma",
+    "heroH1": "Maviyi Kurtar.",
+    "heroSub": "Doğru bir renk seçimi için.",
+    "heroBody": "Dilimiz ve renk sembolizmimiz tarihsel olarak pozitifliğe dayanmaktadır. ARD, ZDF ve özel kanallardan siyasi renk kodlarını düzeltmelerini talep ediyoruz: AfD grafiklerde kahverengi ile gösterilmeli, mavi ile değil.",
+    "sigCount": "Şu ana kadar",
+    "sigSupport": "destekçi",
+    "sigLive": "Gerçek zamanlı veriler",
+    "sigFallback": "Yerel anlık görüntü",
+    "heroImgCaption": "Kampanya Görselimiz",
+    "heroImgSub": "Görsel gerçeği oluşturmak, dilsel Maviyi korumak.",
+    "heroImgCta": "Change.org'da imzala",
+    "demoSandbox": "Sandbox Modu",
+    "demoH2": "İnteraktif Renk Karşılaştırması",
+    "demoDesc": "Mavi yumuşatma kodunu tarihsel olarak doğru kahverengi ile değiştirmek için düğmeye veya çubuğa tıklayın.",
+    "demoSourceLabel": "Veri tabanı",
+    "demoSourceLive": "Anket API'sinden canlı",
+    "demoSourceFallback": "Yerel yedek değer",
+    "demoSourceApi": "Kaynak: DAWUM Pazar anketi (Bundestag)",
+    "demoSourceInstitute": "Enstitü",
+    "demoSourceDate": "Anket tarihi",
+    "demoSourceFieldwork": "Saha çalışması",
+    "demoSourceSample": "Örneklem",
+    "demoSourceMethod": "Yöntem",
+    "demoSourceStand": "Güncellendi",
+    "demoSourceButton": "Kaynak ve yöntemi aç",
+    "demoSourceWhyInstituteLabel": "Neden INSA?",
+    "demoSourceWhyInstituteTooltip": "Bu grafik, zaman serisinin metodolojik tutarlılığını korumak için kasıtlı olarak tek bir sabit enstitü (INSA) kullanmaktadır.",
+    "demoOption": "Görselleştirme Seçeneği",
+    "demoQuestion": "Hangi renk seçimi doğru ve tarihsel olarak dürüst?",
+    "demoReset": "Maviye sıfırla",
+    "demoSwitch": "Kahverengiye geç",
+    "dreamBanner": "Hayal Senaryosu — Dilekçemiz neler başarabilir",
+    "dreamBody": "Her imza ile medya üzerindeki baskı artıyor. Bu senaryo, seçmenlerin faşizmi gördüğü ve sırtını döndüğü bir dünyanın nasıl görünebileceğini gösteriyor.",
+    "comparisonToggle": "Çoğunluğu göster",
+    "comparisonTitle": "AfD vs. Demokratik Çoğunluk",
+    "comparisonRatio": "× daha fazla insan AfD'ye oy VERMİYOR",
+    "comparisonMessage": "Ezici çoğunluk demokrasiden yana.",
+    "allOthersLabel": "Diğer Tümü",
+    "whyH2": "Renk Maskaralığının Arka Planı",
+    "whyIntro": "Bilimsel çerçeveleme araştırması gösteriyor: siyasi aktörlerin algısı, onları temsil etmek için kullanılan görsel sinyallerden önemli ölçüde etkileniyor.",
+    "whyCard1H": "Görsel Hafife Alma",
+    "whyCard1": "Mavi gökyüzünün, denizin ve barış güçlerinin rengidir. Sakinleştirir, güven oluşturur ve zararsızlık sinyali verir. Bu duygusal kodlamayı völkisch-milliyetçi bir grup için kullanmak ölümcül bir medya etiği hatasıdır.",
+    "whyCard2H": "Tarihsel Atama",
+    "whyCard2": "Siyasi renk kahverengi, Almanya'nın kolektif hafızasında völkisch milliyetçilik ve aşırı sağ ile sağlam bir şekilde ilişkilidir. Dürüst grafik standartları bu tarihsel sürekliliği görsel olarak ortaya koymalıdır.",
+    "cultureH": "Kültürel Mirası Korumak",
+    "cultureSub": "Bu, topluluğumuzun dilsel mülkiyetidir.",
+    "tabLang": "Dil Hazinesi",
+    "tabSym": "Sembolizm ve Tarih",
+    "letterH": "Açık Mektup",
+    "letterSub": "Editörleri ve denetim organlarını nasıl sorumlu tuttuğumuzu görmek için hedef kitleyi seçin:",
+    "targetPublic": "Kamu Yayıncıları",
+    "targetPrivate": "Özel Medya",
+    "targetCouncil": "Yayın Konseyleri",
+    "ctaBanner": "Şimdi imzala ve Maviyi kurtar!",
+    "ctaBodyPre": "",
+    "ctaBodyMid": "kişi bu dilekçeyi zaten imzaladı. Dürüst görsel haberciliği desteklediğini göster.",
+    "ctaBodyLoading": "Change.org'dan imza sayısı yükleniyor.",
+    "ctaBtn": "Change.org'da imzala",
+    "ctaInfo": "Ücretsiz · Reklam yok · Sadece sesin önemli",
+    "footerTagline": "Medya bütünlüğü ve mavi rengin kültürel mirasının korunması için bir kampanya.",
+    "footerLink": "Change.org'da dilekçeyi görüntüle",
+    "footerImprint": "Yasal Bildirim",
+    "alsoSupportH": "Daha Fazla Dilekçeyi Destekle",
+    "alsoSupportSub": "Güçlü bir demokratik Almanya için mücadele eden diğer dilekçeler.",
+    "alsoSupportBtn": "İmzala",
+    "sidebarSignatures": "İmzalar",
+    "sidebarGrowing": "ve her gün artıyor!",
+    "sidebarQuickFacts": "Hızlı Bilgiler",
+    "themeLight": "Açık",
+    "themeDark": "Koyu",
+    "langLabel": "Dil",
+    "faqTitle": "SSS",
+    "faqSub": "Kampanya ve taleplerimiz hakkında sıkça sorulan sorular."
+  },
+  "sayings": {
+    "sprache": [
+      { "phrase": "«Blau machen» (İşi asmak)", "origin": "Orta Çağ / Boyacılık", "desc": "Terim, boyacıların boş Pazartesi gününden gelmektedir. Yün havada oksitlenip mavi olurken iş dinlenirdi. Dinlenme için güzel bir Alman metaforu." },
+      { "phrase": "«Ins Blaue hinein» (Maviye doğru)", "origin": "Doğa Romantizmi", "desc": "Sabit bir hedefi olmayan kaygısız bir yolculuk, saf güven, merak ve barışçıl macera ruhuyla taşınan." },
+      { "phrase": "«Das Blaue vom Himmel versprechen» (Gökyüzünün mavisini vaat etmek)", "origin": "Şiirsel metafor", "desc": "Mavi burada sonsuz, görkemli gök kubbeyi temsil eder — hayaller ve özlemlerle dolu harika bir görüntü." }
+    ],
+    "symbolik": [
+      { "phrase": "Mavi Çiçek", "origin": "Romantizm (Novalis)", "desc": "Özlem, aşk, bilgi ve insan ruhunun gelişimi için en önemli sembol. Paha biçilmez bir kültürel varlık." },
+      { "phrase": "BM Mavi Bereliler", "origin": "Küresel Barış Çalışması", "desc": "Mavi, BM tarafından kasıtlı olarak seçilmiştir çünkü evrensel olarak tarafsızlığı, tansiyonu düşürmeyi ve kalıcı barış iradesini temsil eder." },
+      { "phrase": "Kraliyet Mavisi ve Ultramarin", "origin": "Sanat ve Kültür Tarihi", "desc": "Yüzyıllarca altından daha değerli (lapis lazuliden). Rönesans'ta bu değerli mavi yalnızca en yüce tasvirler için ayrılmıştı." }
+    ]
+  },
+  "openLetters": {
+    "oeffentlich": {
+      "to": "KIME: ARD-aktuell ve ZDF Yazı İşleri Müdürlükleri",
+      "subject": "Konu: Görsel Çarpıtma ve Çerçeveleme Sorumluluğu",
+      "body": [
+        "Sayın Yetkili,",
+        "Kamu yayıncıları olarak, halka nesnel ve tarihsel bağlamda bilgi sağlama yasal sorumluluğu taşımaktasınız.",
+        "Mahkemelerin kanıtlanmış aşırı sağcı aşırılıkçı olarak sınıflandırılabileceğini teyit ettiği aktörler için mavi rengin kullanılması, ideolojilerinin görsel olarak hafife alınmasıdır.",
+        "Sizden istiyoruz: Bu hafife alma uygulamasına son verin ve raporlarınızda tarihsel olarak otantik kahverengi renge geçin."
+      ]
+    },
+    "privat": {
+      "to": "KIME: ProSiebenSat.1, RTL Group ve dpa Yazı İşleri Müdürlükleri",
+      "subject": "Konu: İnfografik Tedarikinde Varsayılan Renk Değerleri",
+      "body": [
+        "Sayın Yetkili,",
+        "Haber portallarınız ve dpa kanallarınız aracılığıyla Almanya'da milyonlarca insanın günlük algısını şekillendiriyorsunuz.",
+        "İnfografiklerde AfD için renk olarak maviyi seçerek, kısmen anayasaya aykırı bir partinin görsel olarak hafife alınmasına katkıda bulunuyorsunuz.",
+        "Talep ediyoruz: Editoryal renk standartlarınızı tarihsel gerçekliğe uyarlayın."
+      ]
+    },
+    "rundfunkrat": {
+      "to": "KIME: ARD Yayın Konseyleri ve ZDF Televizyon Konseyi",
+      "subject": "Konu: Görsel Çerçeveleme Konusunda Denetim Görevi",
+      "body": [
+        "Sayın Yetkili,",
+        "Kamu yayıncılarının denetim organları olarak, gazetecilik ilkelerine uygunluğu denetlemekle yükümlüsünüz.",
+        "Tüm grafik temsillerde AfD için tutarlı mavi kullanımı, tarafsız kamuoyu oluşturma ilkesini ihlal etmektedir.",
+        "Denetim görevinizi yerine getirmenizi ve siyasi partilere tarihsel olarak doğru renk ataması için bağlayıcı bir kılavuz oluşturmanızı talep ediyoruz."
+      ]
+    }
+  },
+  "faqs": [
+    { "q": "Mavi neden sorunlu olsun?", "a": "Mavi, AfD'nin kendi seçtiği renktir, ancak aynı zamanda barışın, gökyüzünün ve BM barış güçlerinin rengidir. Medya bu öz-tanımlamayı eleştirel olmadan benimser ve duygusal zararsızlık çağrışımını partiye aktarır." },
+    { "q": "Bu sansür değil mi?", "a": "Hayır. Bu, medya etiği standartları ve tarihsel dürüstlükle ilgilidir. Tarihsel olarak doğru renk kodları talep etmek meşru bir toplumsal tartışmadır." },
+    { "q": "Kampanyanın başarı şansı var mı?", "a": "Birçok kişi zaten imzaladı. Medya kuruluşları kamuoyu baskısına yanıt verir. Her imza önemlidir." },
+    { "q": "Bu kampanyanın arkasında kim var?", "a": "Dilekçe Change.org'da başlatıldı — sivil katılım için açık bir platform. Medya bütünlüğünü savunan kararlı vatandaşlar." }
+  ],
+  "facts": [
+    { "emoji": "🎨", "label": "Mavi", "desc": "Gökyüzünün, barışın ve BM'nin rengi" },
+    { "emoji": "📺", "label": "ARD, ZDF ve Diğer Medya", "desc": "Grafiklerde AfD için mavi kullanıyor" },
+    { "emoji": "🏛️", "label": "Tarihsel", "desc": "Kahverengi = aşırı sağ sembolü" },
+    { "emoji": "⚖️", "label": "Anayasa Koruma", "desc": "AfD'nin bazı bölümleri kanıtlanmış aşırılıkçı olarak sınıflandırıldı" }
+  ],
+  "science": {
+    "sectionH": "Bilimsel ve Medya Hukuku Arka Planı",
+    "sectionSub": "Bilgi Notu: Görsel Çerçeveleme ve Doğru Siyasi Renk Kodlaması Yükümlülüğü",
+    "part1H": "Bölüm 1: İletişim Bilimi ve Medya Etiği Temelleri",
+    "foundations": [
+      {
+        "title": "\"Görsel Çerçeveleme\"nin Psikolojik Boyutu (Halo Etkisi)",
+        "points": [
+          { "label": "Mavi Psikolojisi", "text": "Açık camgöbeği ve mavi tonlar evrensel olarak güvenilirlik, itibarlılık ve kurumsal güvenilirlik gibi niteliklerle ilişkilendirilir." },
+          { "label": "Görsel Hafife Alma Tuzağı", "text": "Resmi olarak kanıtlanmış aşırı sağcı aşırılıkçı olarak sınıflandırılan bir siyasi güç, haber grafiklerinde tutarlı bir şekilde bu sakinleştirici ana renkle tasvir edildiğinde, bilişsel bir çelişki ortaya çıkar." }
+        ]
+      },
+      {
+        "title": "Editoryal Özerklik ve Gazetecilik Emsal Kararları",
+        "points": [
+          { "label": "taz Emsal Kararı", "text": "Federal seçim kampanyası sırasında taz gazetesi, AfD çubuğunu kasıtlı olarak mavi yerine kahverengi ile göstermeye karar verdi. Bu, Alman gazeteciliğinde bu tür bilinçli sapmaların zaten uygulandığını göstermektedir." },
+          { "label": "Yerleşik Renk Çeşitliliği", "text": "Medya kuruluşları düzenli olarak resmi CI yönergelerinden sapma yapar. Renk kodlaması esnek bir gazetecilik tasarım aracıdır." }
+        ]
+      }
+    ],
+    "part2H": "Bölüm 2: Hukuki ve Stratejik İtirazların Sistematik Çürütülmesi",
+    "objections": [
+      {
+        "title": "İtiraz 1: \"Medya hukuku tarafsızlık ilkesi yeniden renklendirmeyi yasaklıyor.\"",
+        "rebuttals": [
+          { "label": "Mutlak Simetri Yükümlülüğü Yok", "text": "Federal Anayasa Mahkemesi'nin tutarlı kararlarına göre, kademeli fırsat eşitliği ve adil erişim gereklidir — kör, salt biçimsel simetri değil." },
+          { "label": "Referans Olarak Anayasa Koruma Ofisi", "text": "Mahkeme tarafından teyit edilen «kanıtlanmış aşırı sağcı aşırılıkçı» sınıflandırması nesnel ve doğrulanmış bir bulgudur." },
+          { "label": "Görsel Koruma Hakkı Yok", "text": "Siyasi partilerin bağımsız medyanın öz-sunumlarını filtresiz benimsemesine dair anayasal bir hakkı yoktur." }
+        ]
+      },
+      {
+        "title": "İtiraz 2: \"Medya partilerin kurumsal kimliğini takip etmelidir.\"",
+        "rebuttals": [
+          { "label": "Gazetecilik Mesafesi vs. PR Benimsemesi", "text": "Siyasi aktörlerin kurumsal kimliğini körü körüne benimsemek gazetecilik mesafe ilkesiyle çelişir." },
+          { "label": "Görev Olarak Görsel Gerçeklik", "text": "Anayasa koruma kurumları anayasal sadakatte önemli farklılıklar belgelediğinde, tüm partilere eşit davranmak kamuoyunu yanıltır." }
+        ]
+      },
+      {
+        "title": "İtiraz 3: \"Yeniden renklendirme partinin mağdur anlatısına cephane sağlar.\"",
+        "rebuttals": [
+          { "label": "Proaktif Temel Strateji", "text": "Aşırı sağ iletişim analizleri gösteriyor: «medya mağduru anlatısı» gerçek editoryal kararlardan bağımsız olarak inşa edilen proaktif bir yapısal stratejidir." },
+          { "label": "Önleyici Boyun Eğme Yok", "text": "Editoryal ekipler bir partinin tepkisinden korkarak gerekli etik ayarlamalardan vazgeçtiğinde, editoryal bağımsızlıklarını o partinin iletişim stratejisine bağımlı kılar." }
+        ]
+      }
+    ]
+  }
+}

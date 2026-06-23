@@ -9,3 +9,5 @@ export { SidebarPanels } from './SidebarPanels'
 export { BottomCta } from './BottomCta'
 export { SiteFooter } from './SiteFooter'
 export { AlsoSupportSection } from './AlsoSupportSection'
+export { FaqSection } from './FaqSection'
+

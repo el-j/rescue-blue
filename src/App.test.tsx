@@ -7,6 +7,7 @@ import { parsePollingSnapshot } from './polling'
 
 describe('App', () => {
   beforeEach(() => {
+    localStorage.clear()
     vi.stubGlobal(
       'fetch',
       vi.fn().mockResolvedValue({
@@ -14,6 +15,29 @@ describe('App', () => {
         json: vi.fn().mockResolvedValue({}),
       }),
     )
+    vi.stubGlobal(
+      'matchMedia',
+      vi.fn().mockImplementation((query) => ({
+        matches: false,
+        media: query,
+        onchange: null,
+        addListener: vi.fn(),
+        removeListener: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        dispatchEvent: vi.fn(),
+      })),
+    )
+    Object.defineProperty(window.navigator, 'language', {
+      value: 'de-DE',
+      configurable: true,
+      writable: true,
+    })
+    Object.defineProperty(window.navigator, 'languages', {
+      value: ['de-DE', 'de'],
+      configurable: true,
+      writable: true,
+    })
   })
 
   afterEach(() => {
@@ -28,7 +52,10 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { name: 'Blau retten.' })).toBeInTheDocument()
 
-    await user.click(screen.getByRole('button', { name: 'Toggle language' }))
+    // Open language picker
+    await user.click(screen.getByRole('button', { name: 'Sprache' }))
+    // Click English option
+    await user.click(screen.getByRole('button', { name: /🇬🇧\s*English/i }))
 
     expect(screen.getByRole('heading', { name: 'Rescue Blue.' })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(2)
