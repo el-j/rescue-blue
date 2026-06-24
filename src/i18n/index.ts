@@ -5,8 +5,10 @@ import esLocale from './locales/es.json'
 import trLocale from './locales/tr.json'
 import ukLocale from './locales/uk.json'
 import plLocale from './locales/pl.json'
+import itLocale from './locales/it.json'
+import ruLocale from './locales/ru.json'
 
-export const SUPPORTED_LOCALES = ['de', 'en', 'fr', 'es', 'tr', 'uk', 'pl'] as const
+export const SUPPORTED_LOCALES = ['de', 'en', 'fr', 'es', 'tr', 'uk', 'pl', 'it', 'ru'] as const
 export type Locale = (typeof SUPPORTED_LOCALES)[number]
 
 export type LocaleInfo = {
@@ -24,6 +26,8 @@ export const LOCALE_INFO: LocaleInfo[] = [
   { code: 'tr', nativeName: 'Türkçe', flag: '🇹🇷', bcp47: 'tr-TR' },
   { code: 'uk', nativeName: 'Українська', flag: '🇺🇦', bcp47: 'uk-UA' },
   { code: 'pl', nativeName: 'Polski', flag: '🇵🇱', bcp47: 'pl-PL' },
+  { code: 'it', nativeName: 'Italiano', flag: '🇮🇹', bcp47: 'it-IT' },
+  { code: 'ru', nativeName: 'Русский', flag: '🇷🇺', bcp47: 'ru-RU' },
 ]
 
 type LocaleData = typeof deLocale
@@ -36,6 +40,8 @@ const localeData: Record<Locale, LocaleData> = {
   tr: trLocale as LocaleData,
   uk: ukLocale as LocaleData,
   pl: plLocale as LocaleData,
+  it: itLocale as LocaleData,
+  ru: ruLocale as LocaleData,
 }
 
 // --- Public API (same shape as before so components don't break) ---

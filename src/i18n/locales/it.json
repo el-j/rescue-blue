@@ -1,0 +1,192 @@
+{
+  "translations": {
+    "navCampaign": "Campagna Change.org",
+    "navWhy": "Perché il blu?",
+    "navScience": "Scienza e Diritto",
+    "navLetter": "Lettera aperta",
+    "navCulture": "Patrimonio culturale",
+    "navSign": "Firma ora",
+    "navShare": "Condividi la petizione",
+    "shareTitle": "Condividi la petizione",
+    "shareSubtitle": "Scansiona il codice QR o copia il link",
+    "shareDownloadQr": "Scarica il codice QR",
+    "shareCopyLink": "Copia il link",
+    "shareLinkCopied": "Copiato!",
+    "shareClose": "Chiudi",
+    "badge": "Etica dei media visivi e tutela del patrimonio culturale",
+    "heroH1": "Rettet das Blau.",
+    "heroSub": "Per una scelta di colore accurata.",
+    "heroBody": "La nostra lingua e il simbolismo dei colori sono storicamente radicati. Chiediamo ad ARD, ZDF e alle emittenti private di correggere i loro codici colore politici: l'AfD deve essere rappresentata in marrone nei grafici, non in blu.",
+    "sigCount": "Già",
+    "sigSupport": "sostenitori",
+    "sigLive": "Dati in tempo reale",
+    "sigFallback": "Snapshot locale",
+    "heroImgCaption": "Il nostro visual di campagna",
+    "heroImgSub": "Creare verità visiva, preservare il blu linguistico.",
+    "heroImgCta": "Firma su Change.org",
+    "demoSandbox": "Modalità Sandbox",
+    "demoH2": "Confronto interattivo dei colori",
+    "demoDesc": "Fai clic sul pulsante o sulla barra per sostituire il codice blu minimizzante con il marrone storicamente accurato.",
+    "demoSourceLabel": "Base dei dati",
+    "demoSourceLive": "In tempo reale dall'API di voto",
+    "demoSourceFallback": "Valore locale di ripiego",
+    "demoSourceApi": "Fonte: Sondaggio domenicale DAWUM (Bundestag)",
+    "demoSourceInstitute": "Istituto",
+    "demoSourceDate": "Data del sondaggio",
+    "demoSourceFieldwork": "Lavoro sul campo",
+    "demoSourceSample": "Campione",
+    "demoSourceMethod": "Metodo",
+    "demoSourceStand": "Aggiornato il",
+    "demoSourceButton": "Apri fonte e metodo",
+    "demoSourceWhyInstituteLabel": "Perché INSA?",
+    "demoSourceWhyInstituteTooltip": "Questo grafico utilizza intenzionalmente un istituto fisso (INSA) per mantenere la serie temporale metodologicamente coerente ed evitare salti causati dal cambio di istituto.",
+    "demoOption": "Opzione di visualizzazione",
+    "demoQuestion": "Quale scelta di colore è accurata e storicamente onesta?",
+    "demoReset": "Ripristina in Blu",
+    "demoSwitch": "Passa a Marrone",
+    "dreamBanner": "Scenario ideale — Cosa potrebbe ottenere la nostra petizione",
+    "dreamBody": "Con ogni firma la pressione sui media cresce. Questo scenario mostra come potrebbe apparire un mondo in cui gli elettori smascherano il fascismo e se ne allontanano.",
+    "comparisonToggle": "Mostra maggioranza",
+    "comparisonTitle": "AfD vs. Maggioranza democratica",
+    "comparisonRatio": "× più persone NON votano per l'AfD",
+    "comparisonMessage": "La stragrande maggioranza sostiene la democrazia.",
+    "allOthersLabel": "Tutti gli altri",
+    "whyH2": "Il retroscena del mascheramento dei colori",
+    "whyIntro": "La ricerca scientifica sul framing dimostra che la percezione degli attori politici è sostanzialmente influenzata dai segnali visivi utilizzati per rappresentarli in programmi come ZDF heute-journal o ARD Tagesschau.",
+    "whyCard1H": "La minimizzazione visiva",
+    "whyCard1": "Il blu è il colore del cielo, del mare e delle forze di pace. Calma, crea fiducia e segnala innocuità. Utilizzare questa codifica emotiva per un gruppo nazionalista-völkisch e in parte incostituzionale è un errore fatale per l'etica dei media.",
+    "whyCard2H": "L'assegnazione storica",
+    "whyCard2": "Il colore politico marrone è saldamente associato nella memoria collettiva tedesca al nazionalismo völkisch e all'estremismo di destra. Standard grafici onesti devono mostrare coraggio e rendere visivamente evidente questa continuità storica.",
+    "cultureH": "Salvare il patrimonio culturale",
+    "cultureSub": "Questa è la proprietà linguistica della nostra comunità.",
+    "tabLang": "Tesoro linguistico",
+    "tabSym": "Simbolismo e Storia",
+    "letterH": "La lettera aperta",
+    "letterSub": "Scegli il pubblico destinatario per vedere come chiediamo conto a redazioni e organi di controllo:",
+    "targetPublic": "Emittenti pubbliche",
+    "targetPrivate": "Media privati",
+    "targetCouncil": "Consigli radiotelevisivi",
+    "ctaBanner": "Firma ora e salva il Blu!",
+    "ctaBodyPre": "Oltre",
+    "ctaBodyMid": "persone hanno già firmato questa petizione. Dimostra che sostieni un'informazione visiva onesta.",
+    "ctaBodyLoading": "Caricamento del numero attuale di firme da Change.org.",
+    "ctaBtn": "Firma ora su Change.org",
+    "ctaInfo": "Gratuito · Senza pubblicità · Conta solo la tua voce",
+    "footerTagline": "Una campagna per l'integrità dei media e la tutela del patrimonio culturale del colore blu.",
+    "footerLink": "Visualizza la petizione su Change.org",
+    "footerImprint": "Aviso legal",
+    "alsoSupportH": "Sostieni altre petizioni",
+    "alsoSupportSub": "Altre petizioni che lottano per una Germania democratica e forte.",
+    "alsoSupportBtn": "Firma",
+    "sidebarSignatures": "Firme",
+    "sidebarGrowing": "e in crescita ogni giorno!",
+    "sidebarQuickFacts": "Fatti in breve",
+    "themeLight": "Chiaro",
+    "themeDark": "Scuro",
+    "langLabel": "Lingua",
+    "faqTitle": "FAQ",
+    "faqSub": "Domande frequenti sulla campagna e sulle nostre richieste."
+  },
+  "sayings": {
+    "sprache": [
+      { "phrase": "\"Blau machen\" (Fare blu / Bigiare)", "origin": "Medioevo / Mestiere dei tintori", "desc": "Il termine deriva dal lunedì libero dei tintori. Mentre la lana si ossidava all'aria diventando blu, il lavoro riposava. Una bella metafora tedesca per il riposo e la cura di sé." },
+      { "phrase": "\"Ins Blaue hinein\" (Nel blu dipinto di blu)", "origin": "Romanticismo naturalistico", "desc": "Un viaggio o un'azione spensierata senza una meta precisa, guidati da pura fiducia, curiosità e un tranquillo spirito di avventura." },
+      { "phrase": "\"Das Blaue vom Himmel versprechen\" (Promettere il blu del cielo)", "origin": "Metafora poetica", "desc": "Il blu qui rappresenta l'infinita, maestosa volta celeste – una splendida immagine piena di sogni e desideri." }
+    ],
+    "symbolik": [
+      { "phrase": "Il fiore azzurro", "origin": "Romanticismo (Novalis)", "desc": "Il simbolo più importante del desiderio, dell'amore, dell'intuizione e dello sviluppo dello spirito umano. Un bene culturale inestimabile." },
+      { "phrase": "Caschi Blu dell'ONU", "origin": "Operazioni di pace globali", "desc": "Il blu è stato scelto deliberatamente dall'ONU perché rappresenta universalmente la neutralità, la de-escalation, l'ottimismo e la volontà di pace duratura." },
+      { "phrase": "Blu Reale e Oltremare", "origin": "Storia dell'arte e della cultura", "desc": "Per secoli più prezioso dell'oro (ottenuto dai lapislazzuli). Nel Rinascimento, questo prezioso blu era riservato esclusivamente alle raffigurazioni più sacre." }
+    ]
+  },
+  "openLetters": {
+    "oeffentlich": {
+      "to": "A: Redazioni di ARD-aktuell & ZDF",
+      "subject": "Oggetto: Distorsione visiva e responsabilità di framing",
+      "body": [
+        "Gentili redazioni,",
+        "in quanto emittenti di servizio pubblico, avete la responsabilità legale di fornire al pubblico informazioni obiettive e storicamente contestualizzate.",
+        "L'uso del colore blu per rappresentare attori politici che gli uffici costituzionali hanno confermato poter essere classificati come estremisti di destra costituisce una minimizzazione visiva della loro ideologia.",
+        "Vi chiediamo di porre fine a questa pratica minimizzante e di passare all'uso del colore marrone, storicamente autentico, nei vostri grafici."
+      ]
+    },
+    "privat": {
+      "to": "A: Redazioni di ProSiebenSat.1, RTL Group & dpa",
+      "subject": "Oggetto: Valori di colore predefiniti nella fornitura di infografiche",
+      "body": [
+        "Gentili redazioni,",
+        "attraverso i vostri portali di informazione e i canali della dpa influenzate la percezione quotidiana di milioni di persone in Germania.",
+        "Scegliendo il blu come colore per l'AfD nelle infografiche, contribuite alla minimizzazione visiva di un partito in parte incostituzionale.",
+        "Chiediamo: adeguate i vostri standard di colore redazionali alla realtà storica e impostate il marrone come identificatore per l'AfD nei grafici."
+      ]
+    },
+    "rundfunkrat": {
+      "to": "A: Consigli d'amministrazione ARD e Consiglio televisivo ZDF",
+      "subject": "Oggetto: Dovere di vigilanza sul framing visivo",
+      "body": [
+        "Gentile Consiglio,",
+        "in quanto organi di controllo delle emittenti pubbliche, siete tenuti a vigilare sul rispetto dei principi giornalistici.",
+        "L'uso costante del blu per l'AfD in tutte le rappresentazioni grafiche viola il principio della formazione di un'opinione non distorta.",
+        "Vi invitiamo a esercitare il vostro dovere di vigilanza e a introdurre una linea guida vincolante per l'assegnazione storicamente corretta dei colori ai partiti politici."
+      ]
+    }
+  },
+  "faqs": [
+    { "q": "Perché il blu dovrebbe essere problematico?", "a": "Il blu è il colore scelto dall'AfD, ma è anche il colore della pace, del cielo e delle forze dell'ONU. Adottando acriticamente questa descrizione visiva, i media trasferiscono l'associazione emotiva di innocuità al partito." },
+    { "q": "Non si tratta di censura o interferenza politica?", "a": "No. Si trata di standard etico-giornalistici e di onestà storica. I media prendono decisioni editoriali ogni giorno – chiedere codici di colore storicamente accurati è un legittimo dibattito sociale, non censura." },
+    { "q": "La campagna ha possibilità di successo?", "a": "Molte persone hanno già firmato. Le organizzazioni dei media rispondono alla pressione pubblica. Ogni firma conta." },
+    { "q": "Chi c'è dietro questa campagna?", "a": "La petizione è stata avviata su Change.org, una piattaforma aperta per l'impegno civico. Si tratta di cittadini impegnati che difendono l'integrità dei media." }
+  ],
+  "facts": [
+    { "emoji": "🎨", "label": "Blu", "desc": "Colore del cielo, della pace e dell'ONU" },
+    { "emoji": "📺", "label": "ARD, ZDF e altri media", "desc": "Usano il blu per l'AfD nei grafici" },
+    { "emoji": "🏛️", "label": "Storicamente", "desc": "Marrone = simbolo dell'estremismo di destra" },
+    { "emoji": "⚖️", "label": "Tutela costituzionale", "desc": "Parti dell'AfD classificate come estremiste provate" }
+  ],
+  "science": {
+    "sectionH": "Contesto scientifico e giuridico",
+    "sectionSub": "Scheda informativa: Framing visivo e obbligo di codifica accurata dei colori politici",
+    "part1H": "Parte 1: Fondamenti di scienze della comunicazione ed etica dei media",
+    "foundations": [
+      {
+        "title": "La dimensione psicologica del \"Visual Framing\" (effetto alone)",
+        "points": [
+          { "label": "La psicologia del blu", "text": "Le tonalità chiare del ciano e del blu sono universalmente associate ad attributi quali credibilità, affidabilità, de-escalation e stabilità istituzionale – simili alle scelte di colore delle Nazioni Unite o delle istituzioni europee." },
+          { "label": "La trappola della minimizzazione visiva", "text": "Quando una forza politica ufficialmente classificata come estremista di destra provata dall'Ufficio federale per la tutela della Costituzione (BfV) viene costantemente rappresentata in questo rassicurante colore primario nei grafici delle notizie, si crea un contrasto cognitivo: il framing visivo maschera il radicalismo ideologico degli attori (effetto alone)." }
+        ]
+      },
+      {
+        "title": "Autonomia editoriale e precedenti giornalistici",
+        "points": [
+          { "label": "Il precedente della taz", "text": "Durante la campagna per le elezioni federali, il quotidiano nazionale taz ha deciso deliberatamente di rappresentare la barra dell'AfD in marrone invece che in blu, sia nella versione cartacea che in quella web. Ciò dimostra che la deviazione consapevole dalla presentazione del partito è già praticata nel giornalismo tedesco e riconosciuta come un legittimo strumento editoriale." },
+          { "label": "Differenze cromatiche consolidate", "text": "I media deviano regolarmente dalle linee guida ufficiali delle parti. Il BSW viene mostrato in viola o arancione a seconda della redazione; il partito della Sinistra (Die Linke) appare spesso in rosso scuro per distinguerlo dall'SPD. CDU/CSU usa il turchese ma viene costantemente rappresentata in nero. La codifica dei colori è uno strumento flessibile del design giornalistico." }
+        ]
+      }
+    ],
+    "part2H": "Parte 2: Confutazione sistematica delle obiezioni giuridiche e strategiche",
+    "objections": [
+      {
+        "title": "Obiezione 1: \"Il principio di neutralità della legge sui media vieta di ricolorare.\"",
+        "rebuttals": [
+          { "label": "Nessun obbligo di simmetria assoluta", "text": "Secondo le sentenze costanti della Corte costituzionale federale (BVerfG), l'Art. 21(1) GG in combinato disposto con il § 5 PartG richiede pari opportunità graduate e accesso equo – non una simmetria cieca e puramente formale. Il giornalismo può e deve nominare le differenze quando esistono motivi oggettivi e fattuali." },
+          { "label": "La tutela costituzionale come punto di riferimento", "text": "La classificazione confermata dai tribunali come \"estremista di destra provato\" è un accertamento oggettivo e verificato. Una visualizzazione che rifletta questo elemento attraverso un colore storicamente consolidato risponde all'obbligo legale di fornire un'informazione veritiera e basata sui fatti (cfr. Trattato statale sui media – MStV)." },
+          { "label": "Nessun diritto alla tutela dell'immagine visiva", "text": "I partiti politici non hanno alcun diritto costituzionale a che i media indipendenti adottino la loro autorappresentazione senza filtri. L'autonomia di programmazione delle emittenti (libertà di trasmissione ai sensi dell'Art. 5(1)(2) GG) include esplicitamente il diritto di progettare grafici informativi secondo criteri giornalistici fondati." }
+        ]
+      },
+      {
+        "title": "Obiezione 2: \"I media devono seguire la Corporate Identity (CI) dei partiti.\"",
+        "rebuttals": [
+          { "label": "Distanza giornalistica contro adozione di PR", "text": "Adottare ciecamente la CI degli attori politici contraddice il principio giornalistico della distanza. I partiti usano il branding visivo come strumento di comunicazione strategica. La riproduzione acritica di questo marketing da parte dei media li trasforma in involontari amplificatori di strategie comunicative politiche." },
+          { "label": "La verità visiva come dovere", "text": "Quando le agenzie di tutela costituzionale documentano differenze significative nella fedeltà costituzionale dei partiti, trattarli tutti allo stesso modo in un innocente \"blu standard\" fuorvia il pubblico. La verità visiva richiede una scelta di colore che rifletta lo status costituzionale." }
+        ]
+      },
+      {
+        "title": "Obiezione 3: \"La ricolorazione fornisce al parti-to argomenti per la sua narrativa vittimistica.\"",
+        "rebuttals": [
+          { "label": "Strategia di comunicazione proattiva", "text": "Le analisi della comunicazione dell'estremismo di destra (anche da parte del Dr. Johannes Hillje) dimostrano che la narrativa del \"vittimismo dei media\" è una strategia proattiva e strutturale, costruita e sfruttata indipendentemente dalle effettive decisioni editoriali." },
+          { "label": "Nessuna sottomissione preventiva", "text": "Quando le redazioni rinunciano a necessari adeguamenti per paura della reazione di un partito, subordinano la loro indipendenza editoriale alla strategia comunicativa di quel partito. La protezione più efficace non è l'inazione, bensì una divulgazione trasparente, scientificamente e giuridicamente rigorosa della scelta grafica redazionale." }
+        ]
+      }
+    ]
+  }
+}
