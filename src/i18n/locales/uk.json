@@ -1,6 +1,6 @@
 {
   "translations": {
-    "navCampaign": "Кампанія Change.org",
+    "navCampaign": "Change.org/rette-blau",
     "navWhy": "Чому синій?",
     "navScience": "Наука і Право",
     "navLetter": "Відкритий лист",
@@ -85,7 +85,9 @@
     "themeDark": "Темна",
     "langLabel": "Мова",
     "faqTitle": "FAQ",
-    "faqSub": "Часті запитання про кампанію та наші вимоги."
+    "faqSub": "Часті запитання про кампанію та наші вимоги.",
+    "demoDreamReset": "Скинути значення",
+    "demoDreamSwitch": "Візуалізувати найкраще майбутнє"
   },
   "sayings": {
     "sprache": [

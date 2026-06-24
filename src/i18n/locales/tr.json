@@ -1,6 +1,6 @@
 {
   "translations": {
-    "navCampaign": "Change.org Kampanyası",
+    "navCampaign": "Change.org/rette-blau",
     "navWhy": "Neden Mavi?",
     "navScience": "Bilim ve Hukuk",
     "navLetter": "Açık Mektup",
@@ -85,7 +85,9 @@
     "themeDark": "Koyu",
     "langLabel": "Dil",
     "faqTitle": "SSS",
-    "faqSub": "Kampanya ve taleplerimiz hakkında sıkça sorulan sorular."
+    "faqSub": "Kampanya ve taleplerimiz hakkında sıkça sorulan sorular.",
+    "demoDreamReset": "Değerleri sıfırla",
+    "demoDreamSwitch": "En iyi geleceği görselleştir"
   },
   "sayings": {
     "sprache": [

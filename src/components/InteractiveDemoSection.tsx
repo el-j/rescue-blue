@@ -12,41 +12,46 @@ interface DemoProps {
   standInfo: string
   sourceUrl: string
   sourceMethodUrl: string
-  isBrownActive: boolean
-  onToggleBrown: () => void
+  sandboxState: 'default' | 'brown' | 'dream'
+  onCycleSandboxState: () => void
   instituteName?: string
 }
 
-export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollData, standInfo, sourceUrl, sourceMethodUrl, isBrownActive, onToggleBrown, instituteName }: DemoProps) {
+export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollData, standInfo, sourceUrl, sourceMethodUrl, sandboxState, onCycleSandboxState, instituteName }: DemoProps) {
+  const isBrownActive = sandboxState === 'brown' || sandboxState === 'dream'
+  const isDreamActive = sandboxState === 'dream'
   const [isInstituteInfoOpen, setIsInstituteInfoOpen] = useState(false)
   const [showComparison, setShowComparison] = useState(false)
-  const [animatedAfdPct, setAnimatedAfdPct] = useState<number | null>(null)
+  const [elapsedTicks, setElapsedTicks] = useState<number | null>(null)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
-  const hasStartedDrainRef = useRef(false)
+  const hasStartedDreamRef = useRef(false)
 
   const afdBar = bars.find((bar) => bar.isAfd)
   const originalAfdPct = afdBar?.pct ?? 0
 
-  // When brown is activated, start a timer that slowly drains the AfD value
+  const cduBar = bars.find((bar) => bar.key === 'cdu')
+  const originalCduPct = cduBar?.pct ?? 0
+
+  // When dream state is activated, start a timer that slowly drains values
   useEffect(() => {
-    if (isBrownActive && !hasStartedDrainRef.current) {
-      hasStartedDrainRef.current = true
+    if (isDreamActive && !hasStartedDreamRef.current) {
+      hasStartedDreamRef.current = true
 
       const totalDuration = 300000 // 5 minutes in milliseconds
       const intervalMs = 50
       const totalTicks = totalDuration / intervalMs
-      const decrementStep = (originalAfdPct - 0.5) / totalTicks
+
+      setElapsedTicks(0)
 
       // Small delay before starting the drain for dramatic effect
       const startDelay = setTimeout(() => {
-        setAnimatedAfdPct(originalAfdPct)
         timerRef.current = setInterval(() => {
-          setAnimatedAfdPct((prev) => {
+          setElapsedTicks((prev) => {
             if (prev === null) return null
-            const next = prev - decrementStep
-            if (next <= 0.5) {
+            const next = prev + 1
+            if (next >= totalTicks) {
               if (timerRef.current) clearInterval(timerRef.current)
-              return 0.5
+              return totalTicks
             }
             return next
           })
@@ -59,43 +64,74 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
       }
     }
 
-    if (!isBrownActive) {
-      hasStartedDrainRef.current = false
+    if (!isDreamActive) {
+      hasStartedDreamRef.current = false
       if (timerRef.current) {
         clearInterval(timerRef.current)
         timerRef.current = null
       }
-      
       const resetTimeout = setTimeout(() => {
-        setAnimatedAfdPct(null)
+        setElapsedTicks(null)
       }, 0)
-
       return () => {
         clearTimeout(resetTimeout)
       }
     }
-  }, [isBrownActive, originalAfdPct])
+  }, [isDreamActive])
 
-  // Compute the displayed AfD percentage
-  const displayAfdPct = isBrownActive && animatedAfdPct !== null ? animatedAfdPct : originalAfdPct
+  // Compute the displayed percentages
+  const totalDuration = 300000
+  const intervalMs = 50
+  const totalTicks = totalDuration / intervalMs
 
-  // Redistribute drained AfD points to SPD, Grüne, Linke, Sonstige (not CDU)
-  const drainedPoints = originalAfdPct - displayAfdPct
+  let displayAfdPct = originalAfdPct
+  let displayCduPct = originalCduPct
+
+  if (isDreamActive && elapsedTicks !== null) {
+    const progress = Math.min(elapsedTicks / totalTicks, 1)
+    displayAfdPct = originalAfdPct - (originalAfdPct - 0.5) * progress
+    if (originalCduPct > 20) {
+      displayCduPct = originalCduPct - (originalCduPct - 20) * progress
+    }
+  }
+
+  // Redistribute drained points to SPD, Grüne, Linke, Sonstige
+  const drainedPoints = (originalAfdPct - displayAfdPct) + (originalCduPct - displayCduPct)
   const recipientKeys = new Set(['spd', 'greens', 'left', 'others'])
   const recipientTotal = bars
     .filter((bar) => recipientKeys.has(bar.key))
     .reduce((sum, bar) => sum + bar.pct, 0)
 
-  const displayBars = bars.map((bar) => {
+  const displayBarsRaw = bars.map((bar) => {
     if (bar.isAfd) {
       return { ...bar, pct: displayAfdPct }
     }
+    if (bar.key === 'cdu') {
+      return { ...bar, pct: displayCduPct }
+    }
     if (drainedPoints > 0 && recipientKeys.has(bar.key) && recipientTotal > 0) {
       const share = bar.pct / recipientTotal
-      return { ...bar, pct: Math.round((bar.pct + drainedPoints * share) * 10) / 10 }
+      return { ...bar, pct: bar.pct + drainedPoints * share }
     }
     return { ...bar }
   })
+
+  // Round values to 1 decimal place
+  const displayBars = displayBarsRaw.map((bar) => {
+    return { ...bar, pct: Math.round(bar.pct * 10) / 10 }
+  })
+
+  // Adjust for rounding errors to ensure the sum of displayBars matches targetSum exactly
+  const currentSum = Math.round(displayBars.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
+  const targetSum = Math.round(bars.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
+  const diff = Math.round((targetSum - currentSum) * 10) / 10
+
+  if (diff !== 0) {
+    const othersBar = displayBars.find((b) => b.key === 'others')
+    if (othersBar) {
+      othersBar.pct = Math.round((othersBar.pct + diff) * 10) / 10
+    }
+  }
 
   const maxPct = Math.max(...displayBars.map((bar) => bar.pct), 1)
 
@@ -106,6 +142,8 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
 
   // For the comparison view, the max needs to account for the combined bar
   const comparisonMax = Math.max(othersCombinedPct, displayAfdPct, 1)
+
+  const isAfdBrown = isBrownActive || isDreamActive
 
   const toggleComparison = useCallback(() => {
     setShowComparison((prev) => !prev)
@@ -169,8 +207,8 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
         </div>
       </div>
 
-      {/* Dream scenario banner — visible when brown is active */}
-      {isBrownActive && (
+      {/* Dream scenario banner — visible when dreamstate is active */}
+      {isDreamActive && (
         <div className="dream-banner mb-4 animate-in rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-amber-950/40 px-4 py-3 text-center">
           <p className="text-sm font-black tracking-wide text-amber-300 uppercase">
             ✨ {t.dreamBanner} ✨
@@ -187,7 +225,7 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
           {displayBars.map((bar, index) => {
             const heightPx = Math.round((bar.pct / maxPct) * 200)
             const barColor = bar.isAfd
-              ? (isBrownActive
+              ? (isAfdBrown
                   ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40'
                   : bar.defaultColor)
               : bar.defaultColor
@@ -198,14 +236,14 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
               <div key={index} className="flex w-1/6 flex-col items-center">
                 <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-white' : 'text-neutral-400'}`}>{pctLabel} %</span>
                 <button
-                  onClick={bar.isAfd ? () => onToggleBrown() : undefined}
+                  onClick={bar.isAfd ? () => onCycleSandboxState() : undefined}
                   className={`w-full rounded-t-md transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
                   style={{ height: `${heightPx}px` }}
-                  aria-label={bar.isAfd ? (isBrownActive ? t.demoReset : t.demoSwitch) : label}
+                  aria-label={bar.isAfd ? (sandboxState === 'default' ? t.demoSwitch : sandboxState === 'brown' ? t.demoDreamSwitch : t.demoReset) : label}
                   disabled={!bar.isAfd}
                   type="button"
                 />
-                <span className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs ${bar.isAfd ? (isBrownActive ? 'font-black text-amber-500' : 'font-black text-cyan-400') : 'text-neutral-500'}`}>
+                <span className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs ${bar.isAfd ? (isAfdBrown ? 'font-black text-amber-500' : 'font-black text-cyan-400') : 'text-neutral-500'}`}>
                   {label}
                 </span>
               </div>
@@ -242,16 +280,16 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
             <div className="flex flex-col items-center" style={{ width: '120px' }}>
               <span className="mb-2 text-lg font-black text-white">{displayAfdPct.toFixed(1)} %</span>
               <div
-                className={`w-full rounded-t-lg transition-all duration-500 ${isBrownActive ? 'shadow-lg shadow-amber-950/40' : 'shadow-lg shadow-cyan-500/20'}`}
+                className={`w-full rounded-t-lg transition-all duration-500 ${isAfdBrown ? 'shadow-lg shadow-amber-950/40' : 'shadow-lg shadow-cyan-500/20'}`}
                 style={{
                   height: `${Math.round((displayAfdPct / comparisonMax) * 200)}px`,
-                  background: isBrownActive
+                  background: isAfdBrown
                     ? 'linear-gradient(to top, #78350f, #92400e, #b45309)'
                     : 'linear-gradient(to top, #06b6d4, #22d3ee)',
-                  borderTop: isBrownActive ? '3px solid #d97706' : '3px solid #67e8f9',
+                  borderTop: isAfdBrown ? '3px solid #d97706' : '3px solid #67e8f9',
                 }}
               />
-              <span className={`mt-3 text-sm font-black ${isBrownActive ? 'text-amber-500' : 'text-cyan-400'}`}>
+              <span className={`mt-3 text-sm font-black ${isAfdBrown ? 'text-amber-500' : 'text-cyan-400'}`}>
                 AfD
               </span>
             </div>
@@ -290,11 +328,21 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
           <span className="text-sm font-bold text-neutral-200">{t.demoQuestion}</span>
         </div>
         <button
-          onClick={onToggleBrown}
-          className={`w-full rounded-lg px-6 py-2.5 text-xs font-bold tracking-widest uppercase transition-all sm:w-auto ${isBrownActive ? 'border border-amber-800/50 bg-amber-900 text-amber-200 hover:bg-amber-800' : 'border border-blue-500/30 bg-blue-600 text-blue-100 hover:bg-blue-500'}`}
+          onClick={onCycleSandboxState}
+          className={`w-full rounded-lg px-6 py-2.5 text-xs font-bold tracking-widest uppercase transition-all sm:w-auto ${
+            sandboxState === 'default'
+              ? 'border border-blue-500/30 bg-blue-600 text-blue-100 hover:bg-blue-500'
+              : sandboxState === 'brown'
+              ? 'border border-purple-800/50 bg-purple-900 text-purple-200 hover:bg-purple-800'
+              : 'border border-amber-800/50 bg-amber-900 text-amber-200 hover:bg-amber-800'
+          }`}
           type="button"
         >
-          {isBrownActive ? t.demoReset : t.demoSwitch}
+          {sandboxState === 'default'
+            ? t.demoSwitch
+            : sandboxState === 'brown'
+            ? t.demoDreamSwitch
+            : t.demoReset}
         </button>
       </div>
     </section>

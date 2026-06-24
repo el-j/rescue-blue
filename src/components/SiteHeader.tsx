@@ -53,7 +53,7 @@ export function SiteHeader({ lang, t, theme, onChangeLanguage, onToggleTheme }: 
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="h-3 w-3 animate-pulse rounded-full bg-blue-500 shadow-md shadow-blue-500/50" />
-            <span className="text-sm font-bold tracking-wider text-[var(--text-primary)] uppercase">{t.navCampaign}</span>
+            <a href="https://change.org/rette-blau" target="_blank" rel="noopener noreferrer"><span className="text-sm font-bold tracking-wider text-[var(--text-primary)] uppercase">{t.navCampaign}</span></a>
           </div>
           <div className="flex flex-wrap items-center justify-end gap-2 md:gap-4">
             <a href="#warum" className="hidden text-xs text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:block md:text-sm">{t.navWhy}</a>

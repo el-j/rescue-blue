@@ -61,15 +61,27 @@ describe('App', () => {
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(2)
   })
 
-  it('toggles the interactive colour demo', async () => {
+  it('cycles the interactive demo sandbox states', async () => {
     const user = userEvent.setup()
 
     render(<App />)
 
+    // Initial state: "Jetzt umfärben auf Braun"
     const toggleButton = screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })[1]
+    
+    // 1st Click -> changes to brown state: button becomes "Beste Zukunft visualisieren"
     await user.click(toggleButton)
+    expect(screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })).toHaveLength(2)
 
+    // 2nd Click -> activates dream state: button becomes "Zurücksetzen auf Blau"
+    const dreamButton = screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })[1]
+    await user.click(dreamButton)
     expect(screen.getAllByRole('button', { name: 'Zurücksetzen auf Blau' })).toHaveLength(2)
+
+    // 3rd Click -> resets to default: button becomes "Jetzt umfärben auf Braun"
+    const resetButton = screen.getAllByRole('button', { name: 'Zurücksetzen auf Blau' })[1]
+    await user.click(resetButton)
+    expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(2)
   })
 
   it('opens a FAQ answer', async () => {

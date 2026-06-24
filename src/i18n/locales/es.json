@@ -1,6 +1,6 @@
 {
   "translations": {
-    "navCampaign": "Campaña Change.org",
+    "navCampaign": "Change.org/rette-blau",
     "navWhy": "¿Por qué azul?",
     "navScience": "Ciencia y Derecho",
     "navLetter": "Carta abierta",
@@ -85,7 +85,9 @@
     "themeDark": "Oscuro",
     "langLabel": "Idioma",
     "faqTitle": "Preguntas frecuentes",
-    "faqSub": "Preguntas frecuentes sobre la campaña y nuestras demandas."
+    "faqSub": "Preguntas frecuentes sobre la campaña y nuestras demandas.",
+    "demoDreamReset": "Restablecer valores",
+    "demoDreamSwitch": "Visualizar el mejor futuro"
   },
   "sayings": {
     "sprache": [

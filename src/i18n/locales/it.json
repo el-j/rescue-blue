@@ -1,6 +1,6 @@
 {
   "translations": {
-    "navCampaign": "Campagna Change.org",
+    "navCampaign": "Change.org/rette-blau",
     "navWhy": "Perché il blu?",
     "navScience": "Scienza e Diritto",
     "navLetter": "Lettera aperta",
@@ -14,7 +14,7 @@
     "shareLinkCopied": "Copiato!",
     "shareClose": "Chiudi",
     "badge": "Etica dei media visivi e tutela del patrimonio culturale",
-    "heroH1": "Rettet das Blau.",
+    "heroH1": "Salviamo il Blu.",
     "heroSub": "Per una scelta di colore accurata.",
     "heroBody": "La nostra lingua e il simbolismo dei colori sono storicamente radicati. Chiediamo ad ARD, ZDF e alle emittenti private di correggere i loro codici colore politici: l'AfD deve essere rappresentata in marrone nei grafici, non in blu.",
     "sigCount": "Già",
@@ -85,7 +85,9 @@
     "themeDark": "Scuro",
     "langLabel": "Lingua",
     "faqTitle": "FAQ",
-    "faqSub": "Domande frequenti sulla campagna e sulle nostre richieste."
+    "faqSub": "Domande frequenti sulla campagna e sulle nostre richieste.",
+    "demoDreamReset": "Ripristina valori",
+    "demoDreamSwitch": "Visualizza il miglior futuro"
   },
   "sayings": {
     "sprache": [

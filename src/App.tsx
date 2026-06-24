@@ -45,7 +45,7 @@ const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-rescue-blue.png`
 export default function App() {
   const [lang, setLang] = useState<Locale>(detectLocale)
   const [theme, setTheme] = useState<Theme>(detectTheme)
-  const [isBrownActive, setIsBrownActive] = useState(false)
+  const [sandboxState, setSandboxState] = useState<'default' | 'brown' | 'dream'>('default')
   const [activeTab, setActiveTab] = useState<ContentTab>('sprache')
   const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -148,8 +148,14 @@ export default function App() {
             standInfo={pollingStandInfo}
             sourceUrl={pollingSnapshot?.sourceUrl ?? 'https://dawum.de/Bundestag/'}
             sourceMethodUrl={POLLING_API_DOCS_URL}
-            isBrownActive={isBrownActive}
-            onToggleBrown={() => setIsBrownActive((current) => !current)}
+            sandboxState={sandboxState}
+            onCycleSandboxState={() => {
+              setSandboxState((current) => {
+                if (current === 'default') return 'brown'
+                if (current === 'brown') return 'dream'
+                return 'default'
+              })
+            }}
             instituteName={pollingSnapshot?.instituteName ?? POLLING_LOCKED_INSTITUTE}
           />
 
