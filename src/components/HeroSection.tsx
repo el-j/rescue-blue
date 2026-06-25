@@ -197,19 +197,19 @@ export function HeroSection({
            SLIDE 0 — Campaign Visual + Hero Content
          ════════════════════════════════════════════════════════════ */}
       <div
-        className={`hero-slide-campaign absolute inset-0 z-20 flex flex-col items-center justify-between text-center px-4 md:px-8 pt-18 md:pt-22 pb-8 transition-all duration-700 ${
+        className={`hero-slide-campaign absolute inset-0 z-20 flex flex-col items-center justify-between text-center px-4 md:px-8 pt-28 sm:pt-32 md:pt-36 pb-8 transition-all duration-700 ${
           currentIndex === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
         {/* ─── Top group: Badge + Title + Subtitle ─── */}
         <div className="flex flex-col items-center">
-          <span className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-blue-400/30 bg-blue-500/15 px-4 py-1.5 text-xs font-semibold tracking-widest text-blue-300 uppercase backdrop-blur-sm shadow-lg">
+          <span className="hero-badge mb-4 inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-xs font-bold tracking-widest uppercase shadow-lg">
             <Shield size={12} /> {t.badge}
           </span>
-          <h1 className="mb-2 text-3xl leading-none font-black tracking-tight text-white uppercase sm:text-4xl lg:text-5xl xl:text-6xl drop-shadow-lg">
+          <h1 className="mb-3 text-4xl leading-none font-black tracking-tight text-white uppercase sm:text-5xl lg:text-6xl xl:text-7xl drop-shadow-lg">
             {t.heroH1}
           </h1>
-          <p className="text-base font-extrabold tracking-[0.18em] text-blue-400 uppercase sm:text-xl lg:text-2xl drop-shadow-md">
+          <p className="hero-subheadline inline-block rounded-lg bg-black/45 px-3 py-1.5 text-base font-black tracking-[0.18em] text-blue-300 uppercase backdrop-blur-sm sm:text-xl lg:text-2xl">
             {t.heroSub}
           </p>
         </div>
@@ -219,7 +219,7 @@ export function HeroSection({
 
         {/* ─── Bottom group: Body + Signature + Petition ─── */}
         <div className="flex flex-col items-center w-full gap-3 max-w-4xl">
-          <p className="mx-auto max-w-3xl text-xs leading-relaxed text-white/75 sm:text-sm md:text-base drop-shadow-sm">
+          <p className="hero-text-description mx-auto max-w-3xl rounded-2xl px-4 py-2.5 text-xs leading-relaxed text-white/90 sm:text-sm md:text-base">
             {t.heroBody}
           </p>
 
@@ -270,7 +270,7 @@ export function HeroSection({
         return (
           <div
             key={idx}
-            className={`hero-news-slide absolute inset-0 z-20 flex flex-col justify-between px-6 pt-20 pb-20 md:px-16 md:pt-24 md:pb-20 lg:px-24 text-left backdrop-blur-sm transition-all duration-500 ${
+            className={`hero-news-slide absolute inset-0 z-20 flex flex-col justify-between px-6 pt-28 pb-20 md:px-16 md:pt-32 md:pb-20 lg:px-24 text-left backdrop-blur-sm transition-all duration-500 ${
               isSelected ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
             }`}
           >

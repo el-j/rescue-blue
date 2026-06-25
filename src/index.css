@@ -332,6 +332,45 @@
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
+/* Hero gradient overlay — darkens top/bottom of the photo so badge, headline
+   and footer content stay readable while keeping the center clear */
+.hero-gradient-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+/* Hero badge — dark chip + brighter blue for strong contrast over the image */
+.hero-slide-campaign .hero-badge {
+  background-color: rgba(8, 20, 45, 0.65) !important;
+  border-color: rgba(147, 197, 253, 0.45) !important;
+}
+
+.hero-slide-campaign .hero-badge,
+.hero-slide-campaign .hero-badge svg {
+  color: #bfdbfe !important;
+}
+
+/* Hero subheadline — brighter blue + dark chip for strong contrast over the image */
+.hero-slide-campaign .hero-subheadline {
+  color: #bfdbfe !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Hero body description — translucent backdrop for legibility over the image */
+.hero-text-description {
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+.light-theme .hero-text-description {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 /* Nav chevrons & dots always white-on-dark on hero regardless of theme */
 .light-theme .hero-fullscreen button[aria-label="Previous Slide"],
 .light-theme .hero-fullscreen button[aria-label="Next Slide"] {
@@ -352,8 +391,7 @@
 }
 
 .light-theme .hero-news-slide {
-  background: rgba(248, 250, 252, 0.82);
-  backdrop-filter: blur(12px);
+  background: rgba(248, 250, 252, 0.55);
 }
 
 /* Date label */
