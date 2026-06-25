@@ -20,17 +20,25 @@ export interface NewsArticle {
 interface HeroProps {
   lang: Locale
   t: Translation
-  heroImageUrl: string
+  /** Base path (no extension) — responsive variants are named `${base}-${width}.${ext}` */
+  heroImageBase: string
   formattedSignatureCount: string | undefined
   isLoadingSignatures: boolean
   isLive: boolean
   news?: NewsArticle[]
 }
 
+// Widths the build has pre-generated variants for (see public/hero-image-rescue-blue-no-text-*)
+const HERO_IMAGE_WIDTHS = [640, 1024, 1536, 1920, 2560]
+
+function buildSrcSet(base: string, ext: string) {
+  return HERO_IMAGE_WIDTHS.map((w) => `${base}-${w}.${ext} ${w}w`).join(', ')
+}
+
 export function HeroSection({
   lang,
   t,
-  heroImageUrl,
+  heroImageBase,
   formattedSignatureCount,
   isLoadingSignatures,
   isLive,
@@ -115,16 +123,23 @@ export function HeroSection({
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* ── Full-screen hero image background ── */}
-      <img
-        src={heroImageUrl}
-        alt={
-          lang === 'de'
-            ? 'Kampagnenmotiv der Aktion Rettet das Blau'
-            : 'Campaign visual for Rescue the Blue'
-        }
-        className="absolute inset-0 h-full w-full object-cover object-center z-0"
-      />
+      {/* ── Full-screen hero image background — responsive srcset keeps mobile data usage low ── */}
+      <picture>
+        <source type="image/avif" srcSet={buildSrcSet(heroImageBase, 'avif')} sizes="100vw" />
+        <source type="image/webp" srcSet={buildSrcSet(heroImageBase, 'webp')} sizes="100vw" />
+        <img
+          src={`${heroImageBase}-1920.jpg`}
+          srcSet={buildSrcSet(heroImageBase, 'jpg')}
+          sizes="100vw"
+          alt={
+            lang === 'de'
+              ? 'Kampagnenmotiv der Aktion Rettet das Blau'
+              : 'Campaign visual for Rescue the Blue'
+          }
+          className="absolute inset-0 h-full w-full object-cover object-center z-0"
+          fetchPriority="high"
+        />
+      </picture>
 
       {/* Gradient overlays for text readability */}
       <div className="hero-gradient-overlay absolute inset-0 z-[1]" />

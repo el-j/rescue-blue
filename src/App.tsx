@@ -42,7 +42,8 @@ import { useSignatureCount } from './hooks/useSignatureCount'
 import { usePollingSnapshot } from './hooks/usePollingSnapshot'
 import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
 
-const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text.png`
+// Base path (no extension) — HeroSection builds responsive srcset variants from this
+const HERO_IMAGE_BASE = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text`
 
 export default function App() {
   const [lang, setLang] = useState<Locale>(detectLocale)
@@ -150,7 +151,7 @@ export default function App() {
       <HeroSection
         lang={lang}
         t={t}
-        heroImageUrl={HERO_IMAGE_URL}
+        heroImageBase={HERO_IMAGE_BASE}
         formattedSignatureCount={formattedSignatureCount}
         isLoadingSignatures={isLoadingSignatures}
         isLive={isLive}
