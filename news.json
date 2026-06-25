@@ -27,6 +27,10 @@
       {
         "name": "Zeit Online",
         "url": "https://www.zeit.de/politik/deutschland/2026-06/martin-reichardt-afd-hitlergruss-foto-gxe"
+      },
+      {
+        "name": "Taz",
+        "url": "https://taz.de/Hitlergruss-bei-der-AfD-geht-nicht-eigentlich/!6190583/"
       }
     ]
   },
@@ -58,6 +62,231 @@
       {
         "name": "Belltower.News",
         "url": "https://www.belltower.news/deutsche-anomalie-wie-die-afd-den-europaeischen-trend-zur-maessigung-bricht-166111/"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "AfD-Verbotsantrag: Experten sehen gute Erfolgschancen für AfD-Verbot",
+      "en": "AfD ban application: Experts see a good chance of success for the AfD ban",
+      "fr": "Demande d'interdiction de l'AfD : les experts voient de bonnes chances de succès pour l'interdiction de l'AfD",
+      "es": "Solicitud de prohibición de AfD: los expertos ven buenas posibilidades de éxito para la prohibición de AfD",
+      "tr": "AfD yasağı uygulaması: Uzmanlar AfD yasağının başarılı olma şansını yüksek görüyor",
+      "uk": "Заявка на заборону AfD: експерти бачать хороші шанси на успіх заборони AfD",
+      "pl": "Wniosek o zakaz AfD: Eksperci widzą duże szanse powodzenia zakazu AfD",
+      "it": "Richiesta di divieto dell'AfD: gli esperti vedono buone possibilità di successo per il divieto dell'AfD",
+      "ru": "Заявление о запрете АдГ: эксперты видят хорошие шансы на успех запрета АдГ"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Fachleute haben Wahlprogramme und Parlamentsanträge der AfD analysiert. Ihre Einschätzung: Ein Verbotsantrag hätte vor dem Verfassungsgericht gute Chancen auf Erfolg. mehr...",
+      "en": "Experts have analyzed the AfD's election programs and parliamentary proposals. Your assessment: An application for a ban would have a good chance of success before the Constitutional Court. more...",
+      "fr": "Les experts ont analysé les programmes électoraux et les propositions parlementaires de l'AfD. Votre évaluation : Une demande d'interdiction aurait de bonnes chances d'aboutir devant la Cour constitutionnelle. plus...",
+      "es": "Los expertos han analizado los programas electorales y las propuestas parlamentarias del AfD. Su valoración: Una solicitud de prohibición tendría muchas posibilidades de prosperar ante el Tribunal Constitucional. más...",
+      "tr": "Uzmanlar AfD'nin seçim programlarını ve parlamento önerilerini analiz etti. Değerlendirmeniz: Anayasa Mahkemesi'ne yapılacak bir yasaklama başvurusunun başarı şansı yüksektir. Daha...",
+      "uk": "Експерти проаналізували передвиборчі програми і парламентські пропозиції AfD. Ваша оцінка: заява про заборону мала б хороші шанси на успіх у Конституційному суді. більше...",
+      "pl": "Eksperci przeanalizowali programy wyborcze AfD i propozycje parlamentu. Twoja ocena: Wniosek o zakaz miałby duże szanse powodzenia przed Trybunałem Konstytucyjnym. więcej...",
+      "it": "Gli esperti hanno analizzato i programmi elettorali e le proposte parlamentari dell'AfD. La vostra valutazione: una richiesta di interdizione avrebbe buone probabilità di successo davanti alla Corte costituzionale. Di più...",
+      "ru": "Эксперты проанализировали предвыборные программы АдГ и парламентские предложения. Ваша оценка: Ходатайство о запрете имеет хорошие шансы на успех в Конституционном суде. более..."
+    },
+    "sources": [
+      {
+        "name": "Taz",
+        "url": "https://taz.de/AfD-Verbotsantrag/!6190685/"
+      },
+      {
+        "name": "Süddeutsche Zeitung",
+        "url": "https://www.sueddeutsche.de/politik/afd-verbot-deutschland-gutachten-chancen-bundesverfassungsgericht-li.3504614"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "Gesellschaft für Freiheitsrechte: Gutachten hält Erfolg von AfD-Verbotsverfahren für realistisch",
+      "en": "Society for Civil Rights: Report considers success of AfD ban proceedings to be realistic",
+      "fr": "Société pour les droits civiques : un rapport considère que le succès de la procédure d'interdiction de l'AfD est réaliste",
+      "es": "Sociedad de Derechos Civiles: El informe considera realista el éxito del procedimiento de prohibición de AfD",
+      "tr": "Sivil Haklar Derneği: Rapor, AfD'nin yasaklama işlemlerinin başarısının gerçekçi olduğunu düşünüyor",
+      "uk": "Товариство за громадянські права: у звіті успіх розгляду заборони AfD є реалістичним",
+      "pl": "Towarzystwo Praw Obywatelskich: W raporcie uznano, że powodzenie postępowań w sprawie zakazu AfD jest realistyczne",
+      "it": "Società per i diritti civili: il rapporto ritiene realistico il successo della procedura di divieto dell'AfD",
+      "ru": "Общество за гражданские права: В отчете успех процедуры запрета АдГ оценивается как реалистичный"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Die Bemühungen, ein AfD-Verbotsverfahren anzustrengen, sind weitgehend zum Erliegen gekommen. Ein Gutachten, das die Verfassungswidrigkeit der Bundespartei feststellt, entfacht ...",
+      "en": "Efforts to initiate proceedings to ban the AfD have largely come to a standstill. A report that finds the federal party unconstitutional sparks...",
+      "fr": "Les efforts visant à engager une procédure visant à interdire l’AfD sont en grande partie au point mort. Un rapport qui juge le parti fédéral inconstitutionnel fait des étincelles...",
+      "es": "Los esfuerzos para iniciar procedimientos para prohibir a AfD se han estancado en gran medida. Un informe que declara inconstitucional al partido federal enciende...",
+      "tr": "AfD'yi yasaklamaya yönelik işlemleri başlatma çabaları büyük ölçüde durma noktasına geldi. Federal partinin anayasaya aykırı kıvılcımlar çıkardığını ortaya koyan bir rapor...",
+      "uk": "Зусилля розпочати процедуру заборони AfD здебільшого зайшли в глухий кут. Доповідь, яка визнає федеральну партію неконституційною, спалахує...",
+      "pl": "Próby wszczęcia postępowania zmierzającego do zdelegalizowania AfD w dużej mierze utknęły w martwym punkcie. Raport stwierdzający, że partia federalna jest niezgodna z konstytucją, wywołuje...",
+      "it": "Gli sforzi per avviare le procedure per vietare l’AfD sono in gran parte giunti a un punto morto. Un rapporto che dichiara incostituzionale il partito federale fa scintille...",
+      "ru": "Попытки возбудить дело о запрете АдГ в основном зашли в тупик. Доклад, признающий федеральную партию неконституционной, вызывает искры..."
+    },
+    "sources": [
+      {
+        "name": "Tagesschau",
+        "url": "https://www.tagesschau.de/inland/innenpolitik/afd-gutachten-verfassung-100.html"
+      },
+      {
+        "name": "Zeit Online",
+        "url": "https://www.zeit.de/politik/deutschland/2026-06/afd-gutachten-verfassungswidrigkeit-gesellschaft-freiheitsrechte"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "AfD-Gutachten: Reaktionen aus Sachsen-Anhalt und dem Vorsitzenden der Innenministerkonferenz",
+      "en": "AfD report: Reactions from Saxony-Anhalt and the chairman of the Interior Ministers' Conference",
+      "fr": "Rapport de l'AfD : réactions de la Saxe-Anhalt et du président de la conférence des ministres de l'Intérieur",
+      "es": "Informe AfD: Reacciones de Sajonia-Anhalt y del presidente de la Conferencia de Ministros del Interior",
+      "tr": "AfD raporu: Saksonya-Anhalt ve İçişleri Bakanları Konferansı başkanından tepkiler",
+      "uk": "Звіт AfD: Реакція Саксонії-Ангальт і голови Конференції міністрів внутрішніх справ",
+      "pl": "Raport AfD: Reakcje Saksonii-Anhalt i przewodniczącego Konferencji Ministrów Spraw Wewnętrznych",
+      "it": "Rapporto AfD: le reazioni della Sassonia-Anhalt e del presidente della Conferenza dei ministri dell'Interno",
+      "ru": "Отчет АдГ: Реакция Саксонии-Анхальт и председателя конференции министров внутренних дел"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "»Unsere Demokratie ist keine Selbstverständlichkeit. Sie zu verteidigen, ist unsere Pflicht«: Ein neues Gutachten belebt die Debatte über ein AfD-Verbotsverfahren. Reaktionen.",
+      "en": "»Our democracy cannot be taken for granted. “It is our duty to defend them”: A new report revives the debate about an AfD ban. Reactions.",
+      "fr": "« Notre démocratie ne peut pas être tenue pour acquise. « Il est de notre devoir de les défendre » : un nouveau rapport relance le débat sur une interdiction de l'AfD. Réactions.",
+      "es": "»Nuestra democracia no puede darse por sentada. “Es nuestro deber defenderlos”: un nuevo informe reaviva el debate sobre la prohibición de AfD. Reacciones.",
+      "tr": "»Demokrasimiz olduğu gibi kabul edilemez. “Onları savunmak görevimiz”: Yeni bir rapor AfD yasağı tartışmasını yeniden canlandırıyor. Reaksiyonlar.",
+      "uk": "«Нашу демократію не можна сприймати як належне. «Наш обов’язок захищати їх»: новий звіт пожвавлює дискусію про заборону AfD. реакції.",
+      "pl": "»Naszej demokracji nie można uważać za coś oczywistego. „Naszym obowiązkiem jest ich bronić”: nowy raport ożywia debatę na temat zakazu AfD. Reakcje.",
+      "it": "»La nostra democrazia non può essere data per scontata. “È nostro dovere difenderli”: un nuovo rapporto rilancia il dibattito sul divieto dell’AfD. Reazioni.",
+      "ru": "»Нашу демократию нельзя воспринимать как нечто само собой разумеющееся. «Наш долг – защищать их»: новый доклад возрождает дебаты о запрете АдГ. Реакции."
+    },
+    "sources": [
+      {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/afd-gutachten-reaktionen-aus-sachsen-anhalt-und-dem-vorsitzenden-der-innenministerkonferenz-a-f152b00b-934a-4147-b93b-f7d6e20f9817#ref=rss"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "News des Tages: Erdbeben in Venezuela, AfD-Verbot, Fußball-WM",
+      "en": "News of the day: Earthquake in Venezuela, AfD ban, World Cup",
+      "fr": "Actualité du jour : tremblement de terre au Venezuela, interdiction de l'AfD, Coupe du monde",
+      "es": "Noticias del día: Terremoto en Venezuela, prohibición de AfD, Mundial",
+      "tr": "Günün haberi: Venezuela'da deprem, AfD yasağı, Dünya Kupası",
+      "uk": "Новини дня: землетрус у Венесуелі, заборона AfD, Чемпіонат світу з футболу",
+      "pl": "Wiadomości dnia: Trzęsienie ziemi w Wenezueli, zakaz AfD, Puchar Świata",
+      "it": "Attualità del giorno: Terremoto in Venezuela, divieto dell'AfD, Mondiali",
+      "ru": "Новости дня: Землетрясение в Венесуэле, запрет АдГ, ЧМ"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Die AfD ist laut einem neuen Rechtsgutachten verfassungswidrig. Ein Doppel-Erdbeben erschüttert Venezuela. Und der weibliche Überraschungsstar dieser WM leitet heute Abend das d...",
+      "en": "According to a new legal opinion, the AfD is unconstitutional. A double earthquake shakes Venezuela. And the surprise female star of this World Cup is leading the...",
+      "fr": "Selon un nouvel avis juridique, l'AfD est inconstitutionnelle. Un double tremblement de terre secoue le Venezuela. Et la star féminine surprise de cette Coupe du Monde mène la danse...",
+      "es": "Según un nuevo dictamen jurídico, la AfD es inconstitucional. Un doble terremoto sacude a Venezuela. Y la estrella femenina sorpresa de este Mundial está liderando el...",
+      "tr": "Yeni hukuki görüşe göre AfD anayasaya aykırıdır. Venezuela çifte depremle sarsıldı. Ve bu Dünya Kupası'nın sürpriz kadın yıldızı lider durumda...",
+      "uk": "Згідно з новим юридичним висновком, AfD є неконституційною. У Венесуелі стався подвійний землетрус. І дивовижна жінка-зірка цього чемпіонату світу очолює...",
+      "pl": "Według nowej opinii prawnej AfD jest niezgodna z konstytucją. Podwójne trzęsienie ziemi wstrząsa Wenezuelą. A niespodziewana gwiazda tego Pucharu Świata prowadzi...",
+      "it": "Secondo un nuovo parere giuridico l’AfD è incostituzionale. Un doppio terremoto scuote il Venezuela. E la stella femminile sorpresa di questo Mondiale è in testa alla classifica...",
+      "ru": "Согласно новому юридическому заключению, АдГ является неконституционной. Двойное землетрясение потрясло Венесуэлу. И неожиданная женщина-звезда этого чемпионата мира возглавила..."
+    },
+    "sources": [
+      {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-erdbeben-in-venezuela-afd-verbot-fussball-wm-a-77f54cca-24e7-402e-a636-5e4bfb0c2a6a#ref=rss"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "AfD-Verbot: Bundestagsabgeordnete wollen Verfahren endlich einleiten",
+      "en": "AfD ban: Bundestag members finally want to initiate proceedings",
+      "fr": "Interdiction de l’AfD : les membres du Bundestag veulent enfin engager une procédure",
+      "es": "Prohibición de AfD: los miembros del Bundestag finalmente quieren iniciar un procedimiento",
+      "tr": "AfD yasağı: Federal Meclis üyeleri sonunda dava açmak istiyor",
+      "uk": "Заборона AfD: депутати Бундестагу нарешті хочуть розпочати розгляд",
+      "pl": "Zakaz AfD: Członkowie Bundestagu wreszcie chcą wszcząć postępowanie",
+      "it": "Divieto dell'AfD: i deputati del Bundestag vogliono finalmente avviare la procedura",
+      "ru": "Запрет АдГ: депутаты Бундестага наконец хотят возбудить дело"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Ein neues Gutachten sieht gute Erfolgschancen für einen AfD-Verbotsantrag in Karlsruhe. Bundestagsabgeordnete fordern im SPIEGEL, das Verfahren nun endlich anzugehen.",
+      "en": "A new report sees good chances of success for an AfD ban application in Karlsruhe. In SPIEGEL, members of the Bundestag are calling for the process to finally be addressed.",
+      "fr": "Un nouveau rapport voit de bonnes chances de succès pour une demande d'interdiction de l'AfD à Karlsruhe. Au SPIEGEL, les députés du Bundestag demandent que ce processus soit enfin résolu.",
+      "es": "Un nuevo informe ve buenas posibilidades de éxito para una solicitud de prohibición del AfD en Karlsruhe. Los miembros del Bundestag piden en SPIEGEL que finalmente se aborde el proceso.",
+      "tr": "Yeni bir rapor, Karlsruhe'deki AfD yasağı başvurusunun başarı şansının yüksek olduğunu gösteriyor. SPIEGEL'de Federal Meclis üyeleri sürecin nihayet ele alınması çağrısında bulunuyor.",
+      "uk": "У новому звіті бачать хороші шанси на успіх заяви про заборону AfD в Карлсруе. У SPIEGEL депутати Бундестагу закликають нарешті розглянути цей процес.",
+      "pl": "Nowy raport przewiduje duże szanse powodzenia wniosku AfD o zakaz w Karlsruhe. W SPIEGEL członkowie Bundestagu wzywają do ostatecznego zajęcia się tym procesem.",
+      "it": "Un nuovo rapporto vede buone possibilità di successo per una richiesta di divieto dell’AfD a Karlsruhe. Nello SPIEGEL i deputati del Bundestag chiedono che il processo venga finalmente affrontato.",
+      "ru": "В новом отчете отмечаются хорошие шансы на успех заявления АдГ о запрете в Карлсруэ. В SPIEGEL члены Бундестага призывают наконец заняться этим процессом."
+    },
+    "sources": [
+      {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/deutschland/afd-verbot-bundestagsabgeordnete-wollen-afd-verfahren-endlich-einleiten-a-0196d486-155c-418a-bb04-bfe75474d126#ref=rss"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "AfD: Ein ausgestreckter Arm und viele Fragen",
+      "en": "AfD: An outstretched arm and many questions",
+      "fr": "AfD : un bras tendu et de nombreuses questions",
+      "es": "AfD: un brazo extendido y muchas preguntas",
+      "tr": "AfD: Uzatılmış bir kol ve birçok soru",
+      "uk": "AfD: Витягнута рука і багато питань",
+      "pl": "AfD: Wyciągnięte ramię i wiele pytań",
+      "it": "AfD: Un braccio teso e tante domande",
+      "ru": "АдГ: протянутая рука и много вопросов"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Sachsen-Anhalts AfD-Chef Martin Reichardt sieht sich Vorwürfen ausgesetzt, den Hitlergruß gezeigt zu haben. Er selbst will die Geste anders interpretiert wissen.",
+      "en": "Saxony-Anhalt's AfD leader Martin Reichardt faces accusations of having shown the Hitler salute. He himself wants the gesture to be interpreted differently.",
+      "fr": "Le leader de l'AfD en Saxe-Anhalt, Martin Reichardt, est accusé d'avoir fait le salut hitlérien. Lui-même souhaite que le geste soit interprété différemment.",
+      "es": "El líder del AfD en Sajonia-Anhalt, Martin Reichardt, se enfrenta a acusaciones de haber hecho el saludo hitleriano. Él mismo quiere que el gesto se interprete de otra manera.",
+      "tr": "Saksonya-Anhalt'ın AfD lideri Martin Reichardt, Hitler selamı vermekle suçlanıyor. Kendisi bu jestin farklı yorumlanmasını istiyor.",
+      "uk": "Лідера AfD землі Саксонія-Анхальт Мартіна Райхардта звинувачують у привітанні Гітлера. Він сам хоче, щоб цей жест витлумачили інакше.",
+      "pl": "Lider AfD w Saksonii-Anhalt, Martin Reichardt, zostaje oskarżony o okazanie pozdrowienia Hitlerowi. On sam chce, żeby ten gest był inaczej interpretowany.",
+      "it": "Martin Reichardt, leader dell'AfD della Sassonia-Anhalt, è accusato di aver fatto il saluto hitleriano. Lui stesso vuole che il gesto venga interpretato diversamente.",
+      "ru": "Лидеру АдГ в Саксонии-Анхальт Мартину Райхардту предъявлены обвинения в приветствии Гитлера. Он сам хочет, чтобы этот жест был истолкован по-другому."
+    },
+    "sources": [
+      {
+        "name": "Süddeutsche Zeitung",
+        "url": "https://www.sueddeutsche.de/politik/afd-reichardt-hitlergruss-sachsen-anhalt-li.3504919"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "FAQ zu neuem Gutachten: 1.500 Seiten zur Verfassungsfeindlichkeit der AfD",
+      "en": "FAQ on the new report: 1,500 pages on the AfD's anti-constitutionality",
+      "fr": "FAQ sur le nouveau rapport : 1.500 pages sur l'anticonstitutionnalité de l'AfD",
+      "es": "Preguntas frecuentes sobre el nuevo informe: 1.500 páginas sobre la anticonstitucionalidad de AfD",
+      "tr": "Yeni raporla ilgili SSS: AfD'nin anayasa karşıtlığıyla ilgili 1.500 sayfa",
+      "uk": "Поширені запитання про новий звіт: 1500 сторінок про антиконституційність AfD",
+      "pl": "Najczęściej zadawane pytania dotyczące nowego raportu: 1500 stron na temat antykonstytucyjności AfD",
+      "it": "FAQ sul nuovo rapporto: 1.500 pagine sull'anticostituzionalità dell'AfD",
+      "ru": "Часто задаваемые вопросы по новому докладу: 1500 страниц об антиконституционности АдГ"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Ein neues Gutachten sieht schwerwiegende Verstöße der AfD gegen die Verfassungsprinzipien der Menschenwürde und des Demokratieprinzips. Ein AfD-Verbot wäre demnach erfolgverspre...",
+      "en": "A new report sees serious violations by the AfD of the constitutional principles of human dignity and the principle of democracy. A ban on the AfD would therefore be successful...",
+      "fr": "Un nouveau rapport constate de graves violations par l'AfD des principes constitutionnels de dignité humaine et du principe de démocratie. Une interdiction de l’AfD serait donc un succès…",
+      "es": "Un nuevo informe señala graves violaciones por parte del AfD de los principios constitucionales de la dignidad humana y del principio de democracia. Por lo tanto, una prohibición del AfD sería un éxito...",
+      "tr": "Yeni bir rapor, AfD'nin anayasal insan onuru ilkeleri ve demokrasi ilkesini ciddi şekilde ihlal ettiğini ortaya koyuyor. Dolayısıyla AfD'nin yasaklanması başarılı olacaktır...",
+      "uk": "Новий звіт вбачає серйозні порушення з боку AfD конституційних принципів людської гідності та принципу демократії. Тому заборона AfD була б успішною...",
+      "pl": "Nowy raport wskazuje na poważne naruszenia przez AfD konstytucyjnych zasad godności ludzkiej i zasad demokracji. Zakazanie AfD byłoby zatem sukcesem…",
+      "it": "Un nuovo rapporto rileva gravi violazioni da parte dell’AfD dei principi costituzionali della dignità umana e del principio di democrazia. Un divieto dell’AfD avrebbe quindi successo...",
+      "ru": "В новом докладе говорится о серьезных нарушениях АдГ конституционных принципов человеческого достоинства и принципов демократии. Таким образом, запрет АдГ будет успешным..."
+    },
+    "sources": [
+      {
+        "name": "CORRECTIV",
+        "url": "https://correctiv.org/aktuelles/debatte-um-afd-verbot/2026/06/25/afd-verbot-gutachten-faq/"
       }
     ]
   },
@@ -186,6 +415,37 @@
       {
         "name": "Volksverpetzer",
         "url": "https://www.volksverpetzer.de/analyse/afd-sachsen-anhalt-bauhaus/"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "Fraktionsübergreifend: EU-Abgeordnete wollen sich für Verbot der AfD-Europapartei ESN einsetzen",
+      "en": "Cross-party: EU MPs want to campaign for a ban on the AfD European party ESN",
+      "fr": "Multipartis : les députés européens veulent faire campagne pour l’interdiction du parti européen AfD ESN",
+      "es": "Multipartidista: los parlamentarios de la UE quieren hacer campaña para prohibir el partido europeo AfD ESN",
+      "tr": "Partiler arası: AB milletvekilleri AfD'nin Avrupa partisi ESN'nin yasaklanması için kampanya yapmak istiyor",
+      "uk": "Міжпартійність: депутати ЄС хочуть провести кампанію за заборону європейської партії AfD ESN",
+      "pl": "Międzypartyjny: parlamentarzyści UE chcą prowadzić kampanię na rzecz zakazu działalności europejskiej partii AfD ESN",
+      "it": "Crosspartitic: i deputati europei vogliono fare una campagna per la messa al bando del partito europeo AfD ESN",
+      "ru": "Межпартийный: депутаты ЕС хотят провести кампанию за запрет европейской партии АдГ ESN"
+    },
+    "date": "2026-06-08",
+    "excerpt": {
+      "de": "Die EU-Aufsichtsbehörde sieht Hinweise auf schwere Verstöße gegen EU-Grundwerte bei allen neun Mitgliedsparteien der ESN – darunter die AfD. Mehrere Fraktionen wollen das Verfah...",
+      "en": "The EU supervisory authority sees evidence of serious violations of EU fundamental values ​​by all nine member parties of the ESN - including the AfD. Several factions want the process...",
+      "fr": "L'autorité de surveillance de l'UE constate des preuves de violations graves des valeurs fondamentales de l'UE par les neuf partis membres de l'ESN, y compris l'AfD. Plusieurs factions veulent le processus...",
+      "es": "La autoridad de supervisión de la UE ve pruebas de graves violaciones de los valores fundamentales de la UE por parte de los nueve partidos miembros del ESN, incluido el AfD. Varias facciones quieren el proceso...",
+      "tr": "AB denetim otoritesi, AfD de dahil olmak üzere ESN'nin dokuz üye partisinin tamamı tarafından AB temel değerlerinin ciddi şekilde ihlal edildiğine dair kanıtlar görüyor. Pek çok grup süreci istiyor...",
+      "uk": "Наглядовий орган ЄС бачить докази серйозних порушень фундаментальних цінностей ЄС усіма дев'ятьма партіями-членами ESN, включаючи AfD. Кілька фракцій хочуть процесу...",
+      "pl": "Unijny organ nadzorczy widzi dowody poważnego naruszenia podstawowych wartości UE przez wszystkie dziewięć partii członkowskich ESN – w tym AfD. Kilka frakcji chce tego procesu...",
+      "it": "L’autorità di vigilanza dell’UE vede prove di gravi violazioni dei valori fondamentali dell’UE da parte di tutti e nove i partiti membri dell’ESN, compreso l’AfD. Diverse fazioni vogliono il processo...",
+      "ru": "Контролирующий орган ЕС видит доказательства серьезных нарушений фундаментальных ценностей ЕС всеми девятью партиями-членами ЕСН, включая АдГ. Несколько фракций хотят, чтобы этот процесс..."
+    },
+    "sources": [
+      {
+        "name": "CORRECTIV",
+        "url": "https://correctiv.org/aktuelles/afd/2026/06/08/eu-abgeordnete-wollen-sich-fuer-verbot-der-afd-europapartei-esn-einsetzen/"
       }
     ]
   },
