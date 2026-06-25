@@ -9,11 +9,17 @@ import html
 import json
 import re
 import sys
+import urllib.error
 import urllib.request
 import urllib.parse
 import time
 from datetime import datetime
 from pathlib import Path
+
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
 
 def translate_text(text, target_lang, source_lang="de"):
     if not text:
@@ -212,6 +218,44 @@ def parse_rss(source_name, xml_data_bytes):
         })
     return items
 
+def is_url_confirmed_dead(url, timeout=10, retries=2):
+    """Check a freshly scraped article link before we ever save it.
+
+    Conservative on purpose: many news sites block bots/HEAD requests with
+    403/405/429 even though the page is perfectly real, and a single
+    network blip shouldn't cost us a real article. So we only report a URL
+    as dead when we get an explicit 404/410 confirmed on both HEAD and GET.
+    Anything else (timeouts, 403, 5xx, etc.) is treated as "can't prove it's
+    dead" and the article is kept — false negatives here just mean we keep
+    a link that's hard for bots to verify, which is far better than
+    silently dropping (or worse, the wrong link no one ever checks again).
+    """
+    headers = {"User-Agent": BROWSER_USER_AGENT}
+
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=headers, method="HEAD")
+            with urllib.request.urlopen(req, timeout=timeout):
+                return False  # reachable
+        except urllib.error.HTTPError as e:
+            if e.code not in (404, 410):
+                return False  # ambiguous (403/429/5xx/...) — don't penalize the article
+            # HEAD says gone — some servers mishandle HEAD, so confirm with a real GET
+            try:
+                req_get = urllib.request.Request(url, headers=headers, method="GET")
+                with urllib.request.urlopen(req_get, timeout=timeout):
+                    return False
+            except urllib.error.HTTPError as e2:
+                return e2.code in (404, 410)
+            except Exception:
+                return False  # network hiccup on the confirmation GET — don't penalize
+        except Exception:
+            if attempt + 1 < retries:
+                time.sleep(2)
+                continue
+            return False  # exhausted retries on a network error — don't penalize
+    return False
+
 def matches_filters(item):
     """Filter newly fetched articles. Existing ones in news.json are kept to preserve history."""
     title_lower = item["title"].lower()
@@ -354,6 +398,18 @@ def main():
     # Filter only newly fetched items
     filtered_items = [item for item in all_items if matches_filters(item)]
     print(f"Filtered new items: {len(filtered_items)}")
+
+    # Verify each new article's link actually resolves before we ever save it —
+    # a dead link saved today is a dead link a visitor clicks on next year.
+    verified_items = []
+    for item in filtered_items:
+        if is_url_confirmed_dead(item["url"]):
+            print(f"Skipping article with a confirmed dead link (404/410): "
+                  f"{item['title'][:60]!r} -> {item['url']}", file=sys.stderr)
+            continue
+        verified_items.append(item)
+    filtered_items = verified_items
+    print(f"Items with verified working links: {len(filtered_items)}")
 
     # Convert new items to the standard combined schema
     new_formatted_items = []
