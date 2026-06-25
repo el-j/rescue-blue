@@ -98,6 +98,37 @@
   },
   {
     "title": {
+      "de": "FAQ zu neuem Gutachten: 1.500 Seiten zur Verfassungsfeindlichkeit der AfD",
+      "en": "FAQ on the new report: 1,500 pages on the AfD's anti-constitutionality",
+      "fr": "FAQ sur le nouveau rapport : 1.500 pages sur l'anticonstitutionnalité de l'AfD",
+      "es": "Preguntas frecuentes sobre el nuevo informe: 1.500 páginas sobre la anticonstitucionalidad de AfD",
+      "tr": "Yeni raporla ilgili SSS: AfD'nin anayasa karşıtlığıyla ilgili 1.500 sayfa",
+      "uk": "Часті запитання щодо нового звіту: 1500 сторінок про антиконституційність AfD",
+      "pl": "Najczęściej zadawane pytania dotyczące nowego raportu: 1500 stron na temat antykonstytucyjności AfD",
+      "it": "FAQ sul nuovo rapporto: 1.500 pagine sull'anticostituzionalità dell'AfD",
+      "ru": "Часто задаваемые вопросы по новому докладу: 1500 страниц об антиконституционности АдГ"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Ein neues Gutachten sieht schwerwiegende Verstöße der AfD gegen die Verfassungsprinzipien der Menschenwürde und des Demokratieprinzips. Ein AfD-Verbot wäre demnach erfolgverspre...",
+      "en": "A new report sees serious violations by the AfD of the constitutional principles of human dignity and the principle of democracy. A ban on the AfD would therefore be successful...",
+      "fr": "Un nouveau rapport constate de graves violations par l'AfD des principes constitutionnels de dignité humaine et du principe de démocratie. Une interdiction de l’AfD serait donc un succès…",
+      "es": "Un nuevo informe señala graves violaciones por parte del AfD de los principios constitucionales de la dignidad humana y del principio de democracia. Por lo tanto, una prohibición del AfD sería un éxito...",
+      "tr": "Yeni bir rapor, AfD'nin anayasal insan onuru ilkeleri ve demokrasi ilkesini ciddi şekilde ihlal ettiğini ortaya koyuyor. Dolayısıyla AfD'nin yasaklanması başarılı olacaktır...",
+      "uk": "Новий звіт вбачає серйозні порушення з боку AfD конституційних принципів людської гідності та принципу демократії. Тому заборона AfD була б успішною...",
+      "pl": "Nowy raport wskazuje na poważne naruszenia przez AfD konstytucyjnych zasad godności ludzkiej i zasad demokracji. Zakazanie AfD byłoby zatem sukcesem…",
+      "it": "Un nuovo rapporto rileva gravi violazioni da parte dell’AfD dei principi costituzionali della dignità umana e del principio di democrazia. Un divieto dell’AfD avrebbe quindi successo...",
+      "ru": "В новом докладе говорится о серьезных нарушениях АдГ конституционных принципов человеческого достоинства и принципов демократии. Таким образом, запрет АдГ будет успешным..."
+    },
+    "sources": [
+      {
+        "name": "CORRECTIV",
+        "url": "https://correctiv.org/aktuelles/debatte-um-afd-verbot/2026/06/25/afd-verbot-gutachten-faq/"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Rechtsextremismus: Hitlergruß-Vorwurf gegen AfD-Politiker Reichardt",
       "en": "Right-wing extremism: Nazi salute accusation against AfD politician Reichardt",
       "fr": "Extrémisme de droite : accusation de salut nazi contre le politicien de l’AfD Reichardt",
@@ -252,6 +283,37 @@
       {
         "name": "Volksverpetzer",
         "url": "https://www.volksverpetzer.de/analyse/afd-sachsen-anhalt-bauhaus/"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "IDZ-Analyse: Steht in Saalfeld-Rudolstadt der nächste AfD-Landrat in den Startlöchern?",
+      "en": "IDZ analysis: Is the next AfD district administrator in the starting blocks in Saalfeld-Rudolstadt?",
+      "fr": "Analyse IDZ : le prochain administrateur de district de l'AfD est-il dans les start-ups à Saalfeld-Rudolstadt ?",
+      "es": "Análisis de IDZ: ¿Está el próximo administrador distrital de AfD en la parrilla de salida en Saalfeld-Rudolstadt?",
+      "tr": "IDZ analizi: Bir sonraki AfD bölge yöneticisi Saalfeld-Rudolstadt'taki başlangıç ​​bloklarında mı?",
+      "uk": "Аналіз IDZ: чи є наступний адміністратор округу AfD у стартових блоках у Заальфельд-Рудольштадті?",
+      "pl": "Analiza IDZ: Czy następny starosta AfD znajdzie się w blokach startowych w Saalfeld-Rudolstadt?",
+      "it": "Analisi IDZ: il prossimo amministratore distrettuale dell'AfD è ai blocchi di partenza a Saalfeld-Rudolstadt?",
+      "ru": "Анализ IDZ: находится ли следующий администратор округа АдГ на старте в Заальфельде-Рудольштадте?"
+    },
+    "date": "2026-06-09",
+    "excerpt": {
+      "de": "Analyse des IDZ nach dem ersten Wahlgang in Saalfeld: Sollte der AfD-Kandidat im zweiten Wahlgang gewinnen, hätte Thüringen den zweiten rechtsextremen Landrat.",
+      "en": "Analysis by the IDZ after the first round of voting in Saalfeld: If the AfD candidate wins in the second round of voting, Thuringia would have the second right-wing extremist district administrator.",
+      "fr": "Analyse de l'IDZ après le premier tour de scrutin à Saalfeld : Si le candidat de l'AfD l'emporte au deuxième tour, la Thuringe aura un deuxième administrateur de district d'extrême droite.",
+      "es": "Análisis del IDZ tras la primera vuelta electoral en Saalfeld: Si el candidato del AfD gana en la segunda vuelta, Turingia tendría el segundo administrador distrital de extrema derecha.",
+      "tr": "Saalfeld'deki ilk tur oylama sonrasında IDZ'nin analizi: İkinci tur oylamayı AfD adayı kazanırsa Thüringen'de aşırı sağcı ikinci bölge yöneticisi olacak.",
+      "uk": "Аналіз IDZ після першого туру голосування в Заальфельді: якщо кандидат від AfD переможе у другому турі голосування, Тюрінгія матиме другого правого екстремістського адміністратора району.",
+      "pl": "Analiza IDZ po pierwszej turze głosowania w Saalfeld: Jeśli w drugiej turze głosowania zwycięży kandydat AfD, Turyngia będzie miała drugiego prawicowo-ekstremistycznego wójta.",
+      "it": "Analisi dell'IDZ dopo il primo turno di votazioni a Saalfeld: se il candidato dell'AfD vincesse al secondo turno di votazioni, la Turingia avrebbe il secondo amministratore distrettuale estremista di destra.",
+      "ru": "Анализ IDZ после первого тура голосования в Заальфельде: Если кандидат от АдГ победит во втором туре голосования, Тюрингия получит второго правого экстремистского администратора округа."
+    },
+    "sources": [
+      {
+        "name": "Belltower.News",
+        "url": "https://www.belltower.news/idz-analyse-steht-in-saalfeld-rudolstadt-der-naechste-afd-landrat-in-den-startloechern-165969/"
       }
     ]
   },
