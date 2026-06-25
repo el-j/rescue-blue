@@ -190,6 +190,8 @@
 .light-theme .bg-neutral-950\/80 { background-color: rgba(248, 250, 252, 0.8); }
 .light-theme .bg-neutral-950\/85 { background-color: rgba(248, 250, 252, 0.9); }
 .light-theme .bg-neutral-950\/90 { background-color: rgba(248, 250, 252, 0.9); }
+.light-theme .bg-neutral-950\/15 { background-color: rgba(248, 250, 252, 0.15); }
+.light-theme .bg-neutral-950\/40 { background-color: rgba(248, 250, 252, 0.4); }
 
 .light-theme .text-white { color: #0f172a; }
 .light-theme .text-neutral-100 { color: #1e293b; }

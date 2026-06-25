@@ -17,7 +17,9 @@ import {
   SiteHeader,
   WhySection,
   FaqSection,
+  NewsArchiveSection,
 } from './components'
+import type { NewsArticle } from './components/HeroSection'
 import {
   getTranslation,
   getSayings,
@@ -53,6 +55,24 @@ export default function App() {
 
   const { signatureCount, isLive, isLoading: isLoadingSignatures } = useSignatureCount()
   const { pollingSnapshot, isLive: isLivePollingData } = usePollingSnapshot()
+  const [news, setNews] = useState<NewsArticle[]>([])
+
+  // Fetch news on mount
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}news.json`)
+      .then((res) => {
+        if (res.ok) return res.json()
+        return []
+      })
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setNews(data)
+        }
+      })
+      .catch((err) => {
+        console.error('Error fetching news:', err)
+      })
+  }, [])
 
   // Apply theme on mount and whenever it changes
   useEffect(() => {
@@ -135,6 +155,7 @@ export default function App() {
         formattedSignatureCount={formattedSignatureCount}
         isLoadingSignatures={isLoadingSignatures}
         isLive={isLive}
+        news={news}
       />
 
       <main className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-8 px-4 pb-16 md:px-6 lg:mt-8 lg:grid-cols-12">
@@ -186,6 +207,11 @@ export default function App() {
             faqs={faqs}
             openFaq={openFaq}
             onToggleFaq={setOpenFaq}
+          />
+
+          <NewsArchiveSection
+            lang={lang}
+            news={news}
           />
         </div>
 

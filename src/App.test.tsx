@@ -261,4 +261,59 @@ describe('App', () => {
     expect(screen.getByText('Rolf Zurbrüggen')).toBeInTheDocument()
     expect(screen.getAllByText('Ausstehend').length).toBeGreaterThan(0)
   })
+
+  it('fetches and displays news articles in the hero slider', async () => {
+    const mockNews = [
+      {
+        title: 'Verbotene Losung: Höcke erneut zu Geldstrafe verurteilt',
+        date: '2026-06-18',
+        excerpt: 'Das Landgericht Halle hat den Thüringer AfD-Chef Björn Höcke erneut verurteilt.',
+        sources: [
+          {
+            name: 'Spiegel / Taz',
+            url: 'https://spiegel.de/mock'
+          }
+        ]
+      }
+    ]
+
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockImplementation((url) => {
+        if (typeof url === 'string' && url.endsWith('news.json')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(mockNews)
+          })
+        }
+        return Promise.resolve({
+          ok: false,
+          json: () => Promise.resolve({})
+        })
+      })
+    )
+
+    const user = userEvent.setup()
+    render(<App />)
+
+    // Initially, it should display the campaign visual slide
+    expect(screen.getByText('Unser Kampagnen-Visual')).toBeInTheDocument()
+
+    // Find the second slide dot (waiting for it to load) and click it
+    const dot2 = await screen.findByRole('button', { name: /Go to slide 2/i })
+    await user.click(dot2)
+
+    // Now it should show the news slide details
+    expect(screen.getAllByText('Verbotene Losung: Höcke erneut zu Geldstrafe verurteilt')[0]).toBeInTheDocument()
+    expect(screen.getByText('Das Landgericht Halle hat den Thüringer AfD-Chef Björn Höcke erneut verurteilt.')).toBeInTheDocument()
+    expect(screen.getAllByText('Spiegel / Taz')[0]).toBeInTheDocument()
+    expect(screen.getAllByText('2026-06-18')[0]).toBeInTheDocument()
+
+    // Test clicking the Next button (Arrow)
+    const nextBtn = screen.getByRole('button', { name: /Next Slide/i })
+    await user.click(nextBtn)
+
+    // Clicking Next should cycle back to slide 1 (Campaign visual)
+    expect(screen.getByText('Unser Kampagnen-Visual')).toBeInTheDocument()
+  })
 })
