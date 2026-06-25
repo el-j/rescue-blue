@@ -94,6 +94,8 @@ EXTREMIST_KEYWORDS = [
     r"beobachtungsobjekt",
     r"gesichert rechtsextrem",
     r"parteiverbot",
+    r"verbotsverfahren",
+    r"\bverbot\b",
     r"ovg",
     r"münster",
     r"verfassungsschutz",
