@@ -235,4 +235,30 @@ describe('App', () => {
     expect(snapshot?.surveyDate).toBe('2026-06-14')
     expect(snapshot?.bars.find((bar) => bar.key === 'afd')?.pct).toBe(34)
   })
+
+  it('renders decision makers with roles and support statuses', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    // Check that the decision makers section header is present
+    expect(screen.getByText('Status der Entscheidungsträger')).toBeInTheDocument()
+
+    // It should render decision makers from Öffentlich-rechtlich by default
+    expect(screen.getByText('Florian Hager')).toBeInTheDocument()
+    expect(screen.getByText('intendanz@hr.de')).toBeInTheDocument()
+    expect(screen.getByText('ARD-Vorsitzender & Intendant des Hessischen Rundfunks (hr)')).toBeInTheDocument()
+    expect(screen.getAllByText('Ausstehend').length).toBeGreaterThan(0) // Status for Florian Hager
+
+    expect(screen.getByText('Bettina Schausten')).toBeInTheDocument()
+    // Bettina Schausten is now also pending (Ausstehend)
+    expect(screen.getAllByText('Ausstehend').length).toBeGreaterThan(1)
+
+    // Let's click the "Rundfunkräte" target tab
+    const rundfunkratTab = screen.getByRole('button', { name: 'Rundfunkräte' })
+    await user.click(rundfunkratTab)
+
+    // Should now show Rolf Zurbrüggen and status "Ausstehend"
+    expect(screen.getByText('Rolf Zurbrüggen')).toBeInTheDocument()
+    expect(screen.getAllByText('Ausstehend').length).toBeGreaterThan(0)
+  })
 })

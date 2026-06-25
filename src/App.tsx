@@ -178,6 +178,7 @@ export default function App() {
             letters={letters}
             activeLetterTarget={activeLetterTarget}
             onChangeTarget={setActiveLetterTarget}
+            lang={lang}
           />
 
           <FaqSection
