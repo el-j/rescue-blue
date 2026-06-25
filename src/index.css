@@ -284,6 +284,164 @@
   border-color: #000000 !important;
 }
 
+/* Rose adjustments in light mode */
+.light-theme .text-rose-400 { color: #be123c; }
+.light-theme .border-rose-500\/20 { border-color: rgba(190, 18, 60, 0.15); }
+.light-theme .bg-rose-500\/10 { background-color: rgba(190, 18, 60, 0.06); }
+
+/* Lime adjustments in light mode */
+.light-theme .text-lime-400 { color: #4d7c0f; }
+.light-theme .border-lime-500\/20 { border-color: rgba(77, 124, 15, 0.15); }
+.light-theme .bg-lime-500\/10 { background-color: rgba(77, 124, 15, 0.06); }
+
+/* Teal adjustments in light mode */
+.light-theme .text-teal-400 { color: #0f766e; }
+.light-theme .border-teal-500\/20 { border-color: rgba(15, 118, 110, 0.15); }
+.light-theme .bg-teal-500\/10 { background-color: rgba(15, 118, 110, 0.06); }
+
+/* Additional background adjustments for other colors */
+.light-theme .bg-emerald-500\/10 { background-color: rgba(5, 150, 105, 0.06); }
+.light-theme .bg-amber-500\/10 { background-color: rgba(180, 83, 9, 0.06); }
+.light-theme .bg-lime-500\/10 { background-color: rgba(77, 124, 15, 0.06); }
+.light-theme .bg-teal-500\/10 { background-color: rgba(15, 118, 110, 0.06); }
+
+/* ── Hero Fullscreen Landing ── */
+
+/* Force white text on campaign slide (always over dark image) */
+.light-theme .hero-slide-campaign,
+.light-theme .hero-slide-campaign .text-white,
+.light-theme .hero-slide-campaign .text-neutral-300,
+.light-theme .hero-slide-campaign .text-blue-400,
+.light-theme .hero-slide-campaign .text-blue-300 {
+  color: inherit;
+}
+
+.hero-slide-campaign .text-white,
+.hero-slide-campaign h1,
+.hero-slide-campaign strong {
+  color: #ffffff !important;
+}
+
+.hero-slide-campaign .text-blue-400,
+.hero-slide-campaign .text-blue-300 {
+  color: #60a5fa !important;
+}
+
+.light-theme .hero-slide-campaign span.text-white\/80,
+.hero-slide-campaign .text-white\/80 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Nav chevrons & dots always white-on-dark on hero regardless of theme */
+.light-theme .hero-fullscreen button[aria-label="Previous Slide"],
+.light-theme .hero-fullscreen button[aria-label="Next Slide"] {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-theme .hero-fullscreen button[aria-label="Previous Slide"]:hover,
+.light-theme .hero-fullscreen button[aria-label="Next Slide"]:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+/* News slide overlay */
+.hero-news-slide {
+  background: rgba(10, 10, 10, 0.55);
+}
+
+.light-theme .hero-news-slide {
+  background: rgba(248, 250, 252, 0.82);
+  backdrop-filter: blur(12px);
+}
+
+/* Date label */
+.hero-news-date {
+  color: #a3a3a3;
+}
+
+.light-theme .hero-news-date {
+  color: #475569;
+}
+
+/* Footer separator border */
+.hero-news-footer-border {
+  border-color: rgba(38, 38, 38, 0.6);
+}
+
+.light-theme .hero-news-footer-border {
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+/* Footer label */
+.hero-news-footer-label {
+  color: #a3a3a3;
+}
+
+.light-theme .hero-news-footer-label {
+  color: #64748b;
+}
+
+/* Outbound link buttons */
+.hero-news-link {
+  background-color: #262626;
+  color: #d4d4d4;
+  border: 1px solid rgba(64, 64, 64, 0.5);
+}
+
+.hero-news-link:hover {
+  background-color: #404040;
+  color: #ffffff;
+}
+
+.light-theme .hero-news-link {
+  background-color: rgba(30, 41, 59, 0.08);
+  color: #334155;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.light-theme .hero-news-link:hover {
+  background-color: rgba(30, 41, 59, 0.15);
+  color: #0f172a;
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* Light mode: make news slide text high contrast */
+.light-theme .hero-news-slide .text-white { color: #0f172a; }
+.light-theme .hero-news-slide .text-neutral-300 { color: #334155; }
+.light-theme .hero-news-slide .text-neutral-200 { color: #1e293b; }
+
+/* Light mode gradient on slide 0 */
+.light-theme .bg-linear-to-t.from-neutral-900 {
+  --tw-gradient-from: rgba(248, 250, 252, 0.9);
+}
+
+/* Neutral-700 dot indicators in light mode */
+.light-theme .bg-neutral-700 { background-color: #94a3b8; }
+.light-theme .hover\:bg-neutral-600:hover { background-color: #64748b; }
+
+/* Light-mode nav chevrons */
+.light-theme .bg-neutral-950\/70 {
+  background-color: rgba(248, 250, 252, 0.85);
+}
+
+.light-theme .hover\:bg-neutral-900:hover {
+  background-color: #e2e8f0;
+}
+
+.light-theme .border-neutral-800\/30 {
+  border-color: rgba(226, 232, 240, 0.5);
+}
+
+.light-theme .border-neutral-800\/60 {
+  border-color: rgba(203, 213, 225, 0.5);
+}
+
+.light-theme .border-neutral-700\/50 {
+  border-color: rgba(203, 213, 225, 0.5);
+}
+
 @layer utilities {
   .animate-float { animation: floatSubtle 6s ease-in-out infinite; }
   .animate-pulse-glow { animation: pulseGlow 8s ease-in-out infinite; }

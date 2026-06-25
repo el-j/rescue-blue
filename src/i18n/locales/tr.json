@@ -87,18 +87,73 @@
     "faqTitle": "SSS",
     "faqSub": "Kampanya ve taleplerimiz hakkında sıkça sorulan sorular.",
     "demoDreamReset": "Değerleri sıfırla",
-    "demoDreamSwitch": "En iyi geleceği görselleştir"
+    "demoDreamSwitch": "En iyi geleceği görselleştir",
+    "newsBadge": "Basın Raporu",
+    "readMore": "Makaleyi oku",
+    "latestNewsTitle": "Son Aşırılık Raporları",
+    "campaignTab": "Kampanya",
+    "archiveTitle": "Basın Arşivi",
+    "archiveSub": "Aşırı sağcı AfD faaliyetlerine ilişkin raporların kronolojik özeti",
+    "noNews": "Arşivde haber bulunmuyor.",
+    "dateHeader": "Tarih",
+    "sourceHeader": "Kaynak",
+    "titleHeader": "Rapor",
+    "recipientsHeader": "Alıcıların Durumu",
+    "status_supported": "Destekliyor",
+    "status_opposed": "Reddediyor",
+    "status_no_answer": "Beklemede",
+    "roleArdChair": "ARD Başkanı & Hessischer Rundfunk (hr) Genel Müdürü",
+    "roleZdfChefred": "Genel Yayın Yönetmeni, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "ARD-aktuell (Tagesschau) Genel Yayın Yönetmeni",
+    "roleZdfIntendant": "Genel Müdür, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Genel Müdür, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Genel Müdür, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Genel Yayın Yönetmeni, Alman Basın Ajansı (dpa)",
+    "roleSpringerChefred": "Yayın Kurulları Başkanı, Axel Springer Premium Grubu",
+    "roleRtlChefred": "Prime Time Genel Yayın Yönetmeni, RTL News",
+    "roleProsiebenChefred": "Genel Yayın Yönetmeni, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Genel Yayın Yönetmeni, DER SPIEGEL",
+    "roleZeitChefred": "Genel Yayın Yönetmeni, DIE ZEIT",
+    "roleWdrCouncil": "WDR Yayın Kurulu Başkanı",
+    "roleNdrCouncil": "NDR Yayın Kurulu Başkanı",
+    "roleZdfCouncil": "ZDF Televizyon Kurulu Başkanı",
+    "heroImgText1": "KAMPANYA: MEDYADA AfD'Yİ KAHVERENGİ GÖSTERİN - MAVİYİ KORUYUN.",
+    "heroImgText2": "ŞİMDİ İMZALAYIN: MAVİYİ KORUYUN!"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "«Blau machen» (İşi asmak)", "origin": "Orta Çağ / Boyacılık", "desc": "Terim, boyacıların boş Pazartesi gününden gelmektedir. Yün havada oksitlenip mavi olurken iş dinlenirdi. Dinlenme için güzel bir Alman metaforu." },
-      { "phrase": "«Ins Blaue hinein» (Maviye doğru)", "origin": "Doğa Romantizmi", "desc": "Sabit bir hedefi olmayan kaygısız bir yolculuk, saf güven, merak ve barışçıl macera ruhuyla taşınan." },
-      { "phrase": "«Das Blaue vom Himmel versprechen» (Gökyüzünün mavisini vaat etmek)", "origin": "Şiirsel metafor", "desc": "Mavi burada sonsuz, görkemli gök kubbeyi temsil eder — hayaller ve özlemlerle dolu harika bir görüntü." }
+      {
+        "phrase": "«Blau machen» (İşi asmak)",
+        "origin": "Orta Çağ / Boyacılık",
+        "desc": "Terim, boyacıların boş Pazartesi gününden gelmektedir. Yün havada oksitlenip mavi olurken iş dinlenirdi. Dinlenme için güzel bir Alman metaforu."
+      },
+      {
+        "phrase": "«Ins Blaue hinein» (Maviye doğru)",
+        "origin": "Doğa Romantizmi",
+        "desc": "Sabit bir hedefi olmayan kaygısız bir yolculuk, saf güven, merak ve barışçıl macera ruhuyla taşınan."
+      },
+      {
+        "phrase": "«Das Blaue vom Himmel versprechen» (Gökyüzünün mavisini vaat etmek)",
+        "origin": "Şiirsel metafor",
+        "desc": "Mavi burada sonsuz, görkemli gök kubbeyi temsil eder — hayaller ve özlemlerle dolu harika bir görüntü."
+      }
     ],
     "symbolik": [
-      { "phrase": "Mavi Çiçek", "origin": "Romantizm (Novalis)", "desc": "Özlem, aşk, bilgi ve insan ruhunun gelişimi için en önemli sembol. Paha biçilmez bir kültürel varlık." },
-      { "phrase": "BM Mavi Bereliler", "origin": "Küresel Barış Çalışması", "desc": "Mavi, BM tarafından kasıtlı olarak seçilmiştir çünkü evrensel olarak tarafsızlığı, tansiyonu düşürmeyi ve kalıcı barış iradesini temsil eder." },
-      { "phrase": "Kraliyet Mavisi ve Ultramarin", "origin": "Sanat ve Kültür Tarihi", "desc": "Yüzyıllarca altından daha değerli (lapis lazuliden). Rönesans'ta bu değerli mavi yalnızca en yüce tasvirler için ayrılmıştı." }
+      {
+        "phrase": "Mavi Çiçek",
+        "origin": "Romantizm (Novalis)",
+        "desc": "Özlem, aşk, bilgi ve insan ruhunun gelişimi için en önemli sembol. Paha biçilmez bir kültürel varlık."
+      },
+      {
+        "phrase": "BM Mavi Bereliler",
+        "origin": "Küresel Barış Çalışması",
+        "desc": "Mavi, BM tarafından kasıtlı olarak seçilmiştir çünkü evrensel olarak tarafsızlığı, tansiyonu düşürmeyi ve kalıcı barış iradesini temsil eder."
+      },
+      {
+        "phrase": "Kraliyet Mavisi ve Ultramarin",
+        "origin": "Sanat ve Kültür Tarihi",
+        "desc": "Yüzyıllarca altından daha değerli (lapis lazuliden). Rönesans'ta bu değerli mavi yalnızca en yüce tasvirler için ayrılmıştı."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "Mavi neden sorunlu olsun?", "a": "Mavi, AfD'nin kendi seçtiği renktir, ancak aynı zamanda barışın, gökyüzünün ve BM barış güçlerinin rengidir. Medya bu öz-tanımlamayı eleştirel olmadan benimser ve duygusal zararsızlık çağrışımını partiye aktarır." },
-    { "q": "Bu sansür değil mi?", "a": "Hayır. Bu, medya etiği standartları ve tarihsel dürüstlükle ilgilidir. Tarihsel olarak doğru renk kodları talep etmek meşru bir toplumsal tartışmadır." },
-    { "q": "Kampanyanın başarı şansı var mı?", "a": "Birçok kişi zaten imzaladı. Medya kuruluşları kamuoyu baskısına yanıt verir. Her imza önemlidir." },
-    { "q": "Bu kampanyanın arkasında kim var?", "a": "Dilekçe Change.org'da başlatıldı — sivil katılım için açık bir platform. Medya bütünlüğünü savunan kararlı vatandaşlar." }
+    {
+      "q": "Mavi neden sorunlu olsun?",
+      "a": "Mavi, AfD'nin kendi seçtiği renktir, ancak aynı zamanda barışın, gökyüzünün ve BM barış güçlerinin rengidir. Medya bu öz-tanımlamayı eleştirel olmadan benimser ve duygusal zararsızlık çağrışımını partiye aktarır."
+    },
+    {
+      "q": "Bu sansür değil mi?",
+      "a": "Hayır. Bu, medya etiği standartları ve tarihsel dürüstlükle ilgilidir. Tarihsel olarak doğru renk kodları talep etmek meşru bir toplumsal tartışmadır."
+    },
+    {
+      "q": "Kampanyanın başarı şansı var mı?",
+      "a": "Birçok kişi zaten imzaladı. Medya kuruluşları kamuoyu baskısına yanıt verir. Her imza önemlidir."
+    },
+    {
+      "q": "Bu kampanyanın arkasında kim var?",
+      "a": "Dilekçe Change.org'da başlatıldı — sivil katılım için açık bir platform. Medya bütünlüğünü savunan kararlı vatandaşlar."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Mavi", "desc": "Gökyüzünün, barışın ve BM'nin rengi" },
-    { "emoji": "📺", "label": "ARD, ZDF ve Diğer Medya", "desc": "Grafiklerde AfD için mavi kullanıyor" },
-    { "emoji": "🏛️", "label": "Tarihsel", "desc": "Kahverengi = aşırı sağ sembolü" },
-    { "emoji": "⚖️", "label": "Anayasa Koruma", "desc": "AfD'nin bazı bölümleri kanıtlanmış aşırılıkçı olarak sınıflandırıldı" }
+    {
+      "emoji": "🎨",
+      "label": "Mavi",
+      "desc": "Gökyüzünün, barışın ve BM'nin rengi"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD, ZDF ve Diğer Medya",
+      "desc": "Grafiklerde AfD için mavi kullanıyor"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Tarihsel",
+      "desc": "Kahverengi = aşırı sağ sembolü"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Anayasa Koruma",
+      "desc": "AfD'nin bazı bölümleri kanıtlanmış aşırılıkçı olarak sınıflandırıldı"
+    }
   ],
   "science": {
     "sectionH": "Bilimsel ve Medya Hukuku Arka Planı",
@@ -153,15 +236,27 @@
       {
         "title": "\"Görsel Çerçeveleme\"nin Psikolojik Boyutu (Halo Etkisi)",
         "points": [
-          { "label": "Mavi Psikolojisi", "text": "Açık camgöbeği ve mavi tonlar evrensel olarak güvenilirlik, itibarlılık ve kurumsal güvenilirlik gibi niteliklerle ilişkilendirilir." },
-          { "label": "Görsel Hafife Alma Tuzağı", "text": "Resmi olarak kanıtlanmış aşırı sağcı aşırılıkçı olarak sınıflandırılan bir siyasi güç, haber grafiklerinde tutarlı bir şekilde bu sakinleştirici ana renkle tasvir edildiğinde, bilişsel bir çelişki ortaya çıkar." }
+          {
+            "label": "Mavi Psikolojisi",
+            "text": "Açık camgöbeği ve mavi tonlar evrensel olarak güvenilirlik, itibarlılık ve kurumsal güvenilirlik gibi niteliklerle ilişkilendirilir."
+          },
+          {
+            "label": "Görsel Hafife Alma Tuzağı",
+            "text": "Resmi olarak kanıtlanmış aşırı sağcı aşırılıkçı olarak sınıflandırılan bir siyasi güç, haber grafiklerinde tutarlı bir şekilde bu sakinleştirici ana renkle tasvir edildiğinde, bilişsel bir çelişki ortaya çıkar."
+          }
         ]
       },
       {
         "title": "Editoryal Özerklik ve Gazetecilik Emsal Kararları",
         "points": [
-          { "label": "taz Emsal Kararı", "text": "Federal seçim kampanyası sırasında taz gazetesi, AfD çubuğunu kasıtlı olarak mavi yerine kahverengi ile göstermeye karar verdi. Bu, Alman gazeteciliğinde bu tür bilinçli sapmaların zaten uygulandığını göstermektedir." },
-          { "label": "Yerleşik Renk Çeşitliliği", "text": "Medya kuruluşları düzenli olarak resmi CI yönergelerinden sapma yapar. Renk kodlaması esnek bir gazetecilik tasarım aracıdır." }
+          {
+            "label": "taz Emsal Kararı",
+            "text": "Federal seçim kampanyası sırasında taz gazetesi, AfD çubuğunu kasıtlı olarak mavi yerine kahverengi ile göstermeye karar verdi. Bu, Alman gazeteciliğinde bu tür bilinçli sapmaların zaten uygulandığını göstermektedir."
+          },
+          {
+            "label": "Yerleşik Renk Çeşitliliği",
+            "text": "Medya kuruluşları düzenli olarak resmi CI yönergelerinden sapma yapar. Renk kodlaması esnek bir gazetecilik tasarım aracıdır."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "İtiraz 1: \"Medya hukuku tarafsızlık ilkesi yeniden renklendirmeyi yasaklıyor.\"",
         "rebuttals": [
-          { "label": "Mutlak Simetri Yükümlülüğü Yok", "text": "Federal Anayasa Mahkemesi'nin tutarlı kararlarına göre, kademeli fırsat eşitliği ve adil erişim gereklidir — kör, salt biçimsel simetri değil." },
-          { "label": "Referans Olarak Anayasa Koruma Ofisi", "text": "Mahkeme tarafından teyit edilen «kanıtlanmış aşırı sağcı aşırılıkçı» sınıflandırması nesnel ve doğrulanmış bir bulgudur." },
-          { "label": "Görsel Koruma Hakkı Yok", "text": "Siyasi partilerin bağımsız medyanın öz-sunumlarını filtresiz benimsemesine dair anayasal bir hakkı yoktur." }
+          {
+            "label": "Mutlak Simetri Yükümlülüğü Yok",
+            "text": "Federal Anayasa Mahkemesi'nin tutarlı kararlarına göre, kademeli fırsat eşitliği ve adil erişim gereklidir — kör, salt biçimsel simetri değil."
+          },
+          {
+            "label": "Referans Olarak Anayasa Koruma Ofisi",
+            "text": "Mahkeme tarafından teyit edilen «kanıtlanmış aşırı sağcı aşırılıkçı» sınıflandırması nesnel ve doğrulanmış bir bulgudur."
+          },
+          {
+            "label": "Görsel Koruma Hakkı Yok",
+            "text": "Siyasi partilerin bağımsız medyanın öz-sunumlarını filtresiz benimsemesine dair anayasal bir hakkı yoktur."
+          }
         ]
       },
       {
         "title": "İtiraz 2: \"Medya partilerin kurumsal kimliğini takip etmelidir.\"",
         "rebuttals": [
-          { "label": "Gazetecilik Mesafesi vs. PR Benimsemesi", "text": "Siyasi aktörlerin kurumsal kimliğini körü körüne benimsemek gazetecilik mesafe ilkesiyle çelişir." },
-          { "label": "Görev Olarak Görsel Gerçeklik", "text": "Anayasa koruma kurumları anayasal sadakatte önemli farklılıklar belgelediğinde, tüm partilere eşit davranmak kamuoyunu yanıltır." }
+          {
+            "label": "Gazetecilik Mesafesi vs. PR Benimsemesi",
+            "text": "Siyasi aktörlerin kurumsal kimliğini körü körüne benimsemek gazetecilik mesafe ilkesiyle çelişir."
+          },
+          {
+            "label": "Görev Olarak Görsel Gerçeklik",
+            "text": "Anayasa koruma kurumları anayasal sadakatte önemli farklılıklar belgelediğinde, tüm partilere eşit davranmak kamuoyunu yanıltır."
+          }
         ]
       },
       {
         "title": "İtiraz 3: \"Yeniden renklendirme partinin mağdur anlatısına cephane sağlar.\"",
         "rebuttals": [
-          { "label": "Proaktif Temel Strateji", "text": "Aşırı sağ iletişim analizleri gösteriyor: «medya mağduru anlatısı» gerçek editoryal kararlardan bağımsız olarak inşa edilen proaktif bir yapısal stratejidir." },
-          { "label": "Önleyici Boyun Eğme Yok", "text": "Editoryal ekipler bir partinin tepkisinden korkarak gerekli etik ayarlamalardan vazgeçtiğinde, editoryal bağımsızlıklarını o partinin iletişim stratejisine bağımlı kılar." }
+          {
+            "label": "Proaktif Temel Strateji",
+            "text": "Aşırı sağ iletişim analizleri gösteriyor: «medya mağduru anlatısı» gerçek editoryal kararlardan bağımsız olarak inşa edilen proaktif bir yapısal stratejidir."
+          },
+          {
+            "label": "Önleyici Boyun Eğme Yok",
+            "text": "Editoryal ekipler bir partinin tepkisinden korkarak gerekli etik ayarlamalardan vazgeçtiğinde, editoryal bağımsızlıklarını o partinin iletişim stratejisine bağımlı kılar."
+          }
         ]
       }
     ]

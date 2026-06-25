@@ -1,5 +1,5 @@
 import { ExternalLink, Newspaper, Calendar } from 'lucide-react'
-import type { Locale } from '../i18n'
+import { getTranslation, type Locale } from '../i18n'
 import type { NewsArticle } from './HeroSection'
 
 interface NewsArchiveSectionProps {
@@ -7,91 +7,6 @@ interface NewsArchiveSectionProps {
   news: NewsArticle[]
 }
 
-const LOCALIZED_TEXTS = {
-  de: {
-    archiveTitle: 'Presse-Archiv',
-    archiveSub: 'Chronologische Übersicht über Berichte zu rechtsextremistischen AfD-Aktivitäten',
-    readMore: 'Artikel lesen',
-    noNews: 'Keine Nachrichten im Archiv vorhanden.',
-    dateHeader: 'Datum',
-    sourceHeader: 'Quelle',
-    titleHeader: 'Bericht',
-  },
-  en: {
-    archiveTitle: 'Press Archive',
-    archiveSub: 'Chronological overview of reports on far-right AfD activities',
-    readMore: 'Read Article',
-    noNews: 'No articles in the archive.',
-    dateHeader: 'Date',
-    sourceHeader: 'Source',
-    titleHeader: 'Report',
-  },
-  fr: {
-    archiveTitle: 'Archives de presse',
-    archiveSub: 'Aperçu chronologique des rapports sur les activités de l\'AfD d\'extrême droite',
-    readMore: 'Lire l\'article',
-    noNews: 'Aucun article dans les archives.',
-    dateHeader: 'Date',
-    sourceHeader: 'Source',
-    titleHeader: 'Rapport',
-  },
-  es: {
-    archiveTitle: 'Archivo de prensa',
-    archiveSub: 'Resumen cronológico de informes sobre actividades de la extrema derecha de la AfD',
-    readMore: 'Leer artículo',
-    noNews: 'No hay artículos en el archivo.',
-    dateHeader: 'Fecha',
-    sourceHeader: 'Fuente',
-    titleHeader: 'Informe',
-  },
-  tr: {
-    archiveTitle: 'Basın Arşivi',
-    archiveSub: 'Aşırı sağcı AfD faaliyetlerine ilişkin raporların kronolojik özeti',
-    readMore: 'Makaleyi oku',
-    noNews: 'Arşivde haber bulunmuyor.',
-    dateHeader: 'Tarih',
-    sourceHeader: 'Kaynak',
-    titleHeader: 'Rapor',
-  },
-  uk: {
-    archiveTitle: 'Прес-архів',
-    archiveSub: 'Хронологічний огляд звітів про діяльність праворадикальної партії AfD',
-    readMore: 'Читати статтю',
-    noNews: 'В архіві немає новин.',
-    dateHeader: 'Дата',
-    sourceHeader: 'Джерело',
-    titleHeader: 'Звіт',
-  },
-  pl: {
-    archiveTitle: 'Archiwum prasowe',
-    archiveSub: 'Chronologiczny przegląd doniesień o skrajnie prawicowej działalności AfD',
-    readMore: 'Przeczytaj artykuł',
-    noNews: 'Brak artykułów w archiwum.',
-    dateHeader: 'Data',
-    sourceHeader: 'Źródło',
-    titleHeader: 'Raport',
-  },
-  it: {
-    archiveTitle: 'Archivio stampa',
-    archiveSub: 'Panoramica cronologica dei rapporti sulle attività dell\'AfD di estrema destra',
-    readMore: 'Leggi l\'articolo',
-    noNews: 'Nessun articolo nell\'archivio.',
-    dateHeader: 'Data',
-    sourceHeader: 'Fonte',
-    titleHeader: 'Rapporto',
-  },
-  ru: {
-    archiveTitle: 'Пресс-архив',
-    archiveSub: 'Хронологический обзор сообщений о крайне правой деятельности АдГ (AfD)',
-    readMore: 'Читать статью',
-    noNews: 'В архиве нет новостей.',
-    dateHeader: 'Дата',
-    sourceHeader: 'Источник',
-    titleHeader: 'Отчет',
-  },
-} as const
-
-// Get badge color styling based on source name
 const getSourceBadgeClass = (source: string) => {
   const s = source.toLowerCase()
   if (s.includes('spiegel')) {
@@ -115,12 +30,17 @@ const getSourceBadgeClass = (source: string) => {
   if (s.includes('süddeutsche')) {
     return 'border-teal-500/20 bg-teal-500/10 text-teal-400'
   }
-  // Fallback
   return 'border-neutral-700 bg-neutral-800 text-neutral-300'
 }
 
 export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
-  const texts = LOCALIZED_TEXTS[lang] || LOCALIZED_TEXTS.de
+  const t = getTranslation(lang)
+
+  const getLocalizedText = (field: string | Record<string, string> | undefined) => {
+    if (!field) return ''
+    if (typeof field === 'string') return field
+    return field[lang] ?? field['de'] ?? ''
+  }
 
   // Group news by date
   const groupedByDate = news.reduce<Record<string, NewsArticle[]>>((acc, item) => {
@@ -147,10 +67,10 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
           <div className="space-y-1">
             <h2 className="flex items-center gap-2.5 text-2xl font-black tracking-tight text-white uppercase sm:text-3xl">
               <Newspaper className="text-blue-500 shrink-0" size={28} />
-              {texts.archiveTitle}
+              {t.archiveTitle}
             </h2>
             <p className="text-sm text-neutral-400 font-medium">
-              {texts.archiveSub}
+              {t.archiveSub}
             </p>
           </div>
           <div className="shrink-0 flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/60 px-4 py-1.5 text-xs font-semibold text-neutral-400">
@@ -162,23 +82,23 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
         {/* Content list grouped by date */}
         {news.length === 0 ? (
           <div className="py-12 text-center text-sm font-semibold text-neutral-500">
-            {texts.noNews}
+            {t.noNews}
           </div>
         ) : (
           <div className="space-y-6">
             {sortedDates.map((dateStr) => (
-              <div key={dateStr} className="border border-neutral-900 bg-neutral-950/30 rounded-xl overflow-hidden shadow-inner">
+              <div key={dateStr} className="border border-neutral-800/80 bg-neutral-950/15 rounded-xl overflow-hidden shadow-inner">
                 {/* Date header */}
-                <div className="bg-neutral-900/60 border-b border-neutral-900 px-4 py-2 flex items-center gap-2 text-xs font-bold text-blue-400 font-mono">
-                  <Calendar size={12} />
+                <div className="bg-neutral-900/60 border-b border-neutral-800/80 px-4 py-2 flex items-center gap-2 text-xs font-bold text-blue-400 font-mono">
+                   <Calendar size={12} />
                   {dateStr}
                 </div>
                 {/* List of articles for this date */}
-                <div className="divide-y divide-neutral-900">
+                <div className="divide-y divide-neutral-800/50">
                   {groupedByDate[dateStr].map((item, idx) => (
                     <div 
                       key={idx} 
-                      className="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-neutral-900/20 transition-all duration-150 group"
+                      className="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-neutral-900/50 transition-all duration-150 group"
                     >
                       {/* Left: Source Badges & Title */}
                       <div className="space-y-1.5 flex-1">
@@ -199,7 +119,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                           )}
                         </div>
                         <h4 className="text-sm font-bold text-neutral-200 group-hover:text-white transition-colors leading-snug">
-                          {item.title}
+                          {getLocalizedText(item.title)}
                         </h4>
                       </div>
 
@@ -212,7 +132,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                               href={src.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 text-neutral-300 hover:text-blue-400 font-semibold transition-all border border-neutral-800 bg-neutral-900/40 hover:border-blue-500/20 hover:bg-neutral-900 px-2.5 py-1 rounded-lg"
+                              className="inline-flex items-center gap-1.5 text-neutral-300 hover:text-blue-400 font-semibold transition-all border border-neutral-800 bg-neutral-900/50 hover:border-blue-500/20 hover:bg-neutral-900 px-2.5 py-1 rounded-lg"
                             >
                               <span>{src.name}</span>
                               <ExternalLink size={10} className="shrink-0 text-neutral-500" />
@@ -223,9 +143,9 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                             href={item.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 text-neutral-300 hover:text-blue-400 font-semibold transition-all border border-neutral-800 bg-neutral-900/40 hover:border-blue-500/20 hover:bg-neutral-900 px-2.5 py-1 rounded-lg"
+                            className="inline-flex items-center gap-1.5 text-neutral-300 hover:text-blue-400 font-semibold transition-all border border-neutral-800 bg-neutral-900/50 hover:border-blue-500/20 hover:bg-neutral-900 px-2.5 py-1 rounded-lg"
                           >
-                            <span>{texts.readMore}</span>
+                            <span>{t.readMore}</span>
                             <ExternalLink size={10} className="shrink-0 text-neutral-500" />
                           </a>
                         )}

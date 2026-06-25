@@ -87,18 +87,73 @@
     "faqTitle": "FAQ",
     "faqSub": "Domande frequenti sulla campagna e sulle nostre richieste.",
     "demoDreamReset": "Ripristina valori",
-    "demoDreamSwitch": "Visualizza il miglior futuro"
+    "demoDreamSwitch": "Visualizza il miglior futuro",
+    "newsBadge": "Rapporto stampa",
+    "readMore": "Leggi l'articolo",
+    "latestNewsTitle": "Rapporti recenti sull'estremismo",
+    "campaignTab": "Campagna",
+    "archiveTitle": "Archivio stampa",
+    "archiveSub": "Panoramica cronologica dei rapporti sulle attività dell'AfD di estrema destra",
+    "noNews": "Nessun articolo nell'archivio.",
+    "dateHeader": "Data",
+    "sourceHeader": "Fonte",
+    "titleHeader": "Rapporto",
+    "recipientsHeader": "Stato dei destinatari",
+    "status_supported": "Supporta",
+    "status_opposed": "Rifiuta",
+    "status_no_answer": "In attesa",
+    "roleArdChair": "Presidente dell'ARD e direttore di Hessischer Rundfunk (hr)",
+    "roleZdfChefred": "Direttrice editoriale, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "Caporedattore di ARD-aktuell (Tagesschau)",
+    "roleZdfIntendant": "Direttore generale, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Direttrice generale, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Direttore generale, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Redattore capo, Agenzia di stampa tedesca (dpa)",
+    "roleSpringerChefred": "Presidente dei comitati di redazione, Gruppo Axel Springer Premium",
+    "roleRtlChefred": "Caporedattore prima serata, RTL News",
+    "roleProsiebenChefred": "Caporedattore, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Caporedattore, DER SPIEGEL",
+    "roleZeitChefred": "Caporedattore, DIE ZEIT",
+    "roleWdrCouncil": "Presidente del consiglio di amministrazione del WDR",
+    "roleNdrCouncil": "Presidente del consiglio di amministrazione del NDR",
+    "roleZdfCouncil": "Presidente del consiglio televisivo del ZDF",
+    "heroImgText1": "PETIZIONE: RAPPRESENTARE L'AfD IN MARRONE NEI MEDIA - PROTEGGERE IL BLU.",
+    "heroImgText2": "FIRMA ORA: PROTEGGI IL BLU!"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "\"Blau machen\" (Fare blu / Bigiare)", "origin": "Medioevo / Mestiere dei tintori", "desc": "Il termine deriva dal lunedì libero dei tintori. Mentre la lana si ossidava all'aria diventando blu, il lavoro riposava. Una bella metafora tedesca per il riposo e la cura di sé." },
-      { "phrase": "\"Ins Blaue hinein\" (Nel blu dipinto di blu)", "origin": "Romanticismo naturalistico", "desc": "Un viaggio o un'azione spensierata senza una meta precisa, guidati da pura fiducia, curiosità e un tranquillo spirito di avventura." },
-      { "phrase": "\"Das Blaue vom Himmel versprechen\" (Promettere il blu del cielo)", "origin": "Metafora poetica", "desc": "Il blu qui rappresenta l'infinita, maestosa volta celeste – una splendida immagine piena di sogni e desideri." }
+      {
+        "phrase": "\"Blau machen\" (Fare blu / Bigiare)",
+        "origin": "Medioevo / Mestiere dei tintori",
+        "desc": "Il termine deriva dal lunedì libero dei tintori. Mentre la lana si ossidava all'aria diventando blu, il lavoro riposava. Una bella metafora tedesca per il riposo e la cura di sé."
+      },
+      {
+        "phrase": "\"Ins Blaue hinein\" (Nel blu dipinto di blu)",
+        "origin": "Romanticismo naturalistico",
+        "desc": "Un viaggio o un'azione spensierata senza una meta precisa, guidati da pura fiducia, curiosità e un tranquillo spirito di avventura."
+      },
+      {
+        "phrase": "\"Das Blaue vom Himmel versprechen\" (Promettere il blu del cielo)",
+        "origin": "Metafora poetica",
+        "desc": "Il blu qui rappresenta l'infinita, maestosa volta celeste – una splendida immagine piena di sogni e desideri."
+      }
     ],
     "symbolik": [
-      { "phrase": "Il fiore azzurro", "origin": "Romanticismo (Novalis)", "desc": "Il simbolo più importante del desiderio, dell'amore, dell'intuizione e dello sviluppo dello spirito umano. Un bene culturale inestimabile." },
-      { "phrase": "Caschi Blu dell'ONU", "origin": "Operazioni di pace globali", "desc": "Il blu è stato scelto deliberatamente dall'ONU perché rappresenta universalmente la neutralità, la de-escalation, l'ottimismo e la volontà di pace duratura." },
-      { "phrase": "Blu Reale e Oltremare", "origin": "Storia dell'arte e della cultura", "desc": "Per secoli più prezioso dell'oro (ottenuto dai lapislazzuli). Nel Rinascimento, questo prezioso blu era riservato esclusivamente alle raffigurazioni più sacre." }
+      {
+        "phrase": "Il fiore azzurro",
+        "origin": "Romanticismo (Novalis)",
+        "desc": "Il simbolo più importante del desiderio, dell'amore, dell'intuizione e dello sviluppo dello spirito umano. Un bene culturale inestimabile."
+      },
+      {
+        "phrase": "Caschi Blu dell'ONU",
+        "origin": "Operazioni di pace globali",
+        "desc": "Il blu è stato scelto deliberatamente dall'ONU perché rappresenta universalmente la neutralità, la de-escalation, l'ottimismo e la volontà di pace duratura."
+      },
+      {
+        "phrase": "Blu Reale e Oltremare",
+        "origin": "Storia dell'arte e della cultura",
+        "desc": "Per secoli più prezioso dell'oro (ottenuto dai lapislazzuli). Nel Rinascimento, questo prezioso blu era riservato esclusivamente alle raffigurazioni più sacre."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "Perché il blu dovrebbe essere problematico?", "a": "Il blu è il colore scelto dall'AfD, ma è anche il colore della pace, del cielo e delle forze dell'ONU. Adottando acriticamente questa descrizione visiva, i media trasferiscono l'associazione emotiva di innocuità al partito." },
-    { "q": "Non si tratta di censura o interferenza politica?", "a": "No. Si trata di standard etico-giornalistici e di onestà storica. I media prendono decisioni editoriali ogni giorno – chiedere codici di colore storicamente accurati è un legittimo dibattito sociale, non censura." },
-    { "q": "La campagna ha possibilità di successo?", "a": "Molte persone hanno già firmato. Le organizzazioni dei media rispondono alla pressione pubblica. Ogni firma conta." },
-    { "q": "Chi c'è dietro questa campagna?", "a": "La petizione è stata avviata su Change.org, una piattaforma aperta per l'impegno civico. Si tratta di cittadini impegnati che difendono l'integrità dei media." }
+    {
+      "q": "Perché il blu dovrebbe essere problematico?",
+      "a": "Il blu è il colore scelto dall'AfD, ma è anche il colore della pace, del cielo e delle forze dell'ONU. Adottando acriticamente questa descrizione visiva, i media trasferiscono l'associazione emotiva di innocuità al partito."
+    },
+    {
+      "q": "Non si tratta di censura o interferenza politica?",
+      "a": "No. Si trata di standard etico-giornalistici e di onestà storica. I media prendono decisioni editoriali ogni giorno – chiedere codici di colore storicamente accurati è un legittimo dibattito sociale, non censura."
+    },
+    {
+      "q": "La campagna ha possibilità di successo?",
+      "a": "Molte persone hanno già firmato. Le organizzazioni dei media rispondono alla pressione pubblica. Ogni firma conta."
+    },
+    {
+      "q": "Chi c'è dietro questa campagna?",
+      "a": "La petizione è stata avviata su Change.org, una piattaforma aperta per l'impegno civico. Si tratta di cittadini impegnati che difendono l'integrità dei media."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Blu", "desc": "Colore del cielo, della pace e dell'ONU" },
-    { "emoji": "📺", "label": "ARD, ZDF e altri media", "desc": "Usano il blu per l'AfD nei grafici" },
-    { "emoji": "🏛️", "label": "Storicamente", "desc": "Marrone = simbolo dell'estremismo di destra" },
-    { "emoji": "⚖️", "label": "Tutela costituzionale", "desc": "Parti dell'AfD classificate come estremiste provate" }
+    {
+      "emoji": "🎨",
+      "label": "Blu",
+      "desc": "Colore del cielo, della pace e dell'ONU"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD, ZDF e altri media",
+      "desc": "Usano il blu per l'AfD nei grafici"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Storicamente",
+      "desc": "Marrone = simbolo dell'estremismo di destra"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Tutela costituzionale",
+      "desc": "Parti dell'AfD classificate come estremiste provate"
+    }
   ],
   "science": {
     "sectionH": "Contesto scientifico e giuridico",
@@ -153,15 +236,27 @@
       {
         "title": "La dimensione psicologica del \"Visual Framing\" (effetto alone)",
         "points": [
-          { "label": "La psicologia del blu", "text": "Le tonalità chiare del ciano e del blu sono universalmente associate ad attributi quali credibilità, affidabilità, de-escalation e stabilità istituzionale – simili alle scelte di colore delle Nazioni Unite o delle istituzioni europee." },
-          { "label": "La trappola della minimizzazione visiva", "text": "Quando una forza politica ufficialmente classificata come estremista di destra provata dall'Ufficio federale per la tutela della Costituzione (BfV) viene costantemente rappresentata in questo rassicurante colore primario nei grafici delle notizie, si crea un contrasto cognitivo: il framing visivo maschera il radicalismo ideologico degli attori (effetto alone)." }
+          {
+            "label": "La psicologia del blu",
+            "text": "Le tonalità chiare del ciano e del blu sono universalmente associate ad attributi quali credibilità, affidabilità, de-escalation e stabilità istituzionale – simili alle scelte di colore delle Nazioni Unite o delle istituzioni europee."
+          },
+          {
+            "label": "La trappola della minimizzazione visiva",
+            "text": "Quando una forza politica ufficialmente classificata come estremista di destra provata dall'Ufficio federale per la tutela della Costituzione (BfV) viene costantemente rappresentata in questo rassicurante colore primario nei grafici delle notizie, si crea un contrasto cognitivo: il framing visivo maschera il radicalismo ideologico degli attori (effetto alone)."
+          }
         ]
       },
       {
         "title": "Autonomia editoriale e precedenti giornalistici",
         "points": [
-          { "label": "Il precedente della taz", "text": "Durante la campagna per le elezioni federali, il quotidiano nazionale taz ha deciso deliberatamente di rappresentare la barra dell'AfD in marrone invece che in blu, sia nella versione cartacea che in quella web. Ciò dimostra che la deviazione consapevole dalla presentazione del partito è già praticata nel giornalismo tedesco e riconosciuta come un legittimo strumento editoriale." },
-          { "label": "Differenze cromatiche consolidate", "text": "I media deviano regolarmente dalle linee guida ufficiali delle parti. Il BSW viene mostrato in viola o arancione a seconda della redazione; il partito della Sinistra (Die Linke) appare spesso in rosso scuro per distinguerlo dall'SPD. CDU/CSU usa il turchese ma viene costantemente rappresentata in nero. La codifica dei colori è uno strumento flessibile del design giornalistico." }
+          {
+            "label": "Il precedente della taz",
+            "text": "Durante la campagna per le elezioni federali, il quotidiano nazionale taz ha deciso deliberatamente di rappresentare la barra dell'AfD in marrone invece che in blu, sia nella versione cartacea che in quella web. Ciò dimostra che la deviazione consapevole dalla presentazione del partito è già praticata nel giornalismo tedesco e riconosciuta come un legittimo strumento editoriale."
+          },
+          {
+            "label": "Differenze cromatiche consolidate",
+            "text": "I media deviano regolarmente dalle linee guida ufficiali delle parti. Il BSW viene mostrato in viola o arancione a seconda della redazione; il partito della Sinistra (Die Linke) appare spesso in rosso scuro per distinguerlo dall'SPD. CDU/CSU usa il turchese ma viene costantemente rappresentata in nero. La codifica dei colori è uno strumento flessibile del design giornalistico."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "Obiezione 1: \"Il principio di neutralità della legge sui media vieta di ricolorare.\"",
         "rebuttals": [
-          { "label": "Nessun obbligo di simmetria assoluta", "text": "Secondo le sentenze costanti della Corte costituzionale federale (BVerfG), l'Art. 21(1) GG in combinato disposto con il § 5 PartG richiede pari opportunità graduate e accesso equo – non una simmetria cieca e puramente formale. Il giornalismo può e deve nominare le differenze quando esistono motivi oggettivi e fattuali." },
-          { "label": "La tutela costituzionale come punto di riferimento", "text": "La classificazione confermata dai tribunali come \"estremista di destra provato\" è un accertamento oggettivo e verificato. Una visualizzazione che rifletta questo elemento attraverso un colore storicamente consolidato risponde all'obbligo legale di fornire un'informazione veritiera e basata sui fatti (cfr. Trattato statale sui media – MStV)." },
-          { "label": "Nessun diritto alla tutela dell'immagine visiva", "text": "I partiti politici non hanno alcun diritto costituzionale a che i media indipendenti adottino la loro autorappresentazione senza filtri. L'autonomia di programmazione delle emittenti (libertà di trasmissione ai sensi dell'Art. 5(1)(2) GG) include esplicitamente il diritto di progettare grafici informativi secondo criteri giornalistici fondati." }
+          {
+            "label": "Nessun obbligo di simmetria assoluta",
+            "text": "Secondo le sentenze costanti della Corte costituzionale federale (BVerfG), l'Art. 21(1) GG in combinato disposto con il § 5 PartG richiede pari opportunità graduate e accesso equo – non una simmetria cieca e puramente formale. Il giornalismo può e deve nominare le differenze quando esistono motivi oggettivi e fattuali."
+          },
+          {
+            "label": "La tutela costituzionale come punto di riferimento",
+            "text": "La classificazione confermata dai tribunali come \"estremista di destra provato\" è un accertamento oggettivo e verificato. Una visualizzazione che rifletta questo elemento attraverso un colore storicamente consolidato risponde all'obbligo legale di fornire un'informazione veritiera e basata sui fatti (cfr. Trattato statale sui media – MStV)."
+          },
+          {
+            "label": "Nessun diritto alla tutela dell'immagine visiva",
+            "text": "I partiti politici non hanno alcun diritto costituzionale a che i media indipendenti adottino la loro autorappresentazione senza filtri. L'autonomia di programmazione delle emittenti (libertà di trasmissione ai sensi dell'Art. 5(1)(2) GG) include esplicitamente il diritto di progettare grafici informativi secondo criteri giornalistici fondati."
+          }
         ]
       },
       {
         "title": "Obiezione 2: \"I media devono seguire la Corporate Identity (CI) dei partiti.\"",
         "rebuttals": [
-          { "label": "Distanza giornalistica contro adozione di PR", "text": "Adottare ciecamente la CI degli attori politici contraddice il principio giornalistico della distanza. I partiti usano il branding visivo come strumento di comunicazione strategica. La riproduzione acritica di questo marketing da parte dei media li trasforma in involontari amplificatori di strategie comunicative politiche." },
-          { "label": "La verità visiva come dovere", "text": "Quando le agenzie di tutela costituzionale documentano differenze significative nella fedeltà costituzionale dei partiti, trattarli tutti allo stesso modo in un innocente \"blu standard\" fuorvia il pubblico. La verità visiva richiede una scelta di colore che rifletta lo status costituzionale." }
+          {
+            "label": "Distanza giornalistica contro adozione di PR",
+            "text": "Adottare ciecamente la CI degli attori politici contraddice il principio giornalistico della distanza. I partiti usano il branding visivo come strumento di comunicazione strategica. La riproduzione acritica di questo marketing da parte dei media li trasforma in involontari amplificatori di strategie comunicative politiche."
+          },
+          {
+            "label": "La verità visiva come dovere",
+            "text": "Quando le agenzie di tutela costituzionale documentano differenze significative nella fedeltà costituzionale dei partiti, trattarli tutti allo stesso modo in un innocente \"blu standard\" fuorvia il pubblico. La verità visiva richiede una scelta di colore che rifletta lo status costituzionale."
+          }
         ]
       },
       {
         "title": "Obiezione 3: \"La ricolorazione fornisce al parti-to argomenti per la sua narrativa vittimistica.\"",
         "rebuttals": [
-          { "label": "Strategia di comunicazione proattiva", "text": "Le analisi della comunicazione dell'estremismo di destra (anche da parte del Dr. Johannes Hillje) dimostrano che la narrativa del \"vittimismo dei media\" è una strategia proattiva e strutturale, costruita e sfruttata indipendentemente dalle effettive decisioni editoriali." },
-          { "label": "Nessuna sottomissione preventiva", "text": "Quando le redazioni rinunciano a necessari adeguamenti per paura della reazione di un partito, subordinano la loro indipendenza editoriale alla strategia comunicativa di quel partito. La protezione più efficace non è l'inazione, bensì una divulgazione trasparente, scientificamente e giuridicamente rigorosa della scelta grafica redazionale." }
+          {
+            "label": "Strategia di comunicazione proattiva",
+            "text": "Le analisi della comunicazione dell'estremismo di destra (anche da parte del Dr. Johannes Hillje) dimostrano che la narrativa del \"vittimismo dei media\" è una strategia proattiva e strutturale, costruita e sfruttata indipendentemente dalle effettive decisioni editoriali."
+          },
+          {
+            "label": "Nessuna sottomissione preventiva",
+            "text": "Quando le redazioni rinunciano a necessari adeguamenti per paura della reazione di un partito, subordinano la loro indipendenza editoriale alla strategia comunicativa di quel partito. La protezione più efficace non è l'inazione, bensì una divulgazione trasparente, scientificamente e giuridicamente rigorosa della scelta grafica redazionale."
+          }
         ]
       }
     ]

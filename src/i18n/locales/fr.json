@@ -87,18 +87,73 @@
     "faqTitle": "FAQ",
     "faqSub": "Foire aux questions sur la campagne et nos revendications.",
     "demoDreamReset": "Réinitialiser",
-    "demoDreamSwitch": "Visualiser le meilleur avenir"
+    "demoDreamSwitch": "Visualiser le meilleur avenir",
+    "newsBadge": "Rapport de presse",
+    "readMore": "Lire l'article",
+    "latestNewsTitle": "Rapports récents sur l'extrémisme",
+    "campaignTab": "Campagne",
+    "archiveTitle": "Archives de presse",
+    "archiveSub": "Aperçu chronologique des rapports sur les activités de l'AfD d'extrême droite",
+    "noNews": "Aucun article dans les archives.",
+    "dateHeader": "Date",
+    "sourceHeader": "Source",
+    "titleHeader": "Rapport",
+    "recipientsHeader": "Statut des décideurs",
+    "status_supported": "Soutient",
+    "status_opposed": "Rejette",
+    "status_no_answer": "En attente",
+    "roleArdChair": "Président de l'ARD & Directeur de la Hessischer Rundfunk (hr)",
+    "roleZdfChefred": "Rédactrice en chef, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "Rédacteur en chef d'ARD-aktuell (Tagesschau)",
+    "roleZdfIntendant": "Directeur général, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Directrice générale, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Directeur général, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Rédacteur en chef, Agence de Presse Allemande (dpa)",
+    "roleSpringerChefred": "Président des rédactions, Groupe Axel Springer Premium",
+    "roleRtlChefred": "Rédacteur en chef du prime time, RTL News",
+    "roleProsiebenChefred": "Rédacteur en chef, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Rédacteur en chef, DER SPIEGEL",
+    "roleZeitChefred": "Rédacteur en chef, DIE ZEIT",
+    "roleWdrCouncil": "Président du conseil de radiodiffusion du WDR",
+    "roleNdrCouncil": "Président du conseil de radiodiffusion du NDR",
+    "roleZdfCouncil": "Président du conseil de télévision du ZDF",
+    "heroImgText1": "PÉTITION : REPRÉSENTER L'AfD EN BRUN DANS LES MÉDIAS - PROTÉGER LE BLEU.",
+    "heroImgText2": "SIGNEZ MAINTENANT : PROTÉGEZ LE BLEU !"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "« Blau machen » (Faire l'école buissonnière)", "origin": "Moyen Âge / Artisanat de teinture", "desc": "Le terme provient du lundi libre des teinturiers. Pendant que la laine s'oxydait à l'air et devenait bleue, le travail s'arrêtait. Une belle métaphore allemande pour le repos et le soin de soi." },
-      { "phrase": "« Ins Blaue hinein » (Dans le bleu)", "origin": "Romantisme naturel", "desc": "Un voyage ou un acte insouciant sans destination fixe, porté par la pure confiance, la curiosité et un esprit d'aventure paisible." },
-      { "phrase": "« Das Blaue vom Himmel versprechen » (Promettre le bleu du ciel)", "origin": "Métaphore poétique", "desc": "Le bleu représente ici la voûte céleste infinie et majestueuse — une image merveilleuse pleine de rêves et de nostalgie." }
+      {
+        "phrase": "« Blau machen » (Faire l'école buissonnière)",
+        "origin": "Moyen Âge / Artisanat de teinture",
+        "desc": "Le terme provient du lundi libre des teinturiers. Pendant que la laine s'oxydait à l'air et devenait bleue, le travail s'arrêtait. Une belle métaphore allemande pour le repos et le soin de soi."
+      },
+      {
+        "phrase": "« Ins Blaue hinein » (Dans le bleu)",
+        "origin": "Romantisme naturel",
+        "desc": "Un voyage ou un acte insouciant sans destination fixe, porté par la pure confiance, la curiosité et un esprit d'aventure paisible."
+      },
+      {
+        "phrase": "« Das Blaue vom Himmel versprechen » (Promettre le bleu du ciel)",
+        "origin": "Métaphore poétique",
+        "desc": "Le bleu représente ici la voûte céleste infinie et majestueuse — une image merveilleuse pleine de rêves et de nostalgie."
+      }
     ],
     "symbolik": [
-      { "phrase": "La Fleur Bleue", "origin": "Romantisme (Novalis)", "desc": "Le symbole le plus important de la nostalgie, de l'amour, de la connaissance et de l'épanouissement de l'esprit humain. Un patrimoine culturel inestimable." },
-      { "phrase": "Les Casques bleus de l'ONU", "origin": "Travail de paix mondial", "desc": "Le bleu a été délibérément choisi par l'ONU car il représente universellement la neutralité, la désescalade, l'optimisme et la volonté d'une paix durable." },
-      { "phrase": "Bleu royal & Outremer", "origin": "Histoire de l'art & de la culture", "desc": "Pendant des siècles, plus précieux que l'or (issu du lapis-lazuli). À la Renaissance, ce bleu précieux était exclusivement réservé aux représentations les plus nobles." }
+      {
+        "phrase": "La Fleur Bleue",
+        "origin": "Romantisme (Novalis)",
+        "desc": "Le symbole le plus important de la nostalgie, de l'amour, de la connaissance et de l'épanouissement de l'esprit humain. Un patrimoine culturel inestimable."
+      },
+      {
+        "phrase": "Les Casques bleus de l'ONU",
+        "origin": "Travail de paix mondial",
+        "desc": "Le bleu a été délibérément choisi par l'ONU car il représente universellement la neutralité, la désescalade, l'optimisme et la volonté d'une paix durable."
+      },
+      {
+        "phrase": "Bleu royal & Outremer",
+        "origin": "Histoire de l'art & de la culture",
+        "desc": "Pendant des siècles, plus précieux que l'or (issu du lapis-lazuli). À la Renaissance, ce bleu précieux était exclusivement réservé aux représentations les plus nobles."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "Pourquoi le bleu devrait-il être problématique ?", "a": "Le bleu est la couleur auto-choisie de l'AfD, mais c'est aussi la couleur de la paix, du ciel et des forces de maintien de la paix de l'ONU. En adoptant cette auto-description de manière non critique, les médias transfèrent l'association émotionnelle d'innocuité au parti." },
-    { "q": "N'est-ce pas de la censure ?", "a": "Non. Il s'agit de normes d'éthique médiatique et d'honnêteté historique. Les médias prennent des décisions éditoriales chaque jour — exiger des codes couleur historiquement exacts est un débat sociétal légitime, pas de la censure." },
-    { "q": "La campagne a-t-elle une chance de succès ?", "a": "De nombreuses personnes ont déjà signé. Les organisations médiatiques réagissent à la pression publique. Chaque signature compte." },
-    { "q": "Qui est derrière cette campagne ?", "a": "La pétition a été lancée sur Change.org — une plateforme ouverte pour l'engagement civique. Ce sont des citoyens engagés qui défendent l'intégrité des médias." }
+    {
+      "q": "Pourquoi le bleu devrait-il être problématique ?",
+      "a": "Le bleu est la couleur auto-choisie de l'AfD, mais c'est aussi la couleur de la paix, du ciel et des forces de maintien de la paix de l'ONU. En adoptant cette auto-description de manière non critique, les médias transfèrent l'association émotionnelle d'innocuité au parti."
+    },
+    {
+      "q": "N'est-ce pas de la censure ?",
+      "a": "Non. Il s'agit de normes d'éthique médiatique et d'honnêteté historique. Les médias prennent des décisions éditoriales chaque jour — exiger des codes couleur historiquement exacts est un débat sociétal légitime, pas de la censure."
+    },
+    {
+      "q": "La campagne a-t-elle une chance de succès ?",
+      "a": "De nombreuses personnes ont déjà signé. Les organisations médiatiques réagissent à la pression publique. Chaque signature compte."
+    },
+    {
+      "q": "Qui est derrière cette campagne ?",
+      "a": "La pétition a été lancée sur Change.org — une plateforme ouverte pour l'engagement civique. Ce sont des citoyens engagés qui défendent l'intégrité des médias."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Bleu", "desc": "Couleur du ciel, de la paix et de l'ONU" },
-    { "emoji": "📺", "label": "ARD & ZDF & autres médias", "desc": "Utilisent le bleu pour l'AfD dans les graphiques" },
-    { "emoji": "🏛️", "label": "Historiquement", "desc": "Brun = symbole de l'extrémisme de droite" },
-    { "emoji": "⚖️", "label": "Protection constitutionnelle", "desc": "Des parties de l'AfD classées comme extrémistes avérées" }
+    {
+      "emoji": "🎨",
+      "label": "Bleu",
+      "desc": "Couleur du ciel, de la paix et de l'ONU"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD & ZDF & autres médias",
+      "desc": "Utilisent le bleu pour l'AfD dans les graphiques"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Historiquement",
+      "desc": "Brun = symbole de l'extrémisme de droite"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Protection constitutionnelle",
+      "desc": "Des parties de l'AfD classées comme extrémistes avérées"
+    }
   ],
   "science": {
     "sectionH": "Contexte scientifique & juridique des médias",
@@ -153,15 +236,27 @@
       {
         "title": "La dimension psychologique du « cadrage visuel » (effet de halo)",
         "points": [
-          { "label": "La psychologie du bleu", "text": "Les tons cyan clair et bleu sont universellement associés à des attributs tels que la crédibilité, la fiabilité, la désescalade et la fiabilité institutionnelle — comparable aux choix de couleurs des Nations Unies ou des institutions européennes." },
-          { "label": "Le piège de la minimisation visuelle", "text": "Lorsqu'une force politique officiellement classée extrémiste de droite avérée est systématiquement représentée dans cette couleur primaire apaisante dans les graphiques d'information, un contraste cognitif apparaît : le cadrage visuel masque le radicalisme idéologique des acteurs (effet de halo)." }
+          {
+            "label": "La psychologie du bleu",
+            "text": "Les tons cyan clair et bleu sont universellement associés à des attributs tels que la crédibilité, la fiabilité, la désescalade et la fiabilité institutionnelle — comparable aux choix de couleurs des Nations Unies ou des institutions européennes."
+          },
+          {
+            "label": "Le piège de la minimisation visuelle",
+            "text": "Lorsqu'une force politique officiellement classée extrémiste de droite avérée est systématiquement représentée dans cette couleur primaire apaisante dans les graphiques d'information, un contraste cognitif apparaît : le cadrage visuel masque le radicalisme idéologique des acteurs (effet de halo)."
+          }
         ]
       },
       {
         "title": "Autonomie éditoriale et précédents journalistiques",
         "points": [
-          { "label": "Le précédent taz", "text": "Lors de la campagne électorale fédérale, le quotidien taz a délibérément décidé de représenter la barre de l'AfD en brun plutôt qu'en bleu. Cela démontre que des écarts conscients de la présentation propre des partis sont déjà pratiqués dans le journalisme allemand." },
-          { "label": "Variance de couleur établie", "text": "Les médias s'écartent régulièrement des directives officielles de CI. Le BSW est montré en violet ou orange-rouge selon la rédaction. Le codage couleur est un outil de conception journalistique flexible." }
+          {
+            "label": "Le précédent taz",
+            "text": "Lors de la campagne électorale fédérale, le quotidien taz a délibérément décidé de représenter la barre de l'AfD en brun plutôt qu'en bleu. Cela démontre que des écarts conscients de la présentation propre des partis sont déjà pratiqués dans le journalisme allemand."
+          },
+          {
+            "label": "Variance de couleur établie",
+            "text": "Les médias s'écartent régulièrement des directives officielles de CI. Le BSW est montré en violet ou orange-rouge selon la rédaction. Le codage couleur est un outil de conception journalistique flexible."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "Objection 1 : « Le principe de neutralité médiatique interdit le recoloriage. »",
         "rebuttals": [
-          { "label": "Pas d'obligation de symétrie absolue", "text": "Selon la jurisprudence constante de la Cour constitutionnelle fédérale, l'art. 21(1) GG exige l'égalité des chances graduée et un accès équitable — pas une symétrie purement formelle et aveugle." },
-          { "label": "L'Office de protection constitutionnelle comme référence", "text": "La classification confirmée par les tribunaux comme « extrémiste de droite avéré » est un constat objectif et vérifié. Une visualisation qui reflète cela sert l'obligation légale de reportage factuel et véridique." },
-          { "label": "Pas de droit à la protection visuelle", "text": "Les partis politiques n'ont pas de droit constitutionnel à ce que les médias indépendants adoptent leur auto-présentation sans filtre." }
+          {
+            "label": "Pas d'obligation de symétrie absolue",
+            "text": "Selon la jurisprudence constante de la Cour constitutionnelle fédérale, l'art. 21(1) GG exige l'égalité des chances graduée et un accès équitable — pas une symétrie purement formelle et aveugle."
+          },
+          {
+            "label": "L'Office de protection constitutionnelle comme référence",
+            "text": "La classification confirmée par les tribunaux comme « extrémiste de droite avéré » est un constat objectif et vérifié. Une visualisation qui reflète cela sert l'obligation légale de reportage factuel et véridique."
+          },
+          {
+            "label": "Pas de droit à la protection visuelle",
+            "text": "Les partis politiques n'ont pas de droit constitutionnel à ce que les médias indépendants adoptent leur auto-présentation sans filtre."
+          }
         ]
       },
       {
         "title": "Objection 2 : « Les médias doivent suivre l'identité corporate des partis. »",
         "rebuttals": [
-          { "label": "Distance journalistique vs. adoption PR", "text": "Adopter aveuglément l'identité visuelle des acteurs politiques contredit le principe de distance journalistique. Les partis utilisent le branding visuel comme outil de communication stratégique." },
-          { "label": "La vérité visuelle comme devoir", "text": "Lorsque les agences de protection constitutionnelle documentent des différences significatives dans la loyauté constitutionnelle des partis, traiter tous les partis de manière égale dans un « bleu standard » innocent induit le public en erreur." }
+          {
+            "label": "Distance journalistique vs. adoption PR",
+            "text": "Adopter aveuglément l'identité visuelle des acteurs politiques contredit le principe de distance journalistique. Les partis utilisent le branding visuel comme outil de communication stratégique."
+          },
+          {
+            "label": "La vérité visuelle comme devoir",
+            "text": "Lorsque les agences de protection constitutionnelle documentent des différences significatives dans la loyauté constitutionnelle des partis, traiter tous les partis de manière égale dans un « bleu standard » innocent induit le public en erreur."
+          }
         ]
       },
       {
         "title": "Objection 3 : « Le recoloriage donne des munitions au narratif victimaire du parti. »",
         "rebuttals": [
-          { "label": "Stratégie de base proactive", "text": "Les analyses de la communication d'extrême droite montrent : le « narratif de victime médiatique » est une stratégie structurelle proactive, construite et exploitée indépendamment des décisions éditoriales réelles." },
-          { "label": "Pas de soumission préventive", "text": "Lorsque les rédactions renoncent aux ajustements éthiques nécessaires par peur de la réaction d'un parti, elles subordonnent leur indépendance éditoriale à la stratégie de communication de ce parti." }
+          {
+            "label": "Stratégie de base proactive",
+            "text": "Les analyses de la communication d'extrême droite montrent : le « narratif de victime médiatique » est une stratégie structurelle proactive, construite et exploitée indépendamment des décisions éditoriales réelles."
+          },
+          {
+            "label": "Pas de soumission préventive",
+            "text": "Lorsque les rédactions renoncent aux ajustements éthiques nécessaires par peur de la réaction d'un parti, elles subordonnent leur indépendance éditoriale à la stratégie de communication de ce parti."
+          }
         ]
       }
     ]

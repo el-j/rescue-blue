@@ -87,18 +87,73 @@
     "faqTitle": "FAQ",
     "faqSub": "Frequently asked questions about the campaign and our demands.",
     "demoDreamReset": "Reset values",
-    "demoDreamSwitch": "Visualize best future outcome"
+    "demoDreamSwitch": "Visualize best future outcome",
+    "newsBadge": "Press Report",
+    "readMore": "Read Article",
+    "latestNewsTitle": "Recent Extremism Reports",
+    "campaignTab": "Campaign",
+    "archiveTitle": "Press Archive",
+    "archiveSub": "Chronological overview of reports on far-right AfD activities",
+    "noNews": "No articles in the archive.",
+    "dateHeader": "Date",
+    "sourceHeader": "Source",
+    "titleHeader": "Report",
+    "recipientsHeader": "Status of Decision Makers",
+    "status_supported": "Supports",
+    "status_opposed": "Opposes",
+    "status_no_answer": "Pending",
+    "roleArdChair": "ARD Chairman & Director of Hessischer Rundfunk (hr)",
+    "roleZdfChefred": "Editor-in-Chief, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "Editor-in-Chief ARD-aktuell (Tagesschau)",
+    "roleZdfIntendant": "Director General, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Director General, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Director General, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Editor-in-Chief, German Press Agency (dpa)",
+    "roleSpringerChefred": "Chairman of the Editorial Boards, Axel Springer Premium Group",
+    "roleRtlChefred": "Editor-in-Chief Primetime, RTL News",
+    "roleProsiebenChefred": "Editor-in-Chief, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Editor-in-Chief, DER SPIEGEL",
+    "roleZeitChefred": "Editor-in-Chief, DIE ZEIT",
+    "roleWdrCouncil": "Chairman of the WDR Broadcasting Council",
+    "roleNdrCouncil": "Chairman of the NDR Broadcasting Council",
+    "roleZdfCouncil": "Chairwoman of the ZDF Television Council",
+    "heroImgText1": "PETITION: REPRESENT AfD IN BROWN IN MEDIA - PROTECT BLUE.",
+    "heroImgText2": "SIGN NOW: PROTECT BLUE!"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "\"Blau machen\" (To skive)", "origin": "Medieval / Dyers' trade", "desc": "The term originates from the dyers' free Monday. While wool oxidised and turned blue in the air, work rested. A beautiful German metaphor for rest and self-care." },
-      { "phrase": "\"Ins Blaue hinein\" (Into the blue)", "origin": "Nature Romanticism", "desc": "A carefree journey or deed with no fixed destination, carried by pure trust, curiosity, and peaceful adventurousness." },
-      { "phrase": "\"Das Blaue vom Himmel versprechen\" (Promise the blue from the sky)", "origin": "Poetic metaphor", "desc": "Blue here stands for the infinite, majestic vault of heaven – a wonderful image full of dreams and longing." }
+      {
+        "phrase": "\"Blau machen\" (To skive)",
+        "origin": "Medieval / Dyers' trade",
+        "desc": "The term originates from the dyers' free Monday. While wool oxidised and turned blue in the air, work rested. A beautiful German metaphor for rest and self-care."
+      },
+      {
+        "phrase": "\"Ins Blaue hinein\" (Into the blue)",
+        "origin": "Nature Romanticism",
+        "desc": "A carefree journey or deed with no fixed destination, carried by pure trust, curiosity, and peaceful adventurousness."
+      },
+      {
+        "phrase": "\"Das Blaue vom Himmel versprechen\" (Promise the blue from the sky)",
+        "origin": "Poetic metaphor",
+        "desc": "Blue here stands for the infinite, majestic vault of heaven – a wonderful image full of dreams and longing."
+      }
     ],
     "symbolik": [
-      { "phrase": "The Blue Flower", "origin": "Romanticism (Novalis)", "desc": "The most important symbol for longing, love, insight, and the unfolding of the human spirit. An invaluable cultural asset." },
-      { "phrase": "UN Blue Helmets", "origin": "Global Peace Work", "desc": "Blue was deliberately chosen by the UN because it universally stands for neutrality, de-escalation, optimism, and the will for lasting peace." },
-      { "phrase": "Royal Blue & Ultramarine", "origin": "Art & Cultural History", "desc": "For centuries more valuable than gold (from lapis lazuli). In the Renaissance, this precious blue was reserved exclusively for the most exalted depictions." }
+      {
+        "phrase": "The Blue Flower",
+        "origin": "Romanticism (Novalis)",
+        "desc": "The most important symbol for longing, love, insight, and the unfolding of the human spirit. An invaluable cultural asset."
+      },
+      {
+        "phrase": "UN Blue Helmets",
+        "origin": "Global Peace Work",
+        "desc": "Blue was deliberately chosen by the UN because it universally stands for neutrality, de-escalation, optimism, and the will for lasting peace."
+      },
+      {
+        "phrase": "Royal Blue & Ultramarine",
+        "origin": "Art & Cultural History",
+        "desc": "For centuries more valuable than gold (from lapis lazuli). In the Renaissance, this precious blue was reserved exclusively for the most exalted depictions."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "Why should blue be problematic?", "a": "Blue is the AfD's self-chosen colour, but it is also the colour of peace, the sky, and UN peacekeeping forces. By uncritically adopting this self-description, media transfers the emotional harmlessness association to the party." },
-    { "q": "Is this not censorship or political interference?", "a": "No. This is about media-ethics standards and historical honesty. Media make editorial decisions every day – demanding historically accurate colour codes is a legitimate societal debate, not censorship." },
-    { "q": "Does the campaign have a chance of success?", "a": "Many people have already signed. Media organisations respond to public pressure. Every signature counts." },
-    { "q": "Who is behind this campaign?", "a": "The petition was started on Change.org – an open platform for civic engagement. These are engaged citizens standing up for media integrity." }
+    {
+      "q": "Why should blue be problematic?",
+      "a": "Blue is the AfD's self-chosen colour, but it is also the colour of peace, the sky, and UN peacekeeping forces. By uncritically adopting this self-description, media transfers the emotional harmlessness association to the party."
+    },
+    {
+      "q": "Is this not censorship or political interference?",
+      "a": "No. This is about media-ethics standards and historical honesty. Media make editorial decisions every day – demanding historically accurate colour codes is a legitimate societal debate, not censorship."
+    },
+    {
+      "q": "Does the campaign have a chance of success?",
+      "a": "Many people have already signed. Media organisations respond to public pressure. Every signature counts."
+    },
+    {
+      "q": "Who is behind this campaign?",
+      "a": "The petition was started on Change.org – an open platform for civic engagement. These are engaged citizens standing up for media integrity."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Blue", "desc": "Colour of the sky, peace, and the UN" },
-    { "emoji": "📺", "label": "ARD & ZDF & Other Media", "desc": "Use blue for AfD in graphics" },
-    { "emoji": "🏛️", "label": "Historically", "desc": "Brown = symbol of far-right extremism" },
-    { "emoji": "⚖️", "label": "Constitution Protection", "desc": "Parts of AfD classified as proven extremist" }
+    {
+      "emoji": "🎨",
+      "label": "Blue",
+      "desc": "Colour of the sky, peace, and the UN"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD & ZDF & Other Media",
+      "desc": "Use blue for AfD in graphics"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Historically",
+      "desc": "Brown = symbol of far-right extremism"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Constitution Protection",
+      "desc": "Parts of AfD classified as proven extremist"
+    }
   ],
   "science": {
     "sectionH": "Scientific & Media Law Background",
@@ -153,15 +236,27 @@
       {
         "title": "The Psychological Dimension of \"Visual Framing\" (Halo Effect)",
         "points": [
-          { "label": "The Psychology of Blue", "text": "Light cyan and blue tones are universally associated with attributes such as credibility, trustworthiness, de-escalation, and institutional reliability – comparable to the colour choices of the United Nations or European institutions." },
-          { "label": "The Visual Downplaying Trap", "text": "When a political force officially classified as proven far-right extremist by the Federal Office for the Protection of the Constitution (BfV) and several state offices is consistently depicted in this calming primary colour in news graphics, a cognitive contrast arises: the visual framing masks the ideological radicalism of the actors (halo effect)." }
+          {
+            "label": "The Psychology of Blue",
+            "text": "Light cyan and blue tones are universally associated with attributes such as credibility, trustworthiness, de-escalation, and institutional reliability – comparable to the colour choices of the United Nations or European institutions."
+          },
+          {
+            "label": "The Visual Downplaying Trap",
+            "text": "When a political force officially classified as proven far-right extremist by the Federal Office for the Protection of the Constitution (BfV) and several state offices is consistently depicted in this calming primary colour in news graphics, a cognitive contrast arises: the visual framing masks the ideological radicalism of the actors (halo effect)."
+          }
         ]
       },
       {
         "title": "Editorial Autonomy and Journalistic Precedents",
         "points": [
-          { "label": "The taz Precedent", "text": "During the federal election campaign, the national daily taz deliberately decided to depict the AfD bar in their charts in brown rather than blue – in both print and web. This demonstrates that conscious departures from parties' self-presentation are already practised in German journalism and recognised as a legitimate editorial tool." },
-          { "label": "Established Colour Variance", "text": "Media outlets regularly deviate from official CI guidelines. The BSW is shown in purple or orange-red depending on the outlet; the Left Party often appears in dark red to distinguish it from the SPD. The CDU/CSU uses turquoise but is consistently depicted in black. Colour coding is a flexible journalistic design tool." }
+          {
+            "label": "The taz Precedent",
+            "text": "During the federal election campaign, the national daily taz deliberately decided to depict the AfD bar in their charts in brown rather than blue – in both print and web. This demonstrates that conscious departures from parties' self-presentation are already practised in German journalism and recognised as a legitimate editorial tool."
+          },
+          {
+            "label": "Established Colour Variance",
+            "text": "Media outlets regularly deviate from official CI guidelines. The BSW is shown in purple or orange-red depending on the outlet; the Left Party often appears in dark red to distinguish it from the SPD. The CDU/CSU uses turquoise but is consistently depicted in black. Colour coding is a flexible journalistic design tool."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "Objection 1: \"The media-law neutrality principle forbids recolouring.\"",
         "rebuttals": [
-          { "label": "No Absolute Symmetry Obligation", "text": "According to consistent rulings of the Federal Constitutional Court (BVerfG), Art. 21(1) GG in conjunction with § 5 PartG requires graduated equal opportunity and fair access – not blind, purely formal symmetry. Journalism may and must name differences when objective, factual grounds exist." },
-          { "label": "Constitutional Protection Office as Benchmark", "text": "The court-confirmed classification as \"proven far-right extremist\" is an objective, verified finding. A visualisation that reflects this through a historically established colour serves the statutory obligation for factual, truthful reporting (cf. State Media Treaty – MStV)." },
-          { "label": "No Right to Visual Protection", "text": "Political parties have no constitutional entitlement to have independent media adopt their self-presentation unfiltered. The broadcasters' programming autonomy (freedom of broadcasting under Art. 5(1)(2) GG) explicitly includes the right to design information graphics according to sound journalistic criteria." }
+          {
+            "label": "No Absolute Symmetry Obligation",
+            "text": "According to consistent rulings of the Federal Constitutional Court (BVerfG), Art. 21(1) GG in conjunction with § 5 PartG requires graduated equal opportunity and fair access – not blind, purely formal symmetry. Journalism may and must name differences when objective, factual grounds exist."
+          },
+          {
+            "label": "Constitutional Protection Office as Benchmark",
+            "text": "The court-confirmed classification as \"proven far-right extremist\" is an objective, verified finding. A visualisation that reflects this through a historically established colour serves the statutory obligation for factual, truthful reporting (cf. State Media Treaty – MStV)."
+          },
+          {
+            "label": "No Right to Visual Protection",
+            "text": "Political parties have no constitutional entitlement to have independent media adopt their self-presentation unfiltered. The broadcasters' programming autonomy (freedom of broadcasting under Art. 5(1)(2) GG) explicitly includes the right to design information graphics according to sound journalistic criteria."
+          }
         ]
       },
       {
         "title": "Objection 2: \"Media must follow the corporate identity (CI) of parties.\"",
         "rebuttals": [
-          { "label": "Journalistic Distance vs. PR Adoption", "text": "Blindly adopting the CI of political actors contradicts the journalistic principle of distance. Parties use visual branding as a strategic communication tool. Uncritical reproduction of this marketing by media outlets makes them unwitting amplifiers of political communication strategies." },
-          { "label": "Visual Truth as a Duty", "text": "When constitutional protection agencies document significant differences in parties' constitutional loyalty, treating all parties equally in an innocent \"standard blue\" misleads the audience. Visual truth requires a colour choice that reflects the constitutional status." }
+          {
+            "label": "Journalistic Distance vs. PR Adoption",
+            "text": "Blindly adopting the CI of political actors contradicts the journalistic principle of distance. Parties use visual branding as a strategic communication tool. Uncritical reproduction of this marketing by media outlets makes them unwitting amplifiers of political communication strategies."
+          },
+          {
+            "label": "Visual Truth as a Duty",
+            "text": "When constitutional protection agencies document significant differences in parties' constitutional loyalty, treating all parties equally in an innocent \"standard blue\" misleads the audience. Visual truth requires a colour choice that reflects the constitutional status."
+          }
         ]
       },
       {
         "title": "Objection 3: \"Recolouring gives the party ammunition for its victim narrative.\"",
         "rebuttals": [
-          { "label": "Proactive Core Strategy", "text": "Analyses of far-right communication (including by Dr Johannes Hillje) show: the \"media victim narrative\" is a proactive, structural core strategy that is constructed and exploited completely independently of actual editorial decisions." },
-          { "label": "No Preemptive Submission", "text": "When editorial teams forgo necessary media-ethics adjustments out of fear of a party's reaction, they subordinate their editorial independence to that party's communication strategy. The most effective protection is not inaction, but transparent, scientifically and legally rigorous disclosure of the editorial design decision." }
+          {
+            "label": "Proactive Core Strategy",
+            "text": "Analyses of far-right communication (including by Dr Johannes Hillje) show: the \"media victim narrative\" is a proactive, structural core strategy that is constructed and exploited completely independently of actual editorial decisions."
+          },
+          {
+            "label": "No Preemptive Submission",
+            "text": "When editorial teams forgo necessary media-ethics adjustments out of fear of a party's reaction, they subordinate their editorial independence to that party's communication strategy. The most effective protection is not inaction, but transparent, scientifically and legally rigorous disclosure of the editorial design decision."
+          }
         ]
       }
     ]

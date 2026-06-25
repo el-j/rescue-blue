@@ -87,18 +87,73 @@
     "faqTitle": "Preguntas frecuentes",
     "faqSub": "Preguntas frecuentes sobre la campaña y nuestras demandas.",
     "demoDreamReset": "Restablecer valores",
-    "demoDreamSwitch": "Visualizar el mejor futuro"
+    "demoDreamSwitch": "Visualizar el mejor futuro",
+    "newsBadge": "Informe de prensa",
+    "readMore": "Leer artículo",
+    "latestNewsTitle": "Informes recientes de extremismo",
+    "campaignTab": "Campaña",
+    "archiveTitle": "Archivo de prensa",
+    "archiveSub": "Resumen cronológico de informes sobre actividades de la extrema derecha de la AfD",
+    "noNews": "No hay artículos en el archivo.",
+    "dateHeader": "Fecha",
+    "sourceHeader": "Fuente",
+    "titleHeader": "Informe",
+    "recipientsHeader": "Estado de los destinatarios",
+    "status_supported": "Apoya",
+    "status_opposed": "Rechaza",
+    "status_no_answer": "Pendiente",
+    "roleArdChair": "Presidente de ARD y Director de Hessischer Rundfunk (hr)",
+    "roleZdfChefred": "Redactora jefa, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "Redactor jefe de ARD-aktuell (Tagesschau)",
+    "roleZdfIntendant": "Director general, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Directora general, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Director general, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Redactor jefe, Agencia de Prensa Alemana (dpa)",
+    "roleSpringerChefred": "Presidente de las redacciones, Grupo Axel Springer Premium",
+    "roleRtlChefred": "Redactor jefe de prime time, RTL News",
+    "roleProsiebenChefred": "Redactor jefe, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Redactor jefe, DER SPIEGEL",
+    "roleZeitChefred": "Redactor jefe, DIE ZEIT",
+    "roleWdrCouncil": "Presidente del Consejo de Radiodifusión de WDR",
+    "roleNdrCouncil": "Presidente del Consejo de Radiodifusión de NDR",
+    "roleZdfCouncil": "Presidenta del Consejo de Televisión de ZDF",
+    "heroImgText1": "PETICIÓN: REPRESENTAR A LA AfD EN MARRÓN EN LOS MEDIOS - PROTEGER EL AZUL.",
+    "heroImgText2": "¡FIRMA AHORA: PROTEGE EL AZUL!"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "«Blau machen» (Hacer novillos)", "origin": "Edad Media / Artesanía de tintorería", "desc": "El término proviene del lunes libre de los tintoreros. Mientras la lana se oxidaba al aire y se volvía azul, el trabajo descansaba. Una hermosa metáfora alemana para el descanso." },
-      { "phrase": "«Ins Blaue hinein» (Hacia lo azul)", "origin": "Romanticismo natural", "desc": "Un viaje o acto despreocupado sin destino fijo, llevado por la pura confianza, curiosidad y espíritu aventurero pacífico." },
-      { "phrase": "«Das Blaue vom Himmel versprechen» (Prometer el azul del cielo)", "origin": "Metáfora poética", "desc": "El azul representa aquí la bóveda celeste infinita y majestuosa — una imagen maravillosa llena de sueños y anhelos." }
+      {
+        "phrase": "«Blau machen» (Hacer novillos)",
+        "origin": "Edad Media / Artesanía de tintorería",
+        "desc": "El término proviene del lunes libre de los tintoreros. Mientras la lana se oxidaba al aire y se volvía azul, el trabajo descansaba. Una hermosa metáfora alemana para el descanso."
+      },
+      {
+        "phrase": "«Ins Blaue hinein» (Hacia lo azul)",
+        "origin": "Romanticismo natural",
+        "desc": "Un viaje o acto despreocupado sin destino fijo, llevado por la pura confianza, curiosidad y espíritu aventurero pacífico."
+      },
+      {
+        "phrase": "«Das Blaue vom Himmel versprechen» (Prometer el azul del cielo)",
+        "origin": "Metáfora poética",
+        "desc": "El azul representa aquí la bóveda celeste infinita y majestuosa — una imagen maravillosa llena de sueños y anhelos."
+      }
     ],
     "symbolik": [
-      { "phrase": "La Flor Azul", "origin": "Romanticismo (Novalis)", "desc": "El símbolo más importante de la nostalgia, el amor, el conocimiento y el desarrollo del espíritu humano. Un patrimonio cultural invaluable." },
-      { "phrase": "Los Cascos Azules de la ONU", "origin": "Trabajo de paz mundial", "desc": "El azul fue elegido deliberadamente por la ONU porque representa universalmente la neutralidad, la desescalada y la voluntad de una paz duradera." },
-      { "phrase": "Azul real y Ultramar", "origin": "Historia del arte y la cultura", "desc": "Durante siglos más valioso que el oro (del lapislázuli). En el Renacimiento, este azul precioso estaba reservado exclusivamente para las representaciones más nobles." }
+      {
+        "phrase": "La Flor Azul",
+        "origin": "Romanticismo (Novalis)",
+        "desc": "El símbolo más importante de la nostalgia, el amor, el conocimiento y el desarrollo del espíritu humano. Un patrimonio cultural invaluable."
+      },
+      {
+        "phrase": "Los Cascos Azules de la ONU",
+        "origin": "Trabajo de paz mundial",
+        "desc": "El azul fue elegido deliberadamente por la ONU porque representa universalmente la neutralidad, la desescalada y la voluntad de una paz duradera."
+      },
+      {
+        "phrase": "Azul real y Ultramar",
+        "origin": "Historia del arte y la cultura",
+        "desc": "Durante siglos más valioso que el oro (del lapislázuli). En el Renacimiento, este azul precioso estaba reservado exclusivamente para las representaciones más nobles."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "¿Por qué el azul debería ser problemático?", "a": "El azul es el color autoelegido de la AfD, pero también es el color de la paz, del cielo y de las fuerzas de paz de la ONU. Al adoptar esta autodescripción sin crítica, los medios transfieren la asociación emocional de inocuidad al partido." },
-    { "q": "¿No es esto censura?", "a": "No. Se trata de estándares de ética mediática y honestidad histórica. Los medios toman decisiones editoriales cada día — exigir códigos de color históricamente exactos es un debate social legítimo, no censura." },
-    { "q": "¿Tiene la campaña posibilidades de éxito?", "a": "Muchas personas ya han firmado. Las organizaciones de medios responden a la presión pública. Cada firma cuenta." },
-    { "q": "¿Quién está detrás de esta campaña?", "a": "La petición fue iniciada en Change.org — una plataforma abierta para el compromiso cívico. Son ciudadanos comprometidos que defienden la integridad de los medios." }
+    {
+      "q": "¿Por qué el azul debería ser problemático?",
+      "a": "El azul es el color autoelegido de la AfD, pero también es el color de la paz, del cielo y de las fuerzas de paz de la ONU. Al adoptar esta autodescripción sin crítica, los medios transfieren la asociación emocional de inocuidad al partido."
+    },
+    {
+      "q": "¿No es esto censura?",
+      "a": "No. Se trata de estándares de ética mediática y honestidad histórica. Los medios toman decisiones editoriales cada día — exigir códigos de color históricamente exactos es un debate social legítimo, no censura."
+    },
+    {
+      "q": "¿Tiene la campaña posibilidades de éxito?",
+      "a": "Muchas personas ya han firmado. Las organizaciones de medios responden a la presión pública. Cada firma cuenta."
+    },
+    {
+      "q": "¿Quién está detrás de esta campaña?",
+      "a": "La petición fue iniciada en Change.org — una plataforma abierta para el compromiso cívico. Son ciudadanos comprometidos que defienden la integridad de los medios."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Azul", "desc": "Color del cielo, la paz y la ONU" },
-    { "emoji": "📺", "label": "ARD, ZDF y otros medios", "desc": "Usan azul para la AfD en gráficos" },
-    { "emoji": "🏛️", "label": "Históricamente", "desc": "Marrón = símbolo del extremismo de derecha" },
-    { "emoji": "⚖️", "label": "Protección constitucional", "desc": "Partes de la AfD clasificadas como extremistas probadas" }
+    {
+      "emoji": "🎨",
+      "label": "Azul",
+      "desc": "Color del cielo, la paz y la ONU"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD, ZDF y otros medios",
+      "desc": "Usan azul para la AfD en gráficos"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Históricamente",
+      "desc": "Marrón = símbolo del extremismo de derecha"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Protección constitucional",
+      "desc": "Partes de la AfD clasificadas como extremistas probadas"
+    }
   ],
   "science": {
     "sectionH": "Contexto científico y jurídico de medios",
@@ -153,15 +236,27 @@
       {
         "title": "La dimensión psicológica del \"encuadre visual\" (efecto halo)",
         "points": [
-          { "label": "La psicología del azul", "text": "Los tonos cian claro y azul están universalmente asociados con atributos como credibilidad, fiabilidad, desescalada y fiabilidad institucional." },
-          { "label": "La trampa de la minimización visual", "text": "Cuando una fuerza política oficialmente clasificada como extremista de derecha probada es consistentemente representada en este color primario calmante, surge un contraste cognitivo: el encuadre visual enmascara el radicalismo ideológico de los actores (efecto halo)." }
+          {
+            "label": "La psicología del azul",
+            "text": "Los tonos cian claro y azul están universalmente asociados con atributos como credibilidad, fiabilidad, desescalada y fiabilidad institucional."
+          },
+          {
+            "label": "La trampa de la minimización visual",
+            "text": "Cuando una fuerza política oficialmente clasificada como extremista de derecha probada es consistentemente representada en este color primario calmante, surge un contraste cognitivo: el encuadre visual enmascara el radicalismo ideológico de los actores (efecto halo)."
+          }
         ]
       },
       {
         "title": "Autonomía editorial y precedentes periodísticos",
         "points": [
-          { "label": "El precedente taz", "text": "Durante la campaña electoral federal, el diario taz decidió deliberadamente representar la barra de la AfD en marrón en lugar de azul, demostrando que estas desviaciones ya son prácticas reconocidas en el periodismo alemán." },
-          { "label": "Varianza de color establecida", "text": "Los medios se desvían regularmente de las directrices oficiales de CI. La codificación de color es una herramienta de diseño periodístico flexible." }
+          {
+            "label": "El precedente taz",
+            "text": "Durante la campaña electoral federal, el diario taz decidió deliberadamente representar la barra de la AfD en marrón en lugar de azul, demostrando que estas desviaciones ya son prácticas reconocidas en el periodismo alemán."
+          },
+          {
+            "label": "Varianza de color establecida",
+            "text": "Los medios se desvían regularmente de las directrices oficiales de CI. La codificación de color es una herramienta de diseño periodístico flexible."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "Objeción 1: \"El principio de neutralidad mediática prohíbe el recoloreado.\"",
         "rebuttals": [
-          { "label": "Sin obligación de simetría absoluta", "text": "Según la jurisprudencia constante del Tribunal Constitucional Federal, se requiere igualdad de oportunidades graduada y acceso justo — no simetría puramente formal y ciega." },
-          { "label": "La Oficina de Protección Constitucional como referencia", "text": "La clasificación confirmada por tribunales como «extremista de derecha probada» es un hallazgo objetivo y verificado." },
-          { "label": "Sin derecho a protección visual", "text": "Los partidos políticos no tienen derecho constitucional a que los medios independientes adopten su autopresentación sin filtrar." }
+          {
+            "label": "Sin obligación de simetría absoluta",
+            "text": "Según la jurisprudencia constante del Tribunal Constitucional Federal, se requiere igualdad de oportunidades graduada y acceso justo — no simetría puramente formal y ciega."
+          },
+          {
+            "label": "La Oficina de Protección Constitucional como referencia",
+            "text": "La clasificación confirmada por tribunales como «extremista de derecha probada» es un hallazgo objetivo y verificado."
+          },
+          {
+            "label": "Sin derecho a protección visual",
+            "text": "Los partidos políticos no tienen derecho constitucional a que los medios independientes adopten su autopresentación sin filtrar."
+          }
         ]
       },
       {
         "title": "Objeción 2: \"Los medios deben seguir la identidad corporativa de los partidos.\"",
         "rebuttals": [
-          { "label": "Distancia periodística vs. adopción de PR", "text": "Adoptar ciegamente la identidad visual de los actores políticos contradice el principio de distancia periodística." },
-          { "label": "La verdad visual como deber", "text": "Cuando las agencias de protección constitucional documentan diferencias significativas, tratar a todos los partidos por igual en un «azul estándar» induce a error al público." }
+          {
+            "label": "Distancia periodística vs. adopción de PR",
+            "text": "Adoptar ciegamente la identidad visual de los actores políticos contradice el principio de distancia periodística."
+          },
+          {
+            "label": "La verdad visual como deber",
+            "text": "Cuando las agencias de protección constitucional documentan diferencias significativas, tratar a todos los partidos por igual en un «azul estándar» induce a error al público."
+          }
         ]
       },
       {
         "title": "Objeción 3: \"El recoloreado da munición al narrativo victimista del partido.\"",
         "rebuttals": [
-          { "label": "Estrategia central proactiva", "text": "Los análisis de la comunicación de extrema derecha muestran: el «narrativo de víctima mediática» es una estrategia estructural proactiva, construida independientemente de las decisiones editoriales reales." },
-          { "label": "Sin sumisión preventiva", "text": "Cuando las redacciones renuncian a los ajustes éticos necesarios por miedo a la reacción de un partido, subordinan su independencia editorial a la estrategia de comunicación de ese partido." }
+          {
+            "label": "Estrategia central proactiva",
+            "text": "Los análisis de la comunicación de extrema derecha muestran: el «narrativo de víctima mediática» es una estrategia estructural proactiva, construida independientemente de las decisiones editoriales reales."
+          },
+          {
+            "label": "Sin sumisión preventiva",
+            "text": "Cuando las redacciones renuncian a los ajustes éticos necesarios por miedo a la reacción de un partido, subordinan su independencia editorial a la estrategia de comunicación de ese partido."
+          }
         ]
       }
     ]

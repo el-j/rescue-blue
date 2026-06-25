@@ -42,7 +42,7 @@ import { useSignatureCount } from './hooks/useSignatureCount'
 import { usePollingSnapshot } from './hooks/usePollingSnapshot'
 import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
 
-const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-rescue-blue.png`
+const HERO_IMAGE_URL = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text.png`
 
 export default function App() {
   const [lang, setLang] = useState<Locale>(detectLocale)
@@ -147,7 +147,6 @@ export default function App() {
         onChangeLanguage={handleChangeLanguage}
         onToggleTheme={handleToggleTheme}
       />
-      <div className="h-14 md:h-16" aria-hidden="true" />
       <HeroSection
         lang={lang}
         t={t}
@@ -199,7 +198,6 @@ export default function App() {
             letters={letters}
             activeLetterTarget={activeLetterTarget}
             onChangeTarget={setActiveLetterTarget}
-            lang={lang}
           />
 
           <FaqSection

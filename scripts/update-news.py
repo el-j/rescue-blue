@@ -10,8 +10,32 @@ import json
 import re
 import sys
 import urllib.request
+import urllib.parse
+import time
 from datetime import datetime
 from pathlib import Path
+
+def translate_text(text, target_lang, source_lang="de"):
+    if not text:
+        return ""
+    if target_lang == source_lang:
+        return text
+    
+    url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={source_lang}&tl={target_lang}&dt=t&q={urllib.parse.quote(text)}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        time.sleep(0.15) # Prevent aggressive rate limits
+        with urllib.request.urlopen(req, timeout=10) as response:
+            res = response.read().decode("utf-8")
+            data = json.loads(res)
+            translation = "".join([part[0] for part in data[0] if part[0]])
+            return translation
+    except Exception as e:
+        print(f"Translation error ({source_lang} -> {target_lang}): {e}", file=sys.stderr)
+        return text
 
 # News feeds list
 FEEDS = [
@@ -230,8 +254,12 @@ def are_similar(item1, item2):
     if item1["date"] != item2["date"]:
         return False
         
-    keys1 = get_similarity_key(item1["title"])
-    keys2 = get_similarity_key(item2["title"])
+    # item1 and item2 title can be string or dict
+    title1 = item1["title"].get("de", "") if isinstance(item1["title"], dict) else item1["title"]
+    title2 = item2["title"].get("de", "") if isinstance(item2["title"], dict) else item2["title"]
+    
+    keys1 = get_similarity_key(title1)
+    keys2 = get_similarity_key(title2)
     
     if not keys1 or not keys2:
         return False
@@ -265,9 +293,15 @@ def combine_articles(articles):
                     if src["url"] not in existing_urls:
                         c_item["sources"].append(src)
                 # Keep the longer title and excerpt for detail completeness
-                if len(item["title"]) > len(c_item["title"]):
+                # Handle title/excerpt as string or dict
+                title_item = item["title"].get("de", "") if isinstance(item["title"], dict) else item["title"]
+                title_c_item = c_item["title"].get("de", "") if isinstance(c_item["title"], dict) else c_item["title"]
+                if len(title_item) > len(title_c_item):
                     c_item["title"] = item["title"]
-                if len(item["excerpt"]) > len(c_item["excerpt"]):
+                
+                excerpt_item = item["excerpt"].get("de", "") if isinstance(item["excerpt"], dict) else item["excerpt"]
+                excerpt_c_item = c_item["excerpt"].get("de", "") if isinstance(c_item["excerpt"], dict) else c_item["excerpt"]
+                if len(excerpt_item) > len(excerpt_c_item):
                     c_item["excerpt"] = item["excerpt"]
                 found = True
                 break
@@ -298,6 +332,12 @@ def main():
                     item["sources"] = [{"name": item.get("source", "Unknown"), "url": item.get("url", "")}]
                     if "source" in item: del item["source"]
                     if "url" in item: del item["url"]
+                
+                # Upgrade title & excerpt to dictionary if they are single strings
+                if isinstance(item.get("title"), str):
+                    item["title"] = {"de": item["title"]}
+                if isinstance(item.get("excerpt"), str):
+                    item["excerpt"] = {"de": item["excerpt"]}
                     
             print(f"Loaded {len(existing_items)} existing news items from {output_file}")
         except Exception as e:
@@ -330,6 +370,35 @@ def main():
 
     # Merge/Group similar items together (different sources reporting same news)
     grouped_items = combine_articles(combined_items)
+
+    # Translate all articles for target languages
+    TARGET_LANGUAGES = ["en", "fr", "es", "tr", "uk", "pl", "it", "ru"]
+    print("Translating news feed items...")
+    total_articles = len(grouped_items)
+    for idx, article in enumerate(grouped_items):
+        de_title = article["title"].get("de", "") if isinstance(article["title"], dict) else article.get("title", "")
+        print(f"[{idx + 1}/{total_articles}] Checking translations for: {de_title[:45]}...")
+        
+        # Ensure dictionary keys exist
+        if not isinstance(article.get("title"), dict):
+            article["title"] = {"de": article.get("title") or ""}
+        if not isinstance(article.get("excerpt"), dict):
+            article["excerpt"] = {"de": article.get("excerpt") or ""}
+            
+        for lang in TARGET_LANGUAGES:
+            if lang not in article["title"] or not article["title"][lang]:
+                original_title = article["title"].get("de", "")
+                if original_title:
+                    article["title"][lang] = translate_text(original_title, lang)
+                else:
+                    article["title"][lang] = ""
+                    
+            if lang not in article["excerpt"] or not article["excerpt"][lang]:
+                original_excerpt = article["excerpt"].get("de", "")
+                if original_excerpt:
+                    article["excerpt"][lang] = translate_text(original_excerpt, lang)
+                else:
+                    article["excerpt"][lang] = ""
 
     # Sort by date descending
     grouped_items.sort(key=lambda x: x["date"], reverse=True)

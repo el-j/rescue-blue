@@ -50,14 +50,14 @@ describe('App', () => {
 
     render(<App />)
 
-    expect(screen.getByRole('heading', { name: 'Blau retten.' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Blau retten.', level: 1 })).toBeInTheDocument()
 
     // Open language picker
     await user.click(screen.getByRole('button', { name: 'Sprache' }))
     // Click English option
     await user.click(screen.getByRole('button', { name: /en\s*English/i }))
 
-    expect(screen.getByRole('heading', { name: 'Rescue Blue.' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Rescue Blue.', level: 1 })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(2)
   })
 
@@ -297,7 +297,7 @@ describe('App', () => {
     render(<App />)
 
     // Initially, it should display the campaign visual slide
-    expect(screen.getByText('Unser Kampagnen-Visual')).toBeInTheDocument()
+    expect(screen.getByText('PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.')).toBeInTheDocument()
 
     // Find the second slide dot (waiting for it to load) and click it
     const dot2 = await screen.findByRole('button', { name: /Go to slide 2/i })
@@ -314,6 +314,6 @@ describe('App', () => {
     await user.click(nextBtn)
 
     // Clicking Next should cycle back to slide 1 (Campaign visual)
-    expect(screen.getByText('Unser Kampagnen-Visual')).toBeInTheDocument()
+    expect(screen.getByText('PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.')).toBeInTheDocument()
   })
 })

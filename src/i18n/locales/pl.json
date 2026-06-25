@@ -87,18 +87,73 @@
     "faqTitle": "FAQ",
     "faqSub": "Najczęściej zadawane pytania dotyczące kampanii i naszych żądań.",
     "demoDreamReset": "Przywróć wartości",
-    "demoDreamSwitch": "Wizualizuj najlepszą przyszłość"
+    "demoDreamSwitch": "Wizualizuj najlepszą przyszłość",
+    "newsBadge": "Raport prasowy",
+    "readMore": "Przeczytaj artykuł",
+    "latestNewsTitle": "Najnowsze raporty o ekstremizmie",
+    "campaignTab": "Kampania",
+    "archiveTitle": "Archiwum prasowe",
+    "archiveSub": "Chronologiczny przegląd doniesień o skrajnie prawicowej działalności AfD",
+    "noNews": "Brak artykułów w archiwum.",
+    "dateHeader": "Data",
+    "sourceHeader": "Źródło",
+    "titleHeader": "Raport",
+    "recipientsHeader": "Status decydentów",
+    "status_supported": "Wspiera",
+    "status_opposed": "Odrzuca",
+    "status_no_answer": "Oczekuje",
+    "roleArdChair": "Przewodniczący ARD i dyrektor Hessischer Rundfunk (hr)",
+    "roleZdfChefred": "Redaktor naczelna, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "Redaktor naczelny ARD-aktuell (Tagesschau)",
+    "roleZdfIntendant": "Dyrektor generalny, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Dyrektorka generalna, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Dyrektor generalny, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Redaktor naczelny, Niemiecka Agencja Prasowa (dpa)",
+    "roleSpringerChefred": "Przewodniczący kolegiów redakcyjnych, Axel Springer Premium Group",
+    "roleRtlChefred": "Redaktor naczelny pasma prime time, RTL News",
+    "roleProsiebenChefred": "Redaktor naczelny, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Redaktor naczelny, DER SPIEGEL",
+    "roleZeitChefred": "Redaktor naczelny, DIE ZEIT",
+    "roleWdrCouncil": "Przewodniczący Rady Nadzorczej WDR",
+    "roleNdrCouncil": "Przewodniczący Rady Nadzorczej NDR",
+    "roleZdfCouncil": "Przewodnicząca Rady Telewizyjnej ZDF",
+    "heroImgText1": "PETYCJA: PRZEDSTAWIAĆ AfD W MEDIACH W BRĄZIE - CHRONIĆ NIEBIESKI.",
+    "heroImgText2": "PODPISZ TERAZ: CHROŃ NIEBIESKI!"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "«Blau machen» (Urwać się z pracy)", "origin": "Średniowiecze / Farbiarski", "desc": "Termin pochodzi od wolnego poniedziałku farbiarzy. Gdy wełna utleniała się na powietrzu i stawała się niebieska, praca odpoczywała. Piękna niemiecka metafora odpoczynku." },
-      { "phrase": "«Ins Blaue hinein» (W siną dal)", "origin": "Romantyzm natury", "desc": "Beztroska podróż bez ustalonego celu, niesiona czystym zaufaniem, ciekawością i pokojowym duchem przygody." },
-      { "phrase": "«Das Blaue vom Himmel versprechen» (Obiecywać gruszki na wierzbie)", "origin": "Metafora poetycka", "desc": "Niebieski oznacza tu nieskończone, majestatyczne sklepienie nieba — wspaniały obraz pełen marzeń i tęsknoty." }
+      {
+        "phrase": "«Blau machen» (Urwać się z pracy)",
+        "origin": "Średniowiecze / Farbiarski",
+        "desc": "Termin pochodzi od wolnego poniedziałku farbiarzy. Gdy wełna utleniała się na powietrzu i stawała się niebieska, praca odpoczywała. Piękna niemiecka metafora odpoczynku."
+      },
+      {
+        "phrase": "«Ins Blaue hinein» (W siną dal)",
+        "origin": "Romantyzm natury",
+        "desc": "Beztroska podróż bez ustalonego celu, niesiona czystym zaufaniem, ciekawością i pokojowym duchem przygody."
+      },
+      {
+        "phrase": "«Das Blaue vom Himmel versprechen» (Obiecywać gruszki na wierzbie)",
+        "origin": "Metafora poetycka",
+        "desc": "Niebieski oznacza tu nieskończone, majestatyczne sklepienie nieba — wspaniały obraz pełen marzeń i tęsknoty."
+      }
     ],
     "symbolik": [
-      { "phrase": "Niebieski Kwiat", "origin": "Romantyzm (Novalis)", "desc": "Najważniejszy symbol tęsknoty, miłości, poznania i rozwoju ludzkiego ducha. Bezcenny zasób kulturowy." },
-      { "phrase": "Błękitne Hełmy ONZ", "origin": "Globalna praca na rzecz pokoju", "desc": "Niebieski został celowo wybrany przez ONZ, ponieważ uniwersalnie oznacza neutralność, deeskalację i wolę trwałego pokoju." },
-      { "phrase": "Błękit królewski i Ultramaryyna", "origin": "Historia sztuki i kultury", "desc": "Przez wieki cenniejszy od złota (z lapis lazuli). W renesansie ten cenny niebieski był zarezerwowany wyłącznie dla najwznioślejszych przedstawień." }
+      {
+        "phrase": "Niebieski Kwiat",
+        "origin": "Romantyzm (Novalis)",
+        "desc": "Najważniejszy symbol tęsknoty, miłości, poznania i rozwoju ludzkiego ducha. Bezcenny zasób kulturowy."
+      },
+      {
+        "phrase": "Błękitne Hełmy ONZ",
+        "origin": "Globalna praca na rzecz pokoju",
+        "desc": "Niebieski został celowo wybrany przez ONZ, ponieważ uniwersalnie oznacza neutralność, deeskalację i wolę trwałego pokoju."
+      },
+      {
+        "phrase": "Błękit królewski i Ultramaryyna",
+        "origin": "Historia sztuki i kultury",
+        "desc": "Przez wieki cenniejszy od złota (z lapis lazuli). W renesansie ten cenny niebieski był zarezerwowany wyłącznie dla najwznioślejszych przedstawień."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "Dlaczego niebieski miałby być problematyczny?", "a": "Niebieski to kolor wybrany przez samą AfD, ale to także kolor pokoju, nieba i sił pokojowych ONZ. Bezkrytycznie przyjmując ten samopis, media przenoszą emocjonalną asocjację nieszkodliwości na partię." },
-    { "q": "Czy to nie jest cenzura?", "a": "Nie. Chodzi o standardy etyki medialnej i uczciwość historyczną. Wymaganie historycznie dokładnych kodów kolorów to uzasadniona debata społeczna, nie cenzura." },
-    { "q": "Czy kampania ma szansę na sukces?", "a": "Wiele osób już podpisało. Organizacje medialne reagują na presję publiczną. Każdy podpis się liczy." },
-    { "q": "Kto stoi za tą kampanią?", "a": "Petycja została uruchomiona na Change.org — otwartej platformie zaangażowania obywatelskiego. To zaangażowani obywatele broniący uczciwości medialnej." }
+    {
+      "q": "Dlaczego niebieski miałby być problematyczny?",
+      "a": "Niebieski to kolor wybrany przez samą AfD, ale to także kolor pokoju, nieba i sił pokojowych ONZ. Bezkrytycznie przyjmując ten samopis, media przenoszą emocjonalną asocjację nieszkodliwości na partię."
+    },
+    {
+      "q": "Czy to nie jest cenzura?",
+      "a": "Nie. Chodzi o standardy etyki medialnej i uczciwość historyczną. Wymaganie historycznie dokładnych kodów kolorów to uzasadniona debata społeczna, nie cenzura."
+    },
+    {
+      "q": "Czy kampania ma szansę na sukces?",
+      "a": "Wiele osób już podpisało. Organizacje medialne reagują na presję publiczną. Każdy podpis się liczy."
+    },
+    {
+      "q": "Kto stoi za tą kampanią?",
+      "a": "Petycja została uruchomiona na Change.org — otwartej platformie zaangażowania obywatelskiego. To zaangażowani obywatele broniący uczciwości medialnej."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Niebieski", "desc": "Kolor nieba, pokoju i ONZ" },
-    { "emoji": "📺", "label": "ARD, ZDF i inne media", "desc": "Używają niebieskiego dla AfD na wykresach" },
-    { "emoji": "🏛️", "label": "Historycznie", "desc": "Brązowy = symbol prawicowego ekstremizmu" },
-    { "emoji": "⚖️", "label": "Ochrona konstytucji", "desc": "Części AfD sklasyfikowane jako udowodnieni ekstremiści" }
+    {
+      "emoji": "🎨",
+      "label": "Niebieski",
+      "desc": "Kolor nieba, pokoju i ONZ"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD, ZDF i inne media",
+      "desc": "Używają niebieskiego dla AfD na wykresach"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Historycznie",
+      "desc": "Brązowy = symbol prawicowego ekstremizmu"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Ochrona konstytucji",
+      "desc": "Części AfD sklasyfikowane jako udowodnieni ekstremiści"
+    }
   ],
   "science": {
     "sectionH": "Kontekst naukowy i medialnoprawny",
@@ -153,15 +236,27 @@
       {
         "title": "Psychologiczny wymiar \"wizualnego framingu\" (efekt aureoli)",
         "points": [
-          { "label": "Psychologia niebieskiego", "text": "Jasne odcienie cyjanu i niebieskiego są uniwersalnie kojarzone z takimi atrybutami jak wiarygodność, solidność i niezawodność instytucjonalna." },
-          { "label": "Pułapka wizualnego bagatelizowania", "text": "Gdy siła polityczna oficjalnie sklasyfikowana jako udowodniony prawicowy ekstremista jest konsekwentnie przedstawiana w tym uspokajającym kolorze podstawowym, powstaje kontrast poznawczy: framing wizualny maskuje radykalizm ideologiczny aktorów." }
+          {
+            "label": "Psychologia niebieskiego",
+            "text": "Jasne odcienie cyjanu i niebieskiego są uniwersalnie kojarzone z takimi atrybutami jak wiarygodność, solidność i niezawodność instytucjonalna."
+          },
+          {
+            "label": "Pułapka wizualnego bagatelizowania",
+            "text": "Gdy siła polityczna oficjalnie sklasyfikowana jako udowodniony prawicowy ekstremista jest konsekwentnie przedstawiana w tym uspokajającym kolorze podstawowym, powstaje kontrast poznawczy: framing wizualny maskuje radykalizm ideologiczny aktorów."
+          }
         ]
       },
       {
         "title": "Autonomia redakcyjna i precedensy dziennikarskie",
         "points": [
-          { "label": "Precedens taz", "text": "Podczas federalnej kampanii wyborczej dziennik taz celowo zdecydował się przedstawiać słupek AfD w brązie zamiast niebieskiego, demonstrując, że takie świadome odchylenia są już praktykowane w niemieckim dziennikarstwie." },
-          { "label": "Ustaloona wariancja kolorów", "text": "Media regularnie odchodzą od oficjalnych wytycznych CI. Kodowanie kolorów jest elastycznym narzędziem projektowania dziennikarskiego." }
+          {
+            "label": "Precedens taz",
+            "text": "Podczas federalnej kampanii wyborczej dziennik taz celowo zdecydował się przedstawiać słupek AfD w brązie zamiast niebieskiego, demonstrując, że takie świadome odchylenia są już praktykowane w niemieckim dziennikarstwie."
+          },
+          {
+            "label": "Ustaloona wariancja kolorów",
+            "text": "Media regularnie odchodzą od oficjalnych wytycznych CI. Kodowanie kolorów jest elastycznym narzędziem projektowania dziennikarskiego."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "Zarzut 1: \"Zasada neutralności prawa mediów zabrania przekolorowania.\"",
         "rebuttals": [
-          { "label": "Brak obowiązku absolutnej symetrii", "text": "Zgodnie ze stałym orzecznictwem Federalnego Trybunału Konstytucyjnego wymagana jest stopniowa równość szans i uczciwy dostęp — nie ślepa, czysto formalna symetria." },
-          { "label": "Urząd Ochrony Konstytucji jako punkt odniesienia", "text": "Potwierdzona przez sąd klasyfikacja jako «udowodniony prawicowy ekstremista» jest obiektywnym, zweryfikowanym ustaleniem." },
-          { "label": "Brak prawa do wizualnej ochrony", "text": "Partie polityczne nie mają konstytucyjnego prawa do tego, aby niezależne media bezkrytycznie przejmowały ich autoprezentację." }
+          {
+            "label": "Brak obowiązku absolutnej symetrii",
+            "text": "Zgodnie ze stałym orzecznictwem Federalnego Trybunału Konstytucyjnego wymagana jest stopniowa równość szans i uczciwy dostęp — nie ślepa, czysto formalna symetria."
+          },
+          {
+            "label": "Urząd Ochrony Konstytucji jako punkt odniesienia",
+            "text": "Potwierdzona przez sąd klasyfikacja jako «udowodniony prawicowy ekstremista» jest obiektywnym, zweryfikowanym ustaleniem."
+          },
+          {
+            "label": "Brak prawa do wizualnej ochrony",
+            "text": "Partie polityczne nie mają konstytucyjnego prawa do tego, aby niezależne media bezkrytycznie przejmowały ich autoprezentację."
+          }
         ]
       },
       {
         "title": "Zarzut 2: \"Media muszą przestrzegać identyfikacji wizualnej partii.\"",
         "rebuttals": [
-          { "label": "Dystans dziennikarski vs. przejęcie PR", "text": "Ślepe przyjęcie identyfikacji wizualnej aktorów politycznych jest sprzeczne z zasadą dystansu dziennikarskiego." },
-          { "label": "Prawda wizualna jako obowiązek", "text": "Gdy organy ochrony konstytucji dokumentują istotne różnice w lojalności konstytucyjnej, równe traktowanie wszystkich partii w «standardowym niebieskim» wprowadza publiczność w błąd." }
+          {
+            "label": "Dystans dziennikarski vs. przejęcie PR",
+            "text": "Ślepe przyjęcie identyfikacji wizualnej aktorów politycznych jest sprzeczne z zasadą dystansu dziennikarskiego."
+          },
+          {
+            "label": "Prawda wizualna jako obowiązek",
+            "text": "Gdy organy ochrony konstytucji dokumentują istotne różnice w lojalności konstytucyjnej, równe traktowanie wszystkich partii w «standardowym niebieskim» wprowadza publiczność w błąd."
+          }
         ]
       },
       {
         "title": "Zarzut 3: \"Przekolorowanie daje partii amunicję do narracji ofiary.\"",
         "rebuttals": [
-          { "label": "Proaktywna strategia podstawowa", "text": "Analizy komunikacji skrajnej prawicy pokazują: «narracja ofiary medialnej» to proaktywna strategia strukturalna, konstruowana niezależnie od faktycznych decyzji redakcyjnych." },
-          { "label": "Bez prewencyjnego podporządkowania", "text": "Gdy zespoły redakcyjne rezygnują z niezbędnych korekt etycznych ze strachu przed reakcją partii, podporządkowują swoją niezależność redakcyjną strategii komunikacyjnej tej partii." }
+          {
+            "label": "Proaktywna strategia podstawowa",
+            "text": "Analizy komunikacji skrajnej prawicy pokazują: «narracja ofiary medialnej» to proaktywna strategia strukturalna, konstruowana niezależnie od faktycznych decyzji redakcyjnych."
+          },
+          {
+            "label": "Bez prewencyjnego podporządkowania",
+            "text": "Gdy zespoły redakcyjne rezygnują z niezbędnych korekt etycznych ze strachu przed reakcją partii, podporządkowują swoją niezależność redakcyjną strategii komunikacyjnej tej partii."
+          }
         ]
       }
     ]

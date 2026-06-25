@@ -1,8 +1,28 @@
 [
   {
-    "title": "Martin Reichardt: Hitlergruß in der AfD-Fraktion laut Stephan Brandner nicht geduldet",
+    "title": {
+      "de": "Martin Reichardt: Hitlergruß in der AfD-Fraktion laut Stephan Brandner nicht geduldet",
+      "en": "Martin Reichardt: According to Stephan Brandner, Hitler salutes are not tolerated in the AfD parliamentary group",
+      "fr": "Martin Reichardt : selon Stephan Brandner, les saluts hitlériens ne sont pas tolérés au sein du groupe parlementaire de l'AfD",
+      "es": "Martin Reichardt: Según Stephan Brandner, en el grupo parlamentario de AfD no se toleran los saludos hitlerianos",
+      "tr": "Martin Reichardt: Stephan Brandner'a göre AfD parlamento grubunda Hitler selamı hoş görülmüyor",
+      "uk": "Мартін Райхардт: За словами Штефана Бранднера, у парламентській групі AfD не допускаються салюти Гітлеру",
+      "pl": "Martin Reichardt: Według Stephana Brandnera saluty Hitlera nie są tolerowane w grupie parlamentarnej AfD",
+      "it": "Martin Reichardt: Secondo Stephan Brandner nel gruppo parlamentare AfD i saluti a Hitler non sono tollerati",
+      "ru": "Мартин Райхардт: По словам Стефана Бранднера, в парламентской группе АдГ недопустимо приветствие Гитлера"
+    },
     "date": "2026-06-25",
-    "excerpt": "Sachsen-Anhalts AfD bestreitet, dass ihr Chef Martin Reichardt auf einem Foto den Hitlergruß zeigt. Laut Fraktionsgeschäftsführer Brandner würde das auch nicht toleriert.",
+    "excerpt": {
+      "de": "Sachsen-Anhalts AfD bestreitet, dass ihr Chef Martin Reichardt auf einem Foto den Hitlergruß zeigt. Laut Fraktionsgeschäftsführer Brandner würde das auch nicht toleriert.",
+      "en": "Saxony-Anhalt's AfD denies that its leader Martin Reichardt shows the Hitler salute in a photo. According to parliamentary group leader Brandner, this would not be tolerated either.",
+      "fr": "L'AfD de Saxe-Anhalt nie que son leader Martin Reichardt montre le salut hitlérien sur une photo. Selon le chef du groupe parlementaire Brandner, cela ne serait pas non plus toléré.",
+      "es": "El AfD de Sajonia-Anhalt niega que su líder, Martin Reichardt, muestre el saludo hitleriano en una fotografía. Según Brandner, líder del grupo parlamentario, esto tampoco sería tolerado.",
+      "tr": "Saksonya-Anhalt'ın AfD'si, lideri Martin Reichardt'ın bir fotoğrafta Hitler selamını gösterdiğini reddediyor. Parlamento grup lideri Brandner'a göre buna da hoşgörü gösterilmeyecek.",
+      "uk": "AfD землі Саксонія-Анхальт заперечує, що її лідер Мартін Райхардт демонструє на фотографії салют Гітлера. За словами керівника парламентської групи Бранднера, цього також не можна допустити.",
+      "pl": "AfD Saksonii-Anhalt zaprzecza, jakoby jej przywódca Martin Reichardt pokazał na zdjęciu pozdrowienie Hitlera. Według lidera grupy parlamentarnej Brandnera takie zjawisko również nie będzie tolerowane.",
+      "it": "L'AfD della Sassonia-Anhalt smentisce che il suo leader Martin Reichardt mostri il saluto hitleriano in una foto. Secondo il capogruppo parlamentare Brandner anche questo non sarebbe tollerato.",
+      "ru": "АдГ Саксонии-Анхальт отрицает, что ее лидер Мартин Райхардт показывает на фотографии гитлеровское приветствие. По словам лидера парламентской группы Бранднера, с этим также нельзя мириться."
+    },
     "sources": [
       {
         "name": "Zeit Online",
@@ -11,9 +31,29 @@
     ]
   },
   {
-    "title": "Deutsche Anomalie: Wie die AfD den europäischen Trend zur Mäßigung bricht",
+    "title": {
+      "de": "Deutsche Anomalie: Wie die AfD den europäischen Trend zur Mäßigung bricht",
+      "en": "German Anomaly: How the AfD is breaking the European trend towards moderation",
+      "fr": "Anomalie allemande : comment l’AfD brise la tendance européenne à la modération",
+      "es": "Anomalía alemana: cómo el AfD está rompiendo la tendencia europea hacia la moderación",
+      "tr": "Alman Anomalisi: AfD Avrupa'nın ılımlılaşma eğilimini nasıl kırıyor?",
+      "uk": "Німецька аномалія: як AfD ламає європейську тенденцію до поміркованості",
+      "pl": "Anomalia niemiecka: jak AfD przełamuje europejski trend umiarkowania",
+      "it": "Anomalia tedesca: come l’AfD rompe la tendenza europea alla moderazione",
+      "ru": "Немецкая аномалия: как АдГ ломает европейскую тенденцию к умеренности"
+    },
     "date": "2026-06-25",
-    "excerpt": "Während die Abwahl Viktor Orbans vielfach für Erleichterung sorgte, wurde wenig später der Rechtspopulist Janez Janša erneut zum Regierungschef Sloweniens gewählt. Die Stärke de...",
+    "excerpt": {
+      "de": "Während die Abwahl Viktor Orbans vielfach für Erleichterung sorgte, wurde wenig später der Rechtspopulist Janez Janša erneut zum Regierungschef Sloweniens gewählt. Die Stärke de...",
+      "en": "While Viktor Orban's deselection brought relief in many cases, right-wing populist Janez Janša was re-elected as Slovenia's head of government a short time later. The strength of...",
+      "fr": "Si la démission de Viktor Orban a apporté un soulagement dans de nombreux cas, le populiste de droite Janez Janša a été réélu à la tête du gouvernement slovène peu de temps après. La force de...",
+      "es": "Si bien la deselección de Viktor Orban supuso un alivio en muchos casos, el populista de derecha Janez Janša fue reelegido como jefe de gobierno de Eslovenia poco tiempo después. La fuerza de...",
+      "tr": "Viktor Orban'ın seçimden çekilmesi birçok durumda rahatlama sağlarken, sağcı popülist Janez Janša kısa bir süre sonra Slovenya hükümetinin başına yeniden seçildi. Gücü...",
+      "uk": "У той час як відміна Віктора Орбана принесла полегшення в багатьох випадках, правий популіст Янез Янша був переобраний главою уряду Словенії невдовзі пізніше. Сила...",
+      "pl": "O ile cofnięcie wyboru Viktora Orbana w wielu przypadkach przyniosło ulgę, o tyle wkrótce później prawicowy populista Janez Janša został ponownie wybrany na szefa rządu Słowenii. Siła...",
+      "it": "Mentre la deselezione di Viktor Orban ha portato sollievo in molti casi, poco tempo dopo il populista di destra Janez Janša è stato rieletto capo del governo sloveno. La forza di...",
+      "ru": "Хотя отмена Виктора Орбана во многих случаях принесла облегчение, вскоре после этого правый популист Янез Янша был переизбран главой правительства Словении. Сила..."
+    },
     "sources": [
       {
         "name": "Belltower.News",
@@ -22,9 +62,29 @@
     ]
   },
   {
-    "title": "Rechtsextremismus: Hitlergruß-Vorwurf gegen AfD-Politiker Reichardt",
+    "title": {
+      "de": "Rechtsextremismus: Hitlergruß-Vorwurf gegen AfD-Politiker Reichardt",
+      "en": "Right-wing extremism: Nazi salute accusation against AfD politician Reichardt",
+      "fr": "Extrémisme de droite : accusation de salut nazi contre le politicien de l’AfD Reichardt",
+      "es": "Extremismo de derecha: acusación del saludo nazi contra el político de AfD Reichardt",
+      "tr": "Aşırı sağcılık: Nazilerin AfD'li siyasetçi Reichardt'a yönelik suçlaması selamı",
+      "uk": "Правий екстремізм: звинувачення в нацистському вітанні проти політика AfD Райхардта",
+      "pl": "Prawicowy ekstremizm: oskarżenie o nazistowski salut przeciwko politykowi AfD Reichardtowi",
+      "it": "Estremismo di destra: accusa di saluto nazista contro il politico dell'AfD Reichardt",
+      "ru": "Правый экстремизм: обвинение в нацистском приветствии в адрес политика АдГ Райхардта"
+    },
     "date": "2026-06-24",
-    "excerpt": "Ein nun aufgetauchtes Foto zeigt augenscheinlich das Mitglied des AfD-Bundesvorstandes, wie es mit dem linken Arm die verbotene Geste macht. Aus der Partei heißt es: „Dieses Fot...",
+    "excerpt": {
+      "de": "Ein nun aufgetauchtes Foto zeigt augenscheinlich das Mitglied des AfD-Bundesvorstandes, wie es mit dem linken Arm die verbotene Geste macht. Aus der Partei heißt es: „Dieses Fot...",
+      "en": "A photo that has now emerged apparently shows the member of the AfD federal executive committee making the forbidden gesture with his left arm. The party says: “This photo...",
+      "fr": "Une photo récemment publiée montre apparemment le membre du comité exécutif fédéral de l'AfD faisant le geste interdit avec son bras gauche. Le parti dit : « Cette photo...",
+      "es": "Una fotografía que ha aparecido ahora muestra al miembro del comité ejecutivo federal de AfD haciendo el gesto prohibido con su brazo izquierdo. El partido dice: “Esta foto...",
+      "tr": "Şimdi ortaya çıkan bir fotoğrafta, AfD federal yürütme komitesi üyesinin sol koluyla yasak hareketi yaptığını gösteriyor. Parti şöyle diyor: “Bu fotoğraf...",
+      "uk": "На фотографії, яка зараз з’явилася, видно, як член федерального виконавчого комітету AfD робить заборонений жест лівою рукою. У партії кажуть: «Це фото...",
+      "pl": "Na opublikowanym niedawno zdjęciu widać członka federalnego komitetu wykonawczego AfD wykonującego zakazany gest lewą ręką. Partia mówi: „To zdjęcie...",
+      "it": "Ora è emersa una foto che mostra il membro del comitato esecutivo federale dell'AfD compiere il gesto proibito con il braccio sinistro. Il partito dice: “Questa foto...",
+      "ru": "На появившейся сейчас фотографии видно, как член федерального исполнительного комитета АдГ делает запрещенный жест левой рукой. В партии говорится: «Это фото..."
+    },
     "sources": [
       {
         "name": "Spiegel",
@@ -37,9 +97,29 @@
     ]
   },
   {
-    "title": "Verbotene Losung: Höcke erneut zu Geldstrafe verurteilt",
+    "title": {
+      "de": "Verbotene Losung: Höcke erneut zu Geldstrafe verurteilt",
+      "en": "Forbidden slogan: Höcke sentenced to a fine again",
+      "fr": "Slogan interdit : Höcke de nouveau condamné à une amende",
+      "es": "Lema prohibido: Höcke condenado nuevamente a una multa",
+      "tr": "Yasak slogan: Höcke'ye yine para cezası",
+      "uk": "Заборонене гасло: Гьокке знову засуджений до штрафу",
+      "pl": "Zakazany slogan: Höcke ponownie skazany na karę grzywny",
+      "it": "Slogan proibito: Höcke nuovamente condannato alla multa",
+      "ru": "Запрещенный лозунг: Хёке снова приговорен к штрафу"
+    },
     "date": "2026-06-18",
-    "excerpt": "Das Landgericht Halle hat den Thüringer AfD-Chef Björn Höcke erneut wegen der Verwendung einer verbotenen SA-Parole zu einer Geldstrafe verurteilt.",
+    "excerpt": {
+      "de": "Das Landgericht Halle hat den Thüringer AfD-Chef Björn Höcke erneut wegen der Verwendung einer verbotenen SA-Parole zu einer Geldstrafe verurteilt.",
+      "en": "The Halle regional court has again sentenced the Thuringian AfD leader Björn Höcke to a fine for using a banned SA slogan.",
+      "fr": "Le tribunal régional de Halle a de nouveau condamné le leader de l'AfD de Thuringe, Björn Höcke, à une amende pour avoir utilisé un slogan interdit de l'AS.",
+      "es": "El tribunal regional de Halle condenó nuevamente a una multa al líder del AfD de Turingia, Björn Höcke, por utilizar un lema prohibido de las SA.",
+      "tr": "Halle bölge mahkemesi, Thüringen AfD lideri Björn Höcke'yi yasaklı bir SA sloganı kullandığı için bir kez daha para cezasına çarptırdı.",
+      "uk": "Регіональний суд Галле знову засудив лідера Тюрінгії AfD Бйорна Хеке до штрафу за використання забороненого гасла SA.",
+      "pl": "Sąd okręgowy w Halle po raz kolejny skazał lidera AfD z Turyngii Björna Höcke na karę grzywny za używanie zakazanego hasła SA.",
+      "it": "Il tribunale regionale di Halle ha nuovamente condannato a una multa il leader dell'AfD della Turingia Björn Höcke per aver utilizzato uno slogan vietato dalle SA.",
+      "ru": "Региональный суд Галле вновь приговорил лидера АдГ Тюрингии Бьёрна Хёке к штрафу за использование запрещенного лозунга СА."
+    },
     "sources": [
       {
         "name": "Spiegel / Taz",
@@ -48,9 +128,29 @@
     ]
   },
   {
-    "title": "„Innerparteilicher Bürgerkrieg“: Streit um Matthias Helferich ist richtungsweisend für AfD",
+    "title": {
+      "de": "„Innerparteilicher Bürgerkrieg“: Streit um Matthias Helferich ist richtungsweisend für AfD",
+      "en": "“Intra-party civil war”: The dispute over Matthias Helferich points the way for the AfD",
+      "fr": "« Guerre civile au sein du parti » : le conflit autour de Matthias Helferich ouvre la voie à l’AfD",
+      "es": "“Guerra civil dentro del partido”: la disputa sobre Matthias Helferich señala el camino para AfD",
+      "tr": "“Parti içi iç savaş”: Matthias Helferich konusundaki anlaşmazlık AfD'ye yol gösteriyor",
+      "uk": "«Внутрішньопартійна громадянська війна»: суперечка навколо Матіаса Хельферіха вказує шлях для AfD",
+      "pl": "„Wewnątrzpartyjna wojna domowa”: spór o Matthiasa Helfericha wyznacza drogę AfD",
+      "it": "“Guerra civile intrapartitica”: la disputa su Matthias Helferich indica la strada per l’AfD",
+      "ru": "«Внутрипартийная гражданская война»: спор вокруг Матиаса Хелфериха указывает путь АдГ"
+    },
     "date": "2026-06-17",
-    "excerpt": "Seit Jahren streitet die AfD in NRW über den Rauswurf des rechtsextremen Abgeordneten Matthias Helferich – jetzt kommt es zum Finale vor dem Schiedsgericht. An Helferich lässt s...",
+    "excerpt": {
+      "de": "Seit Jahren streitet die AfD in NRW über den Rauswurf des rechtsextremen Abgeordneten Matthias Helferich – jetzt kommt es zum Finale vor dem Schiedsgericht. An Helferich lässt s...",
+      "en": "The AfD in North Rhine-Westphalia has been arguing for years about the expulsion of the right-wing extremist MP Matthias Helferich - now the finale is coming to the arbitration court. At Helferich you can...",
+      "fr": "L'AfD de Rhénanie du Nord-Westphalie débat depuis des années sur l'expulsion du député d'extrême droite Matthias Helferich - la finale arrive maintenant devant le tribunal arbitral. Chez Helferich, vous pouvez...",
+      "es": "La AfD en Renania del Norte-Westfalia lleva años discutiendo sobre la expulsión del diputado de extrema derecha Matthias Helferich; ahora el final llega al tribunal de arbitraje. En Helferich puedes...",
+      "tr": "Kuzey Ren-Vestfalya'daki AfD, aşırı sağcı milletvekili Matthias Helferich'in ihraç edilmesi konusunu yıllardır tartışıyor; şimdi ise tahkim mahkemesinde son nokta geliyor. Helferich'te şunları yapabilirsiniz...",
+      "uk": "AfD у Північному Рейні-Вестфалії роками сперечалася про виключення депутата-правого екстреміста Маттіаса Хельферіха - тепер фінал наближається до арбітражного суду. У Helferich ви можете...",
+      "pl": "AfD w Nadrenii Północnej-Westfalii od lat spiera się o wydalenie prawicowego ekstremisty posła Matthiasa Helfericha – teraz finał zbliża się do sądu arbitrażowego. W Helferich możesz...",
+      "it": "L'AfD nella Renania Settentrionale-Vestfalia discute da anni dell'espulsione del deputato estremista di destra Matthias Helferich - ora la finale arriva al tribunale arbitrale. All'Helferich puoi...",
+      "ru": "АдГ в Северном Рейне-Вестфалии уже много лет спорит об исключении правоэкстремистского депутата Матиаса Хелфериха - теперь финал приближается к арбитражному суду. В Хелферихе вы можете..."
+    },
     "sources": [
       {
         "name": "CORRECTIV",
@@ -59,9 +159,29 @@
     ]
   },
   {
-    "title": "Wie stuft der Verfassungsschutz die AfD in den Bundesländern ein?",
+    "title": {
+      "de": "Wie stuft der Verfassungsschutz die AfD in den Bundesländern ein?",
+      "en": "How does the Office for the Protection of the Constitution classify the AfD in the federal states?",
+      "fr": "Comment l’Office pour la protection de la Constitution classe-t-il l’AfD dans les Länder ?",
+      "es": "¿Cómo clasifica la Oficina para la Protección de la Constitución al AfD en los estados federados?",
+      "tr": "Anayasayı Koruma Dairesi federal eyaletlerdeki AfD'yi nasıl sınıflandırıyor?",
+      "uk": "Як Управління з охорони конституції класифікує AfD у федеральних землях?",
+      "pl": "Jak Urząd Ochrony Konstytucji klasyfikuje AfD w krajach związkowych?",
+      "it": "Come classifica l’AfD l’Ufficio per la tutela della Costituzione nei Länder federali?",
+      "ru": "Как Управление по защите конституции классифицирует АдГ в федеральных землях?"
+    },
     "date": "2026-06-17",
-    "excerpt": "Thüringen, Brandenburg, Sachsen, Sachsen-Anhalt und Niedersachsen: Dort gilt die AfD als gesichert rechtsextremistisch. Anderswo nur als Verdachtsfall – oder wird gar nicht beob...",
+    "excerpt": {
+      "de": "Thüringen, Brandenburg, Sachsen, Sachsen-Anhalt und Niedersachsen: Dort gilt die AfD als gesichert rechtsextremistisch. Anderswo nur als Verdachtsfall – oder wird gar nicht beob...",
+      "en": "Thuringia, Brandenburg, Saxony, Saxony-Anhalt and Lower Saxony: There the AfD is considered to be firmly right-wing extremist. Elsewhere only as a suspected case - or not observed at all...",
+      "fr": "Thuringe, Brandebourg, Saxe, Saxe-Anhalt et Basse-Saxe : l'AfD y est considérée comme un parti résolument d'extrême droite. Ailleurs, seulement comme cas suspect - ou pas observé du tout...",
+      "es": "Turingia, Brandeburgo, Sajonia, Sajonia-Anhalt y Baja Sajonia: allí el AfD es considerado firmemente de extrema derecha. En otros lugares sólo como caso sospechoso - o no observado en absoluto...",
+      "tr": "Thüringen, Brandenburg, Saksonya, Saksonya-Anhalt ve Aşağı Saksonya: Burada AfD'nin aşırı sağcı olduğu düşünülüyor. Başka yerlerde sadece şüpheli bir vaka olarak veya hiç gözlemlenmemiş durumda...",
+      "uk": "Тюрінгія, Бранденбург, Саксонія, Саксонія-Анхальт і Нижня Саксонія: там AfD вважається категорично правим екстремістом. В іншому місці лише як підозрюваний випадок - або взагалі не спостерігається...",
+      "pl": "Turyngia, Brandenburgia, Saksonia, Saksonia-Anhalt i Dolna Saksonia: Tam AfD jest uważana za zdecydowanie prawicową ekstremistę. W innych przypadkach jedynie jako przypadek podejrzany – lub w ogóle nie zaobserwowany…",
+      "it": "Turingia, Brandeburgo, Sassonia, Sassonia-Anhalt e Bassa Sassonia: lì l'AfD è considerato fermamente estremista di destra. Altrove solo come caso sospetto - o non osservato affatto...",
+      "ru": "Тюрингия, Бранденбург, Саксония, Саксония-Анхальт и Нижняя Саксония: там АдГ считается решительно правым экстремистским движением. В остальных случаях только как подозрительный случай - или вообще не наблюдается..."
+    },
     "sources": [
       {
         "name": "CORRECTIV",
@@ -70,9 +190,29 @@
     ]
   },
   {
-    "title": "Will die AfD Sachsen-Anhalt das Architektur-Erbe ihres eigenen Bundeslandes verbannen?",
+    "title": {
+      "de": "Will die AfD Sachsen-Anhalt das Architektur-Erbe ihres eigenen Bundeslandes verbannen?",
+      "en": "Does the AfD Saxony-Anhalt want to ban the architectural heritage of its own state?",
+      "fr": "L'AfD Saxe-Anhalt veut-elle interdire le patrimoine architectural de son propre Land ?",
+      "es": "¿Quiere el AfD Sajonia-Anhalt prohibir el patrimonio arquitectónico de su propio estado?",
+      "tr": "AfD Saksonya-Anhalt kendi devletinin mimari mirasını yasaklamak mı istiyor?",
+      "uk": "Чи хоче AfD Саксонія-Анхальт заборонити архітектурну спадщину власної землі?",
+      "pl": "Czy AfD Saksonia-Anhalt chce zakazać dziedzictwa architektonicznego własnego państwa?",
+      "it": "L’AfD Sassonia-Anhalt vuole vietare il patrimonio architettonico del proprio Land?",
+      "ru": "Хочет ли АдГ Саксония-Анхальт запретить архитектурное наследие своей земли?"
+    },
     "date": "2026-06-12",
-    "excerpt": "Die AfD Sachsen-Anhalt will ihre rechtsextreme Ideologie sogar in der Architektur festlegen – und will per Bauordnung festschreiben, was „schön“ ist und „historische Identität“ ...",
+    "excerpt": {
+      "de": "Die AfD Sachsen-Anhalt will ihre rechtsextreme Ideologie sogar in der Architektur festlegen – und will per Bauordnung festschreiben, was „schön“ ist und „historische Identität“ ...",
+      "en": "The AfD Saxony-Anhalt even wants to establish its right-wing extremist ideology in architecture - and wants to use building regulations to define what is \"beautiful\" and \"historical identity\"...",
+      "fr": "L'AfD Saxe-Anhalt veut même asseoir son idéologie d'extrême droite dans l'architecture - et veut utiliser les règles de construction pour définir ce qui est « beau » et « l'identité historique »...",
+      "es": "El AfD Sajonia-Anhalt quiere incluso implantar su ideología de extrema derecha en la arquitectura y quiere definir con las normas de construcción lo que es \"bello\" y \"identidad histórica\"...",
+      "tr": "AfD Saksonya-Anhalt, aşırı sağcı ideolojisini mimaride de tesis etmek istiyor ve \"güzel\" ve \"tarihsel kimliğin\" ne olduğunu tanımlamak için inşaat yönetmeliklerini kullanmak istiyor...",
+      "uk": "AfD Саксонія-Анхальт навіть хоче встановити свою правоекстремістську ідеологію в архітектурі - і хоче використовувати будівельні норми, щоб визначити, що таке \"красиве\" та \"історична ідентичність\"...",
+      "pl": "AfD Saksonia-Anhalt chce nawet ugruntować swoją prawicową ideologię ekstremistyczną w architekturze i chce wykorzystać przepisy budowlane do zdefiniowania, co jest „piękne” i „tożsamość historyczna”…",
+      "it": "L'AfD Sassonia-Anhalt vuole affermare la sua ideologia estremista di destra anche in architettura - e vuole definire con il regolamento edilizio ciò che è \"bello\" e \"identità storica\"...",
+      "ru": "АдГ Саксония-Анхальт даже хочет утвердить свою правоэкстремистскую идеологию в архитектуре – и хочет использовать строительные нормы, чтобы определить, что такое «красивое» и «историческое самосознание»..."
+    },
     "sources": [
       {
         "name": "Volksverpetzer",
@@ -81,9 +221,29 @@
     ]
   },
   {
-    "title": "„Remigrations“-Gipfel: AfD sucht Nähe zu Sellner und US-Hardlinern",
+    "title": {
+      "de": "„Remigrations“-Gipfel: AfD sucht Nähe zu Sellner und US-Hardlinern",
+      "en": "“Remigration” summit: AfD seeks proximity to Sellner and US hardliners",
+      "fr": "Sommet « Remigration » : l’AfD recherche la proximité avec Sellner et les partisans de la ligne dure américaine",
+      "es": "Cumbre sobre “remigración”: AfD busca proximidad con Sellner y los intransigentes estadounidenses",
+      "tr": "“Geri dönüş” zirvesi: AfD, Sellner ve ABD'deki katı görüşlülerle yakınlaşmayı hedefliyor",
+      "uk": "Саміт «реміграції»: AfD прагне близькості до Селлнера та прихильників жорсткої лінії США",
+      "pl": "Szczyt „Remigracja”: AfD szuka bliskości Sellnera i amerykańskich twardogłowych",
+      "it": "Vertice sulla “remigrazione”: l’AfD cerca la vicinanza a Sellner e agli estremisti statunitensi",
+      "ru": "Саммит «ремиграции»: АдГ стремится к сближению с Селлнером и сторонниками жесткой линии в США"
+    },
     "date": "2026-06-01",
-    "excerpt": "Beim „Remigration Summit“ in Portugal vernetzt sich die rechtsextreme Szene in Europa rund um den Österreicher Martin Sellner. Auch die AfD ist mit Bundesvorstand Kay Gottschalk...",
+    "excerpt": {
+      "de": "Beim „Remigration Summit“ in Portugal vernetzt sich die rechtsextreme Szene in Europa rund um den Österreicher Martin Sellner. Auch die AfD ist mit Bundesvorstand Kay Gottschalk...",
+      "en": "At the “Remigration Summit” in Portugal, the right-wing extremist scene in Europe networked around the Austrian Martin Sellner. The AfD is also with federal executive Kay Gottschalk...",
+      "fr": "Lors du « Sommet de la remigration » au Portugal, la scène extrémiste de droite européenne s’est mise en réseau autour de l’Autrichien Martin Sellner. L'AfD est également aux côtés de l'exécutif fédéral Kay Gottschalk...",
+      "es": "En la “Cumbre sobre Remigración” en Portugal, la escena de extrema derecha en Europa se conectó en torno al austriaco Martin Sellner. La AfD también está con la ejecutiva federal Kay Gottschalk...",
+      "tr": "Portekiz'deki “Geri Dönüş Zirvesi”nde, Avrupa'daki aşırı sağcı çevre Avusturyalı Martin Sellner etrafında ağ oluşturdu. AfD aynı zamanda federal yönetici Kay Gottschalk'la birlikte...",
+      "uk": "На «Реміграційному саміті» в Португалії правоекстремістська сцена Європи об’єдналася навколо австрійця Мартіна Зельнера. AfD також співпрацює з федеральною виконавчою владою Кей Готшалк...",
+      "pl": "Podczas „Szczytu Remigracyjnego” w Portugalii prawicowa scena ekstremistyczna w Europie związała się wokół Austriaka Martina Sellnera. AfD jest także z dyrektorką federalną Kay Gottschalk…",
+      "it": "Al “Vertice sulla migrazione” in Portogallo la scena estremista di destra in Europa si è riunita attorno all’austriaco Martin Sellner. L'AfD è anche con il dirigente federale Kay Gottschalk...",
+      "ru": "На «Саммите по ремиграции» в Португалии правая экстремистская сцена в Европе объединилась вокруг австрийца Мартина Селлнера. АдГ также сотрудничает с федеральным исполнительным директором Кей Готшальк..."
+    },
     "sources": [
       {
         "name": "CORRECTIV",
@@ -92,9 +252,29 @@
     ]
   },
   {
-    "title": "Urteile Mai 2026: Die AfD spendiert dem Staat unfreiwillig Millionen",
+    "title": {
+      "de": "Urteile Mai 2026: Die AfD spendiert dem Staat unfreiwillig Millionen",
+      "en": "Judgments May 2026: The AfD involuntarily donates millions to the state",
+      "fr": "Jugements mai 2026 : l’AfD fait un don involontaire de millions à l’État",
+      "es": "Sentencias de mayo de 2026: La AfD dona involuntariamente millones al Estado",
+      "tr": "Mayıs 2026 Kararları: AfD istemeden devlete milyonlar bağışladı",
+      "uk": "Вироки, травень 2026: AfD мимовільно жертвує мільйони державі",
+      "pl": "Wyroki z maja 2026 r.: AfD mimowolnie przekazuje państwu miliony",
+      "it": "Sentenze maggio 2026: l'AfD dona involontariamente milioni allo Stato",
+      "ru": "Решения, май 2026 г.: АдГ принудительно жертвует миллионы государству"
+    },
     "date": "2026-05-29",
-    "excerpt": "In unserer Urteile-Reihe beleuchten wir immer am Monatsende eine Auswahl an neuer Rechtsprechung, die den Rechtsextremismus, Antisemitismus oder Rassismus sowie das Querdenker- ...",
+    "excerpt": {
+      "de": "In unserer Urteile-Reihe beleuchten wir immer am Monatsende eine Auswahl an neuer Rechtsprechung, die den Rechtsextremismus, Antisemitismus oder Rassismus sowie das Querdenker- ...",
+      "en": "In our series of judgments, we always highlight a selection of new case law at the end of the month that affects right-wing extremism, anti-Semitism or racism as well as lateral thinker...",
+      "fr": "Dans notre série d'arrêts, nous mettons toujours en avant une sélection de nouvelles jurisprudences de fin de mois qui touchent l'extrémisme de droite, l'antisémitisme ou le racisme ainsi que les penseurs latéraux...",
+      "es": "En nuestra serie de sentencias, siempre destacamos a final de mes una selección de nueva jurisprudencia que afecta tanto al extremismo de derecha, al antisemitismo o al racismo como al pensador lateral...",
+      "tr": "Karar serimizde her zaman ay sonunda sağcı aşırıcılığı, Yahudi karşıtlığını veya ırkçılığı ve ayrıca yan düşünürleri etkileyen yeni içtihatlardan bir seçkiyi öne çıkarıyoruz...",
+      "uk": "У нашій серії рішень ми завжди висвітлюємо добірку нової прецедентної практики наприкінці місяця, яка стосується правого екстремізму, антисемітизму чи расизму, а також стороннього мислення...",
+      "pl": "W naszej serii wyroków zawsze pod koniec miesiąca podkreślamy wybór nowego orzecznictwa, które dotyczy prawicowego ekstremizmu, antysemityzmu lub rasizmu, a także myślenia lateralnego…",
+      "it": "Nella nostra serie di sentenze, alla fine del mese evidenziamo sempre una selezione di nuova giurisprudenza che colpisce l'estremismo di destra, l'antisemitismo o il razzismo, nonché il pensatore laterale...",
+      "ru": "В нашей серии решений мы всегда выделяем подборку новых прецедентов в конце месяца, которые затрагивают правый экстремизм, антисемитизм или расизм, а также нестандартное мышление..."
+    },
     "sources": [
       {
         "name": "Volksverpetzer",
@@ -103,9 +283,29 @@
     ]
   },
   {
-    "title": "AfD und die Neonazis: Abgeordnete finanzieren rechtsextremes Treffen",
+    "title": {
+      "de": "AfD und die Neonazis: Abgeordnete finanzieren rechtsextremes Treffen",
+      "en": "AfD and the neo-Nazis: MPs finance right-wing extremist meeting",
+      "fr": "AfD et néo-nazis : les députés financent une réunion d’extrême droite",
+      "es": "AfD y los neonazis: los parlamentarios financian una reunión de extrema derecha",
+      "tr": "AfD ve neo-Naziler: Milletvekilleri aşırı sağcı toplantıyı finanse ediyor",
+      "uk": "AfD і неонацисти: депутати фінансують мітинг правих екстремістів",
+      "pl": "AfD i neonaziści: posłowie finansują spotkanie prawicowych ekstremistów",
+      "it": "AfD e i neonazisti: i deputati finanziano incontro degli estremisti di destra",
+      "ru": "АдГ и неонацисты: депутаты финансируют встречу правых экстремистов"
+    },
     "date": "2026-05-08",
-    "excerpt": "NSU-Unterstützerumfeld, „Hammerskins“ oder gewaltbereite Kampfsportler: Beim „Jungeuropa“-Verlagstreffen zeigt sich die AfD so offen wie selten mit rechtsextremen und militanten...",
+    "excerpt": {
+      "de": "NSU-Unterstützerumfeld, „Hammerskins“ oder gewaltbereite Kampfsportler: Beim „Jungeuropa“-Verlagstreffen zeigt sich die AfD so offen wie selten mit rechtsextremen und militanten...",
+      "en": "NSU support environment, “Hammerskins” or violent martial artists: At the “Jungeuropa” publishing meeting, the AfD is more open than ever with right-wing extremists and militants...",
+      "fr": "Environnement de soutien de la NSU, « Hammerskins » ou artistes martiaux violents : lors de la réunion d'édition de la « Jungeuropa », l'AfD est plus ouverte que jamais envers les extrémistes et militants de droite...",
+      "es": "Entorno de apoyo al NSU, “Hammerskins” o artistas marciales violentos: en la reunión editorial “Jungeuropa”, el AfD se muestra más abierto que nunca con los extremistas y militantes de derecha...",
+      "tr": "NSU destek ortamı, “Hammerskins” veya şiddet yanlısı dövüş sanatçıları: “Jungeuropa” yayın toplantısında AfD, aşırı sağcılara ve militanlara karşı her zamankinden daha açık...",
+      "uk": "Середовище підтримки NSU, «Hammerskins» або жорстокі бойові мистецтва: на видавничій зустрічі «Jungeuropa» AfD як ніколи відкрито виступає з правими екстремістами та бойовиками...",
+      "pl": "Środowisko wsparcia NSU, „Hammerskins” lub brutalni artyści sztuk walki: Podczas spotkania wydawniczego „Jungeuropa” AfD jest bardziej niż kiedykolwiek otwarta na prawicowych ekstremistów i bojowników…",
+      "it": "Ambiente di sostegno alla NSU, “Hammerskins” o artisti marziali violenti: all'incontro editoriale “Jungeuropa”, l'AfD è più aperta che mai con gli estremisti e i militanti di destra...",
+      "ru": "Среда поддержки НГУ, «хаммерскины» или жестокие мастера боевых искусств: на издательской встрече «Jungeuropa» АдГ более открыта, чем когда-либо, с правыми экстремистами и боевиками..."
+    },
     "sources": [
       {
         "name": "CORRECTIV",
@@ -114,9 +314,29 @@
     ]
   },
   {
-    "title": "Verfassungsschutz: AfD Thüringen gesichert rechtsextremistisch",
+    "title": {
+      "de": "Verfassungsschutz: AfD Thüringen gesichert rechtsextremistisch",
+      "en": "Federal Office for the Protection of the Constitution: AfD Thuringia secured right-wing extremism",
+      "fr": "Office fédéral de protection de la Constitution : l'AfD Thuringe s'attaque à l'extrémisme de droite",
+      "es": "Oficina Federal para la Protección de la Constitución: AfD Turingia aseguró el extremismo de derecha",
+      "tr": "Federal Anayasayı Koruma Dairesi: AfD Thüringen aşırı sağcılığı güvence altına aldı",
+      "uk": "Федеральне відомство із захисту конституції: AfD Тюрінгія захищала правий екстремізм",
+      "pl": "Federalny Urząd Ochrony Konstytucji: AfD Turyngia zabezpieczyła prawicowy ekstremizm",
+      "it": "Ufficio federale per la protezione della Costituzione: AfD La Turingia ha assicurato l'estremismo di destra",
+      "ru": "Федеральное ведомство по защите конституции: АдГ Тюрингия защитила правый экстремизм"
+    },
     "date": "2024-03-20",
-    "excerpt": "Der Landesverband der Thüringer AfD wird vom Verfassungsschutz Thüringen als gesichert rechtsextremistische Bestrebung beobachtet und eingestuft.",
+    "excerpt": {
+      "de": "Der Landesverband der Thüringer AfD wird vom Verfassungsschutz Thüringen als gesichert rechtsextremistische Bestrebung beobachtet und eingestuft.",
+      "en": "The state association of the Thuringian AfD is observed and classified by the Thuringian Office for the Protection of the Constitution as a confirmed right-wing extremist effort.",
+      "fr": "L'association d'État de l'AfD de Thuringe est observée et classée par l'Office de Thuringe pour la protection de la Constitution comme un effort d'extrême droite confirmé.",
+      "es": "La asociación estatal AfD de Turingia es observada y clasificada por la Oficina para la Protección de la Constitución de Turingia como un esfuerzo confirmado de extrema derecha.",
+      "tr": "Thüringen AfD'nin eyalet birliği, Thüringen Anayasayı Koruma Bürosu tarafından onaylanmış aşırı sağcı bir çaba olarak gözlemleniyor ve sınıflandırılıyor.",
+      "uk": "Державне об’єднання AfD Тюрінгії розглядається та класифікується Управлінням із захисту конституції Тюрінгії як підтверджена правоекстремістська ініціатива.",
+      "pl": "Państwowe stowarzyszenie Turyngii AfD jest obserwowane i klasyfikowane przez Urząd Ochrony Konstytucji Turyngii jako potwierdzone przedsięwzięcie prawicowego ekstremizmu.",
+      "it": "L'associazione statale dell'AfD della Turingia viene osservata e classificata dall'Ufficio per la protezione della Costituzione della Turingia come un'associazione estremista di destra confermata.",
+      "ru": "Государственное объединение Тюрингии АдГ рассматривается и классифицируется Управлением по защите Конституции Тюрингии как подтвержденная правоэкстремистская деятельность."
+    },
     "sources": [
       {
         "name": "Belltower.News / Taz",
@@ -125,9 +345,29 @@
     ]
   },
   {
-    "title": "Gerichtsurteil bestätigt: Björn Höcke darf legal als Faschist bezeichnet werden",
+    "title": {
+      "de": "Gerichtsurteil bestätigt: Björn Höcke darf legal als Faschist bezeichnet werden",
+      "en": "Court ruling confirms: Björn Höcke can legally be called a fascist",
+      "fr": "Une décision de justice confirme : Björn Höcke peut légalement être qualifié de fasciste",
+      "es": "Un fallo judicial lo confirma: Björn Höcke puede ser considerado legalmente fascista",
+      "tr": "Mahkeme kararı doğruladı: Björn Höcke hukuken faşist olarak adlandırılabilir",
+      "uk": "Рішення суду підтверджує: Бйорна Хьокке законно можна назвати фашистом",
+      "pl": "Orzeczenie sądu potwierdza: Björna Höcke można zgodnie z prawem nazwać faszystą",
+      "it": "La sentenza della Corte conferma: Björn Höcke può essere legalmente definito fascista",
+      "ru": "Решение суда подтверждает: Бьорна Хёке по закону можно назвать фашистом"
+    },
     "date": "2024-02-15",
-    "excerpt": "Aufgrund zahlreicher rassistischer und antidemokratischer Zitate in seinen Schriften darf der AfD-Politiker Björn Höcke gerichtlich bestätigt als Faschist bezeichnet werden.",
+    "excerpt": {
+      "de": "Aufgrund zahlreicher rassistischer und antidemokratischer Zitate in seinen Schriften darf der AfD-Politiker Björn Höcke gerichtlich bestätigt als Faschist bezeichnet werden.",
+      "en": "Due to numerous racist and anti-democratic quotes in his writings, the AfD politician Björn Höcke can be described as a fascist by a court of law.",
+      "fr": "En raison de nombreuses citations racistes et antidémocratiques dans ses écrits, le politicien de l'AfD Björn Höcke peut être qualifié de fasciste par un tribunal.",
+      "es": "Debido a las numerosas citas racistas y antidemocráticas en sus escritos, el político del AfD Björn Höcke puede ser calificado de fascista ante un tribunal.",
+      "tr": "AfD'li siyasetçi Björn Höcke, yazılarında çok sayıda ırkçı ve antidemokratik alıntılar nedeniyle mahkeme tarafından faşist olarak nitelendirilebilir.",
+      "uk": "Завдяки численним расистським та антидемократичним цитатам у своїх творах політика AfD Бйорна Хеке суд може назвати фашистом.",
+      "pl": "Ze względu na liczne rasistowskie i antydemokratyczne cytaty w jego pismach, polityk AfD Björn Höcke może zostać uznany przez sąd za faszystę.",
+      "it": "A causa delle numerose citazioni razziste e antidemocratiche nei suoi scritti, il politico dell'AfD Björn Höcke può essere definito fascista da un tribunale.",
+      "ru": "Из-за многочисленных расистских и антидемократических цитат в его произведениях политик АдГ Бьёрн Хёке может быть признан судом фашистом."
+    },
     "sources": [
       {
         "name": "Volksverpetzer",
@@ -136,9 +376,29 @@
     ]
   },
   {
-    "title": "Geheimtreffen in Potsdam: Pläne zur Vertreibung von Millionen",
+    "title": {
+      "de": "Geheimtreffen in Potsdam: Pläne zur Vertreibung von Millionen",
+      "en": "Secret meeting in Potsdam: plans to expel millions",
+      "fr": "Réunion secrète à Potsdam : projet d'expulsion de millions de personnes",
+      "es": "Reunión secreta en Potsdam: planes para expulsar a millones",
+      "tr": "Potsdam'da gizli toplantı: Milyonları sınır dışı etme planları",
+      "uk": "Таємна зустріч у Потсдамі: плани вигнання мільйонів",
+      "pl": "Tajne spotkanie w Poczdamie: plany wydalenia milionów",
+      "it": "Incontro segreto a Potsdam: progetto di espellere milioni",
+      "ru": "Тайная встреча в Потсдаме: планы высылки миллионов"
+    },
     "date": "2024-01-10",
-    "excerpt": "Bei einem Treffen in Potsdam diskutierten AfD-Politiker und Rechtsextreme über die Vertreibung von Millionen Menschen mit Migrationshintergrund aus Deutschland.",
+    "excerpt": {
+      "de": "Bei einem Treffen in Potsdam diskutierten AfD-Politiker und Rechtsextreme über die Vertreibung von Millionen Menschen mit Migrationshintergrund aus Deutschland.",
+      "en": "At a meeting in Potsdam, AfD politicians and right-wing extremists discussed the expulsion of millions of people with a migrant background from Germany.",
+      "fr": "Lors d’une réunion à Potsdam, des responsables politiques de l’AfD et des extrémistes de droite ont discuté de l’expulsion d’Allemagne de millions de personnes issues de l’immigration.",
+      "es": "En una reunión en Potsdam, políticos de AfD y extremistas de derecha discutieron la expulsión de Alemania de millones de personas de origen inmigrante.",
+      "tr": "Potsdam'daki bir toplantıda AfD'li politikacılar ve aşırı sağcılar, göçmen kökenli milyonlarca insanın Almanya'dan sınır dışı edilmesini tartıştı.",
+      "uk": "На зустрічі в Потсдамі політики AfD і праві екстремісти обговорили видворення мільйонів людей з мігрантським походженням з Німеччини.",
+      "pl": "Na spotkaniu w Poczdamie politycy AfD i prawicowi ekstremiści dyskutowali na temat wydalenia milionów osób ze środowisk migracyjnych z Niemiec.",
+      "it": "In un incontro a Potsdam i politici dell’AfD e gli estremisti di destra hanno discusso dell’espulsione di milioni di persone con un background migratorio dalla Germania.",
+      "ru": "На встрече в Потсдаме политики АдГ и правые экстремисты обсудили высылку миллионов людей мигрантов из Германии."
+    },
     "sources": [
       {
         "name": "CORRECTIV",

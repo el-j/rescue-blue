@@ -87,18 +87,73 @@
     "faqTitle": "FAQ",
     "faqSub": "Häufig gestellte Fragen rund um die Kampagne und unsere Forderungen.",
     "demoDreamReset": "Werte zurücksetzen",
-    "demoDreamSwitch": "Beste Zukunft visualisieren"
+    "demoDreamSwitch": "Beste Zukunft visualisieren",
+    "newsBadge": "Pressebericht",
+    "readMore": "Artikel lesen",
+    "latestNewsTitle": "Aktuelle Extremismus-Berichte",
+    "campaignTab": "Kampagne",
+    "archiveTitle": "Presse-Archiv",
+    "archiveSub": "Chronologische Übersicht über Berichte zu rechtsextremistischen AfD-Aktivitäten",
+    "noNews": "Keine Nachrichten im Archiv vorhanden.",
+    "dateHeader": "Datum",
+    "sourceHeader": "Quelle",
+    "titleHeader": "Bericht",
+    "recipientsHeader": "Status der Entscheidungsträger",
+    "status_supported": "Unterstützt",
+    "status_opposed": "Abgelehnt",
+    "status_no_answer": "Ausstehend",
+    "roleArdChair": "ARD-Vorsitzender & Intendant des Hessischen Rundfunks (hr)",
+    "roleZdfChefred": "Chefredakteurin, Zweites Deutsches Fernsehen (ZDF)",
+    "roleTagesschauChefred": "Erster Chefredakteur ARD-aktuell (Tagesschau)",
+    "roleZdfIntendant": "Intendant, Zweites Deutsches Fernsehen (ZDF)",
+    "roleWdrIntendant": "Intendantin, Westdeutscher Rundfunk (WDR)",
+    "roleNdrIntendant": "Intendant, Norddeutscher Rundfunk (NDR)",
+    "roleDpaChefred": "Chefredakteur, Deutsche Presse-Agentur (dpa)",
+    "roleSpringerChefred": "Vorsitzender der Chefredaktionen, Axel-Springer-Premium-Gruppe",
+    "roleRtlChefred": "Chefredakteur Primetime, RTL News",
+    "roleProsiebenChefred": "Chefredakteur, Seven.One Entertainment Group (ProSiebenSat.1)",
+    "roleSpiegelChefred": "Chefredakteur, DER SPIEGEL",
+    "roleZeitChefred": "Chefredakteur, DIE ZEIT",
+    "roleWdrCouncil": "Vorsitzender des WDR-Rundfunkrats",
+    "roleNdrCouncil": "Vorsitzender des NDR-Rundfunkrates",
+    "roleZdfCouncil": "Vorsitzende des ZDF-Fernsehrates",
+    "heroImgText1": "PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.",
+    "heroImgText2": "JETZT UNTERZEICHNEN: BLAU SCHÜTZEN!"
   },
   "sayings": {
     "sprache": [
-      { "phrase": "Blau machen", "origin": "Mittelalter / Färberhandwerk", "desc": "Der Begriff stammt vom freien Montag der Färber. Während die Wolle an der Luft oxidierte und blau wurde, ruhte die Arbeit. Ein schönes deutsches Sinnbild für Erholung und Selbstfürsorge." },
-      { "phrase": "Ins Blaue hinein", "origin": "Naturromantik", "desc": "Eine unbeschwerte Reise oder Tat ohne festes Ziel, getragen von purem Vertrauen, Neugierde und friedlicher Abenteuerlust." },
-      { "phrase": "Das Blaue vom Himmel versprechen", "origin": "Poetische Metaphorik", "desc": "Blau steht hier für das unendliche, majestätische Himmelsgewölbe – ein wunderbares Bild voller Träume und Sehnsüchte." }
+      {
+        "phrase": "Blau machen",
+        "origin": "Mittelalter / Färberhandwerk",
+        "desc": "Der Begriff stammt vom freien Montag der Färber. Während die Wolle an der Luft oxidierte und blau wurde, ruhte die Arbeit. Ein schönes deutsches Sinnbild für Erholung und Selbstfürsorge."
+      },
+      {
+        "phrase": "Ins Blaue hinein",
+        "origin": "Naturromantik",
+        "desc": "Eine unbeschwerte Reise oder Tat ohne festes Ziel, getragen von purem Vertrauen, Neugierde und friedlicher Abenteuerlust."
+      },
+      {
+        "phrase": "Das Blaue vom Himmel versprechen",
+        "origin": "Poetische Metaphorik",
+        "desc": "Blau steht hier für das unendliche, majestätische Himmelsgewölbe – ein wunderbares Bild voller Träume und Sehnsüchte."
+      }
     ],
     "symbolik": [
-      { "phrase": "Die blaue Blume", "origin": "Epoche der Romantik (Novalis)", "desc": "Das wichtigste Symbol für Sehnsucht, Liebe, Erkenntnis und die Entfaltung des menschlichen Geistes. Ein unschätzbares Kulturgut." },
-      { "phrase": "Blauhelme der Vereinten Nationen", "origin": "Globale Friedensarbeit", "desc": "Blau wurde von der UN gezielt gewählt, weil es universell für Neutralität, Deeskalation, Zuversicht und den Willen zum dauerhaften Frieden steht." },
-      { "phrase": "Königsblau & Ultramarin", "origin": "Kunst- und Kulturgeschichte", "desc": "Jahrhundertelang wertvoller als Gold (aus Lapislazuli). In der Renaissance war dieses kostbare Blau ausschließlich der Darstellung des Erhabensten vorbehalten." }
+      {
+        "phrase": "Die blaue Blume",
+        "origin": "Epoche der Romantik (Novalis)",
+        "desc": "Das wichtigste Symbol für Sehnsucht, Liebe, Erkenntnis und die Entfaltung des menschlichen Geistes. Ein unschätzbares Kulturgut."
+      },
+      {
+        "phrase": "Blauhelme der Vereinten Nationen",
+        "origin": "Globale Friedensarbeit",
+        "desc": "Blau wurde von der UN gezielt gewählt, weil es universell für Neutralität, Deeskalation, Zuversicht und den Willen zum dauerhaften Frieden steht."
+      },
+      {
+        "phrase": "Königsblau & Ultramarin",
+        "origin": "Kunst- und Kulturgeschichte",
+        "desc": "Jahrhundertelang wertvoller als Gold (aus Lapislazuli). In der Renaissance war dieses kostbare Blau ausschließlich der Darstellung des Erhabensten vorbehalten."
+      }
     ]
   },
   "openLetters": {
@@ -134,16 +189,44 @@
     }
   },
   "faqs": [
-    { "q": "Warum sollte Blau überhaupt problematisch sein?", "a": "Blau ist die Selbstwahlfarbe der AfD, aber eben auch die Farbe des Friedens, des Himmels und der UN-Friedenstruppen. Durch die unkritische Übernahme dieser Selbstzuschreibung durch Medien wird die emotionale Unbedenklichkeits-Assoziation auf die Partei übertragen." },
-    { "q": "Ist das nicht Zensur oder politische Einflussnahme?", "a": "Nein. Es geht um medienethische Standards und historische Ehrlichkeit. Medien entscheiden täglich über Darstellungsformen – die Forderung nach historisch korrekten Farbcodes ist eine legitime gesellschaftliche Debatte, keine Zensur." },
-    { "q": "Hat die Kampagne eine Chance auf Erfolg?", "a": "Viele Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt." },
-    { "q": "Wer steckt hinter dieser Kampagne?", "a": "Die Petition wurde auf Change.org gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten." }
+    {
+      "q": "Warum sollte Blau überhaupt problematisch sein?",
+      "a": "Blau ist die Selbstwahlfarbe der AfD, aber eben auch die Farbe des Friedens, des Himmels und der UN-Friedenstruppen. Durch die unkritische Übernahme dieser Selbstzuschreibung durch Medien wird die emotionale Unbedenklichkeits-Assoziation auf die Partei übertragen."
+    },
+    {
+      "q": "Ist das nicht Zensur oder politische Einflussnahme?",
+      "a": "Nein. Es geht um medienethische Standards und historische Ehrlichkeit. Medien entscheiden täglich über Darstellungsformen – die Forderung nach historisch korrekten Farbcodes ist eine legitime gesellschaftliche Debatte, keine Zensur."
+    },
+    {
+      "q": "Hat die Kampagne eine Chance auf Erfolg?",
+      "a": "Viele Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt."
+    },
+    {
+      "q": "Wer steckt hinter dieser Kampagne?",
+      "a": "Die Petition wurde auf Change.org gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten."
+    }
   ],
   "facts": [
-    { "emoji": "🎨", "label": "Blau", "desc": "Farbe des Himmels, des Friedens, der UN" },
-    { "emoji": "📺", "label": "ARD & ZDF & Andere Medien", "desc": "Nutzen Blau für AfD-Grafiken" },
-    { "emoji": "🏛️", "label": "Historisch", "desc": "Braun = Symbol des Rechtsextremismus" },
-    { "emoji": "⚖️", "label": "Verfassungsschutz", "desc": "Teile der AfD als gesichert extremistisch eingestuft" }
+    {
+      "emoji": "🎨",
+      "label": "Blau",
+      "desc": "Farbe des Himmels, des Friedens, der UN"
+    },
+    {
+      "emoji": "📺",
+      "label": "ARD & ZDF & Andere Medien",
+      "desc": "Nutzen Blau für AfD-Grafiken"
+    },
+    {
+      "emoji": "🏛️",
+      "label": "Historisch",
+      "desc": "Braun = Symbol des Rechtsextremismus"
+    },
+    {
+      "emoji": "⚖️",
+      "label": "Verfassungsschutz",
+      "desc": "Teile der AfD als gesichert extremistisch eingestuft"
+    }
   ],
   "science": {
     "sectionH": "Wissenschaftlicher & Medienrechtlicher Hintergrund",
@@ -153,15 +236,27 @@
       {
         "title": "Die psychologische Dimension des „Visual Framing\" (Halo-Effekt)",
         "points": [
-          { "label": "Farbpsychologie von Blau", "text": "Helle Cyan- und Blautöne werden universell mit Attributen wie Seriosität, Sachlichkeit, Vertrauenswürdigkeit, Deeskalation und staatstragender Harmonie assoziiert – vergleichbar mit der Farbwahl der Vereinten Nationen oder der europäischen Institutionen." },
-          { "label": "Die visuelle Verharmlosungsfalle", "text": "Wird eine politische Kraft, die vom Bundesamt für Verfassungsschutz (BfV) sowie mehreren Landesämtern offiziell als gesichert rechtsextremistisch eingestuft wird, in Nachrichtengrafiken konsequent in dieser beruhigenden Primärfarbe dargestellt, entsteht ein kognitiver Kontrast: Die visuelle Rahmung überdeckt die inhaltliche Radikalität der Akteure (Halo-Effekt)." }
+          {
+            "label": "Farbpsychologie von Blau",
+            "text": "Helle Cyan- und Blautöne werden universell mit Attributen wie Seriosität, Sachlichkeit, Vertrauenswürdigkeit, Deeskalation und staatstragender Harmonie assoziiert – vergleichbar mit der Farbwahl der Vereinten Nationen oder der europäischen Institutionen."
+          },
+          {
+            "label": "Die visuelle Verharmlosungsfalle",
+            "text": "Wird eine politische Kraft, die vom Bundesamt für Verfassungsschutz (BfV) sowie mehreren Landesämtern offiziell als gesichert rechtsextremistisch eingestuft wird, in Nachrichtengrafiken konsequent in dieser beruhigenden Primärfarbe dargestellt, entsteht ein kognitiver Kontrast: Die visuelle Rahmung überdeckt die inhaltliche Radikalität der Akteure (Halo-Effekt)."
+          }
         ]
       },
       {
         "title": "Redaktionelle Autonomie und journalistische Präzedenzfälle",
         "points": [
-          { "label": "Präzedenzfall taz", "text": "Im Bundestagswahlkampf traf die taz die bewusste redaktionelle Entscheidung, den AfD-Balken in Diagrammen braun statt blau darzustellen. Dies belegt, dass Abweichungen von der Partei-Eigendarstellung im deutschen Journalismus bereits praktiziert und als legitimes Mittel der Einordnung anerkannt werden." },
-          { "label": "Etablierte farbliche Varianz", "text": "Medienhäuser weichen bei Visualisierungen regelmäßig von den offiziellen CI-Vorgaben ab. Das BSW wird je nach Redaktion lila oder orange-rot gezeigt, die Linke oft dunkelrot zur Abgrenzung von der SPD. Die CDU/CSU nutzt Türkis, wird aber konsequent in Schwarz dargestellt. Farbkodierung ist ein flexibles journalistisches Gestaltungsmittel." }
+          {
+            "label": "Präzedenzfall taz",
+            "text": "Im Bundestagswahlkampf traf die taz die bewusste redaktionelle Entscheidung, den AfD-Balken in Diagrammen braun statt blau darzustellen. Dies belegt, dass Abweichungen von der Partei-Eigendarstellung im deutschen Journalismus bereits praktiziert und als legitimes Mittel der Einordnung anerkannt werden."
+          },
+          {
+            "label": "Etablierte farbliche Varianz",
+            "text": "Medienhäuser weichen bei Visualisierungen regelmäßig von den offiziellen CI-Vorgaben ab. Das BSW wird je nach Redaktion lila oder orange-rot gezeigt, die Linke oft dunkelrot zur Abgrenzung von der SPD. Die CDU/CSU nutzt Türkis, wird aber konsequent in Schwarz dargestellt. Farbkodierung ist ein flexibles journalistisches Gestaltungsmittel."
+          }
         ]
       }
     ],
@@ -170,23 +265,44 @@
       {
         "title": "Einwand 1: „Das Neutralitätsgebot verbietet eine Umfärbung.\"",
         "rebuttals": [
-          { "label": "Keine absolute Symmetriepflicht", "text": "Nach ständiger Rechtsprechung des BVerfG gebietet Art. 21 Abs. 1 GG i.V.m. § 5 PartG eine abgestufte Chancengleichheit und fairen Zugang – keine blinde, rein formale Symmetrie. Journalismus darf und muss Unterschiede benennen, wenn objektive Gründe vorliegen." },
-          { "label": "Verfassungsschutz als Sachlichkeitsmaßstab", "text": "Die gerichtlich bestätigte Einstufung als „gesichert rechtsextremistisch\" ist ein objektiver, verifizierter Befund. Eine Visualisierung, die dies durch eine historisch etablierte Farbe abbildet, dient dem gesetzlichen Auftrag zur sachlichen, wahrheitsgemäßen Berichterstattung (vgl. Medienstaatsvertrag – MStV)." },
-          { "label": "Kein Recht auf visuelle Schonung", "text": "Parteien haben keinen verfassungsrechtlichen Anspruch darauf, dass unabhängige Medien ihre Selbstdarstellung ungefiltert übernehmen. Die Programmautonomie der Sender (Rundfunkfreiheit nach Art. 5 Abs. 1 Satz 2 GG) umfasst das Recht, Grafiken nach sachgerechten journalistischen Kriterien zu gestalten." }
+          {
+            "label": "Keine absolute Symmetriepflicht",
+            "text": "Nach ständiger Rechtsprechung des BVerfG gebietet Art. 21 Abs. 1 GG i.V.m. § 5 PartG eine abgestufte Chancengleichheit und fairen Zugang – keine blinde, rein formale Symmetrie. Journalismus darf und muss Unterschiede benennen, wenn objektive Gründe vorliegen."
+          },
+          {
+            "label": "Verfassungsschutz als Sachlichkeitsmaßstab",
+            "text": "Die gerichtlich bestätigte Einstufung als „gesichert rechtsextremistisch\" ist ein objektiver, verifizierter Befund. Eine Visualisierung, die dies durch eine historisch etablierte Farbe abbildet, dient dem gesetzlichen Auftrag zur sachlichen, wahrheitsgemäßen Berichterstattung (vgl. Medienstaatsvertrag – MStV)."
+          },
+          {
+            "label": "Kein Recht auf visuelle Schonung",
+            "text": "Parteien haben keinen verfassungsrechtlichen Anspruch darauf, dass unabhängige Medien ihre Selbstdarstellung ungefiltert übernehmen. Die Programmautonomie der Sender (Rundfunkfreiheit nach Art. 5 Abs. 1 Satz 2 GG) umfasst das Recht, Grafiken nach sachgerechten journalistischen Kriterien zu gestalten."
+          }
         ]
       },
       {
         "title": "Einwand 2: „Medien müssen sich an der Corporate Identity (CI) der Parteien orientieren.\"",
         "rebuttals": [
-          { "label": "Journalistisches Distanzgebot vs. PR-Übernahme", "text": "Eine blinde Übernahme der CI politischer Akteure widerspricht dem journalistischen Distanzgebot. Parteien nutzen visuelles Branding als strategisches Kommunikationswerkzeug. Die ungeprüfte Reproduktion dieses Marketings macht Medienhäuser zu unfreiwilligen Multiplikatoren politischer Kommunikationsstrategien." },
-          { "label": "Visuelle Wahrheit als Auftrag", "text": "Wenn Verfassungsschutzbehörden erhebliche Unterschiede in der Verfassungstreue der Akteure belegen, führt die Gleichbehandlung im unschuldigen „Standard-Blau\" das Publikum in die Irre. Visuelle Wahrheit erfordert eine Farbwahl, die den verfassungsrechtlichen Status widerspiegelt." }
+          {
+            "label": "Journalistisches Distanzgebot vs. PR-Übernahme",
+            "text": "Eine blinde Übernahme der CI politischer Akteure widerspricht dem journalistischen Distanzgebot. Parteien nutzen visuelles Branding als strategisches Kommunikationswerkzeug. Die ungeprüfte Reproduktion dieses Marketings macht Medienhäuser zu unfreiwilligen Multiplikatoren politischer Kommunikationsstrategien."
+          },
+          {
+            "label": "Visuelle Wahrheit als Auftrag",
+            "text": "Wenn Verfassungsschutzbehörden erhebliche Unterschiede in der Verfassungstreue der Akteure belegen, führt die Gleichbehandlung im unschuldigen „Standard-Blau\" das Publikum in die Irre. Visuelle Wahrheit erfordert eine Farbwahl, die den verfassungsrechtlichen Status widerspiegelt."
+          }
         ]
       },
       {
         "title": "Einwand 3: „Eine Umfärbung liefert der Partei eine Steilvorlage für ihr Opfer-Narrativ.\"",
         "rebuttals": [
-          { "label": "Proaktive Kernstrategie", "text": "Analysen rechtsextremer Kommunikation (u. a. von Dr. Johannes Hillje) zeigen: Das „Medienopfer-Narrativ\" ist eine proaktive, strukturelle Kernstrategie, die vollkommen unabhängig von tatsächlichen redaktionellen Handlungen konstruiert und instrumentalisiert wird." },
-          { "label": "Kein vorauseilender Gehorsam", "text": "Wenn Redaktionen notwendige medienethische Anpassungen aus Angst vor der Reaktion einer Partei unterlassen, unterwerfen sie ihre redaktionelle Unabhängigkeit deren Kommunikationsstrategie. Der wirksamste Schutz ist nicht Tatenlosigkeit, sondern eine transparente, wissenschaftlich und juristisch sauber begründete Offenlegung der redaktionellen Gestaltungsentscheidung." }
+          {
+            "label": "Proaktive Kernstrategie",
+            "text": "Analysen rechtsextremer Kommunikation (u. a. von Dr. Johannes Hillje) zeigen: Das „Medienopfer-Narrativ\" ist eine proaktive, strukturelle Kernstrategie, die vollkommen unabhängig von tatsächlichen redaktionellen Handlungen konstruiert und instrumentalisiert wird."
+          },
+          {
+            "label": "Kein vorauseilender Gehorsam",
+            "text": "Wenn Redaktionen notwendige medienethische Anpassungen aus Angst vor der Reaktion einer Partei unterlassen, unterwerfen sie ihre redaktionelle Unabhängigkeit deren Kommunikationsstrategie. Der wirksamste Schutz ist nicht Tatenlosigkeit, sondern eine transparente, wissenschaftlich und juristisch sauber begründete Offenlegung der redaktionellen Gestaltungsentscheidung."
+          }
         ]
       }
     ]
