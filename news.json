@@ -296,6 +296,37 @@
   },
   {
     "title": {
+      "de": "AfD: Neues Gutachten bringt Bewegung in Verbotsdebatte",
+      "en": "AfD: New report brings movement to ban debate",
+      "fr": "AfD : un nouveau rapport incite à interdire le débat",
+      "es": "AfD: Un nuevo informe genera movimiento para prohibir el debate",
+      "tr": "AfD: Yeni rapor tartışmayı yasaklama yönünde hareket getiriyor",
+      "uk": "AfD: Нова доповідь дає рух до заборони дебатів",
+      "pl": "AfD: Nowy raport powoduje ruch na rzecz zakazu debaty",
+      "it": "AfD: Un nuovo rapporto porta il movimento per vietare il dibattito",
+      "ru": "АдГ: новый доклад вызывает движение за запрет дебатов"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "»Unsere Demokratie ist keine Selbstverständlichkeit. Sie zu verteidigen, ist unsere Pflicht«: Ein neues Gutachten belebt die Debatte über ein AfD-Verbotsverfahren. Reaktionen.",
+      "en": "»Our democracy cannot be taken for granted. “It is our duty to defend them”: A new report revives the debate about an AfD ban. Reactions.",
+      "fr": "« Notre démocratie ne peut pas être tenue pour acquise. « Il est de notre devoir de les défendre » : un nouveau rapport relance le débat sur une interdiction de l'AfD. Réactions.",
+      "es": "»Nuestra democracia no puede darse por sentada. “Es nuestro deber defenderlos”: un nuevo informe reaviva el debate sobre la prohibición de AfD. Reacciones.",
+      "tr": "»Demokrasimiz olduğu gibi kabul edilemez. “Onları savunmak görevimiz”: Yeni bir rapor AfD yasağı tartışmasını yeniden canlandırıyor. Reaksiyonlar.",
+      "uk": "«Нашу демократію не можна сприймати як належне. «Наш обов’язок захищати їх»: новий звіт пожвавлює дискусію про заборону AfD. реакції.",
+      "pl": "»Naszej demokracji nie można uważać za coś oczywistego. „Naszym obowiązkiem jest ich bronić”: nowy raport ożywia debatę na temat zakazu AfD. Reakcje.",
+      "it": "»La nostra democrazia non può essere data per scontata. “È nostro dovere difenderli”: un nuovo rapporto rilancia il dibattito sul divieto dell’AfD. Reazioni.",
+      "ru": "»Нашу демократию нельзя воспринимать как нечто само собой разумеющееся. «Наш долг – защищать их»: новый доклад возрождает дебаты о запрете АдГ. Реакции."
+    },
+    "sources": [
+      {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/deutschland/afd-gutachten-reaktionen-aus-sachsen-anhalt-und-dem-vorsitzenden-der-innenministerkonferenz-a-f152b00b-934a-4147-b93b-f7d6e20f9817#ref=rss"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Rechtsextremismus: Hitlergruß-Vorwurf gegen AfD-Politiker Reichardt",
       "en": "Right-wing extremism: Nazi salute accusation against AfD politician Reichardt",
       "fr": "Extrémisme de droite : accusation de salut nazi contre le politicien de l’AfD Reichardt",
