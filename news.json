@@ -27,6 +27,10 @@
       {
         "name": "Zeit Online",
         "url": "https://www.zeit.de/politik/deutschland/2026-06/martin-reichardt-afd-hitlergruss-foto-gxe"
+      },
+      {
+        "name": "Taz",
+        "url": "https://taz.de/Hitlergruss-bei-der-AfD-geht-nicht-eigentlich/!6190583/"
       }
     ]
   },
@@ -58,6 +62,37 @@
       {
         "name": "Belltower.News",
         "url": "https://www.belltower.news/deutsche-anomalie-wie-die-afd-den-europaeischen-trend-zur-maessigung-bricht-166111/"
+      }
+    ]
+  },
+  {
+    "title": {
+      "de": "AfD: Ein ausgestreckter Arm und viele Fragen",
+      "en": "AfD: An outstretched arm and many questions",
+      "fr": "AfD : un bras tendu et de nombreuses questions",
+      "es": "AfD: un brazo extendido y muchas preguntas",
+      "tr": "AfD: Uzatılmış bir kol ve birçok soru",
+      "uk": "AfD: Витягнута рука і багато питань",
+      "pl": "AfD: Wyciągnięte ramię i wiele pytań",
+      "it": "AfD: Un braccio teso e tante domande",
+      "ru": "АдГ: протянутая рука и много вопросов"
+    },
+    "date": "2026-06-25",
+    "excerpt": {
+      "de": "Sachsen-Anhalts AfD-Chef Martin Reichardt sieht sich Vorwürfen ausgesetzt, den Hitlergruß gezeigt zu haben. Er selbst will die Geste anders interpretiert wissen.",
+      "en": "Saxony-Anhalt's AfD leader Martin Reichardt faces accusations of having shown the Hitler salute. He himself wants the gesture to be interpreted differently.",
+      "fr": "Le leader de l'AfD en Saxe-Anhalt, Martin Reichardt, est accusé d'avoir fait le salut hitlérien. Lui-même souhaite que le geste soit interprété différemment.",
+      "es": "El líder del AfD en Sajonia-Anhalt, Martin Reichardt, se enfrenta a acusaciones de haber hecho el saludo hitleriano. Él mismo quiere que el gesto se interprete de otra manera.",
+      "tr": "Saksonya-Anhalt'ın AfD lideri Martin Reichardt, Hitler selamı vermekle suçlanıyor. Kendisi bu jestin farklı yorumlanmasını istiyor.",
+      "uk": "Лідера AfD землі Саксонія-Анхальт Мартіна Райхардта звинувачують у привітанні Гітлера. Він сам хоче, щоб цей жест витлумачили інакше.",
+      "pl": "Lider AfD w Saksonii-Anhalt Martin Reichardt zostaje oskarżony o okazanie pozdrowienia Hitlerowi. On sam chce, żeby ten gest był inaczej interpretowany.",
+      "it": "Martin Reichardt, leader dell'AfD della Sassonia-Anhalt, è accusato di aver fatto il saluto hitleriano. Lui stesso vuole che il gesto venga interpretato diversamente.",
+      "ru": "Лидеру АдГ Саксонии-Анхальт Мартину Райхардту предъявлены обвинения в приветствии Гитлера. Он сам хочет, чтобы этот жест был истолкован по-другому."
+    },
+    "sources": [
+      {
+        "name": "Süddeutsche Zeitung",
+        "url": "https://www.sueddeutsche.de/politik/afd-reichardt-hitlergruss-sachsen-anhalt-li.3504919"
       }
     ]
   },
