@@ -76,10 +76,10 @@ describe('App', () => {
     // 2nd Click -> activates dream state: button becomes "Zurücksetzen auf Blau"
     const dreamButton = screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })[1]
     await user.click(dreamButton)
-    expect(screen.getAllByRole('button', { name: 'Zurücksetzen auf Blau' })).toHaveLength(2)
+    expect(screen.getAllByRole('button', { name: 'Traum beenden' })).toHaveLength(2)
 
     // 3rd Click -> resets to default: button becomes "Jetzt umfärben auf Braun"
-    const resetButton = screen.getAllByRole('button', { name: 'Zurücksetzen auf Blau' })[1]
+    const resetButton = screen.getAllByRole('button', { name: 'Traum beenden' })[1]
     await user.click(resetButton)
     expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(2)
   })

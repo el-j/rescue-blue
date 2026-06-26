@@ -22,8 +22,7 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
   const isDreamActive = sandboxState === 'dream'
   const [isInstituteInfoOpen, setIsInstituteInfoOpen] = useState(false)
   const [showComparison, setShowComparison] = useState(false)
-  const [elapsedTicks, setElapsedTicks] = useState<number | null>(null)
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const [dreamProgress, setDreamProgress] = useState<number | null>(null)
   const hasStartedDreamRef = useRef(false)
 
   const afdBar = bars.find((bar) => bar.isAfd)
@@ -32,106 +31,183 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
   const cduBar = bars.find((bar) => bar.key === 'cdu')
   const originalCduPct = cduBar?.pct ?? 0
 
-  // When dream state is activated, start a timer that slowly drains values
+  const totalDuration = 60000 // 60 seconds (1 minute) in milliseconds
+
+  // When dream state is activated, start a requestAnimationFrame loop that updates progress based on system time
   useEffect(() => {
+    let animationFrameId: number | null = null
+    let startDelayId: ReturnType<typeof setTimeout> | null = null
+
     if (isDreamActive && !hasStartedDreamRef.current) {
       hasStartedDreamRef.current = true
-
-      const totalDuration = 300000 // 5 minutes in milliseconds
-      const intervalMs = 50
-      const totalTicks = totalDuration / intervalMs
-
-      setElapsedTicks(0)
+      setDreamProgress(0)
 
       // Small delay before starting the drain for dramatic effect
-      const startDelay = setTimeout(() => {
-        timerRef.current = setInterval(() => {
-          setElapsedTicks((prev) => {
-            if (prev === null) return null
-            const next = prev + 1
-            if (next >= totalTicks) {
-              if (timerRef.current) clearInterval(timerRef.current)
-              return totalTicks
-            }
-            return next
-          })
-        }, intervalMs)
-      }, 600)
+      startDelayId = setTimeout(() => {
+        const startTime = Date.now()
 
-      return () => {
-        clearTimeout(startDelay)
-        if (timerRef.current) clearInterval(timerRef.current)
-      }
+        const tick = () => {
+          const elapsed = Date.now() - startTime
+          const progress = Math.min(elapsed / totalDuration, 1)
+          setDreamProgress(progress)
+
+          if (progress < 1) {
+            animationFrameId = requestAnimationFrame(tick)
+          }
+        }
+        animationFrameId = requestAnimationFrame(tick)
+      }, 600)
     }
 
-    if (!isDreamActive) {
-      hasStartedDreamRef.current = false
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-        timerRef.current = null
-      }
-      const resetTimeout = setTimeout(() => {
-        setElapsedTicks(null)
-      }, 0)
-      return () => {
-        clearTimeout(resetTimeout)
+    return () => {
+      if (startDelayId) clearTimeout(startDelayId)
+      if (animationFrameId) cancelAnimationFrame(animationFrameId)
+
+      if (!isDreamActive) {
+        hasStartedDreamRef.current = false
+        setDreamProgress(null)
       }
     }
   }, [isDreamActive])
 
   // Compute the displayed percentages
-  const totalDuration = 300000
-  const intervalMs = 50
-  const totalTicks = totalDuration / intervalMs
+  let displayBarsRaw = bars.map((bar) => ({ ...bar }))
 
-  let displayAfdPct = originalAfdPct
-  let displayCduPct = originalCduPct
+  if (isDreamActive && dreamProgress !== null) {
+    const progress = dreamProgress
 
-  if (isDreamActive && elapsedTicks !== null) {
-    const progress = Math.min(elapsedTicks / totalTicks, 1)
-    displayAfdPct = originalAfdPct - (originalAfdPct - 0.5) * progress
-    if (originalCduPct > 20) {
-      displayCduPct = originalCduPct - (originalCduPct - 20) * progress
+    if (progress < 0.8) {
+      // Normal drain transition logic up to progress 0.8
+      const displayAfdPct = originalAfdPct - (originalAfdPct - 0.5) * progress
+      let displayCduPct = originalCduPct
+      if (originalCduPct > 20) {
+        displayCduPct = originalCduPct - (originalCduPct - 20) * progress
+      }
+
+      const drainedPoints = (originalAfdPct - displayAfdPct) + (originalCduPct - displayCduPct)
+      const recipientKeys = new Set(['spd', 'greens', 'left', 'others'])
+      const recipientTotal = bars
+        .filter((bar) => recipientKeys.has(bar.key))
+        .reduce((sum, bar) => sum + bar.pct, 0)
+
+      displayBarsRaw = bars.map((bar) => {
+        if (bar.isAfd) {
+          return { ...bar, pct: displayAfdPct }
+        }
+        if (bar.key === 'cdu') {
+          return { ...bar, pct: displayCduPct }
+        }
+        if (drainedPoints > 0 && recipientKeys.has(bar.key) && recipientTotal > 0) {
+          const share = bar.pct / recipientTotal
+          return { ...bar, pct: bar.pct + drainedPoints * share }
+        }
+        return { ...bar }
+      })
+    } else {
+      // Transition from progress 0.8 state to final target state at progress 1.0
+      // 1. Calculate Phase 1 state at progress = 0.8
+      const displayAfdPctAt08 = originalAfdPct - (originalAfdPct - 0.5) * 0.8
+      let displayCduPctAt08 = originalCduPct
+      if (originalCduPct > 20) {
+        displayCduPctAt08 = originalCduPct - (originalCduPct - 20) * 0.8
+      }
+
+      const drainedPointsAt08 = (originalAfdPct - displayAfdPctAt08) + (originalCduPct - displayCduPctAt08)
+      const recipientKeys = new Set(['spd', 'greens', 'left', 'others'])
+      const recipientTotal = bars
+        .filter((bar) => recipientKeys.has(bar.key))
+        .reduce((sum, bar) => sum + bar.pct, 0)
+
+      const p1Bars = bars.map((bar) => {
+        if (bar.isAfd) {
+          return { ...bar, pct: displayAfdPctAt08 }
+        }
+        if (bar.key === 'cdu') {
+          return { ...bar, pct: displayCduPctAt08 }
+        }
+        if (drainedPointsAt08 > 0 && recipientKeys.has(bar.key) && recipientTotal > 0) {
+          const share = bar.pct / recipientTotal
+          return { ...bar, pct: bar.pct + drainedPointsAt08 * share }
+        }
+        return { ...bar }
+      })
+
+      // 2. Define target percentages at progress = 1.0 (Proportional redistribution + 4% boost to others)
+      const targetAfd = 0.0
+
+      const originalSpdPct = bars.find((b) => b.key === 'spd')?.pct ?? 0
+      const originalGreensPct = bars.find((b) => b.key === 'greens')?.pct ?? 0
+      const originalLeftPct = bars.find((b) => b.key === 'left')?.pct ?? 0
+      const originalOthersPct = bars.find((b) => b.key === 'others')?.pct ?? 0
+
+      // Base percentages (before distributing the remaining AfD votes)
+      const baseMap: Record<string, number> = {
+        cdu: originalCduPct,
+        spd: originalSpdPct,
+        greens: originalGreensPct,
+        left: originalLeftPct,
+        others: originalOthersPct + 4.0, // Give a few percent boost to others
+      }
+
+      const baseSum = Object.values(baseMap).reduce((sum, val) => sum + val, 0)
+      const targetSumValue = bars.reduce((sum, b) => sum + b.pct, 0)
+      const votesToRedistribute = Math.max(0, targetSumValue - baseSum)
+
+      // First distribute AfD votes proportionally to all parties based on their current strength
+      const tempMap: Record<string, number> = {
+        afd: targetAfd,
+      }
+      for (const [key, basePct] of Object.entries(baseMap)) {
+        tempMap[key] = basePct + (votesToRedistribute * (basePct / baseSum))
+      }
+
+      // Then drain 40% of CDU's votes and redistribute them specifically to SPD, Greens, and Left
+      const targetMap: Record<string, number> = { ...tempMap }
+      const drainedCdu = tempMap.cdu * 0.4
+      const leftistSum = tempMap.spd + tempMap.greens + tempMap.left
+
+      if (leftistSum > 0) {
+        targetMap.cdu = tempMap.cdu * 0.6
+        targetMap.spd = tempMap.spd + (drainedCdu * (tempMap.spd / leftistSum))
+        targetMap.greens = tempMap.greens + (drainedCdu * (tempMap.greens / leftistSum))
+        targetMap.left = tempMap.left + (drainedCdu * (tempMap.left / leftistSum))
+      }
+
+      // 3. Interpolate between p1Bars and targetMap
+      const p2 = (progress - 0.8) / 0.2 // goes from 0.0 to 1.0
+      displayBarsRaw = p1Bars.map((bar) => {
+        const startVal = bar.pct
+        const endVal = targetMap[bar.key] ?? bar.pct
+        return {
+          ...bar,
+          pct: startVal + (endVal - startVal) * p2,
+        }
+      })
     }
   }
 
-  // Redistribute drained points to SPD, Grüne, Linke, Sonstige
-  const drainedPoints = (originalAfdPct - displayAfdPct) + (originalCduPct - displayCduPct)
-  const recipientKeys = new Set(['spd', 'greens', 'left', 'others'])
-  const recipientTotal = bars
-    .filter((bar) => recipientKeys.has(bar.key))
-    .reduce((sum, bar) => sum + bar.pct, 0)
-
-  const displayBarsRaw = bars.map((bar) => {
-    if (bar.isAfd) {
-      return { ...bar, pct: displayAfdPct }
-    }
-    if (bar.key === 'cdu') {
-      return { ...bar, pct: displayCduPct }
-    }
-    if (drainedPoints > 0 && recipientKeys.has(bar.key) && recipientTotal > 0) {
-      const share = bar.pct / recipientTotal
-      return { ...bar, pct: bar.pct + drainedPoints * share }
-    }
-    return { ...bar }
-  })
+  const displayAfdPct = displayBarsRaw.find((b) => b.isAfd)?.pct ?? originalAfdPct
+  const cduBrownFactor = isDreamActive ? Math.min(Math.max((5.0 - displayAfdPct) / 5.0, 0), 1) : 0
 
   // Round values to 1 decimal place
-  const displayBars = displayBarsRaw.map((bar) => {
+  const displayBarsAll = displayBarsRaw.map((bar) => {
     return { ...bar, pct: Math.round(bar.pct * 10) / 10 }
   })
 
-  // Adjust for rounding errors to ensure the sum of displayBars matches targetSum exactly
-  const currentSum = Math.round(displayBars.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
+  // Adjust for rounding errors to ensure the sum of displayBarsAll matches targetSum exactly
+  const currentSum = Math.round(displayBarsAll.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
   const targetSum = Math.round(bars.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
   const diff = Math.round((targetSum - currentSum) * 10) / 10
 
   if (diff !== 0) {
-    const othersBar = displayBars.find((b) => b.key === 'others')
+    const othersBar = displayBarsAll.find((b) => b.key === 'others')
     if (othersBar) {
       othersBar.pct = Math.round((othersBar.pct + diff) * 10) / 10
     }
   }
+
+  // Filter out AfD if its percentage is 0 (at the end of dream state)
+  const displayBars = displayBarsAll.filter((bar) => !(bar.isAfd && bar.pct <= 0))
 
   const maxPct = Math.max(...displayBars.map((bar) => bar.pct), 1)
 
@@ -233,16 +309,29 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
             const pctLabel = Number.isInteger(bar.pct) ? String(bar.pct) : bar.pct.toFixed(1)
 
             return (
-              <div key={index} className="flex w-1/6 flex-col items-center">
+              <div key={index} className="flex flex-col items-center transition-all duration-500" style={{ width: `${100 / displayBars.length}%` }}>
                 <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-white' : 'text-neutral-400'}`}>{pctLabel} %</span>
                 <button
                   onClick={bar.isAfd ? () => onCycleSandboxState() : undefined}
-                  className={`w-full rounded-t-md transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
+                  className={`relative w-full rounded-t-md overflow-hidden transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
                   style={{ height: `${heightPx}px` }}
                   aria-label={bar.isAfd ? (sandboxState === 'default' ? t.demoSwitch : sandboxState === 'brown' ? t.demoDreamSwitch : t.demoReset) : label}
                   disabled={!bar.isAfd}
                   type="button"
-                />
+                >
+                  {bar.key === 'cdu' && isDreamActive && (
+                    <>
+                      <div
+                        className="absolute inset-0 bg-[linear-gradient(to_top,#140b02,#2a180a)] pointer-events-none"
+                        style={{ opacity: cduBrownFactor }}
+                      />
+                      <div
+                        className="absolute top-0 left-0 right-0 h-[2px] bg-amber-900/50 pointer-events-none"
+                        style={{ opacity: cduBrownFactor }}
+                      />
+                    </>
+                  )}
+                </button>
                 <span className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs ${bar.isAfd ? (isAfdBrown ? 'font-black text-amber-500' : 'font-black text-cyan-400') : 'text-neutral-500'}`}>
                   {label}
                 </span>
