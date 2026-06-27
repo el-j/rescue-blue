@@ -1,6 +1,37 @@
 [
   {
     "title": {
+      "de": "Hans-Georg Maaßen: Ex-Verfassungsschutzchef attackiert Behörde bei AfD-Kongress",
+      "en": "Hans-Georg Maaßen: Former head of the Office for the Protection of the Constitution attacks authorities at the AfD congress",
+      "fr": "Hans-Georg Maaßen : l'ancien chef du Bureau pour la protection de la Constitution attaque les autorités lors du congrès de l'AfD",
+      "es": "Hans-Georg Maaßen: el ex jefe de la Oficina para la Protección de la Constitución ataca a las autoridades en el congreso de AfD",
+      "tr": "Hans-Georg Maaßen: Anayasayı Koruma Dairesi'nin eski başkanı AfD kongresinde yetkililere saldırdı",
+      "uk": "Ганс-Георг Маасен: колишній голова Управління захисту конституції атакує владу на конгресі AfD",
+      "pl": "Hans-Georg Maaßen: Były szef Urzędu Ochrony Konstytucji atakuje władze na kongresie AfD",
+      "it": "Hans-Georg Maaßen: L'ex capo dell'Ufficio per la tutela della Costituzione attacca le autorità al congresso dell'AfD",
+      "ru": "Ханс-Георг Маассен: бывший глава Управления по защите конституции нападает на власти на съезде АдГ"
+    },
+    "date": "2026-06-27",
+    "excerpt": {
+      "de": "»Ein Gruß an die Spitzel, Quellen und Agenten«: Hans Georg Maaßen war einst Chef des Inlandsgeheimdiensts und CDU-Mitglied. Heute spricht er bei AfD-Veranstaltungen – und droht ...",
+      "en": "“A greeting to the informants, sources and agents”: Hans Georg Maaßen was once head of the domestic secret service and a CDU member. Today he speaks at AfD events – and threatens...",
+      "fr": "« Salut aux informateurs, sources et agents » : Hans Georg Maaßen était autrefois chef des services secrets nationaux et membre de la CDU. Aujourd'hui, il s'exprime lors d'événements de l'AfD – et menace...",
+      "es": "“Un saludo a los informantes, fuentes y agentes”: Hans Georg Maaßen fue jefe del servicio secreto nacional y miembro de la CDU. Hoy habla en eventos de AfD y amenaza...",
+      "tr": "“Muhabirlere, kaynaklara ve ajanlara selamlar”: Hans Georg Maaßen bir zamanlar iç gizli servisin başkanı ve CDU üyesiydi. Bugün AfD etkinliklerinde konuşuyor ve tehdit ediyor...",
+      "uk": "«Вітання інформаторам, джерелам та агентам»: Ганс Георг Маасен колись був головою внутрішньої секретної служби та членом ХДС. Сьогодні він виступає на заходах AfD – і погрожує...",
+      "pl": "„Pozdrowienia dla informatorów, źródeł i agentów”: Hans Georg Maaßen był kiedyś szefem krajowych tajnych służb i członkiem CDU. Dziś przemawia na wydarzeniach AfD – i grozi…",
+      "it": "“Un saluto agli informatori, alle fonti e agli agenti”: Hans Georg Maaßen un tempo era capo dei servizi segreti interni e membro della CDU. Oggi parla agli eventi dell’AfD – e minaccia...",
+      "ru": "«Привет информаторам, источникам и агентам»: Ханс Георг Маассен когда-то был главой внутренней секретной службы и членом ХДС. Сегодня он выступает на мероприятиях АдГ – и угрожает..."
+    },
+    "sources": [
+      {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/hans-georg-maassen-ex-verfassungsschutzchef-attackiert-behoerde-bei-afd-kongress-a-0a07f223-acc1-470d-9c3c-d7e828f700cf#ref=rss"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Martin Reichardt: Hitlergruß in der AfD-Fraktion laut Stephan Brandner nicht geduldet",
       "en": "Martin Reichardt: According to Stephan Brandner, Hitler salutes are not tolerated in the AfD parliamentary group",
       "fr": "Martin Reichardt : selon Stephan Brandner, les saluts hitlériens ne sont pas tolérés au sein du groupe parlementaire de l'AfD",
