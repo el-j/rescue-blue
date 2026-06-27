@@ -67,6 +67,37 @@
   },
   {
     "title": {
+      "de": "Interview: Wie der Projektleiter das AfD-Gutachten bewertet",
+      "en": "Interview: How the project manager evaluates the AfD report",
+      "fr": "Interview : Comment le chef de projet évalue le rapport de l'AfD",
+      "es": "Entrevista: Cómo evalúa el director del proyecto el informe de AfD",
+      "tr": "Röportaj: Proje yöneticisi AfD raporunu nasıl değerlendiriyor?",
+      "uk": "Інтерв'ю: як керівник проекту оцінює звіт AfD",
+      "pl": "Wywiad: Jak kierownik projektu ocenia raport AfD",
+      "it": "Intervista: come il project manager valuta il rapporto AfD",
+      "ru": "Интервью: Как руководитель проекта оценивает отчет АдГ"
+    },
+    "date": "2026-06-27",
+    "excerpt": {
+      "de": "Die AfD ist verfassungswidrig und ein Verbotsverfahren wäre \"wahrscheinlich erfolgreich\" - zu diesem Ergebnis kommt ein Gutachten der Gesellschaft für Freiheitsrechte. Projektle...",
+      "en": "The AfD is unconstitutional and a ban procedure would \"probably be successful\" - this is the conclusion of a report by the Society for Civil Rights. Project management...",
+      "fr": "L'AfD est inconstitutionnelle et une procédure d'interdiction serait \"probablement couronnée de succès\" - telle est la conclusion d'un rapport de la Société des droits civiques. Gestion de projet...",
+      "es": "La AfD es inconstitucional y un procedimiento de prohibición \"probablemente tendría éxito\": esta es la conclusión de un informe de la Sociedad de Derechos Civiles. Gestión de proyectos...",
+      "tr": "AfD anayasaya aykırıdır ve bir yasaklama prosedürü \"muhtemelen başarılı olacaktır\"; Sivil Haklar Derneği tarafından hazırlanan bir raporun sonucu bu. Proje yönetimi...",
+      "uk": "AfD є неконституційною, і процедура заборони \"ймовірно буде успішною\" - такий висновок звіту Товариства громадянських прав. Управління проектами...",
+      "pl": "AfD jest niezgodna z konstytucją i procedura zakazu „prawdopodobnie zakończyłaby się sukcesem” – takie wnioski płyną z raportu Towarzystwa Praw Obywatelskich. Zarządzanie projektami...",
+      "it": "L'AfD è incostituzionale e una procedura di divieto \"probabilmente avrebbe successo\": questa è la conclusione di un rapporto della Società per i diritti civili. Gestione del progetto...",
+      "ru": "АдГ неконституционна, и процедура запрета «вероятно будет успешной» - такой вывод содержится в отчете Общества за гражданские права. Управление проектом..."
+    },
+    "sources": [
+      {
+        "name": "Tagesschau",
+        "url": "https://www.tagesschau.de/inland/afd-verbot-gff-100.html"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Martin Reichardt: Hitlergruß in der AfD-Fraktion laut Stephan Brandner nicht geduldet",
       "en": "Martin Reichardt: According to Stephan Brandner, Hitler salutes are not tolerated in the AfD parliamentary group",
       "fr": "Martin Reichardt : selon Stephan Brandner, les saluts hitlériens ne sont pas tolérés au sein du groupe parlementaire de l'AfD",
