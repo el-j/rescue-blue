@@ -32,6 +32,37 @@
   },
   {
     "title": {
+      "de": "Historiker über mögliches AfD-Verbot: „Unsere Generation ist kleinmütig“",
+      "en": "Historian on possible AfD ban: “Our generation is faint-hearted”",
+      "fr": "Historien sur une éventuelle interdiction de l’AfD : « Notre génération est timide »",
+      "es": "Historiador sobre la posible prohibición de AfD: “Nuestra generación es pusilánime”",
+      "tr": "Tarihçi olası AfD yasağı hakkında: “Bizim neslimiz korkak”",
+      "uk": "Історик про можливу заборону AfD: «Наше покоління малодухе»",
+      "pl": "Historyk o możliwym zakazie AfD: „Nasze pokolenie jest bojaźliwe”",
+      "it": "Storico sul possibile divieto dell’AfD: “La nostra generazione è debole di cuore”",
+      "ru": "Историк о возможном запрете АдГ: «Наше поколение малодушно»"
+    },
+    "date": "2026-06-27",
+    "excerpt": {
+      "de": "Der Historiker Martin Sabrow warnt davor, die AfD zu verbieten. Und betont, dass die Weimarer Republik nicht an mangelnder Wehrhaftigkeit scheiterte. mehr...",
+      "en": "The historian Martin Sabrow warns against banning the AfD. And emphasizes that the Weimar Republic did not fail due to a lack of defense. more...",
+      "fr": "L'historien Martin Sabrow met en garde contre l'interdiction de l'AfD. Et souligne que la République de Weimar n’a pas échoué faute de défense. plus...",
+      "es": "El historiador Martin Sabrow advierte contra la prohibición del AfD. Y subraya que la República de Weimar no fracasó por falta de defensa. más...",
+      "tr": "Tarihçi Martin Sabrow, AfD'nin yasaklanmasına karşı uyarıda bulunuyor. Ve Weimar Cumhuriyeti'nin savunma eksikliği nedeniyle başarısızlığa uğramadığını vurguluyor. Daha...",
+      "uk": "Історик Мартін Саброу застерігає від заборони AfD. І підкреслює, що Веймарська республіка не зазнала краху через відсутність оборони. більше...",
+      "pl": "Historyk Martin Sabrow ostrzega przed delegalizacją AfD. I podkreśla, że ​​Republika Weimarska nie poniosła porażki z powodu braku obrony. więcej...",
+      "it": "Lo storico Martin Sabrow mette in guardia dal mettere al bando l’AfD. E sottolinea che la Repubblica di Weimar non ha fallito per mancanza di difesa. Di più...",
+      "ru": "Историк Мартин Саброу предостерегает от запрета АдГ. И подчеркивает, что Веймарская республика потерпела неудачу не из-за отсутствия обороны. более..."
+    },
+    "sources": [
+      {
+        "name": "Taz",
+        "url": "https://taz.de/Historiker-ueber-moegliches-AfD-Verbot/!6191004/"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Martin Reichardt: Hitlergruß in der AfD-Fraktion laut Stephan Brandner nicht geduldet",
       "en": "Martin Reichardt: According to Stephan Brandner, Hitler salutes are not tolerated in the AfD parliamentary group",
       "fr": "Martin Reichardt : selon Stephan Brandner, les saluts hitlériens ne sont pas tolérés au sein du groupe parlementaire de l'AfD",
