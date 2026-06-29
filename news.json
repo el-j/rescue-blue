@@ -1,6 +1,37 @@
 [
   {
     "title": {
+      "de": "Verfassungsschutz: Folgen einer möglichen AfD-Landesregierung",
+      "en": "Protection of the Constitution: Consequences of a possible AfD state government",
+      "fr": "Protection de la Constitution : conséquences d’un éventuel gouvernement de l’AfD",
+      "es": "Protección de la Constitución: consecuencias de un posible gobierno estatal de AfD",
+      "tr": "Anayasanın Korunması: Olası bir AfD eyalet hükümetinin sonuçları",
+      "uk": "Захист конституції: наслідки можливого створення штату AfD",
+      "pl": "Ochrona Konstytucji: Konsekwencje ewentualnego rządu AfD",
+      "it": "Tutela della Costituzione: conseguenze di un possibile governo statale dell'AfD",
+      "ru": "Защита Конституции: последствия возможного правительства штата АдГ"
+    },
+    "date": "2026-06-29",
+    "excerpt": {
+      "de": "Angenommen, die AfD kommt in Sachsen-Anhalt an die Macht: Welche Auswirkungen hätte das auf den Verfassungsschutz und für andere Länder? Schließlich ist der Informationsaustausc...",
+      "en": "Assuming the AfD comes to power in Saxony-Anhalt: What impact would that have on the Office for the Protection of the Constitution and on other countries? After all, the exchange of information...",
+      "fr": "En supposant que l’AfD arrive au pouvoir en Saxe-Anhalt : quel impact cela aurait-il sur l’Office de protection de la Constitution et sur d’autres pays ? Après tout, l'échange d'informations...",
+      "es": "Suponiendo que el AfD llegue al poder en Sajonia-Anhalt: ¿qué impacto tendría eso en la Oficina para la Protección de la Constitución y en otros países? Después de todo, el intercambio de información...",
+      "tr": "AfD'nin Saksonya-Anhalt'ta iktidara geleceğini varsayarsak: Bunun Anayasayı Koruma Dairesi ve diğer ülkeler üzerinde nasıl bir etkisi olur? Sonuçta bilgi alışverişi...",
+      "uk": "Припустимо, що AfD прийде до влади в Саксонії-Анхальт: який вплив це матиме на Управління захисту конституції та на інші країни? Адже обмін інформацією...",
+      "pl": "Zakładając, że AfD dojdzie do władzy w Saksonii-Anhalt: jaki wpływ będzie to miało na Urząd Ochrony Konstytucji i inne kraje? Przecież wymiana informacji...",
+      "it": "Se l'AfD dovesse andare al potere in Sassonia-Anhalt: che conseguenze avrebbe sull'Ufficio per la tutela della Costituzione e sugli altri Paesi? Dopotutto, lo scambio di informazioni...",
+      "ru": "Если предположить, что АдГ придет к власти в Саксонии-Анхальт: какое влияние это окажет на Управление по защите конституции и на другие страны? Ведь обмен информацией..."
+    },
+    "sources": [
+      {
+        "name": "Tagesschau",
+        "url": "https://www.tagesschau.de/inland/innenpolitik/verfassungsschutz-afd-rechtsextremismus-100.html"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Hans-Georg Maaßen: Ex-Verfassungsschutzchef attackiert Behörde bei AfD-Kongress",
       "en": "Hans-Georg Maaßen: Former head of the Office for the Protection of the Constitution attacks authorities at the AfD congress",
       "fr": "Hans-Georg Maaßen : l'ancien chef du Bureau pour la protection de la Constitution attaque les autorités lors du congrès de l'AfD",
