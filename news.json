@@ -32,6 +32,37 @@
   },
   {
     "title": {
+      "de": "Demokratie: Die AfD verbieten? Über welche Punkte jetzt diskutiert wird",
+      "en": "Democracy: Ban the AfD? Which points are now being discussed?",
+      "fr": "Démocratie : interdire l’AfD ? Quels sont les points actuellement discutés ?",
+      "es": "Democracia: ¿prohibir el AfD? ¿Qué puntos se están discutiendo ahora?",
+      "tr": "Demokrasi: AfD yasaklansın mı? Şu anda hangi konular tartışılıyor?",
+      "uk": "Демократія: заборонити AfD? Які моменти зараз обговорюються?",
+      "pl": "Demokracja: zakazać AfD? Które punkty są obecnie omawiane?",
+      "it": "Democrazia: vietare l’AfD? Quali sono i punti in discussione adesso?",
+      "ru": "Демократия: запретить АдГ? Какие моменты сейчас обсуждаются?"
+    },
+    "date": "2026-06-29",
+    "excerpt": {
+      "de": "In die Debatte um ein AfD-Verbotsverfahren kommt mit neuen Argumenten wieder Bewegung. Die wichtigsten Fragen und Antworten.",
+      "en": "The debate about an AfD ban is gaining momentum again with new arguments. The most important questions and answers.",
+      "fr": "Le débat sur une interdiction de l’AfD reprend de l’ampleur avec de nouveaux arguments. Les questions et réponses les plus importantes.",
+      "es": "El debate sobre la prohibición del AfD vuelve a cobrar fuerza con nuevos argumentos. Las preguntas y respuestas más importantes.",
+      "tr": "AfD yasağı tartışması yeni argümanlarla yeniden ivme kazanıyor. En önemli sorular ve cevaplar.",
+      "uk": "Дебати щодо заборони AfD знову набирають обертів із новими аргументами. Найважливіші запитання та відповіді.",
+      "pl": "Debata na temat zakazu AfD nabiera tempa wraz z nowymi argumentami. Najważniejsze pytania i odpowiedzi.",
+      "it": "Il dibattito su un divieto dell’AfD riprende slancio con nuovi argomenti. Le domande e le risposte più importanti.",
+      "ru": "Дебаты о запрете АдГ снова набирают обороты, появляются новые аргументы. Самые важные вопросы и ответы."
+    },
+    "sources": [
+      {
+        "name": "Süddeutsche Zeitung",
+        "url": "https://www.sueddeutsche.de/politik/afd-verbot-neue-argumente-juristen-gesellschaft-fuer-freiheitsrechte-fragen-und-antworten-li.3506628"
+      }
+    ]
+  },
+  {
+    "title": {
       "de": "Hans-Georg Maaßen: Ex-Verfassungsschutzchef attackiert Behörde bei AfD-Kongress",
       "en": "Hans-Georg Maaßen: Former head of the Office for the Protection of the Constitution attacks authorities at the AfD congress",
       "fr": "Hans-Georg Maaßen : l'ancien chef du Bureau pour la protection de la Constitution attaque les autorités lors du congrès de l'AfD",
