@@ -18,6 +18,7 @@ import {
   WhySection,
   FaqSection,
   NewsArchiveSection,
+  PolicyDangersSection,
 } from './components'
 import type { NewsArticle } from './components/HeroSection'
 import {
@@ -181,6 +182,7 @@ export default function App() {
           />
 
           <WhySection t={t} />
+          <PolicyDangersSection lang={lang} />
           <ScientificBackgroundSection
             science={science}
             openObjection={openObjection}
@@ -210,7 +212,7 @@ export default function App() {
 
           <NewsArchiveSection
             lang={lang}
-            news={news}
+            news={news.slice(4)}
           />
         </div>
 

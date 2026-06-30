@@ -57,6 +57,7 @@ export function SiteHeader({ lang, t, theme, onChangeLanguage, onToggleTheme }: 
           </div>
           <div className="flex flex-wrap items-center justify-end gap-2 md:gap-4">
             <a href="#warum" className="hidden text-xs text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:block md:text-sm">{t.navWhy}</a>
+            <a href="#risiken" className="hidden text-xs text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:block md:text-sm">{t.navRisks}</a>
             <a href="#hintergrund" className="hidden text-xs text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:block md:text-sm">{t.navScience}</a>
             <a href="#brief" className="hidden text-xs text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:block md:text-sm">{t.navLetter}</a>
             <a href="#kultur" className="hidden text-xs text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)] md:block md:text-sm">{t.navCulture}</a>

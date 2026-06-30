@@ -35,4 +35,18 @@ export const RELATED_PETITIONS: RelatedPetition[] = [
     descDe: 'Petition an den Deutschen Bundestag und die Bundesregierung zur sofortigen Einleitung eines Parteiverbotsverfahrens.',
     descEn: 'Petition to the German Bundestag and Federal Government to immediately initiate party ban proceedings.',
   },
+  {
+    url: 'https://afd-verbot.de',
+    titleDe: 'ZPS: AfD-Verbot.de',
+    titleEn: 'ZPS: AfD-Verbot.de',
+    descDe: 'Die offizielle Kampagne des Zentrums für Politische Schönheit zur Unterstützung eines Parteiverbotsverfahrens.',
+    descEn: 'The official campaign by the Center for Political Beauty supporting a party ban procedure.',
+  },
+  {
+    url: 'https://innn.it/afdverbot',
+    titleDe: 'innn.it: AfD-Verbot jetzt!',
+    titleEn: 'innn.it: Ban AfD Now!',
+    descDe: 'Zivilgesellschaftliche Petitionskampagne auf innn.it zur Einleitung des Parteiverbotsverfahrens.',
+    descEn: 'Civil society petition campaign on innn.it to initiate the party ban proceedings.',
+  },
 ]

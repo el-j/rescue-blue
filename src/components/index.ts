@@ -11,4 +11,5 @@ export { SiteFooter } from './SiteFooter'
 export { AlsoSupportSection } from './AlsoSupportSection'
 export { FaqSection } from './FaqSection'
 export { NewsArchiveSection } from './NewsArchiveSection'
+export { PolicyDangersSection } from './PolicyDangersSection'
 

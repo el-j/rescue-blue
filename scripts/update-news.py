@@ -355,7 +355,18 @@ def combine_articles(articles):
         if not found:
             combined.append(item)
             
-    return combined
+def make_sources_list(source_name, url):
+    paywall_domains = ["zeit.de", "spiegel.de", "sueddeutsche.de", "welt.de", "faz.net", "focus.de", "tagesspiegel.de", "handelsblatt.com", "nzz.ch"]
+    parsed = urllib.parse.urlparse(url)
+    domain = parsed.netloc.lower()
+    
+    sources = [{"name": source_name, "url": url}]
+    if any(pw in domain for pw in paywall_domains):
+        sources.append({
+            "name": f"{source_name} (Archiv)",
+            "url": f"https://archive.ph/{url}"
+        })
+    return sources
 
 def main():
     output_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
@@ -420,7 +431,7 @@ def main():
             "title": item["title"],
             "date": item["date"],
             "excerpt": item["excerpt"],
-            "sources": [{"name": item["source"], "url": item["url"]}]
+            "sources": make_sources_list(item["source"], item["url"])
         })
 
     # Combine existing (already filtered and seeded) and newly fetched items
