@@ -132,45 +132,34 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
         return { ...bar }
       })
 
-      // 2. Define target percentages at progress = 1.0 (Proportional redistribution + 4% boost to others)
+      // 2. Define target percentages at progress = 1.0 (CDU at 10%, Sonstige boosted by 4%, remainder to leftist parties)
       const targetAfd = 0.0
+      const targetCdu = Math.min(originalCduPct, 10.0)
 
       const originalSpdPct = bars.find((b) => b.key === 'spd')?.pct ?? 0
       const originalGreensPct = bars.find((b) => b.key === 'greens')?.pct ?? 0
       const originalLeftPct = bars.find((b) => b.key === 'left')?.pct ?? 0
       const originalOthersPct = bars.find((b) => b.key === 'others')?.pct ?? 0
+      const targetOthers = originalOthersPct + 4.0
 
-      // Base percentages (before distributing the remaining AfD votes)
-      const baseMap: Record<string, number> = {
-        cdu: originalCduPct,
-        spd: originalSpdPct,
-        greens: originalGreensPct,
-        left: originalLeftPct,
-        others: originalOthersPct + 4.0, // Give a few percent boost to others
-      }
-
-      const baseSum = Object.values(baseMap).reduce((sum, val) => sum + val, 0)
       const targetSumValue = bars.reduce((sum, b) => sum + b.pct, 0)
-      const votesToRedistribute = Math.max(0, targetSumValue - baseSum)
+      const remainder = targetSumValue - (targetAfd + targetCdu + targetOthers)
+      const leftistSum = originalSpdPct + originalGreensPct + originalLeftPct
 
-      // First distribute AfD votes proportionally to all parties based on their current strength
-      const tempMap: Record<string, number> = {
+      const targetMap: Record<string, number> = {
         afd: targetAfd,
+        cdu: targetCdu,
+        others: targetOthers,
       }
-      for (const [key, basePct] of Object.entries(baseMap)) {
-        tempMap[key] = basePct + (votesToRedistribute * (basePct / baseSum))
-      }
-
-      // Then drain 40% of CDU's votes and redistribute them specifically to SPD, Greens, and Left
-      const targetMap: Record<string, number> = { ...tempMap }
-      const drainedCdu = tempMap.cdu * 0.4
-      const leftistSum = tempMap.spd + tempMap.greens + tempMap.left
 
       if (leftistSum > 0) {
-        targetMap.cdu = tempMap.cdu * 0.6
-        targetMap.spd = tempMap.spd + (drainedCdu * (tempMap.spd / leftistSum))
-        targetMap.greens = tempMap.greens + (drainedCdu * (tempMap.greens / leftistSum))
-        targetMap.left = tempMap.left + (drainedCdu * (tempMap.left / leftistSum))
+        targetMap.spd = remainder * (originalSpdPct / leftistSum)
+        targetMap.greens = remainder * (originalGreensPct / leftistSum)
+        targetMap.left = remainder * (originalLeftPct / leftistSum)
+      } else {
+        targetMap.spd = remainder / 3
+        targetMap.greens = remainder / 3
+        targetMap.left = remainder / 3
       }
 
       // 3. Interpolate between p1Bars and targetMap
