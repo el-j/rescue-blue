@@ -119,7 +119,10 @@
     "roleNdrCouncil": "Przewodniczący Rady Nadzorczej NDR",
     "roleZdfCouncil": "Przewodnicząca Rady Telewizyjnej ZDF",
     "heroImgText1": "PETYCJA: PRZEDSTAWIAĆ AfD W MEDIACH W BRĄZIE - CHRONIĆ NIEBIESKI.",
-    "heroImgText2": "PODPISZ TERAZ: CHROŃ NIEBIESKI!"
+    "heroImgText2": "PODPISZ TERAZ: CHROŃ NIEBIESKI!",
+    "dangersTitle": "Ryzyka i konsekwencje skrajnie prawicowej polityki",
+    "dangersSubtitle": "Potwierdzone naukowo i empirycznie: jak wzrost poparcia dla AfD zagraża naszemu społeczeństwu, gospodarce i prawom podstawowym.",
+    "dangersSourceLabel": "Źródło i Pełny tekst"
   },
   "sayings": {
     "sprache": [
@@ -307,5 +310,91 @@
         ]
       }
     ]
+  },
+  "policyDangers": [
+    {
+      "id": "social",
+      "title": "Polityka społeczna",
+      "metric": "Korzyści tylko dla najbogatszych 1%",
+      "description": "Plany gospodarcze i społeczne AfD są zasadniczo sprzeczne z interesami osób o niskich dochodach, emerytów i pracowników.",
+      "points": [
+        "Sprzeciw wobec podniesienia płacy minimalnej do 12 € (co uderza w osoby o niskich dochodach i gospodarkę Niemiec Wschodnich).",
+        "Propozycja zastąpienia Bürgergeld skróconym systemem (maks. 6 miesięcy) z przymusową, nieopłacaną 'pracą obywatelską'.",
+        "Żądanie zniesienia podatków od majątku i spadków, co sprzyja prawie wyłącznie najbogatszemu jednemu procentowi ludności."
+      ],
+      "citation": "Niemiecki Instytut Badań Gospodarczych (DIW Berlin) — Paradoks AfD (2023)",
+      "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
+    },
+    {
+      "id": "economy",
+      "title": "Gospodarka i dobrobyt",
+      "metric": "-5,6% PKB przez plany 'Dexitu'",
+      "description": "Skrajnie prawicowy nacjonalizm gospodarczy i wyjście z UE stanowią ogromne zagrożenie dla dobrobytu i stabilności niemieckiej gospodarki.",
+      "points": [
+        "Obliczenia IW (2024): Wyjście Niemiec z UE ('Dexit') doprowadziłoby do spadku realnego PKB o 5,6% (ok. 690 mld euro) w ciągu 5 lat.",
+        "Brak rąk do pracy: Izolacjonizm i ksenofobiczna retoryka pogłębiają brak wykwalifikowanej siły roboczej, odstraszając zagranicznych specjalistów.",
+        "Budżet państwa: Żądane obniżki podatków (181 mld €) w połączeniu z obietnicami emerytalnymi zagrażają stabilności finansów publicznych."
+      ],
+      "citation": "Niemiecki Instytut Gospodarczy (IW Kolonia) — Konsekwencje wyjścia z UE (2024)",
+      "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
+    },
+    {
+      "id": "press",
+      "title": "Prasa i media",
+      "metric": "Wykluczenia zablokowane przez sąd",
+      "description": "Partie skrajnie prawicowe postrzegają wolne media jako przeciwników i systematycznie próbują ograniczać wolność prasy.",
+      "points": [
+        "Wielokrotne próby wykluczenia niezależnych dziennikarzy z kongresów i wieczorów wyborczych, powstrzymane przez sądy w trybie pilnym.",
+        "Systematyczna kampania przeciwko mediom publicznym ('kłamliwa prasa') mająca na celu demontaż i odcięcie finansowania stacji.",
+        "Porównanie historyczne pokazuje: Autokratyczne reżimy na Węgrzech (holding KESMA) i w Polsce (pod rządami PiS) szybko przejęły media."
+      ],
+      "citation": "Sąd Okręgowy w Erfurcie / Sąd Okręgowy w Monachium I (2024) — Pilne decyzje w sprawie wolności prasy",
+      "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
+    },
+    {
+      "id": "culture",
+      "title": "Sztuka, kultura i szkoła",
+      "metric": "Pozwy przeciwko teatrowi szkolnemu oddalone",
+      "description": "Niezależność kultury, nauki i szkół jest atakowana w celu narzucenia etnocentrycznej, narodowej narracji.",
+      "points": [
+        "Pozwy sądowe przeciwko krytycznym szkolnym przedstawieniom teatralnym upadły, ponieważ są one chronione wolnością artystyczną.",
+        "Żądania w parlamentach regionalnych, by uzależnić dotacje dla kultury od 'deklaracji poparcia dla niemieckiej tożsamości'.",
+        "Tworzenie portali zgłoszeniowych online w celu denuncjowania nauczycieli, którzy krytycznie omawiają skrajny prawicowy radykalizm."
+      ],
+      "citation": "Sąd Administracyjny w Hanowerze (2023) / Federalne Stowarzyszenie Wolnych Sztuk Scenicznych",
+      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+    },
+    {
+      "id": "crime",
+      "title": "Bezpieczeństwo i przemoc",
+      "metric": "Dominują przestępstwa prawicowe",
+      "description": "Oficjalne statystyki Federalnego Urzędu Kryminalnego (BKA) dowodzą, że prawicowa przemoc, przestępczość i posty nienawiści w internecie wyraźnie dominują.",
+      "points": [
+        "Wszystkie przestępstwa (2025): 42 544 przestępstw prawicowych (ok. 50% przypadków) wobec 13 490 przestępstw lewicowych.",
+        "Przemoc (2025): 1 598 prawicowych przestępstw z użyciem przemocy wobec 1 087 lewicowych.",
+        "Posty nienawiści (2025): 4 870 prawicowych przestępstw z nienawiści w sieci wobec 1 460 lewicowych."
+      ],
+      "citation": "Federalny Urząd Kryminalny (BKA) — Przestępczość o charakterze politycznym w 2025 r. (czerwiec 2026)",
+      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    }
+  ],
+  "policyDangersUI": {
+    "viewChart": "Wykres",
+    "viewText": "Szczegóły",
+    "showTextBtn": "Pokaż szczegóły",
+    "showChartBtn": "Pokaż wykres",
+    "rightWingLabel": "Skrajna prawica / Prawica",
+    "leftWingLabel": "Skrajna lewica / Lewica",
+    "diwChartTitle": "Roczna zmiana dochodu netto (Modelowanie DIW)",
+    "gdpChartTitle": "Trend PKB pod rządami prawicowego populizmu (15 lat)",
+    "gdpControlLine": "Grupa kontrolna (Normalny przebieg)",
+    "gdpPopulistLine": "Przebieg gospodarczy pod rządami populizmu",
+    "pressFreedomTitle": "Wskaźnik wolności prasy (ROF)",
+    "courtDismissalTitle": "Wynik ataków politycznych na sztukę i edukację",
+    "courtDismissed": "Odrzucone / Nieudane",
+    "pmkChartTitle": "Przestępczość o charakterze politycznym (BKA 2023)",
+    "pmkCrimes": "Wszystkie przestępstwa",
+    "pmkViolent": "Przestępstwa z użyciem przemocy",
+    "pmkHate": "Posty nienawiści"
   }
 }

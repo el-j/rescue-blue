@@ -182,7 +182,7 @@ export default function App() {
           />
 
           <WhySection t={t} />
-          <PolicyDangersSection lang={lang} />
+          <PolicyDangersSection lang={lang} t={t} />
           <ScientificBackgroundSection
             science={science}
             openObjection={openObjection}

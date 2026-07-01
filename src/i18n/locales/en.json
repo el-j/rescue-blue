@@ -119,7 +119,10 @@
     "roleNdrCouncil": "Chairman of the NDR Broadcasting Council",
     "roleZdfCouncil": "Chairwoman of the ZDF Television Council",
     "heroImgText1": "PETITION: REPRESENT AfD IN BROWN IN MEDIA - PROTECT BLUE.",
-    "heroImgText2": "SIGN NOW: PROTECT BLUE!"
+    "heroImgText2": "SIGN NOW: PROTECT BLUE!",
+    "dangersTitle": "Risks & Consequences of Far-Right Politics",
+    "dangersSubtitle": "Scientifically backed and empirically supported: How a rise of the AfD threatens our society, economy, and fundamental rights.",
+    "dangersSourceLabel": "Source & Full Text"
   },
   "sayings": {
     "sprache": [
@@ -307,5 +310,91 @@
         ]
       }
     ]
+  },
+  "policyDangers": [
+    {
+      "id": "social",
+      "title": "Social & Welfare",
+      "metric": "Benefits only for the richest 1%",
+      "description": "The economic and social policy plans of the AfD run fundamentally counter to the interests of low-income earners, pensioners, and employees.",
+      "points": [
+        "Opposed raising the minimum wage to €12 (which disproportionately benefits low-wage workers and East Germans).",
+        "Proposal to replace standard welfare (Bürgergeld) with a heavily reduced system (max. 6 months) and forced, unpaid 'citizen labor'.",
+        "Demands the abolition of wealth and inheritance taxes, benefiting almost exclusively the richest 1% of the population."
+      ],
+      "citation": "German Institute for Economic Research (DIW Berlin) — The AfD Paradox (2023)",
+      "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
+    },
+    {
+      "id": "economy",
+      "title": "Economy & Prosperity",
+      "metric": "-5.6% GDP through 'Dexit' plans",
+      "description": "Far-right economic nationalism and a withdrawal from the EU pose a massive threat to the prosperity and capability of the German economy.",
+      "points": [
+        "IW Calculation (2024): A German exit from the EU ('Dexit') would lead to a 5.6% drop in real GDP (around €690 billion) within 5 years.",
+        "Demographic Gap: Isolationism and xenophobic rhetoric worsen the critical skilled labor shortage by deterring international specialists.",
+        "State Budget: The demanded tax cuts (€181 billion) combined with extensive pension promises threaten the stability of public finances."
+      ],
+      "citation": "German Economic Institute (IW Cologne) — Consequences of an EU Exit (2024)",
+      "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
+    },
+    {
+      "id": "press",
+      "title": "Press & Broadcasters",
+      "metric": "Exclusions stopped by court ruling",
+      "description": "Far-right parties view free media as opponents and systematically attempt to suppress or restrict critical reporting.",
+      "points": [
+        "Repeated attempts to exclude independent journalists (e.g. from WDR, BR, Spiegel, Welt, taz) from party congresses and election events, which courts had to block via emergency injunctions.",
+        "Systemic campaign against public broadcasting ('lying press' rhetoric) with the goal of breaking up and dry-funding independent networks.",
+        "Historical comparison shows: Autocratic regimes in Hungary (KESMA conglomerate) and Poland (under PiS) rapidly seized media control."
+      ],
+      "citation": "Erfurt District Court / Munich District Court I (2024) — Emergency decisions on press freedom",
+      "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
+    },
+    {
+      "id": "culture",
+      "title": "Art, Culture & Education",
+      "metric": "Lawsuits against school theater dismissed",
+      "description": "The independence of culture, science, and schools is targeted to establish a nationalist, ethnocentric narrative.",
+      "points": [
+        "Lawsuits against critical school theater plays ('Thanks for that, AfD') failed, as they fall under the constitutional protection of artistic freedom.",
+        "Demands in state parliaments to tie cultural funding to a 'commitment to German identity' and blacklist critical theater directors.",
+        "Creation of online denunciation portals ('Neutral School') for reporting teachers who critically discuss right-wing extremism."
+      ],
+      "citation": "Hanover Administrative Court (2023) / Federal Association of Free Performing Arts",
+      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+    },
+    {
+      "id": "crime",
+      "title": "Security & Violence",
+      "metric": "Far-Right offenses dominate",
+      "description": "Official statistics from the Federal Criminal Police Office (BKA) prove that far-right violence, crimes, and online hate postings dominate in both quantity and severity.",
+      "points": [
+        "Total Crimes (2025): 42,544 right-wing motivated offences (approx. 50% of all cases) compared to 13,490 left-wing motivated offences.",
+        "Violent Crimes (2025): 1,598 right-wing violent crimes compared to 1,087 left-wing violent crimes.",
+        "Hate Postings (2025): 4,870 right-wing hate crimes on the internet compared to 1,460 left-wing offenses."
+      ],
+      "citation": "Federal Criminal Police Office (BKA) — Politically Motivated Crime in 2025 (June 2026)",
+      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    }
+  ],
+  "policyDangersUI": {
+    "viewChart": "Graphic",
+    "viewText": "Details",
+    "showTextBtn": "Show Details",
+    "showChartBtn": "Show Graphic",
+    "rightWingLabel": "Far-Right / Right",
+    "leftWingLabel": "Far-Left / Left",
+    "diwChartTitle": "Net Income Change p.a. (DIW Modeling)",
+    "gdpChartTitle": "GDP Trend under Right-Wing Populism (15 Years)",
+    "gdpControlLine": "Control Group (Normal Trend)",
+    "gdpPopulistLine": "Economic Trend under Populism",
+    "pressFreedomTitle": "Press Freedom Index (Reporters Without Borders)",
+    "courtDismissalTitle": "Outcome of Political Attacks on Art & Education",
+    "courtDismissed": "Dismissed / Failed",
+    "pmkChartTitle": "Politically Motivated Crime (BKA 2023)",
+    "pmkCrimes": "Total Offences",
+    "pmkViolent": "Violent Crimes",
+    "pmkHate": "Hate Postings"
   }
 }

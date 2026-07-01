@@ -119,7 +119,10 @@
     "roleNdrCouncil": "Président du conseil de radiodiffusion du NDR",
     "roleZdfCouncil": "Président du conseil de télévision du ZDF",
     "heroImgText1": "PÉTITION : REPRÉSENTER L'AfD EN BRUN DANS LES MÉDIAS - PROTÉGER LE BLEU.",
-    "heroImgText2": "SIGNEZ MAINTENANT : PROTÉGEZ LE BLEU !"
+    "heroImgText2": "SIGNEZ MAINTENANT : PROTÉGEZ LE BLEU !",
+    "dangersTitle": "Risques & Conséquences d'une Politique d'Extrême Droite",
+    "dangersSubtitle": "Scientifiquement prouvé et empiriquement étayé : comment la montée de l'AfD menace notre société, notre économie et nos droits fondamentaux.",
+    "dangersSourceLabel": "Source & Texte complet"
   },
   "sayings": {
     "sprache": [
@@ -307,5 +310,91 @@
         ]
       }
     ]
+  },
+  "policyDangers": [
+    {
+      "id": "social",
+      "title": "Social & Bien-être",
+      "metric": "Bénéfices réservés au 1% le plus riche",
+      "description": "Les plans économiques et sociaux de l'AfD vont fondamentalement à l'encontre des intérêts des bas salaires, des retraités et des salariés.",
+      "points": [
+        "Opposition à la hausse du SMIC à 12 € (ce qui nuit aux bas salaires et à l'économie de l'Allemagne de l'Est).",
+        "Remplacement de l'aide sociale par un système réduit (max. 6 mois) avec l'obligation d'un 'travail citoyen' non rémunéré.",
+        "Demande d'abolition des impôts sur la fortune et les successions, au profit presque exclusif du 1% des plus riches."
+      ],
+      "citation": "Institut allemand de recherche économique (DIW Berlin) — Le paradoxe de l'AfD (2023)",
+      "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
+    },
+    {
+      "id": "economy",
+      "title": "Économie & Prospérité",
+      "metric": "-5,6% de PIB avec le 'Dexit'",
+      "description": "Le nationalisme économique d'extrême droite et une sortie de l'UE menacent massivement la prospérité et les capacités de l'économie allemande.",
+      "points": [
+        "Calcul de l'IW (2024): Une sortie de l'Allemagne de l'UE ('Dexit') entraînerait une baisse de 5,6% du PIB réel (environ 690 milliards d'euros) en 5 ans.",
+        "Pénurie de main-d'œuvre: L'isolationnisme et la rhétorique xénophobe aggravent la pénurie critique en décourageant les spécialistes internationaux.",
+        "Budget de l'État: Les réductions d'impôts exigées (181 milliards d'euros) associées à des promesses de retraite menacent les finances publiques."
+      ],
+      "citation": "Institut économique allemand (IW Cologne) — Conséquences d'une sortie de l'UE (2024)",
+      "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
+    },
+    {
+      "id": "press",
+      "title": "Presse & Médias",
+      "metric": "Exclusions annulées par la justice",
+      "description": "Les partis d'extrême droite perçoivent les médias libres comme des adversaires et tentent systématiquement de restreindre la presse.",
+      "points": [
+        "Tentatives répétées d'exclure les journalistes indépendants (WDR, BR, Spiegel, Welt, taz) des congrès et soirées électorales, annulées par référé.",
+        "Campagne systémique contre l'audiovisuel public ('presse mensongère') visant à démanteler et à tarir le financement des réseaux.",
+        "La comparaison montre : Les régimes autocratiques en Hongrie (conglomérat KESMA) et en Pologne (sous le PiS) ont rapidement pris le contrôle."
+      ],
+      "citation": "Tribunal d'Erfurt / Tribunal de Munich I (2024) — Référés sur la liberté de la presse",
+      "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
+    },
+    {
+      "id": "culture",
+      "title": "Art, Culture & Éducation",
+      "metric": "Plaintes contre le théâtre scolaire rejetées",
+      "description": "L'indépendance de la culture, de la science et des écoles est ciblée pour imposer un récit nationaliste et ethnocentrique.",
+      "points": [
+        "Les poursuites judiciaires contre des pièces de théâtre scolaires critiques ont échoué, car elles sont protégées par la liberté artistique.",
+        "Demandes dans les parlements régionaux de lier le financement culturel à un 'engagement envers l'identité allemande'.",
+        "Création de portails de dénonciation en ligne pour signaler les enseignants qui parlent de manière critique de l'extrême droite."
+      ],
+      "citation": "Tribunal administratif de Hanovre (2023) / Association fédérale du théâtre libre",
+      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+    },
+    {
+      "id": "crime",
+      "title": "Sécurité & Violence",
+      "metric": "Les crimes de droite dominent",
+      "description": "Les statistiques officielles de l'Office fédéral de la police criminelle (BKA) prouvent que la violence, la criminalité et les messages de haine en ligne d'extrême droite dominent largement.",
+      "points": [
+        "Infractions (2025): 42 544 délits de droite (environ 50 % des cas) contre 13 490 délits de gauche.",
+        "Violence (2025): 1 598 actes de violence de droite contre 1 087 actes de violence de gauche.",
+        "Hate Postings (2025): 4 870 messages de haine en ligne de droite contre 1 460 infractions de gauche."
+      ],
+      "citation": "Office fédéral de la police criminelle (BKA) — Criminalité politiquement motivée en 2025 (juin 2026)",
+      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    }
+  ],
+  "policyDangersUI": {
+    "viewChart": "Graphique",
+    "viewText": "Détails",
+    "showTextBtn": "Afficher les détails",
+    "showChartBtn": "Afficher le graphique",
+    "rightWingLabel": "Extrême droite / Droite",
+    "leftWingLabel": "Extrême gauche / Gauche",
+    "diwChartTitle": "Variation du revenu net p.a. (Modèle DIW)",
+    "gdpChartTitle": "Évolution du PIB sous le populisme de droite (15 ans)",
+    "gdpControlLine": "Groupe témoin (Évolution normale)",
+    "gdpPopulistLine": "Évolution économique sous le populisme",
+    "pressFreedomTitle": "Indice de liberté de la presse (RSF)",
+    "courtDismissalTitle": "Issue des attaques politiques sur l'art & l'éducation",
+    "courtDismissed": "Rejeté / Échec",
+    "pmkChartTitle": "Criminalité politiquement motivée (BKA 2023)",
+    "pmkCrimes": "Infractions totales",
+    "pmkViolent": "Actes de violence",
+    "pmkHate": "Hate Postings"
   }
 }

@@ -119,7 +119,10 @@
     "roleNdrCouncil": "NDR Yayın Kurulu Başkanı",
     "roleZdfCouncil": "ZDF Televizyon Kurulu Başkanı",
     "heroImgText1": "KAMPANYA: MEDYADA AfD'Yİ KAHVERENGİ GÖSTERİN - MAVİYİ KORUYUN.",
-    "heroImgText2": "ŞİMDİ İMZALAYIN: MAVİYİ KORUYUN!"
+    "heroImgText2": "ŞİMDİ İMZALAYIN: MAVİYİ KORUYUN!",
+    "dangersTitle": "Aşırı Sağ Siyasetin Riskleri ve Sonuçları",
+    "dangersSubtitle": "Bilimsel olarak kanıtlanmış ve ampirik olarak desteklenmiştir: AfD'nin yükselişinin toplumumuzu, ekonomimizi und temel haklarımızı nasıl tehdit ettiği.",
+    "dangersSourceLabel": "Kaynak & Tam metin"
   },
   "sayings": {
     "sprache": [
@@ -307,5 +310,91 @@
         ]
       }
     ]
+  },
+  "policyDangers": [
+    {
+      "id": "social",
+      "title": "Sosyal & Refah",
+      "metric": "Sadece en zengin %1 için fayda",
+      "description": "AfD'nin ekonomik ve sosyal politika planları, dar gelirlilerin, emeklilerin ve işçilerin gerçek çıkarlarına tamamen aykırıdır.",
+      "points": [
+        "Asgari ücretin 12 €'ya çıkarılmasına karşı çıkıldı (bu durum düşük ücretli işçilere ve Doğu Almanya ekonomisine zarar vermektedir).",
+        "Sosyal yardım sisteminin (Bürgergeld) ağır kesintiler içeren bir sistemle (en fazla 6 ay) ve zorunlu, ücretsiz 'vatandaşlık çalışmasıyla' değiştirilmesi önerisi.",
+        "Neredeyse yalnızca nüfusun en zengin yüzde birinin yararına olacak şekilde varlık ve miras vergilerinin kaldırılmasını talep ediyor."
+      ],
+      "citation": "Alman Ekonomik Araştırma Enstitüsü (DIW Berlin) — AfD Paradoksu (2023)",
+      "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
+    },
+    {
+      "id": "economy",
+      "title": "Ekonomi & Refah",
+      "metric": "'Dexit' planlarıyla -%5,6 GSYİH",
+      "description": "Aşırı sağcı ekonomik milliyetçilik ve AB'den çıkış planları, Alman ekonomisinin refahı ve kapasitesi için büyük bir tehdit oluşturmaktadır.",
+      "points": [
+        "IW Hesaplaması (2024): Almanya'nın AB'den çıkışı ('Dexit') 5 yıl içinde reel GSYİH'de %5,6 (yaklaşık 690 milyar Euro) düşüşe yol açacaktır.",
+        "İş Gücü Açığı: Dışa kapalılık ve yabancı düşmanı söylemler, uluslararası uzmanları caydırarak kalifiye iş gücü açığını daha da derinleştirmektedir.",
+        "Devlet Bütçesi: Talep edilen vergi indirimleri (181 milyar €) ile geniş emeklilik vaatlerinin birleşimi kamu maliyesini tehlikeye atmaktadır."
+      ],
+      "citation": "Alman Ekonomi Enstitüsü (IW Köln) — AB'den Çıkışın Sonuçları (2024)",
+      "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
+    },
+    {
+      "id": "press",
+      "title": "Basın & Yayın",
+      "metric": "Dışlamalar mahkeme kararıyla durduruldu",
+      "description": "Aşırı sağcı partiler özgür medyayı rakip olarak görür ve eleştirel haberleri sistematik olarak engellemeye veya kısıtlamaya çalışır.",
+      "points": [
+        "Bağımsız gazetecilerin (WDR, BR, Spiegel, Welt, taz) kongrelerden ve seçim etkinliklerinden dışlanması yönündeki mükerrer girişimler, mahkemelerce ihtiyati tedbirlerle durduruldu.",
+        "Kamu yayıncılığına karşı, kanalları parçalamayı ve finansmanını kurutmayı amaçlayan sistematik kampanya ('yalancı basın' söylemi).",
+        "Tarihsel karşılaştırma gösteriyor: Macaristan (KESMA tröstü) ve Polonya'daki (PiS dönemi) otokratik rejimler medya kontrolünü hızla ele geçirdi."
+      ],
+      "citation": "Erfurt Bölge Mahkemesi / Münih Bölge Mahkemesi I (2024) — Basın özgürlüğüne ilişkin acil kararlar",
+      "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
+    },
+    {
+      "id": "culture",
+      "title": "Sanat, Kültür & Eğitim",
+      "metric": "Okul tiyatrosuna yönelik davalar reddedildi",
+      "description": "Kültür, bilim ve okulların bağımsızlığı, milliyetçi ve etnosentrik bir anlatı oluşturmak amacıyla hedef alınmaktadır.",
+      "points": [
+        "AfD'yi eleştiren okul tiyatrosu oyunlarına yönelik davalar, oyunların sanat özgürlüğünün anayasal koruması altında olması nedeniyle başarısız oldu.",
+        "Eyalet parlamentolarında, kültürel fonların bir 'Alman kimliğine bağlılığa' bağlanması ve eleştirel tiyatro yönetmenlerinin kara listeye alınması talepleri.",
+        "Aşırı sağcılığı eleştirel bir şekilde tartışan öğretmenleri bildirmek için çevrimiçi ihbar portallarının ('Tarafsız Okul') oluşturulması."
+      ],
+      "citation": "Hannover İdare Mahkemesi (2023) / Özgür Sahne Sanatları Federal Birliği",
+      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+    },
+    {
+      "id": "crime",
+      "title": "Güvenlik & Şiddet",
+      "metric": "Aşırı sağ suçlar açıkça baskın",
+      "description": "Federal Kriminal Dairesi (BKA) resmi istatistikleri, aşırı sağcı şiddet, suçlar ve internetteki nefret söylemlerinin miktar ve ağırlık bakımından baskın olduğunu kanıtlamaktadır.",
+      "points": [
+        "Toplam Suçlar (2025): Sağ kaynaklı 42.544 suç (tüm vakaların yaklaşık %50'si) karşısında sol kaynaklı 13.490 suç.",
+        "Şiddet Eylemleri (2025): Sağ kaynaklı 1.598 şiddet suçu karşısında sol kaynaklı 1.087 şiddet suçu.",
+        "Nefret Gönderileri (2025): Sağ kaynaklı 4.870 internet nefret suçu karşısında sol kaynaklı 1.460 eylem."
+      ],
+      "citation": "Federal Kriminal Dairesi (BKA) — 2025 Yılında Siyasi Güdümlü Suçlar (Haziran 2026)",
+      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    }
+  ],
+  "policyDangersUI": {
+    "viewChart": "Grafik",
+    "viewText": "Detaylar",
+    "showTextBtn": "Detayları Göster",
+    "showChartBtn": "Grafiği Göster",
+    "rightWingLabel": "Aşırı Sağ / Sağ",
+    "leftWingLabel": "Aşırı Sol / Sol",
+    "diwChartTitle": "Yıllık Net Gelir Değişimi (DIW Modellemesi)",
+    "gdpChartTitle": "Aşırı Sağ Popülizm Altında GSYİH Eğilimi (15 Yıl)",
+    "gdpControlLine": "Kontrol Grubu (Normal Eğilim)",
+    "gdpPopulistLine": "Popülizm Altında Ekonomik Eğilim",
+    "pressFreedomTitle": "Basın Özgürlüğü Endeksi (Sınır Tanımayan Gazeteciler)",
+    "courtDismissalTitle": "Sanat ve Eğitime Yönelik Siyasi Saldırıların Sonucu",
+    "courtDismissed": "Reddedildi / Başarısız",
+    "pmkChartTitle": "Siyasi Güdümlü Suçlar (BKA 2023)",
+    "pmkCrimes": "Toplam Suçlar",
+    "pmkViolent": "Şiddet Eylemleri",
+    "pmkHate": "Nefret Gönderileri"
   }
 }

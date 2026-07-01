@@ -119,7 +119,10 @@
     "roleNdrCouncil": "Presidente del Consejo de Radiodifusión de NDR",
     "roleZdfCouncil": "Presidenta del Consejo de Televisión de ZDF",
     "heroImgText1": "PETICIÓN: REPRESENTAR A LA AfD EN MARRÓN EN LOS MEDIOS - PROTEGER EL AZUL.",
-    "heroImgText2": "¡FIRMA AHORA: PROTEGE EL AZUL!"
+    "heroImgText2": "¡FIRMA AHORA: PROTEGE EL AZUL!",
+    "dangersTitle": "Riesgos y Consecuencias de las Políticas de Extrema Derecha",
+    "dangersSubtitle": "Científicamente probado y respaldado empíricamente: Cómo el auge de AfD amenaza nuestra sociedad, economía y derechos fundamentales.",
+    "dangersSourceLabel": "Fuente y Texto completo"
   },
   "sayings": {
     "sprache": [
@@ -307,5 +310,91 @@
         ]
       }
     ]
+  },
+  "policyDangers": [
+    {
+      "id": "social",
+      "title": "Social & Bienestar",
+      "metric": "Beneficios solo para el 1% más rico",
+      "description": "Los planes económicos y sociales de AfD van fundamentalmente en contra de los intereses de los trabajadores de bajos ingresos, jubilados y empleados.",
+      "points": [
+        "Oposición a la subida del salario mínimo a 12 € (lo que perjudica a los salarios bajos y a la economía de Alemania Oriental).",
+        "Propuesta de reemplazar el Bürgergeld por un sistema reducido (máx. 6 meses) y trabajo forzado no remunerado ('trabajo ciudadano').",
+        "Exige la abolición de los impuestos sobre el patrimonio y las sucesiones, beneficiando casi exclusivamente al 1% más rico."
+      ],
+      "citation": "Instituto Alemán de Investigación Económica (DIW Berlín) — La paradoja de AfD (2023)",
+      "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
+    },
+    {
+      "id": "economy",
+      "title": "Economía & Prosperidad",
+      "metric": "-5,6% PIB por planes de 'Dexit'",
+      "description": "El nacionalismo económico de extrema derecha y la salida de la UE plantean una grave amenaza para la prosperidad y la capacidad de la economía alemana.",
+      "points": [
+        "Cálculo del IW (2024): Una salida de Alemania de la UE ('Dexit') provocaría una caída del 5,6% en el PIB real (unos 690.000 millones de euros) en 5 años.",
+        "Brecha demográfica: El aislamiento y la retórica xenófoba empeoran la escasez crítica de mano de obra al disuadir a especialistas internacionales.",
+        "Presupuesto estatal: Los recortes de impuestos exigidos (181.000 millones de euros) combinados con promesas de jubilación amenazan las finanzas."
+      ],
+      "citation": "Instituto Económico Alemán (IW Colonia) — Consecuencias de una salida de la UE (2024)",
+      "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
+    },
+    {
+      "id": "press",
+      "title": "Prensa & Medios",
+      "metric": "Exclusiones anuladas por los tribunales",
+      "description": "Los partidos de extrema derecha consideran a los medios libres como oponentes y tratan sistemáticamente de restringir la prensa.",
+      "points": [
+        "Intentos repetidos de excluir a periodistas independientes de congresos y fiestas electorales, que la justicia detuvo mediante medidas provisionales.",
+        "Campaña sistemática contra la televisión pública ('prensa de mentiras') con el objetivo de desmantelar y asfixiar su financiación.",
+        "La comparación muestra: Regímenes autocráticos en Hungría (grupo KESMA) y Polonia (bajo el PiS) tomaron rápidamente el control."
+      ],
+      "citation": "Tribunal de Erfurt / Tribunal de Múnich I (2024) — Decisiones urgentes sobre libertad de prensa",
+      "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
+    },
+    {
+      "id": "culture",
+      "title": "Arte, Cultura & Educación",
+      "metric": "Demandas contra teatro escolar desestimadas",
+      "description": "La independencia de la cultura, la ciencia y las escuelas es atacada para imponer una narrativa etnocéntrica y nacionalista.",
+      "points": [
+        "Las demandas contra obras de teatro escolares críticas fracasaron, ya que están protegidas constitucionalmente por la libertad artística.",
+        "Exigencias en los parlamentos regionales de condicionar las ayudas a la cultura a un 'compromiso con la conciencia alemana'.",
+        "Creación de portales de denuncia online para delatar a profesores que traten críticamente el extremismo de derecha."
+      ],
+      "citation": "Tribunal Administrativo de Hannover (2023) / Asociación Federal de Artes Escénicas Libres",
+      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+    },
+    {
+      "id": "crime",
+      "title": "Seguridad y Violencia",
+      "metric": "Dominan los delitos de derecha",
+      "description": "Las estadísticas oficiales de la Oficina Federal de Investigación Criminal (BKA) demuestran que la violencia, la delincuencia y los mensajes de odio de extrema derecha dominan ampliamente.",
+      "points": [
+        "Delitos Totales (2025): 42.544 infracciones de derecha (aprox. 50 % de los casos) frente a 13.490 de izquierda.",
+        "Delitos Violentos (2025): 1.598 delitos violentos de derecha frente a 1.087 de izquierda.",
+        "Mensajes de Odio (2025): 4.870 delitos de odio en internet de derecha frente a 1.460 de izquierda."
+      ],
+      "citation": "Oficina Federal de Investigación Criminal (BKA) — Delincuencia de motivación política en 2025 (junio de 2026)",
+      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2024/240521_PMK2023.html"
+    }
+  ],
+  "policyDangersUI": {
+    "viewChart": "Gráfico",
+    "viewText": "Detalles",
+    "showTextBtn": "Mostrar detalles",
+    "showChartBtn": "Mostrar gráfico",
+    "rightWingLabel": "Extrema derecha / Derecha",
+    "leftWingLabel": "Extrema izquierda / Izquierda",
+    "diwChartTitle": "Variación del ingreso neto anual (Modelo DIW)",
+    "gdpChartTitle": "Evolución del PIB bajo el populismo de derecha (15 años)",
+    "gdpControlLine": "Grupo de control (Evolución normal)",
+    "gdpPopulistLine": "Evolución económica bajo el populismo",
+    "pressFreedomTitle": "Índice de libertad de prensa (RSF)",
+    "courtDismissalTitle": "Resultado de ataques políticos al arte y la educación",
+    "courtDismissed": "Desestimado / Fracasado",
+    "pmkChartTitle": "Delincuencia de motivación política (BKA 2023)",
+    "pmkCrimes": "Delitos totales",
+    "pmkViolent": "Delitos violentos",
+    "pmkHate": "Mensajes de Odio"
   }
 }

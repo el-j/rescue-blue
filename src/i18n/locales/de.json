@@ -119,7 +119,10 @@
     "roleNdrCouncil": "Vorsitzender des NDR-Rundfunkrates",
     "roleZdfCouncil": "Vorsitzende des ZDF-Fernsehrates",
     "heroImgText1": "PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.",
-    "heroImgText2": "JETZT UNTERZEICHNEN: BLAU SCHÜTZEN!"
+    "heroImgText2": "JETZT UNTERZEICHNEN: BLAU SCHÜTZEN!",
+    "dangersTitle": "Risiken & Folgen rechtsextremer Politik",
+    "dangersSubtitle": "Wissenschaftlich belegt und empirisch untermauert: Wie ein Erstarken der AfD unsere Gesellschaft, Wirtschaft und Grundrechte bedroht.",
+    "dangersSourceLabel": "Quelle & Volltext"
   },
   "sayings": {
     "sprache": [
@@ -307,5 +310,91 @@
         ]
       }
     ]
+  },
+  "policyDangers": [
+    {
+      "id": "social",
+      "title": "Soziales & Wohlfahrt",
+      "metric": "Vorteile nur für das reichste 1%",
+      "description": "Die wirtschafts- und sozialpolitischen Pläne der AfD laufen den realen Interessen von Geringverdienern, Rentnern und Angestellten fundamental entgegen.",
+      "points": [
+        "Erhöhung des gesetzlichen Mindestlohns auf 12 Euro blockiert und abgelehnt (was überproportional den Niedriglohnsektor und Ostdeutsche trifft).",
+        "Ersatz des Bürgergeldes durch ein extrem verkürztes System (max. 6 Monate) mit Zwang zur unbezahlten 'Bürgerarbeit'.",
+        "Forderung nach Abschaffung der Vermögen- und Erbschaftsteuer, wovon fast ausschließlich das reichste Prozent der Bevölkerung profitiert."
+      ],
+      "citation": "Deutsches Institut für Wirtschaftsforschung (DIW Berlin) — Das AfD-Paradox (2023)",
+      "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
+    },
+    {
+      "id": "economy",
+      "title": "Wirtschaft & Wohlstand",
+      "metric": "-5,6% BIP durch Dexit-Pläne",
+      "description": "Rechtsextremer Wirtschaftsnationalismus und ein EU-Austritt bedrohen den Wohlstand und die Handlungsfähigkeit der deutschen Volkswirtschaft massiv.",
+      "points": [
+        "IW-Berechnung (2024): Ein Austritt Deutschlands aus der EU ('Dexit') würde innerhalb von 5 Jahren zu einem Rückgang des realen BIP um 5,6 % (ca. 690 Mrd. Euro) führen.",
+        "Demografische Lücke: Abschottung und ausländerfeindliche Rhetorik verschärfen den kritischen Fachkräftemangel durch Abschreckung internationaler Spezialisten.",
+        "Staatshaushalt: Die geforderten Steuersenkungen (181 Mrd. €) bei gleichzeitigen Rentenversprechen gefährden die Stabilität der öffentlichen Finanzen."
+      ],
+      "citation": "Institut der deutschen Wirtschaft (IW Köln) — Folgen eines EU-Austritts (2024)",
+      "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
+    },
+    {
+      "id": "press",
+      "title": "Presse & Rundfunk",
+      "metric": "Ausschlüsse per Gerichtsentscheid gestoppt",
+      "description": "Rechtsextreme Parteien betrachten freie Medien als Gegner und versuchen systematisch, kritische Berichterstattung zu unterbinden oder einzuschränken.",
+      "points": [
+        "Mehrfache Versuche, unliebsame Journalisten (u. a. von WDR, BR, Spiegel, Welt, taz) von Parteitagen und Wahlpartys auszuschließen, was Gerichte im Eilverfahren stoppen mussten.",
+        "Systematische Agitation gegen den öffentlich-rechtlichen Rundfunk ('Lügenpresse') mit dem Ziel der Zerschlagung und finanziellen Austrocknung.",
+        "Historischer Vergleich zeigt: Autokratische Regime in Ungarn (KESMA-Konglomerat) und Polen (unter PiS) übernahmen rasch die Medienkontrolle."
+      ],
+      "citation": "Landgericht Erfurt / Landgericht München I (2024) — Eilentscheidungen zur Pressefreiheit",
+      "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
+    },
+    {
+      "id": "culture",
+      "title": "Kunst, Kultur & Schule",
+      "metric": "Klagen gegen Schultheater abgewiesen",
+      "description": "Die Unabhängigkeit von Kultur, Wissenschaft und Schule wird attackiert, um ein ideologisches, völkisch-nationales Narrativ zu etablieren.",
+      "points": [
+        "Gerichtliche Klagen gegen politisch-kritisches Schultheater ('Danke dafür, AfD') scheiterten, da die Darbietungen unter den Schutz der Kunstfreiheit fallen.",
+        "Forderung in Landesparlamenten, staatliche Kulturförderung an ein 'Bekenntnis zur deutschen Identität' zu knüpfen und kritisches Regietheater zu ächten.",
+        "Einrichtung von Online-Meldeportalen ('Neutrale Schule') zur Denunziation von Lehrkräften, die sich im Unterricht kritisch mit Rechtsextremismus befassen."
+      ],
+      "citation": "Verwaltungsgericht Hannover (2023) / Bundesverband Freie Darstellende Künste",
+      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+    },
+    {
+      "id": "crime",
+      "title": "Sicherheit & Gewalt",
+      "metric": "Rechtsextreme Straftaten dominieren",
+      "description": "Offizielle Statistiken des Bundeskriminalamts belegen, dass rechtsextreme Gewalt, Straftaten und internetbasierte Hasskommentare quantitativ und qualitativ dominieren.",
+      "points": [
+        "Straftaten (2025): 42.544 rechts motivierte Delikte (ca. 50 % aller Fälle) gegenüber 13.490 links motivierten Delikten.",
+        "Gewalttaten (2025): 1.598 rechts motivierte Gewaltdelikte gegenüber 1.087 links motivierten Gewaltdelikten.",
+        "Hasskommentare (2025): 4.870 rechtsextreme Hasspostings im Internet gegenüber 1.460 linksextremen Taten."
+      ],
+      "citation": "Bundeskriminalamt (BKA) — Politisch motivierte Kriminalität im Jahr 2025 (Juni 2026)",
+      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    }
+  ],
+  "policyDangersUI": {
+    "viewChart": "Grafik",
+    "viewText": "Textdetails",
+    "showTextBtn": "Details einblenden",
+    "showChartBtn": "Grafik einblenden",
+    "rightWingLabel": "Rechtsextremismus / Rechts",
+    "leftWingLabel": "Linksextremismus / Links",
+    "diwChartTitle": "Netto-Einkommensänderung p.a. (DIW-Modellierung)",
+    "gdpChartTitle": "BIP-Entwicklung unter Rechtspopulismus (15 Jahre)",
+    "gdpControlLine": "Vergleichsgruppe (Normalverlauf)",
+    "gdpPopulistLine": "Wirtschaftsverlauf unter Populismus",
+    "pressFreedomTitle": "Pressefreiheits-Index (Reporter ohne Grenzen)",
+    "courtDismissalTitle": "Ausgang politischer Angriffe auf Kunst & Bildung",
+    "courtDismissed": "Abgewiesen / Gescheitert",
+    "pmkChartTitle": "Politisch Motivierte Kriminalität (BKA 2023)",
+    "pmkCrimes": "Gesamtstraftaten",
+    "pmkViolent": "Gewalttaten",
+    "pmkHate": "Hasskommentare"
   }
 }

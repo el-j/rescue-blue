@@ -52,6 +52,8 @@ export type Letters = LocaleData['openLetters']
 export type Facts = LocaleData['facts']
 export type Faqs = LocaleData['faqs']
 export type ScienceContent = LocaleData['science']
+export type PolicyDangers = LocaleData['policyDangers']
+export type PolicyDangersUI = LocaleData['policyDangersUI']
 export type ContentTab = keyof LocaleData['sayings']
 export type LetterTarget = keyof LocaleData['openLetters']
 
@@ -77,6 +79,14 @@ export function getFacts(lang: Locale): Facts {
 
 export function getScienceContent(lang: Locale): ScienceContent {
   return localeData[lang].science
+}
+
+export function getPolicyDangers(lang: Locale): PolicyDangers {
+  return localeData[lang].policyDangers
+}
+
+export function getPolicyDangersUI(lang: Locale): PolicyDangersUI {
+  return localeData[lang].policyDangersUI
 }
 
 export function getLocaleCode(lang: Locale): string {
