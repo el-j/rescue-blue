@@ -376,6 +376,19 @@
       ],
       "citation": "Federal Kriminal Dairesi (BKA) — 2025 Yılında Siyasi Güdümlü Suçlar (Haziran 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    },
+    {
+      "id": "alliances",
+      "title": "İttifaklar & Ağlar",
+      "metric": "AB Grup Eşbaşkanı: René Aust (AfD)",
+      "description": "AfD, Avrupa düzeyinde aşırı milliyetçilerle iş birliği yapmakta ve Rusya ile Çin gibi otoriter rejimler tarafından finanse edilip araçsallaştırılmaktan şüphelenilmektedir.",
+      "points": [
+        "Egemen Uluslar Avrupası (ESN): Temmuz 2024'te AfD, Polonya'nın Konfederacja'sı ve Macaristan'ın Bizim Vatanımız gibi aşırı sağcı partilerle bu AB grubunu kurdu.",
+        "Rusya Finansmanı: Savcılık, AfD'li politikacılar Petr Bystron ve Maximilian Krah hakkında Rus yanlısı propaganda ağı 'Voice of Europe' ile bağlantılı yolsuzluk ve para aklama soruşturması yürütmektedir.",
+        "Çin Casusluğu: AfD'nin liste başı adayı Maximilian Krah'ın yakın bir çalışanı, Çin istihbarat servisi adına casusluk yaptığı şüphesiyle Nisan 2024'te tutuklandı."
+      ],
+      "citation": "Alman Federal Meclisi / Federal Başsavcılık / Münih Başsavcılığı (2024-2025)",
+      "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
   "policyDangersUI": {
@@ -395,6 +408,9 @@
     "pmkChartTitle": "Siyasi Güdümlü Suçlar (BKA 2023)",
     "pmkCrimes": "Toplam Suçlar",
     "pmkViolent": "Şiddet Eylemleri",
-    "pmkHate": "Nefret Gönderileri"
+    "pmkHate": "Nefret Gönderileri",
+    "nodeESN": "ESN Grubu (AB)",
+    "nodeRussia": "Rusya (Finansman)",
+    "nodeChina": "Çin (Casusluk)"
   }
 }

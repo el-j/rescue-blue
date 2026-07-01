@@ -376,6 +376,19 @@
       ],
       "citation": "Oficina Federal de Investigación Criminal (BKA) — Delincuencia de motivación política en 2025 (junio de 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2024/240521_PMK2023.html"
+    },
+    {
+      "id": "alliances",
+      "title": "Alianzas y Redes",
+      "metric": "Copresidente del grupo de la UE: René Aust (AfD)",
+      "description": "La AfD colabora con nacionalistas extremos a nivel europeo y se sospecha que está financiada e instrumentalizada por regímenes autoritarios como Rusia y China.",
+      "points": [
+        "Europa de las Naciones Soberanas (ESN): En julio de 2024, la AfD fundó este grupo de la UE junto a partidos de extrema derecha como Konfederacja (Polonia) y Nuestra Patria (Hungría).",
+        "Financiación rusa: Los fiscales investigan a los políticos de la AfD Petr Bystron y Maximilian Krah por sospecha de corrupción y lavado de dinero vinculados a la red de propaganda rusa 'Voice of Europe'.",
+        "Espionaje chino: Un asistente cercano del candidato principal de la AfD, Maximilian Krah, fue arrestado en abril de 2024 bajo sospecha de espiar para el servicio secreto chino."
+      ],
+      "citation": "Bundestag alemán / Fiscal General Federal / Fiscalía de Múnich (2024-2025)",
+      "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
   "policyDangersUI": {
@@ -395,6 +408,9 @@
     "pmkChartTitle": "Delincuencia de motivación política (BKA 2023)",
     "pmkCrimes": "Delitos totales",
     "pmkViolent": "Delitos violentos",
-    "pmkHate": "Mensajes de Odio"
+    "pmkHate": "Mensajes de Odio",
+    "nodeESN": "Grupo ESN (UE)",
+    "nodeRussia": "Rusia (Financiación)",
+    "nodeChina": "China (Espionaje)"
   }
 }

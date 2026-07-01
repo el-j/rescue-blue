@@ -376,6 +376,19 @@
       ],
       "citation": "Bundeskriminalamt (BKA) — Politisch motivierte Kriminalität im Jahr 2025 (Juni 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    },
+    {
+      "id": "alliances",
+      "title": "Netzwerke & Allianzen",
+      "metric": "EU-Fraktionsvorsitz: René Aust (AfD)",
+      "description": "Die AfD kooperiert auf europäischer Ebene mit extremen Nationalisten und steht im Verdacht, von autoritären Regimen wie Russland und China finanziert zu werden.",
+      "points": [
+        "Europa der Souveränen Nationen (ESN): Im Juli 2024 gründete die AfD diese Fraktion im Europaparlament u.a. mit der polnischen Konfederacja und der ungarischen Mi Hazánk.",
+        "Russland-Finanzierung: Ermittlungen der Staatsanwaltschaft gegen die AfD-Politiker Petr Bystron und Maximilian Krah wegen Korruption und Geldwäsche im Kontext des pro-russischen Propagandanetzwerks 'Voice of Europe'.",
+        "China-Spionage: Festnahme eines engen Mitarbeiters von Maximilian Krah im April 2024 wegen des dringenden Verdachts der Agententätigkeit für einen chinesischen Geheimdienst."
+      ],
+      "citation": "Bundestag / Generalbundesanwalt / Münchner Staatsanwaltschaft (2024-2025)",
+      "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
   "policyDangersUI": {
@@ -395,6 +408,9 @@
     "pmkChartTitle": "Politisch Motivierte Kriminalität (BKA 2023)",
     "pmkCrimes": "Gesamtstraftaten",
     "pmkViolent": "Gewalttaten",
-    "pmkHate": "Hasskommentare"
+    "pmkHate": "Hasskommentare",
+    "nodeESN": "ESN-Fraktion (EU)",
+    "nodeRussia": "Russland (Finanzierung)",
+    "nodeChina": "China (Spionage)"
   }
 }

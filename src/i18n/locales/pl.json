@@ -376,6 +376,19 @@
       ],
       "citation": "Federalny Urząd Kryminalny (BKA) — Przestępczość o charakterze politycznym w 2025 r. (czerwiec 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+    },
+    {
+      "id": "alliances",
+      "title": "Sojusze i sieci",
+      "metric": "Współprzewodniczący grupy UE: René Aust (AfD)",
+      "description": "AfD współpracuje ze skrajnymi nacjonalistami na poziomie europejskim i jest podejrzewana o finansowanie i instrumentalizację przez autorytarne reżimy, takie jak Rosja i Chiny.",
+      "points": [
+        "Europa Narodów Suwerennych (ESN): W lipcu 2024 r. AfD założyła tę grupę w PE m.in. ze skrajnymi partiami, takimi jak polska Konfederacja i węgierski Ruch Naszej Ojczyzny.",
+        "Rosyjskie finanse: Prokuratura prowadzi śledztwo przeciwko politykom AfD Petrowi Bystronowi i Maximilianowi Krahwi w sprawie korupcji i prania pieniędzy w kontekście prorosyjskiej sieci propagandowej 'Voice of Europe'.",
+        "Szpiegostwo na rzecz Chin: W kwietniu 2024 r. aresztowano bliskiego współpracownika Maximiliana Kraha pod zarzutem szpiegostwa na rzecz chińskich służb specjalnych."
+      ],
+      "citation": "Niemiecki Bundestag / Federalny Prokurator Generalny / Prokuratura w Monachium (2024-2025)",
+      "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
   "policyDangersUI": {
@@ -395,6 +408,9 @@
     "pmkChartTitle": "Przestępczość o charakterze politycznym (BKA 2023)",
     "pmkCrimes": "Wszystkie przestępstwa",
     "pmkViolent": "Przestępstwa z użyciem przemocy",
-    "pmkHate": "Posty nienawiści"
+    "pmkHate": "Posty nienawiści",
+    "nodeESN": "Grupa ESN (UE)",
+    "nodeRussia": "Rosja (Finansowanie)",
+    "nodeChina": "Chiny (Szpiegostwo)"
   }
 }
