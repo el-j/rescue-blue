@@ -317,6 +317,27 @@ def are_similar(item1, item2):
         return True
     return False
 
+def merge_field(existing_val, new_val):
+    """Merge two title or excerpt fields, keeping the dictionary structure and preserving existing translations."""
+    e_dict = existing_val if isinstance(existing_val, dict) else {"de": existing_val or ""}
+    n_dict = new_val if isinstance(new_val, dict) else {"de": new_val or ""}
+    
+    de_e = e_dict.get("de", "")
+    de_n = n_dict.get("de", "")
+    
+    merged = {}
+    for lang in set(e_dict.keys()) | set(n_dict.keys()):
+        val_e = e_dict.get(lang, "")
+        val_n = n_dict.get(lang, "")
+        merged[lang] = val_e if val_e else val_n
+        
+    if len(de_n) > len(de_e):
+        merged["de"] = de_n
+        for lang in list(merged.keys()):
+            if lang != "de":
+                merged[lang] = ""
+    return merged
+
 def combine_articles(articles):
     """Merge similar items into a single entry with multiple sources."""
     combined = []
@@ -338,22 +359,16 @@ def combine_articles(articles):
                 for src in item["sources"]:
                     if src["url"] not in existing_urls:
                         c_item["sources"].append(src)
-                # Keep the longer title and excerpt for detail completeness
-                # Handle title/excerpt as string or dict
-                title_item = item["title"].get("de", "") if isinstance(item["title"], dict) else item["title"]
-                title_c_item = c_item["title"].get("de", "") if isinstance(c_item["title"], dict) else c_item["title"]
-                if len(title_item) > len(title_c_item):
-                    c_item["title"] = item["title"]
-                
-                excerpt_item = item["excerpt"].get("de", "") if isinstance(item["excerpt"], dict) else item["excerpt"]
-                excerpt_c_item = c_item["excerpt"].get("de", "") if isinstance(c_item["excerpt"], dict) else c_item["excerpt"]
-                if len(excerpt_item) > len(excerpt_c_item):
-                    c_item["excerpt"] = item["excerpt"]
+                # Keep the longer title and excerpt for detail completeness, preserving translations
+                c_item["title"] = merge_field(c_item["title"], item["title"])
+                c_item["excerpt"] = merge_field(c_item["excerpt"], item["excerpt"])
                 found = True
                 break
                 
         if not found:
             combined.append(item)
+            
+    return combined
             
 def make_sources_list(source_name, url):
     paywall_domains = ["zeit.de", "spiegel.de", "sueddeutsche.de", "welt.de", "faz.net", "focus.de", "tagesspiegel.de", "handelsblatt.com", "nzz.ch"]
