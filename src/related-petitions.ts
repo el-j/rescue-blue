@@ -49,4 +49,11 @@ export const RELATED_PETITIONS: RelatedPetition[] = [
     descDe: 'Zivilgesellschaftliche Petitionskampagne auf innn.it zur Einleitung des Parteiverbotsverfahrens.',
     descEn: 'Civil society petition campaign on innn.it to initiate the party ban proceedings.',
   },
+  {
+    url: 'https://widersetzen.com/',
+    titleDe: 'Widersetzen.com',
+    titleEn: 'Widersetzen.com',
+    descDe: 'Zivilgesellschaftliches Bündnis für Proteste und gewaltfreien Widerstand gegen rechtsextreme Parteitage.',
+    descEn: 'Civil society alliance organizing protests and non-violent resistance against far-right party congresses.',
+  },
 ]
