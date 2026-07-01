@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { CircleHelp, ExternalLink, Paintbrush, ToggleLeft, ToggleRight } from 'lucide-react'
+import { Paintbrush, ToggleLeft, ToggleRight } from 'lucide-react'
 import type { PollBar } from '../polling'
 import type { Locale, Translation } from '../i18n'
+import { DemoSourceInfo } from './demo/DemoSourceInfo'
+import { DemoComparisonBlock } from './demo/DemoComparisonBlock'
 
 interface DemoProps {
   lang: Locale
@@ -223,54 +225,17 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
         <Paintbrush size={22} className="text-blue-500" /> {t.demoH2}
       </h2>
       <p className="text-sm leading-relaxed text-neutral-400">{t.demoDesc}</p>
-      <div className="mb-6 mt-2 rounded-lg border border-neutral-800 bg-neutral-900/60 px-3 py-2 text-xs text-neutral-400">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="font-semibold text-neutral-200">{t.demoSourceLabel}:</span>
-          {instituteName === 'INSA' && (
-            <button
-              onClick={() => setIsInstituteInfoOpen((current) => !current)}
-              aria-expanded={isInstituteInfoOpen}
-              aria-controls="institute-help-popover"
-              className="inline-flex min-h-8 items-center gap-1 rounded border border-neutral-700 bg-neutral-950 px-2 py-1 text-[10px] font-bold uppercase text-neutral-300 transition-colors hover:border-blue-500/40 hover:text-blue-300"
-              type="button"
-            >
-              <CircleHelp size={11} /> {t.demoSourceWhyInstituteLabel}
-            </button>
-          )}
-          <span>{sourceInfo}</span>
-          <span className="rounded border border-blue-500/20 bg-blue-500/10 px-2 py-0.5 text-[10px] font-bold uppercase text-blue-300">
-            {isLivePollData ? t.demoSourceLive : t.demoSourceFallback}
-          </span>
-        </div>
-        {instituteName === 'INSA' && isInstituteInfoOpen && (
-          <div
-            id="institute-help-popover"
-            className="mt-2 rounded-lg border border-blue-500/20 bg-blue-950/20 px-3 py-2 text-xs leading-relaxed text-neutral-300"
-          >
-            {t.demoSourceWhyInstituteTooltip}
-          </div>
-        )}
-        <div className="mt-2 flex flex-wrap items-center gap-2">
-          <span className="font-semibold text-neutral-200">{t.demoSourceStand}:</span>
-          <span>{standInfo}</span>
-          <a
-            href={sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 rounded border border-neutral-700 bg-neutral-950 px-2 py-1 text-[10px] font-bold tracking-wide text-neutral-300 uppercase transition-colors hover:border-blue-500/40 hover:text-blue-300"
-          >
-            {t.demoSourceButton} <ExternalLink size={12} />
-          </a>
-          <a
-            href={sourceMethodUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 rounded border border-neutral-700 bg-neutral-950 px-2 py-1 text-[10px] font-bold tracking-wide text-neutral-300 uppercase transition-colors hover:border-blue-500/40 hover:text-blue-300"
-          >
-            API <ExternalLink size={12} />
-          </a>
-        </div>
-      </div>
+      <DemoSourceInfo
+        t={t}
+        instituteName={instituteName}
+        isInstituteInfoOpen={isInstituteInfoOpen}
+        setIsInstituteInfoOpen={setIsInstituteInfoOpen}
+        sourceInfo={sourceInfo}
+        isLivePollData={isLivePollData}
+        standInfo={standInfo}
+        sourceUrl={sourceUrl}
+        sourceMethodUrl={sourceMethodUrl}
+      />
 
       {/* Dream scenario banner — visible when dreamstate is active */}
       {isDreamActive && (
@@ -349,55 +314,13 @@ export function InteractiveDemoSection({ lang, t, bars, sourceInfo, isLivePollDa
 
       {/* Comparison bars: AfD vs All Others */}
       {showComparison && (
-        <div className="mb-6 overflow-hidden rounded-xl border border-neutral-800/80 bg-neutral-900 p-5 md:p-8 animate-in">
-          <p className="mb-4 text-center text-xs font-bold tracking-wider text-neutral-400 uppercase">
-            {t.comparisonTitle}
-          </p>
-          <div className="flex items-end justify-center gap-8 sm:gap-16" style={{ height: '280px' }}>
-            {/* AfD bar */}
-            <div className="flex flex-col items-center" style={{ width: '120px' }}>
-              <span className="mb-2 text-lg font-black text-white">{displayAfdPct.toFixed(1)} %</span>
-              <div
-                className={`w-full rounded-t-lg transition-all duration-500 ${isAfdBrown ? 'shadow-lg shadow-amber-950/40' : 'shadow-lg shadow-cyan-500/20'}`}
-                style={{
-                  height: `${Math.round((displayAfdPct / comparisonMax) * 200)}px`,
-                  background: isAfdBrown
-                    ? 'linear-gradient(to top, #78350f, #92400e, #b45309)'
-                    : 'linear-gradient(to top, #06b6d4, #22d3ee)',
-                  borderTop: isAfdBrown ? '3px solid #d97706' : '3px solid #67e8f9',
-                }}
-              />
-              <span className={`mt-3 text-sm font-black ${isAfdBrown ? 'text-amber-500' : 'text-cyan-400'}`}>
-                AfD
-              </span>
-            </div>
-
-            {/* All Others (rainbow) bar */}
-            <div className="flex flex-col items-center" style={{ width: '120px' }}>
-              <span className="mb-2 text-lg font-black text-white">{othersCombinedPct.toFixed(1)} %</span>
-              <div
-                className="w-full rounded-t-lg shadow-lg transition-all duration-500 rainbow-bar"
-                style={{
-                  height: `${Math.round((othersCombinedPct / comparisonMax) * 200)}px`,
-                  borderTop: '3px solid rgba(255,255,255,0.5)',
-                }}
-              />
-              <span className="mt-3 text-sm font-black rainbow-text">
-                {t.allOthersLabel}
-              </span>
-            </div>
-          </div>
-
-          {/* Ratio message */}
-          <div className="mt-6 rounded-lg border border-emerald-500/20 bg-emerald-950/20 px-4 py-3 text-center">
-            <p className="text-sm font-bold text-emerald-300">
-              {(othersCombinedPct / Math.max(displayAfdPct, 0.1)).toFixed(1)}{t.comparisonRatio}
-            </p>
-            <p className="mt-1 text-xs text-emerald-400/70">
-              {t.comparisonMessage}
-            </p>
-          </div>
-        </div>
+        <DemoComparisonBlock
+          t={t}
+          displayAfdPct={displayAfdPct}
+          othersCombinedPct={othersCombinedPct}
+          comparisonMax={comparisonMax}
+          isAfdBrown={isAfdBrown}
+        />
       )}
 
       <div className="flex flex-col items-center justify-between gap-4 rounded-xl border border-neutral-800 bg-neutral-900 p-4 sm:flex-row">

@@ -96,14 +96,17 @@ export function getLocaleCode(lang: Locale): string {
 // --- Browser language detection ---
 
 export function detectLocale(): Locale {
+  if (typeof window === 'undefined') {
+    return 'de'
+  }
   // Check localStorage first
-  const stored = localStorage.getItem('rescue-blue-lang')
+  const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('rescue-blue-lang') : null
   if (stored && SUPPORTED_LOCALES.includes(stored as Locale)) {
     return stored as Locale
   }
 
   // Check browser languages
-  const browserLangs = navigator.languages ?? [navigator.language]
+  const browserLangs = typeof navigator !== 'undefined' ? (navigator.languages ?? [navigator.language]) : []
   for (const browserLang of browserLangs) {
     const langCode = browserLang.split('-')[0].toLowerCase()
     if (SUPPORTED_LOCALES.includes(langCode as Locale)) {
@@ -115,7 +118,9 @@ export function detectLocale(): Locale {
 }
 
 export function persistLocale(lang: Locale): void {
-  localStorage.setItem('rescue-blue-lang', lang)
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('rescue-blue-lang', lang)
+  }
 }
 
 // --- Theme detection ---
@@ -123,7 +128,10 @@ export function persistLocale(lang: Locale): void {
 export type Theme = 'dark' | 'light'
 
 export function detectTheme(): Theme {
-  const stored = localStorage.getItem('rescue-blue-theme')
+  if (typeof window === 'undefined') {
+    return 'dark'
+  }
+  const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('rescue-blue-theme') : null
   if (stored === 'light' || stored === 'dark') {
     return stored
   }
@@ -131,10 +139,15 @@ export function detectTheme(): Theme {
 }
 
 export function persistTheme(theme: Theme): void {
-  localStorage.setItem('rescue-blue-theme', theme)
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('rescue-blue-theme', theme)
+  }
 }
 
 export function applyTheme(theme: Theme): void {
+  if (typeof document === 'undefined') {
+    return
+  }
   if (theme === 'light') {
     document.documentElement.classList.add('light-theme')
   } else {
