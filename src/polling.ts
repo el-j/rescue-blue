@@ -19,7 +19,11 @@ export type PollingSnapshot = {
   surveyedPersons: number | null
   apiUpdatedAt: string | null
   sourceUrl: string
+  nameDe?: string
+  nameEn?: string
 }
+
+export type ParliamentsSnapshot = Record<string, PollingSnapshot>
 
 export const POLLING_REFRESH_MS = 7 * 24 * 60 * 60 * 1000
 export const POLLING_LOCKED_INSTITUTE = 'INSA'

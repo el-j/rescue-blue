@@ -46,7 +46,12 @@ const localeData: Record<Locale, LocaleData> = {
 
 // --- Public API (same shape as before so components don't break) ---
 
-export type Translation = LocaleData['translations']
+export type Translation = LocaleData['translations'] & {
+  mapHeadline?: string
+  mapSub?: string
+  stateLabel?: string
+  nationalLabel?: string
+}
 export type Sayings = LocaleData['sayings']
 export type Letters = LocaleData['openLetters']
 export type Facts = LocaleData['facts']

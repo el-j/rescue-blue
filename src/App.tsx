@@ -54,6 +54,7 @@ export default function App() {
   const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [openObjection, setOpenObjection] = useState<number | null>(null)
+  const [selectedStateId, setSelectedStateId] = useState<string>('0')
 
   const { signatureCount, isLive, isLoading: isLoadingSignatures } = useSignatureCount()
   const { pollingSnapshot, isLive: isLivePollingData } = usePollingSnapshot()
@@ -100,42 +101,46 @@ export default function App() {
   const letters = getOpenLetters(lang)
   const faqs = getFaqs(lang)
   const facts = getFacts(lang)
-  const pollingBars = pollingSnapshot?.bars ?? getDefaultPollingBars()
+  const activeSnapshot = pollingSnapshot?.[selectedStateId] ?? pollingSnapshot?.['0'] ?? null
+  const pollingBars = activeSnapshot?.bars ?? getDefaultPollingBars()
   const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
   const ctaBody = formattedSignatureCount
     ? `${t.ctaBodyPre} ${formattedSignatureCount} ${t.ctaBodyMid}`
     : t.ctaBodyLoading
 
   const pollSourceInfo = useMemo(() => {
-    if (!pollingSnapshot) {
+    if (!activeSnapshot) {
       return `${t.demoSourceApi} · ${t.demoSourceInstitute}: ${POLLING_LOCKED_INSTITUTE}`
     }
 
+    const stateName = lang === 'de' ? activeSnapshot.nameDe : activeSnapshot.nameEn
+    const sourcePrefix = stateName ? `${t.demoSourceApi} (${stateName})` : t.demoSourceApi
+
     const segments = [
-      t.demoSourceApi,
-      `${t.demoSourceInstitute}: ${pollingSnapshot.instituteName}`,
-      `${t.demoSourceDate}: ${formatDisplayDate(pollingSnapshot.surveyDate, lang)}`,
+      sourcePrefix,
+      `${t.demoSourceInstitute}: ${activeSnapshot.instituteName}`,
+      `${t.demoSourceDate}: ${formatDisplayDate(activeSnapshot.surveyDate, lang)}`,
     ]
 
-    if (pollingSnapshot.surveyPeriod?.start && pollingSnapshot.surveyPeriod?.end) {
+    if (activeSnapshot.surveyPeriod?.start && activeSnapshot.surveyPeriod?.end) {
       segments.push(
-        `${t.demoSourceFieldwork}: ${formatDisplayDate(pollingSnapshot.surveyPeriod.start, lang)} - ${formatDisplayDate(pollingSnapshot.surveyPeriod.end, lang)}`,
+        `${t.demoSourceFieldwork}: ${formatDisplayDate(activeSnapshot.surveyPeriod.start, lang)} - ${formatDisplayDate(activeSnapshot.surveyPeriod.end, lang)}`,
       )
     }
 
-    if (pollingSnapshot.surveyedPersons) {
-      segments.push(`${t.demoSourceSample}: n=${Math.round(pollingSnapshot.surveyedPersons)}`)
+    if (activeSnapshot.surveyedPersons) {
+      segments.push(`${t.demoSourceSample}: n=${Math.round(activeSnapshot.surveyedPersons)}`)
     }
 
-    if (pollingSnapshot.methodName) {
-      segments.push(`${t.demoSourceMethod}: ${pollingSnapshot.methodName}`)
+    if (activeSnapshot.methodName) {
+      segments.push(`${t.demoSourceMethod}: ${activeSnapshot.methodName}`)
     }
 
     return segments.join(' · ')
-  }, [lang, pollingSnapshot, t.demoSourceApi, t.demoSourceDate, t.demoSourceFieldwork, t.demoSourceInstitute, t.demoSourceMethod, t.demoSourceSample])
+  }, [lang, activeSnapshot, t.demoSourceApi, t.demoSourceDate, t.demoSourceFieldwork, t.demoSourceInstitute, t.demoSourceMethod, t.demoSourceSample])
 
-  const pollingStandInfo = pollingSnapshot?.apiUpdatedAt
-    ? formatDisplayDateTime(pollingSnapshot.apiUpdatedAt, lang)
+  const pollingStandInfo = activeSnapshot?.apiUpdatedAt
+    ? formatDisplayDateTime(activeSnapshot.apiUpdatedAt, lang)
     : t.demoSourceFallback
 
   return (
@@ -168,7 +173,7 @@ export default function App() {
             sourceInfo={pollSourceInfo}
             isLivePollData={isLivePollingData}
             standInfo={pollingStandInfo}
-            sourceUrl={pollingSnapshot?.sourceUrl ?? 'https://dawum.de/Bundestag/'}
+            sourceUrl={activeSnapshot?.sourceUrl ?? 'https://dawum.de/Bundestag/'}
             sourceMethodUrl={POLLING_API_DOCS_URL}
             sandboxState={sandboxState}
             onCycleSandboxState={() => {
@@ -178,7 +183,10 @@ export default function App() {
                 return 'default'
               })
             }}
-            instituteName={pollingSnapshot?.instituteName ?? POLLING_LOCKED_INSTITUTE}
+            instituteName={activeSnapshot?.instituteName ?? POLLING_LOCKED_INSTITUTE}
+            selectedStateId={selectedStateId}
+            onSelectStateId={setSelectedStateId}
+            pollingSnapshot={pollingSnapshot}
           />
 
           <WhySection t={t} />

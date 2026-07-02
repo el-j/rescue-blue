@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
-import type { PollingSnapshot } from '../polling'
+import type { ParliamentsSnapshot } from '../polling'
 
 interface PollingSnapshotResult {
-  pollingSnapshot: PollingSnapshot | null
+  pollingSnapshot: ParliamentsSnapshot | null
   isLive: boolean
 }
 
 export function usePollingSnapshot(): PollingSnapshotResult {
-  const [pollingSnapshot, setPollingSnapshot] = useState<PollingSnapshot | null>(null)
+  const [pollingSnapshot, setPollingSnapshot] = useState<ParliamentsSnapshot | null>(null)
   const [isLive, setIsLive] = useState(false)
 
   useEffect(() => {
@@ -19,9 +19,13 @@ export function usePollingSnapshot(): PollingSnapshotResult {
           cache: 'no-store',
         })
         if (!response.ok) throw new Error('not ok')
-        const snapshot = (await response.json()) as PollingSnapshot
+        const snapshot = (await response.json()) as any
         if (!isCancelled) {
-          setPollingSnapshot(snapshot)
+          if (snapshot && 'bars' in snapshot) {
+            setPollingSnapshot({ '0': snapshot })
+          } else {
+            setPollingSnapshot(snapshot)
+          }
           setIsLive(true)
         }
       } catch {

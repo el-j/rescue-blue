@@ -25,6 +25,26 @@ DAWUM_API_URL = 'https://api.dawum.de/'
 INSA_INSTITUTE = 'INSA'
 BUNDESTAG_PARLIAMENT_ID = '0'
 
+PARLIAMENTS = {
+    '0': {'nameDe': 'Bundestag (Deutschland)', 'nameEn': 'Bundestag (Germany)', 'slug': 'bundestag'},
+    '1': {'nameDe': 'Baden-Württemberg', 'nameEn': 'Baden-Württemberg', 'slug': 'baden-wuerttemberg'},
+    '2': {'nameDe': 'Bayern', 'nameEn': 'Bavaria', 'slug': 'bayern'},
+    '3': {'nameDe': 'Berlin', 'nameEn': 'Berlin', 'slug': 'berlin'},
+    '4': {'nameDe': 'Brandenburg', 'nameEn': 'Brandenburg', 'slug': 'brandenburg'},
+    '5': {'nameDe': 'Bremen', 'nameEn': 'Bremen', 'slug': 'bremen'},
+    '6': {'nameDe': 'Hamburg', 'nameEn': 'Hamburg', 'slug': 'hamburg'},
+    '7': {'nameDe': 'Hessen', 'nameEn': 'Hesse', 'slug': 'hessen'},
+    '8': {'nameDe': 'Mecklenburg-Vorpommern', 'nameEn': 'Mecklenburg-Vorpommern', 'slug': 'mecklenburg-vorpommern'},
+    '9': {'nameDe': 'Niedersachsen', 'nameEn': 'Lower Saxony', 'slug': 'niedersachsen'},
+    '10': {'nameDe': 'Nordrhein-Westfalen', 'nameEn': 'North Rhine-Westphalia', 'slug': 'nordrhein-westfalen'},
+    '11': {'nameDe': 'Rheinland-Pfalz', 'nameEn': 'Rhineland-Palatinate', 'slug': 'rheinland-pfalz'},
+    '12': {'nameDe': 'Saarland', 'nameEn': 'Saarland', 'slug': 'saarland'},
+    '13': {'nameDe': 'Sachsen', 'nameEn': 'Saxony', 'slug': 'sachsen'},
+    '14': {'nameDe': 'Sachsen-Anhalt', 'nameEn': 'Saxony-Anhalt', 'slug': 'sachsen-anhalt'},
+    '15': {'nameDe': 'Schleswig-Holstein', 'nameEn': 'Schleswig-Holstein', 'slug': 'schleswig-holstein'},
+    '16': {'nameDe': 'Thüringen', 'nameEn': 'Thuringia', 'slug': 'thueringen'}
+}
+
 PARTY_IDS = {'cdu': '1', 'afd': '7', 'spd': '2', 'greens': '4', 'left': '5'}
 
 BASE_BARS = [
@@ -190,76 +210,98 @@ def fetch_polling_snapshot(output_dir):
     methods = data.get('Methods', {})
     database = data.get('Database', {})
 
-    def institute_name(inst_id):
-        inst = institutes.get(str(inst_id), {})
-        return inst.get('Name', '') if isinstance(inst, dict) else ''
+    def extract_party_pct(results, party_key):
+        mapping = {
+            'cdu': ['1', '101', '102'],
+            'afd': ['7'],
+            'spd': ['2'],
+            'greens': ['4'],
+            'left': ['5']
+        }
+        ids = mapping.get(party_key, [])
+        val = 0.0
+        for pid in ids:
+            if pid in results:
+                val += to_float(results[pid])
+        return val
 
-    bundestag_surveys = [
-        s for s in surveys.values()
-        if isinstance(s, dict)
-        and str(s.get('Parliament_ID', '')) == BUNDESTAG_PARLIAMENT_ID
-        and 'Date' in s
-    ]
-    if not bundestag_surveys:
-        raise ValueError('No Bundestag surveys found in dawum.de response')
+    parliament_snapshots = {}
 
-    bundestag_surveys.sort(key=lambda s: str(s.get('Date', '')), reverse=True)
-
-    latest = None
-    pcts = None
-    for survey in bundestag_surveys:
-        results = survey.get('Results', {})
-        try:
-            cand_pcts = {k: to_float(results.get(pid)) for k, pid in PARTY_IDS.items()}
-            if all(v is not None for v in cand_pcts.values()):
-                latest = survey
-                pcts = cand_pcts
-                break
-        except Exception:
+    for parl_id, parl_info in PARLIAMENTS.items():
+        parl_surveys = [
+            s for s in surveys.values()
+            if isinstance(s, dict)
+            and str(s.get('Parliament_ID', '')) == parl_id
+            and 'Date' in s
+        ]
+        if not parl_surveys:
             continue
 
-    if not latest or not pcts:
-        raise ValueError('No Bundestag survey with all required party percentages found')
+        parl_surveys.sort(key=lambda s: str(s.get('Date', '')), reverse=True)
 
-    total = sum(pcts.values())
-    pcts['others'] = max(0.0, round_one(100 - total))
+        latest = None
+        pcts = {}
+        for survey in parl_surveys:
+            results = survey.get('Results', {})
+            if not results:
+                continue
+            has_cdu = any(pid in results for pid in ['1', '101', '102'])
+            has_afd = '7' in results
+            if has_cdu and has_afd:
+                latest = survey
+                pcts = {k: extract_party_pct(results, k) for k in ['cdu', 'afd', 'spd', 'greens', 'left']}
+                break
 
-    bars = [{**b, 'pct': round_one(pcts.get(b['key'], b['pct']))} for b in BASE_BARS]
+        if not latest:
+            continue
 
-    inst_id = str(latest.get('Institute_ID', ''))
-    institute = institutes.get(inst_id, {})
-    inst_name = (
-        institute.get('Name', 'Dawum')
-        if isinstance(institute, dict) and institute.get('Name')
-        else 'Dawum'
-    )
+        total = sum(pcts.values())
+        pcts['others'] = max(0.0, round_one(100 - total))
 
-    method_id = str(latest.get('Method_ID', ''))
-    method = methods.get(method_id, {})
-    method_name = method.get('Name') if isinstance(method, dict) else None
+        bars = []
+        for b in BASE_BARS:
+            bars.append({
+                **b,
+                'pct': round_one(pcts.get(b['key'], b['pct']))
+            })
 
-    sp_raw = latest.get('Survey_Period')
-    survey_period = None
-    if sp_raw and isinstance(sp_raw, dict):
-        survey_period = {
-            'start': str(sp_raw.get('Date_Start', '')),
-            'end': str(sp_raw.get('Date_End', '')),
+        inst_id = str(latest.get('Institute_ID', ''))
+        institute = institutes.get(inst_id, {})
+        inst_name = (
+            institute.get('Name', 'Dawum')
+            if isinstance(institute, dict) and institute.get('Name')
+            else 'Dawum'
+        )
+
+        method_id = str(latest.get('Method_ID', ''))
+        method = methods.get(method_id, {})
+        method_name = method.get('Name') if isinstance(method, dict) else None
+
+        sp_raw = latest.get('Survey_Period')
+        survey_period = None
+        if sp_raw and isinstance(sp_raw, dict):
+            survey_period = {
+                'start': str(sp_raw.get('Date_Start', '')),
+                'end': str(sp_raw.get('Date_End', '')),
+            }
+
+        snapshot = {
+            'bars': bars,
+            'instituteName': inst_name,
+            'surveyDate': str(latest.get('Date', '')),
+            'surveyPeriod': survey_period,
+            'methodName': method_name,
+            'surveyedPersons': to_float(latest.get('Surveyed_Persons')),
+            'apiUpdatedAt': database.get('Last_Update') if isinstance(database, dict) else None,
+            'sourceUrl': f"https://dawum.de/{parl_info['slug'].capitalize()}/" if parl_id != '0' else 'https://dawum.de/Bundestag/',
+            'nameDe': parl_info['nameDe'],
+            'nameEn': parl_info['nameEn']
         }
-
-    snapshot = {
-        'bars': bars,
-        'instituteName': inst_name,
-        'surveyDate': str(latest.get('Date', '')),
-        'surveyPeriod': survey_period,
-        'methodName': method_name,
-        'surveyedPersons': to_float(latest.get('Surveyed_Persons')),
-        'apiUpdatedAt': database.get('Last_Update') if isinstance(database, dict) else None,
-        'sourceUrl': 'https://dawum.de/Bundestag/',
-    }
+        parliament_snapshots[parl_id] = snapshot
 
     out = output_dir / 'polling-snapshot.json'
-    out.write_text(json.dumps(snapshot))
-    print(f"  Polling snapshot: {inst_name} {snapshot['surveyDate']}, AfD {pcts.get('afd')}%")
+    out.write_text(json.dumps(parliament_snapshots, indent=2, ensure_ascii=False))
+    print(f"  Polling snapshot: Wrote {len(parliament_snapshots)} parliaments polling snapshot.")
 
 
 # ---------------------------------------------------------------------------

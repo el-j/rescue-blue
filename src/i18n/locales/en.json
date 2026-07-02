@@ -411,6 +411,10 @@
     "pmkHate": "Hate Postings",
     "nodeESN": "ESN Group (EU)",
     "nodeRussia": "Russia (Funding)",
-    "nodeChina": "China (Espionage)"
+    "nodeChina": "China (Espionage)",
+    "mapHeadline": "State-by-State Polling Map",
+    "mapSub": "Click on a state to view its current parliament polling trend.",
+    "stateLabel": "Federal State",
+    "nationalLabel": "Germany (Bundestag)"
   }
 }

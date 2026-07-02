@@ -411,6 +411,10 @@
     "pmkHate": "Hasskommentare",
     "nodeESN": "ESN-Fraktion (EU)",
     "nodeRussia": "Russland (Finanzierung)",
-    "nodeChina": "China (Spionage)"
+    "nodeChina": "China (Spionage)",
+    "mapHeadline": "Verteilung nach Bundesländern",
+    "mapSub": "Klicke auf ein Bundesland für den aktuellen Landtagstrend.",
+    "stateLabel": "Bundesland",
+    "nationalLabel": "Deutschland (Bundestag)"
   }
 }
