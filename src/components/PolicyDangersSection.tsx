@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { 
   Users, 
   TrendingDown, 
@@ -36,10 +36,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const sourceLabel = t.dangersSourceLabel
   const activeData = data.find((item) => item.id === activeTab) || data[0]
 
-  // Reset view mode to chart whenever active tab changes
-  useEffect(() => {
-    setViewMode('chart')
-  }, [activeTab])
+
 
   // Mapping tab IDs to appropriate Lucide Icons
   const getTabIcon = (id: string, size = 18) => {
@@ -118,7 +115,10 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
               return (
                 <button
                   key={item.id}
-                  onClick={() => setActiveTab(item.id)}
+                  onClick={() => {
+                    setActiveTab(item.id)
+                    setViewMode('chart')
+                  }}
                   className={`flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl transition-all duration-200 shrink-0 text-left cursor-pointer border ${
                     isActive 
                       ? 'bg-red-500/10 border-red-500/20 text-red-400 font-bold shadow-lg shadow-red-950/20' 
