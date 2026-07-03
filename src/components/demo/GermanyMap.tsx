@@ -25,11 +25,11 @@ export function GermanyMap({
     return afdBar ? afdBar.pct : 0
   }
 
-  // Check if AfD is the strongest party (has majority/plurality) in a state snapshot
-  const isAfdStrongest = (stateId: string): boolean => {
-    if (!pollingSnapshot || !pollingSnapshot[stateId]) return false
+  // Get the strongest party (plurality/majority) in a state snapshot
+  const getStrongestParty = (stateId: string): { key: string; pct: number } => {
+    if (!pollingSnapshot || !pollingSnapshot[stateId]) return { key: 'others', pct: 0 }
     const stateData = pollingSnapshot[stateId]
-    if (!stateData.bars || stateData.bars.length === 0) return false
+    if (!stateData.bars || stateData.bars.length === 0) return { key: 'others', pct: 0 }
     
     let maxBar = stateData.bars[0]
     for (const bar of stateData.bars) {
@@ -37,43 +37,65 @@ export function GermanyMap({
         maxBar = bar
       }
     }
-    return maxBar.key === 'afd'
+    return { key: maxBar.key, pct: maxBar.pct }
   }
 
-  // Calculate choropleth color based on sandbox selection and AfD strength
+  // Get RGB color of a party
+  const getPartyColorRgb = (partyKey: string): string => {
+    switch (partyKey) {
+      case 'afd':
+        return '6, 182, 212' // Cyan
+      case 'cdu':
+        return '64, 64, 64' // Slate Grey/Charcoal for CDU
+      case 'spd':
+        return '239, 68, 68' // Red
+      case 'greens':
+        return '34, 197, 94' // Green
+      case 'left':
+        return '236, 72, 153' // Pink/Magenta
+      default:
+        return '115, 115, 115' // Slate Grey for others
+    }
+  }
+
+  // Calculate choropleth color based on sandbox selection and majority party strength
   const getStateColor = (stateId: string, isActive: boolean, afdPct: number) => {
-    // Scale opacity from 0.25 (10% AfD or below) to 1.0 (30% AfD or above)
-    const baseOpacity = Math.max(0.25, Math.min(1.0, (afdPct - 5) / 25))
+    const strongest = getStrongestParty(stateId)
+    const afdMajority = strongest.key === 'afd'
     
-    let colorRgb = '6, 182, 212' // Default: Cyan/Blue
-    const afdMajority = isAfdStrongest(stateId)
+    // Default/Normal state: Color by the current majority party color!
+    let colorRgb = getPartyColorRgb(strongest.key)
+    let startOpacity = Math.max(0.4, Math.min(1.0, strongest.pct / 50))
 
     if (sandboxState === 'brown') {
-      // Only color brown if AfD has the majority/plurality in that state
       if (afdMajority) {
-        colorRgb = '180, 83, 9' // Brown
+        colorRgb = '180, 83, 9' // Brown for AfD majority
+        startOpacity = Math.max(0.4, Math.min(1.0, afdPct / 45))
       } else {
-        colorRgb = '6, 182, 212' // Cyan/Blue
+        colorRgb = getPartyColorRgb(strongest.key) // Keep majority color otherwise
       }
     } else if (sandboxState === 'dream' && dreamProgress !== null) {
-      // Morph colors towards a beautiful progressive Green
-      const startR = afdMajority ? 180 : 6
-      const startG = afdMajority ? 83 : 182
-      const startB = afdMajority ? 9 : 212
+      // Morph towards a beautiful progressive Green
+      let startRgb = getPartyColorRgb(strongest.key)
+      if (afdMajority) {
+        startRgb = '180, 83, 9' // Brown
+      }
 
-      const endR = 34
-      const endG = 197
-      const endB = 94
+      const [startR, startG, startB] = startRgb.split(',').map(Number)
+      const [endR, endG, endB] = [34, 197, 94] // Progressive Green
 
       const r = Math.round(startR + (endR - startR) * dreamProgress)
       const g = Math.round(startG + (endG - startG) * dreamProgress)
       const b = Math.round(startB + (endB - startB) * dreamProgress)
       colorRgb = `${r}, ${g}, ${b}`
+
+      const endOpacity = 0.5
+      startOpacity = startOpacity + (endOpacity - startOpacity) * dreamProgress
     }
 
     return isActive
       ? `rgba(${colorRgb}, 0.95)`
-      : `rgba(${colorRgb}, ${baseOpacity * 0.45})`
+      : `rgba(${colorRgb}, ${startOpacity * 0.45})`
   }
 
   // Handle click on state: toggles selection (deselects if clicked again)
@@ -89,33 +111,50 @@ export function GermanyMap({
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="relative w-full max-w-[280px] aspect-[586/793] bg-neutral-900/30 rounded-2xl border border-neutral-900/80 p-3 shadow-inner flex flex-col justify-between">
+      <div className="relative w-full max-w-[320px] md:max-w-[340px] aspect-[586/793] bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] p-3 shadow-inner flex flex-col justify-between">
         
-        {/* National/Federal selector node at the top of the map */}
-        <button
-          onClick={() => handleSelectState('0')}
-          className={`w-full py-1.5 px-3 rounded-lg text-xs font-bold transition-all border flex items-center justify-between cursor-pointer ${
-            selectedStateId === '0'
-              ? sandboxState === 'brown'
-                ? 'bg-amber-950/40 border-amber-500/50 text-amber-300'
-                : sandboxState === 'dream'
-                ? 'bg-emerald-950/40 border-emerald-500/50 text-emerald-300'
-                : 'bg-cyan-950/40 border-cyan-500/50 text-cyan-300'
-              : 'bg-neutral-950 border-neutral-800 text-neutral-400 hover:text-neutral-200'
-          }`}
-          type="button"
-        >
-          <span>{lang === 'de' ? '🇩🇪 Bund (Deutschland)' : '🇩🇪 Federal (Germany)'}</span>
-          <span className="font-extrabold font-mono text-[10px]">
-            {(() => {
-              const originalPct = getAfdPct('0')
-              const pct = (sandboxState === 'dream' && dreamProgress !== null)
-                ? originalPct * (1 - dreamProgress)
-                : originalPct
-              return pct.toFixed(1)
-            })()} %
-          </span>
-        </button>
+        <div className="w-full">
+          {/* Combined Country/Federal Selector Dropdown */}
+          <select
+            value={selectedStateId}
+            onChange={(e) => handleSelectState(e.target.value)}
+            className={`w-full py-1.5 px-3 rounded-lg text-xs font-bold transition-all border cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500/50 ${
+              selectedStateId === '0'
+                ? sandboxState === 'brown'
+                  ? 'active-btn-brown shadow-sm'
+                  : sandboxState === 'dream'
+                  ? 'active-btn-dream shadow-sm'
+                  : 'active-btn-default shadow-sm'
+                : 'bg-[var(--bg-secondary)] border-[var(--border)] text-[var(--text-primary)]'
+            }`}
+          >
+            <option value="0" className="bg-[var(--bg-card)] text-[var(--text-primary)]">
+              {lang === 'de' ? '🇩🇪 Bund (Deutschland)' : '🇩🇪 Federal (Germany)'}
+              {` — ${(() => {
+                const originalPct = getAfdPct('0')
+                const pct = (sandboxState === 'dream' && dreamProgress !== null)
+                  ? originalPct * (1 - dreamProgress)
+                  : originalPct
+                return pct.toFixed(1)
+              })()}%`}
+            </option>
+            {pollingSnapshot &&
+              Object.entries(pollingSnapshot)
+                .filter(([id]) => id !== '0')
+                .map(([id, snap]) => {
+                  const originalPct = getAfdPct(id)
+                  const pct = (sandboxState === 'dream' && dreamProgress !== null)
+                    ? originalPct * (1 - dreamProgress)
+                    : originalPct
+                  const name = lang === 'de' ? snap.nameDe : snap.nameEn
+                  return (
+                    <option key={id} value={id} className="bg-[var(--bg-card)] text-[var(--text-primary)]">
+                      {name} — {pct.toFixed(1)}%
+                    </option>
+                  )
+                })}
+          </select>
+        </div>
 
         {/* SVG Geographic map of Germany */}
         <svg 
@@ -125,7 +164,7 @@ export function GermanyMap({
         >
           {/* 1. Country Outer Background Silhouette / Drop Shadow effect */}
           <g 
-            stroke="rgba(0, 0, 0, 0.6)" 
+            stroke="var(--border)" 
             strokeWidth="8" 
             fill="none" 
             strokeLinejoin="round" 
@@ -139,7 +178,7 @@ export function GermanyMap({
 
           {/* 2. Country Outer Glow/Outline */}
           <g 
-            stroke="rgba(255, 255, 255, 0.08)" 
+            stroke="var(--border)" 
             strokeWidth="5" 
             fill="none" 
             strokeLinejoin="round" 
@@ -162,14 +201,23 @@ export function GermanyMap({
               
               const color = getStateColor(id, isActive, pct)
               
-              const isAfdMajority = isAfdStrongest(id)
+              const strongest = getStrongestParty(id)
+              const isAfdMajority = strongest.key === 'afd'
               const activeStroke = sandboxState === 'brown' && isAfdMajority
                 ? '#f59e0b'
                 : sandboxState === 'dream'
                 ? '#34d399'
+                : strongest.key === 'spd'
+                ? '#ef4444'
+                : strongest.key === 'greens'
+                ? '#22c55e'
+                : strongest.key === 'left'
+                ? '#ec4899'
+                : strongest.key === 'cdu'
+                ? '#737373'
                 : '#22d3ee'
 
-              const strokeColor = isActive ? activeStroke : 'rgba(0, 0, 0, 0.35)'
+              const strokeColor = isActive ? activeStroke : 'var(--border)'
 
               return (
                 <path
@@ -195,11 +243,20 @@ export function GermanyMap({
               ? originalPct * (1 - dreamProgress)
               : originalPct
             
-            const isAfdMajority = isAfdStrongest(id)
-            const activeCircleBg = sandboxState === 'brown' && isAfdMajority
-              ? '#9a3412'
-              : sandboxState === 'dream'
+            const strongest = getStrongestParty(id)
+            const isAfdMajority = strongest.key === 'afd'
+            const activeCircleBg = sandboxState === 'dream'
               ? '#059669'
+              : (sandboxState === 'brown' && isAfdMajority)
+              ? '#9a3412'
+              : strongest.key === 'spd'
+              ? '#b91c1c'
+              : strongest.key === 'greens'
+              ? '#15803d'
+              : strongest.key === 'left'
+              ? '#be185d'
+              : strongest.key === 'cdu'
+              ? '#404040'
               : '#0891b2'
 
             return (

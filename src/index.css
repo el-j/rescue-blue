@@ -558,3 +558,37 @@
 .animate-in {
   animation: slideInUp 0.5s ease-out;
 }
+
+/* Active state classes for sandbox buttons */
+.active-btn-default {
+  background-color: rgba(6, 182, 212, 0.1);
+  border-color: rgba(6, 182, 212, 0.5);
+  color: #0891b2; /* cyan-600 */
+}
+.light-theme .active-btn-default {
+  background-color: rgba(6, 182, 212, 0.08);
+  border-color: rgba(6, 182, 212, 0.4);
+  color: #0e7490; /* cyan-700 */
+}
+
+.active-btn-brown {
+  background-color: rgba(180, 83, 9, 0.1);
+  border-color: rgba(180, 83, 9, 0.5);
+  color: #b45309; /* amber-700 */
+}
+.light-theme .active-btn-brown {
+  background-color: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.4);
+  color: #9a3412; /* amber-800 */
+}
+
+.active-btn-dream {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.5);
+  color: #059669; /* emerald-600 */
+}
+.light-theme .active-btn-dream {
+  background-color: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #047857; /* emerald-700 */
+}

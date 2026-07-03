@@ -58,7 +58,8 @@ describe('App', () => {
     await user.click(screen.getByRole('button', { name: /en\s*English/i }))
 
     expect(screen.getByRole('heading', { name: 'Rescue Blue.', level: 1 })).toBeInTheDocument()
-    expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(2)
+    expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(1)
+    expect(screen.getByRole('button', { name: 'Switch visualization mode' })).toBeInTheDocument()
   })
 
   it('cycles the interactive demo sandbox states', async () => {
@@ -66,22 +67,20 @@ describe('App', () => {
 
     render(<App />)
 
-    // Initial state: "Jetzt umfärben auf Braun"
-    const toggleButton = screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })[1]
+    // Mode cycle is triggered via the dedicated toolbar button
+    const toggleButton = screen.getByRole('button', { name: 'Visualisierungs-Option wechseln' })
     
-    // 1st Click -> changes to brown state: button becomes "Beste Zukunft visualisieren"
+    // 1st Click -> changes to brown state: AfD bar becomes "Beste Zukunft visualisieren"
     await user.click(toggleButton)
-    expect(screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })).toHaveLength(2)
+    expect(screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })).toHaveLength(1)
 
-    // 2nd Click -> activates dream state: button becomes "Zurücksetzen auf Blau"
-    const dreamButton = screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })[1]
-    await user.click(dreamButton)
-    expect(screen.getAllByRole('button', { name: 'Traum beenden' })).toHaveLength(2)
+    // 2nd Click -> activates dream state: AfD bar becomes "Traum beenden"
+    await user.click(toggleButton)
+    expect(screen.getAllByRole('button', { name: 'Traum beenden' })).toHaveLength(1)
 
-    // 3rd Click -> resets to default: button becomes "Jetzt umfärben auf Braun"
-    const resetButton = screen.getAllByRole('button', { name: 'Traum beenden' })[1]
-    await user.click(resetButton)
-    expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(2)
+    // 3rd Click -> resets to default: AfD bar becomes "Jetzt umfärben auf Braun"
+    await user.click(toggleButton)
+    expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(1)
   })
 
   it('opens a FAQ answer', async () => {

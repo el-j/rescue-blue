@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Paintbrush, ToggleLeft, ToggleRight, Map } from 'lucide-react'
+import { Paintbrush } from 'lucide-react'
 import type { PollBar, ParliamentsSnapshot } from '../polling'
 import type { Locale, Translation } from '../i18n'
 import { DemoSourceInfo } from './demo/DemoSourceInfo'
-import { DemoComparisonBlock } from './demo/DemoComparisonBlock'
 import { GermanyMap } from './demo/GermanyMap'
 
 interface DemoProps {
@@ -45,6 +44,53 @@ export function InteractiveDemoSection({
   const [showComparison, setShowComparison] = useState(false)
   const [dreamProgress, setDreamProgress] = useState<number | null>(null)
   const hasStartedDreamRef = useRef(false)
+  const sandboxRef = useRef<HTMLDivElement>(null)
+  const [isSandboxInView, setIsSandboxInView] = useState(true)
+  const [toastMessage, setToastMessage] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      return
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSandboxInView(entry.isIntersecting)
+      },
+      { threshold: 0.1 }
+    )
+    if (sandboxRef.current) {
+      observer.observe(sandboxRef.current)
+    }
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (toastMessage) {
+      const timer = setTimeout(() => {
+        setToastMessage(null)
+      }, 4500)
+      return () => clearTimeout(timer)
+    }
+  }, [toastMessage])
+
+  const handleCycleSandboxState = () => {
+    let msg: string
+    if (sandboxState === 'default') {
+      msg = lang === 'de'
+        ? '⚠️ Mehrheits-Check: Farbige Markierung der Bundesländer nach der jeweils stärksten Kraft (AfD-Mehrheiten in Braun).'
+        : '⚠️ Plurality Check: States colored by their current majority party (AfD pluralities in Brown).'
+    } else if (sandboxState === 'brown') {
+      msg = lang === 'de'
+        ? '✨ Traum-Vision: Ein demokratisches, progressives Ergebnis (Grüne und Linke gleichauf bei 26%) ohne Rechtsextremismus.'
+        : '✨ Progressive Dream: A democratic progressive majority (Greens and Left equal at 26%) without right-wing extremism.'
+    } else {
+      msg = lang === 'de'
+        ? '🇩🇪 Standard-Modus: Aktuelle offizielle Umfrageergebnisse der Wahlforschungsinstitute.'
+        : '🇩🇪 Default Mode: Current official polling results from research institutes.'
+    }
+    onCycleSandboxState()
+    setToastMessage(msg)
+  }
 
   const afdBar = bars.find((bar) => bar.isAfd)
   const originalAfdPct = afdBar?.pct ?? 0
@@ -153,34 +199,14 @@ export function InteractiveDemoSection({
         return { ...bar }
       })
 
-      // 2. Define target percentages at progress = 1.0 (CDU and SPD reduced but active, remainder to Greens & Left)
-      const originalSpdPct = bars.find((b) => b.key === 'spd')?.pct ?? 0
-      const originalGreensPct = bars.find((b) => b.key === 'greens')?.pct ?? 0
-      const originalLeftPct = bars.find((b) => b.key === 'left')?.pct ?? 0
-      const originalOthersPct = bars.find((b) => b.key === 'others')?.pct ?? 0
-
-      const targetAfd = 0.0
-      const targetCdu = originalCduPct * 0.5
-      const targetSpd = originalSpdPct * 0.8
-      const targetOthers = originalOthersPct
-
-      const targetSumValue = bars.reduce((sum, b) => sum + b.pct, 0)
-      const remainder = targetSumValue - (targetAfd + targetCdu + targetSpd + targetOthers)
-      const leftistSum = originalGreensPct + originalLeftPct
-
+      // 2. Define target percentages at progress = 1.0 (CDU at 10%, SPD at 10%, Greens & Left at 35% each, Others at 10%)
       const targetMap: Record<string, number> = {
-        afd: targetAfd,
-        cdu: targetCdu,
-        spd: targetSpd,
-        others: targetOthers,
-      }
-
-      if (leftistSum > 0) {
-        targetMap.greens = remainder * (originalGreensPct / leftistSum)
-        targetMap.left = remainder * (originalLeftPct / leftistSum)
-      } else {
-        targetMap.greens = remainder / 2
-        targetMap.left = remainder / 2
+        afd: 0.0,
+        cdu: 10.0,
+        spd: 10.0,
+        greens: 35.0,
+        left: 35.0,
+        others: 10.0,
       }
 
       // 3. Interpolate between p1Bars and targetMap
@@ -236,14 +262,14 @@ export function InteractiveDemoSection({
   }, [])
 
   return (
-    <section className="relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950 p-5 shadow-xl md:p-8">
+    <section ref={sandboxRef} className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-primary)] p-5 shadow-xl md:p-8">
       <div className="absolute top-0 right-0 p-4">
-        <span className="rounded border border-neutral-700 bg-neutral-800 px-2 py-0.5 text-[10px] font-bold tracking-widest text-neutral-400 uppercase">{t.demoSandbox}</span>
+        <span className="rounded border border-[var(--border)] bg-[var(--bg-card)] px-2 py-0.5 text-[10px] font-bold tracking-widest text-[var(--text-muted)] uppercase">{t.demoSandbox}</span>
       </div>
-      <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-white uppercase md:text-2xl">
+      <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-[var(--text-primary)] uppercase md:text-2xl">
         <Paintbrush size={22} className="text-blue-500" /> {t.demoH2}
       </h2>
-      <p className="text-sm leading-relaxed text-neutral-400">{t.demoDesc}</p>
+      <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{t.demoDesc}</p>
       <DemoSourceInfo
         t={t}
         instituteName={instituteName}
@@ -256,16 +282,15 @@ export function InteractiveDemoSection({
         sourceMethodUrl={sourceMethodUrl}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:items-stretch mt-4">
         
         {/* Left Column: Germany Map & state details */}
-        <div className="md:col-span-5 flex flex-col items-center gap-4">
+        <div className="md:col-span-5 flex flex-col items-center gap-4 h-full">
           <div className="text-center md:text-left w-full space-y-1">
-            <h3 className="text-xs font-black text-neutral-400 uppercase tracking-wider flex items-center justify-center md:justify-start gap-1.5">
-              <Map size={14} className="text-blue-500" />
+            <h3 className="text-xs font-black text-[var(--text-secondary)] uppercase tracking-wider flex items-center justify-center md:justify-start">
               {t.mapHeadline}
             </h3>
-            <p className="text-[11px] text-neutral-500 leading-relaxed">
+            <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
               {t.mapSub}
             </p>
           </div>
@@ -279,33 +304,10 @@ export function InteractiveDemoSection({
             dreamProgress={dreamProgress}
             lang={lang}
           />
-          
-          {/* Dropdown Selector for accessibility / quick state selection */}
-          <div className="w-full max-w-[280px] space-y-1.5">
-            <label htmlFor="state-selector" className="block text-[10px] font-bold text-neutral-400 uppercase tracking-wide">
-              {t.stateLabel}
-            </label>
-            <select
-              id="state-selector"
-              value={selectedStateId}
-              onChange={(e) => onSelectStateId(e.target.value)}
-              className="w-full bg-neutral-950 border border-neutral-800 rounded-lg py-1.5 px-3 text-xs text-neutral-300 font-semibold focus:outline-none focus:border-blue-500 transition-colors cursor-pointer"
-            >
-              <option value="0">{t.nationalLabel}</option>
-              {pollingSnapshot &&
-                Object.entries(pollingSnapshot)
-                  .filter(([id]) => id !== '0')
-                  .map(([id, snap]) => (
-                    <option key={id} value={id}>
-                      {lang === 'de' ? snap.nameDe : snap.nameEn}
-                    </option>
-                  ))}
-            </select>
-          </div>
         </div>
 
         {/* Right Column: Bar Chart & Controls */}
-        <div className="md:col-span-7 space-y-6">
+        <div className="md:col-span-7 flex flex-col h-full justify-between space-y-6">
           {/* Dream scenario banner — visible when dreamstate is active */}
           {isDreamActive && (
             <div className="dream-banner mb-4 animate-in rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-amber-950/40 px-4 py-3 text-center">
@@ -319,104 +321,155 @@ export function InteractiveDemoSection({
           )}
 
           {/* Main bar chart */}
-          <div className="rounded-xl border border-neutral-800/80 bg-neutral-900 p-4 md:p-6 shadow-inner">
-            <div className="relative flex h-64 items-end justify-between border-b border-neutral-800 pb-2 md:h-72">
-              {displayBars.map((bar, index) => {
-                const heightPx = Math.round((bar.pct / maxPct) * 200)
-                const barColor = bar.isAfd
-                  ? (isAfdBrown
-                      ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40'
-                      : bar.defaultColor)
-                  : bar.defaultColor
-                const label = lang === 'de' ? bar.labelDe : bar.labelEn
-                const pctLabel = Number.isInteger(bar.pct) ? String(bar.pct) : bar.pct.toFixed(1)
-
-                return (
-                  <div key={index} className="flex flex-col items-center transition-all duration-500" style={{ width: `${100 / displayBars.length}%` }}>
-                    <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-white' : 'text-neutral-400'}`}>{pctLabel} %</span>
-                    <button
-                      onClick={bar.isAfd ? () => onCycleSandboxState() : undefined}
-                      className={`relative w-full rounded-t-md overflow-hidden transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
-                      style={{ height: `${heightPx}px` }}
-                      aria-label={bar.isAfd ? (sandboxState === 'default' ? t.demoSwitch : sandboxState === 'brown' ? t.demoDreamSwitch : t.demoReset) : label}
-                      disabled={!bar.isAfd}
-                      type="button"
-                    >
-                      {bar.key === 'cdu' && isDreamActive && (
-                        <>
-                          <div
-                            className="absolute inset-0 bg-[linear-gradient(to_top,#140b02,#2a180a)] pointer-events-none"
-                            style={{ opacity: cduBrownFactor }}
-                          />
-                          <div
-                            className="absolute top-0 left-0 right-0 h-[2px] bg-amber-900/50 pointer-events-none"
-                            style={{ opacity: cduBrownFactor }}
-                          />
-                        </>
-                      )}
-                    </button>
-                    <span className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs text-center ${bar.isAfd ? (isAfdBrown ? 'font-black text-amber-500' : 'font-black text-cyan-400') : 'text-neutral-500'}`}>
-                      {label}
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-4 md:p-6 shadow-inner h-full flex flex-col justify-between flex-grow">
+            <div className="relative flex h-64 items-end justify-around border-b border-[var(--border)] pb-2 md:h-72">
+              {showComparison ? (
+                <>
+                  {/* AfD Column */}
+                  <div className="flex flex-col items-center transition-all duration-500 animate-in" style={{ width: '40%' }}>
+                    <span className="mb-2 text-xs font-bold text-white">{(displayAfdPct > 0 ? displayAfdPct : 0).toFixed(1)} %</span>
+                    <div
+                      className={`w-16 rounded-t-md transition-all duration-700 ${isAfdBrown ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40' : 'bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20'}`}
+                      style={{ height: `${Math.round(((displayAfdPct > 0 ? displayAfdPct : 0) / comparisonMax) * 200)}px` }}
+                    />
+                    <span className={`mt-2 text-[10px] font-black tracking-wide md:text-xs ${isAfdBrown ? 'text-amber-500' : 'text-cyan-400'}`}>
+                      AfD
                     </span>
                   </div>
-                )
-              })}
+
+                  {/* All Others Column */}
+                  <div className="flex flex-col items-center transition-all duration-500 animate-in" style={{ width: '40%' }}>
+                    <span className="mb-2 text-xs font-bold text-white">{othersCombinedPct.toFixed(1)} %</span>
+                    <div
+                      className="w-16 rounded-t-md transition-all duration-700 rainbow-bar shadow-lg"
+                      style={{ height: `${Math.round((othersCombinedPct / comparisonMax) * 200)}px`, borderTop: '2px solid rgba(255,255,255,0.5)' }}
+                    />
+                    <span className="mt-2 text-[10px] font-black tracking-wide md:text-xs rainbow-text">
+                      {t.allOthersLabel}
+                    </span>
+                  </div>
+                </>
+              ) : (
+                displayBars.map((bar, index) => {
+                  const heightPx = Math.round((bar.pct / maxPct) * 200)
+                  const barColor = bar.isAfd
+                    ? (isAfdBrown
+                        ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40'
+                        : bar.defaultColor)
+                    : bar.defaultColor
+                  const label = lang === 'de' ? bar.labelDe : bar.labelEn
+                  const pctLabel = Number.isInteger(bar.pct) ? String(bar.pct) : bar.pct.toFixed(1)
+
+                  return (
+                    <div key={index} className="flex flex-col items-center transition-all duration-500" style={{ width: `${100 / displayBars.length}%` }}>
+                      <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-white' : 'text-neutral-400'}`}>{pctLabel} %</span>
+                      <button
+                        onClick={bar.isAfd ? () => handleCycleSandboxState() : undefined}
+                        className={`relative w-full rounded-t-md overflow-hidden transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
+                        style={{ height: `${heightPx}px` }}
+                        aria-label={bar.isAfd ? (sandboxState === 'default' ? t.demoSwitch : sandboxState === 'brown' ? t.demoDreamSwitch : t.demoReset) : label}
+                        disabled={!bar.isAfd}
+                        type="button"
+                      >
+                        {bar.key === 'cdu' && isDreamActive && (
+                          <>
+                            <div
+                              className="absolute inset-0 bg-[linear-gradient(to_top,#140b02,#2a180a)] pointer-events-none"
+                              style={{ opacity: cduBrownFactor }}
+                            />
+                            <div
+                              className="absolute top-0 left-0 right-0 h-[2px] bg-amber-900/50 pointer-events-none"
+                              style={{ opacity: cduBrownFactor }}
+                            />
+                          </>
+                        )}
+                      </button>
+                      <span className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs text-center ${bar.isAfd ? (isAfdBrown ? 'font-black text-amber-500' : 'font-black text-cyan-400') : 'text-[var(--text-muted)]'}`}>
+                        {label}
+                      </span>
+                    </div>
+                  )
+                })
+              )}
             </div>
+
+            {/* Ratio message displayed inline below comparison bars */}
+            {showComparison && (
+              <div className="mt-4 rounded-lg border border-emerald-500/20 bg-emerald-950/20 px-4 py-2 text-center animate-in">
+                <p className="text-xs font-bold text-emerald-300">
+                  {(othersCombinedPct / Math.max(displayAfdPct, 0.1)).toFixed(1)}{t.comparisonRatio}
+                </p>
+                <p className="mt-0.5 text-[10px] text-emerald-400/70">
+                  {t.comparisonMessage}
+                </p>
+              </div>
+            )}
           </div>
 
-          {/* Comparison toggle */}
-          <div className="flex items-center justify-center">
-            <button
-              onClick={toggleComparison}
-              className="group inline-flex items-center gap-3 rounded-xl border border-neutral-700/60 bg-neutral-900/80 px-5 py-3 text-sm font-semibold text-neutral-300 transition-all hover:border-neutral-600 hover:bg-neutral-800/80 hover:text-white"
-              type="button"
-              aria-pressed={showComparison}
-              id="comparison-toggle"
-            >
-              {showComparison
-                ? <ToggleRight size={28} className="text-emerald-400 transition-colors" />
-                : <ToggleLeft size={28} className="text-neutral-500 transition-colors group-hover:text-neutral-300" />
-              }
-              <span>{t.comparisonToggle}</span>
-            </button>
-          </div>
-
-          {/* Comparison bars: AfD vs All Others */}
-          {showComparison && (
-            <DemoComparisonBlock
-              t={t}
-              displayAfdPct={displayAfdPct}
-              othersCombinedPct={othersCombinedPct}
-              comparisonMax={comparisonMax}
-              isAfdBrown={isAfdBrown}
-            />
-          )}
-
-          <div className="flex flex-col items-center justify-between gap-4 rounded-xl border border-neutral-800 bg-neutral-900 p-4 sm:flex-row">
-            <div className="text-center sm:text-left">
-              <span className="block text-xs font-semibold tracking-wider text-neutral-500 uppercase">{t.demoOption}</span>
-              <span className="text-sm font-bold text-neutral-200">{t.demoQuestion}</span>
-            </div>
-            <button
-              onClick={onCycleSandboxState}
-              className={`w-full rounded-lg px-6 py-2.5 text-xs font-bold tracking-widest uppercase transition-all sm:w-auto ${
-                sandboxState === 'default'
-                  ? 'border border-blue-500/30 bg-blue-600 text-blue-100 hover:bg-blue-500'
-                  : sandboxState === 'brown'
-                  ? 'border border-purple-800/50 bg-purple-900 text-purple-200 hover:bg-purple-800'
-                  : 'border border-amber-800/50 bg-amber-900 text-amber-200 hover:bg-amber-800'
-              }`}
-              type="button"
-            >
-              {sandboxState === 'default'
-                ? t.demoSwitch
-                : sandboxState === 'brown'
-                ? t.demoDreamSwitch
-                : t.demoReset}
-            </button>
-          </div>
         </div>
       </div>
+
+      {/* Sticky Flying Controls Toolbar */}
+      <div 
+        className={`fixed bottom-6 right-6 z-50 flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1.5 shadow-2xl transition-all duration-300 pointer-events-none select-none ${
+          isSandboxInView ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-75 pointer-events-none'
+        }`}
+      >
+        {/* Compact Visualization Mode Status */}
+        <span className="pl-3 pr-2 text-[10px] font-black uppercase tracking-wider text-[var(--text-secondary)] border-r border-[var(--border)]">
+          {sandboxState === 'default'
+            ? (lang === 'de' ? 'Standard' : 'Default')
+            : sandboxState === 'brown'
+            ? (lang === 'de' ? 'Warnung' : 'Warning')
+            : (lang === 'de' ? 'Traum' : 'Dream')}
+        </span>
+
+        {/* Change Color Mode Button */}
+        <button
+          onClick={handleCycleSandboxState}
+          className={`p-2 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
+            sandboxState === 'default'
+              ? 'bg-blue-600/10 border-blue-500/30 text-blue-400 hover:bg-blue-600/20'
+              : sandboxState === 'brown'
+              ? 'bg-amber-600/10 border-amber-500/30 text-amber-400 hover:bg-amber-600/20'
+              : 'bg-emerald-600/10 border-emerald-500/30 text-emerald-400 hover:bg-emerald-600/20'
+          }`}
+          title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
+          type="button"
+        >
+          {/* Sparkles Icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
+            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+            <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z"/>
+            <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/>
+          </svg>
+        </button>
+
+        {/* Comparison Toggle Button (Two vertical columns icon) */}
+        <button
+          onClick={toggleComparison}
+          className={`p-2 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
+            showComparison
+              ? 'bg-purple-600/20 border-purple-500/40 text-purple-400 hover:bg-purple-600/30 shadow-inner'
+              : 'bg-[var(--bg-secondary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+          }`}
+          title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
+          type="button"
+        >
+          {/* Two vertical columns comparison icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="5" y="4" width="4" height="16" rx="1" />
+            <rect x="15" y="10" width="4" height="10" rx="1" />
+          </svg>
+        </button>
+      </div>
+
+      {/* Floating Toast Notification */}
+      {toastMessage && isSandboxInView && (
+        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 shadow-2xl text-center flex items-center justify-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300">
+          <span className="text-xs font-semibold text-[var(--text-primary)] leading-normal">{toastMessage}</span>
+        </div>
+      )}
     </section>
   )
 }
