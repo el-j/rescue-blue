@@ -263,7 +263,55 @@ export function InteractiveDemoSection({
 
   return (
     <section ref={sandboxRef} className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-primary)] p-5 shadow-xl md:p-8">
-      <div className="absolute top-0 right-0 p-4">
+      {/* Top-right: SANDBOX badge + desktop controls toolbar */}
+      <div className="absolute top-0 right-0 p-3 flex items-center gap-2">
+        {/* Desktop-only inline controls toolbar */}
+        <div className="hidden md:flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1 shadow-sm">
+          {/* Mode status */}
+          <span className="pl-2.5 pr-1.5 text-[10px] font-black uppercase tracking-wider text-[var(--text-secondary)] border-r border-[var(--border)]">
+            {sandboxState === 'default'
+              ? (lang === 'de' ? 'Standard' : 'Default')
+              : sandboxState === 'brown'
+              ? (lang === 'de' ? 'Warnung' : 'Warning')
+              : (lang === 'de' ? 'Traum' : 'Dream')}
+          </span>
+          {/* Cycle mode */}
+          <button
+            onClick={handleCycleSandboxState}
+            className={`p-1.5 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
+              sandboxState === 'default'
+                ? 'bg-blue-600/10 border-blue-500/30 text-blue-400 hover:bg-blue-600/20'
+                : sandboxState === 'brown'
+                ? 'bg-amber-600/10 border-amber-500/30 text-amber-400 hover:bg-amber-600/20'
+                : 'bg-emerald-600/10 border-emerald-500/30 text-emerald-400 hover:bg-emerald-600/20'
+            }`}
+            title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
+            type="button"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
+              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+              <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z"/>
+              <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/>
+            </svg>
+          </button>
+          {/* Comparison toggle */}
+          <button
+            onClick={toggleComparison}
+            className={`p-1.5 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
+              showComparison
+                ? 'bg-purple-600/20 border-purple-500/40 text-purple-400 hover:bg-purple-600/30 shadow-inner'
+                : 'bg-[var(--bg-secondary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+            }`}
+            title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
+            type="button"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="5" y="4" width="4" height="16" rx="1" />
+              <rect x="15" y="10" width="4" height="10" rx="1" />
+            </svg>
+          </button>
+        </div>
+        {/* Badge */}
         <span className="rounded border border-[var(--border)] bg-[var(--bg-card)] px-2 py-0.5 text-[10px] font-bold tracking-widest text-[var(--text-muted)] uppercase">{t.demoSandbox}</span>
       </div>
       <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-[var(--text-primary)] uppercase md:text-2xl">
@@ -408,9 +456,9 @@ export function InteractiveDemoSection({
         </div>
       </div>
 
-      {/* Sticky Flying Controls Toolbar */}
+      {/* Mobile-only: Sticky Flying Controls Toolbar (hidden on md+, which uses the top-right inline toolbar) */}
       <div 
-        className={`fixed md:absolute bottom-6 right-6 md:bottom-4 md:right-4 z-50 md:z-40 flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1.5 shadow-2xl transition-all duration-300 select-none ${
+        className={`fixed bottom-6 right-6 z-50 md:hidden flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1.5 shadow-2xl transition-all duration-300 select-none ${
           isSandboxInView ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-75 pointer-events-none'
         }`}
       >
@@ -436,7 +484,6 @@ export function InteractiveDemoSection({
           title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
           type="button"
         >
-          {/* Sparkles Icon */}
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
             <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
             <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z"/>
@@ -444,7 +491,7 @@ export function InteractiveDemoSection({
           </svg>
         </button>
 
-        {/* Comparison Toggle Button (Two vertical columns icon) */}
+        {/* Comparison Toggle Button */}
         <button
           onClick={toggleComparison}
           className={`p-2 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
@@ -455,7 +502,6 @@ export function InteractiveDemoSection({
           title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
           type="button"
         >
-          {/* Two vertical columns comparison icon */}
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <rect x="5" y="4" width="4" height="16" rx="1" />
             <rect x="15" y="10" width="4" height="10" rx="1" />

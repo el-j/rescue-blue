@@ -59,7 +59,7 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { name: 'Rescue Blue.', level: 1 })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(1)
-    expect(screen.getByRole('button', { name: 'Switch visualization mode' })).toBeInTheDocument()
+    expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(2)
   })
 
   it('cycles the interactive demo sandbox states', async () => {
@@ -67,8 +67,8 @@ describe('App', () => {
 
     render(<App />)
 
-    // Mode cycle is triggered via the dedicated toolbar button
-    const toggleButton = screen.getByRole('button', { name: 'Visualisierungs-Option wechseln' })
+    // Mode cycle is triggered via the dedicated toolbar button (use first — desktop inline one)
+    const toggleButton = screen.getAllByRole('button', { name: 'Visualisierungs-Option wechseln' })[0]
     
     // 1st Click -> changes to brown state: AfD bar becomes "Beste Zukunft visualisieren"
     await user.click(toggleButton)
