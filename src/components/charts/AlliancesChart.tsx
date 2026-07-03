@@ -27,21 +27,21 @@ export function AlliancesChart({ ui, lang }: AlliancesChartProps) {
           {/* Node 1: ESN (EU Parliament Group) */}
           <circle cx="90" cy="50" r="18" fill="#1f2937" stroke="#4b5563" strokeWidth="2" />
           <text x="90" y="54" textAnchor="middle" className="text-[10px] fill-neutral-300 font-bold">ESN</text>
-          <text x="90" y="24" textAnchor="middle" className="text-[9px] fill-neutral-300 font-bold uppercase tracking-wide">
+          <text x="90" y="24" textAnchor="middle" className="text-[9px] svg-text-secondary font-bold uppercase tracking-wide">
             {ui.nodeESN}
           </text>
 
           {/* Node 2: Russia / Voice of Europe */}
           <circle cx="310" cy="50" r="18" fill="#7f1d1d" stroke="#ef4444" strokeWidth="2" />
           <text x="310" y="54" textAnchor="middle" className="text-[10px] fill-red-200 font-bold">VoE</text>
-          <text x="310" y="24" textAnchor="middle" className="text-[9px] fill-red-400 font-bold uppercase tracking-wide">
+          <text x="310" y="24" textAnchor="middle" className="text-[9px] svg-text-red font-bold uppercase tracking-wide">
             {ui.nodeRussia}
           </text>
 
           {/* Node 3: China / Espionage */}
           <circle cx="200" cy="140" r="18" fill="#7f1d1d" stroke="#ef4444" strokeWidth="2" />
           <text x="200" y="144" textAnchor="middle" className="text-[10px] fill-red-200 font-bold">CN</text>
-          <text x="200" y="172" textAnchor="middle" className="text-[9px] fill-red-400 font-bold uppercase tracking-wide">
+          <text x="200" y="172" textAnchor="middle" className="text-[9px] svg-text-red font-bold uppercase tracking-wide">
             {ui.nodeChina}
           </text>
 

@@ -30,8 +30,8 @@ export function CultureChart({ ui }: CultureChartProps) {
           />
 
           {/* Middle Text info */}
-          <text x="60" y="58" textAnchor="middle" className="text-[18px] fill-white font-black">100%</text>
-          <text x="60" y="74" textAnchor="middle" className="text-[8px] fill-red-400 font-extrabold uppercase tracking-wide">
+          <text x="60" y="58" textAnchor="middle" className="text-[18px] svg-text-primary font-black">100%</text>
+          <text x="60" y="74" textAnchor="middle" className="text-[8px] svg-text-red font-extrabold uppercase tracking-wide">
             {ui.courtDismissed}
           </text>
         </svg>

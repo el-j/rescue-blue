@@ -83,13 +83,13 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
           <line x1="50" y1="160" x2="350" y2="160" stroke="#374151" />
 
           {/* Y Axis scale indicators */}
-          <text x="10" y="24" className="text-[9px] fill-neutral-500 font-semibold">
+          <text x="10" y="24" className="text-[9px] svg-text-muted font-semibold">
             {crimeToggle === 'all' ? "45.000" : (crimeToggle === 'violent' ? "2.000" : "5.000")}
           </text>
-          <text x="10" y="94" className="text-[9px] fill-neutral-500 font-semibold">
+          <text x="10" y="94" className="text-[9px] svg-text-muted font-semibold">
             {crimeToggle === 'all' ? "22.500" : (crimeToggle === 'violent' ? "1.000" : "2.500")}
           </text>
-          <text x="10" y="164" className="text-[9px] fill-neutral-500 font-semibold">0</text>
+          <text x="10" y="164" className="text-[9px] svg-text-muted font-semibold">0</text>
 
           {/* Bar 1: Right-wing PMK */}
           <rect 
@@ -104,11 +104,11 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
             x="125" 
             y={150 - rightHeight} 
             textAnchor="middle" 
-            className="text-[11px] fill-red-400 font-black"
+            className="text-[11px] svg-text-red font-black"
           >
             {formattedRight}
           </text>
-          <text x="125" y="174" textAnchor="middle" className="text-[9px] fill-neutral-400 font-bold uppercase">
+          <text x="125" y="174" textAnchor="middle" className="text-[9px] svg-text-secondary font-bold uppercase">
             {lang === 'de' ? 'Rechts' : 'Right'} ({labelSuffix})
           </text>
 
@@ -125,11 +125,11 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
             x="275" 
             y={150 - leftHeight} 
             textAnchor="middle" 
-            className="text-[11px] fill-neutral-300 font-black"
+            className="text-[11px] svg-text-primary font-black"
           >
             {formattedLeft}
           </text>
-          <text x="275" y="174" textAnchor="middle" className="text-[9px] fill-neutral-400 font-bold uppercase">
+          <text x="275" y="174" textAnchor="middle" className="text-[9px] svg-text-secondary font-bold uppercase">
             {lang === 'de' ? 'Links' : 'Left'} ({labelSuffix})
           </text>
         </svg>

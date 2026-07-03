@@ -194,12 +194,12 @@
 .light-theme .bg-neutral-950\/40 { background-color: rgba(248, 250, 252, 0.4); }
 
 .light-theme .text-white { color: #0f172a; }
-.light-theme .text-neutral-100 { color: #1e293b; }
-.light-theme .text-neutral-200 { color: #334155; }
-.light-theme .text-neutral-300 { color: #475569; }
-.light-theme .text-neutral-400 { color: #64748b; }
-.light-theme .text-neutral-500 { color: #94a3b8; }
-.light-theme .text-neutral-600 { color: #94a3b8; }
+.light-theme .text-neutral-100 { color: #0f172a; }
+.light-theme .text-neutral-200 { color: #1e293b; }
+.light-theme .text-neutral-300 { color: #334155; }
+.light-theme .text-neutral-400 { color: #475569; }
+.light-theme .text-neutral-500 { color: #576375; }
+.light-theme .text-neutral-600 { color: #64748b; }
 
 .light-theme .border-neutral-700 { border-color: #cbd5e1; }
 .light-theme .border-neutral-800 { border-color: #e2e8f0; }
@@ -592,3 +592,26 @@
   border-color: rgba(16, 185, 129, 0.4);
   color: #047857; /* emerald-700 */
 }
+
+/* ── SVG Text & Fill Theme Support ── */
+.svg-text-primary { fill: var(--text-primary) !important; }
+.svg-text-secondary { fill: var(--text-secondary) !important; }
+.svg-text-muted { fill: var(--text-muted) !important; }
+
+.svg-text-red { fill: #f87171; }
+.light-theme .svg-text-red { fill: #b91c1c !important; }
+
+.svg-text-amber { fill: #fbbf24; }
+.light-theme .svg-text-amber { fill: #b45309 !important; }
+
+.svg-bg-red-pill { fill: rgba(127, 29, 29, 0.9); stroke: rgba(239, 68, 68, 0.3); }
+.light-theme .svg-bg-red-pill { fill: rgba(239, 68, 68, 0.12) !important; stroke: rgba(239, 68, 68, 0.3) !important; }
+
+.light-theme svg line[stroke="#1f2937"] {
+  stroke: #cbd5e1 !important;
+}
+
+.light-theme svg line[stroke="#374151"] {
+  stroke: #e2e8f0 !important;
+}
+

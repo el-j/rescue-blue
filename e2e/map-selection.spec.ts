@@ -4,6 +4,8 @@ test.describe('Germany Map state selection', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     await page.getByRole('heading', { name: /INTERAKTIVER FARBVERGLEICH/i }).scrollIntoViewIfNeeded()
+    // Wait for dynamic options to load
+    await page.getByRole('combobox').locator('option').filter({ hasText: /Thüringen/i }).waitFor({ state: 'attached' })
   })
 
   test('map dropdown shows Bund (Deutschland) by default', async ({ page }) => {
