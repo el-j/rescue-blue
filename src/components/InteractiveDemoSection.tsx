@@ -322,15 +322,15 @@ export function InteractiveDemoSection({
 
           {/* Main bar chart */}
           <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-4 md:p-6 shadow-inner h-full flex flex-col justify-between flex-grow">
-            <div className="relative flex h-64 items-end justify-around border-b border-[var(--border)] pb-2 md:h-72">
+            <div className="relative flex flex-grow h-full min-h-[310px] items-end justify-around border-b border-[var(--border)] pb-2">
               {showComparison ? (
                 <>
                   {/* AfD Column */}
-                  <div className="flex flex-col items-center transition-all duration-500 animate-in" style={{ width: '40%' }}>
-                    <span className="mb-2 text-xs font-bold text-white">{(displayAfdPct > 0 ? displayAfdPct : 0).toFixed(1)} %</span>
+                  <div className="flex flex-col items-center justify-end h-full transition-all duration-500 animate-in" style={{ width: '40%' }}>
+                    <span className="mb-2 text-xs font-bold text-[var(--text-primary)]">{(displayAfdPct > 0 ? displayAfdPct : 0).toFixed(1)} %</span>
                     <div
                       className={`w-16 rounded-t-md transition-all duration-700 ${isAfdBrown ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40' : 'bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20'}`}
-                      style={{ height: `${Math.round(((displayAfdPct > 0 ? displayAfdPct : 0) / comparisonMax) * 200)}px` }}
+                      style={{ height: `${((displayAfdPct > 0 ? displayAfdPct : 0) / comparisonMax) * 85}%` }}
                     />
                     <span className={`mt-2 text-[10px] font-black tracking-wide md:text-xs ${isAfdBrown ? 'text-amber-500' : 'text-cyan-400'}`}>
                       AfD
@@ -338,11 +338,11 @@ export function InteractiveDemoSection({
                   </div>
 
                   {/* All Others Column */}
-                  <div className="flex flex-col items-center transition-all duration-500 animate-in" style={{ width: '40%' }}>
-                    <span className="mb-2 text-xs font-bold text-white">{othersCombinedPct.toFixed(1)} %</span>
+                  <div className="flex flex-col items-center justify-end h-full transition-all duration-500 animate-in" style={{ width: '40%' }}>
+                    <span className="mb-2 text-xs font-bold text-[var(--text-primary)]">{othersCombinedPct.toFixed(1)} %</span>
                     <div
                       className="w-16 rounded-t-md transition-all duration-700 rainbow-bar shadow-lg"
-                      style={{ height: `${Math.round((othersCombinedPct / comparisonMax) * 200)}px`, borderTop: '2px solid rgba(255,255,255,0.5)' }}
+                      style={{ height: `${(othersCombinedPct / comparisonMax) * 85}%`, borderTop: '2px solid rgba(255,255,255,0.5)' }}
                     />
                     <span className="mt-2 text-[10px] font-black tracking-wide md:text-xs rainbow-text">
                       {t.allOthersLabel}
@@ -351,7 +351,6 @@ export function InteractiveDemoSection({
                 </>
               ) : (
                 displayBars.map((bar, index) => {
-                  const heightPx = Math.round((bar.pct / maxPct) * 200)
                   const barColor = bar.isAfd
                     ? (isAfdBrown
                         ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40'
@@ -361,12 +360,12 @@ export function InteractiveDemoSection({
                   const pctLabel = Number.isInteger(bar.pct) ? String(bar.pct) : bar.pct.toFixed(1)
 
                   return (
-                    <div key={index} className="flex flex-col items-center transition-all duration-500" style={{ width: `${100 / displayBars.length}%` }}>
-                      <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-white' : 'text-neutral-400'}`}>{pctLabel} %</span>
+                    <div key={index} className="flex flex-col items-center justify-end h-full transition-all duration-500" style={{ width: `${100 / displayBars.length}%` }}>
+                      <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-[var(--text-primary)]' : 'text-neutral-400'}`}>{pctLabel} %</span>
                       <button
                         onClick={bar.isAfd ? () => handleCycleSandboxState() : undefined}
                         className={`relative w-full rounded-t-md overflow-hidden transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
-                        style={{ height: `${heightPx}px` }}
+                        style={{ height: `${(bar.pct / maxPct) * 85}%` }}
                         aria-label={bar.isAfd ? (sandboxState === 'default' ? t.demoSwitch : sandboxState === 'brown' ? t.demoDreamSwitch : t.demoReset) : label}
                         disabled={!bar.isAfd}
                         type="button"
@@ -411,7 +410,7 @@ export function InteractiveDemoSection({
 
       {/* Sticky Flying Controls Toolbar */}
       <div 
-        className={`fixed bottom-6 right-6 z-50 flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1.5 shadow-2xl transition-all duration-300 pointer-events-none select-none ${
+        className={`fixed md:absolute bottom-6 right-6 md:bottom-4 md:right-4 z-50 md:z-40 flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1.5 shadow-2xl transition-all duration-300 select-none ${
           isSandboxInView ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-75 pointer-events-none'
         }`}
       >
