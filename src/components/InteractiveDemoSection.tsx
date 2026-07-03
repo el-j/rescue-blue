@@ -307,7 +307,7 @@ export function InteractiveDemoSection({
         </div>
 
         {/* Right Column: Bar Chart & Controls */}
-        <div className="md:col-span-7 flex flex-col h-full justify-between space-y-6">
+        <div className="md:col-span-7 flex flex-col h-full justify-between space-y-6 md:border-l md:border-[var(--border)] md:pl-6">
           {/* Dream scenario banner — visible when dreamstate is active */}
           {isDreamActive && (
             <div className="dream-banner mb-4 animate-in rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-amber-950/40 px-4 py-3 text-center">
@@ -321,7 +321,7 @@ export function InteractiveDemoSection({
           )}
 
           {/* Main bar chart */}
-          <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-4 md:p-6 shadow-inner h-full flex flex-col justify-between flex-grow">
+          <div className="h-full flex flex-col justify-between flex-grow">
             <div className="relative flex flex-grow h-full min-h-[310px] items-end justify-around border-b border-[var(--border)] pb-2">
               {showComparison ? (
                 <>

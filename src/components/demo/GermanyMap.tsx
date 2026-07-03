@@ -111,7 +111,7 @@ export function GermanyMap({
 
   return (
     <div className="flex flex-col items-center w-full h-full flex-grow">
-      <div className="relative w-full max-w-[320px] md:max-w-[340px] aspect-[586/793] bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] p-3 shadow-inner flex flex-col justify-between h-full flex-grow">
+      <div className="relative w-full max-w-[320px] md:max-w-[340px] aspect-[586/793] flex flex-col justify-between h-full flex-grow">
         
         <div className="w-full">
           {/* Combined Country/Federal Selector Dropdown */}
