@@ -32,27 +32,27 @@
   },
   {
     "title": {
-      "ru": "Протесты против АдГ: Любой, кто блокирует партийные конференции, наносит ущерб демократии – мнение",
-      "it": "Proteste anti-AfD: chi blocca i congressi dei partiti danneggia la democrazia - opinione",
-      "en": "Anti-AfD protests: Anyone who blocks party conferences is damaging democracy - opinion",
-      "fr": "Manifestations contre l'AfD : quiconque bloque les conférences du parti porte atteinte à la démocratie - opinion",
-      "tr": "AfD karşıtı protestolar: Parti konferanslarını engelleyen herkes demokrasiye zarar veriyor",
       "es": "Protestas contra AfD: Quien bloquee las conferencias de los partidos daña la democracia - opinión",
+      "it": "Proteste anti-AfD: chi blocca i congressi dei partiti danneggia la democrazia - opinione",
+      "ru": "Протесты против АдГ: Любой, кто блокирует партийные конференции, наносит ущерб демократии – мнение",
       "de": "Anti-AfD-Proteste: Wer Parteitage blockiert, schädigt die Demokratie - Meinung",
       "pl": "Protesty przeciwko AfD: Każdy, kto blokuje konferencje partii, szkodzi demokracji – opinia",
-      "uk": "Протести проти AfD: кожен, хто блокує партійні конференції, завдає шкоди демократії - думка"
+      "uk": "Протести проти AfD: кожен, хто блокує партійні конференції, завдає шкоди демократії - думка",
+      "tr": "AfD karşıtı protestolar: Parti konferanslarını engelleyen herkes demokrasiye zarar veriyor",
+      "fr": "Manifestations contre l'AfD : quiconque bloque les conférences du parti porte atteinte à la démocratie - opinion",
+      "en": "Anti-AfD protests: Anyone who blocks party conferences is damaging democracy - opinion"
     },
     "date": "2026-07-03",
     "excerpt": {
-      "ru": "Широкий альянс хочет помешать правоэкстремистской АдГ провести партийную конференцию в Эрфурте. Это неправильно.",
-      "it": "Un’ampia alleanza vuole impedire agli estremisti di destra AfD di tenere la conferenza del partito a Erfurt. Questo è sbagliato.",
-      "en": "A broad alliance wants to prevent the right-wing extremist AfD from holding its party conference in Erfurt. That's wrong.",
-      "fr": "Une large alliance veut empêcher l'AfD, parti d'extrême droite, de tenir sa conférence à Erfurt. C'est faux.",
-      "tr": "Geniş bir ittifak, aşırı sağcı AfD'nin parti konferansını Erfurt'ta düzenlemesini engellemek istiyor. Bu yanlış.",
       "es": "Una amplia alianza quiere impedir que el partido de extrema derecha AfD celebre su conferencia de partido en Erfurt. Eso está mal.",
+      "it": "Un’ampia alleanza vuole impedire agli estremisti di destra AfD di tenere la conferenza del partito a Erfurt. Questo è sbagliato.",
+      "ru": "Широкий альянс хочет помешать правоэкстремистской АдГ провести партийную конференцию в Эрфурте. Это неправильно.",
       "de": "Ein breites Bündnis will verhindern, dass die rechtsextreme AfD ihren Parteitag in Erfurt abhalten kann. Das ist falsch.",
       "pl": "Szeroki sojusz chce uniemożliwić prawicowej ekstremistycznej AfD zorganizowanie konferencji partyjnej w Erfurcie. To źle.",
-      "uk": "Широкий альянс хоче перешкодити правоекстремістській AfD провести партійну конференцію в Ерфурті. Це неправильно."
+      "uk": "Широкий альянс хоче перешкодити правоекстремістській AfD провести партійну конференцію в Ерфурті. Це неправильно.",
+      "tr": "Geniş bir ittifak, aşırı sağcı AfD'nin parti konferansını Erfurt'ta düzenlemesini engellemek istiyor. Bu yanlış.",
+      "fr": "Une large alliance veut empêcher l'AfD, parti d'extrême droite, de tenir sa conférence à Erfurt. C'est faux.",
+      "en": "A broad alliance wants to prevent the right-wing extremist AfD from holding its party conference in Erfurt. That's wrong."
     },
     "sources": [
       {
@@ -67,27 +67,27 @@
   },
   {
     "title": {
-      "ru": "Маттиас Хелферих: Суд партии АдГ разрешил депутату остаться",
-      "it": "Matthias Helferich: Il tribunale del partito AfD permette al deputato di restare",
-      "en": "Matthias Helferich: AfD party court allows MP to stay",
-      "fr": "Matthias Helferich : le tribunal du parti AfD autorise le député à rester",
-      "tr": "Matthias Helferich: AfD parti mahkemesi milletvekilinin kalmasına izin verdi",
       "es": "Matthias Helferich: el tribunal del partido AfD permite la permanencia del diputado",
+      "it": "Matthias Helferich: Il tribunale del partito AfD permette al deputato di restare",
+      "ru": "Маттиас Хелферих: Суд партии АдГ разрешил депутату остаться",
       "de": "Matthias Helferich: AfD-Parteigericht erlaubt Verbleib des Abgeordneten",
       "pl": "Matthias Helferich: Sąd partii AfD pozwala parlamentarzystom pozostać",
-      "uk": "Маттіас Хельферіх: Суд партії AfD дозволяє депутату залишитися"
+      "uk": "Маттіас Хельферіх: Суд партії AfD дозволяє депутату залишитися",
+      "tr": "Matthias Helferich: AfD parti mahkemesi milletvekilinin kalmasına izin verdi",
+      "fr": "Matthias Helferich : le tribunal du parti AfD autorise le député à rester",
+      "en": "Matthias Helferich: AfD party court allows MP to stay"
     },
     "date": "2026-07-03",
     "excerpt": {
-      "ru": "АдГ в Северном Рейне-Вестфалии хотела исключить из партии скандального депутата Бундестага Маттиаса Хельфериха. Сейчас вышестоящий суд отменил это решение.",
-      "it": "L'AfD della Renania Settentrionale-Vestfalia voleva cacciare dal partito il controverso deputato del Bundestag Matthias Helferich. La Corte Suprema ha ora annullato questa sentenza.",
-      "en": "The AfD in North Rhine-Westphalia wanted to throw the controversial Bundestag member Matthias Helferich out of the party. The higher court has now overturned this ruling.",
-      "fr": "L'AfD de Rhénanie du Nord-Westphalie souhaitait exclure du parti le député controversé du Bundestag, Matthias Helferich. La juridiction supérieure a maintenant annulé cette décision.",
-      "tr": "Kuzey Ren-Vestfalya'daki AfD, tartışmalı Federal Meclis üyesi Matthias Helferich'i partiden atmak istiyordu. Şimdi yüksek mahkeme bu kararı bozdu.",
       "es": "El AfD en Renania del Norte-Westfalia quería expulsar del partido al controvertido miembro del Bundestag, Matthias Helferich. El tribunal superior ha anulado ahora esta sentencia.",
+      "it": "L'AfD della Renania Settentrionale-Vestfalia voleva cacciare dal partito il controverso deputato del Bundestag Matthias Helferich. La Corte Suprema ha ora annullato questa sentenza.",
+      "ru": "АдГ в Северном Рейне-Вестфалии хотела исключить из партии скандального депутата Бундестага Маттиаса Хельфериха. Сейчас вышестоящий суд отменил это решение.",
       "de": "Die AfD in NRW wollte den umstrittenen Bundestagsabgeordneten Matthias Helferich aus der Partei werfen. Die höhere Instanz hat dieses Urteil jetzt gekippt.",
       "pl": "AfD w Nadrenii Północnej-Westfalii chciała wyrzucić z partii kontrowersyjnego członka Bundestagu Matthiasa Helfericha. Teraz sąd wyższej instancji uchylił to orzeczenie.",
-      "uk": "AfD у Північному Рейні-Вестфалії хотіла вигнати суперечливого члена Бундестагу Матіаса Хельферіха з партії. Наразі суд вищої інстанції скасував це рішення."
+      "uk": "AfD у Північному Рейні-Вестфалії хотіла вигнати суперечливого члена Бундестагу Матіаса Хельферіха з партії. Наразі суд вищої інстанції скасував це рішення.",
+      "tr": "Kuzey Ren-Vestfalya'daki AfD, tartışmalı Federal Meclis üyesi Matthias Helferich'i partiden atmak istiyordu. Şimdi yüksek mahkeme bu kararı bozdu.",
+      "fr": "L'AfD de Rhénanie du Nord-Westphalie souhaitait exclure du parti le député controversé du Bundestag, Matthias Helferich. La juridiction supérieure a maintenant annulé cette décision.",
+      "en": "The AfD in North Rhine-Westphalia wanted to throw the controversial Bundestag member Matthias Helferich out of the party. The higher court has now overturned this ruling."
     },
     "sources": [
       {
@@ -137,27 +137,27 @@
   },
   {
     "title": {
-      "ru": "Конференция Федеральной партии в Эрфурте: стоит ли блокировать АдГ?",
-      "it": "Conferenza del partito federale a Erfurt: dovremmo bloccare l'AfD?",
-      "en": "Federal party conference in Erfurt: Should we block the AfD?",
-      "fr": "Conférence du parti fédéral à Erfurt : faut-il bloquer l’AfD ?",
-      "tr": "Erfurt'taki federal parti konferansı: AfD'yi engellemeli miyiz?",
       "es": "Conferencia federal del partido en Erfurt: ¿Deberíamos bloquear al AfD?",
+      "it": "Conferenza del partito federale a Erfurt: dovremmo bloccare l'AfD?",
+      "ru": "Конференция Федеральной партии в Эрфурте: стоит ли блокировать АдГ?",
       "de": "Bundesparteitag in Erfurt: Soll man die AfD blockieren?",
       "pl": "Konferencja partii federalnej w Erfurcie: Czy powinniśmy blokować AfD?",
-      "uk": "Федеральна партійна конференція в Ерфурті: чи повинні ми блокувати AfD?"
+      "uk": "Федеральна партійна конференція в Ерфурті: чи повинні ми блокувати AfD?",
+      "tr": "Erfurt'taki federal parti konferansı: AfD'yi engellemeli miyiz?",
+      "fr": "Conférence du parti fédéral à Erfurt : faut-il bloquer l’AfD ?",
+      "en": "Federal party conference in Erfurt: Should we block the AfD?"
     },
     "date": "2026-07-03",
     "excerpt": {
-      "ru": "Альянс Сопротивления мобилизуется в столице Тюрингии, чтобы предотвратить собрание правых экстремистов, в том числе с помощью блокад. Хорошая идея? более...",
-      "it": "L'Alleanza Resist si mobilita nella capitale della Turingia per impedire, anche con blocchi, un raduno di estremisti di destra. Una buona idea? Di più...",
-      "en": "The Alliance Resist is mobilizing in the capital of Thuringia to prevent a right-wing extremist gathering - including with blockades. A good idea? more...",
-      "fr": "L'Alliance Resist se mobilise dans la capitale de Thuringe pour empêcher un rassemblement d'extrême droite - y compris par des blocus. Une bonne idée ? plus...",
-      "tr": "Alliance Resist, ablukalar da dahil olmak üzere aşırı sağcı bir toplantıyı önlemek için Thüringen'in başkentinde harekete geçiyor. İyi bir fikir mi? Daha...",
       "es": "La Alianza Resistir se está movilizando en la capital de Turingia para impedir, incluso con bloqueos, una reunión de extrema derecha. ¿Una buena idea? más...",
+      "it": "L'Alleanza Resist si mobilita nella capitale della Turingia per impedire, anche con blocchi, un raduno di estremisti di destra. Una buona idea? Di più...",
+      "ru": "Альянс Сопротивления мобилизуется в столице Тюрингии, чтобы предотвратить собрание правых экстремистов, в том числе с помощью блокад. Хорошая идея? более...",
       "de": "Das Bündnis Widersetzen mobilisiert in die Hauptstadt Thüringens, um eine rechtsextreme Versammlung zu verhindern – auch mit Blockaden. Eine gute Idee? mehr...",
       "pl": "Organizacja Alliance Resist mobilizuje się w stolicy Turyngii, aby zapobiec zgromadzeniom prawicowych ekstremistów – w tym za pomocą blokad. Dobry pomysł? więcej...",
-      "uk": "Alliance Resist мобілізується в столиці Тюрінгії, щоб запобігти зібранню правих екстремістів, зокрема шляхом блокування. Хороша ідея? більше..."
+      "uk": "Alliance Resist мобілізується в столиці Тюрінгії, щоб запобігти зібранню правих екстремістів, зокрема шляхом блокування. Хороша ідея? більше...",
+      "tr": "Alliance Resist, ablukalar da dahil olmak üzere aşırı sağcı bir toplantıyı önlemek için Thüringen'in başkentinde harekete geçiyor. İyi bir fikir mi? Daha...",
+      "fr": "L'Alliance Resist se mobilise dans la capitale de Thuringe pour empêcher un rassemblement d'extrême droite - y compris par des blocus. Une bonne idée ? plus...",
+      "en": "The Alliance Resist is mobilizing in the capital of Thuringia to prevent a right-wing extremist gathering - including with blockades. A good idea? more..."
     },
     "sources": [
       {
@@ -168,27 +168,27 @@
   },
   {
     "title": {
-      "ru": "Исключение партии АдГ провалилось: даже дружественный нацист – нацист",
-      "it": "L’esclusione del partito AfD è fallita: anche un nazista amico è un nazista",
-      "en": "AfD party exclusion failed: Even a friendly Nazi is a Nazi",
-      "fr": "L’exclusion de l’AfD a échoué : même un nazi ami est un nazi",
-      "tr": "AfD partisinin dışlanması başarısız oldu: Dost canlısı bir Nazi bile Nazidir",
       "es": "La exclusión del partido AfD fracasó: incluso un nazi amigo es un nazi",
+      "it": "L’esclusione del partito AfD è fallita: anche un nazista amico è un nazista",
+      "ru": "Исключение партии АдГ провалилось: даже дружественный нацист – нацист",
       "de": "AfD-Parteiausschluss gescheitert: Auch ein freundlicher Nazi ist ein Nazi",
       "pl": "Nie udało się wykluczyć partii AfD: nawet przyjazny nazista jest nazistą",
-      "uk": "Виключення партії AfD не вдалося: навіть доброзичливий нацист є нацистом"
+      "uk": "Виключення партії AfD не вдалося: навіть доброзичливий нацист є нацистом",
+      "tr": "AfD partisinin dışlanması başarısız oldu: Dost canlısı bir Nazi bile Nazidir",
+      "fr": "L’exclusion de l’AfD a échoué : même un nazi ami est un nazi",
+      "en": "AfD party exclusion failed: Even a friendly Nazi is a Nazi"
     },
     "date": "2026-07-03",
     "excerpt": {
-      "ru": "Матиасу Хелфериху, самопровозглашенному «дружественному лицу НС», разрешено остаться в АдГ. Его откровенные заявления показывают этническую душу партии. более...",
-      "it": "Matthias Helferich, autoproclamatosi “volto amico del nazionalsocialismo”, può restare nell’AfD. Le sue dichiarazioni palesi mostrano l’anima etnica del partito. Di più...",
-      "en": "Matthias Helferich, self-proclaimed “friendly face of the NS”, is allowed to remain in the AfD. His blatant statements show the ethnic soul of the party. more...",
-      "fr": "Matthias Helferich, autoproclamé « visage ami de la NS », est autorisé à rester au sein de l'AfD. Ses déclarations flagrantes montrent l’âme ethnique du parti. plus...",
-      "tr": "Kendini \"NS'nin dost yüzü\" olarak ilan eden Matthias Helferich'in AfD'de kalmasına izin verildi. Açıkça yaptığı açıklamalar partinin etnik ruhunu ortaya koyuyor. Daha...",
       "es": "Matthias Helferich, autoproclamado “rostro amigo del NS”, puede permanecer en el AfD. Sus descaradas declaraciones muestran el alma étnica del partido. más...",
+      "it": "Matthias Helferich, autoproclamatosi “volto amico del nazionalsocialismo”, può restare nell’AfD. Le sue dichiarazioni palesi mostrano l’anima etnica del partito. Di più...",
+      "ru": "Матиасу Хелфериху, самопровозглашенному «дружественному лицу НС», разрешено остаться в АдГ. Его откровенные заявления показывают этническую душу партии. более...",
       "de": "Matthias Helferich, selbst ernanntes „freundliches Gesicht des NS“, darf in der AfD bleiben. Seine krassen Aussagen zeigen die völkische Seele der Partei. mehr...",
       "pl": "Matthias Helferich, samozwańczy „przyjazna twarz NS”, może pozostać w AfD. Jego bezczelne wypowiedzi ukazują etniczną duszę partii. więcej...",
-      "uk": "Маттіасу Гельферіху, самопроголошеному «дружньому обличчю НС», дозволено залишитися в AfD. Його кричущі заяви демонструють етнічну душу партії. більше..."
+      "uk": "Маттіасу Гельферіху, самопроголошеному «дружньому обличчю НС», дозволено залишитися в AfD. Його кричущі заяви демонструють етнічну душу партії. більше...",
+      "tr": "Kendini \"NS'nin dost yüzü\" olarak ilan eden Matthias Helferich'in AfD'de kalmasına izin verildi. Açıkça yaptığı açıklamalar partinin etnik ruhunu ortaya koyuyor. Daha...",
+      "fr": "Matthias Helferich, autoproclamé « visage ami de la NS », est autorisé à rester au sein de l'AfD. Ses déclarations flagrantes montrent l’âme ethnique du parti. plus...",
+      "en": "Matthias Helferich, self-proclaimed “friendly face of the NS”, is allowed to remain in the AfD. His blatant statements show the ethnic soul of the party. more..."
     },
     "sources": [
       {
@@ -199,27 +199,27 @@
   },
   {
     "title": {
-      "ru": "Партийная конференция АдГ в Эрфурте: звонят десять тысяч дверных звонков",
-      "it": "Conferenza del partito AfD a Erfurt: suonano diecimila campanelli",
-      "en": "AfD party conference in Erfurt: ten thousand doorbells ring",
-      "fr": "Conférence du parti AfD à Erfurt : dix mille sonnettes",
-      "tr": "Erfurt'ta AfD parti konferansı: on bin kapı zili çalıyor",
       "es": "Conferencia del partido AfD en Erfurt: suenan diez mil timbres",
+      "it": "Conferenza del partito AfD a Erfurt: suonano diecimila campanelli",
+      "ru": "Партийная конференция АдГ в Эрфурте: звонят десять тысяч дверных звонков",
       "de": "AfD-Parteitag in Erfurt: Es klingelt an zehntausend Türen",
       "pl": "Konferencja partii AfD w Erfurcie: dzwoni dziesięć tysięcy dzwonków do drzwi",
-      "uk": "Партійна конференція AfD в Ерфурті: у двері дзвонять десять тисяч"
+      "uk": "Партійна конференція AfD в Ерфурті: у двері дзвонять десять тисяч",
+      "tr": "Erfurt'ta AfD parti konferansı: on bin kapı zili çalıyor",
+      "fr": "Conférence du parti AfD à Erfurt : dix mille sonnettes",
+      "en": "AfD party conference in Erfurt: ten thousand doorbells ring"
     },
     "date": "2026-07-03",
     "excerpt": {
-      "ru": "Антифашисты звонили в двери в течение нескольких недель, прежде чем АдГ проведет партийную конференцию в Эрфурте. Вопрос: Что вы думаете об АдГ? более...",
-      "it": "Gli antifascisti suonano i campanelli da settimane prima che l’AfD tenga la sua conferenza del partito a Erfurt. La domanda: cosa ne pensi dell’AfD? Di più...",
-      "en": "Antifascists have been ringing doorbells for weeks before the AfD holds its party conference in Erfurt. The question: What do you think of the AfD? more...",
-      "fr": "Les antifascistes sonnent aux portes depuis des semaines avant la conférence du parti de l'AfD à Erfurt. La question : Que pensez-vous de l’AfD ? plus...",
-      "tr": "Antifaşistler, AfD'nin Erfurt'ta parti konferansı düzenlemesinden önce haftalardır kapı zillerini çalıyor. Soru şu: AfD hakkında ne düşünüyorsunuz? Daha...",
       "es": "Los antifascistas llevan semanas tocando el timbre antes de que AfD celebre su conferencia del partido en Erfurt. La pregunta: ¿Qué opina del AfD? más...",
+      "it": "Gli antifascisti suonano i campanelli da settimane prima che l’AfD tenga la sua conferenza del partito a Erfurt. La domanda: cosa ne pensi dell’AfD? Di più...",
+      "ru": "Антифашисты звонили в двери в течение нескольких недель, прежде чем АдГ проведет партийную конференцию в Эрфурте. Вопрос: Что вы думаете об АдГ? более...",
       "de": "Wochenlang klingeln An­ti­faschist:innen an Haustüren, bevor die AfD ihren Parteitag in Erfurt abhält. Die Frage: Was halten Sie von der AfD? mehr...",
       "pl": "Antyfaszyści dzwonili do drzwi od tygodni, zanim AfD zorganizuje konferencję partyjną w Erfurcie. Pytanie: Co sądzisz o AfD? więcej...",
-      "uk": "Антифашисти дзвонили в двері тижнями перед партійною конференцією AfD в Ерфурті. Запитання: що ви думаєте про AfD? більше..."
+      "uk": "Антифашисти дзвонили в двері тижнями перед партійною конференцією AfD в Ерфурті. Запитання: що ви думаєте про AfD? більше...",
+      "tr": "Antifaşistler, AfD'nin Erfurt'ta parti konferansı düzenlemesinden önce haftalardır kapı zillerini çalıyor. Soru şu: AfD hakkında ne düşünüyorsunuz? Daha...",
+      "fr": "Les antifascistes sonnent aux portes depuis des semaines avant la conférence du parti de l'AfD à Erfurt. La question : Que pensez-vous de l’AfD ? plus...",
+      "en": "Antifascists have been ringing doorbells for weeks before the AfD holds its party conference in Erfurt. The question: What do you think of the AfD? more..."
     },
     "sources": [
       {
@@ -362,27 +362,27 @@
   },
   {
     "title": {
-      "ru": "В настоящее время мы не получаем ни запрета АдГ, ни «хорошей политики, которая поможет против АдГ».",
-      "it": "Al momento non stiamo ottenendo né il divieto dell’AfD né una “buona politica che aiuta contro l’AfD”",
-      "en": "We are currently neither getting a ban on the AfD nor “good politics that helps against the AfD”",
-      "fr": "Nous n’obtenons actuellement ni une interdiction de l’AfD ni « une bonne politique qui aide contre l’AfD »",
-      "tr": "Şu anda ne AfD'ye yasak getiriliyor, ne de \"AfD'ye karşı yardımcı olacak iyi politikalar\" yapılıyor.",
       "es": "Actualmente no obtenemos ni una prohibición del AfD ni una “buena política que ayude contra el AfD”",
+      "it": "Al momento non stiamo ottenendo né il divieto dell’AfD né una “buona politica che aiuta contro l’AfD”",
+      "ru": "В настоящее время мы не получаем ни запрета АдГ, ни «хорошей политики, которая поможет против АдГ».",
       "de": "Wir kriegen gerade weder ein AfD-Verbot noch „gute Politik, die gegen die AfD hilft“",
       "pl": "Obecnie nie mamy ani zakazu dla AfD, ani „dobrej polityki, która pomaga przeciwko AfD”",
-      "uk": "Зараз ми не отримуємо ані заборони на AfD, ані «хорошої політики, яка допомагає проти AfD»"
+      "uk": "Зараз ми не отримуємо ані заборони на AfD, ані «хорошої політики, яка допомагає проти AfD»",
+      "tr": "Şu anda ne AfD'ye yasak getiriliyor, ne de \"AfD'ye karşı yardımcı olacak iyi politikalar\" yapılıyor.",
+      "fr": "Nous n’obtenons actuellement ni une interdiction de l’AfD ni « une bonne politique qui aide contre l’AfD »",
+      "en": "We are currently neither getting a ban on the AfD nor “good politics that helps against the AfD”"
     },
     "date": "2026-07-01",
     "excerpt": {
-      "ru": "В самом полном из когда-либо составленных докладов делается вывод о том, что АдГ соответствует требованиям для запрета партий. Союз парирует это известным...",
-      "it": "Il rapporto più completo mai redatto conclude che l’AfD soddisfa i requisiti per la messa al bando dei partiti. A ciò l'Unione risponde con la nota...",
-      "en": "The most comprehensive report ever drawn up concludes that the AfD meets the requirements for a party ban. The Union counters this with the well-known...",
-      "fr": "Le rapport le plus complet jamais rédigé conclut que l'AfD remplit les conditions requises pour interdire un parti. L'Union répond à cela avec le fameux...",
-      "tr": "Şimdiye kadar hazırlanan en kapsamlı rapor, AfD'nin parti yasağı şartlarını yerine getirdiği sonucuna varıyor. Birlik buna şu meşhur sözle karşı çıkıyor:",
       "es": "El informe más completo jamás elaborado concluye que el AfD cumple los requisitos para ser prohibido como partido. La Unión responde a esto con el conocido...",
+      "it": "Il rapporto più completo mai redatto conclude che l’AfD soddisfa i requisiti per la messa al bando dei partiti. A ciò l'Unione risponde con la nota...",
+      "ru": "В самом полном из когда-либо составленных докладов делается вывод о том, что АдГ соответствует требованиям для запрета партий. Союз парирует это известным...",
       "de": "Das umfassendste Gutachten, das je erstellt wurde, kommt zum Schluss, dass die AfD die Anforderungen für ein Parteienverbot erfüllt. Dem entgegnet die Union mit der altbekannten...",
       "pl": "W najbardziej kompleksowym raporcie, jaki kiedykolwiek sporządzono, stwierdza się, że AfD spełnia wymogi zakazu partii. Unia przeciwstawia się temu dobrze znanemu...",
-      "uk": "У найповнішому звіті, коли-небудь складеному, робиться висновок, що AfD відповідає вимогам для заборони партії. Союз протидіє цьому відомим..."
+      "uk": "У найповнішому звіті, коли-небудь складеному, робиться висновок, що AfD відповідає вимогам для заборони партії. Союз протидіє цьому відомим...",
+      "tr": "Şimdiye kadar hazırlanan en kapsamlı rapor, AfD'nin parti yasağı şartlarını yerine getirdiği sonucuna varıyor. Birlik buna şu meşhur sözle karşı çıkıyor:",
+      "fr": "Le rapport le plus complet jamais rédigé conclut que l'AfD remplit les conditions requises pour interdire un parti. L'Union répond à cela avec le fameux...",
+      "en": "The most comprehensive report ever drawn up concludes that the AfD meets the requirements for a party ban. The Union counters this with the well-known..."
     },
     "sources": [
       {
@@ -424,27 +424,27 @@
   },
   {
     "title": {
-      "ru": "АдГ – самое опасное исключение правых экстремистов в Европе",
-      "it": "L’AfD è l’eccezione estremista di destra più pericolosa d’Europa",
-      "en": "The AfD is Europe's most dangerous, right-wing extremist exception",
-      "fr": "L'AfD est l'exception d'extrême droite la plus dangereuse d'Europe",
-      "tr": "AfD, Avrupa'nın en tehlikeli, aşırı sağcı istisnasıdır",
       "es": "AfD es la excepción de extrema derecha más peligrosa de Europa",
+      "it": "L’AfD è l’eccezione estremista di destra più pericolosa d’Europa",
+      "ru": "АдГ – самое опасное исключение правых экстремистов в Европе",
       "de": "Die AfD ist Europas gefährlichste, rechtsextreme Ausnahme",
       "pl": "AfD to najniebezpieczniejszy prawicowy ekstremistyczny wyjątek w Europie",
-      "uk": "AfD є найнебезпечнішим правим екстремістським винятком Європи"
+      "uk": "AfD є найнебезпечнішим правим екстремістським винятком Європи",
+      "tr": "AfD, Avrupa'nın en tehlikeli, aşırı sağcı istisnasıdır",
+      "fr": "L'AfD est l'exception d'extrême droite la plus dangereuse d'Europe",
+      "en": "The AfD is Europe's most dangerous, right-wing extremist exception"
     },
     "date": "2026-06-29",
     "excerpt": {
-      "ru": "Вся Европа движется вправо – но в основном умеренными тонами, чтобы получить власть. Только одна партия делает обратное: АдГ становится все более радикальной и...",
-      "it": "Tutta l'Europa si sta muovendo a destra, ma per lo più con toni moderati per conquistare il potere. Solo un partito fa il contrario: l’AfD diventa sempre più radicale e...",
-      "en": "All of Europe is moving to the right - but mostly with moderate tones in order to gain power. Only one party is doing the opposite: the AfD is becoming increasingly radical and...",
-      "fr": "L’Europe entière se dirige vers la droite – mais surtout sur un ton modéré afin d’accéder au pouvoir. Un seul parti fait le contraire : l’AfD se radicalise de plus en plus et...",
-      "tr": "Tüm Avrupa sağa doğru kayıyor ama çoğunlukla güç kazanmak adına ılımlı tonlarla. Sadece bir parti bunun tersini yapıyor: AfD giderek radikalleşiyor ve...",
       "es": "Toda Europa se está moviendo hacia la derecha, pero sobre todo con un tono moderado, para ganar poder. Sólo un partido hace lo contrario: el AfD se está volviendo cada vez más radical y...",
+      "it": "Tutta l'Europa si sta muovendo a destra, ma per lo più con toni moderati per conquistare il potere. Solo un partito fa il contrario: l’AfD diventa sempre più radicale e...",
+      "ru": "Вся Европа движется вправо – но в основном умеренными тонами, чтобы получить власть. Только одна партия делает обратное: АдГ становится все более радикальной и...",
       "de": "Ganz Europa rückt nach rechts – aber meist mit gemäßigten Tönen, um an die Macht zu kommen. Nur eine Partei macht das Gegenteil: Die AfD radikalisiert sich immer weiter und wäch...",
       "pl": "Cała Europa zmierza w prawo – ale przeważnie umiarkowanymi tonami w celu zdobycia władzy. Tylko jedna partia robi odwrotnie: AfD staje się coraz bardziej radykalna i...",
-      "uk": "Вся Європа рухається праворуч – але переважно поміркованими тонами, щоб отримати владу. Лише одна партія робить навпаки: AfD стає все більш радикальною і..."
+      "uk": "Вся Європа рухається праворуч – але переважно поміркованими тонами, щоб отримати владу. Лише одна партія робить навпаки: AfD стає все більш радикальною і...",
+      "tr": "Tüm Avrupa sağa doğru kayıyor ama çoğunlukla güç kazanmak adına ılımlı tonlarla. Sadece bir parti bunun tersini yapıyor: AfD giderek radikalleşiyor ve...",
+      "fr": "L’Europe entière se dirige vers la droite – mais surtout sur un ton modéré afin d’accéder au pouvoir. Un seul parti fait le contraire : l’AfD se radicalise de plus en plus et...",
+      "en": "All of Europe is moving to the right - but mostly with moderate tones in order to gain power. Only one party is doing the opposite: the AfD is becoming increasingly radical and..."
     },
     "sources": [
       {
@@ -517,27 +517,27 @@
   },
   {
     "title": {
-      "ru": "Немецкая аномалия: как АдГ ломает европейскую тенденцию к умеренности",
-      "it": "Anomalia tedesca: come l’AfD rompe la tendenza europea alla moderazione",
-      "en": "German Anomaly: How the AfD is breaking the European trend towards moderation",
-      "fr": "Anomalie allemande : comment l’AfD brise la tendance européenne à la modération",
-      "tr": "Alman Anomalisi: AfD Avrupa'nın ılımlılaşma eğilimini nasıl kırıyor?",
       "es": "Anomalía alemana: cómo el AfD está rompiendo la tendencia europea hacia la moderación",
+      "it": "Anomalia tedesca: come l’AfD rompe la tendenza europea alla moderazione",
+      "ru": "Немецкая аномалия: как АдГ ломает европейскую тенденцию к умеренности",
       "de": "Deutsche Anomalie: Wie die AfD den europäischen Trend zur Mäßigung bricht",
       "pl": "Anomalia niemiecka: jak AfD przełamuje europejski trend umiarkowania",
-      "uk": "Німецька аномалія: як AfD ламає європейську тенденцію до поміркованості"
+      "uk": "Німецька аномалія: як AfD ламає європейську тенденцію до поміркованості",
+      "tr": "Alman Anomalisi: AfD Avrupa'nın ılımlılaşma eğilimini nasıl kırıyor?",
+      "fr": "Anomalie allemande : comment l’AfD brise la tendance européenne à la modération",
+      "en": "German Anomaly: How the AfD is breaking the European trend towards moderation"
     },
     "date": "2026-06-25",
     "excerpt": {
-      "ru": "Хотя отмена Виктора Орбана во многих случаях принесла облегчение, вскоре после этого правый популист Янез Янша был переизбран главой правительства Словении. Сила...",
-      "it": "Mentre la deselezione di Viktor Orban ha portato sollievo in molti casi, poco tempo dopo il populista di destra Janez Janša è stato rieletto capo del governo sloveno. La forza di...",
-      "en": "While Viktor Orban's deselection brought relief in many cases, right-wing populist Janez Janša was re-elected as Slovenia's head of government a short time later. The strength of...",
-      "fr": "Si la démission de Viktor Orban a apporté un soulagement dans de nombreux cas, le populiste de droite Janez Janša a été réélu à la tête du gouvernement slovène peu de temps après. La force de...",
-      "tr": "Viktor Orban'ın seçimden çekilmesi birçok durumda rahatlama sağlarken, sağcı popülist Janez Janša kısa bir süre sonra Slovenya hükümetinin başına yeniden seçildi. Gücü...",
       "es": "Si bien la deselección de Viktor Orban supuso un alivio en muchos casos, el populista de derecha Janez Janša fue reelegido como jefe de gobierno de Eslovenia poco tiempo después. La fuerza de...",
+      "it": "Mentre la deselezione di Viktor Orban ha portato sollievo in molti casi, poco tempo dopo il populista di destra Janez Janša è stato rieletto capo del governo sloveno. La forza di...",
+      "ru": "Хотя отмена Виктора Орбана во многих случаях принесла облегчение, вскоре после этого правый популист Янез Янша был переизбран главой правительства Словении. Сила...",
       "de": "Während die Abwahl Viktor Orbans vielfach für Erleichterung sorgte, wurde wenig später der Rechtspopulist Janez Janša erneut zum Regierungschef Sloweniens gewählt. Die Stärke de...",
       "pl": "O ile cofnięcie wyboru Viktora Orbana w wielu przypadkach przyniosło ulgę, o tyle wkrótce później prawicowy populista Janez Janša został ponownie wybrany na szefa rządu Słowenii. Siła...",
-      "uk": "У той час як відміна Віктора Орбана принесла полегшення в багатьох випадках, правий популіст Янез Янша був переобраний главою уряду Словенії невдовзі пізніше. Сила..."
+      "uk": "У той час як відміна Віктора Орбана принесла полегшення в багатьох випадках, правий популіст Янез Янша був переобраний главою уряду Словенії невдовзі пізніше. Сила...",
+      "tr": "Viktor Orban'ın seçimden çekilmesi birçok durumda rahatlama sağlarken, sağcı popülist Janez Janša kısa bir süre sonra Slovenya hükümetinin başına yeniden seçildi. Gücü...",
+      "fr": "Si la démission de Viktor Orban a apporté un soulagement dans de nombreux cas, le populiste de droite Janez Janša a été réélu à la tête du gouvernement slovène peu de temps après. La force de...",
+      "en": "While Viktor Orban's deselection brought relief in many cases, right-wing populist Janez Janša was re-elected as Slovenia's head of government a short time later. The strength of..."
     },
     "sources": [
       {
@@ -579,27 +579,27 @@
   },
   {
     "title": {
-      "ru": "Запрет АдГ, вероятно, был бы успешным – этот доклад меняет все!",
-      "it": "Una messa al bando dell’AfD probabilmente avrebbe successo: questo rapporto cambia tutto!",
-      "en": "A ban on the AfD would probably be successful – this report changes everything!",
-      "fr": "Une interdiction de l’AfD serait probablement un succès – ce rapport change tout !",
-      "tr": "AfD'nin yasaklanması muhtemelen başarılı olacaktır; bu rapor her şeyi değiştiriyor!",
       "es": "Una prohibición del AfD probablemente sería un éxito: ¡este informe lo cambia todo!",
+      "it": "Una messa al bando dell’AfD probabilmente avrebbe successo: questo rapporto cambia tutto!",
+      "ru": "Запрет АдГ, вероятно, был бы успешным – этот доклад меняет все!",
       "de": "Ein AfD-Verbot hätte wohl Erfolg – dieses Gutachten ändert alles!",
       "pl": "Zakazanie AfD prawdopodobnie by się udało – ten raport zmienia wszystko!",
-      "uk": "Заборона AfD, ймовірно, була б успішною – цей звіт змінює все!"
+      "uk": "Заборона AfD, ймовірно, була б успішною – цей звіт змінює все!",
+      "tr": "AfD'nin yasaklanması muhtemelen başarılı olacaktır; bu rapor her şeyi değiştiriyor!",
+      "fr": "Une interdiction de l’AfD serait probablement un succès – ce rapport change tout !",
+      "en": "A ban on the AfD would probably be successful – this report changes everything!"
     },
     "date": "2026-06-25",
     "excerpt": {
-      "ru": "Более двух лет назад мы задали вопрос, на который давно следовало ответить: является ли правая экстремистская АдГ неконституционной - и должна ли Федеральная конституция...",
-      "it": "Più di due anni fa abbiamo posto una domanda alla quale avrebbe dovuto essere data risposta già da tempo: l'estrema destra AfD è incostituzionale - e la Costituzione federale dovrebbe...",
-      "en": "Over two years ago we asked a question that should have been answered long ago: Is the right-wing extremist AfD unconstitutional - and should the Federal Constitution...",
-      "fr": "Il y a plus de deux ans, nous avons posé une question à laquelle il aurait fallu répondre depuis longtemps : l'extrême droite AfD est-elle inconstitutionnelle - et la Constitution fédérale...",
-      "tr": "İki yıldan fazla bir süre önce, uzun zaman önce yanıtlanması gereken bir soruyu sorduk: Aşırı sağcı AfD anayasaya aykırı mı ve Federal Anayasaya aykırı mı?",
       "es": "Hace más de dos años planteamos una pregunta que debería haberse respondido hace mucho tiempo: ¿Es inconstitucional el partido de extrema derecha AfD? ¿Y debería la Constitución Federal...",
+      "it": "Più di due anni fa abbiamo posto una domanda alla quale avrebbe dovuto essere data risposta già da tempo: l'estrema destra AfD è incostituzionale - e la Costituzione federale dovrebbe...",
+      "ru": "Более двух лет назад мы задали вопрос, на который давно следовало ответить: является ли правая экстремистская АдГ неконституционной - и должна ли Федеральная конституция...",
       "de": "Vor über zwei Jahren haben wir eine Frage gestellt, die inzwischen längst hätte beantwortet werden müssen: Ist die rechtsextreme AfD verfassungswidrig – und müsste das Bundesver...",
       "pl": "Ponad dwa lata temu zadaliśmy pytanie, na które dawno powinniśmy znaleźć odpowiedź: czy prawicowa ekstremistyczna AfD jest niezgodna z konstytucją – i czy Konstytucja Federalna powinna…",
-      "uk": "Понад два роки тому ми ставили запитання, на яке давно треба було знайти відповідь: чи є правоекстремістська AfD неконституційною і чи повинна Федеральна конституція..."
+      "uk": "Понад два роки тому ми ставили запитання, на яке давно треба було знайти відповідь: чи є правоекстремістська AfD неконституційною і чи повинна Федеральна конституція...",
+      "tr": "İki yıldan fazla bir süre önce, uzun zaman önce yanıtlanması gereken bir soruyu sorduk: Aşırı sağcı AfD anayasaya aykırı mı ve Federal Anayasaya aykırı mı?",
+      "fr": "Il y a plus de deux ans, nous avons posé une question à laquelle il aurait fallu répondre depuis longtemps : l'extrême droite AfD est-elle inconstitutionnelle - et la Constitution fédérale...",
+      "en": "Over two years ago we asked a question that should have been answered long ago: Is the right-wing extremist AfD unconstitutional - and should the Federal Constitution..."
     },
     "sources": [
       {
@@ -645,27 +645,27 @@
   },
   {
     "title": {
-      "ru": "Наглый! Фанаты АдГ используют искусственный интеллект для распространения фальшивых карт погоды",
-      "it": "Sfrontato! I fan dell’AfD usano l’intelligenza artificiale per condividere mappe meteorologiche false",
-      "en": "Brazen! AfD fans use AI to share fake weather maps",
-      "fr": "Effronté! Les fans de l'AfD utilisent l'IA pour partager de fausses cartes météo",
-      "tr": "Yüzsüz! AfD hayranları sahte hava durumu haritalarını paylaşmak için yapay zekayı kullanıyor",
       "es": "¡Descarado! Los seguidores de AfD utilizan la IA para compartir mapas meteorológicos falsos",
+      "it": "Sfrontato! I fan dell’AfD usano l’intelligenza artificiale per condividere mappe meteorologiche false",
+      "ru": "Наглый! Фанаты АдГ используют искусственный интеллект для распространения фальшивых карт погоды",
       "de": "Dreist! AfD-Fans teilen mit KI gefälschte Wetterkarten",
       "pl": "Nachalny! Fani AfD używają sztucznej inteligencji do udostępniania fałszywych map pogodowych",
-      "uk": "Нахабний! Шанувальники AfD використовують штучний інтелект, щоб ділитися підробленими картами погоди"
+      "uk": "Нахабний! Шанувальники AfD використовують штучний інтелект, щоб ділитися підробленими картами погоди",
+      "tr": "Yüzsüz! AfD hayranları sahte hava durumu haritalarını paylaşmak için yapay zekayı kullanıyor",
+      "fr": "Effronté! Les fans de l'AfD utilisent l'IA pour partager de fausses cartes météo",
+      "en": "Brazen! AfD fans use AI to share fake weather maps"
     },
     "date": "2026-06-24",
     "excerpt": {
-      "ru": "На самом деле существует группа людей, которые манипулируют картами погоды: и это правые экстремисты. Потому что они хотят скрыть правду об антропогенном изменении климата...",
-      "it": "In realtà esiste un gruppo di persone che manipolano le mappe meteorologiche: e sono estremisti di destra. Perché vogliono nascondere la verità sui cambiamenti climatici causati dall'uomo...",
-      "en": "There is actually a group of people who manipulate weather maps: And they are right-wing extremists. Because they want to hide the truth about man-made climate change...",
-      "fr": "Il existe en fait un groupe de personnes qui manipulent les cartes météorologiques : et ce sont des extrémistes de droite. Parce qu’ils veulent cacher la vérité sur le changement climatique provoqué par l’homme…",
-      "tr": "Aslında hava durumu haritalarını manipüle eden bir grup insan var: Bunlar aşırı sağcılar. Çünkü insan yapımı iklim değişikliği hakkındaki gerçeği gizlemek istiyorlar...",
       "es": "De hecho, hay un grupo de personas que manipulan mapas meteorológicos: y son extremistas de derecha. Porque quieren ocultar la verdad sobre el cambio climático provocado por el hombre...",
+      "it": "In realtà esiste un gruppo di persone che manipolano le mappe meteorologiche: e sono estremisti di destra. Perché vogliono nascondere la verità sui cambiamenti climatici causati dall'uomo...",
+      "ru": "На самом деле существует группа людей, которые манипулируют картами погоды: и это правые экстремисты. Потому что они хотят скрыть правду об антропогенном изменении климата...",
       "de": "Es gibt tatsächlich eine Gruppe von Menschen, die Wetterkarten manipulieren: Und es sind Rechtsextreme. Denn sie wollen die Wahrheit über den menschengemachten Klimawandel vertu...",
       "pl": "Tak naprawdę istnieje grupa ludzi manipulujących mapami pogodowymi: i są to prawicowi ekstremiści. Ponieważ chcą ukryć prawdę o zmianach klimatycznych spowodowanych przez człowieka...",
-      "uk": "Насправді існує група людей, які маніпулюють картами погоди: і вони є правими екстремістами. Бо хочуть приховати правду про техногенні зміни клімату..."
+      "uk": "Насправді існує група людей, які маніпулюють картами погоди: і вони є правими екстремістами. Бо хочуть приховати правду про техногенні зміни клімату...",
+      "tr": "Aslında hava durumu haritalarını manipüle eden bir grup insan var: Bunlar aşırı sağcılar. Çünkü insan yapımı iklim değişikliği hakkındaki gerçeği gizlemek istiyorlar...",
+      "fr": "Il existe en fait un groupe de personnes qui manipulent les cartes météorologiques : et ce sont des extrémistes de droite. Parce qu’ils veulent cacher la vérité sur le changement climatique provoqué par l’homme…",
+      "en": "There is actually a group of people who manipulate weather maps: And they are right-wing extremists. Because they want to hide the truth about man-made climate change..."
     },
     "sources": [
       {
@@ -738,27 +738,27 @@
   },
   {
     "title": {
-      "ru": "Хочет ли АдГ Саксония-Анхальт запретить архитектурное наследие своей земли?",
-      "it": "L’AfD Sassonia-Anhalt vuole vietare il patrimonio architettonico del proprio Land?",
-      "en": "Does the AfD Saxony-Anhalt want to ban the architectural heritage of its own state?",
-      "fr": "L'AfD Saxe-Anhalt veut-elle interdire le patrimoine architectural de son propre Land ?",
-      "tr": "AfD Saksonya-Anhalt kendi devletinin mimari mirasını yasaklamak mı istiyor?",
       "es": "¿Quiere el AfD Sajonia-Anhalt prohibir el patrimonio arquitectónico de su propio estado?",
+      "it": "L’AfD Sassonia-Anhalt vuole vietare il patrimonio architettonico del proprio Land?",
+      "ru": "Хочет ли АдГ Саксония-Анхальт запретить архитектурное наследие своей земли?",
       "de": "Will die AfD Sachsen-Anhalt das Architektur-Erbe ihres eigenen Bundeslandes verbannen?",
       "pl": "Czy AfD Saksonia-Anhalt chce zakazać dziedzictwa architektonicznego własnego państwa?",
-      "uk": "Чи хоче AfD Саксонія-Анхальт заборонити архітектурну спадщину власної землі?"
+      "uk": "Чи хоче AfD Саксонія-Анхальт заборонити архітектурну спадщину власної землі?",
+      "tr": "AfD Saksonya-Anhalt kendi devletinin mimari mirasını yasaklamak mı istiyor?",
+      "fr": "L'AfD Saxe-Anhalt veut-elle interdire le patrimoine architectural de son propre Land ?",
+      "en": "Does the AfD Saxony-Anhalt want to ban the architectural heritage of its own state?"
     },
     "date": "2026-06-12",
     "excerpt": {
-      "ru": "АдГ Саксония-Анхальт даже хочет утвердить свою правоэкстремистскую идеологию в архитектуре – и хочет использовать строительные нормы, чтобы определить, что такое «красивое» и «историческое самосознание»...",
-      "it": "L'AfD Sassonia-Anhalt vuole affermare la sua ideologia estremista di destra anche in architettura - e vuole definire con il regolamento edilizio ciò che è \"bello\" e \"identità storica\"...",
-      "en": "The AfD Saxony-Anhalt even wants to establish its right-wing extremist ideology in architecture - and wants to use building regulations to define what is \"beautiful\" and \"historical identity\"...",
-      "fr": "L'AfD Saxe-Anhalt veut même asseoir son idéologie d'extrême droite dans l'architecture - et veut utiliser les règles de construction pour définir ce qui est « beau » et « l'identité historique »...",
-      "tr": "AfD Saksonya-Anhalt, aşırı sağcı ideolojisini mimaride de tesis etmek istiyor ve \"güzel\" ve \"tarihsel kimliğin\" ne olduğunu tanımlamak için inşaat yönetmeliklerini kullanmak istiyor...",
       "es": "El AfD Sajonia-Anhalt quiere incluso implantar su ideología de extrema derecha en la arquitectura y quiere definir con las normas de construcción lo que es \"bello\" y \"identidad histórica\"...",
+      "it": "L'AfD Sassonia-Anhalt vuole affermare la sua ideologia estremista di destra anche in architettura - e vuole definire con il regolamento edilizio ciò che è \"bello\" e \"identità storica\"...",
+      "ru": "АдГ Саксония-Анхальт даже хочет утвердить свою правоэкстремистскую идеологию в архитектуре – и хочет использовать строительные нормы, чтобы определить, что такое «красивое» и «историческое самосознание»...",
       "de": "Die AfD Sachsen-Anhalt will ihre rechtsextreme Ideologie sogar in der Architektur festlegen – und will per Bauordnung festschreiben, was „schön“ ist und „historische Identität“ ...",
       "pl": "AfD Saksonia-Anhalt chce nawet ugruntować swoją prawicową ideologię ekstremistyczną w architekturze i chce wykorzystać przepisy budowlane do zdefiniowania, co jest „piękne” i „tożsamość historyczna”…",
-      "uk": "AfD Саксонія-Анхальт навіть хоче встановити свою правоекстремістську ідеологію в архітектурі - і хоче використовувати будівельні норми, щоб визначити, що таке \"красиве\" та \"історична ідентичність\"..."
+      "uk": "AfD Саксонія-Анхальт навіть хоче встановити свою правоекстремістську ідеологію в архітектурі - і хоче використовувати будівельні норми, щоб визначити, що таке \"красиве\" та \"історична ідентичність\"...",
+      "tr": "AfD Saksonya-Anhalt, aşırı sağcı ideolojisini mimaride de tesis etmek istiyor ve \"güzel\" ve \"tarihsel kimliğin\" ne olduğunu tanımlamak için inşaat yönetmeliklerini kullanmak istiyor...",
+      "fr": "L'AfD Saxe-Anhalt veut même asseoir son idéologie d'extrême droite dans l'architecture - et veut utiliser les règles de construction pour définir ce qui est « beau » et « l'identité historique »...",
+      "en": "The AfD Saxony-Anhalt even wants to establish its right-wing extremist ideology in architecture - and wants to use building regulations to define what is \"beautiful\" and \"historical identity\"..."
     },
     "sources": [
       {
