@@ -21,17 +21,34 @@ async function prerender() {
   console.log('Loading SSR entry point...');
   const { render } = await import(`file://${ssrPath}`);
 
-  console.log('Rendering application to static HTML...');
-  const appHtml = render();
-
   console.log('Reading index.html template...');
-  let template = fs.readFileSync(templatePath, 'utf-8');
+  const template = fs.readFileSync(templatePath, 'utf-8');
 
-  console.log('Injecting pre-rendered HTML into template...');
-  template = template.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
+  const locales = ['de', 'en', 'fr', 'es', 'tr', 'uk', 'pl', 'it', 'ru'];
 
-  console.log('Writing static index.html...');
-  fs.writeFileSync(templatePath, template, 'utf-8');
+  for (const lang of locales) {
+    console.log(`Rendering application to static HTML for locale: ${lang}...`);
+    const appHtml = render(lang);
+
+    console.log(`Injecting pre-rendered HTML for ${lang} into template...`);
+    let localizedHtml = template
+      .replace('<html lang="de">', `<html lang="${lang}">`)
+      .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
+
+    if (lang === 'de') {
+      const targetPath = path.join(distPath, 'index.html');
+      console.log(`Writing static index.html for default locale 'de'...`);
+      fs.writeFileSync(targetPath, localizedHtml, 'utf-8');
+    } else {
+      const targetDir = path.join(distPath, lang);
+      if (!fs.existsSync(targetDir)) {
+        fs.mkdirSync(targetDir, { recursive: true });
+      }
+      const targetPath = path.join(targetDir, 'index.html');
+      console.log(`Writing static index.html for locale '${lang}' at ${targetPath}...`);
+      fs.writeFileSync(targetPath, localizedHtml, 'utf-8');
+    }
+  }
 
   console.log('Cleaning up temporary SSR artifacts...');
   fs.rmSync(path.resolve(__dirname, '../dist-ssr'), { recursive: true, force: true });

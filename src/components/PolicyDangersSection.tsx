@@ -36,6 +36,45 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const sourceLabel = t.dangersSourceLabel
   const activeData = data.find((item) => item.id === activeTab) || data[0]
 
+  const handlePrevSlide = () => {
+    const currentIndex = data.findIndex((item) => item.id === activeTab)
+    const prevIndex = (currentIndex - 1 + data.length) % data.length
+    setActiveTab(data[prevIndex].id)
+    setViewMode('chart')
+  }
+
+  const handleNextSlide = () => {
+    const currentIndex = data.findIndex((item) => item.id === activeTab)
+    const nextIndex = (currentIndex + 1) % data.length
+    setActiveTab(data[nextIndex].id)
+    setViewMode('chart')
+  }
+
+  const [touchStart, setTouchStart] = useState<number | null>(null)
+  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null)
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX)
+  }
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return
+    const distance = touchStart - touchEnd
+    const minSwipeDistance = 50
+    const isLeftSwipe = distance > minSwipeDistance
+    const isRightSwipe = distance < -minSwipeDistance
+    if (isLeftSwipe) {
+      handleNextSlide()
+    } else if (isRightSwipe) {
+      handlePrevSlide()
+    }
+  }
+
 
 
   // Mapping tab IDs to appropriate Lucide Icons
@@ -86,7 +125,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   }
 
   return (
-    <section id="risiken" className="rounded-3xl border border-neutral-800 bg-neutral-950 p-6 md:p-8 shadow-2xl relative overflow-hidden transition-all">
+    <section id="risiken" className="rounded-3xl border border-neutral-800 bg-neutral-950 p-4 md:p-8 shadow-2xl relative overflow-hidden transition-all">
       {/* Glow highlight */}
       <div className="absolute -top-32 -left-32 h-64 w-64 rounded-full bg-red-500/5 blur-[80px] pointer-events-none" />
 
@@ -105,11 +144,11 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
           </p>
         </div>
 
-        {/* Tab Layout Grid */}
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+        {/* Desktop Tab Layout Grid (hidden on mobile, visible on desktop) */}
+        <div className="hidden lg:grid grid-cols-1 gap-6 lg:grid-cols-12">
           
-          {/* Subnavigation (Left Panel on large screen, Top Panel on small screen) */}
-          <div className="flex flex-row overflow-x-auto gap-2 pb-2 lg:pb-0 lg:flex-col lg:overflow-x-visible lg:col-span-4 shrink-0 border-b border-neutral-900 lg:border-b-0 lg:border-r lg:border-neutral-900/60 lg:pr-4 scrollbar-thin">
+          {/* Subnavigation (Left Panel) */}
+          <div className="lg:col-span-4 flex flex-col gap-2 shrink-0 border-r border-neutral-900/60 pr-4">
             {data.map((item) => {
               const isActive = item.id === activeTab
               return (
@@ -232,6 +271,150 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
 
           </div>
 
+        </div>
+
+        {/* Mobile Carousel Layout (visible on mobile/tablet, hidden on desktop) */}
+        <div className="block lg:hidden space-y-4">
+          <div 
+            className="flex flex-col justify-between min-h-[420px] touch-pan-y"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            {/* Carousel Card Header */}
+            <div className="border-b border-neutral-900 pb-4 space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="p-2 rounded-xl bg-red-500/10 text-red-400 border border-red-500/10 shrink-0">
+                  {getTabIcon(activeTab, 20)}
+                </span>
+                <h3 className="text-lg font-black text-white uppercase tracking-tight truncate">
+                  {activeData.title}
+                </h3>
+              </div>
+              <div>
+                <span className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/5 border border-red-500/10 px-2.5 py-1 text-xs font-bold text-red-400">
+                  <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse shrink-0" />
+                  <span className="truncate">{activeData.metric}</span>
+                </span>
+              </div>
+            </div>
+
+            {/* View Mode Toggle Controls */}
+            <div className="mt-4 flex items-center justify-between border-b border-neutral-900 pb-4">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400">
+                Ansicht
+              </span>
+              <div className="inline-flex rounded-xl bg-neutral-900/80 p-0.5 border border-neutral-800 shrink-0">
+                <button
+                  onClick={() => setViewMode('chart')}
+                  className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    viewMode === 'chart'
+                      ? 'bg-red-500/10 text-red-400 border border-red-500/20'
+                      : 'text-neutral-400 hover:text-neutral-200 border border-transparent'
+                  }`}
+                >
+                  {ui.viewChart}
+                </button>
+                <button
+                  onClick={() => setViewMode('text')}
+                  className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    viewMode === 'text'
+                      ? 'bg-red-500/10 text-red-400 border border-red-500/20'
+                      : 'text-neutral-400 hover:text-neutral-200 border border-transparent'
+                  }`}
+                >
+                  {ui.viewText}
+                </button>
+              </div>
+            </div>
+
+            {/* Interactive Chart/Text Area */}
+            <div className="py-4 flex-grow flex items-center justify-center min-h-[220px]">
+              {viewMode === 'chart' ? (
+                renderChart()
+              ) : (
+                <div className="space-y-4 w-full">
+                  <p className="text-xs leading-relaxed text-neutral-400">
+                    {activeData.description}
+                  </p>
+                  <ul className="space-y-2.5 pt-1">
+                    {activeData.points.map((point, idx) => (
+                      <li key={idx} className="flex items-start gap-2.5 text-xs leading-relaxed text-neutral-300">
+                        <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-red-950/50 text-red-500">
+                          <ArrowRight size={8} />
+                        </span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* Citation Card */}
+            <div className="rounded-xl border border-neutral-900 bg-neutral-900/20 p-3.5 flex flex-col gap-3 shadow-inner">
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 text-neutral-500 shrink-0">
+                  <Bookmark size={16} />
+                </span>
+                <div className="space-y-0.5 min-w-0 flex-1">
+                  <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wide">
+                    {sourceLabel}
+                  </span>
+                  <p className="text-[11px] font-semibold text-neutral-300 truncate">
+                    {activeData.citation}
+                  </p>
+                </div>
+              </div>
+              <a
+                href={activeData.citationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 py-2 rounded-lg"
+              >
+                <span>Link</span>
+                <ExternalLink size={10} />
+              </a>
+            </div>
+
+            {/* Carousel Navigation Toolbar */}
+            <div className="mt-5 flex items-center justify-between border-t border-neutral-900 pt-4">
+              <button
+                onClick={handlePrevSlide}
+                className="flex items-center justify-center p-2 rounded-lg border border-neutral-800 bg-neutral-900/40 text-neutral-400 hover:text-white transition-all cursor-pointer"
+                aria-label="Previous Danger Slide"
+              >
+                <ArrowRight size={16} className="rotate-180" />
+              </button>
+
+              <div className="flex gap-2">
+                {data.map((item, idx) => {
+                  const isActive = item.id === activeTab
+                  return (
+                    <button
+                      key={`dot-${item.id}`}
+                      onClick={() => {
+                        setActiveTab(item.id)
+                        setViewMode('chart')
+                      }}
+                      className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                        isActive ? 'w-6 bg-red-500 shadow-sm shadow-red-500/50' : 'w-2 bg-neutral-800 hover:bg-neutral-600'
+                      }`}
+                      aria-label={`Go to danger slide ${idx + 1}`}
+                    />
+                  )
+                })}
+              </div>
+
+              <button
+                onClick={handleNextSlide}
+                className="flex items-center justify-center p-2 rounded-lg border border-neutral-800 bg-neutral-900/40 text-neutral-400 hover:text-white transition-all cursor-pointer"
+                aria-label="Next Danger Slide"
+              >
+                <ArrowRight size={16} />
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>

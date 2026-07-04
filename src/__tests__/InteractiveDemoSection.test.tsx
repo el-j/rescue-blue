@@ -5,7 +5,7 @@
  * the complex prop wiring. This keeps tests realistic and integration-like
  * while still targeting the component's specific behaviours.
  */
-import { cleanup, render, screen, act } from '@testing-library/react'
+import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import App from '../App'

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
@@ -20,7 +20,6 @@ import {
   NewsArchiveSection,
   PolicyDangersSection,
 } from './components'
-import type { NewsArticle } from './components/HeroSection'
 import {
   getTranslation,
   getSayings,
@@ -29,71 +28,43 @@ import {
   getFacts,
   getScienceContent,
   getLocaleCode,
-  detectLocale,
-  persistLocale,
-  detectTheme,
-  persistTheme,
-  applyTheme,
-  type ContentTab,
-  type LetterTarget,
   type Locale,
-  type Theme,
 } from './i18n'
-import { useSignatureCount } from './hooks/useSignatureCount'
-import { usePollingSnapshot } from './hooks/usePollingSnapshot'
+import { useAppState } from './hooks/useAppState'
 import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
 
 // Base path (no extension) — HeroSection builds responsive srcset variants from this
 const HERO_IMAGE_BASE = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text`
 
-export default function App() {
-  const [lang, setLang] = useState<Locale>(detectLocale)
-  const [theme, setTheme] = useState<Theme>(detectTheme)
-  const [sandboxState, setSandboxState] = useState<'default' | 'brown' | 'dream'>('default')
-  const [activeTab, setActiveTab] = useState<ContentTab>('sprache')
-  const [activeLetterTarget, setActiveLetterTarget] = useState<LetterTarget>('oeffentlich')
-  const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [openObjection, setOpenObjection] = useState<number | null>(null)
-  const [selectedStateId, setSelectedStateId] = useState<string>('0')
+interface AppProps {
+  initialLang?: Locale
+}
 
-  const { signatureCount, isLive, isLoading: isLoadingSignatures } = useSignatureCount()
-  const { pollingSnapshot, isLive: isLivePollingData } = usePollingSnapshot()
-  const [news, setNews] = useState<NewsArticle[]>([])
-
-  // Fetch news on mount
-  useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}news.json`)
-      .then((res) => {
-        if (res.ok) return res.json()
-        return []
-      })
-      .then((data) => {
-        if (Array.isArray(data)) {
-          setNews(data)
-        }
-      })
-      .catch((err) => {
-        console.error('Error fetching news:', err)
-      })
-  }, [])
-
-  // Apply theme on mount and whenever it changes
-  useEffect(() => {
-    applyTheme(theme)
-  }, [theme])
-
-  const handleChangeLanguage = (newLang: Locale) => {
-    setLang(newLang)
-    persistLocale(newLang)
-  }
-
-  const handleToggleTheme = () => {
-    setTheme((current) => {
-      const next = current === 'dark' ? 'light' : 'dark'
-      persistTheme(next)
-      return next
-    })
-  }
+export default function App({ initialLang }: AppProps = {}) {
+  const {
+    lang,
+    theme,
+    sandboxState,
+    setSandboxState,
+    activeTab,
+    setActiveTab,
+    activeLetterTarget,
+    setActiveLetterTarget,
+    openFaq,
+    setOpenFaq,
+    openObjection,
+    setOpenObjection,
+    selectedStateId,
+    setSelectedStateId,
+    signatureCount,
+    isLive,
+    isLoadingSignatures,
+    pollingSnapshot,
+    isLivePollingData,
+    handleChangeLanguage,
+    handleToggleTheme,
+    news,
+  } = useAppState({ initialLang })
 
   const t = getTranslation(lang)
   const science = getScienceContent(lang)
