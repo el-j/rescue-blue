@@ -59,7 +59,7 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { name: 'Rescue Blue.', level: 1 })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(1)
-    expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(2)
+    expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(1)
   })
 
   it('cycles the interactive demo sandbox states', async () => {

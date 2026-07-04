@@ -135,16 +135,16 @@ describe('InteractiveDemoSection — toolbar visibility in German', () => {
     cleanup()
   })
 
-  it('renders two toolbar buttons for cycle-mode (desktop + mobile)', () => {
+  it('renders one toolbar button for cycle-mode', () => {
     render(<App />)
     const buttons = screen.getAllByRole('button', { name: 'Visualisierungs-Option wechseln' })
-    expect(buttons).toHaveLength(2)
+    expect(buttons).toHaveLength(1)
   })
 
-  it('renders two toolbar buttons for comparison-mode (desktop + mobile)', () => {
+  it('renders one toolbar button for comparison-mode', () => {
     render(<App />)
     const buttons = screen.getAllByRole('button', { name: 'Mehrheit umschalten' })
-    expect(buttons).toHaveLength(2)
+    expect(buttons).toHaveLength(1)
   })
 })
 
@@ -164,7 +164,7 @@ describe('InteractiveDemoSection — English locale toolbar', () => {
     await user.click(screen.getByRole('button', { name: 'Sprache' }))
     await user.click(screen.getByRole('button', { name: /en\s*English/i }))
     // After switching to English, the toolbar titles should be in English
-    expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(2)
-    expect(screen.getAllByRole('button', { name: 'Toggle majority chart' })).toHaveLength(2)
+    expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Toggle majority chart' })).toHaveLength(1)
   })
 })

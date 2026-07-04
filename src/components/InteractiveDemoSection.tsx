@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Paintbrush } from 'lucide-react'
+import { Paintbrush, BarChart2, ShieldAlert, Sparkles } from 'lucide-react'
 import type { PollBar, ParliamentsSnapshot } from '../polling'
 import type { Locale, Translation } from '../i18n'
 import { DemoSourceInfo } from './demo/DemoSourceInfo'
@@ -16,6 +16,7 @@ interface DemoProps {
   sourceMethodUrl: string
   sandboxState: 'default' | 'brown' | 'dream'
   onCycleSandboxState: () => void
+  onSetSandboxState?: (state: 'default' | 'brown' | 'dream') => void
   instituteName?: string
   selectedStateId: string
   onSelectStateId: (id: string) => void
@@ -33,6 +34,7 @@ export function InteractiveDemoSection({
   sourceMethodUrl,
   sandboxState,
   onCycleSandboxState,
+  onSetSandboxState,
   instituteName,
   selectedStateId,
   onSelectStateId,
@@ -89,6 +91,31 @@ export function InteractiveDemoSection({
         : '🇩🇪 Default Mode: Current official polling results from research institutes.'
     }
     onCycleSandboxState()
+    setToastMessage(msg)
+  }
+
+  const handleSelectState = (state: 'default' | 'brown' | 'dream') => {
+    if (state === sandboxState) return
+    let msg: string
+    if (state === 'brown') {
+      msg = lang === 'de'
+        ? '⚠️ Mehrheits-Check: Farbige Markierung der Bundesländer nach der jeweils stärksten Kraft (AfD-Mehrheiten in Braun).'
+        : '⚠️ Plurality Check: States colored by their current majority party (AfD pluralities in Brown).'
+    } else if (state === 'dream') {
+      msg = lang === 'de'
+        ? '✨ Traum-Vision: Ein demokratisches, progressives Ergebnis (Grüne und Linke gleichauf bei 26%) ohne Rechtsextremismus.'
+        : '✨ Progressive Dream: A democratic progressive majority (Greens and Left equal at 26%) without right-wing extremism.'
+    } else {
+      msg = lang === 'de'
+        ? '🇩🇪 Standard-Modus: Aktuelle offizielle Umfrageergebnisse der Wahlforschungsinstitute.'
+        : '🇩🇪 Default Mode: Current official polling results from research institutes.'
+    }
+
+    if (onSetSandboxState) {
+      onSetSandboxState(state)
+    } else {
+      onCycleSandboxState()
+    }
     setToastMessage(msg)
   }
 
@@ -263,55 +290,8 @@ export function InteractiveDemoSection({
 
   return (
     <section ref={sandboxRef} className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-primary)] p-5 shadow-xl md:p-8">
-      {/* Top-right: SANDBOX badge + desktop controls toolbar */}
-      <div className="absolute top-0 right-0 p-3 flex items-center gap-2">
-        {/* Desktop-only inline controls toolbar */}
-        <div className="hidden md:flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1 shadow-sm">
-          {/* Mode status */}
-          <span className="pl-2.5 pr-1.5 text-[10px] font-black uppercase tracking-wider text-[var(--text-secondary)] border-r border-[var(--border)]">
-            {sandboxState === 'default'
-              ? (lang === 'de' ? 'Standard' : 'Default')
-              : sandboxState === 'brown'
-              ? (lang === 'de' ? 'Warnung' : 'Warning')
-              : (lang === 'de' ? 'Traum' : 'Dream')}
-          </span>
-          {/* Cycle mode */}
-          <button
-            onClick={handleCycleSandboxState}
-            className={`p-1.5 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
-              sandboxState === 'default'
-                ? 'bg-blue-600/10 border-blue-500/30 text-blue-400 hover:bg-blue-600/20'
-                : sandboxState === 'brown'
-                ? 'bg-amber-600/10 border-amber-500/30 text-amber-400 hover:bg-amber-600/20'
-                : 'bg-emerald-600/10 border-emerald-500/30 text-emerald-400 hover:bg-emerald-600/20'
-            }`}
-            title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
-            type="button"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
-              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-              <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z"/>
-              <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/>
-            </svg>
-          </button>
-          {/* Comparison toggle */}
-          <button
-            onClick={toggleComparison}
-            className={`p-1.5 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
-              showComparison
-                ? 'bg-purple-600/20 border-purple-500/40 text-purple-400 hover:bg-purple-600/30 shadow-inner'
-                : 'bg-[var(--bg-secondary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-            }`}
-            title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
-            type="button"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="5" y="4" width="4" height="16" rx="1" />
-              <rect x="15" y="10" width="4" height="10" rx="1" />
-            </svg>
-          </button>
-        </div>
-        {/* Badge */}
+      {/* Top-right: SANDBOX badge */}
+      <div className="absolute top-0 right-0 p-3">
         <span className="rounded border border-[var(--border)] bg-[var(--bg-card)] px-2 py-0.5 text-[10px] font-bold tracking-widest text-[var(--text-muted)] uppercase">{t.demoSandbox}</span>
       </div>
       <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-[var(--text-primary)] uppercase md:text-2xl">
@@ -356,6 +336,98 @@ export function InteractiveDemoSection({
 
         {/* Right Column: Bar Chart & Controls */}
         <div className="md:col-span-7 flex flex-col h-full justify-between space-y-6 md:border-l md:border-[var(--border)] md:pl-6">
+          
+          {/* Interactive Sandbox Controls (Hero Section Toolbar over Chart) */}
+          <div className="flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-[var(--bg-secondary)]/30 p-4 shadow-md transition-all duration-300">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+                {lang === 'de' ? 'Visualisierungs-Optionen' : 'Visualization Options'}
+              </span>
+              <button
+                onClick={handleCycleSandboxState}
+                className="text-[10px] font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] flex items-center gap-1 cursor-pointer transition-colors duration-200"
+                title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
+                aria-label={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
+                type="button"
+              >
+                <span>
+                  {sandboxState === 'default'
+                    ? (lang === 'de' ? 'Standard' : 'Default')
+                    : sandboxState === 'brown'
+                    ? (lang === 'de' ? 'Warnung' : 'Warning')
+                    : (lang === 'de' ? 'Traum' : 'Dream')}
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                </svg>
+              </button>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              {/* Sandbox Modes Selector */}
+              <div className="flex-grow grid grid-cols-3 gap-1 rounded-xl bg-[var(--bg-card)] p-1 border border-[var(--border)] shadow-inner">
+                <button
+                  onClick={() => handleSelectState('default')}
+                  className={`py-2.5 px-1.5 flex items-center justify-center rounded-lg text-xs font-bold transition-all duration-300 cursor-pointer ${
+                    sandboxState === 'default'
+                      ? 'bg-blue-600/15 border border-blue-500/30 text-blue-400 font-extrabold shadow-sm'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
+                  }`}
+                  title={lang === 'de' ? 'Standard-Modus' : 'Default Mode'}
+                  aria-label={lang === 'de' ? 'Standard-Modus' : 'Default Mode'}
+                  type="button"
+                >
+                  <BarChart2 size={16} />
+                </button>
+                <button
+                  onClick={() => handleSelectState('brown')}
+                  className={`py-2.5 px-1.5 flex items-center justify-center rounded-lg text-xs font-bold transition-all duration-300 cursor-pointer ${
+                    sandboxState === 'brown'
+                      ? 'bg-amber-600/15 border border-amber-500/30 text-amber-400 font-extrabold shadow-sm'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
+                  }`}
+                  title={lang === 'de' ? 'Mehrheits-Modus' : 'Majority Mode'}
+                  aria-label={lang === 'de' ? 'Mehrheits-Modus' : 'Majority Mode'}
+                  type="button"
+                >
+                  <ShieldAlert size={16} />
+                </button>
+                <button
+                  onClick={() => handleSelectState('dream')}
+                  className={`py-2.5 px-1.5 flex items-center justify-center rounded-lg text-xs font-bold transition-all duration-300 cursor-pointer ${
+                    sandboxState === 'dream'
+                      ? 'bg-emerald-600/15 border border-emerald-500/30 text-emerald-400 font-extrabold shadow-sm'
+                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
+                  }`}
+                  title={lang === 'de' ? 'Traum-Vision' : 'Dream Vision'}
+                  aria-label={lang === 'de' ? 'Traum-Vision' : 'Dream Vision'}
+                  type="button"
+                >
+                  <Sparkles size={16} />
+                </button>
+              </div>
+
+              {/* Comparison Mode Toggle */}
+              <button
+                onClick={toggleComparison}
+                className={`py-2.5 px-4 flex items-center justify-center gap-2 rounded-xl border text-xs font-bold transition-all duration-300 cursor-pointer whitespace-nowrap ${
+                  showComparison
+                    ? 'bg-purple-600/15 border-purple-500/30 text-purple-400 font-extrabold shadow-sm'
+                    : 'bg-[var(--bg-card)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+                title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
+                aria-label={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
+                type="button"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={showComparison ? 'animate-pulse' : ''}>
+                  <rect x="5" y="4" width="4" height="16" rx="1" />
+                  <rect x="15" y="10" width="4" height="10" rx="1" />
+                </svg>
+                <span>{lang === 'de' ? 'Mehrheits-Vergleich' : 'Majority Check'}</span>
+              </button>
+            </div>
+          </div>
           {/* Dream scenario banner — visible when dreamstate is active */}
           {isDreamActive && (
             <div className="dream-banner mb-4 animate-in rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-amber-950/40 px-4 py-3 text-center">
@@ -456,62 +528,9 @@ export function InteractiveDemoSection({
         </div>
       </div>
 
-      {/* Mobile-only: Sticky Flying Controls Toolbar (hidden on md+, which uses the top-right inline toolbar) */}
-      <div 
-        className={`fixed bottom-6 right-6 z-50 md:hidden flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-1.5 shadow-2xl transition-all duration-300 select-none ${
-          isSandboxInView ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-75 pointer-events-none'
-        }`}
-      >
-        {/* Compact Visualization Mode Status */}
-        <span className="pl-3 pr-2 text-[10px] font-black uppercase tracking-wider text-[var(--text-secondary)] border-r border-[var(--border)]">
-          {sandboxState === 'default'
-            ? (lang === 'de' ? 'Standard' : 'Default')
-            : sandboxState === 'brown'
-            ? (lang === 'de' ? 'Warnung' : 'Warning')
-            : (lang === 'de' ? 'Traum' : 'Dream')}
-        </span>
-
-        {/* Change Color Mode Button */}
-        <button
-          onClick={handleCycleSandboxState}
-          className={`p-2 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
-            sandboxState === 'default'
-              ? 'bg-blue-600/10 border-blue-500/30 text-blue-400 hover:bg-blue-600/20'
-              : sandboxState === 'brown'
-              ? 'bg-amber-600/10 border-amber-500/30 text-amber-400 hover:bg-amber-600/20'
-              : 'bg-emerald-600/10 border-emerald-500/30 text-emerald-400 hover:bg-emerald-600/20'
-          }`}
-          title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
-          type="button"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
-            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-            <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z"/>
-            <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z"/>
-          </svg>
-        </button>
-
-        {/* Comparison Toggle Button */}
-        <button
-          onClick={toggleComparison}
-          className={`p-2 rounded-full transition-all duration-300 border hover:scale-105 active:scale-95 cursor-pointer ${
-            showComparison
-              ? 'bg-purple-600/20 border-purple-500/40 text-purple-400 hover:bg-purple-600/30 shadow-inner'
-              : 'bg-[var(--bg-secondary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-          }`}
-          title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
-          type="button"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="5" y="4" width="4" height="16" rx="1" />
-            <rect x="15" y="10" width="4" height="10" rx="1" />
-          </svg>
-        </button>
-      </div>
-
       {/* Floating Toast Notification */}
       {toastMessage && isSandboxInView && (
-        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 shadow-2xl text-center flex items-center justify-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300">
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 shadow-2xl text-center flex items-center justify-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300">
           <span className="text-xs font-semibold text-[var(--text-primary)] leading-normal">{toastMessage}</span>
         </div>
       )}
