@@ -24,6 +24,18 @@ interface PolicyDangersSectionProps {
   t: Translation
 }
 
+const normalizeCitationUrl = (url: string) => {
+  try {
+    const parsed = new URL(url)
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+      return null
+    }
+    return parsed.toString()
+  } catch {
+    return null
+  }
+}
+
 export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const data = getPolicyDangers(lang)
   const ui = getPolicyDangersUI(lang)
@@ -35,17 +47,6 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const subtitle = t.dangersSubtitle
   const sourceLabel = t.dangersSourceLabel
   const activeData = data.find((item) => item.id === activeTab) || data[0]
-  const normalizeCitationUrl = (url: string) => {
-    try {
-      const parsed = new URL(url)
-      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
-        return null
-      }
-      return parsed.toString()
-    } catch {
-      return null
-    }
-  }
   const safeCitationUrl = normalizeCitationUrl(activeData.citationUrl)
   const archiveCitationUrl = safeCitationUrl
     ? `https://archive.ph/?run=1&url=${encodeURIComponent(safeCitationUrl)}`
