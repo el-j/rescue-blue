@@ -49,8 +49,9 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const activeData = data.find((item) => item.id === activeTab) || data[0]
   const safeCitationUrl = normalizeCitationUrl(activeData.citationUrl)
   const archiveCitationUrl = safeCitationUrl
-    ? `https://archive.ph/?run=1&url=${encodeURIComponent(safeCitationUrl)}`
+    ? `https://archive.ph/${encodeURIComponent(safeCitationUrl)}`
     : null
+  const citationLinkCount = Number(Boolean(safeCitationUrl)) + Number(Boolean(archiveCitationUrl))
 
   const handlePrevSlide = () => {
     const currentIndex = data.findIndex((item) => item.id === activeTab)
@@ -397,7 +398,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                   </p>
                 </div>
               </div>
-              <div className="grid w-full grid-cols-2 gap-2">
+              <div className={`grid w-full gap-2 ${citationLinkCount > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {safeCitationUrl && (
                   <a
                     href={safeCitationUrl}
