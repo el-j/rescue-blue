@@ -35,6 +35,21 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const subtitle = t.dangersSubtitle
   const sourceLabel = t.dangersSourceLabel
   const activeData = data.find((item) => item.id === activeTab) || data[0]
+  const normalizeCitationUrl = (url: string) => {
+    try {
+      const parsed = new URL(url)
+      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+        return null
+      }
+      return parsed.toString()
+    } catch {
+      return null
+    }
+  }
+  const safeCitationUrl = normalizeCitationUrl(activeData.citationUrl)
+  const archiveCitationUrl = safeCitationUrl
+    ? `https://archive.ph/?run=1&url=${encodeURIComponent(safeCitationUrl)}`
+    : null
 
   const handlePrevSlide = () => {
     const currentIndex = data.findIndex((item) => item.id === activeTab)
@@ -259,24 +274,28 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
               </div>
               
               <div className="inline-flex items-center gap-2 shrink-0">
-                <a
-                  href={activeData.citationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 px-3 py-1.5 rounded-lg"
-                >
-                  <span>Original</span>
-                  <ExternalLink size={10} />
-                </a>
-                <a
-                  href={`https://archive.ph/?run=1&url=${encodeURIComponent(activeData.citationUrl)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 px-3 py-1.5 rounded-lg"
-                >
-                  <span>Archive</span>
-                  <ExternalLink size={10} />
-                </a>
+                {safeCitationUrl && (
+                  <a
+                    href={safeCitationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 px-3 py-1.5 rounded-lg"
+                  >
+                    <span>Original</span>
+                    <ExternalLink size={10} />
+                  </a>
+                )}
+                {archiveCitationUrl && (
+                  <a
+                    href={archiveCitationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 px-3 py-1.5 rounded-lg"
+                  >
+                    <span>Archive</span>
+                    <ExternalLink size={10} />
+                  </a>
+                )}
               </div>
             </div>
 
@@ -378,24 +397,28 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                 </div>
               </div>
               <div className="grid w-full grid-cols-2 gap-2">
-                <a
-                  href={activeData.citationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 py-2 rounded-lg"
-                >
-                  <span>Original</span>
-                  <ExternalLink size={10} />
-                </a>
-                <a
-                  href={`https://archive.ph/?run=1&url=${encodeURIComponent(activeData.citationUrl)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 py-2 rounded-lg"
-                >
-                  <span>Archive</span>
-                  <ExternalLink size={10} />
-                </a>
+                {safeCitationUrl && (
+                  <a
+                    href={safeCitationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 py-2 rounded-lg"
+                  >
+                    <span>Original</span>
+                    <ExternalLink size={10} />
+                  </a>
+                )}
+                {archiveCitationUrl && (
+                  <a
+                    href={archiveCitationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-neutral-300 hover:text-red-400 transition-all border border-neutral-800 bg-neutral-900/60 hover:border-red-500/20 py-2 rounded-lg"
+                  >
+                    <span>Archive</span>
+                    <ExternalLink size={10} />
+                  </a>
+                )}
               </div>
             </div>
 
