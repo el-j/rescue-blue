@@ -51,7 +51,6 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const archiveCitationUrl = safeCitationUrl
     ? `https://archive.ph/${encodeURIComponent(safeCitationUrl)}`
     : null
-  const citationLinkCount = Number(Boolean(safeCitationUrl)) + Number(Boolean(archiveCitationUrl))
 
   const handlePrevSlide = () => {
     const currentIndex = data.findIndex((item) => item.id === activeTab)
@@ -398,7 +397,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                   </p>
                 </div>
               </div>
-              <div className={`grid w-full gap-2 ${citationLinkCount > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+              <div className={`grid w-full gap-2 ${safeCitationUrl && archiveCitationUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {safeCitationUrl && (
                   <a
                     href={safeCitationUrl}
