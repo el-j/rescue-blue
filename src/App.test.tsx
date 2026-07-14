@@ -126,7 +126,7 @@ describe('App', () => {
     const snapshot = parsePollingSnapshot({
       Database: { Last_Update: '2026-06-13T12:08:36+02:00' },
       Institutes: {
-        '5': { Name: 'INSA' },
+        '5': { Name: 'Infratest dimap' },
       },
       Methods: {
         '4': { Name: 'Online + Telefon' },
@@ -157,7 +157,7 @@ describe('App', () => {
     })
 
     expect(snapshot).not.toBeNull()
-    expect(snapshot?.instituteName).toBe('INSA')
+    expect(snapshot?.instituteName).toBe('Infratest dimap')
     expect(snapshot?.bars.find((bar) => bar.key === 'cdu')?.pct).toBe(22)
     expect(snapshot?.bars.find((bar) => bar.key === 'afd')?.pct).toBe(29)
     expect(snapshot?.bars.find((bar) => bar.key === 'others')?.pct).toBe(12)
@@ -167,7 +167,7 @@ describe('App', () => {
     const snapshot = parsePollingSnapshot({
       contents: JSON.stringify({
         Database: {},
-        Institutes: { '5': { Name: 'INSA' } },
+        Institutes: { '5': { Name: 'Forsa' } },
         Methods: {},
         Surveys: {
           '10': {
