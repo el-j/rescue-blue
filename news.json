@@ -1,27 +1,27 @@
 [
   {
     "title": {
-      "fr": "Interdiction de l’AfD en Thuringe : avec Hape contre Höcke",
-      "pl": "Zakaz AfD w Turyngii: Z Hape przeciwko Höcke",
-      "ru": "Запрет АдГ в Тюрингии: с Хапе против Хёкке",
-      "es": "Prohibición de AfD en Turingia: con Hape contra Höcke",
+      "it": "Divieto dell'AfD in Turingia: con Hape contro Höcke",
       "en": "AfD ban in Thuringia: With Hape against Höcke",
+      "uk": "Заборона AfD в Тюрінгії: з Hape проти Höcke",
+      "fr": "Interdiction de l’AfD en Thuringe : avec Hape contre Höcke",
+      "es": "Prohibición de AfD en Turingia: con Hape contra Höcke",
       "tr": "Thüringen'de AfD yasağı: Hape ile Höcke'ye karşı",
       "de": "AfD-Verbot in Thüringen: Mit Hape gegen Höcke",
-      "uk": "Заборона AfD в Тюрінгії: з Hape проти Höcke",
-      "it": "Divieto dell'AfD in Turingia: con Hape contro Höcke"
+      "pl": "Zakaz AfD w Turyngii: Z Hape przeciwko Höcke",
+      "ru": "Запрет АдГ в Тюрингии: с Хапе против Хёкке"
     },
     "date": "2026-07-14",
     "excerpt": {
-      "fr": "Au Parlement du Land de Thuringe, les experts doivent discuter pour la première fois d'une interdiction de l'AfD. Selon les informations du ZEIT, l'un des experts est l'acteur Hape Kerkeling.",
-      "pl": "W parlamencie Turyngii eksperci mają po raz pierwszy dyskutować nad zakazem dla AfD. Według informacji ZEIT jednym z ekspertów jest aktor Hape Kerkeling.",
-      "ru": "В парламенте земли Тюрингия эксперты впервые обсудят запрет АдГ. По информации ZEIT, одним из экспертов является актер Хапе Керкелинг.",
-      "es": "En el parlamento estatal de Turingia, los expertos discutirán por primera vez la prohibición del AfD. Según información de ZEIT, uno de los expertos es el actor Hape Kerkeling.",
+      "it": "Nel parlamento regionale della Turingia gli esperti discuteranno per la prima volta del divieto dell'AfD. Secondo le informazioni della ZEIT uno degli esperti è l'attore Hape Kerkeling.",
       "en": "In the state parliament of Thuringia, experts are to discuss a ban on the AfD for the first time. According to information from ZEIT, one of the experts is the actor Hape Kerkeling.",
+      "uk": "У парламенті землі Тюрінгія експерти вперше мають обговорити заборону AfD. За інформацією ZEIT, одним із експертів є актор Хапе Керкелінг.",
+      "fr": "Au Parlement du Land de Thuringe, les experts doivent discuter pour la première fois d'une interdiction de l'AfD. Selon les informations du ZEIT, l'un des experts est l'acteur Hape Kerkeling.",
+      "es": "En el parlamento estatal de Turingia, los expertos discutirán por primera vez la prohibición del AfD. Según información de ZEIT, uno de los expertos es el actor Hape Kerkeling.",
       "tr": "Thüringen eyalet parlamentosunda uzmanlar ilk kez AfD'ye yönelik yasağı tartışacak. ZEIT'in edindiği bilgiye göre uzmanlardan biri de oyuncu Hape Kerkeling.",
       "de": "Im Landtag von Thüringen sollen Experten erstmals ein Verbot der AfD erörtern. Nach Informationen der ZEIT ist einer der Fachleute der Schauspieler Hape Kerkeling.",
-      "uk": "У парламенті землі Тюрінгія експерти вперше мають обговорити заборону AfD. За інформацією ZEIT, одним із експертів є актор Хапе Керкелінг.",
-      "it": "Nel parlamento regionale della Turingia gli esperti discuteranno per la prima volta del divieto dell'AfD. Secondo le informazioni della ZEIT uno degli esperti è l'attore Hape Kerkeling."
+      "pl": "W parlamencie Turyngii eksperci mają po raz pierwszy dyskutować nad zakazem dla AfD. Według informacji ZEIT jednym z ekspertów jest aktor Hape Kerkeling.",
+      "ru": "В парламенте земли Тюрингия эксперты впервые обсудят запрет АдГ. По информации ZEIT, одним из экспертов является актер Хапе Керкелинг."
     },
     "sources": [
       {
@@ -67,27 +67,62 @@
   },
   {
     "title": {
-      "fr": "Extrémistes de droite dans la campagne électorale : la conférence du parti AfD décide de prendre le pouvoir en septembre",
-      "pl": "Prawicowi ekstremiści w kampanii wyborczej: Konferencja Partii Państwowej AfD decyduje się na przejęcie władzy we wrześniu",
-      "ru": "Правые экстремисты в предвыборной кампании: конференция партии АдГ приняла решение прийти к власти в сентябре",
-      "es": "Extremistas de derecha en la campaña electoral: la conferencia estatal del partido AfD decide tomar el poder en septiembre",
+      "de": "Bundestag: AfD-Verteidigungspolitiker plant Reise in die Ukraine",
+      "en": "Bundestag: AfD defense politician plans trip to Ukraine",
+      "fr": "Bundestag : un responsable de la défense de l'AfD prévoit un voyage en Ukraine",
+      "es": "Bundestag: político de defensa de AfD planea viajar a Ucrania",
+      "tr": "Federal Meclis: AfD'li savunma politikacısı Ukrayna'ya gezi planlıyor",
+      "uk": "Бундестаг: оборонний політик AfD планує візит до України",
+      "pl": "Bundestag: Polityk AfD zajmujący się obronnością planuje wyjazd na Ukrainę",
+      "it": "Bundestag: il politico della difesa dell'AfD pianifica un viaggio in Ucraina",
+      "ru": "Бундестаг: политик АдГ планирует поездку в Украину"
+    },
+    "date": "2026-07-14",
+    "excerpt": {
+      "de": "Zuletzt reisten Politiker der in weiten Teilen rechtsextremen Partei gerne nach Russland. Nun plant ein Bundestagsabgeordneter eine Reise nach Kiew.",
+      "en": "Recently, politicians from the largely right-wing extremist party have enjoyed traveling to Russia. Now a member of the Bundestag is planning a trip to Kyiv.",
+      "fr": "Récemment, des hommes politiques du parti d’extrême droite, majoritairement d’extrême droite, ont eu plaisir à se rendre en Russie. Un député du Bundestag envisage désormais de se rendre à Kyiv.",
+      "es": "Recientemente, los políticos del partido mayoritariamente de extrema derecha han disfrutado viajando a Rusia. Ahora un miembro del Bundestag está planeando un viaje a Kyiv.",
+      "tr": "Son zamanlarda, büyük ölçüde sağcı aşırılık yanlısı partiden politikacılar Rusya'ya seyahat etmekten keyif alıyorlar. Şimdi Federal Meclis'in bir üyesi Kiev'e bir gezi planlıyor.",
+      "uk": "Останнім часом політики із переважно правої екстремістської партії із задоволенням їздили до Росії. Зараз депутат Бундестагу планує поїздку до Києва.",
+      "pl": "Ostatnio politycy z tej w dużej mierze prawicowej partii ekstremistycznej chętnie podróżowali do Rosji. Teraz poseł Bundestagu planuje wyjazd do Kijowa.",
+      "it": "Recentemente, i politici del partito estremista in gran parte di destra si sono divertiti a viaggiare in Russia. Adesso un deputato del Bundestag sta programmando un viaggio a Kiev.",
+      "ru": "В последнее время политики из преимущественно правой экстремистской партии с удовольствием ездят в Россию. Сейчас депутат Бундестага планирует поездку в Киев."
+    },
+    "sources": [
+      {
+        "name": "Süddeutsche Zeitung",
+        "url": "https://www.sueddeutsche.de/politik/afd-politiker-ruediger-lucassen-ukraine-konferenz-kiew-li.3515797"
+      },
+      {
+        "name": "Süddeutsche Zeitung (Archiv)",
+        "url": "https://archive.ph/https://www.sueddeutsche.de/politik/afd-politiker-ruediger-lucassen-ukraine-konferenz-kiew-li.3515797"
+      }
+    ]
+  },
+  {
+    "title": {
+      "it": "Estremisti di destra in campagna elettorale: la conferenza statale del partito AfD decide di prendere il potere a settembre",
       "en": "Right-wing extremists in the election campaign: AfD state party conference decides to take power in September",
+      "uk": "Праві екстремісти у передвиборчій кампанії: партійна конференція AfD вирішує взяти владу у вересні",
+      "fr": "Extrémistes de droite dans la campagne électorale : la conférence du parti AfD décide de prendre le pouvoir en septembre",
+      "es": "Extremistas de derecha en la campaña electoral: la conferencia estatal del partido AfD decide tomar el poder en septiembre",
       "tr": "Seçim kampanyasında aşırı sağcılar: AfD eyalet parti konferansı Eylül ayında iktidara gelme kararı aldı",
       "de": "Rechtsextreme im Wahlkampf: AfD-Landesparteitag beschließt Machtübernahme im September",
-      "uk": "Праві екстремісти у передвиборчій кампанії: партійна конференція AfD вирішує взяти владу у вересні",
-      "it": "Estremisti di destra in campagna elettorale: la conferenza statale del partito AfD decide di prendere il potere a settembre"
+      "pl": "Prawicowi ekstremiści w kampanii wyborczej: Konferencja Partii Państwowej AfD decyduje się na przejęcie władzy we wrześniu",
+      "ru": "Правые экстремисты в предвыборной кампании: конференция партии АдГ приняла решение прийти к власти в сентябре"
     },
     "date": "2026-07-12",
     "excerpt": {
-      "fr": "L'AfD de Saxe-Anhalt élit un nouveau conseil d'administration en pleine campagne électorale et annonce un programme de 100 jours. Il contient beaucoup d’idéologie et rien de social. plus...",
-      "pl": "AfD w Saksonii-Anhalt wybiera nowy zarząd w środku kampanii wyborczej i ogłasza 100-dniowy program. Zawiera dużo ideologii i nic społecznego. więcej...",
-      "ru": "АдГ Саксонии-Анхальт избирает новое правление в разгар избирательной кампании и объявляет 100-дневную программу. В нем много идеологии и ничего социального. более...",
-      "es": "El AfD de Sajonia-Anhalt elige una nueva junta directiva en plena campaña electoral y anuncia un programa de 100 días. Contiene mucha ideología y nada social. más...",
+      "it": "L'AfD della Sassonia-Anhalt elegge un nuovo consiglio nel bel mezzo della campagna elettorale e annuncia un programma di 100 giorni. Contiene molta ideologia e niente di sociale. Di più...",
       "en": "Saxony-Anhalt's AfD elects a new board in the middle of the election campaign and announces a 100-day program. It contains a lot of ideology and nothing social. more...",
+      "uk": "AfD землі Саксонія-Анхальт обирає нове правління посеред виборчої кампанії та оголошує програму на 100 днів. У ньому багато ідеології і нічого соціального. більше...",
+      "fr": "L'AfD de Saxe-Anhalt élit un nouveau conseil d'administration en pleine campagne électorale et annonce un programme de 100 jours. Il contient beaucoup d’idéologie et rien de social. plus...",
+      "es": "El AfD de Sajonia-Anhalt elige una nueva junta directiva en plena campaña electoral y anuncia un programa de 100 días. Contiene mucha ideología y nada social. más...",
       "tr": "Saksonya-Anhalt'taki AfD, seçim kampanyasının ortasında yeni bir yönetim kurulu seçiyor ve 100 günlük bir program açıklıyor. Çok fazla ideoloji içeriyor ve sosyal hiçbir şey içermiyor. Daha...",
       "de": "Sachsen-Anhalts AfD wählt mitten im Wahlkampf den Vorstand neu und verkündet ein 100-Tage-Programm. Es beinhaltet viel Ideologie und nichts Soziales. mehr...",
-      "uk": "AfD землі Саксонія-Анхальт обирає нове правління посеред виборчої кампанії та оголошує програму на 100 днів. У ньому багато ідеології і нічого соціального. більше...",
-      "it": "L'AfD della Sassonia-Anhalt elegge un nuovo consiglio nel bel mezzo della campagna elettorale e annuncia un programma di 100 giorni. Contiene molta ideologia e niente di sociale. Di più..."
+      "pl": "AfD w Saksonii-Anhalt wybiera nowy zarząd w środku kampanii wyborczej i ogłasza 100-dniowy program. Zawiera dużo ideologii i nic społecznego. więcej...",
+      "ru": "АдГ Саксонии-Анхальт избирает новое правление в разгар избирательной кампании и объявляет 100-дневную программу. В нем много идеологии и ничего социального. более..."
     },
     "sources": [
       {
@@ -386,27 +421,27 @@
   },
   {
     "title": {
-      "fr": "Jugements juin 2026 : Trois défaites de l’AfD contre l’Office pour la protection de la Constitution",
-      "pl": "Wyroki Czerwiec 2026: Trzy porażki AfD z Urzędem Ochrony Konstytucji",
-      "ru": "Решения, июнь 2026 г.: Три поражения АдГ от Управления по защите конституции",
-      "es": "Sentencias de junio de 2026: tres derrotas del AfD contra la Oficina de Protección de la Constitución",
+      "it": "Sentenze giugno 2026: tre sconfitte dell'AfD contro l'Ufficio per la Tutela della Costituzione",
       "en": "Judgments June 2026: Three AfD defeats against the Office for the Protection of the Constitution",
+      "uk": "Судові рішення, червень 2026 р.: три поразки AfD проти Управління захисту конституції",
+      "fr": "Jugements juin 2026 : Trois défaites de l’AfD contre l’Office pour la protection de la Constitution",
+      "es": "Sentencias de junio de 2026: tres derrotas del AfD contra la Oficina de Protección de la Constitución",
       "tr": "Haziran 2026 Kararları: AfD, Anayasayı Koruma Dairesi'ne karşı üç yenilgiye uğradı",
       "de": "Urteile Juni 2026: Drei AfD-Niederlagen gegen den Verfassungsschutz",
-      "uk": "Судові рішення, червень 2026 р.: три поразки AfD проти Управління захисту конституції",
-      "it": "Sentenze giugno 2026: tre sconfitte dell'AfD contro l'Ufficio per la Tutela della Costituzione"
+      "pl": "Wyroki Czerwiec 2026: Trzy porażki AfD z Urzędem Ochrony Konstytucji",
+      "ru": "Решения, июнь 2026 г.: Три поражения АдГ от Управления по защите конституции"
     },
     "date": "2026-07-07",
     "excerpt": {
-      "fr": "Dans notre série d'arrêts, nous mettons toujours en avant une sélection de nouvelles jurisprudences de fin de mois qui touchent l'extrémisme de droite, l'antisémitisme ou le racisme ainsi que les penseurs latéraux...",
-      "pl": "W naszej serii wyroków zawsze pod koniec miesiąca podkreślamy wybór nowego orzecznictwa, które dotyczy prawicowego ekstremizmu, antysemityzmu lub rasizmu, a także myślenia lateralnego…",
-      "ru": "В нашей серии решений мы всегда выделяем подборку новых прецедентов в конце месяца, которые затрагивают правый экстремизм, антисемитизм или расизм, а также нестандартное мышление...",
-      "es": "En nuestra serie de sentencias, siempre destacamos a final de mes una selección de nueva jurisprudencia que afecta tanto al extremismo de derecha, al antisemitismo o al racismo como al pensador lateral...",
+      "it": "Nella nostra serie di sentenze, alla fine del mese evidenziamo sempre una selezione di nuova giurisprudenza che colpisce l'estremismo di destra, l'antisemitismo o il razzismo, nonché il pensatore laterale...",
       "en": "In our series of judgments, we always highlight a selection of new case law at the end of the month that affects right-wing extremism, anti-Semitism or racism as well as lateral thinker...",
+      "uk": "У нашій серії рішень ми завжди наголошуємо на підбірці нової прецедентної практики наприкінці місяця, яка стосується правого екстремізму, антисемітизму чи расизму, а також стороннього мислення...",
+      "fr": "Dans notre série d'arrêts, nous mettons toujours en avant une sélection de nouvelles jurisprudences de fin de mois qui touchent l'extrémisme de droite, l'antisémitisme ou le racisme ainsi que les penseurs latéraux...",
+      "es": "En nuestra serie de sentencias, siempre destacamos a final de mes una selección de nueva jurisprudencia que afecta tanto al extremismo de derecha, al antisemitismo o al racismo como al pensador lateral...",
       "tr": "Karar serimizde her zaman ay sonunda sağcı aşırıcılığı, Yahudi karşıtlığını veya ırkçılığı ve ayrıca yan düşünürleri etkileyen yeni içtihatlardan bir seçkiyi öne çıkarıyoruz...",
       "de": "In unserer Urteile-Reihe beleuchten wir immer am Monatsende eine Auswahl an neuer Rechtsprechung, die den Rechtsextremismus, Antisemitismus oder Rassismus sowie das Querdenker- ...",
-      "uk": "У нашій серії рішень ми завжди наголошуємо на підбірці нової прецедентної практики наприкінці місяця, яка стосується правого екстремізму, антисемітизму чи расизму, а також стороннього мислення...",
-      "it": "Nella nostra serie di sentenze, alla fine del mese evidenziamo sempre una selezione di nuova giurisprudenza che colpisce l'estremismo di destra, l'antisemitismo o il razzismo, nonché il pensatore laterale..."
+      "pl": "W naszej serii wyroków zawsze pod koniec miesiąca podkreślamy wybór nowego orzecznictwa, które dotyczy prawicowego ekstremizmu, antysemityzmu lub rasizmu, a także myślenia lateralnego…",
+      "ru": "В нашей серии решений мы всегда выделяем подборку новых прецедентов в конце месяца, которые затрагивают правый экстремизм, антисемитизм или расизм, а также нестандартное мышление..."
     },
     "sources": [
       {
@@ -417,27 +452,27 @@
   },
   {
     "title": {
-      "fr": "Conférence du parti AfD à Erfurt : la police enquête sur les attaques contre des journalistes après la conférence du parti AfD",
-      "pl": "Konferencja partii AfD w Erfurcie: Policja bada ataki na dziennikarzy po konferencji partii AfD",
-      "ru": "Конференция партии АдГ в Эрфурте: Полиция расследует нападения на журналистов после конференции партии АдГ",
-      "es": "Conferencia del partido AfD en Erfurt: la policía investiga ataques a periodistas después de la conferencia del partido AfD",
+      "it": "Conferenza del partito AfD a Erfurt: la polizia sta indagando sugli attacchi ai giornalisti dopo la conferenza del partito AfD",
       "en": "AfD party conference in Erfurt: Police are investigating attacks on journalists after the AfD party conference",
+      "uk": "Конференція партії AfD в Ерфурті: поліція розслідує напади на журналістів після партійної конференції AfD",
+      "fr": "Conférence du parti AfD à Erfurt : la police enquête sur les attaques contre des journalistes après la conférence du parti AfD",
+      "es": "Conferencia del partido AfD en Erfurt: la policía investiga ataques a periodistas después de la conferencia del partido AfD",
       "tr": "Erfurt'ta AfD parti konferansı: Polis, AfD parti konferansı sonrasında gazetecilere yönelik saldırıları araştırıyor",
       "de": "AfD-Parteitag in Erfurt: Polizei ermittelt nach AfD-Parteitag wegen Angriffen auf Journalisten",
-      "uk": "Конференція партії AfD в Ерфурті: поліція розслідує напади на журналістів після партійної конференції AfD",
-      "it": "Conferenza del partito AfD a Erfurt: la polizia sta indagando sugli attacchi ai giornalisti dopo la conferenza del partito AfD"
+      "pl": "Konferencja partii AfD w Erfurcie: Policja bada ataki na dziennikarzy po konferencji partii AfD",
+      "ru": "Конференция партии АдГ в Эрфурте: Полиция расследует нападения на журналистов после конференции партии АдГ"
     },
     "date": "2026-07-06",
     "excerpt": {
-      "fr": "Plus professionnel, plus jeune, plus radical, plus Weidel, moins Chrupalla, une séance de thérapie Höcke bizarre et beaucoup d'ennui. Le chef du parti Weid a donné le ton excitant...",
-      "pl": "Bardziej profesjonalnie, młodziej, bardziej radykalnie, więcej Weidela, mniej Chrupalli, dziwna sesja terapii Höckego i mnóstwo nudy. Lider partii Weid nadał ekscytujący ton...",
-      "ru": "Более профессионален, моложе, более радикален, больше Вейделя, меньше Хрупаллы, причудливый сеанс терапии Хёкке и много скуки. Лидер партии Вейд задал захватывающий тон...",
-      "es": "Más profesional, más joven, más radical, más Weidel, menos Chrupalla, una extraña sesión de terapia Höcke y mucho aburrimiento. El líder del partido Weid marcó el tono emocionante...",
+      "it": "Più professionale, più giovane, più radicale, più Weidel, meno Chrupalla, una bizzarra seduta di terapia Höcke e tanta noia. Il leader del partito Weid ha dato il tono emozionante...",
       "en": "More professional, younger, more radical, more Weidel, less Chrupalla, a bizarre Höcke therapy session and a lot of boredom. Party leader Weid set the exciting tone...",
+      "uk": "Більш професійний, молодший, більш радикальний, більше Вайделя, менше Хрупалли, химерний сеанс терапії Хьокке та багато нудьги. Лідер партії Вейд задав хвилюючий тон...",
+      "fr": "Plus professionnel, plus jeune, plus radical, plus Weidel, moins Chrupalla, une séance de thérapie Höcke bizarre et beaucoup d'ennui. Le chef du parti Weid a donné le ton excitant...",
+      "es": "Más profesional, más joven, más radical, más Weidel, menos Chrupalla, una extraña sesión de terapia Höcke y mucho aburrimiento. El líder del partido Weid marcó el tono emocionante...",
       "tr": "Daha profesyonel, daha genç, daha radikal, daha fazla Weidel, daha az Chrupalla, tuhaf bir Höcke terapi seansı ve bolca can sıkıntısı. Parti lideri Weid heyecan verici bir ton belirledi...",
       "de": "Professioneller, jünger, radikaler, mehr Weidel, weniger Chrupalla, eine skurrile Höcke-Therapiesitzung und ganz viel Langeweile. Die spannenden Akzente setzte Parteichefin Weid...",
-      "uk": "Більш професійний, молодший, більш радикальний, більше Вайделя, менше Хрупалли, химерний сеанс терапії Хьокке та багато нудьги. Лідер партії Вейд задав хвилюючий тон...",
-      "it": "Più professionale, più giovane, più radicale, più Weidel, meno Chrupalla, una bizzarra seduta di terapia Höcke e tanta noia. Il leader del partito Weid ha dato il tono emozionante..."
+      "pl": "Bardziej profesjonalnie, młodziej, bardziej radykalnie, więcej Weidela, mniej Chrupalli, dziwna sesja terapii Höckego i mnóstwo nudy. Lider partii Weid nadał ekscytujący ton...",
+      "ru": "Более профессионален, моложе, более радикален, больше Вейделя, меньше Хрупаллы, причудливый сеанс терапии Хёкке и много скуки. Лидер партии Вейд задал захватывающий тон..."
     },
     "sources": [
       {
@@ -810,27 +845,27 @@
   },
   {
     "title": {
-      "fr": "Nous n’obtenons actuellement ni une interdiction de l’AfD ni « une bonne politique qui aide contre l’AfD »",
-      "pl": "Obecnie nie mamy ani zakazu dla AfD, ani „dobrej polityki, która pomaga przeciwko AfD”",
-      "ru": "В настоящее время мы не получаем ни запрета АдГ, ни «хорошей политики, которая поможет против АдГ».",
-      "es": "Actualmente no obtenemos ni una prohibición del AfD ni una “buena política que ayude contra el AfD”",
+      "it": "Al momento non stiamo ottenendo né il divieto dell’AfD né una “buona politica che aiuta contro l’AfD”",
       "en": "We are currently neither getting a ban on the AfD nor “good politics that helps against the AfD”",
+      "uk": "Зараз ми не отримуємо ані заборони на AfD, ані «хорошої політики, яка допомагає проти AfD»",
+      "fr": "Nous n’obtenons actuellement ni une interdiction de l’AfD ni « une bonne politique qui aide contre l’AfD »",
+      "es": "Actualmente no obtenemos ni una prohibición del AfD ni una “buena política que ayude contra el AfD”",
       "tr": "Şu anda ne AfD'ye yasak getiriliyor ne de \"AfD'ye karşı yardımcı olan iyi politikalar\" yapılıyor.",
       "de": "Wir kriegen gerade weder ein AfD-Verbot noch „gute Politik, die gegen die AfD hilft“",
-      "uk": "Зараз ми не отримуємо ані заборони на AfD, ані «хорошої політики, яка допомагає проти AfD»",
-      "it": "Al momento non stiamo ottenendo né il divieto dell’AfD né una “buona politica che aiuta contro l’AfD”"
+      "pl": "Obecnie nie mamy ani zakazu dla AfD, ani „dobrej polityki, która pomaga przeciwko AfD”",
+      "ru": "В настоящее время мы не получаем ни запрета АдГ, ни «хорошей политики, которая поможет против АдГ»."
     },
     "date": "2026-07-01",
     "excerpt": {
-      "fr": "Le rapport le plus complet jamais rédigé conclut que l'AfD remplit les conditions requises pour interdire un parti. L'Union répond à cela avec le fameux...",
-      "pl": "W najbardziej kompleksowym raporcie, jaki kiedykolwiek sporządzono, stwierdza się, że AfD spełnia wymogi zakazu partii. Unia przeciwstawia się temu dobrze znanemu...",
-      "ru": "В самом полном из когда-либо составленных докладов делается вывод о том, что АдГ соответствует требованиям для запрета партий. Союз парирует это известным...",
-      "es": "El informe más completo jamás elaborado concluye que el AfD cumple los requisitos para ser prohibido como partido. La Unión responde a esto con el conocido...",
+      "it": "Il rapporto più completo mai redatto conclude che l’AfD soddisfa i requisiti per la messa al bando dei partiti. A ciò l'Unione risponde con la nota...",
       "en": "The most comprehensive report ever drawn up concludes that the AfD meets the requirements for a party ban. The Union counters this with the well-known...",
+      "uk": "У найповнішому звіті, коли-небудь складеному, робиться висновок, що AfD відповідає вимогам для заборони партії. Союз протидіє цьому відомим...",
+      "fr": "Le rapport le plus complet jamais rédigé conclut que l'AfD remplit les conditions requises pour interdire un parti. L'Union répond à cela avec le fameux...",
+      "es": "El informe más completo jamás elaborado concluye que el AfD cumple los requisitos para ser prohibido como partido. La Unión responde a esto con el conocido...",
       "tr": "Şimdiye kadar hazırlanan en kapsamlı rapor, AfD'nin parti yasağı şartlarını yerine getirdiği sonucuna varıyor. Birlik buna şu meşhur sözle karşı çıkıyor:",
       "de": "Das umfassendste Gutachten, das je erstellt wurde, kommt zum Schluss, dass die AfD die Anforderungen für ein Parteienverbot erfüllt. Dem entgegnet die Union mit der altbekannten...",
-      "uk": "У найповнішому звіті, коли-небудь складеному, робиться висновок, що AfD відповідає вимогам для заборони партії. Союз протидіє цьому відомим...",
-      "it": "Il rapporto più completo mai redatto conclude che l’AfD soddisfa i requisiti per la messa al bando dei partiti. A ciò l'Unione risponde con la nota..."
+      "pl": "W najbardziej kompleksowym raporcie, jaki kiedykolwiek sporządzono, stwierdza się, że AfD spełnia wymogi zakazu partii. Unia przeciwstawia się temu dobrze znanemu...",
+      "ru": "В самом полном из когда-либо составленных докладов делается вывод о том, что АдГ соответствует требованиям для запрета партий. Союз парирует это известным..."
     },
     "sources": [
       {
@@ -872,27 +907,27 @@
   },
   {
     "title": {
-      "fr": "L'AfD est l'exception d'extrême droite la plus dangereuse d'Europe",
-      "pl": "AfD to najniebezpieczniejszy prawicowy ekstremistyczny wyjątek w Europie",
-      "ru": "АдГ – самое опасное исключение правых экстремистов в Европе",
-      "es": "AfD es la excepción de extrema derecha más peligrosa de Europa",
+      "it": "L’AfD è l’eccezione estremista di destra più pericolosa d’Europa",
       "en": "The AfD is Europe's most dangerous, right-wing extremist exception",
+      "uk": "AfD є найнебезпечнішим правим екстремістським винятком Європи",
+      "fr": "L'AfD est l'exception d'extrême droite la plus dangereuse d'Europe",
+      "es": "AfD es la excepción de extrema derecha más peligrosa de Europa",
       "tr": "AfD, Avrupa'nın en tehlikeli, aşırı sağcı istisnasıdır",
       "de": "Die AfD ist Europas gefährlichste, rechtsextreme Ausnahme",
-      "uk": "AfD є найнебезпечнішим правим екстремістським винятком Європи",
-      "it": "L’AfD è l’eccezione estremista di destra più pericolosa d’Europa"
+      "pl": "AfD to najniebezpieczniejszy prawicowy ekstremistyczny wyjątek w Europie",
+      "ru": "АдГ – самое опасное исключение правых экстремистов в Европе"
     },
     "date": "2026-06-29",
     "excerpt": {
-      "fr": "L’Europe entière se dirige vers la droite – mais surtout sur un ton modéré afin d’accéder au pouvoir. Un seul parti fait le contraire : l’AfD se radicalise de plus en plus et...",
-      "pl": "Cała Europa zmierza w prawo – ale przeważnie umiarkowanymi tonami w celu zdobycia władzy. Tylko jedna partia robi odwrotnie: AfD staje się coraz bardziej radykalna i...",
-      "ru": "Вся Европа движется вправо – но в основном умеренными тонами, чтобы получить власть. Только одна партия делает обратное: АдГ становится все более радикальной и...",
-      "es": "Toda Europa se está moviendo hacia la derecha, pero sobre todo con un tono moderado, para ganar poder. Sólo un partido hace lo contrario: el AfD se está volviendo cada vez más radical y...",
+      "it": "Tutta l'Europa si sta muovendo a destra, ma per lo più con toni moderati per conquistare il potere. Solo un partito fa il contrario: l’AfD diventa sempre più radicale e...",
       "en": "All of Europe is moving to the right - but mostly with moderate tones in order to gain power. Only one party is doing the opposite: the AfD is becoming increasingly radical and...",
+      "uk": "Вся Європа рухається праворуч – але переважно поміркованими тонами, щоб отримати владу. Лише одна партія робить навпаки: AfD стає все більш радикальною і...",
+      "fr": "L’Europe entière se dirige vers la droite – mais surtout sur un ton modéré afin d’accéder au pouvoir. Un seul parti fait le contraire : l’AfD se radicalise de plus en plus et...",
+      "es": "Toda Europa se está moviendo hacia la derecha, pero sobre todo con un tono moderado, para ganar poder. Sólo un partido hace lo contrario: el AfD se está volviendo cada vez más radical y...",
       "tr": "Tüm Avrupa sağa doğru kayıyor ama çoğunlukla güç kazanmak adına ılımlı tonlarla. Sadece bir parti bunun tersini yapıyor: AfD giderek radikalleşiyor ve...",
       "de": "Ganz Europa rückt nach rechts – aber meist mit gemäßigten Tönen, um an die Macht zu kommen. Nur eine Partei macht das Gegenteil: Die AfD radikalisiert sich immer weiter und wäch...",
-      "uk": "Вся Європа рухається праворуч – але переважно поміркованими тонами, щоб отримати владу. Лише одна партія робить навпаки: AfD стає все більш радикальною і...",
-      "it": "Tutta l'Europa si sta muovendo a destra, ma per lo più con toni moderati per conquistare il potere. Solo un partito fa il contrario: l’AfD diventa sempre più radicale e..."
+      "pl": "Cała Europa zmierza w prawo – ale przeważnie umiarkowanymi tonami w celu zdobycia władzy. Tylko jedna partia robi odwrotnie: AfD staje się coraz bardziej radykalna i...",
+      "ru": "Вся Европа движется вправо – но в основном умеренными тонами, чтобы получить власть. Только одна партия делает обратное: АдГ становится все более радикальной и..."
     },
     "sources": [
       {
