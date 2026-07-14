@@ -58,7 +58,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 2006.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Bundestag/",
     "nameDe": "Bundestag (Deutschland)",
     "nameEn": "Bundestag (Germany)"
@@ -122,7 +122,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1017.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Baden-wuerttemberg/",
     "nameDe": "Baden-Württemberg",
     "nameEn": "Baden-Württemberg"
@@ -186,7 +186,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1003.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Bayern/",
     "nameDe": "Bayern",
     "nameEn": "Bavaria"
@@ -250,7 +250,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1165.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Berlin/",
     "nameDe": "Berlin",
     "nameEn": "Berlin"
@@ -314,7 +314,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1159.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Brandenburg/",
     "nameDe": "Brandenburg",
     "nameEn": "Brandenburg"
@@ -378,7 +378,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1147.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Bremen/",
     "nameDe": "Bremen",
     "nameEn": "Bremen"
@@ -442,7 +442,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1000.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Hamburg/",
     "nameDe": "Hamburg",
     "nameEn": "Hamburg"
@@ -506,7 +506,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1000.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Hessen/",
     "nameDe": "Hessen",
     "nameEn": "Hesse"
@@ -570,7 +570,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1167.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Mecklenburg-vorpommern/",
     "nameDe": "Mecklenburg-Vorpommern",
     "nameEn": "Mecklenburg-Vorpommern"
@@ -634,7 +634,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1000.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Niedersachsen/",
     "nameDe": "Niedersachsen",
     "nameEn": "Lower Saxony"
@@ -698,7 +698,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1139.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Nordrhein-westfalen/",
     "nameDe": "Nordrhein-Westfalen",
     "nameEn": "North Rhine-Westphalia"
@@ -762,7 +762,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1139.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Rheinland-pfalz/",
     "nameDe": "Rheinland-Pfalz",
     "nameEn": "Rhineland-Palatinate"
@@ -826,7 +826,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1150.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Saarland/",
     "nameDe": "Saarland",
     "nameEn": "Saarland"
@@ -890,7 +890,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1000.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Sachsen/",
     "nameDe": "Sachsen",
     "nameEn": "Saxony"
@@ -954,7 +954,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1000.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Sachsen-anhalt/",
     "nameDe": "Sachsen-Anhalt",
     "nameEn": "Saxony-Anhalt"
@@ -963,7 +963,7 @@
     "bars": [
       {
         "key": "cdu",
-        "pct": 33.0,
+        "pct": 27.0,
         "labelDe": "CDU/CSU",
         "labelEn": "CDU/CSU",
         "defaultColor": "bg-neutral-950 border border-neutral-700",
@@ -971,7 +971,7 @@
       },
       {
         "key": "afd",
-        "pct": 15.0,
+        "pct": 18.0,
         "labelDe": "AfD",
         "labelEn": "AfD",
         "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
@@ -979,7 +979,7 @@
       },
       {
         "key": "spd",
-        "pct": 12.0,
+        "pct": 15.0,
         "labelDe": "SPD",
         "labelEn": "SPD",
         "defaultColor": "bg-red-600",
@@ -987,7 +987,7 @@
       },
       {
         "key": "greens",
-        "pct": 19.0,
+        "pct": 17.0,
         "labelDe": "GRÜNE",
         "labelEn": "GREENS",
         "defaultColor": "bg-green-600",
@@ -995,7 +995,7 @@
       },
       {
         "key": "left",
-        "pct": 6.0,
+        "pct": 7.0,
         "labelDe": "LINKE",
         "labelEn": "LEFT",
         "defaultColor": "bg-pink-600",
@@ -1003,22 +1003,22 @@
       },
       {
         "key": "others",
-        "pct": 15.0,
+        "pct": 16.0,
         "labelDe": "Sonstige",
         "labelEn": "Others",
         "defaultColor": "bg-neutral-600",
         "isAfd": false
       }
     ],
-    "instituteName": "Infratest dimap",
-    "surveyDate": "2026-04-16",
+    "instituteName": "INSA",
+    "surveyDate": "2026-07-14",
     "surveyPeriod": {
-      "start": "2026-04-08",
-      "end": "2026-04-13"
+      "start": "2026-07-07",
+      "end": "2026-07-14"
     },
-    "methodName": "Telefon & Online",
-    "surveyedPersons": 1155.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "methodName": "Online",
+    "surveyedPersons": 1000.0,
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Schleswig-holstein/",
     "nameDe": "Schleswig-Holstein",
     "nameEn": "Schleswig-Holstein"
@@ -1082,7 +1082,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1000.0,
-    "apiUpdatedAt": "2026-07-14T17:48:42+02:00",
+    "apiUpdatedAt": "2026-07-14T18:39:10+02:00",
     "sourceUrl": "https://dawum.de/Thueringen/",
     "nameDe": "Thüringen",
     "nameEn": "Thuringia"
