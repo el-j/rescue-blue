@@ -22,7 +22,7 @@ CHANGE_ORG_URL = (
 )
 
 DAWUM_API_URL = 'https://api.dawum.de/'
-INSA_INSTITUTE = 'INSA'
+EXCLUDED_INSTITUTES = {'INSA'}
 BUNDESTAG_PARLIAMENT_ID = '0'
 
 PARLIAMENTS = {
@@ -242,6 +242,15 @@ def fetch_polling_snapshot(output_dir):
         latest = None
         pcts = {}
         for survey in parl_surveys:
+            inst_id = str(survey.get('Institute_ID', ''))
+            institute = institutes.get(inst_id, {})
+            inst_name = (
+                institute.get('Name', '')
+                if isinstance(institute, dict)
+                else ''
+            )
+            if inst_name in EXCLUDED_INSTITUTES:
+                continue
             results = survey.get('Results', {})
             if not results:
                 continue

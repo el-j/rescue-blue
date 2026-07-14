@@ -39,8 +39,6 @@
     "demoSourceMethod": "Method",
     "demoSourceStand": "Updated",
     "demoSourceButton": "Open source & method",
-    "demoSourceWhyInstituteLabel": "Why INSA?",
-    "demoSourceWhyInstituteTooltip": "This chart intentionally uses one fixed institute (INSA) to keep the time series methodologically consistent and avoid jumps caused by switching institutes.",
     "demoOption": "Visualisation Option",
     "demoQuestion": "Which colour choice is accurate and historically honest?",
     "demoReset": "Exit Dream",

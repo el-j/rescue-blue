@@ -42,7 +42,6 @@ export function InteractiveDemoSection({
 }: DemoProps) {
   const isBrownActive = sandboxState === 'brown' || sandboxState === 'dream'
   const isDreamActive = sandboxState === 'dream'
-  const [isInstituteInfoOpen, setIsInstituteInfoOpen] = useState(false)
   const [showComparison, setShowComparison] = useState(false)
   const [dreamProgress, setDreamProgress] = useState<number | null>(null)
   const hasStartedDreamRef = useRef(false)
@@ -300,9 +299,6 @@ export function InteractiveDemoSection({
       <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{t.demoDesc}</p>
       <DemoSourceInfo
         t={t}
-        instituteName={instituteName}
-        isInstituteInfoOpen={isInstituteInfoOpen}
-        setIsInstituteInfoOpen={setIsInstituteInfoOpen}
         sourceInfo={sourceInfo}
         isLivePollData={isLivePollData}
         standInfo={standInfo}
