@@ -3,7 +3,6 @@ import type { Translation } from '../../i18n'
 
 interface DemoSourceInfoProps {
   t: Translation
-  instituteName?: string
   sourceInfo: string
   isLivePollData: boolean
   standInfo: string

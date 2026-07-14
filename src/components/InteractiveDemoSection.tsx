@@ -299,7 +299,6 @@ export function InteractiveDemoSection({
       <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{t.demoDesc}</p>
       <DemoSourceInfo
         t={t}
-        instituteName={instituteName}
         sourceInfo={sourceInfo}
         isLivePollData={isLivePollData}
         standInfo={standInfo}
