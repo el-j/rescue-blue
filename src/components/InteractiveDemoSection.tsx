@@ -17,7 +17,6 @@ interface DemoProps {
   sandboxState: 'default' | 'brown' | 'dream'
   onCycleSandboxState: () => void
   onSetSandboxState?: (state: 'default' | 'brown' | 'dream') => void
-  instituteName?: string
   selectedStateId: string
   onSelectStateId: (id: string) => void
   pollingSnapshot: ParliamentsSnapshot | null
@@ -35,7 +34,6 @@ export function InteractiveDemoSection({
   sandboxState,
   onCycleSandboxState,
   onSetSandboxState,
-  instituteName,
   selectedStateId,
   onSelectStateId,
   pollingSnapshot,
