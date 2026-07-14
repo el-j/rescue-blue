@@ -155,7 +155,6 @@ export default function App({ initialLang }: AppProps = {}) {
               })
             }}
             onSetSandboxState={setSandboxState}
-            instituteName={activeSnapshot?.instituteName ?? POLLING_LOCKED_INSTITUTE}
             selectedStateId={selectedStateId}
             onSelectStateId={setSelectedStateId}
             pollingSnapshot={pollingSnapshot}
