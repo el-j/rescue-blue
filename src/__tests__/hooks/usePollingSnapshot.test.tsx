@@ -4,7 +4,7 @@ import { usePollingSnapshot } from '../../hooks/usePollingSnapshot'
 
 const VALID_SNAPSHOT = {
   Database: { Last_Update: '2026-06-01' },
-  Institutes: { '5': { Name: 'INSA' } },
+  Institutes: { '5': { Name: 'Forsa' } },
   Methods: { '4': { Name: 'Online' } },
   Surveys: {
     '1': {

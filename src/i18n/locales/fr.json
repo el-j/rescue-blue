@@ -39,8 +39,6 @@
     "demoSourceMethod": "Méthode",
     "demoSourceStand": "Mis à jour",
     "demoSourceButton": "Ouvrir source & méthode",
-    "demoSourceWhyInstituteLabel": "Pourquoi INSA ?",
-    "demoSourceWhyInstituteTooltip": "Ce graphique utilise intentionnellement un seul institut fixe (INSA) pour maintenir la cohérence méthodologique de la série temporelle et éviter les sauts causés par le changement d'institut.",
     "demoOption": "Option de visualisation",
     "demoQuestion": "Quel choix de couleur est exact et historiquement honnête ?",
     "demoReset": "Quitter le rêve",

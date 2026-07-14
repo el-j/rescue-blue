@@ -13,7 +13,7 @@ import {
 function buildPayload(overrides: Record<string, unknown> = {}) {
   return {
     Database: { Last_Update: '2026-06-01T00:00:00+02:00' },
-    Institutes: { '5': { Name: 'INSA' } },
+    Institutes: { '5': { Name: 'Forsa' } },
     Methods: { '4': { Name: 'Online' } },
     Surveys: {
       '1': {
@@ -38,7 +38,7 @@ describe('parsePollingSnapshot', () => {
   it('parses a valid DAWUM payload and returns a snapshot', () => {
     const snapshot = parsePollingSnapshot(buildPayload())
     expect(snapshot).not.toBeNull()
-    expect(snapshot?.instituteName).toBe('INSA')
+    expect(snapshot?.instituteName).toBe('Forsa')
     expect(snapshot?.surveyDate).toBe('2026-06-01')
     expect(snapshot?.sourceUrl).toBe(POLLING_SOURCE_URL)
   })
@@ -182,6 +182,45 @@ describe('parsePollingSnapshot', () => {
     expect(parsePollingSnapshot(payload)).toBeNull()
   })
 
+  it('skips INSA surveys and returns null when only INSA surveys are available', () => {
+    const payload = buildPayload({
+      Institutes: { '5': { Name: 'INSA' } },
+      Surveys: {
+        '1': {
+          Date: '2026-06-01',
+          Parliament_ID: '0',
+          Institute_ID: '5',
+          Results: { '1': 22, '7': 29, '2': 13, '4': 14, '5': 10 },
+        },
+      },
+    })
+    expect(parsePollingSnapshot(payload)).toBeNull()
+  })
+
+  it('skips INSA survey and picks the next non-INSA survey', () => {
+    const payload = buildPayload({
+      Institutes: { '5': { Name: 'INSA' }, '3': { Name: 'Infratest dimap' } },
+      Surveys: {
+        'newer-insa': {
+          Date: '2026-06-15',
+          Parliament_ID: '0',
+          Institute_ID: '5',
+          Results: { '1': 22, '7': 29, '2': 13, '4': 14, '5': 10 },
+        },
+        'older-infratest': {
+          Date: '2026-06-10',
+          Parliament_ID: '0',
+          Institute_ID: '3',
+          Results: { '1': 25, '7': 27, '2': 15, '4': 13, '5': 9 },
+        },
+      },
+    })
+    const snapshot = parsePollingSnapshot(payload)!
+    expect(snapshot).not.toBeNull()
+    expect(snapshot.instituteName).toBe('Infratest dimap')
+    expect(snapshot.surveyDate).toBe('2026-06-10')
+  })
+
   it('returns null when Surveys field is missing', () => {
     const payload = buildPayload({ Surveys: null })
     expect(parsePollingSnapshot(payload)).toBeNull()
@@ -202,7 +241,7 @@ describe('parsePollingSnapshot', () => {
   it('unwraps allorigins contents wrapper and parses', () => {
     const inner = {
       Database: { Last_Update: '2026-06-01' },
-      Institutes: { '5': { Name: 'INSA' } },
+      Institutes: { '5': { Name: 'Forsa' } },
       Methods: {},
       Surveys: {
         '1': {

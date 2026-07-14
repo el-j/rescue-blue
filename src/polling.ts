@@ -26,7 +26,8 @@ export type PollingSnapshot = {
 export type ParliamentsSnapshot = Record<string, PollingSnapshot>
 
 export const POLLING_REFRESH_MS = 7 * 24 * 60 * 60 * 1000
-export const POLLING_LOCKED_INSTITUTE = 'INSA'
+export const POLLING_LOCKED_INSTITUTE = 'Dawum'
+export const POLLING_EXCLUDED_INSTITUTES = new Set(['INSA'])
 export const POLLING_SOURCE_URL = 'https://dawum.de/Bundestag/'
 export const POLLING_API_DOCS_URL = 'https://dawum.de/API/'
 
@@ -139,6 +140,15 @@ export function parsePollingSnapshot(payload: unknown): PollingSnapshot | null {
   let left: number | null = null
 
   for (const survey of bundestagSurveys) {
+    const instId = String(survey.Institute_ID ?? '')
+    const inst = institutes?.[instId]
+    const instName = inst && typeof inst === 'object' && typeof (inst as Record<string, unknown>).Name === 'string'
+      ? String((inst as Record<string, unknown>).Name)
+      : null
+    if (instName && POLLING_EXCLUDED_INSTITUTES.has(instName)) {
+      continue
+    }
+
     const results = survey.Results
     if (!results || typeof results !== 'object') {
       continue
