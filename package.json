@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "i18n:check": "node scripts/check-locale-parity.mjs",
     "build": "tsc --noEmit && vite build && npm run ssg",
     "ssg": "vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.js",
     "lint": "eslint .",

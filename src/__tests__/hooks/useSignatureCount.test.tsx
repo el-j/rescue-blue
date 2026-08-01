@@ -15,7 +15,7 @@ describe('useSignatureCount', () => {
     expect(result.current.isLive).toBe(false)
   })
 
-  it('sets signatureCount and isLive=true when fetch succeeds with valid count', async () => {
+  it('sets signatureCount and keeps isLive=false when fetch succeeds with valid count', async () => {
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
       ok: true,
       json: vi.fn().mockResolvedValue({ count: 12345 }),
@@ -23,7 +23,7 @@ describe('useSignatureCount', () => {
     const { result } = renderHook(() => useSignatureCount())
     await waitFor(() => expect(result.current.isLoading).toBe(false))
     expect(result.current.signatureCount).toBe(12345)
-    expect(result.current.isLive).toBe(true)
+    expect(result.current.isLive).toBe(false)
   })
 
   it('sets isLive=false when fetch responds with count=0', async () => {
@@ -74,7 +74,7 @@ describe('useSignatureCount', () => {
     const { result } = renderHook(() => useSignatureCount())
     await waitFor(() => expect(result.current.isLoading).toBe(false))
     expect(result.current.signatureCount).toBe(9999)
-    expect(result.current.isLive).toBe(true)
+    expect(result.current.isLive).toBe(false)
   })
 
   it('does not update state after unmount (cleanup)', async () => {

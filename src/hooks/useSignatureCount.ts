@@ -26,7 +26,7 @@ export function useSignatureCount(): SignatureCountResult {
         if (!isCancelled) {
           if (Number.isFinite(count) && count > 0) {
             setSignatureCount(count)
-            setIsLive(true)
+            setIsLive(false)
           } else {
             setIsLive(false)
           }

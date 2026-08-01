@@ -45,7 +45,7 @@ export function ShareModal({ t, onClose }: ShareModalProps) {
 
         <img
           src={QR_CODE_URL}
-          alt="QR-Code zur Petition"
+          alt={`${t.shareTitle} QR`}
           className="mx-auto w-56 rounded-xl border border-neutral-700"
         />
 

@@ -20,6 +20,7 @@ export function BottomCta({ t, ctaBody }: BottomCtaProps) {
       >
         {t.ctaBtn} <ArrowUpRight size={18} />
       </a>
+      <p className="mx-auto mt-3 max-w-xl text-xs text-neutral-500">{t.ctaExternalHint}</p>
     </div>
   )
 }

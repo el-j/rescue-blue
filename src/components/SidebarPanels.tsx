@@ -27,6 +27,7 @@ export function SidebarPanels({ t, ctaBody, formattedSignatureCount, isLoadingSi
         >
           {t.ctaBtn} <ExternalLink size={15} />
         </a>
+        <p className="mb-3 text-center text-[11px] text-neutral-500">{t.ctaExternalHint}</p>
         <p className="text-center text-xs text-neutral-600">{t.ctaInfo}</p>
       </div> 
 

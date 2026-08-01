@@ -10,11 +10,14 @@ import {
   CultureSection,
   HeroSection,
   InteractiveDemoSection,
+  NewsSpotlightSection,
   OpenLetterSection,
   ScientificBackgroundSection,
   SidebarPanels,
   SiteFooter,
   SiteHeader,
+  TrustSection,
+  EditorialPolicySection,
   WhySection,
   FaqSection,
   NewsArchiveSection,
@@ -126,17 +129,21 @@ export default function App({ initialLang }: AppProps = {}) {
         onToggleTheme={handleToggleTheme}
       />
       <HeroSection
-        lang={lang}
         t={t}
         heroImageBase={HERO_IMAGE_BASE}
         formattedSignatureCount={formattedSignatureCount}
         isLoadingSignatures={isLoadingSignatures}
         isLive={isLive}
-        news={news}
       />
+
+      <TrustSection t={t} />
+      <EditorialPolicySection t={t} />
+      <NewsSpotlightSection lang={lang} t={t} news={news} />
 
       <main className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-8 px-4 pb-16 md:px-6 lg:mt-8 lg:grid-cols-12">
         <div className="space-y-12 lg:col-span-8">
+          <WhySection t={t} />
+
           <InteractiveDemoSection
             lang={lang}
             t={t}
@@ -161,19 +168,11 @@ export default function App({ initialLang }: AppProps = {}) {
             pollingSnapshot={pollingSnapshot}
           />
 
-          <WhySection t={t} />
           <PolicyDangersSection lang={lang} t={t} />
           <ScientificBackgroundSection
             science={science}
             openObjection={openObjection}
             onToggleObjection={setOpenObjection}
-          />
-
-          <CultureSection
-            t={t}
-            sayings={sayings}
-            activeTab={activeTab}
-            onChangeTab={setActiveTab}
           />
 
           <OpenLetterSection
@@ -188,6 +187,13 @@ export default function App({ initialLang }: AppProps = {}) {
             faqs={faqs}
             openFaq={openFaq}
             onToggleFaq={setOpenFaq}
+          />
+
+          <CultureSection
+            t={t}
+            sayings={sayings}
+            activeTab={activeTab}
+            onChangeTab={setActiveTab}
           />
 
           <NewsArchiveSection
