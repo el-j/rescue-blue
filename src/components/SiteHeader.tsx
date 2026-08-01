@@ -8,12 +8,14 @@ import { ShareModal } from './ShareModal'
 interface HeaderProps {
   lang: Locale
   t: Translation
+  ctaLabel: string
   theme: Theme
   onChangeLanguage: (locale: Locale) => void
   onToggleTheme: () => void
+  onSignCtaClick: () => void
 }
 
-export function SiteHeader({ lang, t, theme, onChangeLanguage, onToggleTheme }: HeaderProps) {
+export function SiteHeader({ lang, t, ctaLabel, theme, onChangeLanguage, onToggleTheme, onSignCtaClick }: HeaderProps) {
   const isVisible = useScrollVisibility()
   const [isShareOpen, setIsShareOpen] = useState(false)
   const [isLangOpen, setIsLangOpen] = useState(false)
@@ -133,9 +135,10 @@ export function SiteHeader({ lang, t, theme, onChangeLanguage, onToggleTheme }: 
               href={PETITION_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={onSignCtaClick}
               className="flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-bold text-white transition-all hover:bg-blue-500 md:px-3.5"
             >
-              <span className="hidden md:inline">{t.navSign}</span>
+              <span className="hidden md:inline">{ctaLabel}</span>
               <span className="md:hidden">✍️</span>
               <ArrowUpRight size={14} />
             </a>

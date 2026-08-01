@@ -4,13 +4,15 @@ import type { Facts, Translation } from '../i18n'
 
 interface SidebarProps {
   t: Translation
+  ctaLabel: string
   ctaBody: string
   formattedSignatureCount: string | undefined
   isLoadingSignatures: boolean
   facts: Facts
+  onCtaClick: () => void
 }
 
-export function SidebarPanels({ t, ctaBody, formattedSignatureCount, isLoadingSignatures, facts }: SidebarProps) {
+export function SidebarPanels({ t, ctaLabel, ctaBody, formattedSignatureCount, isLoadingSignatures, facts, onCtaClick }: SidebarProps) {
   return (
     <aside className="space-y-6 lg:col-span-4 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pr-0.5">
       <div className="rounded-2xl border border-blue-800/40 bg-linear-to-br from-blue-900/40 to-blue-950/60 p-6 shadow-xl">
@@ -23,10 +25,12 @@ export function SidebarPanels({ t, ctaBody, formattedSignatureCount, isLoadingSi
           href={PETITION_URL}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={onCtaClick}
           className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-500"
         >
-          {t.ctaBtn} <ExternalLink size={15} />
+          {ctaLabel} <ExternalLink size={15} />
         </a>
+        <p className="mb-3 text-center text-[11px] text-neutral-500">{t.ctaExternalHint}</p>
         <p className="text-center text-xs text-neutral-600">{t.ctaInfo}</p>
       </div> 
 

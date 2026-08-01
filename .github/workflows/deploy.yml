@@ -9,10 +9,15 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: deploy-gh-pages
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  quality-gate:
+    name: Quality Gate
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,14 +25,42 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
+      - name: Check locale parity
+        run: npm run i18n:check
+
       - name: Lint
         run: npm run lint
+
+      - name: Unit tests
+        run: npm run test:unit
+
+      - name: Build
+        run: npm run build
+
+  build-and-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: quality-gate
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -42,6 +75,12 @@ jobs:
               echo "Preserved $file from gh-pages"
             fi
           done
+
+      - name: Verify deploy artifact
+        run: |
+          test -f dist/index.html
+          test -f dist/signature-count.json
+          test -f dist/polling-snapshot.json
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4

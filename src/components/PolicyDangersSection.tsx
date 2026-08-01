@@ -46,6 +46,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   const title = t.dangersTitle
   const subtitle = t.dangersSubtitle
   const sourceLabel = t.dangersSourceLabel
+  const viewLabel = t.dangersViewLabel
   const activeData = data.find((item) => item.id === activeTab) || data[0]
   const safeCitationUrl = normalizeCitationUrl(activeData.citationUrl)
   const archiveCitationUrl = safeCitationUrl
@@ -333,7 +334,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
             {/* View Mode Toggle Controls */}
             <div className="mt-4 flex items-center justify-between border-b border-neutral-900 pb-4">
               <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400">
-                Ansicht
+                {viewLabel}
               </span>
               <div className="inline-flex rounded-xl bg-neutral-900/80 p-0.5 border border-neutral-800 shrink-0">
                 <button

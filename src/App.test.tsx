@@ -1,4 +1,4 @@
-import { cleanup, render, screen } from '@testing-library/react'
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import App from './App'
@@ -46,18 +46,16 @@ describe('App', () => {
   })
 
   it('switches between German and English copy', async () => {
-    const user = userEvent.setup()
-
     render(<App />)
 
-    expect(screen.getByRole('heading', { name: 'Blau retten.', level: 1 })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Blau retten\.|Blau verteidigen\./i, level: 1 })).toBeInTheDocument()
 
     // Open language picker
-    await user.click(screen.getByRole('button', { name: 'Sprache' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Sprache' }))
     // Click English option
-    await user.click(screen.getByRole('button', { name: /en\s*English/i }))
+    fireEvent.click(screen.getByRole('button', { name: /en\s*English/i }))
 
-    expect(screen.getByRole('heading', { name: 'Rescue Blue.', level: 1 })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Rescue Blue\.|Defend Blue\./i, level: 1 })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(1)
     expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(1)
   })
@@ -261,7 +259,7 @@ describe('App', () => {
     expect(screen.getAllByText('Ausstehend').length).toBeGreaterThan(0)
   })
 
-  it('fetches and displays news articles in the hero slider', async () => {
+  it('fetches and displays news articles in the spotlight section', async () => {
     const mockNews = [
       {
         title: 'Verbotene Losung: Höcke erneut zu Geldstrafe verurteilt',
@@ -271,6 +269,17 @@ describe('App', () => {
           {
             name: 'Spiegel / Taz',
             url: 'https://spiegel.de/mock'
+          }
+        ]
+      },
+      {
+        title: 'Analyse: Medienhäuser diskutieren Farbcodes neu',
+        date: '2026-06-19',
+        excerpt: 'Mehrere Redaktionen beraten über transparente Darstellung politischer Positionen.',
+        sources: [
+          {
+            name: 'Tagesschau',
+            url: 'https://tagesschau.de/mock'
           }
         ]
       }
@@ -295,24 +304,22 @@ describe('App', () => {
     const user = userEvent.setup()
     render(<App />)
 
-    // Initially, it should display the campaign visual slide
-    expect(screen.getByText('PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.')).toBeInTheDocument()
+    // Initially, the first spotlight article should be visible.
+    expect(await screen.findByText(/Verbotene Losung: Höcke erneut/i)).toBeInTheDocument()
 
-    // Find the second slide dot (waiting for it to load) and click it
-    const dot2 = await screen.findByRole('button', { name: /Go to slide 2/i })
+    // Click the second spotlight dot.
+    const dot2 = await screen.findByRole('button', { name: /Artikel 2/i })
     await user.click(dot2)
 
-    // Now it should show the news slide details
-    expect(screen.getAllByText('Verbotene Losung: Höcke erneut zu Geldstrafe verurteilt')[0]).toBeInTheDocument()
-    expect(screen.getByText('Das Landgericht Halle hat den Thüringer AfD-Chef Björn Höcke erneut verurteilt.')).toBeInTheDocument()
-    expect(screen.getAllByText('Spiegel / Taz')[0]).toBeInTheDocument()
-    expect(screen.getAllByText('2026-06-18')[0]).toBeInTheDocument()
+    // Now it should show the second spotlight article.
+    expect(await screen.findByText(/Analyse: Medienhäuser diskutieren Farbcodes neu/i)).toBeInTheDocument()
+    expect(screen.getByText(/Mehrere Redaktionen beraten über transparente Darstellung politischer Positionen/i)).toBeInTheDocument()
+    expect(screen.getAllByText('Tagesschau').length).toBeGreaterThan(0)
 
-    // Test clicking the Next button (Arrow)
-    const nextBtn = screen.getByRole('button', { name: /Next Slide/i })
+    // Clicking "next article" cycles back to the first item.
+    const nextBtn = screen.getByRole('button', { name: /Nächster Artikel/i })
     await user.click(nextBtn)
 
-    // Clicking Next should cycle back to slide 1 (Campaign visual)
-    expect(screen.getByText('PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.')).toBeInTheDocument()
+    expect(await screen.findByText(/Verbotene Losung: Höcke erneut/i)).toBeInTheDocument()
   })
 })

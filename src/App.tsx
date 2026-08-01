@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
@@ -10,11 +10,14 @@ import {
   CultureSection,
   HeroSection,
   InteractiveDemoSection,
+  NewsSpotlightSection,
   OpenLetterSection,
   ScientificBackgroundSection,
   SidebarPanels,
   SiteFooter,
   SiteHeader,
+  TrustSection,
+  EditorialPolicySection,
   WhySection,
   FaqSection,
   NewsArchiveSection,
@@ -31,7 +34,9 @@ import {
   type Locale,
 } from './i18n'
 import { useAppState } from './hooks/useAppState'
+import { useAbVariant } from './hooks/useAbVariant'
 import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
+import { trackConversionEvent } from './utils/analytics'
 
 // Base path (no extension) — HeroSection builds responsive srcset variants from this
 const HERO_IMAGE_BASE = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text`
@@ -67,6 +72,8 @@ export default function App({ initialLang }: AppProps = {}) {
   } = useAppState({ initialLang })
 
   const t = getTranslation(lang)
+  const abVariant = useAbVariant()
+  const seenFunnelSteps = useRef(new Set<string>())
   const science = getScienceContent(lang)
   const sayings = getSayings(lang)
   const letters = getOpenLetters(lang)
@@ -114,6 +121,84 @@ export default function App({ initialLang }: AppProps = {}) {
     ? formatDisplayDateTime(activeSnapshot.apiUpdatedAt, lang)
     : t.demoSourceFallback
 
+  const heroHeadline = abVariant === 'B' ? t.heroH1Alt : t.heroH1
+  const heroSubline = abVariant === 'B' ? t.heroSubAlt : t.heroSub
+  const heroCtaLabel = abVariant === 'B' ? t.heroImgText2Alt : t.heroImgText2
+  const ctaButtonLabel = abVariant === 'B' ? t.ctaBtnAlt : t.ctaBtn
+
+  useEffect(() => {
+    trackConversionEvent('page_view', {
+      lang,
+      variant: abVariant,
+      path: typeof window !== 'undefined' ? window.location.pathname : '/',
+    })
+    trackConversionEvent('ab_impression', {
+      experiment: 'hero-cta-copy-v1',
+      variant: abVariant,
+    })
+  }, [lang, abVariant])
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return
+    }
+    if (typeof window.IntersectionObserver === 'undefined') {
+      return
+    }
+
+    const tracked: Array<[string, string]> = [
+      ['header.hero-fullscreen', 'hero_visible'],
+      ['#transparenz', 'trust_visible'],
+      ['#editorial-policy', 'editorial_policy_visible'],
+      ['#warum', 'why_visible'],
+      ['#risiken', 'risks_visible'],
+      ['#hintergrund', 'science_visible'],
+      ['#brief', 'open_letter_visible'],
+      ['#faq', 'faq_visible'],
+      ['#kultur', 'culture_visible'],
+    ]
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue
+          const step = entry.target.getAttribute('data-funnel-step')
+          if (!step || seenFunnelSteps.current.has(step)) continue
+          seenFunnelSteps.current.add(step)
+          trackConversionEvent('funnel_step', { step, variant: abVariant, lang })
+        }
+      },
+      { threshold: 0.35 },
+    )
+
+    for (const [selector, step] of tracked) {
+      const element = document.querySelector(selector)
+      if (element) {
+        element.setAttribute('data-funnel-step', step)
+        observer.observe(element)
+      }
+    }
+
+    return () => observer.disconnect()
+  }, [abVariant, lang])
+
+  const handleTrackedLanguageChange = (newLang: Locale) => {
+    trackConversionEvent('language_change', {
+      from: lang,
+      to: newLang,
+      variant: abVariant,
+    })
+    handleChangeLanguage(newLang)
+  }
+
+  const handleTrackedCtaClick = (surface: string) => {
+    trackConversionEvent('cta_click', {
+      surface,
+      variant: abVariant,
+      lang,
+    })
+  }
+
   return (
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
       <div className="pointer-events-none fixed top-0 left-1/2 h-112.5 w-full max-w-7xl -translate-x-1/2 rounded-full bg-blue-500/10 blur-[150px] animate-pulse-glow" />
@@ -121,22 +206,32 @@ export default function App({ initialLang }: AppProps = {}) {
       <SiteHeader
         lang={lang}
         t={t}
+        ctaLabel={ctaButtonLabel}
         theme={theme}
-        onChangeLanguage={handleChangeLanguage}
+        onChangeLanguage={handleTrackedLanguageChange}
         onToggleTheme={handleToggleTheme}
+        onSignCtaClick={() => handleTrackedCtaClick('header_nav')}
       />
       <HeroSection
-        lang={lang}
         t={t}
+        headline={heroHeadline}
+        subline={heroSubline}
+        ctaLabel={heroCtaLabel}
         heroImageBase={HERO_IMAGE_BASE}
         formattedSignatureCount={formattedSignatureCount}
         isLoadingSignatures={isLoadingSignatures}
         isLive={isLive}
-        news={news}
+        onCtaClick={() => handleTrackedCtaClick('hero')}
       />
+
+      <TrustSection t={t} />
+      <EditorialPolicySection t={t} />
+      <NewsSpotlightSection lang={lang} t={t} news={news} />
 
       <main className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-8 px-4 pb-16 md:px-6 lg:mt-8 lg:grid-cols-12">
         <div className="space-y-12 lg:col-span-8">
+          <WhySection t={t} />
+
           <InteractiveDemoSection
             lang={lang}
             t={t}
@@ -160,19 +255,11 @@ export default function App({ initialLang }: AppProps = {}) {
             pollingSnapshot={pollingSnapshot}
           />
 
-          <WhySection t={t} />
           <PolicyDangersSection lang={lang} t={t} />
           <ScientificBackgroundSection
             science={science}
             openObjection={openObjection}
             onToggleObjection={setOpenObjection}
-          />
-
-          <CultureSection
-            t={t}
-            sayings={sayings}
-            activeTab={activeTab}
-            onChangeTab={setActiveTab}
           />
 
           <OpenLetterSection
@@ -189,6 +276,13 @@ export default function App({ initialLang }: AppProps = {}) {
             onToggleFaq={setOpenFaq}
           />
 
+          <CultureSection
+            t={t}
+            sayings={sayings}
+            activeTab={activeTab}
+            onChangeTab={setActiveTab}
+          />
+
           <NewsArchiveSection
             lang={lang}
             news={news.slice(4)}
@@ -197,15 +291,17 @@ export default function App({ initialLang }: AppProps = {}) {
 
         <SidebarPanels
           t={t}
+          ctaLabel={ctaButtonLabel}
           ctaBody={ctaBody}
           formattedSignatureCount={formattedSignatureCount}
           isLoadingSignatures={isLoadingSignatures}
           facts={facts}
+          onCtaClick={() => handleTrackedCtaClick('sidebar')}
         />
       </main>
 
       <AlsoSupportSection lang={lang} t={t} />
-      <BottomCta t={t} ctaBody={ctaBody} />
+      <BottomCta t={t} ctaBody={ctaBody} ctaLabel={ctaButtonLabel} onCtaClick={() => handleTrackedCtaClick('bottom')} />
       <SiteFooter t={t} />
     </div>
   )
