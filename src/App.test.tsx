@@ -48,14 +48,14 @@ describe('App', () => {
   it('switches between German and English copy', async () => {
     render(<App />)
 
-    expect(screen.getByRole('heading', { name: 'Blau retten.', level: 1 })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Blau retten\.|Blau verteidigen\./i, level: 1 })).toBeInTheDocument()
 
     // Open language picker
     fireEvent.click(screen.getByRole('button', { name: 'Sprache' }))
     // Click English option
     fireEvent.click(screen.getByRole('button', { name: /en\s*English/i }))
 
-    expect(screen.getByRole('heading', { name: 'Rescue Blue.', level: 1 })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Rescue Blue\.|Defend Blue\./i, level: 1 })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(1)
     expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(1)
   })

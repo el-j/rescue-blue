@@ -18,11 +18,15 @@ export interface NewsArticle {
 
 interface HeroProps {
   t: Translation
+  headline: string
+  subline: string
+  ctaLabel: string
   /** Base path (no extension) - responsive variants are named `${base}-${width}.${ext}` */
   heroImageBase: string
   formattedSignatureCount: string | undefined
   isLoadingSignatures: boolean
   isLive: boolean
+  onCtaClick: () => void
 }
 
 const HERO_IMAGE_WIDTHS = [640, 1024, 1536, 1920, 2560]
@@ -33,10 +37,14 @@ function buildSrcSet(base: string, ext: string) {
 
 export function HeroSection({
   t,
+  headline,
+  subline,
+  ctaLabel,
   heroImageBase,
   formattedSignatureCount,
   isLoadingSignatures,
   isLive,
+  onCtaClick,
 }: HeroProps) {
   return (
     <header className="hero-fullscreen relative w-full min-h-screen overflow-hidden">
@@ -82,10 +90,10 @@ export function HeroSection({
             <Shield size={12} /> {t.badge}
           </span>
           <h1 className="mb-3 text-4xl leading-none font-black tracking-tight text-white uppercase drop-shadow-lg sm:text-5xl lg:text-6xl xl:text-7xl">
-            {t.heroH1}
+            {headline}
           </h1>
           <p className="hero-subheadline inline-block rounded-lg bg-black/45 px-3 py-1.5 text-base font-black tracking-[0.18em] text-blue-300 uppercase backdrop-blur-sm sm:text-xl lg:text-2xl">
-            {t.heroSub}
+            {subline}
           </p>
         </div>
 
@@ -125,9 +133,10 @@ export function HeroSection({
               href={PETITION_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={onCtaClick}
               className="pointer-events-auto block w-full bg-[#1a4b7c]/90 px-4 py-2 text-center text-[10px] font-extrabold tracking-wider text-white uppercase shadow-lg transition-all duration-200 backdrop-blur-sm hover:bg-[#2263a5] active:scale-[0.99] xs:text-xs sm:text-sm md:text-base"
             >
-              {t.heroImgText2}
+              {ctaLabel}
             </a>
             <p className="mt-1 text-[10px] text-white/70 md:text-xs">{t.ctaExternalHint}</p>
           </div>
