@@ -1,26 +1,26 @@
 [
   {
     "title": {
-      "en": "More than 1,000 signatures: Lawyers argue for AfD ban proceedings",
-      "pl": "Ponad 1000 podpisów: prawnicy opowiadają się za postępowaniem w sprawie zakazu dla AfD",
       "uk": "Більше 1000 підписів: юристи виступають за заборону AfD",
+      "en": "More than 1,000 signatures: Lawyers argue for AfD ban proceedings",
       "ru": "Более 1000 подписей: юристы выступают за запрет АдГ",
-      "it": "Più di 1.000 firme: gli avvocati sostengono la procedura di divieto dell'AfD",
-      "fr": "Plus de 1 000 signatures : les avocats plaident en faveur d'une procédure d'interdiction de l'AfD",
-      "de": "Mehr als 1000 Unterschriften: Juristen plädieren für AfD-Verbotsverfahren",
       "tr": "1.000'den fazla imza: Avukatlar AfD'nin yasaklanması davasını savunuyor",
+      "fr": "Plus de 1 000 signatures : les avocats plaident en faveur d'une procédure d'interdiction de l'AfD",
+      "pl": "Ponad 1000 podpisów: prawnicy opowiadają się za postępowaniem w sprawie zakazu dla AfD",
+      "de": "Mehr als 1000 Unterschriften: Juristen plädieren für AfD-Verbotsverfahren",
+      "it": "Più di 1.000 firme: gli avvocati sostengono la procedura di divieto dell'AfD",
       "es": "Más de 1.000 firmas: los abogados abogan por un procedimiento de prohibición de AfD"
     },
     "date": "2026-08-03",
     "excerpt": {
-      "en": "The signatories include lawyers, judges and experts from administration and business: numerous lawyers are calling for proceedings to ban the AfD to be initiated. They fear...",
-      "pl": "Sygnatariuszami są prawnicy, sędziowie oraz eksperci z administracji i biznesu: liczni prawnicy wzywają do wszczęcia postępowania w sprawie zakazu wszczynania AfD. Boją się...",
       "uk": "Серед підписантів – юристи, судді та експерти з адміністрації та бізнесу: багато юристів закликають розпочати процедуру заборони AfD. Вони бояться...",
+      "en": "The signatories include lawyers, judges and experts from administration and business: numerous lawyers are calling for proceedings to ban the AfD to be initiated. They fear...",
       "ru": "Среди подписавшихся юристы, судьи и эксперты из администрации и бизнеса: многие юристы призывают к возбуждению дела о запрете АдГ. Они боятся...",
-      "it": "Tra i firmatari ci sono avvocati, giudici ed esperti dell'amministrazione e dell'economia: numerosi avvocati chiedono l'avvio di una procedura per vietare l'AfD. Temono...",
-      "fr": "Parmi les signataires figurent des avocats, des juges et des experts de l'administration et du monde des affaires : de nombreux avocats réclament l'ouverture d'une procédure visant à interdire l'AfD. Ils craignent...",
-      "de": "Zu den Unterzeichnern gehören Anwälte, Richter und Fachleute aus Verwaltung und Wirtschaft: Zahlreiche Juristen fordern die Einleitung eines AfD-Verbotsverfahrens. Sie fürchten ...",
       "tr": "İmzacılar arasında avukatlar, hakimler ve idare ve iş dünyasından uzmanlar yer alıyor: çok sayıda avukat AfD'nin yasaklanması için dava başlatılması çağrısında bulunuyor. Korkuyorlar...",
+      "fr": "Parmi les signataires figurent des avocats, des juges et des experts de l'administration et du monde des affaires : de nombreux avocats réclament l'ouverture d'une procédure visant à interdire l'AfD. Ils craignent...",
+      "pl": "Sygnatariuszami są prawnicy, sędziowie oraz eksperci z administracji i biznesu: liczni prawnicy wzywają do wszczęcia postępowania w sprawie zakazu wszczynania AfD. Boją się...",
+      "de": "Zu den Unterzeichnern gehören Anwälte, Richter und Fachleute aus Verwaltung und Wirtschaft: Zahlreiche Juristen fordern die Einleitung eines AfD-Verbotsverfahrens. Sie fürchten ...",
+      "it": "Tra i firmatari ci sono avvocati, giudici ed esperti dell'amministrazione e dell'economia: numerosi avvocati chiedono l'avvio di una procedura per vietare l'AfD. Temono...",
       "es": "Entre los firmantes se encuentran abogados, jueces y expertos de la administración y las empresas: numerosos abogados piden que se inicie un procedimiento para prohibir a AfD. Temen..."
     },
     "sources": [
@@ -56,27 +56,27 @@
   },
   {
     "title": {
-      "de": "Ceuta: Wie die Bilder von Migranten in der spanischen Exklave der AfD helfen",
-      "en": "Ceuta: How the images of migrants in the Spanish exclave help the AfD",
-      "fr": "Ceuta : Comment les images de migrants dans l’enclave espagnole aident l’AfD",
-      "es": "Ceuta: Cómo las imágenes de los inmigrantes en el enclave español ayudan a AfD",
-      "tr": "Ceuta: İspanyol topraklarındaki göçmen görüntüleri AfD'ye nasıl yardımcı oluyor?",
       "uk": "Сеута: як зображення мігрантів в іспанському ексклаві допомагають AfD",
+      "en": "Ceuta: How the images of migrants in the Spanish exclave help the AfD",
+      "tr": "Ceuta: İspanyol topraklarındaki göçmen görüntüleri AfD'ye nasıl yardımcı oluyor?",
+      "ru": "Сеута: Как изображения мигрантов в испанском эксклаве помогают АдГ",
+      "fr": "Ceuta : Comment les images de migrants dans l’enclave espagnole aident l’AfD",
       "pl": "Ceuta: Jak obrazy imigrantów z hiszpańskiej eksklawy pomagają AfD",
+      "de": "Ceuta: Wie die Bilder von Migranten in der spanischen Exklave der AfD helfen",
       "it": "Ceuta: Come le immagini dei migranti nell'exclave spagnola aiutano l'AfD",
-      "ru": "Сеута: Как изображения мигрантов в испанском эксклаве помогают АдГ"
+      "es": "Ceuta: Cómo las imágenes de los inmigrantes en el enclave español ayudan a AfD"
     },
     "date": "2026-08-03",
     "excerpt": {
-      "de": "Auch wenn sich die Lage in Ceuta beruhigt hat: Für die AfD ist die Eskalation in der spanischen Exklave ein Wahlkampfgeschenk. Dabei macht sie sich auch die Arbeit rechtsextreme...",
-      "en": "Even if the situation in Ceuta has calmed down, the escalation in the Spanish exclave is an election campaign gift for the AfD. She also does the work of right-wing extremists...",
-      "fr": "Même si la situation à Ceuta s'est calmée, l'escalade dans l'enclave espagnole est un cadeau de campagne électorale pour l'AfD. Elle fait aussi le travail des extrémistes de droite...",
-      "es": "Aunque la situación en Ceuta se haya calmado, la escalada en el enclave español es un regalo de campaña electoral para AfD. Ella también hace el trabajo de los extremistas de derecha...",
-      "tr": "Ceuta'daki durum sakinleşmiş olsa bile İspanyol topraklarındaki gerilimin artması AfD için bir seçim kampanyası hediyesi. Aynı zamanda aşırı sağcıların işlerini de yapıyor...",
       "uk": "Навіть якщо ситуація в Сеуті заспокоїлася, ескалація в іспанському ексклаві є подарунком передвиборної кампанії для AfD. Вона також виконує роботу правих екстремістів...",
+      "en": "Even if the situation in Ceuta has calmed down, the escalation in the Spanish exclave is an election campaign gift for the AfD. She also does the work of right-wing extremists...",
+      "tr": "Ceuta'daki durum sakinleşmiş olsa bile İspanyol topraklarındaki gerilimin artması AfD için bir seçim kampanyası hediyesi. Aynı zamanda aşırı sağcıların işlerini de yapıyor...",
+      "ru": "Даже если ситуация в Сеуте успокоится, эскалация в испанском эксклаве станет подарком АдГ предвыборной кампании. Она также работает на правых экстремистов...",
+      "fr": "Même si la situation à Ceuta s'est calmée, l'escalade dans l'enclave espagnole est un cadeau de campagne électorale pour l'AfD. Elle fait aussi le travail des extrémistes de droite...",
       "pl": "Nawet jeśli sytuacja w Ceucie się uspokoi, eskalacja w hiszpańskiej eksklawie jest prezentem wyborczym dla AfD. Wykonuje także pracę prawicowych ekstremistów...",
+      "de": "Auch wenn sich die Lage in Ceuta beruhigt hat: Für die AfD ist die Eskalation in der spanischen Exklave ein Wahlkampfgeschenk. Dabei macht sie sich auch die Arbeit rechtsextreme...",
       "it": "Anche se la situazione a Ceuta si è calmata, l’escalation nell’exclave spagnola è un regalo per l’AfD in campagna elettorale. Fa anche il lavoro degli estremisti di destra...",
-      "ru": "Даже если ситуация в Сеуте успокоится, эскалация в испанском эксклаве станет подарком АдГ предвыборной кампании. Она также работает на правых экстремистов..."
+      "es": "Aunque la situación en Ceuta se haya calmado, la escalada en el enclave español es un regalo de campaña electoral para AfD. Ella también hace el trabajo de los extremistas de derecha..."
     },
     "sources": [
       {
@@ -91,26 +91,26 @@
   },
   {
     "title": {
-      "en": "AfD youth demonstration: Blunt slogans at the city palace",
-      "pl": "Demonstracja młodzieży AfD: Tępe hasła pod pałacem miejskim",
       "uk": "Демонстрація молоді AfD: грубі гасла біля міського палацу",
+      "en": "AfD youth demonstration: Blunt slogans at the city palace",
       "ru": "Молодёжная демонстрация АдГ: резкие лозунги у городского дворца",
-      "fr": "Manifestation de jeunes de l'AfD : des slogans émoussés au palais de la ville",
-      "it": "Manifestazione giovanile dell'AfD: slogan schietti al palazzo della città",
-      "de": "Demo der AfD-Jugend: Stumpfe Parolen am Stadtschloss",
       "tr": "AfD gençlik gösterisi: Şehir sarayında küstah sloganlar",
+      "fr": "Manifestation de jeunes de l'AfD : des slogans émoussés au palais de la ville",
+      "pl": "Demonstracja młodzieży AfD: Tępe hasła pod pałacem miejskim",
+      "de": "Demo der AfD-Jugend: Stumpfe Parolen am Stadtschloss",
+      "it": "Manifestazione giovanile dell'AfD: slogan schietti al palazzo della città",
       "es": "Manifestación juvenil de AfD: consignas contundentes en el palacio de la ciudad"
     },
     "date": "2026-08-02",
     "excerpt": {
-      "en": "At the first AfD youth march, around 420 neo-Nazis and Identitarians marched through Schwerin. The counter-protest doesn't look much bigger. more...",
-      "pl": "Podczas pierwszego marszu młodzieży AfD przez Schwerin przemaszerowało około 420 neonazistów i tożsamościistów. Kontrprotest nie wygląda na dużo większy. więcej...",
       "uk": "Під час першого молодіжного маршу AfD близько 420 неонацистів та ідентитаристів пройшли Шверіном. Контрпротест виглядає не набагато більшим. більше...",
+      "en": "At the first AfD youth march, around 420 neo-Nazis and Identitarians marched through Schwerin. The counter-protest doesn't look much bigger. more...",
       "ru": "На первом молодежном марше АдГ около 420 неонацистов и идентитаристов прошли маршем по Шверину. Контрпротест не выглядит намного масштабнее. более...",
-      "fr": "Lors de la première marche des jeunes de l’AfD, environ 420 néo-nazis et identitaires ont défilé dans Schwerin. La contre-manifestation ne semble pas beaucoup plus grande. plus...",
-      "it": "Alla prima marcia giovanile dell'AfD hanno marciato per Schwerin circa 420 neonazisti e identitari. La controprotesta non sembra molto più grande. Di più...",
-      "de": "Beim ersten Aufmarsch der AfD-Jugend zogen etwa 420 Neonazis und Identitäre durch Schwerin. Der Gegenprotest sieht nicht viel größer aus. mehr...",
       "tr": "AfD'nin ilk gençlik yürüyüşünde yaklaşık 420 neo-Nazi ve Kimlikçi Schwerin'de yürüdü. Karşı protesto pek de büyük görünmüyor. Daha...",
+      "fr": "Lors de la première marche des jeunes de l’AfD, environ 420 néo-nazis et identitaires ont défilé dans Schwerin. La contre-manifestation ne semble pas beaucoup plus grande. plus...",
+      "pl": "Podczas pierwszego marszu młodzieży AfD przez Schwerin przemaszerowało około 420 neonazistów i tożsamościistów. Kontrprotest nie wygląda na dużo większy. więcej...",
+      "de": "Beim ersten Aufmarsch der AfD-Jugend zogen etwa 420 Neonazis und Identitäre durch Schwerin. Der Gegenprotest sieht nicht viel größer aus. mehr...",
+      "it": "Alla prima marcia giovanile dell'AfD hanno marciato per Schwerin circa 420 neonazisti e identitari. La controprotesta non sembra molto più grande. Di più...",
       "es": "En la primera marcha juvenil del AfD, alrededor de 420 neonazis e identitarios desfilaron por Schwerin. La contraprotesta no parece mucho mayor. más..."
     },
     "sources": [
@@ -246,26 +246,26 @@
   },
   {
     "title": {
-      "en": "Judgments June 2026: Three AfD defeats against the Office for the Protection of the Constitution",
-      "pl": "Wyroki Czerwiec 2026: Trzy porażki AfD z Urzędem Ochrony Konstytucji",
       "uk": "Судові рішення, червень 2026 р.: три поразки AfD проти Управління захисту конституції",
+      "en": "Judgments June 2026: Three AfD defeats against the Office for the Protection of the Constitution",
       "ru": "Решения, июнь 2026 г.: Три поражения АдГ от Управления по защите конституции",
-      "fr": "Jugements juin 2026 : Trois défaites de l’AfD contre l’Office pour la protection de la Constitution",
-      "it": "Sentenze giugno 2026: tre sconfitte dell'AfD contro l'Ufficio per la Tutela della Costituzione",
-      "de": "Urteile Juni 2026: Drei AfD-Niederlagen gegen den Verfassungsschutz",
       "tr": "Haziran 2026 Kararları: AfD, Anayasayı Koruma Dairesi'ne karşı üç yenilgi aldı",
+      "fr": "Jugements juin 2026 : Trois défaites de l’AfD contre l’Office pour la protection de la Constitution",
+      "pl": "Wyroki Czerwiec 2026: Trzy porażki AfD z Urzędem Ochrony Konstytucji",
+      "de": "Urteile Juni 2026: Drei AfD-Niederlagen gegen den Verfassungsschutz",
+      "it": "Sentenze giugno 2026: tre sconfitte dell'AfD contro l'Ufficio per la Tutela della Costituzione",
       "es": "Sentencias de junio de 2026: Tres derrotas del AfD contra la Oficina de Protección de la Constitución"
     },
     "date": "2026-07-07",
     "excerpt": {
-      "en": "In our series of judgments, we always highlight a selection of new case law at the end of the month that affects right-wing extremism, anti-Semitism or racism as well as lateral thinker...",
-      "pl": "W naszej serii wyroków zawsze pod koniec miesiąca podkreślamy wybór nowego orzecznictwa, które dotyczy prawicowego ekstremizmu, antysemityzmu lub rasizmu, a także myślenia lateralnego…",
       "uk": "У нашій серії рішень ми завжди наголошуємо на підбірці нової прецедентної практики наприкінці місяця, яка стосується правого екстремізму, антисемітизму чи расизму, а також стороннього мислення...",
+      "en": "In our series of judgments, we always highlight a selection of new case law at the end of the month that affects right-wing extremism, anti-Semitism or racism as well as lateral thinker...",
       "ru": "В нашей серии судебных решений мы всегда выделяем подборку новых прецедентов в конце месяца, которые затрагивают правый экстремизм, антисемитизм или расизм, а также нестандартное мышление...",
-      "fr": "Dans notre série d'arrêts, nous mettons toujours en avant une sélection de nouvelles jurisprudences de fin de mois qui touchent l'extrémisme de droite, l'antisémitisme ou le racisme ainsi que les penseurs latéraux...",
-      "it": "Nella nostra serie di sentenze, alla fine del mese evidenziamo sempre una selezione di nuova giurisprudenza che colpisce l'estremismo di destra, l'antisemitismo o il razzismo, nonché il pensatore laterale...",
-      "de": "In unserer Urteile-Reihe beleuchten wir immer am Monatsende eine Auswahl an neuer Rechtsprechung, die den Rechtsextremismus, Antisemitismus oder Rassismus sowie das Querdenker- ...",
       "tr": "Karar serimizde, her zaman ay sonunda sağcı aşırıcılığı, Yahudi karşıtlığını veya ırkçılığı ve ayrıca yan düşünürleri etkileyen yeni içtihatlardan bir seçkiyi öne çıkarıyoruz...",
+      "fr": "Dans notre série d'arrêts, nous mettons toujours en avant une sélection de nouvelles jurisprudences de fin de mois qui touchent l'extrémisme de droite, l'antisémitisme ou le racisme ainsi que les penseurs latéraux...",
+      "pl": "W naszej serii wyroków zawsze pod koniec miesiąca podkreślamy wybór nowego orzecznictwa, które dotyczy prawicowego ekstremizmu, antysemityzmu lub rasizmu, a także myślenia lateralnego…",
+      "de": "In unserer Urteile-Reihe beleuchten wir immer am Monatsende eine Auswahl an neuer Rechtsprechung, die den Rechtsextremismus, Antisemitismus oder Rassismus sowie das Querdenker- ...",
+      "it": "Nella nostra serie di sentenze, alla fine del mese evidenziamo sempre una selezione di nuova giurisprudenza che colpisce l'estremismo di destra, l'antisemitismo o il razzismo, nonché il pensatore laterale...",
       "es": "En nuestra serie de sentencias, siempre destacamos a final de mes una selección de nueva jurisprudencia que afecta tanto al extremismo de derecha, al antisemitismo o al racismo como al pensador lateral..."
     },
     "sources": [
@@ -339,26 +339,26 @@
   },
   {
     "title": {
-      "en": "We are currently neither getting a ban on the AfD nor “good politics that helps against the AfD”",
-      "pl": "Obecnie nie mamy ani zakazu dla AfD, ani „dobrej polityki, która pomaga przeciwko AfD”",
       "uk": "Зараз ми не отримуємо ані заборони на AfD, ані «хорошої політики, яка допомагає проти AfD»",
+      "en": "We are currently neither getting a ban on the AfD nor “good politics that helps against the AfD”",
       "ru": "В настоящее время мы не получаем ни запрета АдГ, ни «хорошей политики, которая поможет против АдГ».",
-      "fr": "Nous n’obtenons actuellement ni une interdiction de l’AfD ni « une bonne politique qui aide contre l’AfD »",
-      "it": "Al momento non stiamo ottenendo né il divieto dell’AfD né una “buona politica che aiuta contro l’AfD”",
-      "de": "Wir kriegen gerade weder ein AfD-Verbot noch „gute Politik, die gegen die AfD hilft“",
       "tr": "Şu anda ne AfD'ye yasak getiriliyor ne de \"AfD'ye karşı yardımcı olan iyi politikalar\" yapılıyor.",
+      "fr": "Nous n’obtenons actuellement ni une interdiction de l’AfD ni « une bonne politique qui aide contre l’AfD »",
+      "pl": "Obecnie nie mamy ani zakazu dla AfD, ani „dobrej polityki, która pomaga przeciwko AfD”",
+      "de": "Wir kriegen gerade weder ein AfD-Verbot noch „gute Politik, die gegen die AfD hilft“",
+      "it": "Al momento non stiamo ottenendo né il divieto dell’AfD né una “buona politica che aiuta contro l’AfD”",
       "es": "Actualmente no obtenemos ni una prohibición del AfD ni una “buena política que ayude contra el AfD”"
     },
     "date": "2026-07-01",
     "excerpt": {
-      "en": "The most comprehensive report ever drawn up concludes that the AfD meets the requirements for a party ban. The Union counters this with the well-known...",
-      "pl": "W najbardziej kompleksowym raporcie, jaki kiedykolwiek sporządzono, stwierdza się, że AfD spełnia wymogi zakazu partii. Unia przeciwstawia się temu dobrze znanemu...",
       "uk": "У найповнішому звіті, коли-небудь складеному, робиться висновок, що AfD відповідає вимогам для заборони партії. Союз протидіє цьому відомим...",
+      "en": "The most comprehensive report ever drawn up concludes that the AfD meets the requirements for a party ban. The Union counters this with the well-known...",
       "ru": "В самом полном из когда-либо составленных докладов делается вывод о том, что АдГ соответствует требованиям для запрета партий. Союз парирует это известным...",
-      "fr": "Le rapport le plus complet jamais rédigé conclut que l'AfD remplit les conditions requises pour interdire un parti. L'Union répond à cela avec le fameux...",
-      "it": "Il rapporto più completo mai redatto conclude che l’AfD soddisfa i requisiti per la messa al bando dei partiti. A ciò l'Unione risponde con la nota...",
-      "de": "Das umfassendste Gutachten, das je erstellt wurde, kommt zum Schluss, dass die AfD die Anforderungen für ein Parteienverbot erfüllt. Dem entgegnet die Union mit der altbekannten...",
       "tr": "Şimdiye kadar hazırlanan en kapsamlı rapor, AfD'nin parti yasağı şartlarını yerine getirdiği sonucuna varıyor. Birlik buna şu meşhur sözle karşı çıkıyor:",
+      "fr": "Le rapport le plus complet jamais rédigé conclut que l'AfD remplit les conditions requises pour interdire un parti. L'Union répond à cela avec le fameux...",
+      "pl": "W najbardziej kompleksowym raporcie, jaki kiedykolwiek sporządzono, stwierdza się, że AfD spełnia wymogi zakazu partii. Unia przeciwstawia się temu dobrze znanemu...",
+      "de": "Das umfassendste Gutachten, das je erstellt wurde, kommt zum Schluss, dass die AfD die Anforderungen für ein Parteienverbot erfüllt. Dem entgegnet die Union mit der altbekannten...",
+      "it": "Il rapporto più completo mai redatto conclude che l’AfD soddisfa i requisiti per la messa al bando dei partiti. A ciò l'Unione risponde con la nota...",
       "es": "El informe más completo jamás elaborado concluye que el AfD cumple los requisitos para ser prohibido como partido. La Unión responde a esto con el conocido..."
     },
     "sources": [
