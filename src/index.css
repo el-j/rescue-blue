@@ -184,8 +184,12 @@
 .light-theme .bg-neutral-950 { background-color: #f8fafc; }
 .light-theme .bg-neutral-900 { background-color: #f1f5f9; }
 .light-theme .bg-neutral-900\/80 { background-color: rgba(241, 245, 249, 0.8); }
+.light-theme .bg-neutral-900\/70 { background-color: rgba(241, 245, 249, 0.7); }
 .light-theme .bg-neutral-900\/60 { background-color: rgba(241, 245, 249, 0.6); }
 .light-theme .bg-neutral-900\/50 { background-color: rgba(241, 245, 249, 0.5); }
+.light-theme .bg-neutral-900\/30 { background-color: rgba(241, 245, 249, 0.62); }
+.light-theme .bg-neutral-900\/20 { background-color: rgba(248, 250, 252, 0.9); }
+.light-theme .bg-neutral-900\/10 { background-color: rgba(248, 250, 252, 0.96); }
 .light-theme .bg-neutral-900\/40 { background-color: rgba(255, 255, 255, 0.94); }
 .light-theme .bg-neutral-800 { background-color: #e2e8f0; }
 .light-theme .bg-neutral-950\/80 { background-color: rgba(248, 250, 252, 0.8); }
@@ -467,6 +471,18 @@
 
 .light-theme .hover\:bg-neutral-900:hover {
   background-color: #e2e8f0;
+}
+
+.light-theme .hover\:bg-neutral-900\/60:hover {
+  background-color: rgba(226, 232, 240, 0.8);
+}
+
+.light-theme .hover\:bg-neutral-900\/50:hover {
+  background-color: rgba(226, 232, 240, 0.76);
+}
+
+.light-theme .hover\:bg-neutral-900\/40:hover {
+  background-color: rgba(226, 232, 240, 0.7);
 }
 
 .light-theme .border-neutral-800\/30 {
