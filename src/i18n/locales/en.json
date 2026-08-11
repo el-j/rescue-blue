@@ -159,7 +159,9 @@
     "editorialPolicyRule3": "Archive resilience: where useful, we add an archive link if original pages are moved or updated later.",
     "editorialPolicyRule4": "No propaganda framing: terms from extremism contexts are used critically for documentation, not promotion.",
     "editorialPolicyCorrectionsTitle": "Corrections and contact",
-    "editorialPolicyCorrectionsBody": "If you find a factual error, please use the contact routes listed in the legal notice. Verifiable errors are reviewed and corrected promptly."
+    "editorialPolicyCorrectionsBody": "If you find a factual error, please use the contact routes listed in the legal notice. Verifiable errors are reviewed and corrected promptly.",
+    "wordsMeaningTitle": "Words = Meaning",
+    "wordsMeaningSubtitle": "Right-wing Rhetoric vs. Reality – A glossary: what far-right actors say and what they actually mean."
   },
   "sayings": {
     "sprache": [
@@ -453,5 +455,87 @@
     "mapSub": "Click on a state to view its current parliament polling trend.",
     "stateLabel": "Federal State",
     "nationalLabel": "Germany (Bundestag)"
-  }
+  },
+  "wordsMeaning": [
+    {
+      "word": "Freedom",
+      "meaning": "Obedience & Submission"
+    },
+    {
+      "word": "Peace",
+      "meaning": "Capitulation & Repression"
+    },
+    {
+      "word": "Democracy",
+      "meaning": "Dictatorship of one's own group & Exclusion"
+    },
+    {
+      "word": "Sovereignty",
+      "meaning": "Isolationism & Right of the Stronger"
+    },
+    {
+      "word": "Resistance",
+      "meaning": "Overthrowing the System & One's Own Dictatorship"
+    },
+    {
+      "word": "Freedom of Speech",
+      "meaning": "Censorship for Others & Impunity for Own Hatred"
+    },
+    {
+      "word": "Homeland",
+      "meaning": "Ethnonationalism & Expulsion (\"Remigration\")"
+    },
+    {
+      "word": "Protection of the Family",
+      "meaning": "Patriarchy & Queer Hostility"
+    },
+    {
+      "word": "Justice",
+      "meaning": "Social Darwinism"
+    },
+    {
+      "word": "Common Sense",
+      "meaning": "Anti-Science & Conspiracy Myths"
+    },
+    {
+      "word": "Patriotism",
+      "meaning": "Xenophobia & Exclusion"
+    },
+    {
+      "word": "Normality",
+      "meaning": "Discrimination Against All Deviations"
+    },
+    {
+      "word": "Tradition",
+      "meaning": "Regression & Erasure of Diversity"
+    },
+    {
+      "word": "Self-determination",
+      "meaning": "Supremacy of One's Own Ideology"
+    },
+    {
+      "word": "Security",
+      "meaning": "Surveillance, Repression & Scapegoating"
+    },
+    {
+      "word": "The People's Will",
+      "meaning": "Marginalisation of Minorities"
+    },
+    {
+      "word": "Reform",
+      "meaning": "Dismantling of Democratic Structures"
+    },
+    {
+      "word": "Transparency",
+      "meaning": "Selective Disclosure & Disinformation"
+    },
+    {
+      "word": "Strength",
+      "meaning": "Authoritarianism & Intimidation"
+    },
+    {
+      "word": "Truth",
+      "meaning": "Propaganda for One's Own Agenda"
+    }
+  ]
 }

@@ -159,7 +159,9 @@
     "editorialPolicyRule3": "Arşiv dayanıklılığı: uygun olduğunda, kaynak sayfa taşınır veya güncellenirse diye arşiv bağlantısı ekleriz.",
     "editorialPolicyRule4": "Propaganda yeniden üretimi yok: aşırılık bağlamındaki terimler promosyon için değil, eleştirel ve belgesel amaçla kullanılır.",
     "editorialPolicyCorrectionsTitle": "Düzeltmeler ve iletişim",
-    "editorialPolicyCorrectionsBody": "Gerçeğe dayalı bir hata bulursanız yasal bildirimdeki iletişim kanallarını kullanın. Doğrulanabilir hatalar hızla incelenir ve düzeltilir."
+    "editorialPolicyCorrectionsBody": "Gerçeğe dayalı bir hata bulursanız yasal bildirimdeki iletişim kanallarını kullanın. Doğrulanabilir hatalar hızla incelenir ve düzeltilir.",
+    "wordsMeaningTitle": "Kelimeler = Anlam",
+    "wordsMeaningSubtitle": "Sağcı Retorik vs. Gerçeklik – Sözlük: aşırı sağ aktörlerin söyledikleri ve gerçekte kastettikleri."
   },
   "sayings": {
     "sprache": [
@@ -453,5 +455,87 @@
     "mapSub": "Güncel bölgesel eğilimi görmek için bir eyalete tıklayın.",
     "stateLabel": "Eyalet",
     "nationalLabel": "Almanya (Bundestag)"
-  }
+  },
+  "wordsMeaning": [
+    {
+      "word": "Özgürlük",
+      "meaning": "İtaat & Boyun Eğme"
+    },
+    {
+      "word": "Barış",
+      "meaning": "Teslim Olma & Baskı"
+    },
+    {
+      "word": "Demokrasi",
+      "meaning": "Kendi Grubunun Diktatörlüğü & Dışlama"
+    },
+    {
+      "word": "Egemenlik",
+      "meaning": "İzolasyonizm & Güçlünün Hakkı"
+    },
+    {
+      "word": "Direniş",
+      "meaning": "Sistemi Yıkma & Kendi Diktatörlüğü"
+    },
+    {
+      "word": "İfade Özgürlüğü",
+      "meaning": "Başkaları için Sansür & Kendi Nefreti için Cezasızlık"
+    },
+    {
+      "word": "Vatan",
+      "meaning": "Etno-milliyetçilik & Sürme (\"Yeniden Göç\")"
+    },
+    {
+      "word": "Aile Koruma",
+      "meaning": "Ataerkillik & LGBTİ+ Düşmanlığı"
+    },
+    {
+      "word": "Adalet",
+      "meaning": "Sosyal Darwinizm"
+    },
+    {
+      "word": "Sağduyu",
+      "meaning": "Bilim Karşıtlığı & Komplo Teorileri"
+    },
+    {
+      "word": "Vatanseverlik",
+      "meaning": "Yabancı Düşmanlığı & Dışlama"
+    },
+    {
+      "word": "Normallik",
+      "meaning": "Her Sapmaya Karşı Ayrımcılık"
+    },
+    {
+      "word": "Gelenek",
+      "meaning": "Gerileme & Çeşitliliğin Yok Edilmesi"
+    },
+    {
+      "word": "Öz Yönetim",
+      "meaning": "Kendi İdeolojisinin Hâkimiyeti"
+    },
+    {
+      "word": "Güvenlik",
+      "meaning": "Gözetim, Baskı & Günah Keçisi Politikası"
+    },
+    {
+      "word": "Halkın İradesi",
+      "meaning": "Azınlıkların Marjinalleştirilmesi"
+    },
+    {
+      "word": "Reform",
+      "meaning": "Demokratik Yapıların Yıkılması"
+    },
+    {
+      "word": "Şeffaflık",
+      "meaning": "Seçici Açıklama & Dezenformasyon"
+    },
+    {
+      "word": "Güç",
+      "meaning": "Otoriterlik & Yıldırma"
+    },
+    {
+      "word": "Gerçek",
+      "meaning": "Kendi Gündemine Yönelik Propaganda"
+    }
+  ]
 }

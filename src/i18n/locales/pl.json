@@ -159,7 +159,9 @@
     "editorialPolicyRule3": "Odporność archiwalna: tam, gdzie to pomocne, dodajemy link do archiwum na wypadek zmian lub przeniesienia strony źródłowej.",
     "editorialPolicyRule4": "Bez reprodukcji propagandy: terminy z kontekstów ekstremistycznych stosujemy krytycznie i dokumentacyjnie, nie promocyjnie.",
     "editorialPolicyCorrectionsTitle": "Korekty i kontakt",
-    "editorialPolicyCorrectionsBody": "Jeśli znajdziesz błąd merytoryczny, skorzystaj z danych kontaktowych z noty prawnej. Weryfikowalne błędy są szybko sprawdzane i korygowane."
+    "editorialPolicyCorrectionsBody": "Jeśli znajdziesz błąd merytoryczny, skorzystaj z danych kontaktowych z noty prawnej. Weryfikowalne błędy są szybko sprawdzane i korygowane.",
+    "wordsMeaningTitle": "Słowa = Znaczenie",
+    "wordsMeaningSubtitle": "Retoryka prawicy vs. Rzeczywistość – Słowniczek: co mówią skrajnie prawicowi aktorzy i co naprawdę mają na myśli."
   },
   "sayings": {
     "sprache": [
@@ -453,5 +455,87 @@
     "mapSub": "Kliknij kraj związkowy, aby zobaczyć aktualny trend regionalny.",
     "stateLabel": "Kraj związkowy",
     "nationalLabel": "Niemcy (Bundestag)"
-  }
+  },
+  "wordsMeaning": [
+    {
+      "word": "Wolność",
+      "meaning": "Posłuszeństwo & Uległość"
+    },
+    {
+      "word": "Pokój",
+      "meaning": "Kapitulacja & Represje"
+    },
+    {
+      "word": "Demokracja",
+      "meaning": "Dyktatura własnej grupy & Wykluczenie"
+    },
+    {
+      "word": "Suwerenność",
+      "meaning": "Izolacjonizm & Prawo silniejszego"
+    },
+    {
+      "word": "Opór",
+      "meaning": "Obalenie systemu & Własna dyktatura"
+    },
+    {
+      "word": "Wolność słowa",
+      "meaning": "Cenzura dla innych & Bezkarność własnej nienawiści"
+    },
+    {
+      "word": "Ojczyzna",
+      "meaning": "Etnonacjonalizm & Wypędzenie (\"remigracja\")"
+    },
+    {
+      "word": "Ochrona rodziny",
+      "meaning": "Patriarchat & Wrogość wobec LGBTQ+"
+    },
+    {
+      "word": "Sprawiedliwość",
+      "meaning": "Darwinizm społeczny"
+    },
+    {
+      "word": "Zdrowy rozsądek",
+      "meaning": "Antynaukowość & Teorie spiskowe"
+    },
+    {
+      "word": "Patriotyzm",
+      "meaning": "Ksenofobia & Wykluczenie"
+    },
+    {
+      "word": "Normalność",
+      "meaning": "Dyskryminacja wszelkich odchyleń"
+    },
+    {
+      "word": "Tradycja",
+      "meaning": "Regres & Wymazanie różnorodności"
+    },
+    {
+      "word": "Samostanowienie",
+      "meaning": "Supremacja własnej ideologii"
+    },
+    {
+      "word": "Bezpieczeństwo",
+      "meaning": "Nadzór, Represje & Kozioł ofiarny"
+    },
+    {
+      "word": "Wola narodu",
+      "meaning": "Marginalizacja mniejszości"
+    },
+    {
+      "word": "Reforma",
+      "meaning": "Demontaż struktur demokratycznych"
+    },
+    {
+      "word": "Przejrzystość",
+      "meaning": "Selektywne ujawnianie & Dezinformacja"
+    },
+    {
+      "word": "Siła",
+      "meaning": "Autorytaryzm & Zastraszanie"
+    },
+    {
+      "word": "Prawda",
+      "meaning": "Propaganda własnego programu"
+    }
+  ]
 }

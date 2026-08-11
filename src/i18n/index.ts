@@ -59,6 +59,7 @@ export type Faqs = LocaleData['faqs']
 export type ScienceContent = LocaleData['science']
 export type PolicyDangers = LocaleData['policyDangers']
 export type PolicyDangersUI = LocaleData['policyDangersUI']
+export type WordsMeaning = LocaleData['wordsMeaning']
 export type ContentTab = keyof LocaleData['sayings']
 export type LetterTarget = keyof LocaleData['openLetters']
 
@@ -92,6 +93,10 @@ export function getPolicyDangers(lang: Locale): PolicyDangers {
 
 export function getPolicyDangersUI(lang: Locale): PolicyDangersUI {
   return localeData[lang].policyDangersUI
+}
+
+export function getWordsMeaning(lang: Locale): WordsMeaning {
+  return localeData[lang].wordsMeaning
 }
 
 export function getLocaleCode(lang: Locale): string {

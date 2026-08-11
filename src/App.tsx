@@ -12,6 +12,7 @@ import {
   InteractiveDemoSection,
   NewsSpotlightSection,
   OpenLetterSection,
+  RhetoricalDictionarySection,
   ScientificBackgroundSection,
   SidebarPanels,
   SiteFooter,
@@ -31,6 +32,7 @@ import {
   getFacts,
   getScienceContent,
   getLocaleCode,
+  getWordsMeaning,
   type Locale,
 } from './i18n'
 import { useAppState } from './hooks/useAppState'
@@ -79,6 +81,7 @@ export default function App({ initialLang }: AppProps = {}) {
   const letters = getOpenLetters(lang)
   const faqs = getFaqs(lang)
   const facts = getFacts(lang)
+  const wordsMeaning = getWordsMeaning(lang)
   const activeSnapshot = pollingSnapshot?.[selectedStateId] ?? pollingSnapshot?.['0'] ?? null
   const pollingBars = activeSnapshot?.bars ?? getDefaultPollingBars()
   const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
@@ -275,6 +278,8 @@ export default function App({ initialLang }: AppProps = {}) {
             openFaq={openFaq}
             onToggleFaq={setOpenFaq}
           />
+
+          <RhetoricalDictionarySection t={t} entries={wordsMeaning} />
 
           <CultureSection
             t={t}
