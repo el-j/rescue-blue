@@ -159,7 +159,9 @@
     "editorialPolicyRule3": "Archiv-Resilienz: Wo sinnvoll ergänzen wir eine Archivquelle, falls Artikel später verschoben oder geändert werden.",
     "editorialPolicyRule4": "Keine Propaganda-Reproduktion: Begriffe aus Extremismus-Kontexten werden dokumentarisch und kritisch, nicht werbend verwendet.",
     "editorialPolicyCorrectionsTitle": "Korrekturen & Kontakt",
-    "editorialPolicyCorrectionsBody": "Wenn du einen sachlichen Fehler findest, melde ihn bitte über die im Impressum genannten Kontaktwege. Belegbare Fehler werden zeitnah geprüft und korrigiert."
+    "editorialPolicyCorrectionsBody": "Wenn du einen sachlichen Fehler findest, melde ihn bitte über die im Impressum genannten Kontaktwege. Belegbare Fehler werden zeitnah geprüft und korrigiert.",
+    "wordsMeaningTitle": "Wörter = Bedeutung",
+    "wordsMeaningSubtitle": "Rechte Rhetorik vs. Realität – Wörterbuch: Was rechtsextreme Akteure sagen und was sie meinen."
   },
   "sayings": {
     "sprache": [
@@ -453,5 +455,87 @@
     "mapSub": "Klicke auf ein Bundesland für den aktuellen Landtagstrend.",
     "stateLabel": "Bundesland",
     "nationalLabel": "Deutschland (Bundestag)"
-  }
+  },
+  "wordsMeaning": [
+    {
+      "word": "Freiheit",
+      "meaning": "Gehorsam & Unterwerfung"
+    },
+    {
+      "word": "Frieden",
+      "meaning": "Kapitulation & Repression"
+    },
+    {
+      "word": "Demokratie",
+      "meaning": "Diktatur der eigenen Gruppe & Ausschluss"
+    },
+    {
+      "word": "Souveränität",
+      "meaning": "Isolationismus & Recht des Stärkeren"
+    },
+    {
+      "word": "Widerstand",
+      "meaning": "Systemumsturz & eigene Diktatur"
+    },
+    {
+      "word": "Meinungsfreiheit",
+      "meaning": "Zensur für Andere & Straffreiheit für eigenen Hass"
+    },
+    {
+      "word": "Heimat",
+      "meaning": "Ethnonationalismus & Vertreibung (\"Remigration\")"
+    },
+    {
+      "word": "Schutz der Familie",
+      "meaning": "Patriarchat & Queerfeindlichkeit"
+    },
+    {
+      "word": "Gerechtigkeit",
+      "meaning": "Sozialdarwinismus"
+    },
+    {
+      "word": "Gesunder Menschenverstand",
+      "meaning": "Wissenschaftsfeindlichkeit & Verschwörungsmythen"
+    },
+    {
+      "word": "Patriotismus",
+      "meaning": "Fremdenfeindlichkeit & Ausgrenzung"
+    },
+    {
+      "word": "Normalität",
+      "meaning": "Diskriminierung aller Abweichungen"
+    },
+    {
+      "word": "Tradition",
+      "meaning": "Rückschritt & Auslöschung von Diversität"
+    },
+    {
+      "word": "Selbstbestimmung",
+      "meaning": "Vorherrschaft der eigenen Ideologie"
+    },
+    {
+      "word": "Sicherheit",
+      "meaning": "Überwachung, Repression & Sündenbockpolitik"
+    },
+    {
+      "word": "Volkswille",
+      "meaning": "Ausgrenzung von Minderheiten"
+    },
+    {
+      "word": "Reform",
+      "meaning": "Abbau rechtsstaatlicher Strukturen"
+    },
+    {
+      "word": "Transparenz",
+      "meaning": "Selektive Offenlegung & Desinformation"
+    },
+    {
+      "word": "Stärke",
+      "meaning": "Autoritarismus & Einschüchterung"
+    },
+    {
+      "word": "Wahrheit",
+      "meaning": "Propaganda der eigenen Agenda"
+    }
+  ]
 }

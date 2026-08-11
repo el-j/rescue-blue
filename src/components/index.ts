@@ -15,4 +15,5 @@ export { NewsSpotlightSection } from './NewsSpotlightSection'
 export { PolicyDangersSection } from './PolicyDangersSection'
 export { TrustSection } from './TrustSection'
 export { EditorialPolicySection } from './EditorialPolicySection'
+export { RhetoricalDictionarySection } from './RhetoricalDictionarySection'
 

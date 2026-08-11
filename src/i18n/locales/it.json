@@ -159,7 +159,9 @@
     "editorialPolicyRule3": "Resilienza d'archivio: quando utile, aggiungiamo un link archivio nel caso in cui la pagina originale cambi o venga spostata.",
     "editorialPolicyRule4": "Nessuna riproduzione propagandistica: i termini dai contesti estremisti sono usati in modo critico e documentale, non promozionale.",
     "editorialPolicyCorrectionsTitle": "Correzioni e contatti",
-    "editorialPolicyCorrectionsBody": "Se trovi un errore fattuale, usa i contatti indicati nell'avviso legale. Gli errori verificabili vengono controllati e corretti rapidamente."
+    "editorialPolicyCorrectionsBody": "Se trovi un errore fattuale, usa i contatti indicati nell'avviso legale. Gli errori verificabili vengono controllati e corretti rapidamente.",
+    "wordsMeaningTitle": "Parole = Significato",
+    "wordsMeaningSubtitle": "Retorica di destra vs. Realtà – Glossario: cosa dicono gli attori di estrema destra e cosa intendono davvero."
   },
   "sayings": {
     "sprache": [
@@ -453,5 +455,87 @@
     "mapSub": "Fai clic su un Land per vedere la tendenza regionale aggiornata.",
     "stateLabel": "Land",
     "nationalLabel": "Germania (Bundestag)"
-  }
+  },
+  "wordsMeaning": [
+    {
+      "word": "Libertà",
+      "meaning": "Obbedienza & Sottomissione"
+    },
+    {
+      "word": "Pace",
+      "meaning": "Capitolazione & Repressione"
+    },
+    {
+      "word": "Democrazia",
+      "meaning": "Dittatura del proprio gruppo & Esclusione"
+    },
+    {
+      "word": "Sovranità",
+      "meaning": "Isolazionismo & Diritto del più forte"
+    },
+    {
+      "word": "Resistenza",
+      "meaning": "Rovesciamento del sistema & Propria dittatura"
+    },
+    {
+      "word": "Libertà di parola",
+      "meaning": "Censura per gli altri & Impunità per il proprio odio"
+    },
+    {
+      "word": "Patria",
+      "meaning": "Etnonazionalismo & Espulsione (\"Rimigrazione\")"
+    },
+    {
+      "word": "Protezione della famiglia",
+      "meaning": "Patriarcato & Ostilità verso le persone LGBTQ+"
+    },
+    {
+      "word": "Giustizia",
+      "meaning": "Darwinismo sociale"
+    },
+    {
+      "word": "Buon senso",
+      "meaning": "Anti-scienza & Miti complottisti"
+    },
+    {
+      "word": "Patriottismo",
+      "meaning": "Xenofobia & Esclusione"
+    },
+    {
+      "word": "Normalità",
+      "meaning": "Discriminazione di ogni deviazione"
+    },
+    {
+      "word": "Tradizione",
+      "meaning": "Regressione & Cancellazione della diversità"
+    },
+    {
+      "word": "Autodeterminazione",
+      "meaning": "Supremazia della propria ideologia"
+    },
+    {
+      "word": "Sicurezza",
+      "meaning": "Sorveglianza, Repressione & Ricerca del capro espiatorio"
+    },
+    {
+      "word": "Volontà del popolo",
+      "meaning": "Emarginazione delle minoranze"
+    },
+    {
+      "word": "Riforma",
+      "meaning": "Smantellamento delle strutture democratiche"
+    },
+    {
+      "word": "Trasparenza",
+      "meaning": "Divulgazione selettiva & Disinformazione"
+    },
+    {
+      "word": "Forza",
+      "meaning": "Autoritarismo & Intimidazione"
+    },
+    {
+      "word": "Verità",
+      "meaning": "Propaganda per la propria agenda"
+    }
+  ]
 }
