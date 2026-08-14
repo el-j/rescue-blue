@@ -227,9 +227,9 @@ export default function App({ initialLang }: AppProps = {}) {
         onCtaClick={() => handleTrackedCtaClick('hero')}
       />
 
+      <NewsSpotlightSection lang={lang} t={t} news={news} />
       <TrustSection t={t} />
       <EditorialPolicySection t={t} />
-      <NewsSpotlightSection lang={lang} t={t} news={news} />
 
       <main className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-8 px-4 pb-16 md:px-6 lg:mt-8 lg:grid-cols-12">
         <div className="space-y-12 lg:col-span-8">
