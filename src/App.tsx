@@ -203,7 +203,7 @@ export default function App({ initialLang }: AppProps = {}) {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
+    <div className="min-h-screen bg-(--bg-primary) text-(--text-primary) antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
       <div className="pointer-events-none fixed top-0 left-1/2 h-112.5 w-full max-w-7xl -translate-x-1/2 rounded-full bg-blue-500/10 blur-[150px] animate-pulse-glow" />
 
       <SiteHeader
@@ -227,10 +227,8 @@ export default function App({ initialLang }: AppProps = {}) {
         onCtaClick={() => handleTrackedCtaClick('hero')}
       />
 
-      <TrustSection t={t} />
-      <EditorialPolicySection t={t} />
       <NewsSpotlightSection lang={lang} t={t} news={news} />
-
+      
       <main className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-8 px-4 pb-16 md:px-6 lg:mt-8 lg:grid-cols-12">
         <div className="space-y-12 lg:col-span-8">
           <WhySection t={t} />
@@ -265,6 +263,24 @@ export default function App({ initialLang }: AppProps = {}) {
             onToggleObjection={setOpenObjection}
           />
 
+
+
+          <CultureSection
+            t={t}
+            sayings={sayings}
+            activeTab={activeTab}
+            onChangeTab={setActiveTab}
+          />
+
+          <RhetoricalDictionarySection t={t} entries={wordsMeaning} />    
+          
+
+          <NewsArchiveSection
+            lang={lang}
+            news={news.slice(4)}
+          />
+
+
           <OpenLetterSection
             t={t}
             letters={letters}
@@ -279,19 +295,6 @@ export default function App({ initialLang }: AppProps = {}) {
             onToggleFaq={setOpenFaq}
           />
 
-          <RhetoricalDictionarySection t={t} entries={wordsMeaning} />
-
-          <CultureSection
-            t={t}
-            sayings={sayings}
-            activeTab={activeTab}
-            onChangeTab={setActiveTab}
-          />
-
-          <NewsArchiveSection
-            lang={lang}
-            news={news.slice(4)}
-          />
         </div>
 
         <SidebarPanels
@@ -304,6 +307,9 @@ export default function App({ initialLang }: AppProps = {}) {
           onCtaClick={() => handleTrackedCtaClick('sidebar')}
         />
       </main>
+
+<TrustSection t={t} />
+          <EditorialPolicySection t={t} />
 
       <AlsoSupportSection lang={lang} t={t} />
       <BottomCta t={t} ctaBody={ctaBody} ctaLabel={ctaButtonLabel} onCtaClick={() => handleTrackedCtaClick('bottom')} />
