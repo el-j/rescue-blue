@@ -7,14 +7,13 @@ interface EditorialPolicySectionProps {
 
 export function EditorialPolicySection({ t }: EditorialPolicySectionProps) {
   return (
-    <section id="editorial-policy" className="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 shadow-xl md:p-8">
-      <div className="mb-6">
+    <section className="border-t border-neutral-800 px-4 py-12 md:px-6">
+      <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-black tracking-tight text-white uppercase">{t.editorialPolicyTitle}</h2>
         <p className="mt-2 text-sm leading-relaxed text-neutral-400">{t.editorialPolicyIntro}</p>
-      </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <article className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-4">
+        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
           <h3 className="mb-3 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
             <BookOpenText size={16} className="text-blue-400" />
             {t.editorialPolicyRulesTitle}
@@ -39,13 +38,14 @@ export function EditorialPolicySection({ t }: EditorialPolicySectionProps) {
           </ul>
         </article>
 
-        <article className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
+        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
           <h3 className="mb-2 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
             <FileText size={16} className="text-amber-400" />
             {t.editorialPolicyCorrectionsTitle}
           </h3>
           <p className="text-xs leading-relaxed text-neutral-300">{t.editorialPolicyCorrectionsBody}</p>
         </article>
+      </div>
       </div>
     </section>
   )

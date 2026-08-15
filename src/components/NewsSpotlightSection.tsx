@@ -36,7 +36,7 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
 
   return (
     <section className="mx-auto mt-6 max-w-6xl px-4 md:px-6">
-      <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-4 shadow-xl md:p-6">
+      <div className="flex flex-col rounded-2xl border border-neutral-800 bg-neutral-950 p-4 shadow-xl md:p-6">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <h2 className="flex items-center gap-2 text-lg font-black tracking-tight text-white uppercase md:text-xl">
             <Newspaper size={18} className="text-blue-500" /> {t.latestNewsTitle}
@@ -63,26 +63,40 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
           )}
         </div>
 
-        <div className="space-y-2">
-          <p className="text-xs font-bold tracking-wider text-blue-400 uppercase">
+        <div className="flex min-h-0 flex-col overflow-hidden">
+          <p className="mb-2 overflow-hidden text-xs font-bold tracking-wider text-blue-400 uppercase whitespace-nowrap text-ellipsis">
             {active.sources && active.sources.length > 0
               ? active.sources.map((s) => s.name).join(' · ')
               : active.source}
           </p>
-          <h3 className="text-base font-bold leading-snug text-white md:text-xl">
+          <h3
+            className="mb-2 min-h-[3.6rem] max-h-[3.6rem] overflow-hidden text-base font-bold leading-snug text-white md:min-h-[5.1rem] md:max-h-[5.1rem] md:text-xl"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+            }}
+          >
             {getLocalizedText(lang, active.title)}
           </h3>
-          <p className="text-sm leading-relaxed text-neutral-400">
+          <p
+            className="min-h-[4.8rem] max-h-[4.8rem] overflow-hidden text-sm leading-relaxed text-neutral-400"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+            }}
+          >
             {getLocalizedText(lang, active.excerpt)}
           </p>
-          <div className="pt-2">
+          <div className="mt-2 flex min-h-9 gap-2 overflow-x-auto pt-2">
             {(active.sources && active.sources.length > 0 ? active.sources : active.url ? [{ name: t.readMore, url: active.url }] : []).map((src, idx) => (
               <a
                 key={idx}
                 href={src.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-2 inline-flex items-center gap-1 rounded-lg border border-neutral-700 bg-neutral-900/60 px-2.5 py-1.5 text-xs font-semibold text-neutral-300 transition-colors hover:text-blue-400"
+                className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-neutral-700 bg-neutral-900/60 px-2.5 py-1.5 text-xs font-semibold text-neutral-300 transition-colors hover:text-blue-400"
               >
                 <span>{src.name}</span>
                 <ExternalLink size={11} />
@@ -92,7 +106,7 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
         </div>
 
         {items.length > 1 && (
-          <div className="mt-4 flex gap-2">
+          <div className="mt-4 flex gap-2 justify-center">
             {items.map((_, idx) => (
               <button
                 key={idx}

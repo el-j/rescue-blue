@@ -11,18 +11,16 @@ const SOURCE_POLICY_URL = `${import.meta.env.BASE_URL}#editorial-policy`
 export function TrustSection({ t }: TrustSectionProps) {
 
   return (
-    <section id="transparenz" className="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 shadow-xl md:p-8">
-      <div className="mb-6">
+    <section className="border-t border-neutral-800 px-4 py-12 md:px-6">
+      <div className="mx-auto max-w-6xl">
         <h2 className="text-2xl font-black tracking-tight text-white uppercase">
           {t.trustTitle}
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-neutral-400">
           {t.trustIntro}
         </p>
-      </div>
-
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        <article className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 pt-6">
+        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
           <h3 className="mb-2 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
             <ShieldCheck size={16} className="text-blue-400" />
             {t.trustWhoTitle}
@@ -38,7 +36,7 @@ export function TrustSection({ t }: TrustSectionProps) {
           </a>
         </article>
 
-        <article className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
+        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
           <h3 className="mb-2 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
             <CheckCircle2 size={16} className="text-emerald-400" />
             {t.trustDataTitle}
@@ -48,7 +46,7 @@ export function TrustSection({ t }: TrustSectionProps) {
           </p>
         </article>
 
-        <article className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-4">
+        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
           <h3 className="mb-2 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
             <FileText size={16} className="text-amber-400" />
             {t.trustSourceTitle}
@@ -63,6 +61,7 @@ export function TrustSection({ t }: TrustSectionProps) {
             <FileText size={14} /> {t.trustSourceLink}
           </a>
         </article>
+      </div>
       </div>
     </section>
   )
