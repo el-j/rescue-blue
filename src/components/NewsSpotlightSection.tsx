@@ -69,24 +69,10 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
               ? active.sources.map((s) => s.name).join(' · ')
               : active.source}
           </p>
-          <h3
-            className="mb-2 min-h-[3.6rem] max-h-[3.6rem] overflow-hidden text-base font-bold leading-snug text-white md:min-h-[5.1rem] md:max-h-[5.1rem] md:text-xl"
-            style={{
-              display: '-webkit-box',
-              WebkitLineClamp: 3,
-              WebkitBoxOrient: 'vertical',
-            }}
-          >
+          <h3 className="mb-2 text-base font-bold leading-snug text-white md:text-xl">
             {getLocalizedText(lang, active.title)}
           </h3>
-          <p
-            className="min-h-[4.8rem] max-h-[4.8rem] overflow-hidden text-sm leading-relaxed text-neutral-400"
-            style={{
-              display: '-webkit-box',
-              WebkitLineClamp: 3,
-              WebkitBoxOrient: 'vertical',
-            }}
-          >
+          <p className="text-sm leading-relaxed text-neutral-400">
             {getLocalizedText(lang, active.excerpt)}
           </p>
           <div className="mt-2 flex min-h-9 gap-2 overflow-x-auto pt-2">
