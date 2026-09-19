@@ -22,44 +22,50 @@ export function TrustSection({ t }: TrustSectionProps) {
         <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)] max-w-2xl">
           {t.trustIntro}
         </p>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 pt-6">
-          <article className="editorial-card p-5">
-            <h3 className="mb-2 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
-              <ShieldCheck size={16} className="text-blue-600 dark:text-blue-400" />
-              {t.trustWhoTitle}
-            </h3>
-            <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
-              {t.trustWhoBody}
-            </p>
+        <div className="border border-[var(--border)] divide-y md:divide-y-0 md:divide-x divide-[var(--border)] grid grid-cols-1 md:grid-cols-3 bg-[var(--bg-primary)] mt-6">
+          <article className="p-6 flex flex-col justify-between">
+            <div>
+              <h3 className="mb-2 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
+                <ShieldCheck size={16} className="text-blue-600 dark:text-blue-400" />
+                {t.trustWhoTitle}
+              </h3>
+              <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
+                {t.trustWhoBody}
+              </p>
+            </div>
             <a
               href={IMPRINT_URL}
-              className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 transition-colors hover:underline"
+              className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 transition-colors hover:underline font-mono uppercase tracking-wider"
             >
               <FileText size={13} /> {t.trustWhoLink}
             </a>
           </article>
 
-          <article className="editorial-card p-5">
-            <h3 className="mb-2 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
-              <CheckCircle2 size={16} className="text-emerald-600 dark:text-emerald-400" />
-              {t.trustDataTitle}
-            </h3>
-            <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
-              {t.trustDataBody}
-            </p>
+          <article className="p-6 flex flex-col justify-between bg-[var(--bg-secondary)]/30">
+            <div>
+              <h3 className="mb-2 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
+                <CheckCircle2 size={16} className="text-emerald-600 dark:text-emerald-400" />
+                {t.trustDataTitle}
+              </h3>
+              <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
+                {t.trustDataBody}
+              </p>
+            </div>
           </article>
 
-          <article className="editorial-card p-5">
-            <h3 className="mb-2 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
-              <FileText size={16} className="text-amber-600 dark:text-amber-400" />
-              {t.trustSourceTitle}
-            </h3>
-            <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
-              {t.trustSourceBody}
-            </p>
+          <article className="p-6 flex flex-col justify-between">
+            <div>
+              <h3 className="mb-2 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
+                <FileText size={16} className="text-amber-600 dark:text-amber-400" />
+                {t.trustSourceTitle}
+              </h3>
+              <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
+                {t.trustSourceBody}
+              </p>
+            </div>
             <a
               href={SOURCE_POLICY_URL}
-              className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 transition-colors hover:underline"
+              className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 transition-colors hover:underline font-mono uppercase tracking-wider"
             >
               <FileText size={13} /> {t.trustSourceLink}
             </a>

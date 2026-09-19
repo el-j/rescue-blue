@@ -1,4 +1,4 @@
-import { Shield, Users, ArrowUpRight, CheckCircle2, AlertCircle } from 'lucide-react'
+import { ArrowUpRight, AlertCircle, CheckCircle2 } from 'lucide-react'
 import { PETITION_URL } from '../petition'
 import type { Translation } from '../i18n'
 
@@ -39,129 +39,131 @@ export function HeroSection({
   onCtaClick,
 }: HeroProps) {
   return (
-    <header className="hero-fullscreen relative w-full pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden border-b border-[var(--border)] bg-gradient-to-b from-[var(--bg-secondary)] to-[var(--bg-primary)]">
-      {/* Subtle editorial watermark lines */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.03] dark:opacity-[0.05] bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:24px_24px]" />
-
+    <header className="hero-fullscreen relative w-full pt-24 pb-16 md:pt-32 md:pb-24 border-b border-[var(--border)] bg-[var(--bg-primary)]">
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
-        {/* Editorial Masthead / Kicker */}
-        <div className="flex flex-col items-center text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-[var(--bg-card)] px-3.5 py-1.5 text-xs font-semibold tracking-wider text-[var(--text-secondary)] uppercase shadow-xs">
-            <Shield size={13} className="text-blue-500 dark:text-blue-400" />
+        {/* Editorial Masthead Folio Top Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-y-2 border-b border-[var(--border)] pb-3 mb-10 text-[11px] font-mono tracking-widest text-[var(--text-muted)] uppercase">
+          <div className="flex items-center gap-3">
+            <span className="font-bold text-[var(--text-primary)]">RETTE-BLAU.DE</span>
+            <span className="text-[var(--border-strong)]">/</span>
             <span>{t.badge}</span>
-            <span className="h-1 w-1 rounded-full bg-[var(--border-strong)]" />
-            <span className="font-mono text-[10px] text-[var(--text-muted)]">RETTE-BLAU.DE</span>
           </div>
+          <div className="flex items-center gap-2">
+            <span className={`inline-block h-2 w-2 rounded-full ${isLive ? 'bg-blue-600 animate-pulse' : 'bg-emerald-500'}`} />
+            <span>{isLive ? 'KAMPAGNE AKTIV · CHANGE.ORG' : 'OFFIZIELLES DOKUMENT'}</span>
+          </div>
+        </div>
 
-          {/* Main Headline */}
-          <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase sm:text-6xl lg:text-7xl">
+        {/* Main Typographic Manifesto Header */}
+        <div className="space-y-4 max-w-5xl">
+          <h1 className="editorial-headline text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-[var(--text-primary)]">
             {headline}
           </h1>
 
-          {/* Subline with Chromatic Accent */}
-          <p className="mt-4 max-w-3xl text-xl font-bold tracking-normal text-blue-600 dark:text-blue-400 sm:text-2xl lg:text-3xl">
+          <p className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-blue-600 dark:text-blue-400 max-w-4xl">
             {subline}
           </p>
 
-          {/* Editorial Lead Paragraph */}
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] sm:text-lg">
+          <p className="editorial-lead max-w-3xl pt-2">
             {t.heroBody}
           </p>
         </div>
 
-        {/* Chromatic Confrontation: Broadcast Television vs Historical Reality */}
-        <div className="mt-10 mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-4 md:p-6 shadow-xl">
-            {/* Status Quo Card: ARD / ZDF Euphemism */}
-            <div className="flex flex-col justify-between rounded-xl border border-blue-500/20 bg-blue-500/5 p-5">
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
-                    <span className="h-2 w-2 rounded-full bg-blue-500" />
-                    Status Quo in ARD & ZDF
-                  </span>
-                  <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase">Medien-Praxis</span>
-                </div>
-                <div className="h-3 w-full rounded-full bg-blue-600 mb-3" />
-                <h2 className="text-base font-bold text-[var(--text-primary)]">
-                  AfD als friedliches „Blau“
-                </h2>
-                <p className="mt-1.5 text-xs leading-relaxed text-[var(--text-muted)]">
-                  Blau signalisiert Ruhe, Europa, Frieden und Seriosität. Durch diese Farbwahl wird rechtsextreme Ideologie visuell verharmlost und normalisiert.
-                </p>
+        {/* Chromatic Confrontation: Democratic Blue vs Historical Brown Split Broadsheet */}
+        <div className="mt-12 border border-[var(--border)] grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[var(--border)]">
+          {/* Status Quo Panel: ARD & ZDF Euphemism in Blue */}
+          <div className="p-6 md:p-8 flex flex-col justify-between bg-blue-50/50 dark:bg-blue-950/20">
+            <div>
+              <div className="flex items-center justify-between gap-2 mb-4 border-b border-blue-500/20 pb-2">
+                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                  01 / Status Quo in ARD & ZDF
+                </span>
+                <span className="font-mono text-[10px] uppercase text-[var(--text-muted)]">Medien-Praxis</span>
               </div>
-              <div className="mt-4 pt-3 border-t border-blue-500/15 flex items-center gap-1.5 text-[11px] font-semibold text-rose-500 dark:text-rose-400">
-                <AlertCircle size={13} />
-                <span>Fatale psychologische Verharmlosung</span>
-              </div>
+              
+              <div className="h-2 w-16 bg-blue-600 mb-4" />
+              
+              <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
+                AfD als friedliches „Blau“
+              </h2>
+              
+              <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                Blau signalisiert Ruhe, Vernunft, Europa und Seriosität. Durch diese unkritische Farbwahl wird eine in Teilen gesichert rechtsextreme Ideologie visuell verharmlost und normalisiert.
+              </p>
             </div>
 
-            {/* Demand Card: Accurate Historical Color */}
-            <div className="flex flex-col justify-between rounded-xl border border-amber-800/30 bg-amber-950/15 p-5">
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
-                    <span className="h-2 w-2 rounded-full bg-[#54331a]" />
-                    {t.heroImgText1 || 'Historische Richtigkeit'}
-                  </span>
-                  <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase">Forderung</span>
-                </div>
-                <div className="h-3 w-full rounded-full bg-[#54331a] mb-3" />
-                <h2 className="text-base font-bold text-[var(--text-primary)]">
-                  Braun für völkischen Nationalismus
-                </h2>
-                <p className="mt-1.5 text-xs leading-relaxed text-[var(--text-muted)]">
-                  Braun ist im kollektiven Gedächtnis die unmissverständliche Farbe des Rechtsextremismus. Diagramme müssen diese politische Realität ehrlich widerspiegeln.
-                </p>
+            <div className="mt-8 pt-4 border-t border-blue-500/20 flex items-center gap-2 text-xs font-semibold text-rose-600 dark:text-rose-400 uppercase tracking-wide">
+              <AlertCircle size={15} />
+              <span>Fatale psychologische Verharmlosung</span>
+            </div>
+          </div>
+
+          {/* Forderung Panel: Historical Truth in Brown */}
+          <div className="p-6 md:p-8 flex flex-col justify-between bg-amber-50/40 dark:bg-amber-950/20">
+            <div>
+              <div className="flex items-center justify-between gap-2 mb-4 border-b border-amber-600/20 pb-2">
+                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+                  02 / {t.heroImgText1 || 'Historische Richtigkeit'}
+                </span>
+                <span className="font-mono text-[10px] uppercase text-[var(--text-muted)]">Forderung</span>
               </div>
-              <div className="mt-4 pt-3 border-t border-amber-800/20 flex items-center gap-1.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
-                <CheckCircle2 size={13} />
-                <span>Visuelle Medienethik & historische Klarheit</span>
-              </div>
+              
+              <div className="h-2 w-16 bg-[#54331a] mb-4" />
+              
+              <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
+                Braun für völkischen Nationalismus
+              </h2>
+              
+              <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                Braun ist im kollektiven Gedächtnis die unmissverständliche Farbe des Rechtsextremismus. Grafische Diagramme der Leitmedien müssen die politische Realität ehrlich benennen.
+              </p>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-amber-600/20 flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+              <CheckCircle2 size={15} />
+              <span>Visuelle Medienethik & historische Klarheit</span>
             </div>
           </div>
         </div>
 
-        {/* Live Counters & High-Conversion Action Bar */}
-        <div className="mt-8 flex flex-col items-center gap-4">
-          {/* Verified Signature Counter Pill */}
-          <div className="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-4 py-2 text-xs font-medium text-[var(--text-secondary)] shadow-sm">
-            <Users size={15} className="text-blue-500 dark:text-blue-400" />
-            <span>
-              {t.sigCount}{' '}
-              <strong className="font-mono text-sm font-bold text-[var(--text-primary)]">
-                {isLoadingSignatures ? (
-                  <span className="inline-block h-4 w-12 animate-pulse rounded bg-[var(--border)] align-middle" />
-                ) : (
-                  formattedSignatureCount ?? '—'
-                )}
-              </strong>{' '}
-              {t.sigSupport}
+        {/* Monumental Signature Counter & Direct Action Broadsheet Bar */}
+        <div className="mt-6 border border-[var(--border)] bg-[var(--bg-secondary)] p-6 md:p-8 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-6">
+          <div className="flex flex-col sm:flex-row items-baseline gap-3 sm:gap-5">
+            <span className="editorial-numeral text-5xl sm:text-6xl md:text-7xl font-extrabold text-[var(--text-primary)] leading-none">
+              {isLoadingSignatures ? (
+                <span className="inline-block h-12 w-28 animate-pulse bg-[var(--border)]" />
+              ) : (
+                formattedSignatureCount ?? '93'
+              )}
             </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-              <span className={`h-1.5 w-1.5 rounded-full bg-emerald-500 ${isLive ? 'animate-ping' : ''}`} />
-              {isLive ? t.sigLive : t.sigFallback}
-            </span>
+            <div className="space-y-0.5">
+              <p className="font-mono text-xs font-bold uppercase tracking-widest text-[var(--text-primary)]">
+                {t.sidebarSignatures || 'Unterschriften'} {t.sidebarGrowing ? `· ${t.sidebarGrowing}` : ''}
+              </p>
+              <p className="text-xs text-[var(--text-muted)]">
+                {t.sigCount} {formattedSignatureCount ?? '93'} {t.sigSupport} ({isLive ? t.sigLive : t.sigFallback})
+              </p>
+            </div>
           </div>
 
-          {/* Primary Petition CTA Button */}
-          <div className="w-full max-w-md flex flex-col items-center">
+          <div className="flex flex-col items-start md:items-end gap-2 shrink-0">
             <a
               href={PETITION_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={onCtaClick}
-              className="group flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-6 py-3.5 text-center text-sm md:text-base font-bold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all active:scale-[0.99]"
+              className="inline-flex items-center justify-center gap-2.5 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-sm md:text-base font-bold uppercase tracking-wider transition-colors active:translate-y-0.5"
             >
               <span>{ctaLabel}</span>
-              <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight size={18} />
             </a>
-            <p className="mt-2 text-center text-[11px] text-[var(--text-muted)]">
-              {t.ctaExternalHint} · Kostenlos & unabhängig
-            </p>
+            <span className="text-[11px] text-[var(--text-muted)]">
+              {t.ctaExternalHint} · 100% unabhängig
+            </span>
           </div>
         </div>
       </div>
     </header>
   )
 }
+

@@ -35,16 +35,16 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
   const active = items[activeIndex]
 
   return (
-    <section className="mx-auto mt-6 max-w-6xl px-4 md:px-6">
-      <div className="editorial-card p-5 md:p-6">
+    <section className="border-b border-[var(--border)] bg-[var(--bg-secondary)] py-6">
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
         {/* Header bar: Live Wire Badge + Carousel Controls */}
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-[var(--border)] pb-4">
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-[var(--border)] pb-3">
           <div className="flex items-center gap-2">
             <span className="flex h-2 w-2 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
             </span>
-            <span className="font-mono text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
+            <span className="font-mono text-xs font-bold uppercase tracking-widest text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
               <Radio size={14} />
               {t.latestNewsTitle}
             </span>
@@ -58,18 +58,18 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
               <button
                 type="button"
                 onClick={() => setCurrentIndex((prev) => (prev - 1 + items.length) % items.length)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] transition-all hover:bg-[var(--bg-hover)] hover:text-[var(--text-primary)]"
+                className="flex h-7 w-7 items-center justify-center border border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
                 aria-label={t.newsPrevLabel}
               >
-                <ChevronLeft size={16} />
+                <ChevronLeft size={15} />
               </button>
               <button
                 type="button"
                 onClick={() => setCurrentIndex((prev) => (prev + 1) % items.length)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] transition-all hover:bg-[var(--bg-hover)] hover:text-[var(--text-primary)]"
+                className="flex h-7 w-7 items-center justify-center border border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
                 aria-label={t.newsNextLabel}
               >
-                <ChevronRight size={16} />
+                <ChevronRight size={15} />
               </button>
             </div>
           )}
@@ -77,57 +77,63 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
 
         {/* Article Body */}
         <div className="flex min-h-0 flex-col">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="inline-flex items-center rounded-md bg-blue-500/10 px-2 py-0.5 font-mono text-[11px] font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide">
+          <div className="flex items-center gap-3 mb-2 font-mono text-xs">
+            <span className="font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide">
               {active.sources && active.sources.length > 0
                 ? active.sources.map((s) => s.name).join(' · ')
                 : active.source}
             </span>
             {active.date && (
-              <span className="font-mono text-xs text-[var(--text-muted)]">
+              <span className="text-[var(--text-muted)]">
                 {active.date}
               </span>
             )}
           </div>
 
-          <h3 className="mb-2 text-base md:text-xl font-bold leading-snug text-[var(--text-primary)]">
+          <h3 className="mb-2 text-lg md:text-xl font-bold leading-snug text-[var(--text-primary)]">
             {getLocalizedText(lang, active.title)}
           </h3>
 
-          <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+          <p className="text-sm leading-relaxed text-[var(--text-secondary)] max-w-4xl">
             {getLocalizedText(lang, active.excerpt)}
           </p>
 
-          <div className="mt-4 flex min-h-9 flex-wrap gap-2 pt-2 border-t border-[var(--border-subtle)]">
+          <div className="mt-4 flex min-h-8 flex-wrap gap-2 pt-2 border-t border-[var(--border)]">
             {(active.sources && active.sources.length > 0 ? active.sources : active.url ? [{ name: t.readMore, url: active.url }] : []).map((src, idx) => (
               <a
                 key={idx}
                 href={src.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1.5 text-xs font-semibold text-[var(--text-secondary)] transition-colors hover:border-blue-500/40 hover:text-blue-600 dark:hover:text-blue-400"
+                className="inline-flex shrink-0 items-center gap-1.5 border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-1 text-xs font-semibold text-[var(--text-secondary)] transition-colors hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <span>{src.name}</span>
                 <ExternalLink size={12} />
               </a>
             ))}
           </div>
-        </div>
 
-        {/* Navigation Dot Indicators */}
-        {items.length > 1 && (
-          <div className="mt-4 flex gap-2 justify-center">
-            {items.map((_, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => setCurrentIndex(idx)}
-                aria-label={`${t.newsSlideLabel} ${idx + 1}`}
-                className={`h-1.5 rounded-full transition-all ${idx === activeIndex ? 'w-8 bg-blue-600 dark:bg-blue-500' : 'w-2 bg-[var(--border)] hover:bg-[var(--text-muted)]'}`}
-              />
-            ))}
-          </div>
-        )}
+          {items.length > 1 && (
+            <div className="mt-4 flex items-center justify-between border-t border-[var(--border)] pt-3 font-mono text-xs">
+              <span className="text-[var(--text-muted)] uppercase tracking-wider">
+                {activeIndex + 1} / {items.length}
+              </span>
+              <div className="flex gap-1.5">
+                {items.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setCurrentIndex(idx)}
+                    aria-label={`${t.newsSlideLabel} ${idx + 1}`}
+                    className={`h-1.5 transition-all cursor-pointer ${
+                      idx === activeIndex ? 'w-6 bg-blue-600' : 'w-2 bg-[var(--border)] hover:bg-[var(--text-muted)]'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )

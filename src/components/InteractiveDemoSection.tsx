@@ -286,14 +286,13 @@ export function InteractiveDemoSection({
   }, [])
 
   return (
-    <section ref={sandboxRef} className="editorial-card p-6 md:p-8 space-y-6">
+    <section ref={sandboxRef} className="border border-[var(--border)] bg-[var(--bg-primary)] p-6 md:p-8 space-y-6">
       <div>
-        <div className="flex items-center justify-between gap-2 mb-2">
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">02 / INTERAKTIVE ANALYSE</span>
-            <span className="h-px w-12 bg-[var(--border)]" />
+        <div className="flex items-center justify-between gap-2 mb-2 font-mono text-xs font-bold uppercase tracking-widest">
+          <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400">
+            <span>02 / INTERAKTIVE ANALYSE</span>
           </div>
-          <span className="rounded border border-[var(--border)] bg-[var(--bg-secondary)] px-2.5 py-0.5 font-mono text-[10px] font-bold tracking-widest text-[var(--text-muted)] uppercase">{t.demoSandbox}</span>
+          <span className="text-[10px] text-[var(--text-muted)]">{t.demoSandbox}</span>
         </div>
         <h2 className="mb-2 flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           <Paintbrush size={22} className="text-blue-600 dark:text-blue-400" /> {t.demoH2}
@@ -337,15 +336,15 @@ export function InteractiveDemoSection({
         <div className="md:col-span-7 flex flex-col h-full justify-between space-y-6 md:border-l md:border-[var(--border)] md:pl-6">
           
           {/* Interactive Sandbox Controls (Hero Section Toolbar over Chart) */}
-          <div className="flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-[var(--bg-secondary)]/30 p-4 shadow-md transition-all duration-300">
-            <div className="flex items-center justify-between">
-              <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] flex items-center gap-1.5">
+          <div className="flex flex-col gap-3 border border-[var(--border)] bg-[var(--bg-secondary)] p-3 md:p-4">
+            <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-muted)] flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
                 {lang === 'de' ? 'Visualisierungs-Optionen' : 'Visualization Options'}
               </span>
               <button
                 onClick={handleCycleSandboxState}
-                className="text-[10px] font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] flex items-center gap-1 cursor-pointer transition-colors duration-200"
+                className="text-[10px] font-mono font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] flex items-center gap-1 cursor-pointer transition-colors"
                 title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
                 aria-label={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
                 type="button"
@@ -363,14 +362,14 @@ export function InteractiveDemoSection({
               </button>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-2">
               {/* Sandbox Modes Selector */}
-              <div className="flex-grow grid grid-cols-3 gap-1 rounded-xl bg-[var(--bg-card)] p-1 border border-[var(--border)] shadow-inner">
+              <div className="flex-grow grid grid-cols-3 gap-1 bg-[var(--bg-primary)] p-1 border border-[var(--border)]">
                 <button
                   onClick={() => handleSelectState('default')}
-                  className={`py-2.5 px-1.5 flex items-center justify-center rounded-lg text-xs font-bold transition-all duration-300 cursor-pointer ${
+                  className={`py-2 px-1 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer ${
                     sandboxState === 'default'
-                      ? 'bg-blue-600/15 border border-blue-500/30 text-blue-400 font-extrabold shadow-sm'
+                      ? 'bg-blue-600/15 text-blue-500 font-extrabold border border-blue-500/40'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
                   }`}
                   title={lang === 'de' ? 'Standard-Modus' : 'Default Mode'}
@@ -381,9 +380,9 @@ export function InteractiveDemoSection({
                 </button>
                 <button
                   onClick={() => handleSelectState('brown')}
-                  className={`py-2.5 px-1.5 flex items-center justify-center rounded-lg text-xs font-bold transition-all duration-300 cursor-pointer ${
+                  className={`py-2 px-1 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer ${
                     sandboxState === 'brown'
-                      ? 'bg-amber-600/15 border border-amber-500/30 text-amber-400 font-extrabold shadow-sm'
+                      ? 'bg-amber-600/15 text-amber-500 font-extrabold border border-amber-500/40'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
                   }`}
                   title={lang === 'de' ? 'Mehrheits-Modus' : 'Majority Mode'}
@@ -394,9 +393,9 @@ export function InteractiveDemoSection({
                 </button>
                 <button
                   onClick={() => handleSelectState('dream')}
-                  className={`py-2.5 px-1.5 flex items-center justify-center rounded-lg text-xs font-bold transition-all duration-300 cursor-pointer ${
+                  className={`py-2 px-1 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer ${
                     sandboxState === 'dream'
-                      ? 'bg-emerald-600/15 border border-emerald-500/30 text-emerald-400 font-extrabold shadow-sm'
+                      ? 'bg-emerald-600/15 text-emerald-500 font-extrabold border border-emerald-500/40'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
                   }`}
                   title={lang === 'de' ? 'Traum-Vision' : 'Dream Vision'}
@@ -410,10 +409,10 @@ export function InteractiveDemoSection({
               {/* Comparison Mode Toggle */}
               <button
                 onClick={toggleComparison}
-                className={`py-2.5 px-4 flex items-center justify-center gap-2 rounded-xl border text-xs font-bold transition-all duration-300 cursor-pointer whitespace-nowrap ${
+                className={`py-2 px-3 flex items-center justify-center gap-2 border text-xs font-bold transition-colors cursor-pointer whitespace-nowrap ${
                   showComparison
-                    ? 'bg-purple-600/15 border-purple-500/30 text-purple-400 font-extrabold shadow-sm'
-                    : 'bg-[var(--bg-card)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                    ? 'bg-purple-600/15 border-purple-500/40 text-purple-400 font-extrabold'
+                    : 'bg-[var(--bg-primary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                 }`}
                 title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
                 aria-label={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}

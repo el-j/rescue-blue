@@ -10,42 +10,42 @@ export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionary
   return (
     <section
       id="woerter-bedeutung"
-      className="editorial-card p-6 md:p-8 space-y-6"
+      className="border border-[var(--border)] bg-[var(--bg-primary)]"
     >
-      <div className="border-b border-[var(--border)] pb-4">
-        <div className="flex items-center gap-2 mb-2">
-          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">GLOSSAR / SPRACHKRITIK</span>
-          <span className="h-px flex-1 bg-[var(--border)]" />
+      <div className="border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)]">
+        <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
+          <span>06 / GLOSSAR & SPRACHKRITIK</span>
         </div>
         <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           <BookMarked size={22} className="text-blue-600 dark:text-blue-400" />
           {t.wordsMeaningTitle}
         </h2>
-        <p className="mt-1.5 text-sm leading-relaxed text-[var(--text-secondary)]">
+        <p className="mt-1.5 text-sm leading-relaxed text-[var(--text-secondary)] max-w-3xl">
           {t.wordsMeaningSubtitle}
         </p>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        {entries.map((entry, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-between rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] p-4 transition-all hover:border-blue-500/40"
-          >
-            <div className="flex items-center justify-between gap-2 border-b border-[var(--border-subtle)] pb-2 mb-2">
-              <span className="text-sm font-bold text-[var(--text-primary)] tracking-wide">
-                „{entry.word}“
-              </span>
-              <span className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Narrativ</span>
+      <div className="p-6 md:p-8">
+        <div className="border border-[var(--border)] divide-y divide-[var(--border)]">
+          {entries.map((entry, index) => (
+            <div
+              key={index}
+              className="p-4 md:p-5 flex flex-col md:flex-row md:items-start justify-between gap-3 md:gap-6 hover:bg-[var(--bg-secondary)]/40 transition-colors"
+            >
+              <div className="md:w-1/3 shrink-0">
+                <span className="text-base font-bold text-[var(--text-primary)] tracking-wide">
+                  „{entry.word}“
+                </span>
+              </div>
+              <div className="flex items-start gap-2.5 md:w-2/3">
+                <ArrowRight size={15} className="text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" />
+                <span className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                  {entry.meaning}
+                </span>
+              </div>
             </div>
-            <div className="flex items-start gap-2 pt-1">
-              <ArrowRight size={13} className="text-rose-500 shrink-0 mt-0.5" />
-              <span className="text-xs font-medium leading-relaxed text-[var(--text-secondary)]">
-                {entry.meaning}
-              </span>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )

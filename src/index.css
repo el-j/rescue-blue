@@ -363,18 +363,48 @@
 .light-theme svg line[stroke="#1f2937"] { stroke: #cbd5e1 !important; }
 .light-theme svg line[stroke="#374151"] { stroke: #e2e8f0 !important; }
 
-/* ── Custom Editorial Card & Section Styling ── */
-.editorial-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  box-shadow: var(--card-shadow);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+/* ── Custom Swiss / Broadsheet Editorial Architecture ── */
+
+/* Remove generic floating card look in favor of architectural canvas structure */
+.editorial-canvas {
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
-.editorial-card:hover {
+.editorial-panel {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.editorial-panel:hover {
   border-color: var(--border-strong);
-  box-shadow: var(--card-shadow-hover);
+}
+
+.editorial-kicker {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.editorial-headline {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.editorial-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
 }
 
 .editorial-hairline {
@@ -382,6 +412,44 @@
 }
 
 .editorial-numeral {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', -apple-system, sans-serif;
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
+
+/* Chromatic confrontation poster blocks */
+.chromatic-blue-block {
+  background-color: #003399;
+  color: #ffffff;
+}
+.light-theme .chromatic-blue-block {
+  background-color: #003399;
+  color: #ffffff;
+}
+
+.chromatic-brown-block {
+  background-color: #3b2210;
+  color: #fed7aa;
+}
+.light-theme .chromatic-brown-block {
+  background-color: #4a2810;
+  color: #ffedd5;
+}
+
+/* Tabular editorial dividers */
+.editorial-divide-y > * + * {
+  border-top: 1px solid var(--border);
+}
+
+.editorial-divide-x > * + * {
+  border-left: 1px solid var(--border);
+}
+
+/* Compatibility alias for any lingering reference */
+.editorial-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+
