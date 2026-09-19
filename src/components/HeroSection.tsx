@@ -42,7 +42,7 @@ export function HeroSection({
     <header className="hero-fullscreen relative w-full pt-24 pb-16 md:pt-32 md:pb-24 border-b border-[var(--border)] bg-[var(--bg-primary)]">
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         {/* Editorial Masthead Folio Top Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-y-2 border-b border-[var(--border)] pb-3 mb-10 text-[11px] font-mono tracking-widest text-[var(--text-muted)] uppercase">
+        {/* <div className="flex flex-wrap items-center justify-between gap-y-2 border-b border-[var(--border)] pb-3 mb-10 text-[11px] font-mono tracking-widest text-[var(--text-muted)] uppercase">
           <div className="flex items-center gap-3">
             <span className="font-bold text-[var(--text-primary)]">RETTE-BLAU.DE</span>
             <span className="text-[var(--border-strong)]">/</span>
@@ -52,7 +52,7 @@ export function HeroSection({
             <span className={`inline-block h-2 w-2 rounded-full ${isLive ? 'bg-blue-600 animate-pulse' : 'bg-emerald-500'}`} />
             <span>{isLive ? 'KAMPAGNE AKTIV · CHANGE.ORG' : 'OFFIZIELLES DOKUMENT'}</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Typographic Manifesto Header */}
         <div className="space-y-4 max-w-5xl">
