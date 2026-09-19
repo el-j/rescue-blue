@@ -1,4 +1,4 @@
-import { BookMarked } from 'lucide-react'
+import { BookMarked, ArrowRight } from 'lucide-react'
 import type { Translation, WordsMeaning } from '../i18n'
 
 interface RhetoricalDictionaryProps {
@@ -10,31 +10,42 @@ export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionary
   return (
     <section
       id="woerter-bedeutung"
-      className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-5 shadow-xl md:p-8"
+      className=""
     >
-      <div className="mb-6">
-        <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-[var(--text-primary)] uppercase md:text-2xl">
-          <BookMarked size={22} className="text-blue-500" />
+      <div className="border-b border-[var(--border)] p-6 md:p-8">
+        <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
+          <span>06 / GLOSSAR & SPRACHKRITIK</span>
+        </div>
+        <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+          <BookMarked size={22} className="text-blue-600 dark:text-blue-400" />
           {t.wordsMeaningTitle}
         </h2>
-        <p className="text-sm leading-relaxed text-[var(--text-muted)]">{t.wordsMeaningSubtitle}</p>
+        <p className="mt-1.5 text-sm leading-relaxed text-[var(--text-secondary)] max-w-3xl">
+          {t.wordsMeaningSubtitle}
+        </p>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        {entries.map((entry, index) => (
-          <div
-            key={index}
-            className="flex items-start gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3 transition-all hover:border-blue-500/30"
-          >
-            <div className="min-w-0 flex-1">
-              <span className="block text-sm font-bold text-[var(--text-primary)]">{entry.word}</span>
-              <span className="mt-0.5 flex items-center gap-1.5 text-xs text-blue-400">
-                <span className="text-[var(--text-muted)]">=</span>
-                <span className="leading-snug">{entry.meaning}</span>
-              </span>
+      <div className="p-6 md:p-8">
+        <div className="border border-[var(--border)] divide-y divide-[var(--border)]">
+          {entries.map((entry, index) => (
+            <div
+              key={index}
+              className="p-4 md:p-5 flex flex-col md:flex-row md:items-start justify-between gap-3 md:gap-6 hover:bg-[var(--bg-secondary)]/40 transition-colors"
+            >
+              <div className="md:w-1/3 shrink-0">
+                <span className="text-base font-bold text-[var(--text-primary)] tracking-wide">
+                  „{entry.word}“
+                </span>
+              </div>
+              <div className="flex items-start gap-2.5 md:w-2/3">
+                <ArrowRight size={15} className="text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" />
+                <span className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                  {entry.meaning}
+                </span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )

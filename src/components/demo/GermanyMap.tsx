@@ -1,4 +1,4 @@
-import type { ParliamentsSnapshot } from '../../polling'
+import { getDefaultPollingBars, type ParliamentsSnapshot } from '../../polling'
 import { GERMANY_STATE_PATHS } from './GermanyMapData'
 
 interface GermanyMapProps {
@@ -18,21 +18,28 @@ export function GermanyMap({
   dreamProgress,
   lang,
 }: GermanyMapProps) {
-  // Helper to extract AfD percentage from a state snapshot
+  // Helper to extract AfD percentage from a state snapshot (with reliable fallback for Bund)
   const getAfdPct = (stateId: string): number => {
-    if (!pollingSnapshot || !pollingSnapshot[stateId]) return 0
+    if (!pollingSnapshot || !pollingSnapshot[stateId]) {
+      if (stateId === '0') {
+        const defaultBars = getDefaultPollingBars()
+        const afdBar = defaultBars.find((b) => b.key === 'afd')
+        return afdBar ? afdBar.pct : 29
+      }
+      return 0
+    }
     const afdBar = pollingSnapshot[stateId].bars.find((b) => b.key === 'afd')
     return afdBar ? afdBar.pct : 0
   }
 
   // Get the strongest party (plurality/majority) in a state snapshot
   const getStrongestParty = (stateId: string): { key: string; pct: number } => {
-    if (!pollingSnapshot || !pollingSnapshot[stateId]) return { key: 'others', pct: 0 }
-    const stateData = pollingSnapshot[stateId]
-    if (!stateData.bars || stateData.bars.length === 0) return { key: 'others', pct: 0 }
+    const stateData = pollingSnapshot?.[stateId]
+    const bars = stateData?.bars || (stateId === '0' ? getDefaultPollingBars() : [])
+    if (bars.length === 0) return { key: 'others', pct: 0 }
     
-    let maxBar = stateData.bars[0]
-    for (const bar of stateData.bars) {
+    let maxBar = bars[0]
+    for (const bar of bars) {
       if (bar.pct > maxBar.pct) {
         maxBar = bar
       }
@@ -138,21 +145,21 @@ export function GermanyMap({
                 return pct.toFixed(1)
               })()}%`}
             </option>
-            {pollingSnapshot &&
-              Object.entries(pollingSnapshot)
-                .filter(([id]) => id !== '0')
-                .map(([id, snap]) => {
-                  const originalPct = getAfdPct(id)
-                  const pct = (sandboxState === 'dream' && dreamProgress !== null)
-                    ? originalPct * (1 - dreamProgress)
-                    : originalPct
-                  const name = lang === 'de' ? snap.nameDe : snap.nameEn
-                  return (
-                    <option key={id} value={id} className="bg-[var(--bg-card)] text-[var(--text-primary)]">
-                      {name} — {pct.toFixed(1)}%
-                    </option>
-                  )
-                })}
+            {Object.entries(GERMANY_STATE_PATHS).map(([id, state]) => {
+              const snap = pollingSnapshot?.[id]
+              const originalPct = getAfdPct(id)
+              const pct = (sandboxState === 'dream' && dreamProgress !== null)
+                ? originalPct * (1 - dreamProgress)
+                : originalPct
+              const name = snap
+                ? (lang === 'de' ? snap.nameDe : snap.nameEn)
+                : (lang === 'de' ? state.nameDe : state.nameEn)
+              return (
+                <option key={id} value={id} className="bg-[var(--bg-card)] text-[var(--text-primary)]">
+                  {name} — {pct.toFixed(1)}%
+                </option>
+              )
+            })}
           </select>
         </div>
 

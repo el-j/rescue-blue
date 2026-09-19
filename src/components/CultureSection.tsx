@@ -10,37 +10,69 @@ interface CultureProps {
 
 export function CultureSection({ t, sayings, activeTab, onChangeTab }: CultureProps) {
   return (
-    <section id="kultur" className="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 md:p-8">
-      <div className="mb-6 flex flex-col gap-4 border-b border-neutral-800 pb-4 md:flex-row md:items-center md:justify-between">
+    <section id="kultur" className="">
+      {/* Section Header with Tabs */}
+      <div className="border-b border-[var(--border)] p-6 md:p-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <h3 className="flex items-center gap-2 text-lg font-black tracking-tight text-white uppercase md:text-xl">
-            <BookOpen size={20} className="text-blue-500" /> {t.cultureH}
+          <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
+            <span>05 / KULTURERBE</span>
+          </div>
+          <h3 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+            <BookOpen size={22} className="text-blue-600 dark:text-blue-400" />
+            {t.cultureH}
           </h3>
-          <p className="mt-0.5 text-xs text-neutral-400">{t.cultureSub}</p>
+          <p className="mt-1 text-sm text-[var(--text-secondary)]">{t.cultureSub}</p>
         </div>
-        <div className="flex gap-2">
+
+        {/* Tab Switcher */}
+        <div className="flex p-0.5 font-mono text-xs">
           <button
             onClick={() => onChangeTab('sprache')}
-            className={`rounded-lg border px-4 py-2 text-xs font-bold tracking-wider uppercase transition-all ${activeTab === 'sprache' ? 'border-blue-500/30 bg-blue-600/10 text-blue-400' : 'border-neutral-800 bg-neutral-900 text-neutral-400 hover:text-white'}`}
+            className={`px-4 py-1.5 font-bold uppercase tracking-wider transition-colors cursor-pointer ${
+              activeTab === 'sprache'
+                ? 'bg-blue-600 text-white'
+                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+            }`}
             type="button"
-          >{t.tabLang}</button>
+          >
+            {t.tabLang}
+          </button>
           <button
             onClick={() => onChangeTab('symbolik')}
-            className={`rounded-lg border px-4 py-2 text-xs font-bold tracking-wider uppercase transition-all ${activeTab === 'symbolik' ? 'border-blue-500/30 bg-blue-600/10 text-blue-400' : 'border-neutral-800 bg-neutral-900 text-neutral-400 hover:text-white'}`}
+            className={`px-4 py-1.5 font-bold uppercase tracking-wider transition-colors cursor-pointer ${
+              activeTab === 'symbolik'
+                ? 'bg-blue-600 text-white'
+                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+            }`}
             type="button"
-          >{t.tabSym}</button>
+          >
+            {t.tabSym}
+          </button>
         </div>
       </div>
-      <div className="space-y-4">
-        {sayings[activeTab].map((item, index) => (
-          <div key={index} className="rounded-xl border border-neutral-800/80 bg-neutral-900 p-5 transition-all hover:border-blue-500/30">
-            <div className="mb-2 flex flex-wrap items-start justify-between gap-4">
-              <h4 className="text-base font-bold text-white md:text-lg">{item.phrase}</h4>
-              <span className="rounded border border-neutral-800 bg-neutral-950 px-2 py-0.5 text-[10px] tracking-wider text-neutral-400 uppercase">{item.origin}</span>
-            </div>
-            <p className="text-sm leading-relaxed text-neutral-400">{item.desc}</p>
-          </div>
-        ))}
+
+      {/* Cultural Saying Ledger Rows */}
+      <div className="p-6 md:p-8">
+        <div className="border border-[var(--border)] divide-y divide-[var(--border)]">
+          {sayings[activeTab].map((item, index) => (
+            <article
+              key={index}
+              className="p-5 md:p-6 transition-colors hover:bg-[var(--bg-secondary)]/50"
+            >
+              <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
+                <h4 className="text-base md:text-lg font-bold text-[var(--text-primary)]">
+                  {item.phrase}
+                </h4>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-[var(--text-muted)]">
+                  {item.origin}
+                </span>
+              </div>
+              <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                {item.desc}
+              </p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   )

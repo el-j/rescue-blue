@@ -10,7 +10,7 @@ export function EconomyChart({ ui }: EconomyChartProps) {
       <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 text-center">
         {ui.gdpChartTitle}
       </h4>
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
+      <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Grid Lines */}
           <line x1="50" y1="30" x2="360" y2="30" stroke="#1f2937" strokeDasharray="3 3" />

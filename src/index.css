@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (html:not(.light-theme) &);
+
 /* ── Local Font-Face Declarations ── */
 
 /* Inter (Body Font) */
@@ -62,99 +64,109 @@
   src: url('./assets/fonts/outfit-latin-900-normal.woff2') format('woff2');
 }
 
-
-@keyframes floatSubtle {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-8px) scale(1.01); }
-}
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.15; filter: blur(120px); }
-  50% { opacity: 0.35; filter: blur(150px); }
-}
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-@keyframes rainFall {
-  0% { transform: translateY(-20px); opacity: 0; }
-  50% { opacity: 0.4; }
-  100% { transform: translateY(100px); opacity: 0; }
-}
-
-/* ── Theme tokens ── */
+/* ── Editorial Design System Tokens ── */
 
 @layer base {
   :root {
     color-scheme: dark;
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-    /* Dark theme (default) */
-    --bg-primary: #171717;
-    --bg-secondary: #0a0a0a;
-    --bg-card: #1c1c1c;
-    --bg-card-hover: #262626;
-    --bg-nav: rgba(10, 10, 10, 0.8);
-    --bg-hover: #262626;
-    --bg-input: #262626;
-    --text-primary: #f5f5f5;
-    --text-secondary: #d4d4d4;
-    --text-muted: #a3a3a3;
-    --text-faint: #737373;
-    --border: #2e2e2e;
-    --border-subtle: #252525;
+    /* Dark Mode: Refined Midnight Ink & Slate */
+    --bg-primary: #090d16;
+    --bg-secondary: #0f1422;
+    --bg-card: #131a2c;
+    --bg-card-hover: #182238;
+    --bg-elevated: #1a253e;
+    --bg-nav: rgba(9, 13, 22, 0.88);
+    --bg-hover: #1e2b46;
+    --bg-input: #121827;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-faint: #64748b;
+
+    --border: #1e293b;
+    --border-subtle: #141d2f;
+    --border-strong: #334155;
+
     --accent: #3b82f6;
     --accent-hover: #2563eb;
-    --glow-blue: rgba(37, 99, 235, 0.14);
-    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    --hero-overlay: linear-gradient(to top, #171717, transparent);
+    --accent-glow: rgba(59, 130, 246, 0.15);
+
+    --color-democratic-blue: #2563eb;
+    --color-democratic-blue-light: #60a5fa;
+    --color-historical-brown: #54331a;
+    --color-historical-brown-light: #9a5b2d;
+
+    --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.25);
+    --card-shadow-hover: 0 10px 30px -4px rgba(0, 0, 0, 0.5), 0 4px 12px -2px rgba(0, 0, 0, 0.35);
   }
 
   .light-theme {
     color-scheme: light;
 
-    --bg-primary: #f8fafc;
-    --bg-secondary: #ffffff;
+    /* Light Mode: Prestige Broadsheet / Newspaper Ink & Paper */
+    --bg-primary: #fbfbfd;
+    --bg-secondary: #f3f5f9;
     --bg-card: #ffffff;
-    --bg-card-hover: #f1f5f9;
-    --bg-nav: rgba(255, 255, 255, 0.85);
-    --bg-hover: #f1f5f9;
+    --bg-card-hover: #f8fafc;
+    --bg-elevated: #ffffff;
+    --bg-nav: rgba(251, 251, 253, 0.92);
+    --bg-hover: #eef2f6;
     --bg-input: #f1f5f9;
-    --text-primary: #0f172a;
+
+    --text-primary: #090d16;
     --text-secondary: #334155;
     --text-muted: #64748b;
     --text-faint: #94a3b8;
+
     --border: #e2e8f0;
-    --border-subtle: #f1f5f9;
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
-    --glow-blue: rgba(37, 99, 235, 0.06);
-    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
-    --hero-overlay: linear-gradient(to top, #f8fafc, transparent);
+    --border-subtle: #edf2f7;
+    --border-strong: #cbd5e1;
+
+    --accent: #1d4ed8;
+    --accent-hover: #1e40af;
+    --accent-glow: rgba(29, 78, 216, 0.08);
+
+    --color-democratic-blue: #1d4ed8;
+    --color-democratic-blue-light: #2563eb;
+    --color-historical-brown: #54331a;
+    --color-historical-brown-light: #7c441f;
+
+    --card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 1px 4px -1px rgba(15, 23, 42, 0.04);
+    --card-shadow-hover: 0 12px 32px -4px rgba(15, 23, 42, 0.1), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
   }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
   html {
     scroll-behavior: smooth;
     background-color: var(--bg-primary);
   }
 
+  body {
+    min-width: 320px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.025em;
   }
 
   html,
   body,
   #root {
     min-height: 100%;
-  }
-
-  body {
-    min-width: 320px;
-    background:
-      radial-gradient(circle at top, var(--glow-blue), transparent 32%),
-      var(--bg-primary);
-    color: var(--text-primary);
   }
 
   a {
@@ -179,97 +191,59 @@
   }
 }
 
-/* ── Light theme overrides for Tailwind utility classes ── */
-
-.light-theme .bg-neutral-950 { background-color: #f8fafc; }
-.light-theme .bg-neutral-900 { background-color: #f1f5f9; }
-.light-theme .bg-neutral-900\/80 { background-color: rgba(241, 245, 249, 0.8); }
-.light-theme .bg-neutral-900\/70 { background-color: rgba(241, 245, 249, 0.7); }
-.light-theme .bg-neutral-900\/60 { background-color: rgba(241, 245, 249, 0.6); }
-.light-theme .bg-neutral-900\/50 { background-color: rgba(241, 245, 249, 0.5); }
-.light-theme .bg-neutral-900\/30 { background-color: rgba(241, 245, 249, 0.62); }
-.light-theme .bg-neutral-900\/20 { background-color: rgba(248, 250, 252, 0.9); }
-.light-theme .bg-neutral-900\/10 { background-color: rgba(248, 250, 252, 0.96); }
-.light-theme .bg-neutral-900\/40 { background-color: rgba(255, 255, 255, 0.94); }
+/* ── Light-theme compatibility aliases ── */
+.light-theme .bg-neutral-950 { background-color: var(--bg-card); }
+.light-theme .bg-neutral-900 { background-color: var(--bg-secondary); }
+.light-theme .bg-neutral-900\/80 { background-color: rgba(243, 245, 249, 0.85); }
+.light-theme .bg-neutral-900\/70 { background-color: rgba(243, 245, 249, 0.75); }
+.light-theme .bg-neutral-900\/60 { background-color: rgba(243, 245, 249, 0.65); }
+.light-theme .bg-neutral-900\/50 { background-color: rgba(243, 245, 249, 0.55); }
+.light-theme .bg-neutral-900\/30 { background-color: rgba(243, 245, 249, 0.6); }
+.light-theme .bg-neutral-900\/20 { background-color: rgba(243, 245, 249, 0.8); }
+.light-theme .bg-neutral-900\/10 { background-color: rgba(243, 245, 249, 0.9); }
+.light-theme .bg-neutral-900\/40 { background-color: rgba(255, 255, 255, 0.95); }
 .light-theme .bg-neutral-800 { background-color: #e2e8f0; }
-.light-theme .bg-neutral-950\/80 { background-color: rgba(248, 250, 252, 0.8); }
-.light-theme .bg-neutral-950\/85 { background-color: rgba(248, 250, 252, 0.9); }
-.light-theme .bg-neutral-950\/90 { background-color: rgba(248, 250, 252, 0.9); }
-.light-theme .bg-neutral-950\/15 { background-color: rgba(248, 250, 252, 0.15); }
-.light-theme .bg-neutral-950\/40 { background-color: rgba(248, 250, 252, 0.4); }
+.light-theme .bg-neutral-950\/80 { background-color: rgba(255, 255, 255, 0.9); }
+.light-theme .bg-neutral-950\/85 { background-color: rgba(255, 255, 255, 0.92); }
+.light-theme .bg-neutral-950\/90 { background-color: rgba(255, 255, 255, 0.95); }
 
-.light-theme .text-white { color: #0f172a; }
-.light-theme .text-neutral-100 { color: #0f172a; }
+.light-theme .text-white { color: #090d16; }
+.light-theme .text-neutral-100 { color: #090d16; }
 .light-theme .text-neutral-200 { color: #1e293b; }
 .light-theme .text-neutral-300 { color: #334155; }
-.light-theme .text-neutral-400 { color: #3f4f63; }
-.light-theme .text-neutral-500 { color: #475569; }
-.light-theme .text-neutral-600 { color: #526176; }
+.light-theme .text-neutral-400 { color: #475569; }
+.light-theme .text-neutral-500 { color: #64748b; }
+.light-theme .text-neutral-600 { color: #94a3b8; }
 
 .light-theme .border-neutral-700 { border-color: #cbd5e1; }
 .light-theme .border-neutral-800 { border-color: #e2e8f0; }
-.light-theme .border-neutral-800\/80 { border-color: rgba(226, 232, 240, 0.8); }
+.light-theme .border-neutral-800\/80 { border-color: rgba(226, 232, 240, 0.85); }
+.light-theme .border-neutral-800\/60 { border-color: rgba(226, 232, 240, 0.65); }
+.light-theme .border-neutral-800\/30 { border-color: rgba(226, 232, 240, 0.4); }
 
-.light-theme .shadow-xl { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); }
-.light-theme .shadow-2xl { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); }
-
-/* Blue accent adjustments in light mode */
-.light-theme .bg-blue-500\/10 { background-color: rgba(37, 99, 235, 0.08); }
-.light-theme .bg-blue-500\/20 { background-color: rgba(37, 99, 235, 0.1); }
-.light-theme .bg-blue-600\/10 { background-color: rgba(37, 99, 235, 0.08); }
-.light-theme .bg-blue-950\/20 { background-color: rgba(37, 99, 235, 0.06); }
 .light-theme .text-blue-300 { color: #2563eb; }
 .light-theme .text-blue-400 { color: #1d4ed8; }
-.light-theme .border-blue-500\/20 { border-color: rgba(37, 99, 235, 0.15); }
-.light-theme .border-blue-500\/30 { border-color: rgba(37, 99, 235, 0.2); }
-.light-theme .border-blue-500\/40 { border-color: rgba(37, 99, 235, 0.25); }
-.light-theme .border-blue-800\/40 { border-color: rgba(37, 99, 235, 0.15); }
-
-/* Amber/brown adjustments in light mode */
-.light-theme .text-amber-300 { color: #b45309; }
-.light-theme .text-amber-400 { color: #b45309; }
-.light-theme .text-amber-500 { color: #92400e; }
-.light-theme .border-amber-500\/30 { border-color: rgba(180, 83, 9, 0.2); }
-.light-theme .bg-amber-900 { background-color: #92400e; }
-.light-theme .bg-amber-950\/40 { background-color: rgba(146, 64, 14, 0.08); }
-.light-theme .bg-amber-900\/20 { background-color: rgba(146, 64, 14, 0.06); }
-
-/* Emerald adjustments in light mode */
-.light-theme .text-emerald-300 { color: #047857; }
-.light-theme .text-emerald-400 { color: #047857; }
-.light-theme .text-emerald-400\/70 { color: rgba(4, 120, 87, 0.9); }
-.light-theme .border-emerald-500\/20 { border-color: rgba(5, 150, 105, 0.15); }
-.light-theme .bg-emerald-950\/20 { background-color: rgba(5, 150, 105, 0.06); }
-
-/* Red adjustments */
-.light-theme .text-red-400 { color: #dc2626; }
-.light-theme .border-red-500\/20 { border-color: rgba(220, 38, 38, 0.15); }
-.light-theme .border-red-500\/30 { border-color: rgba(220, 38, 38, 0.2); }
-.light-theme .bg-red-500\/10 { background-color: rgba(220, 38, 38, 0.08); }
-
-/* Gradient overrides */
-.light-theme .from-blue-900\/40 { --tw-gradient-from: rgba(37, 99, 235, 0.06); }
-.light-theme .to-blue-950\/60 { --tw-gradient-to: rgba(37, 99, 235, 0.04); }
-.light-theme .from-blue-950\/40 { --tw-gradient-from: rgba(37, 99, 235, 0.04); }
-.light-theme .via-neutral-950 { --tw-gradient-via: #f8fafc; }
-.light-theme .bg-linear-to-t.from-neutral-900 { --tw-gradient-from: #f8fafc; }
-
-.light-theme .bg-cyan-400 { background-color: #06b6d4; }
-.light-theme .text-cyan-400 { color: #0e7490; }
-
-/* Keep text white on blue backgrounds in light mode */
 .light-theme .bg-blue-600,
 .light-theme .bg-blue-600 *,
 .light-theme .bg-blue-600.text-white,
 .light-theme .bg-blue-600 .text-white,
-.light-theme .bg-blue-600.text-blue-100,
-.light-theme .bg-blue-600 .text-blue-100,
 .light-theme .hover\:bg-blue-500:hover,
 .light-theme .hover\:bg-blue-500:hover * {
   color: #ffffff !important;
 }
 
-/* Dream Scenario Banner in Light Mode */
+/* Ensure CDU bar stays black when switched to light theme */
+.light-theme .cdu-bar {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+/* Dream Scenario Banner */
+.dream-banner {
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.04) 50%, rgba(16, 185, 129, 0.08) 100%);
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
 .light-theme .dream-banner {
   background: linear-gradient(90deg, rgba(217, 119, 6, 0.08) 0%, rgba(217, 119, 6, 0.04) 50%, rgba(217, 119, 6, 0.08) 100%) !important;
   border-color: rgba(217, 119, 6, 0.25) !important;
@@ -283,240 +257,7 @@
   color: #b45309 !important;
 }
 
-/* Ensure CDU bar stays black when switched to light theme */
-.light-theme .cdu-bar {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
-}
-
-/* Rose adjustments in light mode */
-.light-theme .text-rose-400 { color: #be123c; }
-.light-theme .border-rose-500\/20 { border-color: rgba(190, 18, 60, 0.15); }
-.light-theme .bg-rose-500\/10 { background-color: rgba(190, 18, 60, 0.06); }
-
-/* Lime adjustments in light mode */
-.light-theme .text-lime-400 { color: #4d7c0f; }
-.light-theme .border-lime-500\/20 { border-color: rgba(77, 124, 15, 0.15); }
-.light-theme .bg-lime-500\/10 { background-color: rgba(77, 124, 15, 0.06); }
-
-/* Teal adjustments in light mode */
-.light-theme .text-teal-400 { color: #0f766e; }
-.light-theme .border-teal-500\/20 { border-color: rgba(15, 118, 110, 0.15); }
-.light-theme .bg-teal-500\/10 { background-color: rgba(15, 118, 110, 0.06); }
-
-/* Additional background adjustments for other colors */
-.light-theme .bg-emerald-500\/10 { background-color: rgba(5, 150, 105, 0.06); }
-.light-theme .bg-amber-500\/10 { background-color: rgba(180, 83, 9, 0.06); }
-.light-theme .bg-lime-500\/10 { background-color: rgba(77, 124, 15, 0.06); }
-.light-theme .bg-teal-500\/10 { background-color: rgba(15, 118, 110, 0.06); }
-
-/* ── Hero Fullscreen Landing ── */
-
-/* Force white text on campaign slide (always over dark image) */
-.light-theme .hero-slide-campaign,
-.light-theme .hero-slide-campaign .text-white,
-.light-theme .hero-slide-campaign .text-neutral-300,
-.light-theme .hero-slide-campaign .text-blue-400,
-.light-theme .hero-slide-campaign .text-blue-300 {
-  color: inherit;
-}
-
-.hero-slide-campaign .text-white,
-.hero-slide-campaign h1,
-.hero-slide-campaign strong {
-  color: #ffffff !important;
-}
-
-.hero-slide-campaign .text-blue-400,
-.hero-slide-campaign .text-blue-300 {
-  color: #60a5fa !important;
-}
-
-.light-theme .hero-slide-campaign span.text-white\/80,
-.hero-slide-campaign .text-white\/80 {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-/* Hero gradient overlay — darkens top/bottom of the photo so badge, headline
-   and footer content stay readable while keeping the center clear */
-.hero-gradient-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0.2) 60%,
-    rgba(0, 0, 0, 0.75) 100%
-  );
-}
-
-/* Hero badge — dark chip + brighter blue for strong contrast over the image */
-.hero-slide-campaign .hero-badge {
-  background-color: rgba(8, 20, 45, 0.65) !important;
-  border-color: rgba(147, 197, 253, 0.45) !important;
-}
-
-.hero-slide-campaign .hero-badge,
-.hero-slide-campaign .hero-badge svg {
-  color: #bfdbfe !important;
-}
-
-/* Hero subheadline — brighter blue + dark chip for strong contrast over the image */
-.hero-slide-campaign .hero-subheadline {
-  color: #bfdbfe !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-/* Hero body description — translucent backdrop for legibility over the image */
-.hero-text-description {
-  background-color: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(4px);
-}
-
-.light-theme .hero-text-description {
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-/* Nav chevrons & dots always white-on-dark on hero regardless of theme */
-.light-theme .hero-fullscreen button[aria-label="Previous Slide"],
-.light-theme .hero-fullscreen button[aria-label="Next Slide"] {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.light-theme .hero-fullscreen button[aria-label="Previous Slide"]:hover,
-.light-theme .hero-fullscreen button[aria-label="Next Slide"]:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-}
-
-/* News slide overlay */
-.hero-news-slide {
-  background: rgba(10, 10, 10, 0.55);
-}
-
-.light-theme .hero-news-slide {
-  background: rgba(248, 250, 252, 0.55);
-}
-
-/* Date label */
-.hero-news-date {
-  color: #a3a3a3;
-}
-
-.light-theme .hero-news-date {
-  color: #475569;
-}
-
-/* Footer separator border */
-.hero-news-footer-border {
-  border-color: rgba(38, 38, 38, 0.6);
-}
-
-.light-theme .hero-news-footer-border {
-  border-color: rgba(148, 163, 184, 0.35);
-}
-
-/* Footer label */
-.hero-news-footer-label {
-  color: #a3a3a3;
-}
-
-.light-theme .hero-news-footer-label {
-  color: #64748b;
-}
-
-/* Outbound link buttons */
-.hero-news-link {
-  background-color: #262626;
-  color: #d4d4d4;
-  border: 1px solid rgba(64, 64, 64, 0.5);
-}
-
-.hero-news-link:hover {
-  background-color: #404040;
-  color: #ffffff;
-}
-
-.light-theme .hero-news-link {
-  background-color: rgba(30, 41, 59, 0.08);
-  color: #334155;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-}
-
-.light-theme .hero-news-link:hover {
-  background-color: rgba(30, 41, 59, 0.15);
-  color: #0f172a;
-  border-color: rgba(37, 99, 235, 0.3);
-}
-
-/* Light mode: make news slide text high contrast */
-.light-theme .hero-news-slide .text-white { color: #0f172a; }
-.light-theme .hero-news-slide .text-neutral-300 { color: #334155; }
-.light-theme .hero-news-slide .text-neutral-200 { color: #1e293b; }
-
-/* Light mode gradient on slide 0 */
-.light-theme .bg-linear-to-t.from-neutral-900 {
-  --tw-gradient-from: rgba(248, 250, 252, 0.9);
-}
-
-/* Neutral-700 dot indicators in light mode */
-.light-theme .bg-neutral-700 { background-color: #94a3b8; }
-.light-theme .hover\:bg-neutral-600:hover { background-color: #64748b; }
-
-/* Light-mode nav chevrons */
-.light-theme .bg-neutral-950\/70 {
-  background-color: rgba(248, 250, 252, 0.85);
-}
-
-.light-theme .hover\:bg-neutral-900:hover {
-  background-color: #e2e8f0;
-}
-
-.light-theme .hover\:bg-neutral-900\/60:hover {
-  background-color: rgba(226, 232, 240, 0.8);
-}
-
-.light-theme .hover\:bg-neutral-900\/50:hover {
-  background-color: rgba(226, 232, 240, 0.76);
-}
-
-.light-theme .hover\:bg-neutral-900\/40:hover {
-  background-color: rgba(226, 232, 240, 0.7);
-}
-
-.light-theme .border-neutral-800\/30 {
-  border-color: rgba(226, 232, 240, 0.5);
-}
-
-.light-theme .border-neutral-800\/60 {
-  border-color: rgba(203, 213, 225, 0.5);
-}
-
-.light-theme .border-neutral-700\/50 {
-  border-color: rgba(203, 213, 225, 0.5);
-}
-
-@layer utilities {
-  .animate-float { animation: floatSubtle 6s ease-in-out infinite; }
-  .animate-pulse-glow { animation: pulseGlow 8s ease-in-out infinite; }
-}
-
-.shimmer-bg {
-  background: linear-gradient(90deg, rgba(37,99,235,0.1) 25%, rgba(59,130,246,0.2) 50%, rgba(37,99,235,0.1) 75%);
-  background-size: 200% 100%;
-  animation: shimmer 2.5s infinite linear;
-}
-.rain-drop {
-  position: absolute;
-  width: 2px;
-  height: 15px;
-  background: linear-gradient(transparent, #3b82f6);
-  opacity: 0;
-  animation: rainFall 2s infinite linear;
-}
-
-/* Rainbow bar for "All Others" comparison */
+/* ── Interactive Bar Chart Rainbow & Animations ── */
 @keyframes rainbowShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -526,7 +267,7 @@
 @keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -573,62 +314,144 @@
 }
 
 .animate-in {
-  animation: slideInUp 0.5s ease-out;
+  animation: slideInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Active state classes for sandbox buttons */
 .active-btn-default {
   background-color: rgba(6, 182, 212, 0.1);
   border-color: rgba(6, 182, 212, 0.5);
-  color: #0891b2; /* cyan-600 */
+  color: #0891b2;
 }
 .light-theme .active-btn-default {
   background-color: rgba(6, 182, 212, 0.08);
   border-color: rgba(6, 182, 212, 0.4);
-  color: #0e7490; /* cyan-700 */
+  color: #0e7490;
 }
 
 .active-btn-brown {
   background-color: rgba(180, 83, 9, 0.1);
   border-color: rgba(180, 83, 9, 0.5);
-  color: #b45309; /* amber-700 */
+  color: #b45309;
 }
 .light-theme .active-btn-brown {
   background-color: rgba(180, 83, 9, 0.08);
   border-color: rgba(180, 83, 9, 0.4);
-  color: #9a3412; /* amber-800 */
+  color: #9a3412;
 }
 
 .active-btn-dream {
   background-color: rgba(16, 185, 129, 0.1);
   border-color: rgba(16, 185, 129, 0.5);
-  color: #059669; /* emerald-600 */
+  color: #059669;
 }
 .light-theme .active-btn-dream {
   background-color: rgba(16, 185, 129, 0.08);
   border-color: rgba(16, 185, 129, 0.4);
-  color: #047857; /* emerald-700 */
+  color: #047857;
 }
 
-/* ── SVG Text & Fill Theme Support ── */
+/* SVG Chart Typography & Fills */
 .svg-text-primary { fill: var(--text-primary) !important; }
 .svg-text-secondary { fill: var(--text-secondary) !important; }
 .svg-text-muted { fill: var(--text-muted) !important; }
-
 .svg-text-red { fill: #f87171; }
 .light-theme .svg-text-red { fill: #b91c1c !important; }
-
 .svg-text-amber { fill: #fbbf24; }
 .light-theme .svg-text-amber { fill: #b45309 !important; }
 
 .svg-bg-red-pill { fill: rgba(127, 29, 29, 0.9); stroke: rgba(239, 68, 68, 0.3); }
 .light-theme .svg-bg-red-pill { fill: rgba(239, 68, 68, 0.12) !important; stroke: rgba(239, 68, 68, 0.3) !important; }
+.light-theme svg line[stroke="#1f2937"] { stroke: #cbd5e1 !important; }
+.light-theme svg line[stroke="#374151"] { stroke: #e2e8f0 !important; }
 
-.light-theme svg line[stroke="#1f2937"] {
-  stroke: #cbd5e1 !important;
+/* ── Custom Swiss / Broadsheet Editorial Architecture ── */
+
+/* Remove generic floating card look in favor of architectural canvas structure */
+.editorial-canvas {
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
-.light-theme svg line[stroke="#374151"] {
-  stroke: #e2e8f0 !important;
+.editorial-panel {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.editorial-panel:hover {
+  border-color: var(--border-strong);
+}
+
+.editorial-kicker {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.editorial-headline {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.editorial-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.editorial-hairline {
+  border-color: var(--border);
+}
+
+.editorial-numeral {
+  font-family: 'Outfit', -apple-system, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+/* Chromatic confrontation poster blocks */
+.chromatic-blue-block {
+  background-color: #003399;
+  color: #ffffff;
+}
+.light-theme .chromatic-blue-block {
+  background-color: #003399;
+  color: #ffffff;
+}
+
+.chromatic-brown-block {
+  background-color: #3b2210;
+  color: #fed7aa;
+}
+.light-theme .chromatic-brown-block {
+  background-color: #4a2810;
+  color: #ffedd5;
+}
+
+/* Tabular editorial dividers */
+.editorial-divide-y > * + * {
+  border-top: 1px solid var(--border);
+}
+
+.editorial-divide-x > * + * {
+  border-left: 1px solid var(--border);
+}
+
+/* Compatibility alias for any lingering reference */
+.editorial-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
 }
 

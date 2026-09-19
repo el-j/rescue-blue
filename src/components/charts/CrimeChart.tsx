@@ -37,37 +37,37 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
   return (
     <div className="space-y-4 w-full">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+        <h4 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] font-mono">
           {ui.pmkChartTitle}
         </h4>
         {/* Crime 3-state toggle controls */}
-        <div className="inline-flex rounded-lg bg-neutral-900 p-0.5 border border-neutral-800 shrink-0">
+        <div className="inline-flex border border-[var(--border)] bg-[var(--bg-secondary)] p-0.5 shrink-0 font-mono text-xs">
           <button
             onClick={() => setCrimeToggle('all')}
-            className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all cursor-pointer ${
+            className={`px-2.5 py-1 text-[10px] font-bold transition-all cursor-pointer ${
               crimeToggle === 'all'
-                ? 'bg-red-500/10 text-red-400 border border-red-500/10'
-                : 'text-neutral-500 hover:text-neutral-300 border border-transparent'
+                ? 'bg-[var(--bg-primary)] text-rose-600 dark:text-rose-400 border border-[var(--border)]'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
             }`}
           >
             {ui.pmkCrimes}
           </button>
           <button
             onClick={() => setCrimeToggle('violent')}
-            className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all cursor-pointer ${
+            className={`px-2.5 py-1 text-[10px] font-bold transition-all cursor-pointer ${
               crimeToggle === 'violent'
-                ? 'bg-red-500/10 text-red-400 border border-red-500/10'
-                : 'text-neutral-500 hover:text-neutral-300 border border-transparent'
+                ? 'bg-[var(--bg-primary)] text-rose-600 dark:text-rose-400 border border-[var(--border)]'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
             }`}
           >
             {ui.pmkViolent}
           </button>
           <button
             onClick={() => setCrimeToggle('hate')}
-            className={`px-2.5 py-1 rounded-md text-[10px] font-bold transition-all cursor-pointer ${
+            className={`px-2.5 py-1 text-[10px] font-bold transition-all cursor-pointer ${
               crimeToggle === 'hate'
-                ? 'bg-red-500/10 text-red-400 border border-red-500/10'
-                : 'text-neutral-500 hover:text-neutral-300 border border-transparent'
+                ? 'bg-[var(--bg-primary)] text-rose-600 dark:text-rose-400 border border-[var(--border)]'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
             }`}
           >
             {ui.pmkHate}
@@ -75,12 +75,12 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
         </div>
       </div>
 
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
+      <div className="relative w-full h-[220px] border border-[var(--border)] bg-[var(--bg-secondary)] p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Horizontal Grid lines */}
-          <line x1="50" y1="20" x2="350" y2="20" stroke="#1f2937" strokeDasharray="3 3" />
-          <line x1="50" y1="90" x2="350" y2="90" stroke="#1f2937" strokeDasharray="3 3" />
-          <line x1="50" y1="160" x2="350" y2="160" stroke="#374151" />
+          <line x1="50" y1="20" x2="350" y2="20" stroke="#cbd5e1" strokeDasharray="3 3" />
+          <line x1="50" y1="90" x2="350" y2="90" stroke="#cbd5e1" strokeDasharray="3 3" />
+          <line x1="50" y1="160" x2="350" y2="160" stroke="#94a3b8" />
 
           {/* Y Axis scale indicators */}
           <text x="10" y="24" className="text-[9px] svg-text-muted font-semibold">
@@ -97,8 +97,7 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
             y={160 - rightHeight} 
             width="70" 
             height={rightHeight} 
-            className="fill-red-500" 
-            rx="4" 
+            className="fill-red-600" 
           />
           <text 
             x="125" 
@@ -118,8 +117,7 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
             y={160 - leftHeight} 
             width="70" 
             height={leftHeight} 
-            className="fill-neutral-600/80" 
-            rx="4" 
+            className="fill-slate-500 dark:fill-neutral-600" 
           />
           <text 
             x="275" 
@@ -135,7 +133,7 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
         </svg>
       </div>
       
-      <p className="text-[10px] text-neutral-500 leading-relaxed text-center">
+      <p className="text-[10px] text-[var(--text-muted)] leading-relaxed text-center">
         {crimeToggle === 'violent'
           ? (lang === 'de' 
               ? "* Gewalttaten (2025): Rechts motivierte Gewaltdelikte lagen bei 1.598 Delikten, das ist 1,47-mal so häufig wie linksextrem motivierte Gewalttaten (1.087 Delikte)."

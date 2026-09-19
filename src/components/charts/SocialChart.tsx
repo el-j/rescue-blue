@@ -10,7 +10,7 @@ export function SocialChart({ ui }: SocialChartProps) {
       <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 text-center">
         {ui.diwChartTitle}
       </h4>
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
+      <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Horizontal Grid lines */}
           <line x1="30" y1="30" x2="380" y2="30" stroke="#1f2937" strokeDasharray="3 3" />

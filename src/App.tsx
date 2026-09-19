@@ -203,8 +203,7 @@ export default function App({ initialLang }: AppProps = {}) {
   }
 
   return (
-    <div className="min-h-screen bg-(--bg-primary) text-(--text-primary) antialiased" style={{ WebkitFontSmoothing: 'antialiased' }}>
-      <div className="pointer-events-none fixed top-0 left-1/2 h-112.5 w-full max-w-7xl -translate-x-1/2 rounded-full bg-blue-500/10 blur-[150px] animate-pulse-glow" />
+    <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-blue-500/20 selection:text-blue-500">
 
       <SiteHeader
         lang={lang}

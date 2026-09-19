@@ -1,4 +1,4 @@
-import { ExternalLink, Users } from 'lucide-react'
+import { ArrowUpRight, CheckCircle2, ShieldCheck, Users } from 'lucide-react'
 import { PETITION_URL } from '../petition'
 import type { Facts, Translation } from '../i18n'
 
@@ -15,55 +15,79 @@ interface SidebarProps {
 export function SidebarPanels({ t, ctaLabel, ctaBody, formattedSignatureCount, isLoadingSignatures, facts, onCtaClick }: SidebarProps) {
   return (
     <aside className="space-y-6 lg:col-span-4 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pr-0.5">
-      <div className="rounded-2xl border border-blue-800/40 bg-linear-to-br from-blue-900/40 to-blue-950/60 p-6 shadow-xl">
-        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/20">
-          <span className="text-2xl">✍️</span>
+      {/* Primary Action Docket */}
+      <div className="border border-[var(--border)] bg-[var(--bg-secondary)] p-6 border-t-2 border-t-blue-600">
+        <div className="flex items-center justify-between gap-2 mb-3">
+          <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+            <ShieldCheck size={14} />
+            Bürgerinitiative
+          </span>
+          <span className="text-[10px] font-mono text-[var(--text-muted)]">WeAct / Campact</span>
         </div>
-        <h3 className="mb-2 text-lg font-black tracking-tight text-white uppercase">{t.ctaBanner}</h3>
-        <p className="mb-5 text-sm leading-relaxed text-neutral-400">{ctaBody}</p>
+
+        <h3 className="mb-2 text-xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+          {t.ctaBanner}
+        </h3>
+
+        <p className="mb-5 text-sm leading-relaxed text-[var(--text-secondary)]">
+          {ctaBody}
+        </p>
+
         <a
           href={PETITION_URL}
           target="_blank"
           rel="noopener noreferrer"
           onClick={onCtaClick}
-          className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-500"
+          className="group flex w-full items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3.5 text-sm font-bold uppercase tracking-wider transition-colors active:translate-y-0.5"
         >
-          {ctaLabel} <ExternalLink size={15} />
+          <span>{ctaLabel}</span>
+          <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </a>
-        <p className="mb-3 text-center text-[11px] text-neutral-500">{t.ctaExternalHint}</p>
-        <p className="text-center text-xs text-neutral-600">{t.ctaInfo}</p>
+
+        <div className="mt-3 flex items-center justify-center gap-2 text-[11px] text-[var(--text-muted)]">
+          <CheckCircle2 size={12} className="text-emerald-500" />
+          <span>{t.ctaExternalHint}</span>
+        </div>
+        <p className="mt-2 text-center text-[11px] text-[var(--text-muted)]">{t.ctaInfo}</p>
       </div> 
 
-      <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
-        <div className="mb-3 flex items-center justify-between">
-          <span className="text-sm font-bold text-neutral-300">
+      {/* Official Signature Counter Ticker */}
+      <div className="p-6">
+        <div className="mb-2 flex items-center justify-between">
+          <span className="font-mono text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
             {t.sidebarSignatures}
           </span>
-          <Users size={16} className="text-blue-400" aria-hidden="true" />
+          <Users size={16} className="text-blue-500" aria-hidden="true" />
         </div>
-        <p className="text-3xl font-black text-white" aria-live="polite">
+        <p className="editorial-numeral text-4xl font-extrabold text-[var(--text-primary)]" aria-live="polite">
           {isLoadingSignatures
-            ? <span className="inline-block h-8 w-24 rounded bg-neutral-800 animate-pulse" />
+            ? <span className="inline-block h-9 w-24 bg-[var(--border)] animate-pulse" />
             : (formattedSignatureCount ?? '—')}
         </p>
-        <p className="mt-1 text-xs text-neutral-500">
+        <p className="mt-1 flex items-center gap-1.5 font-mono text-xs text-[var(--text-muted)]">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
           {t.sidebarGrowing}
         </p>
       </div>
 
-      <div className="space-y-4 rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
-        <h4 className="text-sm font-black tracking-wider text-white uppercase">
-          {t.sidebarQuickFacts}
-        </h4>
-        {facts.map((fact, index) => (
-          <div key={index} className="flex items-start gap-3">
-            <span className="mt-0.5 text-xl">{fact.emoji}</span>
-            <div>
-              <p className="text-sm font-bold text-white">{fact.label}</p>
-              <p className="text-xs text-neutral-500">{fact.desc}</p>
+      {/* Editorial Fact Sheet */}
+      <div className="p-6 space-y-4">
+        <div className="border-b border-[var(--border)] pb-3">
+          <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-[var(--text-primary)]">
+            {t.sidebarQuickFacts}
+          </h4>
+        </div>
+        <div className="divide-y divide-[var(--border)]">
+          {facts.map((fact, index) => (
+            <div key={index} className="py-3 first:pt-0 last:pb-0 flex items-start gap-3 text-left">
+              <span className="mt-0.5 text-base shrink-0 select-none">{fact.emoji}</span>
+              <div className="min-w-0">
+                <p className="text-xs font-bold text-[var(--text-primary)] leading-tight">{fact.label}</p>
+                <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-0.5">{fact.desc}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </aside>
   )
