@@ -12,7 +12,7 @@ export function AlliancesChart({ ui, lang }: AlliancesChartProps) {
       <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 text-center">
         {chartTitle}
       </h4>
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
+      <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Connecting lines */}
           {/* Center to ESN */}

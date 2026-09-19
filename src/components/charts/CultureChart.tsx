@@ -10,7 +10,7 @@ export function CultureChart({ ui }: CultureChartProps) {
       <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 text-center">
         {ui.courtDismissalTitle}
       </h4>
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col items-center justify-center">
+      <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col items-center justify-center">
         <svg className="w-40 h-40" viewBox="0 0 120 120">
           {/* Background Ring */}
           <circle cx="60" cy="60" r="45" fill="none" stroke="#1f2937" strokeWidth="9" />

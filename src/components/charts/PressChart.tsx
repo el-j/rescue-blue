@@ -10,7 +10,7 @@ export function PressChart({ ui }: PressChartProps) {
       <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 text-center">
         {ui.pressFreedomTitle}
       </h4>
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
+      <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Horizontal axis grid */}
           <line x1="90" y1="20" x2="90" y2="160" stroke="#374151" />

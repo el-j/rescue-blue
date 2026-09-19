@@ -75,7 +75,7 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
         </div>
       </div>
 
-      <div className="relative w-full h-[220px] bg-neutral-950/40 rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
+      <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Horizontal Grid lines */}
           <line x1="50" y1="20" x2="350" y2="20" stroke="#1f2937" strokeDasharray="3 3" />

@@ -22,14 +22,14 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
           {t.alsoSupportH}
         </h2>
         <p className="mb-8 text-sm text-[var(--text-secondary)] max-w-2xl">{t.alsoSupportSub}</p>
-        <div className="border border-[var(--border)] divide-y sm:divide-y-0 sm:divide-x divide-[var(--border)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-[var(--bg-primary)]">
+        <div className="divide-y sm:divide-y-0 sm:divide-x divide-[var(--border)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-[var(--bg-primary)]">
           {RELATED_PETITIONS.map((petition) => (
             <a
               key={petition.url}
               href={petition.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-5 md:p-6 flex flex-col justify-between transition-colors hover:bg-[var(--bg-secondary)]/60"
+              className="group border border-[var(--border)] p-5 md:p-6 flex flex-col justify-between transition-colors hover:bg-[var(--bg-secondary)]/60"
             >
               <div>
                 <p className="mb-2 text-sm font-bold leading-snug text-[var(--text-primary)] group-hover:text-blue-600 dark:group-hover:text-blue-400">
