@@ -1,4 +1,68 @@
 {
+  "0": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 19.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 27.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 14.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 14.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 12.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 14.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "pollytix",
+    "surveyDate": "2026-09-16",
+    "surveyPeriod": {
+      "start": "2026-09-14",
+      "end": "2026-09-16"
+    },
+    "methodName": "Online",
+    "surveyedPersons": 3113.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Bundestag/",
+    "nameDe": "Bundestag (Deutschland)",
+    "nameEn": "Bundestag (Germany)"
+  },
   "1": {
     "bars": [
       {
@@ -58,7 +122,7 @@
     },
     "methodName": "Online",
     "surveyedPersons": 1017.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Baden-wuerttemberg/",
     "nameDe": "Baden-Württemberg",
     "nameEn": "Baden-Württemberg"
@@ -67,7 +131,7 @@
     "bars": [
       {
         "key": "cdu",
-        "pct": 39.0,
+        "pct": 38.0,
         "labelDe": "CDU/CSU",
         "labelEn": "CDU/CSU",
         "defaultColor": "bg-neutral-950 border border-neutral-700",
@@ -75,7 +139,7 @@
       },
       {
         "key": "afd",
-        "pct": 18.0,
+        "pct": 20.0,
         "labelDe": "AfD",
         "labelEn": "AfD",
         "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
@@ -83,7 +147,7 @@
       },
       {
         "key": "spd",
-        "pct": 7.0,
+        "pct": 6.0,
         "labelDe": "SPD",
         "labelEn": "SPD",
         "defaultColor": "bg-red-600",
@@ -114,15 +178,15 @@
         "isAfd": false
       }
     ],
-    "instituteName": "GMS",
-    "surveyDate": "2026-03-03",
+    "instituteName": "Civey",
+    "surveyDate": "2026-09-12",
     "surveyPeriod": {
-      "start": "2026-02-25",
-      "end": "2026-03-02"
+      "start": "2026-08-27",
+      "end": "2026-09-10"
     },
-    "methodName": "Telefon & Online",
-    "surveyedPersons": 1003.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "methodName": "Online",
+    "surveyedPersons": 5000.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Bayern/",
     "nameDe": "Bayern",
     "nameEn": "Bavaria"
@@ -131,7 +195,7 @@
     "bars": [
       {
         "key": "cdu",
-        "pct": 17.0,
+        "pct": 20.0,
         "labelDe": "CDU/CSU",
         "labelEn": "CDU/CSU",
         "defaultColor": "bg-neutral-950 border border-neutral-700",
@@ -147,7 +211,7 @@
       },
       {
         "key": "spd",
-        "pct": 13.0,
+        "pct": 12.0,
         "labelDe": "SPD",
         "labelEn": "SPD",
         "defaultColor": "bg-red-600",
@@ -155,7 +219,7 @@
       },
       {
         "key": "greens",
-        "pct": 19.0,
+        "pct": 16.0,
         "labelDe": "GRÜNE",
         "labelEn": "GREENS",
         "defaultColor": "bg-green-600",
@@ -163,7 +227,7 @@
       },
       {
         "key": "left",
-        "pct": 20.0,
+        "pct": 21.0,
         "labelDe": "LINKE",
         "labelEn": "LEFT",
         "defaultColor": "bg-pink-600",
@@ -178,15 +242,15 @@
         "isAfd": false
       }
     ],
-    "instituteName": "Infratest dimap",
-    "surveyDate": "2026-07-01",
+    "instituteName": "Civey",
+    "surveyDate": "2026-09-17",
     "surveyPeriod": {
-      "start": "2026-06-25",
-      "end": "2026-06-29"
+      "start": "2026-09-03",
+      "end": "2026-09-17"
     },
-    "methodName": "Telefon & Online",
-    "surveyedPersons": 1165.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "methodName": "Online",
+    "surveyedPersons": 3000.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Berlin/",
     "nameDe": "Berlin",
     "nameEn": "Berlin"
@@ -250,7 +314,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1159.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Brandenburg/",
     "nameDe": "Brandenburg",
     "nameEn": "Brandenburg"
@@ -314,10 +378,266 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1147.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Bremen/",
     "nameDe": "Bremen",
     "nameEn": "Bremen"
+  },
+  "6": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 20.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 10.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 30.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 20.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 12.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 8.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Infratest dimap",
+    "surveyDate": "2026-03-25",
+    "surveyPeriod": {
+      "start": "2026-03-19",
+      "end": "2026-03-23"
+    },
+    "methodName": "Telefon & Online",
+    "surveyedPersons": 1152.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Hamburg/",
+    "nameDe": "Hamburg",
+    "nameEn": "Hamburg"
+  },
+  "7": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 32.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 20.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 16.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 14.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 6.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 12.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Infratest dimap",
+    "surveyDate": "2026-02-02",
+    "surveyPeriod": {
+      "start": "2026-01-26",
+      "end": "2026-01-29"
+    },
+    "methodName": "Telefon & Online",
+    "surveyedPersons": 1148.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Hessen/",
+    "nameDe": "Hessen",
+    "nameEn": "Hesse"
+  },
+  "8": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 6.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 36.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 37.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 5.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 9.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 7.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Forschungsgruppe Wahlen",
+    "surveyDate": "2026-09-17",
+    "surveyPeriod": {
+      "start": "2026-09-14",
+      "end": "2026-09-17"
+    },
+    "methodName": "Telefon & Online",
+    "surveyedPersons": 1395.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Mecklenburg-vorpommern/",
+    "nameDe": "Mecklenburg-Vorpommern",
+    "nameEn": "Mecklenburg-Vorpommern"
+  },
+  "9": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 27.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 21.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 26.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 10.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 7.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 9.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Allensbach",
+    "surveyDate": "2026-02-25",
+    "surveyPeriod": {
+      "start": "2026-01-12",
+      "end": "2026-01-29"
+    },
+    "methodName": "Persönlich & Online",
+    "surveyedPersons": 1064.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Niedersachsen/",
+    "nameDe": "Niedersachsen",
+    "nameEn": "Lower Saxony"
   },
   "10": {
     "bars": [
@@ -378,7 +698,7 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1139.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Nordrhein-westfalen/",
     "nameDe": "Nordrhein-Westfalen",
     "nameEn": "North Rhine-Westphalia"
@@ -387,7 +707,7 @@
     "bars": [
       {
         "key": "cdu",
-        "pct": 29.0,
+        "pct": 28.0,
         "labelDe": "CDU/CSU",
         "labelEn": "CDU/CSU",
         "defaultColor": "bg-neutral-950 border border-neutral-700",
@@ -395,7 +715,7 @@
       },
       {
         "key": "afd",
-        "pct": 19.0,
+        "pct": 24.0,
         "labelDe": "AfD",
         "labelEn": "AfD",
         "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
@@ -403,7 +723,7 @@
       },
       {
         "key": "spd",
-        "pct": 27.0,
+        "pct": 19.0,
         "labelDe": "SPD",
         "labelEn": "SPD",
         "defaultColor": "bg-red-600",
@@ -411,7 +731,7 @@
       },
       {
         "key": "greens",
-        "pct": 9.0,
+        "pct": 11.0,
         "labelDe": "GRÜNE",
         "labelEn": "GREENS",
         "defaultColor": "bg-green-600",
@@ -427,22 +747,22 @@
       },
       {
         "key": "others",
-        "pct": 11.0,
+        "pct": 13.0,
         "labelDe": "Sonstige",
         "labelEn": "Others",
         "defaultColor": "bg-neutral-600",
         "isAfd": false
       }
     ],
-    "instituteName": "Forschungsgruppe Wahlen",
-    "surveyDate": "2026-03-19",
+    "instituteName": "Infratest dimap",
+    "surveyDate": "2026-08-20",
     "surveyPeriod": {
-      "start": "2026-03-18",
-      "end": "2026-03-19"
+      "start": "2026-08-13",
+      "end": "2026-08-18"
     },
     "methodName": "Telefon & Online",
-    "surveyedPersons": 1139.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "surveyedPersons": 1158.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Rheinland-pfalz/",
     "nameDe": "Rheinland-Pfalz",
     "nameEn": "Rhineland-Palatinate"
@@ -506,10 +826,138 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1150.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Saarland/",
     "nameDe": "Saarland",
     "nameEn": "Saarland"
+  },
+  "13": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 29.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 35.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 6.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 6.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 10.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 14.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Civey",
+    "surveyDate": "2026-01-06",
+    "surveyPeriod": {
+      "start": "2025-12-21",
+      "end": "2026-01-04"
+    },
+    "methodName": "Online",
+    "surveyedPersons": 2500.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Sachsen/",
+    "nameDe": "Sachsen",
+    "nameEn": "Saxony"
+  },
+  "14": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 23.0,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 41.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 9.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 6.0,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 12.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 9.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Civey",
+    "surveyDate": "2026-09-03",
+    "surveyPeriod": {
+      "start": "2026-08-20",
+      "end": "2026-09-03"
+    },
+    "methodName": "Online",
+    "surveyedPersons": 1500.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Sachsen-anhalt/",
+    "nameDe": "Sachsen-Anhalt",
+    "nameEn": "Saxony-Anhalt"
   },
   "15": {
     "bars": [
@@ -570,9 +1018,73 @@
     },
     "methodName": "Telefon & Online",
     "surveyedPersons": 1155.0,
-    "apiUpdatedAt": "2026-07-01T19:22:54+02:00",
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
     "sourceUrl": "https://dawum.de/Schleswig-holstein/",
     "nameDe": "Schleswig-Holstein",
     "nameEn": "Schleswig-Holstein"
+  },
+  "16": {
+    "bars": [
+      {
+        "key": "cdu",
+        "pct": 22.5,
+        "labelDe": "CDU/CSU",
+        "labelEn": "CDU/CSU",
+        "defaultColor": "bg-neutral-950 border border-neutral-700",
+        "isAfd": false
+      },
+      {
+        "key": "afd",
+        "pct": 31.0,
+        "labelDe": "AfD",
+        "labelEn": "AfD",
+        "defaultColor": "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20",
+        "isAfd": true
+      },
+      {
+        "key": "spd",
+        "pct": 5.0,
+        "labelDe": "SPD",
+        "labelEn": "SPD",
+        "defaultColor": "bg-red-600",
+        "isAfd": false
+      },
+      {
+        "key": "greens",
+        "pct": 2.5,
+        "labelDe": "GRÜNE",
+        "labelEn": "GREENS",
+        "defaultColor": "bg-green-600",
+        "isAfd": false
+      },
+      {
+        "key": "left",
+        "pct": 14.0,
+        "labelDe": "LINKE",
+        "labelEn": "LEFT",
+        "defaultColor": "bg-pink-600",
+        "isAfd": false
+      },
+      {
+        "key": "others",
+        "pct": 25.0,
+        "labelDe": "Sonstige",
+        "labelEn": "Others",
+        "defaultColor": "bg-neutral-600",
+        "isAfd": false
+      }
+    ],
+    "instituteName": "Institut Wahlkreisprognose",
+    "surveyDate": "2024-08-31",
+    "surveyPeriod": {
+      "start": "2024-08-26",
+      "end": "2024-08-31"
+    },
+    "methodName": "Online",
+    "surveyedPersons": 900.0,
+    "apiUpdatedAt": "2026-09-18T21:22:47+02:00",
+    "sourceUrl": "https://dawum.de/Thueringen/",
+    "nameDe": "Thüringen",
+    "nameEn": "Thuringia"
   }
 }
