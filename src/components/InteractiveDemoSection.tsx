@@ -286,7 +286,7 @@ export function InteractiveDemoSection({
   }, [])
 
   return (
-    <section ref={sandboxRef} className="border border-[var(--border)] bg-[var(--bg-primary)] p-6 md:p-8 space-y-6">
+    <section ref={sandboxRef} className="p-6 md:p-8 space-y-6">
       <div>
         <div className="flex items-center justify-between gap-2 mb-2 font-mono text-xs font-bold uppercase tracking-widest">
           <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400">

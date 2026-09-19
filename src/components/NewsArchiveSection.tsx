@@ -59,9 +59,9 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
   }
 
   return (
-    <section className="border border-[var(--border)] bg-[var(--bg-primary)]">
+    <section className="">
       {/* Header Title */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)]">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[var(--border)] p-6 md:p-8">
         <div>
           <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
             <span>DOKUMENTEN-ARCHIV</span>
@@ -85,7 +85,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
               setIsExpanded((prev) => !prev)
               if (!isExpanded) setPage(1)
             }}
-            className="border border-[var(--border)] bg-[var(--bg-primary)] px-3.5 py-1.5 font-mono text-xs font-bold text-[var(--text-primary)] uppercase tracking-wider transition-colors hover:border-blue-600 cursor-pointer"
+            className="px-3.5 py-1.5 font-mono text-xs font-bold text-[var(--text-primary)] uppercase tracking-wider transition-colors hover:border-blue-600 cursor-pointer"
           >
             {isExpanded ? t.archiveCollapse : t.archiveExpand}
           </button>
@@ -214,7 +214,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                     type="button"
                     onClick={() => setPage((p) => Math.max(1, p - 1))}
                     disabled={currentPage === 1}
-                    className="border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-1.5 font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)] disabled:cursor-not-allowed disabled:opacity-40"
+                    className="px-3 py-1.5 font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)] disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     {t.archivePrevPage}
                   </button>
@@ -225,7 +225,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                     type="button"
                     onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                     disabled={currentPage === totalPages}
-                    className="border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-1.5 font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)] disabled:cursor-not-allowed disabled:opacity-40"
+                    className="px-3 py-1.5 font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)] disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     {t.archiveNextPage}
                   </button>

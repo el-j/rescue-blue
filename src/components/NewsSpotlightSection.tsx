@@ -58,7 +58,7 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
               <button
                 type="button"
                 onClick={() => setCurrentIndex((prev) => (prev - 1 + items.length) % items.length)}
-                className="flex h-7 w-7 items-center justify-center border border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
+                className="flex h-7 w-7 items-center justify-center text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
                 aria-label={t.newsPrevLabel}
               >
                 <ChevronLeft size={15} />
@@ -66,7 +66,7 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
               <button
                 type="button"
                 onClick={() => setCurrentIndex((prev) => (prev + 1) % items.length)}
-                className="flex h-7 w-7 items-center justify-center border border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
+                className="flex h-7 w-7 items-center justify-center text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
                 aria-label={t.newsNextLabel}
               >
                 <ChevronRight size={15} />
@@ -105,7 +105,7 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
                 href={src.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex shrink-0 items-center gap-1.5 border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-1 text-xs font-semibold text-[var(--text-secondary)] transition-colors hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400"
+                className="inline-flex shrink-0 items-center gap-1.5 px-3 py-1 text-xs font-semibold text-[var(--text-secondary)] transition-colors hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <span>{src.name}</span>
                 <ExternalLink size={12} />

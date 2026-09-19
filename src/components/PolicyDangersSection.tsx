@@ -142,7 +142,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   }
 
   return (
-    <section id="risiken" className="border border-[var(--border)] bg-[var(--bg-primary)] p-6 md:p-8 space-y-6">
+    <section id="risiken" className="p-6 md:p-8 space-y-6">
       <div className="space-y-6">
         {/* Header */}
         <div className="border-b border-[var(--border)] pb-6 space-y-2">
@@ -280,7 +280,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     href={safeCitationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-1.5 font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-1"
+                    className="inline-flex items-center justify-center gap-1.5 font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors px-3 py-1"
                   >
                     <span>Original</span>
                     <ExternalLink size={10} />
@@ -291,7 +291,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     href={archiveCitationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-1.5 font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-1"
+                    className="inline-flex items-center justify-center gap-1.5 font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors px-3 py-1"
                   >
                     <span>Archive</span>
                     <ExternalLink size={10} />
@@ -401,7 +401,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     href={safeCitationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors border border-[var(--border)] bg-[var(--bg-primary)] py-1.5"
+                    className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors py-1.5"
                   >
                     <span>Original</span>
                     <ExternalLink size={10} />
@@ -412,7 +412,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     href={archiveCitationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors border border-[var(--border)] bg-[var(--bg-primary)] py-1.5"
+                    className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors py-1.5"
                   >
                     <span>Archive</span>
                     <ExternalLink size={10} />

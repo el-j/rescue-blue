@@ -2,9 +2,9 @@ import type { Translation } from '../i18n'
 
 export function WhySection({ t }: { t: Translation }) {
   return (
-    <section id="warum" className="border border-[var(--border)] bg-[var(--bg-primary)]">
+    <section id="warum" className="">
       {/* Section Masthead */}
-      <div className="border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)]">
+      <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
           <span>01 / DOKUMENTATION</span>
         </div>

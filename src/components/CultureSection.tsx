@@ -10,9 +10,9 @@ interface CultureProps {
 
 export function CultureSection({ t, sayings, activeTab, onChangeTab }: CultureProps) {
   return (
-    <section id="kultur" className="border border-[var(--border)] bg-[var(--bg-primary)]">
+    <section id="kultur" className="">
       {/* Section Header with Tabs */}
-      <div className="border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)] flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div className="border-b border-[var(--border)] p-6 md:p-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
             <span>05 / KULTURERBE</span>
@@ -25,7 +25,7 @@ export function CultureSection({ t, sayings, activeTab, onChangeTab }: CulturePr
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex border border-[var(--border)] bg-[var(--bg-primary)] p-0.5 font-mono text-xs">
+        <div className="flex p-0.5 font-mono text-xs">
           <button
             onClick={() => onChangeTab('sprache')}
             className={`px-4 py-1.5 font-bold uppercase tracking-wider transition-colors cursor-pointer ${

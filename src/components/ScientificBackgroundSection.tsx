@@ -9,9 +9,9 @@ interface ScienceProps {
 
 export function ScientificBackgroundSection({ science, openObjection, onToggleObjection }: ScienceProps) {
   return (
-    <section id="hintergrund" className="border border-[var(--border)] bg-[var(--bg-primary)]">
+    <section id="hintergrund" className="">
       {/* Dossier Header */}
-      <div className="border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)]">
+      <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
           <span>04 / WISSENSCHAFTLICHE GRUNDLAGEN</span>
         </div>

@@ -10,9 +10,9 @@ export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionary
   return (
     <section
       id="woerter-bedeutung"
-      className="border border-[var(--border)] bg-[var(--bg-primary)]"
+      className=""
     >
-      <div className="border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)]">
+      <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
           <span>06 / GLOSSAR & SPRACHKRITIK</span>
         </div>

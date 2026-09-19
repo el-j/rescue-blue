@@ -52,7 +52,7 @@ export function SidebarPanels({ t, ctaLabel, ctaBody, formattedSignatureCount, i
       </div> 
 
       {/* Official Signature Counter Ticker */}
-      <div className="border border-[var(--border)] bg-[var(--bg-primary)] p-6">
+      <div className="p-6">
         <div className="mb-2 flex items-center justify-between">
           <span className="font-mono text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
             {t.sidebarSignatures}
@@ -71,7 +71,7 @@ export function SidebarPanels({ t, ctaLabel, ctaBody, formattedSignatureCount, i
       </div>
 
       {/* Editorial Fact Sheet */}
-      <div className="border border-[var(--border)] bg-[var(--bg-primary)] p-6 space-y-4">
+      <div className="p-6 space-y-4">
         <div className="border-b border-[var(--border)] pb-3">
           <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-[var(--text-primary)]">
             {t.sidebarQuickFacts}

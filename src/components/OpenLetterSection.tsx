@@ -13,9 +13,9 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
   const activeMakers = DECISION_MAKERS[activeLetterTarget] || []
 
   return (
-    <section id="brief" className="border border-[var(--border)] bg-[var(--bg-primary)]">
+    <section id="brief" className="">
       {/* Dossier Header */}
-      <div className="border-b border-[var(--border)] p-6 md:p-8 bg-[var(--bg-secondary)]">
+      <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
           <span>07 / BÜRGERBRIEF</span>
         </div>
