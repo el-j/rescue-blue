@@ -28,7 +28,7 @@ The petition is hosted on WeAct/Campact:
 npm install        # install dependencies
 npm run dev        # start dev server at http://localhost:5173/
 npm run build      # production build → dist/
-npm run lint       # ESLint check
+npm run lint       # oxlint check
 npm run preview    # preview production build
 ```
 
