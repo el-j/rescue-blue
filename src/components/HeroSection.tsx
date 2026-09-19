@@ -1,4 +1,4 @@
-import { Shield, Users } from 'lucide-react'
+import { Shield, Users, ArrowUpRight, CheckCircle2, AlertCircle } from 'lucide-react'
 import { PETITION_URL } from '../petition'
 import type { Translation } from '../i18n'
 
@@ -21,7 +21,6 @@ interface HeroProps {
   headline: string
   subline: string
   ctaLabel: string
-  /** Base path (no extension) - responsive variants are named `${base}-${width}.${ext}` */
   heroImageBase: string
   formattedSignatureCount: string | undefined
   isLoadingSignatures: boolean
@@ -29,116 +28,137 @@ interface HeroProps {
   onCtaClick: () => void
 }
 
-const HERO_IMAGE_WIDTHS = [640, 1024, 1536, 1920, 2560]
-
-function buildSrcSet(base: string, ext: string) {
-  return HERO_IMAGE_WIDTHS.map((w) => `${base}-${w}.${ext} ${w}w`).join(', ')
-}
-
 export function HeroSection({
   t,
   headline,
   subline,
   ctaLabel,
-  heroImageBase,
   formattedSignatureCount,
   isLoadingSignatures,
   isLive,
   onCtaClick,
 }: HeroProps) {
   return (
-    <header className="hero-fullscreen relative w-full min-h-screen overflow-hidden">
-      <picture>
-        <source type="image/avif" srcSet={buildSrcSet(heroImageBase, 'avif')} sizes="100vw" />
-        <source type="image/webp" srcSet={buildSrcSet(heroImageBase, 'webp')} sizes="100vw" />
-        <img
-          src={`${heroImageBase}-1920.jpg`}
-          srcSet={buildSrcSet(heroImageBase, 'jpg')}
-          sizes="100vw"
-          alt={t.heroImageAlt}
-          className="absolute inset-0 z-0 h-full w-full object-cover object-center"
-          fetchPriority="high"
-        />
-      </picture>
+    <header className="hero-fullscreen relative w-full pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden border-b border-[var(--border)] bg-gradient-to-b from-[var(--bg-secondary)] to-[var(--bg-primary)]">
+      {/* Subtle editorial watermark lines */}
+      <div className="pointer-events-none absolute inset-0 opacity-[0.03] dark:opacity-[0.05] bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:24px_24px]" />
 
-      <div className="hero-gradient-overlay absolute inset-0 z-[1]" />
+      <div className="relative mx-auto max-w-6xl px-4 md:px-6">
+        {/* Editorial Masthead / Kicker */}
+        <div className="flex flex-col items-center text-center">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-[var(--bg-card)] px-3.5 py-1.5 text-xs font-semibold tracking-wider text-[var(--text-secondary)] uppercase shadow-xs">
+            <Shield size={13} className="text-blue-500 dark:text-blue-400" />
+            <span>{t.badge}</span>
+            <span className="h-1 w-1 rounded-full bg-[var(--border-strong)]" />
+            <span className="font-mono text-[10px] text-[var(--text-muted)]">RETTE-BLAU.DE</span>
+          </div>
 
-      <div className="pointer-events-none absolute inset-0 z-[2] overflow-hidden opacity-30">
-        {[
-          { left: '15%', delay: '0.2s', dur: '1.8s' },
-          { left: '30%', delay: '0.8s', dur: '2.2s' },
-          { left: '45%', delay: '0.4s', dur: '1.5s' },
-          { left: '60%', delay: '1.1s', dur: '2.5s' },
-          { left: '75%', delay: '0.1s', dur: '1.9s' },
-          { left: '90%', delay: '0.6s', dur: '2.1s' },
-        ].map((drop, index) => (
-          <div
-            key={index}
-            className="rain-drop"
-            style={{
-              left: drop.left,
-              animationDelay: drop.delay,
-              animationDuration: drop.dur,
-            }}
-          />
-        ))}
-      </div>
-
-      <div className="hero-slide-campaign absolute inset-0 z-20 flex flex-col items-center justify-between px-4 pt-28 pb-8 text-center sm:pt-32 md:px-8 md:pt-36">
-        <div className="flex flex-col items-center">
-          <span className="hero-badge mb-4 inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-xs font-bold tracking-widest uppercase shadow-lg">
-            <Shield size={12} /> {t.badge}
-          </span>
-          <h1 className="mb-3 text-4xl leading-none font-black tracking-tight text-white uppercase drop-shadow-lg sm:text-5xl lg:text-6xl xl:text-7xl">
+          {/* Main Headline */}
+          <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase sm:text-6xl lg:text-7xl">
             {headline}
           </h1>
-          <p className="hero-subheadline inline-block rounded-lg bg-black/45 px-3 py-1.5 text-base font-black tracking-[0.18em] text-blue-300 uppercase backdrop-blur-sm sm:text-xl lg:text-2xl">
+
+          {/* Subline with Chromatic Accent */}
+          <p className="mt-4 max-w-3xl text-xl font-bold tracking-normal text-blue-600 dark:text-blue-400 sm:text-2xl lg:text-3xl">
             {subline}
+          </p>
+
+          {/* Editorial Lead Paragraph */}
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] sm:text-lg">
+            {t.heroBody}
           </p>
         </div>
 
-        <div className="flex-1" />
+        {/* Chromatic Confrontation: Broadcast Television vs Historical Reality */}
+        <div className="mt-10 mx-auto max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-4 md:p-6 shadow-xl">
+            {/* Status Quo Card: ARD / ZDF Euphemism */}
+            <div className="flex flex-col justify-between rounded-xl border border-blue-500/20 bg-blue-500/5 p-5">
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                    <span className="h-2 w-2 rounded-full bg-blue-500" />
+                    Status Quo in ARD & ZDF
+                  </span>
+                  <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase">Medien-Praxis</span>
+                </div>
+                <div className="h-3 w-full rounded-full bg-blue-600 mb-3" />
+                <h2 className="text-base font-bold text-[var(--text-primary)]">
+                  AfD als friedliches „Blau“
+                </h2>
+                <p className="mt-1.5 text-xs leading-relaxed text-[var(--text-muted)]">
+                  Blau signalisiert Ruhe, Europa, Frieden und Seriosität. Durch diese Farbwahl wird rechtsextreme Ideologie visuell verharmlost und normalisiert.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-blue-500/15 flex items-center gap-1.5 text-[11px] font-semibold text-rose-500 dark:text-rose-400">
+                <AlertCircle size={13} />
+                <span>Fatale psychologische Verharmlosung</span>
+              </div>
+            </div>
 
-        <div className="flex w-full max-w-4xl flex-col items-center gap-3">
-          <p className="hero-text-description mx-auto max-w-3xl rounded-2xl px-4 py-2.5 text-xs leading-relaxed text-white/90 sm:text-sm md:text-base">
-            {t.heroBody}
-          </p>
-
-          <div className="flex justify-center">
-            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 rounded-2xl border border-white/15 bg-black/35 px-4 py-2.5 text-xs font-semibold shadow-xl backdrop-blur-md md:rounded-full md:px-5 md:text-sm">
-              <Users size={16} className="animate-pulse text-blue-400" />
-              <span className="text-center text-white/80">
-                {t.sigCount}{' '}
-                <strong className="text-base font-black text-white md:text-lg">
-                  {isLoadingSignatures ? (
-                    <span className="inline-block h-5 w-12 animate-pulse rounded bg-white/20 align-middle" />
-                  ) : (
-                    formattedSignatureCount ?? '-'
-                  )}
-                </strong>{' '}
-                {t.sigSupport}
-              </span>
-              <span className="flex items-center gap-1 rounded border border-blue-400/30 bg-blue-500/15 px-2 py-0.5 text-[10px] font-bold text-blue-300 uppercase">
-                <span className={`h-1.5 w-1.5 rounded-full bg-emerald-400 ${isLive ? 'animate-ping' : ''}`} />
-                {isLive ? t.sigLive : t.sigFallback}
-              </span>
+            {/* Demand Card: Accurate Historical Color */}
+            <div className="flex flex-col justify-between rounded-xl border border-amber-800/30 bg-amber-950/15 p-5">
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+                    <span className="h-2 w-2 rounded-full bg-[#54331a]" />
+                    {t.heroImgText1 || 'Historische Richtigkeit'}
+                  </span>
+                  <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase">Forderung</span>
+                </div>
+                <div className="h-3 w-full rounded-full bg-[#54331a] mb-3" />
+                <h2 className="text-base font-bold text-[var(--text-primary)]">
+                  Braun für völkischen Nationalismus
+                </h2>
+                <p className="mt-1.5 text-xs leading-relaxed text-[var(--text-muted)]">
+                  Braun ist im kollektiven Gedächtnis die unmissverständliche Farbe des Rechtsextremismus. Diagramme müssen diese politische Realität ehrlich widerspiegeln.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-amber-800/20 flex items-center gap-1.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+                <CheckCircle2 size={13} />
+                <span>Visuelle Medienethik & historische Klarheit</span>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div className="mb-4 flex w-full max-w-[92%] flex-col items-center gap-0.5 sm:max-w-[75%] md:max-w-[55%] lg:max-w-[45%]">
-            <div className="w-full select-none bg-[#3c2415]/90 px-4 py-2 text-center text-[10px] font-extrabold tracking-wider text-white uppercase shadow-lg backdrop-blur-sm xs:text-xs sm:text-sm md:text-base">
-              {t.heroImgText1}
-            </div>
+        {/* Live Counters & High-Conversion Action Bar */}
+        <div className="mt-8 flex flex-col items-center gap-4">
+          {/* Verified Signature Counter Pill */}
+          <div className="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-4 py-2 text-xs font-medium text-[var(--text-secondary)] shadow-sm">
+            <Users size={15} className="text-blue-500 dark:text-blue-400" />
+            <span>
+              {t.sigCount}{' '}
+              <strong className="font-mono text-sm font-bold text-[var(--text-primary)]">
+                {isLoadingSignatures ? (
+                  <span className="inline-block h-4 w-12 animate-pulse rounded bg-[var(--border)] align-middle" />
+                ) : (
+                  formattedSignatureCount ?? '—'
+                )}
+              </strong>{' '}
+              {t.sigSupport}
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
+              <span className={`h-1.5 w-1.5 rounded-full bg-emerald-500 ${isLive ? 'animate-ping' : ''}`} />
+              {isLive ? t.sigLive : t.sigFallback}
+            </span>
+          </div>
+
+          {/* Primary Petition CTA Button */}
+          <div className="w-full max-w-md flex flex-col items-center">
             <a
               href={PETITION_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={onCtaClick}
-              className="pointer-events-auto block w-full bg-[#1a4b7c]/90 px-4 py-2 text-center text-[10px] font-extrabold tracking-wider text-white uppercase shadow-lg transition-all duration-200 backdrop-blur-sm hover:bg-[#2263a5] active:scale-[0.99] xs:text-xs sm:text-sm md:text-base"
+              className="group flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-6 py-3.5 text-center text-sm md:text-base font-bold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all active:scale-[0.99]"
             >
-              {ctaLabel}
+              <span>{ctaLabel}</span>
+              <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-            <p className="mt-1 text-[10px] text-white/70 md:text-xs">{t.ctaExternalHint}</p>
+            <p className="mt-2 text-center text-[11px] text-[var(--text-muted)]">
+              {t.ctaExternalHint} · Kostenlos & unabhängig
+            </p>
           </div>
         </div>
       </div>

@@ -142,21 +142,21 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
   }
 
   return (
-    <section id="risiken" className="rounded-3xl border border-neutral-800 bg-neutral-950 p-4 md:p-8 shadow-2xl relative overflow-hidden transition-all">
-      {/* Glow highlight */}
-      <div className="absolute -top-32 -left-32 h-64 w-64 rounded-full bg-red-500/5 blur-[80px] pointer-events-none" />
-
-      <div className="relative z-10 space-y-6">
+    <section id="risiken" className="editorial-card p-6 md:p-8 space-y-6">
+      <div className="space-y-6">
         {/* Header */}
-        <div className="border-b border-neutral-800 pb-6 space-y-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-red-500/20 bg-red-500/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-red-400">
-            <ShieldAlert size={12} />
-            Focus Point
-          </span>
-          <h2 className="text-2xl font-black tracking-tight text-white uppercase sm:text-3xl leading-tight">
+        <div className="border-b border-[var(--border)] pb-6 space-y-2">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="font-mono text-xs font-bold text-rose-600 dark:text-rose-400 tracking-wider uppercase flex items-center gap-1.5">
+              <ShieldAlert size={14} />
+              FOKUSBERICHT / EMPIRISCHE ANALYSE
+            </span>
+            <span className="h-px w-16 bg-[var(--border)]" />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase leading-tight">
             {title}
           </h2>
-          <p className="text-sm md:text-base leading-relaxed text-neutral-400 max-w-3xl">
+          <p className="text-sm md:text-base leading-relaxed text-[var(--text-secondary)] max-w-3xl">
             {subtitle}
           </p>
         </div>

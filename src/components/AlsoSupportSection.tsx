@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, HeartHandshake } from 'lucide-react'
 import { RELATED_PETITIONS } from '../related-petitions'
 import type { Locale, Translation } from '../i18n'
 
@@ -9,12 +9,19 @@ interface AlsoSupportProps {
 
 export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
   return (
-    <section className="border-t border-neutral-800 px-4 py-12 md:px-6">
+    <section className="border-t border-[var(--border)] px-4 py-14 md:px-6 bg-[var(--bg-secondary)]/40">
       <div className="mx-auto max-w-6xl">
-        <h2 className="mb-2 text-2xl font-black tracking-tight text-white uppercase md:text-3xl">
+        <div className="mb-2 flex items-center gap-2">
+          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase flex items-center gap-1.5">
+            <HeartHandshake size={14} />
+            SOLIDARISCHES NETZWERK
+          </span>
+          <span className="h-px w-16 bg-[var(--border)]" />
+        </div>
+        <h2 className="mb-2 text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           {t.alsoSupportH}
         </h2>
-        <p className="mb-8 text-sm text-neutral-400">{t.alsoSupportSub}</p>
+        <p className="mb-8 text-sm text-[var(--text-secondary)] max-w-2xl">{t.alsoSupportSub}</p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {RELATED_PETITIONS.map((petition) => (
             <a
@@ -22,15 +29,17 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
               href={petition.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-2xl border border-neutral-800 bg-neutral-950 p-5 transition-all hover:border-blue-500/40 hover:bg-neutral-900"
+              className="group editorial-card p-5 flex flex-col justify-between transition-all hover:border-blue-500/50"
             >
-              <p className="mb-2 text-sm font-black leading-snug text-white group-hover:text-blue-300">
-                {lang === 'de' ? petition.titleDe : petition.titleEn}
-              </p>
-              <p className="mb-4 flex-1 text-xs leading-relaxed text-neutral-500">
-                {lang === 'de' ? petition.descDe : petition.descEn}
-              </p>
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-blue-400 group-hover:text-blue-300">
+              <div>
+                <p className="mb-2 text-sm font-bold leading-snug text-[var(--text-primary)] group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                  {lang === 'de' ? petition.titleDe : petition.titleEn}
+                </p>
+                <p className="mb-4 text-xs leading-relaxed text-[var(--text-muted)]">
+                  {lang === 'de' ? petition.descDe : petition.descEn}
+                </p>
+              </div>
+              <span className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 dark:text-blue-400 group-hover:translate-x-0.5 transition-transform">
                 {t.alsoSupportBtn} <ArrowUpRight size={13} />
               </span>
             </a>

@@ -11,19 +11,31 @@ interface BottomCtaProps {
 
 export function BottomCta({ t, ctaBody, ctaLabel, onCtaClick }: BottomCtaProps) {
   return (
-    <div className="border-t border-neutral-800 bg-linear-to-r from-blue-950/40 via-neutral-950 to-blue-950/40 px-4 py-10 text-center md:px-6">
-      <h2 className="mb-3 text-2xl font-black tracking-tight text-white uppercase md:text-4xl">{t.ctaBanner}</h2>
-      <p className="mx-auto mb-6 max-w-xl text-base text-neutral-400">{ctaBody}</p>
-      <a
-        href={PETITION_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={onCtaClick}
-        className="inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-8 py-4 text-sm font-black tracking-widest text-white uppercase shadow-xl shadow-blue-500/20 transition-all hover:bg-blue-500 md:text-base"
-      >
-        {ctaLabel} <ArrowUpRight size={18} />
-      </a>
-      <p className="mx-auto mt-3 max-w-xl text-xs text-neutral-500">{t.ctaExternalHint}</p>
+    <div className="border-t border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-16 text-center md:px-6">
+      <div className="mx-auto max-w-3xl space-y-4">
+        <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">
+          JETZT HANDELN
+        </span>
+        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+          {t.ctaBanner}
+        </h2>
+        <p className="mx-auto max-w-xl text-base leading-relaxed text-[var(--text-secondary)]">
+          {ctaBody}
+        </p>
+        <div className="pt-2">
+          <a
+            href={PETITION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onCtaClick}
+            className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-base font-bold shadow-lg shadow-blue-500/20 transition-all active:scale-[0.99]"
+          >
+            <span>{ctaLabel}</span>
+            <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
+        </div>
+        <p className="text-xs text-[var(--text-muted)] pt-1">{t.ctaExternalHint} · Kostenlos & unabhängig</p>
+      </div>
     </div>
   )
 }

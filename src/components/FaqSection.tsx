@@ -10,15 +10,21 @@ interface FaqProps {
 
 export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
   return (
-    <section id="faq" className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-5 shadow-xl md:p-8">
-      <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-[var(--text-primary)] uppercase md:text-2xl">
-        <HelpCircle size={22} className="text-blue-500" /> {t.faqTitle || 'FAQ'}
-      </h2>
-      {t.faqSub && (
-        <p className="mb-6 text-sm leading-relaxed text-[var(--text-muted)]">
-          {t.faqSub}
-        </p>
-      )}
+    <section id="faq" className="editorial-card p-6 md:p-8 space-y-6">
+      <div className="border-b border-[var(--border)] pb-4">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">06 / FRAGEN & ANTWORTEN</span>
+          <span className="h-px flex-1 bg-[var(--border)]" />
+        </div>
+        <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+          <HelpCircle size={22} className="text-blue-600 dark:text-blue-400" /> {t.faqTitle || 'FAQ'}
+        </h2>
+        {t.faqSub && (
+          <p className="mt-1.5 text-sm leading-relaxed text-[var(--text-secondary)]">
+            {t.faqSub}
+          </p>
+        )}
+      </div>
 
       <div className="space-y-3">
         {faqs.map((faq, index) => {
@@ -33,13 +39,13 @@ export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
               >
                 <span>{faq.q}</span>
                 {isOpen ? (
-                  <ChevronUp size={16} className="shrink-0 text-blue-500" />
+                  <ChevronUp size={16} className="shrink-0 text-blue-600 dark:text-blue-400" />
                 ) : (
                   <ChevronDown size={16} className="shrink-0 text-[var(--text-muted)]" />
                 )}
               </button>
               {isOpen && (
-                <div className="border-t border-[var(--border)] px-5 py-4 text-xs leading-relaxed text-[var(--text-secondary)] bg-[var(--bg-card)]/50 animate-in">
+                <div className="border-t border-[var(--border)] px-5 py-4 text-xs md:text-sm leading-relaxed text-[var(--text-secondary)] bg-[var(--bg-card)]/60 animate-in">
                   {faq.a}
                 </div>
               )}

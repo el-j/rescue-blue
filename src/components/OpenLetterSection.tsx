@@ -13,23 +13,30 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
   const activeMakers = DECISION_MAKERS[activeLetterTarget] || []
 
   return (
-    <section id="brief" className="rounded-2xl border border-neutral-800 bg-neutral-950 p-5 md:p-8 space-y-6">
+    <section id="brief" className="editorial-card p-6 md:p-8 space-y-6">
       <div>
-        <div className="mb-6">
-          <h3 className="flex items-center gap-2 text-xl font-black tracking-tight text-white uppercase md:text-2xl">
-            <MessageSquare size={22} className="text-blue-500" /> {t.letterH}
-          </h3>
-          <p className="mt-1 text-sm text-neutral-400">{t.letterSub}</p>
+        <div className="flex items-center gap-2 mb-2">
+          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">05 / BÜRGERBRIEF</span>
+          <span className="h-px flex-1 bg-[var(--border)]" />
         </div>
-        <div className="mb-6 grid grid-cols-3 gap-2">
+        <div className="mb-6">
+          <h3 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+            <MessageSquare size={22} className="text-blue-600 dark:text-blue-400" />
+            {t.letterH}
+          </h3>
+          <p className="mt-1.5 text-sm text-[var(--text-secondary)]">{t.letterSub}</p>
+        </div>
+
+        {/* Target Category Buttons */}
+        <div className="mb-6 grid grid-cols-3 gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] p-1">
           {(['oeffentlich', 'privat', 'rundfunkrat'] as const).map((key) => (
             <button
               key={key}
               onClick={() => onChangeTarget(key)}
-              className={`rounded-lg border px-2 py-3 text-center text-[10px] font-bold tracking-wider uppercase transition-all md:text-xs ${
+              className={`rounded-lg py-2.5 px-2 text-center text-xs font-bold tracking-wider uppercase transition-all ${
                 activeLetterTarget === key
-                  ? 'border-blue-500/30 bg-blue-600/10 text-blue-400'
-                  : 'border-neutral-800 bg-neutral-900 text-neutral-400 hover:text-white'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
               }`}
               type="button"
             >
@@ -37,9 +44,17 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
             </button>
           ))}
         </div>
-        <div className="max-h-72 space-y-4 overflow-y-auto rounded-xl border border-neutral-800 bg-neutral-900/50 p-4 font-mono text-xs leading-relaxed text-neutral-300 md:p-6 md:text-sm">
-          <p className="font-bold text-neutral-400">{letters[activeLetterTarget].to}</p>
-          <p className="border-t border-neutral-800 pt-3">{letters[activeLetterTarget].subject}</p>
+
+        {/* Formal Civic Letterhead View */}
+        <div className="max-h-80 space-y-4 overflow-y-auto rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] p-5 font-mono text-xs md:text-sm leading-relaxed text-[var(--text-secondary)]">
+          <div className="flex items-center justify-between border-b border-[var(--border-subtle)] pb-3 text-xs text-[var(--text-muted)] font-mono">
+            <span>OFFIZIELLES SCHREIBEN</span>
+            <span>STATUS: EINGEREICHT</span>
+          </div>
+          <p className="font-bold text-[var(--text-primary)]">{letters[activeLetterTarget].to}</p>
+          <p className="font-semibold text-blue-600 dark:text-blue-400 border-t border-[var(--border-subtle)] pt-3">
+            {letters[activeLetterTarget].subject}
+          </p>
           {letters[activeLetterTarget].body.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
@@ -47,12 +62,15 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
       </div>
 
       {/* Decision Makers / Recipients Section */}
-      <div className="border-t border-neutral-800 pt-6 space-y-4">
-        <div>
-          <h4 className="flex items-center gap-2 text-base font-bold text-white uppercase tracking-tight">
-            <Users size={18} className="text-blue-400" />
+      <div className="border-t border-[var(--border)] pt-6 space-y-4">
+        <div className="flex items-center justify-between">
+          <h4 className="flex items-center gap-2 text-base font-bold text-[var(--text-primary)] uppercase tracking-tight">
+            <Users size={18} className="text-blue-600 dark:text-blue-400" />
             {t.recipientsHeader}
           </h4>
+          <span className="font-mono text-xs text-[var(--text-muted)]">
+            {activeMakers.length} Entscheidungsträger
+          </span>
         </div>
 
         {/* Recipients Grid */}
@@ -70,32 +88,32 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
 
             const badgeStyles =
               maker.status === 'supported'
-                ? 'bg-green-500/10 text-green-400 border border-green-500/20'
+                ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
                 : maker.status === 'opposed'
-                  ? 'bg-rose-500/10 text-rose-400 border border-rose-500/20'
-                  : 'bg-neutral-800 text-neutral-400 border border-neutral-700/50'
+                  ? 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/30'
+                  : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border)]'
 
             const dotStyles =
               maker.status === 'supported'
-                ? 'bg-green-400'
+                ? 'bg-emerald-500'
                 : maker.status === 'opposed'
-                  ? 'bg-rose-400'
-                  : 'bg-neutral-400'
+                  ? 'bg-rose-500'
+                  : 'bg-[var(--text-muted)]'
 
             return (
               <div
                 key={idx}
-                className="flex items-center justify-between gap-4 rounded-xl border border-neutral-800 bg-neutral-900/20 p-3.5 transition-all hover:border-neutral-700/60 hover:bg-neutral-900/40"
+                className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] p-4 transition-all hover:border-blue-500/40"
               >
                 <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-baseline gap-1.5 mb-0.5">
-                    <span className="font-bold text-sm text-neutral-200">{maker.name}</span>
-                    <span className="text-[10px] text-neutral-500 font-mono truncate">{maker.email}</span>
+                  <div className="flex flex-wrap items-baseline gap-2 mb-1">
+                    <span className="font-bold text-sm text-[var(--text-primary)]">{maker.name}</span>
+                    <span className="text-[10px] text-[var(--text-muted)] font-mono truncate">{maker.email}</span>
                   </div>
-                  <p className="text-xs text-neutral-400 leading-tight">{translatedRole}</p>
+                  <p className="text-xs text-[var(--text-secondary)] leading-tight">{translatedRole}</p>
                 </div>
                 <div className="shrink-0">
-                  <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider ${badgeStyles}`}>
+                  <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold border uppercase tracking-wider ${badgeStyles}`}>
                     <span className={`h-1.5 w-1.5 rounded-full ${dotStyles}`} />
                     {statusText}
                   </span>
@@ -108,4 +126,3 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
     </section>
   )
 }
-

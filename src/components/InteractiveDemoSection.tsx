@@ -286,15 +286,20 @@ export function InteractiveDemoSection({
   }, [])
 
   return (
-    <section ref={sandboxRef} className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-primary)] p-5 shadow-xl md:p-8">
-      {/* Top-right: SANDBOX badge */}
-      <div className="absolute top-0 right-0 p-3">
-        <span className="rounded border border-[var(--border)] bg-[var(--bg-card)] px-2 py-0.5 text-[10px] font-bold tracking-widest text-[var(--text-muted)] uppercase">{t.demoSandbox}</span>
+    <section ref={sandboxRef} className="editorial-card p-6 md:p-8 space-y-6">
+      <div>
+        <div className="flex items-center justify-between gap-2 mb-2">
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">02 / INTERAKTIVE ANALYSE</span>
+            <span className="h-px w-12 bg-[var(--border)]" />
+          </div>
+          <span className="rounded border border-[var(--border)] bg-[var(--bg-secondary)] px-2.5 py-0.5 font-mono text-[10px] font-bold tracking-widest text-[var(--text-muted)] uppercase">{t.demoSandbox}</span>
+        </div>
+        <h2 className="mb-2 flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+          <Paintbrush size={22} className="text-blue-600 dark:text-blue-400" /> {t.demoH2}
+        </h2>
+        <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{t.demoDesc}</p>
       </div>
-      <h2 className="mb-2 flex items-center gap-2 text-xl font-black tracking-tight text-[var(--text-primary)] uppercase md:text-2xl">
-        <Paintbrush size={22} className="text-blue-500" /> {t.demoH2}
-      </h2>
-      <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{t.demoDesc}</p>
       <DemoSourceInfo
         t={t}
         sourceInfo={sourceInfo}

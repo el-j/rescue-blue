@@ -7,45 +7,49 @@ interface EditorialPolicySectionProps {
 
 export function EditorialPolicySection({ t }: EditorialPolicySectionProps) {
   return (
-    <section className="border-t border-neutral-800 px-4 py-12 md:px-6">
+    <section id="editorial-policy" className="border-t border-[var(--border)] px-4 py-12 md:px-6 bg-[var(--bg-primary)]">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-2xl font-black tracking-tight text-white uppercase">{t.editorialPolicyTitle}</h2>
-        <p className="mt-2 text-sm leading-relaxed text-neutral-400">{t.editorialPolicyIntro}</p>
+        <div className="mb-2 flex items-center gap-2">
+          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">METHODIK & KORREKTUREN</span>
+          <span className="h-px w-16 bg-[var(--border)]" />
+        </div>
+        <h2 className="text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">{t.editorialPolicyTitle}</h2>
+        <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)] max-w-2xl">{t.editorialPolicyIntro}</p>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-4">
-        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
-          <h3 className="mb-3 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
-            <BookOpenText size={16} className="text-blue-400" />
-            {t.editorialPolicyRulesTitle}
-          </h3>
-          <ul className="space-y-2 text-xs leading-relaxed text-neutral-300">
-            <li className="flex items-start gap-2">
-              <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-400" />
-              <span>{t.editorialPolicyRule1}</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-400" />
-              <span>{t.editorialPolicyRule2}</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-400" />
-              <span>{t.editorialPolicyRule3}</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-400" />
-              <span>{t.editorialPolicyRule4}</span>
-            </li>
-          </ul>
-        </article>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-6">
+          <article className="editorial-card p-5">
+            <h3 className="mb-3 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
+              <BookOpenText size={16} className="text-blue-600 dark:text-blue-400" />
+              {t.editorialPolicyRulesTitle}
+            </h3>
+            <ul className="space-y-2.5 text-xs leading-relaxed text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-500" />
+                <span>{t.editorialPolicyRule1}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-500" />
+                <span>{t.editorialPolicyRule2}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-500" />
+                <span>{t.editorialPolicyRule3}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheck size={14} className="mt-0.5 shrink-0 text-emerald-500" />
+                <span>{t.editorialPolicyRule4}</span>
+              </li>
+            </ul>
+          </article>
 
-        <article className="rounded-xl border border-neutral-800 bg-neutral-950 p-4">
-          <h3 className="mb-2 flex items-center gap-2 text-sm font-black tracking-wide text-white uppercase">
-            <FileText size={16} className="text-amber-400" />
-            {t.editorialPolicyCorrectionsTitle}
-          </h3>
-          <p className="text-xs leading-relaxed text-neutral-300">{t.editorialPolicyCorrectionsBody}</p>
-        </article>
-      </div>
+          <article className="editorial-card p-5">
+            <h3 className="mb-3 flex items-center gap-2 text-sm font-bold tracking-wide text-[var(--text-primary)] uppercase">
+              <FileText size={16} className="text-amber-600 dark:text-amber-400" />
+              {t.editorialPolicyCorrectionsTitle}
+            </h3>
+            <p className="text-xs leading-relaxed text-[var(--text-secondary)]">{t.editorialPolicyCorrectionsBody}</p>
+          </article>
+        </div>
       </div>
     </section>
   )
