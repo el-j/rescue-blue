@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (html:not(.light-theme) &);
+
 /* ── Local Font-Face Declarations ── */
 
 /* Inter (Body Font) */

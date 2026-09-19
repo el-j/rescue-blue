@@ -72,13 +72,13 @@ export function HeroSection({
         {/* Chromatic Confrontation: Democratic Blue vs Historical Brown Split Broadsheet */}
         <div className="mt-12 border border-[var(--border)] grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[var(--border)]">
           {/* Status Quo Panel: ARD & ZDF Euphemism in Blue */}
-          <div className="p-6 md:p-8 flex flex-col justify-between bg-blue-50/50 dark:bg-blue-950/20">
+          <div className="p-6 md:p-8 flex flex-col justify-between bg-blue-50/70 dark:bg-blue-950/20">
             <div>
-              <div className="flex items-center justify-between gap-2 mb-4 border-b border-blue-500/20 pb-2">
-                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+              <div className="flex items-center justify-between gap-2 mb-4 border-b border-blue-200 dark:border-blue-500/20 pb-2">
+                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
                   01 / Status Quo in ARD & ZDF
                 </span>
-                <span className="font-mono text-[10px] uppercase text-[var(--text-muted)]">Medien-Praxis</span>
+                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">Medien-Praxis</span>
               </div>
               
               <div className="h-2 w-16 bg-blue-600 mb-4" />
@@ -87,25 +87,25 @@ export function HeroSection({
                 AfD als friedliches „Blau“
               </h2>
               
-              <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+              <p className="text-sm leading-relaxed text-slate-800 dark:text-[var(--text-secondary)]">
                 Blau signalisiert Ruhe, Vernunft, Europa und Seriosität. Durch diese unkritische Farbwahl wird eine in Teilen gesichert rechtsextreme Ideologie visuell verharmlost und normalisiert.
               </p>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-blue-500/20 flex items-center gap-2 text-xs font-semibold text-rose-600 dark:text-rose-400 uppercase tracking-wide">
+            <div className="mt-8 pt-4 border-t border-blue-200 dark:border-blue-500/20 flex items-center gap-2 text-xs font-bold text-red-700 dark:text-rose-400 uppercase tracking-wide">
               <AlertCircle size={15} />
               <span>Fatale psychologische Verharmlosung</span>
             </div>
           </div>
 
           {/* Forderung Panel: Historical Truth in Brown */}
-          <div className="p-6 md:p-8 flex flex-col justify-between bg-amber-50/40 dark:bg-amber-950/20">
+          <div className="p-6 md:p-8 flex flex-col justify-between bg-[#f7f2ed] dark:bg-amber-950/20">
             <div>
-              <div className="flex items-center justify-between gap-2 mb-4 border-b border-amber-600/20 pb-2">
-                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+              <div className="flex items-center justify-between gap-2 mb-4 border-b border-[#ddcdbe] dark:border-amber-600/20 pb-2">
+                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-[#4a2608] dark:text-[#f3b584]">
                   02 / {t.heroImgText1 || 'Historische Richtigkeit'}
                 </span>
-                <span className="font-mono text-[10px] uppercase text-[var(--text-muted)]">Forderung</span>
+                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">Forderung</span>
               </div>
               
               <div className="h-2 w-16 bg-[#54331a] mb-4" />
@@ -114,12 +114,12 @@ export function HeroSection({
                 Braun für völkischen Nationalismus
               </h2>
               
-              <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+              <p className="text-sm leading-relaxed text-slate-800 dark:text-[var(--text-secondary)]">
                 Braun ist im kollektiven Gedächtnis die unmissverständliche Farbe des Rechtsextremismus. Grafische Diagramme der Leitmedien müssen die politische Realität ehrlich benennen.
               </p>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-amber-600/20 flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+            <div className="mt-8 pt-4 border-t border-[#ddcdbe] dark:border-amber-600/20 flex items-center gap-2 text-xs font-bold text-emerald-800 dark:text-emerald-400 uppercase tracking-wide">
               <CheckCircle2 size={15} />
               <span>Visuelle Medienethik & historische Klarheit</span>
             </div>
