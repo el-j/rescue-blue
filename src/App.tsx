@@ -203,7 +203,7 @@ export default function App({ initialLang }: AppProps = {}) {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-blue-500/20 selection:text-blue-500">
+    <div className="min-h-screen overflow-x-clip bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-blue-500/20 selection:text-blue-500">
 
       <SiteHeader
         lang={lang}

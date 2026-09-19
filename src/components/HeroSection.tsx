@@ -127,7 +127,7 @@ export function HeroSection({
         </div>
 
         {/* Monumental Signature Counter & Direct Action Broadsheet Bar */}
-        <div className="mt-6 border border-[var(--border)] bg-[var(--bg-secondary)] p-6 md:p-8 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-6">
+        <div className="mt-6 border border-[var(--border)] bg-[var(--bg-secondary)] p-6 md:p-8 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-baseline gap-3 sm:gap-5">
             <span className="editorial-numeral text-5xl sm:text-6xl md:text-7xl font-extrabold text-[var(--text-primary)] leading-none">
               {isLoadingSignatures ? (
@@ -146,7 +146,7 @@ export function HeroSection({
             </div>
           </div>
 
-          <div className="flex flex-col items-start md:items-end gap-2 shrink-0">
+          <div className="flex flex-col items-start lg:items-end gap-2 shrink-0">
             <a
               href={PETITION_URL}
               target="_blank"

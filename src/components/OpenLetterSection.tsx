@@ -62,12 +62,12 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
 
         {/* Decision Makers / Recipients Section */}
         <div className="border-t border-[var(--border)] pt-6 space-y-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-4">
             <h4 className="flex items-center gap-2 text-base font-bold text-[var(--text-primary)] uppercase tracking-tight">
-              <Users size={18} className="text-blue-600 dark:text-blue-400" />
-              {t.recipientsHeader}
+              <Users size={18} className="text-blue-600 dark:text-blue-400 shrink-0" />
+              <span>{t.recipientsHeader}</span>
             </h4>
-            <span className="font-mono text-xs text-[var(--text-muted)]">
+            <span className="font-mono text-xs text-[var(--text-muted)] shrink-0">
               {activeMakers.length} Entscheidungsträger
             </span>
           </div>

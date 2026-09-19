@@ -34,15 +34,15 @@ export function ScientificBackgroundSection({ science, openObjection, onToggleOb
               <h4 className="mb-3 text-base font-bold text-[var(--text-primary)] tracking-tight">
                 {foundation.title}
               </h4>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {foundation.points.map((point, pi) => (
-                  <div key={pi} className="flex items-start gap-3">
-                    <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 shrink-0 uppercase tracking-wide">
-                      {point.label}:
+                  <div key={pi} className="space-y-1">
+                    <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide block">
+                      {point.label}
                     </span>
-                    <span className="text-xs md:text-sm leading-relaxed text-[var(--text-secondary)]">
+                    <p className="text-xs md:text-sm leading-relaxed text-[var(--text-secondary)]">
                       {point.text}
-                    </span>
+                    </p>
                   </div>
                 ))}
               </div>
@@ -73,15 +73,15 @@ export function ScientificBackgroundSection({ science, openObjection, onToggleOb
                 )}
               </button>
               {openObjection === oi && (
-                <div className="space-y-3 border-t border-[var(--border)] bg-[var(--bg-secondary)] p-5">
+                <div className="space-y-4 border-t border-[var(--border)] bg-[var(--bg-secondary)] p-5">
                   {obj.rebuttals.map((rebuttal, ri) => (
-                    <div key={ri} className="flex items-start gap-3">
-                      <span className="font-mono text-xs font-bold text-amber-600 dark:text-amber-400 shrink-0 uppercase tracking-wide">
-                        {rebuttal.label}:
+                    <div key={ri} className="space-y-1">
+                      <span className="font-mono text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wide block">
+                        {rebuttal.label}
                       </span>
-                      <span className="text-xs md:text-sm leading-relaxed text-[var(--text-secondary)]">
+                      <p className="text-xs md:text-sm leading-relaxed text-[var(--text-secondary)]">
                         {rebuttal.text}
-                      </span>
+                      </p>
                     </div>
                   ))}
                 </div>
