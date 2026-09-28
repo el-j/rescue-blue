@@ -50,7 +50,7 @@ describe('InteractiveDemoSection — sandbox state machine', () => {
 
   it('starts in default state — shows default AfD bar label', () => {
     render(<App />)
-    expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Braun-Darstellung testen' })).toHaveLength(1)
   })
 
   it('cycles default → brown state when toolbar button is clicked once', async () => {
@@ -67,7 +67,7 @@ describe('InteractiveDemoSection — sandbox state machine', () => {
     const btn = screen.getAllByRole('button', { name: 'Visualisierungs-Option wechseln' })[0]
     await user.click(btn)
     await user.click(btn)
-    expect(screen.getAllByRole('button', { name: 'Traum beenden' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Werte zurücksetzen' })).toHaveLength(1)
   })
 
   it('cycles dream → default state on third click', async () => {
@@ -77,7 +77,7 @@ describe('InteractiveDemoSection — sandbox state machine', () => {
     await user.click(btn)
     await user.click(btn)
     await user.click(btn)
-    expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Braun-Darstellung testen' })).toHaveLength(1)
   })
 
   it('shows the dream banner when in dream state', async () => {

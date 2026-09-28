@@ -56,7 +56,7 @@ describe('App', () => {
     fireEvent.click(screen.getByRole('button', { name: /en\s*English/i }))
 
     expect(screen.getByRole('heading', { name: /Rescue Blue\.|Defend Blue\./i, level: 1 })).toBeInTheDocument()
-    expect(screen.getAllByRole('button', { name: 'Switch to Brown' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Test brown representation' })).toHaveLength(1)
     expect(screen.getAllByRole('button', { name: 'Switch visualization mode' })).toHaveLength(1)
   })
 
@@ -67,18 +67,18 @@ describe('App', () => {
 
     // Mode cycle is triggered via the dedicated toolbar button (use first — desktop inline one)
     const toggleButton = screen.getAllByRole('button', { name: 'Visualisierungs-Option wechseln' })[0]
-    
+
     // 1st Click -> changes to brown state: AfD bar becomes "Beste Zukunft visualisieren"
     await user.click(toggleButton)
     expect(screen.getAllByRole('button', { name: 'Beste Zukunft visualisieren' })).toHaveLength(1)
 
-    // 2nd Click -> activates dream state: AfD bar becomes "Traum beenden"
+    // 2nd Click -> activates dream state: AfD bar becomes "Werte zurücksetzen"
     await user.click(toggleButton)
-    expect(screen.getAllByRole('button', { name: 'Traum beenden' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Werte zurücksetzen' })).toHaveLength(1)
 
-    // 3rd Click -> resets to default: AfD bar becomes "Jetzt umfärben auf Braun"
+    // 3rd Click -> resets to default: AfD bar becomes "Braun-Darstellung testen"
     await user.click(toggleButton)
-    expect(screen.getAllByRole('button', { name: 'Jetzt umfärben auf Braun' })).toHaveLength(1)
+    expect(screen.getAllByRole('button', { name: 'Braun-Darstellung testen' })).toHaveLength(1)
   })
 
   it('opens a FAQ answer', async () => {
@@ -86,10 +86,10 @@ describe('App', () => {
 
     render(<App />)
 
-    await user.click(screen.getByRole('button', { name: 'Warum sollte Blau überhaupt problematisch sein?' }))
+    await user.click(screen.getByRole('button', { name: 'Warum sollte die Parteifarbe Blau problematisch sein?' }))
 
     expect(
-      screen.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
+      screen.getByText(/Farbpsychologisch steht Blau für Stabilität, Ruhe und Neutralität/i),
     ).toBeInTheDocument()
   })
 
