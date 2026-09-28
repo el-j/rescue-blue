@@ -5,7 +5,7 @@
     "navRisks": "Risks",
     "navScience": "Science & Law",
     "navLetter": "Open Letter",
-    "navCulture": "Cultural Heritage",
+    "navCulture": "Significance of Blue",
     "navSign": "Sign Now",
     "navShare": "Share petition",
     "shareTitle": "Share petition",
@@ -14,22 +14,22 @@
     "shareCopyLink": "Copy link",
     "shareLinkCopied": "Copied!",
     "shareClose": "Close",
-    "badge": "Visual Media Ethics & Cultural Preservation",
+    "badge": "Visual Media Ethics & Responsibility",
     "heroH1": "Rescue Blue.",
     "heroH1Alt": "Defend Blue.",
-    "heroSub": "For an accurate colour choice.",
+    "heroSub": "For a differentiated political colour choice.",
     "heroSubAlt": "Stop visual normalization.",
-    "heroBody": "Our language and colour symbolism are historically rooted. We demand that ARD, ZDF and private broadcasters correct their political colour codes: the AfD must be depicted in brown in charts, not blue.",
+    "heroBody": "Colours convey subconscious signals and emotional cues. We call on ARD, ZDF, and private media outlets to critically examine their colour-coding standards: far-right forces in news graphics should not be visually normalized through calming, institutional shades.",
     "sigCount": "Already",
     "sigSupport": "supporters",
     "sigLive": "Real-time data",
     "sigFallback": "Local snapshot",
     "heroImgCaption": "Our Campaign Visual",
-    "heroImgSub": "Creating visual truth, preserving the linguistic Blue.",
+    "heroImgSub": "Strengthening media standards, reducing visual normalization.",
     "heroImgCta": "Sign on Change.org",
     "demoSandbox": "Sandbox Mode",
     "demoH2": "Interactive Colour Comparison",
-    "demoDesc": "Click the toggle or the bar to replace the blue soft-pedalling code with the historically accurate brown.",
+    "demoDesc": "Click the toggle or the bar to explore the visual impact of alternative colour coding in charts.",
     "demoSourceLabel": "Data basis",
     "demoSourceLive": "Live from polling API",
     "demoSourceFallback": "Local fallback value",
@@ -42,44 +42,44 @@
     "demoSourceStand": "Updated",
     "demoSourceButton": "Open source & method",
     "demoOption": "Visualisation Option",
-    "demoQuestion": "Which colour choice is accurate and historically honest?",
-    "demoReset": "Exit Dream",
-    "demoSwitch": "Switch to Brown",
-    "dreamBanner": "Dream Scenario — What our petition could achieve",
-    "dreamBody": "With every signature the pressure on media grows. This scenario shows what a world could look like where voters see through fascism and turn away.",
+    "demoQuestion": "Which colour choice accurately reflects the political categorization?",
+    "demoReset": "Reset values",
+    "demoSwitch": "Test brown representation",
+    "dreamBanner": "Vision — What our petition aims to achieve",
+    "dreamBody": "With every signature, awareness of visual framing and news design grows. Reflective reporting fosters an informed and vigilant democratic debate.",
     "comparisonToggle": "Show majority",
     "comparisonTitle": "AfD vs. Democratic Majority",
     "comparisonRatio": "× more people do NOT vote for the AfD",
-    "comparisonMessage": "The overwhelming majority stands for democracy.",
+    "comparisonMessage": "The overwhelming majority stands for democratic core values.",
     "allOthersLabel": "All Others",
-    "whyH2": "The Background of the Colour Masquerade",
-    "whyIntro": "Scientific framing research shows: the perception of political actors is substantially shaped by the visual signals used to represent them in programmes like ZDF heute-journal or ARD Tagesschau.",
+    "whyH2": "The Mechanics of Visual Perception",
+    "whyIntro": "Communication science and framing research demonstrate that how political actors are perceived is substantially shaped by the visual signals used to represent them in news formats.",
     "whyCard1H": "The Visual Downplaying",
-    "whyCard1": "Blue is the colour of the sky, the sea, and peacekeeping forces. It calms, builds trust, and signals harmlessness. Using this emotional coding for a völkisch-nationalist and partly anti-constitutional group is a fatal media-ethics mistake.",
-    "whyCard2H": "The Historical Assignment",
-    "whyCard2": "The political colour brown is firmly associated in Germany's collective memory with völkisch nationalism and far-right extremism. Honest graphic standards must show courage and make this historical continuity visually apparent.",
-    "cultureH": "Saving Cultural Heritage",
-    "cultureSub": "This is the linguistic property of our community.",
-    "tabLang": "Language Treasury",
-    "tabSym": "Symbolism & History",
+    "whyCard1": "In colour psychology, blue is universally linked to calm, credibility, and objectivity. It is the hallmark colour of international peacekeeping bodies and European institutions. Adopting a party's self-chosen branding without critique creates a subconscious softening effect toward anti-constitutional tendencies.",
+    "whyCard2H": "The Historical Association",
+    "whyCard2": "In Germany's political iconography, brown unambiguously signifies völkisch nationalism and right-wing extremism. Responsible information design should demonstrate the clarity to reflect ideological classifications visually.",
+    "cultureH": "Colour Semantics & Cultural History",
+    "cultureSub": "How colours and idioms shape our collective perception.",
+    "tabLang": "Linguistic Usage",
+    "tabSym": "Culture & History",
     "letterH": "The Open Letter",
-    "letterSub": "Choose the target audience to see how we hold editors and oversight bodies accountable:",
+    "letterSub": "Select a recipient group to review our media-ethics reasoning directed at editors and broadcasting councils:",
     "targetPublic": "Public Broadcasters",
     "targetPrivate": "Private Media",
     "targetCouncil": "Broadcasting Councils",
-    "ctaBanner": "Sign now and rescue Blue!",
+    "ctaBanner": "Sign now for conscious media framing!",
     "ctaBodyPre": "Over",
-    "ctaBodyMid": "people have already signed this petition. Show that you stand for honest visual reporting.",
+    "ctaBodyMid": "people have already signed this petition. Take a stand for thoughtful journalism and precise infographic standards.",
     "ctaBodyLoading": "Loading current signature count from Change.org.",
     "ctaBtn": "Sign now on Change.org",
     "ctaBtnAlt": "Add your signature now",
     "ctaExternalHint": "You will be redirected to the petition on Change.org.",
     "ctaInfo": "Free · No ads · Only your voice counts",
-    "footerTagline": "A campaign for media integrity and the protection of the cultural heritage of the colour blue.",
+    "footerTagline": "A campaign for media ethics and the critical examination of visual framing effects.",
     "footerLink": "View petition on Change.org",
     "footerImprint": "Legal Notice",
     "alsoSupportH": "Support More Petitions",
-    "alsoSupportSub": "Other petitions fighting for a strong democratic Germany.",
+    "alsoSupportSub": "Further initiatives promoting democracy and media literacy.",
     "alsoSupportBtn": "Sign",
     "sidebarSignatures": "Signatures",
     "sidebarGrowing": "and growing every day!",
@@ -88,7 +88,7 @@
     "themeDark": "Dark",
     "langLabel": "Language",
     "faqTitle": "FAQ",
-    "faqSub": "Frequently asked questions about the campaign and our demands.",
+    "faqSub": "Frequently asked questions about the campaign and our media-critical demands.",
     "demoDreamReset": "Reset values",
     "demoDreamSwitch": "Visualize best future outcome",
     "newsBadge": "Press Report",
@@ -99,7 +99,7 @@
     "archiveSub": "Chronological overview of reports on far-right AfD activities",
     "archiveExpand": "Expand archive",
     "archiveCollapse": "Collapse archive",
-    "archiveCollapsedHint": "Archive is collapsed by default to keep the page shorter and more focused.",
+    "archiveCollapsedHint": "The archive is collapsed by default to keep the page clear and focused.",
     "archiveShowingLabel": "Showing",
     "archivePrevPage": "Previous",
     "archiveNextPage": "Next",
@@ -132,219 +132,219 @@
     "roleWdrCouncil": "Chairman of the WDR Broadcasting Council",
     "roleNdrCouncil": "Chairman of the NDR Broadcasting Council",
     "roleZdfCouncil": "Chairwoman of the ZDF Television Council",
-    "heroImgText1": "PETITION: REPRESENT AfD IN BROWN IN MEDIA - PROTECT BLUE.",
-    "heroImgText2": "SIGN NOW: PROTECT BLUE!",
-    "heroImgText2Alt": "SIGN NOW: DEFEND BLUE!",
-    "heroImageAlt": "Campaign visual for Rescue the Blue",
+    "heroImgText1": "PETITION: REVIEW VISUAL STANDARDS - CRITICALLY REFLECT BLUE.",
+    "heroImgText2": "SIGN NOW: FOR HISTORICAL CLARITY!",
+    "heroImgText2Alt": "SIGN NOW: FOR RESPONSIBLE GRAPHICS!",
+    "heroImageAlt": "Campaign visual promoting differentiated visual colour codes in journalism",
     "dangersTitle": "Risks & Consequences of Far-Right Politics",
-    "dangersSubtitle": "Scientifically backed and empirically supported: How a rise of the AfD threatens our society, economy, and fundamental rights.",
+    "dangersSubtitle": "Scientifically backed and empirically supported: How a rise of the AfD burdens democratic institutions, the economy, and fundamental rights.",
     "dangersSourceLabel": "Source & Full Text",
     "dangersViewLabel": "View",
     "footerBrand": "Rescue Blue",
-    "trustTitle": "Transparency & Trust",
-    "trustIntro": "To avoid any confusion with misinformation or scam pages, we disclose who runs this campaign, how data is maintained, and how sources are selected.",
+    "trustTitle": "Transparency & Approach",
+    "trustIntro": "We disclose who is behind this media initiative, how data is maintained, and the standards used for selecting sources.",
     "trustWhoTitle": "Who we are",
-    "trustWhoBody": "This petition is organized by civil society and hosted on Change.org. Contact and operator information is available in the legal notice.",
+    "trustWhoBody": "The petition is a civil society initiative dedicated to media accuracy and is hosted on Change.org. Legal details and contact info can be found in the legal notice.",
     "trustWhoLink": "Open legal notice",
-    "trustDataTitle": "Data & updates",
-    "trustDataBody": "Polling data comes from documented sources. The signature count is a snapshot that is updated regularly, but not second-by-second in real time.",
-    "trustSourceTitle": "Source policy",
-    "trustSourceBody": "We link to original sources and, where helpful, additionally to an archive copy. Terms from extremism contexts are used for documentation, never for propaganda.",
+    "trustDataTitle": "Data & Methodology",
+    "trustDataBody": "Polling data comes from documented surveys conducted by recognized polling institutes. The signature tally is updated periodically via snapshot/API.",
+    "trustSourceTitle": "Source Work",
+    "trustSourceBody": "We link directly to primary sources and cite scientific and official findings. Extremist rhetoric is referenced strictly for analytical and documentary purposes.",
     "trustSourceLink": "Read methodology",
-    "editorialPolicyTitle": "Source and Editorial Policy",
-    "editorialPolicyIntro": "This site follows a documentation-first information approach. To keep claims verifiable, we publish the rules used for source selection and wording.",
-    "editorialPolicyRulesTitle": "How we work",
-    "editorialPolicyRule1": "Primary sources first: whenever possible, we link to original sources (authorities, courts, institutes, editorial offices).",
-    "editorialPolicyRule2": "Context over slogans: claims are presented with date, source, and disciplinary context.",
-    "editorialPolicyRule3": "Archive resilience: where useful, we add an archive link if original pages are moved or updated later.",
-    "editorialPolicyRule4": "No propaganda framing: terms from extremism contexts are used critically for documentation, not promotion.",
-    "editorialPolicyCorrectionsTitle": "Corrections and contact",
-    "editorialPolicyCorrectionsBody": "If you find a factual error, please use the contact routes listed in the legal notice. Verifiable errors are reviewed and corrected promptly.",
-    "wordsMeaningTitle": "Words = Meaning",
-    "wordsMeaningSubtitle": "Right-wing Rhetoric vs. Reality – A glossary: what far-right actors say and what they actually mean."
+    "editorialPolicyTitle": "Editorial Guidelines",
+    "editorialPolicyIntro": "This site follows an informational, documentation-led approach. To ensure clarity and accountability, our standards are transparently outlined:",
+    "editorialPolicyRulesTitle": "Our Principles",
+    "editorialPolicyRule1": "Primary sources first: We prioritize direct links to scientific research, court rulings, and independent newsrooms.",
+    "editorialPolicyRule2": "Context over slogans: All topics are contextualized with dates, institutional background, and analytical depth.",
+    "editorialPolicyRule3": "Archive resilience: Wherever practical, key press reports and rulings are preserved via archive copies.",
+    "editorialPolicyRule4": "Analytical distance: Extremist terminology is deconstructed and analyzed, never uncritically amplified.",
+    "editorialPolicyCorrectionsTitle": "Corrections & Inquiries",
+    "editorialPolicyCorrectionsBody": "If you identify a factual inaccuracy, please get in touch via the channels provided in the legal notice. Substantive notes will be verified and addressed promptly.",
+    "wordsMeaningTitle": "Political Rhetoric Fact-Check",
+    "wordsMeaningSubtitle": "Far-right rhetoric vs. actual policy objectives: A critical terminology guide."
   },
   "sayings": {
     "sprache": [
       {
-        "phrase": "\"Blau machen\" (To skive)",
-        "origin": "Medieval / Dyers' trade",
-        "desc": "The term originates from the dyers' free Monday. While wool oxidised and turned blue in the air, work rested. A beautiful German metaphor for rest and self-care."
+        "phrase": "\"Blau machen\" (To take time off)",
+        "origin": "Etymology / History of crafts",
+        "desc": "Traces back linguistically to the dyeing and oxidation phases in historical fabric trades, during which work had to rest. A historical reflection of artisan working cycles."
       },
       {
-        "phrase": "\"Ins Blaue hinein\" (Into the blue)",
-        "origin": "Nature Romanticism",
-        "desc": "A carefree journey or deed with no fixed destination, carried by pure trust, curiosity, and peaceful adventurousness."
+        "phrase": "\"Fahrt ins Blaue\" (Journey into the blue)",
+        "origin": "Cultural & linguistic history",
+        "desc": "Traditionally refers to an excursion with no predetermined destination into nature – symbolizing open-mindedness, wanderlust, and ease."
       },
       {
-        "phrase": "\"Das Blaue vom Himmel versprechen\" (Promise the blue from the sky)",
-        "origin": "Poetic metaphor",
-        "desc": "Blue here stands for the infinite, majestic vault of heaven – a wonderful image full of dreams and longing."
+        "phrase": "\"Mit einem blauen Auge davonkommen\" (To escape with a black/blue eye)",
+        "origin": "Colloquial metaphor",
+        "desc": "Describes escaping a severe danger or crisis with minor damage – an idiom signifying harm mitigation and de-escalation."
       }
     ],
     "symbolik": [
       {
         "phrase": "The Blue Flower",
-        "origin": "Romanticism (Novalis)",
-        "desc": "The most important symbol for longing, love, insight, and the unfolding of the human spirit. An invaluable cultural asset."
+        "origin": "Romantic Era (Novalis)",
+        "desc": "In literary history, the key emblem for longing, universal openness, the pursuit of knowledge, and shared human connection."
       },
       {
-        "phrase": "UN Blue Helmets",
-        "origin": "Global Peace Work",
-        "desc": "Blue was deliberately chosen by the UN because it universally stands for neutrality, de-escalation, optimism, and the will for lasting peace."
+        "phrase": "UN Peacekeepers (Blue Helmets)",
+        "origin": "International Diplomacy",
+        "desc": "Deliberately chosen by the United Nations as an international emblem for neutrality, de-escalation, and non-partisan peacebuilding."
       },
       {
-        "phrase": "Royal Blue & Ultramarine",
-        "origin": "Art & Cultural History",
-        "desc": "For centuries more valuable than gold (from lapis lazuli). In the Renaissance, this precious blue was reserved exclusively for the most exalted depictions."
+        "phrase": "European Flag",
+        "origin": "European Integration",
+        "desc": "The blue background symbolizes the continent united in peaceful multilateralism, shared solidarity, and the rule of law."
       }
     ]
   },
   "openLetters": {
     "oeffentlich": {
       "to": "TO: Editorial Boards of ARD-aktuell & ZDF",
-      "subject": "Re: Visual Distortion & Framing Responsibility",
+      "subject": "Re: Visual Framing and Journalistic Duty of Contextualization",
       "body": [
         "Dear Sir or Madam,",
-        "As public broadcasters you bear a statutory responsibility for objective, historically and analytically contextualised information for the public.",
-        "Using the colour blue for actors that courts have confirmed may be classified as proven far-right extremists constitutes a visual downplaying of their ideology.",
-        "We call on you: End this minimising practice and switch to the historically authentic colour brown in your reports."
+        "Public service broadcasters bear a fundamental responsibility for impartial, accurately contextualized information for the public.",
+        "The uncritical adoption of the colour blue for a party classified in parts as proven right-wing extremist and unconstitutional conveys subtle associations of moderation and institutional respectability.",
+        "We therefore ask you to evaluate your visual guidelines and utilize representations in diagrams that visually reflect the documented radicalism of these movements."
       ]
     },
     "privat": {
       "to": "TO: Editorial Boards of ProSiebenSat.1, RTL Group & dpa",
-      "subject": "Re: Default Colour Values in Infographic Supply",
+      "subject": "Re: Default Colour Standards in Infographic Feeds",
       "body": [
         "Dear Sir or Madam,",
-        "Through your news portals and dpa wire channels you shape the daily perception of millions of people in Germany.",
-        "By choosing blue as the colour for the AfD in infographics you contribute to the visual downplaying of a partly anti-constitutional party.",
-        "We demand: Adjust your editorial colour standards to historical reality and set brown as the identifier for the AfD in graphics."
+        "Your newsrooms and agency feeds shape the daily perception of millions of viewers and readers across Germany.",
+        "When groups monitored and classified as extremist by security agencies are depicted in the same conventional blue as international institutions, a subconscious normalizing effect is produced.",
+        "We encourage you to critically assess your graphical standards and avoid the unexamined replication of far-right corporate identity design."
       ]
     },
     "rundfunkrat": {
       "to": "TO: ARD Broadcasting Councils & ZDF Television Council",
-      "subject": "Re: Supervisory Duty on Visual Framing",
+      "subject": "Re: Program Oversight Regarding Visual Framing Effects",
       "body": [
         "Dear Sir or Madam,",
-        "As oversight bodies of the public broadcasters you are obliged to monitor compliance with journalistic principles.",
-        "The consistent use of blue for the AfD in all graphical representations violates the principle of undistorted opinion formation.",
-        "We call on you to exercise your supervisory duty and introduce a binding guideline for the historically accurate colour assignment of political parties."
+        "As supervisory bodies of public broadcasting, you are tasked with safeguarding journalistic quality standards and balanced reporting.",
+        "Visual choices in news programmes profoundly guide public perception. Uncritically maintaining extremist actors within an unobtrusive default color spectrum falls short of this responsibility.",
+        "We urge you to initiate a dialogue on differentiated, fact-based visual designations within daily broadcast graphics."
       ]
     }
   },
   "faqs": [
     {
-      "q": "Why should blue be problematic?",
-      "a": "Blue is the AfD's self-chosen colour, but it is also the colour of peace, the sky, and UN peacekeeping forces. By uncritically adopting this self-description, media transfers the emotional harmlessness association to the party."
+      "q": "Why is the party colour blue problematic here?",
+      "a": "Psychologically, blue is associated with stability, calmness, and neutrality – it is the colour of both the UN and the EU. When media uncritically mirrors the self-branding of a party with proven extremist factions, this calming sentiment is unconsciously transferred to the public image of that party."
     },
     {
-      "q": "Is this not censorship or political interference?",
-      "a": "No. This is about media-ethics standards and historical honesty. Media make editorial decisions every day – demanding historically accurate colour codes is a legitimate societal debate, not censorship."
+      "q": "Wouldn't changing the colour violate journalistic neutrality?",
+      "a": "No. Neutrality does not require the passive reproduction of political PR. Editorial desks routinely set colour standards according to clarity and contextual needs (such as using black for the CDU/CSU rather than turquoise). Visual framing is an integral part of editorial autonomy."
     },
     {
-      "q": "Does the campaign have a chance of success?",
-      "a": "Many people have already signed. Media organisations respond to public pressure. Every signature counts."
+      "q": "What is the goal of this initiative?",
+      "a": "We aim to initiate a debate on media ethics regarding the impact of visual news graphics. The objective is to increase awareness that graphical design choices in newsrooms carry meaning and are never neutral."
     },
     {
       "q": "Who is behind this campaign?",
-      "a": "The petition was started on Change.org – an open platform for civic engagement. These are engaged citizens standing up for media integrity."
+      "a": "A civil society initiative advocating for media ethics and democratic discourse quality, launched via Change.org."
     }
   ],
   "facts": [
     {
       "emoji": "🎨",
-      "label": "Blue",
-      "desc": "Colour of the sky, peace, and the UN"
+      "label": "Psychology of Blue",
+      "desc": "Associated with composure, objectivity, and internationalism"
     },
     {
       "emoji": "📺",
-      "label": "ARD & ZDF & Other Media",
-      "desc": "Use blue for AfD in graphics"
+      "label": "News Graphics",
+      "desc": "Frequently adopt party corporate identity unexamined"
     },
     {
       "emoji": "🏛️",
-      "label": "Historically",
-      "desc": "Brown = symbol of far-right extremism"
+      "label": "Historical Context",
+      "desc": "Brown historically marks the fascist tradition"
     },
     {
       "emoji": "⚖️",
-      "label": "Constitution Protection",
-      "desc": "Parts of AfD classified as proven extremist"
+      "label": "Official Classification",
+      "desc": "Subsections of the AfD confirmed as right-wing extremist"
     }
   ],
   "science": {
     "sectionH": "Scientific & Media Law Background",
-    "sectionSub": "Fact Sheet: Visual Framing and the Obligation for Accurate Political Colour Coding",
-    "part1H": "Part 1: Communication Science and Media Ethics Foundations",
+    "sectionSub": "Fact Sheet: Visual Framing and Editorial Autonomy in Political Reporting",
+    "part1H": "Part 1: Communication Science Foundations",
     "foundations": [
       {
         "title": "The Psychological Dimension of \"Visual Framing\" (Halo Effect)",
         "points": [
           {
-            "label": "The Psychology of Blue",
-            "text": "Light cyan and blue tones are universally associated with attributes such as credibility, trustworthiness, de-escalation, and institutional reliability – comparable to the colour choices of the United Nations or European institutions."
+            "label": "Colour Psychology of Blue",
+            "text": "Empirical studies consistently find that blue hues elicit associations of seriousness, de-escalation, and dependability – the reason institutions like the UN and European bodies employ it."
           },
           {
-            "label": "The Visual Downplaying Trap",
-            "text": "When a political force officially classified as proven far-right extremist by the Federal Office for the Protection of the Constitution (BfV) and several state offices is consistently depicted in this calming primary colour in news graphics, a cognitive contrast arises: the visual framing masks the ideological radicalism of the actors (halo effect)."
+            "label": "Cognitive Dissonance in Charts",
+            "text": "When an actor classified by security authorities as extremist is displayed in neutral cyan or calm blue, a normalizing halo effect takes place: the calming visual tone attenuates audience awareness of constitutional risks."
           }
         ]
       },
       {
-        "title": "Editorial Autonomy and Journalistic Precedents",
+        "title": "Editorial Autonomy and Journalistic Practice",
         "points": [
           {
             "label": "The taz Precedent",
-            "text": "During the federal election campaign, the national daily taz deliberately decided to depict the AfD bar in their charts in brown rather than blue – in both print and web. This demonstrates that conscious departures from parties' self-presentation are already practised in German journalism and recognised as a legitimate editorial tool."
+            "text": "During past federal election cycles, the national daily taz made an editorial decision to depict AfD figures in distinct colors. This highlights that journalistic contextualization rightfully extends to graphic design."
           },
           {
-            "label": "Established Colour Variance",
-            "text": "Media outlets regularly deviate from official CI guidelines. The BSW is shown in purple or orange-red depending on the outlet; the Left Party often appears in dark red to distinguish it from the SPD. The CDU/CSU uses turquoise but is consistently depicted in black. Colour coding is a flexible journalistic design tool."
+            "label": "Established Colour Conventions",
+            "text": "Newsrooms regularly deviate from official party CI to ensure visual clarity (e.g., black for the Union rather than turquoise, distinct reds for SPD vs. The Left). Palette choice is an autonomous editorial tool."
           }
         ]
       }
     ],
-    "part2H": "Part 2: Systematic Refutation of Legal and Strategic Objections",
+    "part2H": "Part 2: Legal and Journalistic Frameworks",
     "objections": [
       {
-        "title": "Objection 1: \"The media-law neutrality principle forbids recolouring.\"",
+        "title": "Objection 1: \"The neutrality principle requires identical formal treatment.\"",
         "rebuttals": [
           {
-            "label": "No Absolute Symmetry Obligation",
-            "text": "According to consistent rulings of the Federal Constitutional Court (BVerfG), Art. 21(1) GG in conjunction with § 5 PartG requires graduated equal opportunity and fair access – not blind, purely formal symmetry. Journalism may and must name differences when objective, factual grounds exist."
+            "label": "Substantive vs. Purely Formal Balance",
+            "text": "Constitutional jurisprudence requires media to provide substantive contextualization. Professional journalistic diligence entails pointing out differences in constitutional allegiance clearly and transparently."
           },
           {
-            "label": "Constitutional Protection Office as Benchmark",
-            "text": "The court-confirmed classification as \"proven far-right extremist\" is an objective, verified finding. A visualisation that reflects this through a historically established colour serves the statutory obligation for factual, truthful reporting (cf. State Media Treaty – MStV)."
+            "label": "Findings by Constitutional Protection Authorities",
+            "text": "Court-confirmed classifications by intelligence and security agencies represent documented facts. Graphics reflecting this reality comply directly with the statutory duty for truthful reporting."
           },
           {
-            "label": "No Right to Visual Protection",
-            "text": "Political parties have no constitutional entitlement to have independent media adopt their self-presentation unfiltered. The broadcasters' programming autonomy (freedom of broadcasting under Art. 5(1)(2) GG) explicitly includes the right to design information graphics according to sound journalistic criteria."
+            "label": "Broadcasting Freedom & Autonomy",
+            "text": "Freedom of broadcasting under Art. 5(1)(2) of the Basic Law safeguards editorial departments from having to replicate the promotional concepts of political parties without scrutiny."
           }
         ]
       },
       {
-        "title": "Objection 2: \"Media must follow the corporate identity (CI) of parties.\"",
+        "title": "Objection 2: \"Media must follow the party's own brand identity.\"",
         "rebuttals": [
           {
-            "label": "Journalistic Distance vs. PR Adoption",
-            "text": "Blindly adopting the CI of political actors contradicts the journalistic principle of distance. Parties use visual branding as a strategic communication tool. Uncritical reproduction of this marketing by media outlets makes them unwitting amplifiers of political communication strategies."
+            "label": "The Obligation of Journalistic Distance",
+            "text": "Party marketing serves partisan objectives. The principle of critical distance dictates maintaining independent editorial criteria rather than functioning as PR megaphones."
           },
           {
-            "label": "Visual Truth as a Duty",
-            "text": "When constitutional protection agencies document significant differences in parties' constitutional loyalty, treating all parties equally in an innocent \"standard blue\" misleads the audience. Visual truth requires a colour choice that reflects the constitutional status."
+            "label": "Clarity for the Public",
+            "text": "Information graphics exist to provide orientation. A design practice that conceals radical agendas beneath innocuous standard palettes defeats this public service mandate."
           }
         ]
       },
       {
-        "title": "Objection 3: \"Recolouring gives the party ammunition for its victim narrative.\"",
+        "title": "Objection 3: \"This fuels the party's victimhood narrative.\"",
         "rebuttals": [
           {
-            "label": "Proactive Core Strategy",
-            "text": "Analyses of far-right communication (including by Dr Johannes Hillje) show: the \"media victim narrative\" is a proactive, structural core strategy that is constructed and exploited completely independently of actual editorial decisions."
+            "label": "Preemptive Strategic Rhetoric",
+            "text": "Media studies verify that populist movements cultivate grievance narratives systematically – completely independent of actual editorial formatting choices."
           },
           {
-            "label": "No Preemptive Submission",
-            "text": "When editorial teams forgo necessary media-ethics adjustments out of fear of a party's reaction, they subordinate their editorial independence to that party's communication strategy. The most effective protection is not inaction, but transparent, scientifically and legally rigorous disclosure of the editorial design decision."
+            "label": "Transparency over Hesitation",
+            "text": "Journalistic determinations must not be suppressed out of fear of calculated backlash. Transparent, evidence-based reasoning is the strongest safeguard for editorial integrity."
           }
         ]
       }
@@ -354,12 +354,12 @@
     {
       "id": "social",
       "title": "Social & Welfare",
-      "metric": "Benefits only for the richest 1%",
-      "description": "The economic and social policy plans of the AfD run fundamentally counter to the interests of low-income earners, pensioners, and employees.",
+      "metric": "Benefits primarily the wealthiest 1%",
+      "description": "Economic and social policy analyses indicate substantial disadvantages for low-wage earners, pensioners, and employees.",
       "points": [
-        "Opposed raising the minimum wage to €12 (which disproportionately benefits low-wage workers and East Germans).",
-        "Proposal to replace standard welfare (Bürgergeld) with a heavily reduced system (max. 6 months) and forced, unpaid 'citizen labor'.",
-        "Demands the abolition of wealth and inheritance taxes, benefiting almost exclusively the richest 1% of the population."
+        "Rejection of statutory minimum wage increases, which disproportionately impacts economically vulnerable regions.",
+        "Proposals to drastically curb basic social security support in favor of mandatory community labour requirements.",
+        "Demands to eliminate wealth and inheritance taxes, primarily yielding tax relief for the highest income and wealth brackets."
       ],
       "citation": "German Institute for Economic Research (DIW Berlin) — The AfD Paradox (2023)",
       "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
@@ -368,11 +368,11 @@
       "id": "economy",
       "title": "Economy & Prosperity",
       "metric": "-5.6% GDP through 'Dexit' plans",
-      "description": "Far-right economic nationalism and a withdrawal from the EU pose a massive threat to the prosperity and capability of the German economy.",
+      "description": "Protectionist nationalism and withdrawal from European integration undermine national economic vitality.",
       "points": [
-        "IW Calculation (2024): A German exit from the EU ('Dexit') would lead to a 5.6% drop in real GDP (around €690 billion) within 5 years.",
-        "Demographic Gap: Isolationism and xenophobic rhetoric worsen the critical skilled labor shortage by deterring international specialists.",
-        "State Budget: The demanded tax cuts (€181 billion) combined with extensive pension promises threaten the stability of public finances."
+        "IW Calculation (2024): A German withdrawal from the EU ('Dexit') would reduce real GDP by approx. 5.6% (around €690 billion) within five years.",
+        "Exacerbation of skilled labour shortages through aggressive anti-immigration policies and international deterrence effects.",
+        "Unbudgeted tax reduction plans threaten the fiscal sustainability and investment capacity of public budgets."
       ],
       "citation": "German Economic Institute (IW Cologne) — Consequences of an EU Exit (2024)",
       "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
@@ -380,12 +380,12 @@
     {
       "id": "press",
       "title": "Press & Broadcasters",
-      "metric": "Exclusions stopped by court ruling",
-      "description": "Far-right parties view free media as opponents and systematically attempt to suppress or restrict critical reporting.",
+      "metric": "Exclusions halted by court injunctions",
+      "description": "Recurring efforts to sideline critical journalists and undermine constitutionally protected press freedom.",
       "points": [
-        "Repeated attempts to exclude independent journalists (e.g. from WDR, BR, Spiegel, Welt, taz) from party congresses and election events, which courts had to block via emergency injunctions.",
-        "Systemic campaign against public broadcasting ('lying press' rhetoric) with the goal of breaking up and dry-funding independent networks.",
-        "Historical comparison shows: Autocratic regimes in Hungary (KESMA conglomerate) and Poland (under PiS) rapidly seized media control."
+        "Judicially overruled attempts to bar independent journalists from party conferences and election night coverage.",
+        "Targeted campaigns aimed at discrediting public service broadcasting and draining its funding structures.",
+        "Risks mirroring developments observed in illiberal systems where media diversity has been compromised."
       ],
       "citation": "Erfurt District Court / Munich District Court I (2024) — Emergency decisions on press freedom",
       "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
@@ -393,12 +393,12 @@
     {
       "id": "culture",
       "title": "Art, Culture & Education",
-      "metric": "Lawsuits against school theater dismissed",
-      "description": "The independence of culture, science, and schools is targeted to establish a nationalist, ethnocentric narrative.",
+      "metric": "Lawsuits against cultural projects dismissed",
+      "description": "Attempts to politically restrict independent artistic, academic, and school initiatives.",
       "points": [
-        "Lawsuits against critical school theater plays ('Thanks for that, AfD') failed, as they fall under the constitutional protection of artistic freedom.",
-        "Demands in state parliaments to tie cultural funding to a 'commitment to German identity' and blacklist critical theater directors.",
-        "Creation of online denunciation portals ('Neutral School') for reporting teachers who critically discuss right-wing extremism."
+        "Courts dismissed attacks against politically reflective theatre productions, reaffirming artistic freedom as a constitutional right.",
+        "Parliamentary motions attempting to condition cultural grants on ideological affirmations.",
+        "Initiatives promoting reporting portals aimed at monitoring teachers who critically address constitutional issues."
       ],
       "citation": "Hanover Administrative Court (2023) / Federal Association of Free Performing Arts",
       "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
@@ -406,12 +406,12 @@
     {
       "id": "crime",
       "title": "Security & Violence",
-      "metric": "Far-Right offenses dominate",
-      "description": "Official statistics from the Federal Criminal Police Office (BKA) prove that far-right violence, crimes, and online hate postings dominate in both quantity and severity.",
+      "metric": "Far-right offenses predominate",
+      "description": "Official criminal statistics demonstrate a persistently elevated threat from politically motivated right-wing crime.",
       "points": [
-        "Total Crimes (2025): 42,544 right-wing motivated offences (approx. 50% of all cases) compared to 13,490 left-wing motivated offences.",
-        "Violent Crimes (2025): 1,598 right-wing violent crimes compared to 1,087 left-wing violent crimes.",
-        "Hate Postings (2025): 4,870 right-wing hate crimes on the internet compared to 1,460 left-wing offenses."
+        "Offenses (2025): Around half of all politically motivated crimes are registered within the far-right spectrum.",
+        "Disproportionately elevated numbers in physical assaults, violent crimes, and targeted intimidation.",
+        "High volume of coordinated digital hate campaigns directed at civil society figures."
       ],
       "citation": "Federal Criminal Police Office (BKA) — Politically Motivated Crime in 2025 (June 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
@@ -419,12 +419,12 @@
     {
       "id": "alliances",
       "title": "Alliances & Networks",
-      "metric": "EU Group Co-Chair: René Aust (AfD)",
-      "description": "The AfD collaborates with extreme nationalists at the European level and is suspected of being funded and instrumentalized by authoritarian regimes like Russia and China.",
+      "metric": "European parliamentary group formation",
+      "description": "Close ties to ultranationalist factions across Europe alongside ongoing inquiries into links with authoritarian regimes.",
       "points": [
-        "Europe of Sovereign Nations (ESN): In July 2024, the AfD founded this EU group alongside far-right parties such as Konfederacja (Poland) and Our Homeland (Hungary).",
-        "Russian Funding: Public prosecutors are investigating AfD politicians Petr Bystron and Maximilian Krah for corruption and money laundering linked to the pro-Russian propaganda network 'Voice of Europe'.",
-        "China Espionage: A close assistant to lead AfD candidate Maximilian Krah was arrested in April 2024 on suspicion of spying for the Chinese intelligence service."
+        "Key involvement in establishing the nationalist ESN faction within the European Parliament.",
+        "Investigations regarding financial networks and influence operations tied to pro-Russian platforms.",
+        "Security-relevant inquiries surrounding suspected intelligence collaborations."
       ],
       "citation": "German Bundestag / Federal Public Prosecutor / Munich Prosecution (2024-2025)",
       "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
@@ -459,83 +459,83 @@
   "wordsMeaning": [
     {
       "word": "Freedom",
-      "meaning": "Obedience & Submission"
+      "meaning": "Demands for deregulation for one's own base paired with restrictions on political opponents"
     },
     {
       "word": "Peace",
-      "meaning": "Capitulation & Repression"
+      "meaning": "Demands to accommodate authoritarian aggression while weakening Western alliances"
     },
     {
       "word": "Democracy",
-      "meaning": "Dictatorship of one's own group & Exclusion"
+      "meaning": "Reduction to an exclusionary ethnic concept of the public, suppressing minority rights"
     },
     {
       "word": "Sovereignty",
-      "meaning": "Isolationism & Right of the Stronger"
+      "meaning": "Nationalist isolationism and dismantling international partnerships"
     },
     {
       "word": "Resistance",
-      "meaning": "Overthrowing the System & One's Own Dictatorship"
+      "meaning": "Delegitimization of democratic institutions and constitutional norms"
     },
     {
       "word": "Freedom of Speech",
-      "meaning": "Censorship for Others & Impunity for Own Hatred"
+      "meaning": "Unrestricted dissemination of disinformation while attempting to silence independent reporting"
     },
     {
       "word": "Homeland",
-      "meaning": "Ethnonationalism & Expulsion (\"Remigration\")"
+      "meaning": "Ethno-nationalist exclusion and deportation concepts ('Remigration')"
     },
     {
       "word": "Protection of the Family",
-      "meaning": "Patriarchy & Queer Hostility"
+      "meaning": "Rejection of pluralist family models and opposition to queer rights"
     },
     {
       "word": "Justice",
-      "meaning": "Social Darwinism"
+      "meaning": "Dismantling welfare protections to the benefit of affluent voter segments"
     },
     {
       "word": "Common Sense",
-      "meaning": "Anti-Science & Conspiracy Myths"
+      "meaning": "Dismissal of scientific consensus and empirical reality"
     },
     {
       "word": "Patriotism",
-      "meaning": "Xenophobia & Exclusion"
+      "meaning": "Chauvinism and disparagement of open, pluralistic societies"
     },
     {
       "word": "Normality",
-      "meaning": "Discrimination Against All Deviations"
+      "meaning": "Reversing social diversity in favor of rigid social roles"
     },
     {
       "word": "Tradition",
-      "meaning": "Regression & Erasure of Diversity"
+      "meaning": "Romanticized revisionism and devaluation of modern democratic milestones"
     },
     {
       "word": "Self-determination",
-      "meaning": "Supremacy of One's Own Ideology"
+      "meaning": "Rule of the strongest cloaked in nationalist terms"
     },
     {
       "word": "Security",
-      "meaning": "Surveillance, Repression & Scapegoating"
+      "meaning": "Blanket suspicion and criminalization of vulnerable groups"
     },
     {
       "word": "The People's Will",
-      "meaning": "Marginalisation of Minorities"
+      "meaning": "Claim to absolute authority by a minority over the pluralistic majority"
     },
     {
       "word": "Reform",
-      "meaning": "Dismantling of Democratic Structures"
+      "meaning": "Systematic dismantling of constitutional checks and balances"
     },
     {
       "word": "Transparency",
-      "meaning": "Selective Disclosure & Disinformation"
+      "meaning": "Targeted disinformation aimed at unsettling public trust"
     },
     {
       "word": "Strength",
-      "meaning": "Authoritarianism & Intimidation"
+      "meaning": "Authoritarian governing style replacing consensual conflict resolution"
     },
     {
       "word": "Truth",
-      "meaning": "Propaganda for One's Own Agenda"
+      "meaning": "Institutionalization of partisan propaganda narratives"
     }
   ]
 }

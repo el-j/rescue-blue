@@ -5,121 +5,121 @@
     "navRisks": "Riskler",
     "navScience": "Bilim ve Hukuk",
     "navLetter": "Açık Mektup",
-    "navCulture": "Kültürel Miras",
+    "navCulture": "Mavinin Anlamı",
     "navSign": "Şimdi İmzala",
-    "navShare": "Dilekçeyi paylaş",
-    "shareTitle": "Dilekçeyi paylaş",
-    "shareSubtitle": "QR kodunu tarayın veya bağlantıyı kopyalayın",
-    "shareDownloadQr": "QR kodu indir",
-    "shareCopyLink": "Bağlantıyı kopyala",
+    "navShare": "İmza Kampanyasını Paylaş",
+    "shareTitle": "İmza Kampanyasını Paylaş",
+    "shareSubtitle": "Karekodunu tara veya bağlantıyı kopyala",
+    "shareDownloadQr": "Karekodu İndir",
+    "shareCopyLink": "Bağlantıyı Kopyala",
     "shareLinkCopied": "Kopyalandı!",
     "shareClose": "Kapat",
-    "badge": "Görsel Medya Etiği ve Kültürel Koruma",
-    "heroH1": "Maviyi Kurtar.",
+    "badge": "Görsel Medya Etiği ve Sorumluluk",
+    "heroH1": "Maviyi Koru.",
     "heroH1Alt": "Maviyi Savun.",
-    "heroSub": "Doğru bir renk seçimi için.",
-    "heroSubAlt": "Görsel normalleştirmeyi durduralım.",
-    "heroBody": "Dilimiz ve renk sembolizmimiz tarihsel olarak pozitifliğe dayanmaktadır. ARD, ZDF ve özel kanallardan siyasi renk kodlarını düzeltmelerini talep ediyoruz: AfD grafiklerde kahverengi ile gösterilmeli, mavi ile değil.",
-    "sigCount": "Şu ana kadar",
+    "heroSub": "Farkındalıklı bir siyasi renk seçimi için.",
+    "heroSubAlt": "Görsel normalleştirmeye son verin.",
+    "heroBody": "Renkler bilinçaltına mesajlar iletir ve duyguları tetikler. ARD, ZDF ve özel yayıncılardan siyasi renk kodlamalarını eleştirel bir gözle gözden geçirmelerini talep ediyoruz: Aşırı sağcı akımlar, haber infografiklerinde sakinleştirici ve kurumsal renk tonlarıyla görsel olarak hafife alınmamalıdır.",
+    "sigCount": "Şimdiden",
     "sigSupport": "destekçi",
-    "sigLive": "Gerçek zamanlı veriler",
-    "sigFallback": "Yerel anlık görüntü",
+    "sigLive": "Gerçek zamanlı veri",
+    "sigFallback": "Yerel kayıt",
     "heroImgCaption": "Kampanya Görselimiz",
-    "heroImgSub": "Görsel gerçeği oluşturmak, dilsel Maviyi korumak.",
-    "heroImgCta": "Change.org'da imzala",
-    "demoSandbox": "Sandbox Modu",
+    "heroImgSub": "Medya standartlarını güçlendirmek, görsel normalleştirmeyi azaltmak.",
+    "heroImgCta": "Change.org'da İmzala",
+    "demoSandbox": "Deneme Modu",
     "demoH2": "İnteraktif Renk Karşılaştırması",
-    "demoDesc": "Mavi yumuşatma kodunu tarihsel olarak doğru kahverengi ile değiştirmek için düğmeye veya çubuğa tıklayın.",
+    "demoDesc": "Grafiklerdeki alternatif renk kodlamalarının algısal etkisini incelemek için düğmeye veya çubuğa tıklayın.",
     "demoSourceLabel": "Veri tabanı",
     "demoSourceLive": "Anket API'sinden canlı",
     "demoSourceFallback": "Yerel yedek değer",
-    "demoSourceApi": "Kaynak: DAWUM Pazar anketi (Bundestag)",
+    "demoSourceApi": "Kaynak: DAWUM Pazar Anketi (Federal Meclis)",
     "demoSourceInstitute": "Enstitü",
-    "demoSourceDate": "Anket tarihi",
-    "demoSourceFieldwork": "Saha çalışması",
+    "demoSourceDate": "Anket Tarihi",
+    "demoSourceFieldwork": "Saha Çalışması",
     "demoSourceSample": "Örneklem",
     "demoSourceMethod": "Yöntem",
-    "demoSourceStand": "Güncellendi",
-    "demoSourceButton": "Kaynak ve yöntemi aç",
+    "demoSourceStand": "Güncelleme",
+    "demoSourceButton": "Kaynak ve Yöntemi Aç",
     "demoOption": "Görselleştirme Seçeneği",
-    "demoQuestion": "Hangi renk seçimi doğru ve tarihsel olarak dürüst?",
-    "demoReset": "Rüyadan çık",
-    "demoSwitch": "Kahverengiye geç",
-    "dreamBanner": "Hayal Senaryosu — Dilekçemiz neler başarabilir",
-    "dreamBody": "Her imza ile medya üzerindeki baskı artıyor. Bu senaryo, seçmenlerin faşizmi gördüğü ve sırtını döndüğü bir dünyanın nasıl görünebileceğini gösteriyor.",
+    "demoQuestion": "Hangi renk seçimi siyasi sınıflandırmayı doğru şekilde yansıtır?",
+    "demoReset": "Değerleri Sıfırla",
+    "demoSwitch": "Kahverengi görünümü test et",
+    "dreamBanner": "Vizyon — İmza kampanyamızın hedeflediği etki",
+    "dreamBody": "Her imza ile birlikte görsel çerçeveleme (framing) ve haber tasarımı konusundaki farkındalık artıyor. Bilinçli ve sorgulayıcı habercilik, olgun bir demokratik tartışma zeminini güçlendirir.",
     "comparisonToggle": "Çoğunluğu göster",
     "comparisonTitle": "AfD vs. Demokratik Çoğunluk",
-    "comparisonRatio": "× daha fazla insan AfD'ye oy VERMİYOR",
-    "comparisonMessage": "Ezici çoğunluk demokrasiden yana.",
-    "allOthersLabel": "Diğer Tümü",
-    "whyH2": "Renk Maskaralığının Arka Planı",
-    "whyIntro": "Bilimsel çerçeveleme araştırması gösteriyor: siyasi aktörlerin algısı, onları temsil etmek için kullanılan görsel sinyallerden önemli ölçüde etkileniyor.",
+    "comparisonRatio": "kat daha fazla insan AfD'ye oy VERMİYOR",
+    "comparisonMessage": "Ezici çoğunluk temel demokratik değerleri savunuyor.",
+    "allOthersLabel": "Diğerleri",
+    "whyH2": "Görsel Algının Mekanizmaları",
+    "whyIntro": "İletişim bilimleri ve çerçeveleme (framing) araştırmaları açıkça ortaya koyuyor: Siyasi aktörlerin kamuoyundaki algısı, haber bültenlerinde onları temsil etmek için tercih edilen görsel kodlarla doğrudan şekillenmektedir.",
     "whyCard1H": "Görsel Hafife Alma",
-    "whyCard1": "Mavi gökyüzünün, denizin ve barış güçlerinin rengidir. Sakinleştirir, güven oluşturur ve zararsızlık sinyali verir. Bu duygusal kodlamayı völkisch-milliyetçi bir grup için kullanmak ölümcül bir medya etiği hatasıdır.",
-    "whyCard2H": "Tarihsel Atama",
-    "whyCard2": "Siyasi renk kahverengi, Almanya'nın kolektif hafızasında völkisch milliyetçilik ve aşırı sağ ile sağlam bir şekilde ilişkilidir. Dürüst grafik standartları bu tarihsel sürekliliği görsel olarak ortaya koymalıdır.",
-    "cultureH": "Kültürel Mirası Korumak",
-    "cultureSub": "Bu, topluluğumuzun dilsel mülkiyetidir.",
-    "tabLang": "Dil Hazinesi",
-    "tabSym": "Sembolizm ve Tarih",
+    "whyCard1": "Renk psikolojisinde mavi tonları güvenilirlik, tarafsızlık ve yatıştırıcılıkla özdeşleşir; bu renk aynı zamanda uluslararası barış misyonlarının ve Avrupa kurumlarının simgesidir. Aşırı sağcı bir partinin kendi seçtiği kurumsal rengin medyada eleştirel süzgeçten geçirilmeden kullanılması, anayasa karşıtı eğilimleri görsel olarak yumuşatan bir algı yaratır.",
+    "whyCard2H": "Tarihsel Bağlantı",
+    "whyCard2": "Almanya'nın siyasi ikonografisinde kahverengi, tartışmasız biçimde ırkçı milliyetçiliği ve aşırı sağı simgeler. Sorumlu bir bilgilendirme tasarımı, arka plandaki ideolojik sınıflandırmayı görsel olarak da açıkça ortaya koyma cesaretini göstermelidir.",
+    "cultureH": "Renk Anlambilimi ve Kültür Tarihi",
+    "cultureSub": "Renkler ve deyimler ortak algımızı nasıl şekillendiriyor?",
+    "tabLang": "Dilsel Kullanım",
+    "tabSym": "Kültür ve Tarih",
     "letterH": "Açık Mektup",
-    "letterSub": "Editörleri ve denetim organlarını nasıl sorumlu tuttuğumuzu görmek için hedef kitleyi seçin:",
+    "letterSub": "Yayın kurullarına ve denetim organlarına yönelik medya etiği gerekçelerimizi okumak için hedef grubu seçin:",
     "targetPublic": "Kamu Yayıncıları",
     "targetPrivate": "Özel Medya",
-    "targetCouncil": "Yayın Konseyleri",
-    "ctaBanner": "Şimdi imzala ve Maviyi kurtar!",
+    "targetCouncil": "Yayın Denetim Kurulları",
+    "ctaBanner": "Bilinçli medya kodları için şimdi imzalayın!",
     "ctaBodyPre": "",
-    "ctaBodyMid": "kişi bu dilekçeyi zaten imzaladı. Dürüst görsel haberciliği desteklediğini göster.",
-    "ctaBodyLoading": "Change.org'dan imza sayısı yükleniyor.",
-    "ctaBtn": "Change.org'da imzala",
-    "ctaBtnAlt": "İmzanı şimdi ekle",
-    "ctaExternalHint": "Change.org üzerindeki kampanyaya yönlendirileceksiniz.",
-    "ctaInfo": "Ücretsiz · Reklam yok · Sadece sesin önemli",
-    "footerTagline": "Medya bütünlüğü ve mavi rengin kültürel mirasının korunması için bir kampanya.",
-    "footerLink": "Change.org'da dilekçeyi görüntüle",
-    "footerImprint": "Yasal Bildirim",
-    "alsoSupportH": "Daha Fazla Dilekçeyi Destekle",
-    "alsoSupportSub": "Güçlü bir demokratik Almanya için mücadele eden diğer dilekçeler.",
+    "ctaBodyMid": "üzerinde insan bu kampanyayı imzaladı. Nitelikli habercilik ve şeffaf infografik standartları için siz de sesinizi yükseltin.",
+    "ctaBodyLoading": "Change.org üzerinden güncel imza sayısı yükleniyor.",
+    "ctaBtn": "Change.org'da İmzala",
+    "ctaBtnAlt": "İmzanızla destek olun",
+    "ctaExternalHint": "Change.org üzerindeki imza kampanyasına yönlendirileceksiniz.",
+    "ctaInfo": "Ücretsiz · Reklamsız · Yalnızca imzanız değer taşır",
+    "footerTagline": "Medya etiği ve görsel çerçeveleme etkilerinin eleştirel analizi için sivil bir inisiyatif.",
+    "footerLink": "Change.org'daki Kampanyaya Git",
+    "footerImprint": "Künye / Yasal Uyarı",
+    "alsoSupportH": "Diğer Kampanyaları Destekleyin",
+    "alsoSupportSub": "Demokrasiyi ve medya okuryazarlığını güçlendirmeyi amaçlayan diğer girişimler.",
     "alsoSupportBtn": "İmzala",
-    "sidebarSignatures": "İmzalar",
-    "sidebarGrowing": "ve her gün artıyor!",
-    "sidebarQuickFacts": "Hızlı Bilgiler",
+    "sidebarSignatures": "İmza",
+    "sidebarGrowing": "ve her geçen gün artıyor!",
+    "sidebarQuickFacts": "Kısa Bilgiler",
     "themeLight": "Açık",
     "themeDark": "Koyu",
     "langLabel": "Dil",
     "faqTitle": "SSS",
-    "faqSub": "Kampanya ve taleplerimiz hakkında sıkça sorulan sorular.",
-    "demoDreamReset": "Değerleri sıfırla",
+    "faqSub": "Kampanyamız ve medya etiği taleplerimiz hakkında sıkça sorulan sorular.",
+    "demoDreamReset": "Değerleri Sıfırla",
     "demoDreamSwitch": "En iyi geleceği görselleştir",
-    "newsBadge": "Basın Raporu",
-    "readMore": "Makaleyi oku",
-    "latestNewsTitle": "Son Aşırılık Raporları",
+    "newsBadge": "Basın Haberi",
+    "readMore": "Haberi Oku",
+    "latestNewsTitle": "Güncel Aşırı Sağ Raporları",
     "campaignTab": "Kampanya",
     "archiveTitle": "Basın Arşivi",
-    "archiveSub": "Aşırı sağcı AfD faaliyetlerine ilişkin raporların kronolojik özeti",
-    "archiveExpand": "Expand archive",
-    "archiveCollapse": "Collapse archive",
-    "archiveCollapsedHint": "Archive is collapsed by default to keep the page shorter and more focused.",
-    "archiveShowingLabel": "Showing",
-    "archivePrevPage": "Previous",
-    "archiveNextPage": "Next",
-    "archivePageLabel": "Page",
-    "archiveEntry": "Entry",
-    "archiveEntries": "Entries",
-    "newsPrevLabel": "Previous article",
-    "newsNextLabel": "Next article",
-    "newsSlideLabel": "Go to article",
-    "noNews": "Arşivde haber bulunmuyor.",
+    "archiveSub": "Aşırı sağcı AfD faaliyetlerine dair haberlerin kronolojik özeti",
+    "archiveExpand": "Arşivi Aç",
+    "archiveCollapse": "Arşivi Kapat",
+    "archiveCollapsedHint": "Sayfa düzenini korumak için arşiv varsayılan olarak kapalıdır.",
+    "archiveShowingLabel": "Gösterilen:",
+    "archivePrevPage": "Önceki",
+    "archiveNextPage": "Sonraki",
+    "archivePageLabel": "Sayfa",
+    "archiveEntry": "Kayıt",
+    "archiveEntries": "Kayıt",
+    "newsPrevLabel": "Önceki Haber",
+    "newsNextLabel": "Sonraki Haber",
+    "newsSlideLabel": "Habere Git",
+    "noNews": "Arşivde henüz haber bulunmuyor.",
     "dateHeader": "Tarih",
     "sourceHeader": "Kaynak",
-    "titleHeader": "Rapor",
-    "recipientsHeader": "Alıcıların Durumu",
+    "titleHeader": "Rapor / Haber",
+    "recipientsHeader": "Karar Vericilerin Durumu",
     "status_supported": "Destekliyor",
     "status_opposed": "Reddediyor",
     "status_no_answer": "Beklemede",
-    "roleArdChair": "ARD Başkanı & Hessischer Rundfunk (hr) Genel Müdürü",
+    "roleArdChair": "ARD Başkanı ve Hessischer Rundfunk (hr) Genel Müdürü",
     "roleZdfChefred": "Genel Yayın Yönetmeni, Zweites Deutsches Fernsehen (ZDF)",
-    "roleTagesschauChefred": "ARD-aktuell (Tagesschau) Genel Yayın Yönetmeni",
+    "roleTagesschauChefred": "ARD-aktuell (Tagesschau) Birinci Genel Yayın Yönetmeni",
     "roleZdfIntendant": "Genel Müdür, Zweites Deutsches Fernsehen (ZDF)",
     "roleWdrIntendant": "Genel Müdür, Westdeutscher Rundfunk (WDR)",
     "roleNdrIntendant": "Genel Müdür, Norddeutscher Rundfunk (NDR)",
@@ -129,222 +129,222 @@
     "roleProsiebenChefred": "Genel Yayın Yönetmeni, Seven.One Entertainment Group (ProSiebenSat.1)",
     "roleSpiegelChefred": "Genel Yayın Yönetmeni, DER SPIEGEL",
     "roleZeitChefred": "Genel Yayın Yönetmeni, DIE ZEIT",
-    "roleWdrCouncil": "WDR Yayın Kurulu Başkanı",
-    "roleNdrCouncil": "NDR Yayın Kurulu Başkanı",
-    "roleZdfCouncil": "ZDF Televizyon Kurulu Başkanı",
-    "heroImgText1": "KAMPANYA: MEDYADA AfD'Yİ KAHVERENGİ GÖSTERİN - MAVİYİ KORUYUN.",
-    "heroImgText2": "ŞİMDİ İMZALAYIN: MAVİYİ KORUYUN!",
-    "heroImgText2Alt": "ŞİMDİ İMZALAYIN: MAVİYİ SAVUNUN!",
-    "heroImageAlt": "Rescue Blue kampanya görseli",
-    "dangersTitle": "Aşırı Sağ Siyasetin Riskleri ve Sonuçları",
-    "dangersSubtitle": "Bilimsel olarak kanıtlanmış ve ampirik olarak desteklenmiştir: AfD'nin yükselişinin toplumumuzu, ekonomimizi und temel haklarımızı nasıl tehdit ettiği.",
-    "dangersSourceLabel": "Kaynak & Tam metin",
+    "roleWdrCouncil": "WDR Yayın Konseyi Başkanı",
+    "roleNdrCouncil": "NDR Yayın Konseyi Başkanı",
+    "roleZdfCouncil": "ZDF Televizyon Konseyi Başkanı",
+    "heroImgText1": "İMZA KAMPANYASI: GÖRSEL STANDARTLARI GÖZDEN GEÇİRİN - MAVİ KULLANIMINI SORGULAYIN.",
+    "heroImgText2": "ŞİMDİ İMZALAYIN: TARİHSEL ŞEFFAFLIK İÇİN!",
+    "heroImgText2Alt": "ŞİMDİ İMZALAYIN: SORUMLU HABER GRAFİKLERİ İÇİN!",
+    "heroImageAlt": "Habercilikte görsel renk kodlarının ayrıştırılması kampanyası görseli",
+    "dangersTitle": "Aşırı Sağ Politikaların Riskleri ve Sonuçları",
+    "dangersSubtitle": "Bilimsel araştırmalarla kanıtlanmış ve ampirik verilerle desteklenmiş: AfD'nin yükselişinin demokratik kurumlara, ekonomiye ve temel haklara getirdiği tehditler.",
+    "dangersSourceLabel": "Kaynak ve Tam Metin",
     "dangersViewLabel": "Görünüm",
     "footerBrand": "Rescue Blue",
-    "trustTitle": "Şeffaflık ve güven",
-    "trustIntro": "Kampanyanın yanlış bilgi veya dolandırıcılık sayfalarıyla karıştırılmaması için bu kampanyayı kimin yürüttüğünü, verilerin nasıl güncellendiğini ve kaynakları nasıl seçtiğimizi açıkça paylaşıyoruz.",
-    "trustWhoTitle": "Biz kimiz",
-    "trustWhoBody": "Bu dilekçe sivil toplum tarafından yürütülür ve Change.org üzerinde barındırılır. İletişim ve işletmeci bilgileri yasal bildirimde yer alır.",
-    "trustWhoLink": "Yasal bildirimi aç",
-    "trustDataTitle": "Veri ve güncellemeler",
-    "trustDataBody": "Anket verileri belgelenmiş kaynaklardan gelir. İmza sayısı düzenli olarak güncellenen bir anlık görüntüdür, ancak saniye saniye gerçek zamanlı değildir.",
-    "trustSourceTitle": "Kaynak politikası",
-    "trustSourceBody": "Orijinal kaynaklara ve uygun olduğunda arşiv kopyalarına bağlantı veririz. Aşırılık bağlamındaki terimler propaganda için değil, belgeleme amacıyla kullanılır.",
-    "trustSourceLink": "Metodolojiyi oku",
-    "editorialPolicyTitle": "Kaynak ve editoryal politika",
-    "editorialPolicyIntro": "Bu site belgeleme odaklı bir bilgilendirme yaklaşımı izler. İddiaların doğrulanabilir olması için kaynak seçimi ve ifade kurallarını yayımlarız.",
-    "editorialPolicyRulesTitle": "Nasıl çalışıyoruz",
-    "editorialPolicyRule1": "Önce birincil kaynaklar: mümkün olduğunda orijinal kaynaklara bağlantı veririz (kurumlar, mahkemeler, enstitüler, editoryal ofisler).",
-    "editorialPolicyRule2": "Slogan yerine bağlam: iddialar tarih, kaynak ve disipliner bağlamla sunulur.",
-    "editorialPolicyRule3": "Arşiv dayanıklılığı: uygun olduğunda, kaynak sayfa taşınır veya güncellenirse diye arşiv bağlantısı ekleriz.",
-    "editorialPolicyRule4": "Propaganda yeniden üretimi yok: aşırılık bağlamındaki terimler promosyon için değil, eleştirel ve belgesel amaçla kullanılır.",
-    "editorialPolicyCorrectionsTitle": "Düzeltmeler ve iletişim",
-    "editorialPolicyCorrectionsBody": "Gerçeğe dayalı bir hata bulursanız yasal bildirimdeki iletişim kanallarını kullanın. Doğrulanabilir hatalar hızla incelenir ve düzeltilir.",
-    "wordsMeaningTitle": "Kelimeler = Anlam",
-    "wordsMeaningSubtitle": "Sağcı Retorik vs. Gerçeklik – Sözlük: aşırı sağ aktörlerin söyledikleri ve gerçekte kastettikleri."
+    "trustTitle": "Şeffaflık ve Yöntem",
+    "trustIntro": "Bu sivil medya girişiminin arkasında kimlerin olduğunu, verilerin nasıl derlendiğini ve kaynakların hangi ölçütlerle seçildiğini açıkça paylaşıyoruz.",
+    "trustWhoTitle": "Biz Kimiz?",
+    "trustWhoBody": "Bu imza kampanyası, haber doğruluğu ve medya etiği amacıyla oluşturulmuş sivil toplum girişimidir ve Change.org üzerinde yürütülmektedir. İletişim bilgileri künyede yer almaktadır.",
+    "trustWhoLink": "Künyeyi Görüntüle",
+    "trustDataTitle": "Veri ve Güncelleme",
+    "trustDataBody": "Anket verileri resmî ve saygın araştırma enstitülerinden derlenmektedir. İmza sayıları düzenli aralıklarla API veya anlık kayıt üzerinden güncellenir.",
+    "trustSourceTitle": "Kaynak İlkesi",
+    "trustSourceBody": "Doğrudan birincil kaynaklara, akademik çalışmalara ve resmî kurumsal raporlara başvuruyoruz. Aşırı sağcı kavramlar yalnızca eleştirel ve belgesel bağlamda ele alınmaktadır.",
+    "trustSourceLink": "Metodolojiyi Oku",
+    "editorialPolicyTitle": "Yayın İlkeleri",
+    "editorialPolicyIntro": "Bu sayfa belgesel ve bilgilendirici bir amaç taşımaktadır. Doğrulanabilirlik sağlamak adına benimsediğimiz kurallar şunlardır:",
+    "editorialPolicyRulesTitle": "Çalışma İlkelerimiz",
+    "editorialPolicyRule1": "Önce birincil kaynaklar: Mümkün olan her durumda doğrudan yargı kararlarına, bilimsel analizlere ve bağımsız medya kaynaklarına bağlantı verilir.",
+    "editorialPolicyRule2": "Slogan yerine bağlam: Tüm iddialar tarih, kurumsal kaynak ve analitik çerçevesiyle birlikte sunulur.",
+    "editorialPolicyRule3": "Arşiv güvencesi: Kaynakların silinmesi veya değiştirilmesi ihtimaline karşı önemli belgelerin arşiv kopyaları tutulur.",
+    "editorialPolicyRule4": "Analitik mesafe: Aşırı sağcı propaganda dili yaygınlaştırılmaz; metodolojik olarak çözümlenir ve sorgulanır.",
+    "editorialPolicyCorrectionsTitle": "Düzeltme ve İletişim",
+    "editorialPolicyCorrectionsBody": "Olası bir olgusal hata fark ederseniz, künyedeki iletişim kanallarından bize bildirebilirsiniz. Belgelenebilir bildirimler ivedilikle incelenir ve düzeltilir.",
+    "wordsMeaningTitle": "Siyasi Retorik ve Gerçekler",
+    "wordsMeaningSubtitle": "Aşırı sağcı jargon vs. Gerçek hedefler: Kavramsal bir rehber."
   },
   "sayings": {
     "sprache": [
       {
-        "phrase": "«Blau machen» (İşi asmak)",
-        "origin": "Orta Çağ / Boyacılık",
-        "desc": "Terim, boyacıların boş Pazartesi gününden gelmektedir. Yün havada oksitlenip mavi olurken iş dinlenirdi. Dinlenme için güzel bir Alman metaforu."
+        "phrase": "«Blau machen» (İşi asmak / Mola vermek)",
+        "origin": "Etimoloji / Zanaat Tarihi",
+        "desc": "Tarihte boyacılık zanaatında yünlerin açık havada oksitlenip maviye dönüştüğü ve çalışmanın zorunlu olarak durduğu dinlenme aşamalarına dayanır. Geçmişteki zanaat çalışma döngülerinin somut bir göstergesidir."
       },
       {
-        "phrase": "«Ins Blaue hinein» (Maviye doğru)",
-        "origin": "Doğa Romantizmi",
-        "desc": "Sabit bir hedefi olmayan kaygısız bir yolculuk, saf güven, merak ve barışçıl macera ruhuyla taşınan."
+        "phrase": "«Fahrt ins Blaue» (Maviye doğru yolculuk)",
+        "origin": "Kültür ve Dil Tarihi",
+        "desc": "Geleneksel olarak doğaya doğru, belirli bir hedefi olmadan yapılan keyifli geziyi ifade eder; zihinsel açıklığın, merak duygusunun ve huzurun simgesidir."
       },
       {
-        "phrase": "«Das Blaue vom Himmel versprechen» (Gökyüzünün mavisini vaat etmek)",
-        "origin": "Şiirsel metafor",
-        "desc": "Mavi burada sonsuz, görkemli gök kubbeyi temsil eder — hayaller ve özlemlerle dolu harika bir görüntü."
+        "phrase": "«Mit einem blauen Auge davonkommen» (Ucuz atlatmak)",
+        "origin": "Günlük Dil Metaforu",
+        "desc": "Büyük bir tehlike veya krizden küçük bir sıyrıkla kurtulmayı anlatır; hasarın sınırlandırılması ve gerilimin düşürülmesine yönelik bir deyimdir."
       }
     ],
     "symbolik": [
       {
         "phrase": "Mavi Çiçek",
-        "origin": "Romantizm (Novalis)",
-        "desc": "Özlem, aşk, bilgi ve insan ruhunun gelişimi için en önemli sembol. Paha biçilmez bir kültürel varlık."
+        "origin": "Romantizm Dönemi (Novalis)",
+        "desc": "Edebiyat tarihinde manevi arayışın, bilgiye ulaşma arzusunun, evrensel açıklığın ve insani bağların en önemli simgesidir."
       },
       {
-        "phrase": "BM Mavi Bereliler",
-        "origin": "Küresel Barış Çalışması",
-        "desc": "Mavi, BM tarafından kasıtlı olarak seçilmiştir çünkü evrensel olarak tarafsızlığı, tansiyonu düşürmeyi ve kalıcı barış iradesini temsil eder."
+        "phrase": "BM Barış Gücü (Mavi Bereliler)",
+        "origin": "Uluslararası Diplomasi",
+        "desc": "Birleşmiş Milletler tarafından tarafsızlığı, gerilimi düşürmeyi ve kalıcı barış iradesini küresel düzeyde temsil etmesi için özellikle seçilmiştir."
       },
       {
-        "phrase": "Kraliyet Mavisi ve Ultramarin",
-        "origin": "Sanat ve Kültür Tarihi",
-        "desc": "Yüzyıllarca altından daha değerli (lapis lazuliden). Rönesans'ta bu değerli mavi yalnızca en yüce tasvirler için ayrılmıştı."
+        "phrase": "Avrupa Birliği Bayrağı",
+        "origin": "Avrupa Bütünleşmesi",
+        "desc": "Mavi zemin; kıtanın barışçıl çok taraflılık, hukukun üstünlüğü ve demokratik dayanışma temelinde bir arada yaşamasını simgeler."
       }
     ]
   },
   "openLetters": {
     "oeffentlich": {
-      "to": "KIME: ARD-aktuell ve ZDF Yazı İşleri Müdürlükleri",
-      "subject": "Konu: Görsel Çarpıtma ve Çerçeveleme Sorumluluğu",
+      "to": "KİME: ARD-aktuell ve ZDF Genel Yayın Yönetmenlikleri",
+      "subject": "Konu: Görsel Çerçeveleme (Framing) ve Gazetecilik Bağlam Sorumluluğu",
       "body": [
-        "Sayın Yetkili,",
-        "Kamu yayıncıları olarak, halka nesnel ve tarihsel bağlamda bilgi sağlama yasal sorumluluğu taşımaktasınız.",
-        "Mahkemelerin kanıtlanmış aşırı sağcı aşırılıkçı olarak sınıflandırılabileceğini teyit ettiği aktörler için mavi rengin kullanılması, ideolojilerinin görsel olarak hafife alınmasıdır.",
-        "Sizden istiyoruz: Bu hafife alma uygulamasına son verin ve raporlarınızda tarihsel olarak otantik kahverengi renge geçin."
+        "Sayın Yetkililer,",
+        "Kamu hizmeti yayıncıları olarak kamuoyuna nesnel, tarafsız ve tarihsel bağlamı gözetilerek işlenmiş bilgi sunma konusunda yasal ve mesleki bir sorumluluk taşımaktasınız.",
+        "Yargı mercileri tarafından aşırı sağcı olarak sınıflandırıldığı belgelenen bir siyasi oluşum için mavi rengin sorgulanmaksızın kullanılması, bilinçaltında bu harekete itibar ve ılımlılık kazandırmaktadır.",
+        "Haber grafiklerinizi gözden geçirmenizi ve bu hareketlerin belgelenmiş radikalliğini görsel düzlemde de yansıtacak sorumlu tasarım standartlarını hayata geçirmenizi talep ediyoruz."
       ]
     },
     "privat": {
-      "to": "KIME: ProSiebenSat.1, RTL Group ve dpa Yazı İşleri Müdürlükleri",
-      "subject": "Konu: İnfografik Tedarikinde Varsayılan Renk Değerleri",
+      "to": "KİME: ProSiebenSat.1, RTL Group ve dpa Yayın Yönetim Kurulu",
+      "subject": "Konu: Haber İnfografiklerinde Standart Renk Değerleri",
       "body": [
-        "Sayın Yetkili,",
-        "Haber portallarınız ve dpa kanallarınız aracılığıyla Almanya'da milyonlarca insanın günlük algısını şekillendiriyorsunuz.",
-        "İnfografiklerde AfD için renk olarak maviyi seçerek, kısmen anayasaya aykırı bir partinin görsel olarak hafife alınmasına katkıda bulunuyorsunuz.",
-        "Talep ediyoruz: Editoryal renk standartlarınızı tarihsel gerçekliğe uyarlayın."
+        "Sayın Yetkililer,",
+        "Haber portallarınız ve ajans bültenleriniz aracılığıyla her gün milyonlarca yurttaşın bilgi algısını şekillendiriyorsunuz.",
+        "Resmî güvenlik makamları tarafından izlenen aşırı sağcı yapıları, uluslararası barış kurumlarının kullandığı mavi tonda görselleştirmek istemsiz bir normalleştirme etkisi yaratmaktadır.",
+        "Yayın standartlarınızı eleştirel bir gözle değerlendirmenizi ve radikal partilerin belirlediği halkla ilişkiler stratejilerinin pasif birer taşıyıcısı olmaktan kaçınmanızı öneriyoruz."
       ]
     },
     "rundfunkrat": {
-      "to": "KIME: ARD Yayın Konseyleri ve ZDF Televizyon Konseyi",
-      "subject": "Konu: Görsel Çerçeveleme Konusunda Denetim Görevi",
+      "to": "KİME: ARD Yayın Konseyleri ve ZDF Televizyon Konseyi",
+      "subject": "Konu: Görsel Çerçeveleme Etkilerine İlişkin Denetim Sorumluluğu",
       "body": [
-        "Sayın Yetkili,",
-        "Kamu yayıncılarının denetim organları olarak, gazetecilik ilkelerine uygunluğu denetlemekle yükümlüsünüz.",
-        "Tüm grafik temsillerde AfD için tutarlı mavi kullanımı, tarafsız kamuoyu oluşturma ilkesini ihlal etmektedir.",
-        "Denetim görevinizi yerine getirmenizi ve siyasi partilere tarihsel olarak doğru renk ataması için bağlayıcı bir kılavuz oluşturmanızı talep ediyoruz."
+        "Sayın Konsey Üyeleri,",
+        "Kamu yayıncılığının denetim organları olarak yayın ilkelerine uyulmasını ve editoryal dengenin korunmasını gözetmekle yükümlüsünüz.",
+        "Haber programlarındaki görsel tercihler kamuoyu üzerinde derin bir etki bırakır. Aşırı sağcı oluşumları nötr ve güven verici renk paletlerinde tutmak, kamuoyunu doğru aydınlatma görevini zayıflatmaktadır.",
+        "Haber grafiklerinde olgulara dayalı ve sorumlu bir görsel yaklaşım benimsenmesi yönünde gerekli adımları atmanızı bekliyoruz."
       ]
     }
   },
   "faqs": [
     {
-      "q": "Mavi neden sorunlu olsun?",
-      "a": "Mavi, AfD'nin kendi seçtiği renktir, ancak aynı zamanda barışın, gökyüzünün ve BM barış güçlerinin rengidir. Medya bu öz-tanımlamayı eleştirel olmadan benimser ve duygusal zararsızlık çağrışımını partiye aktarır."
+      "q": "Mavi rengin partiye atanması neden sakıncalıdır?",
+      "a": "Renk psikolojisinde mavi; huzur, itidal ve tarafsızlıkla bağdaştırılır (BM ve AB renkleri gibi). Medya, aşırı sağ kanatları resmen belgelenmiş bir partinin kendi seçtiği renk kodunu eleştirmeden benimsediğinde, bu kurumsal ve sakinleştirici algı bilinçaltında partinin imajına transfer edilir."
     },
     {
-      "q": "Bu sansür değil mi?",
-      "a": "Hayır. Bu, medya etiği standartları ve tarihsel dürüstlükle ilgilidir. Tarihsel olarak doğru renk kodları talep etmek meşru bir toplumsal tartışmadır."
+      "q": "Rengi değiştirmek tarafsızlık ilkesine aykırı değil midir?",
+      "a": "Hayır. Gazetecilik tarafsızlığı, siyasi partilerin kurumsal tasarımlarını körü körüne çoğaltmak demek değildir. Yayın merkezleri anlaşılırlık ve editoryal gerekçelerle renkleri belirleme hakkına sahiptir (örneğin CDU/CSU için turkuaz yerine siyah kullanılması gibi). Görsel biçimlendirme bağımsız yayıncılığın bir parçasıdır."
     },
     {
-      "q": "Kampanyanın başarı şansı var mı?",
-      "a": "Birçok kişi zaten imzaladı. Medya kuruluşları kamuoyu baskısına yanıt verir. Her imza önemlidir."
+      "q": "Bu kampanyanın temel amacı nedir?",
+      "a": "Haber infografiklerinin toplum üzerindeki algısal etkisine dair mesleki ve etik bir tartışma başlatmak. Görsel tasarım tercihlerinin asla nötr olmadığını, aksine anlam ürettiğini görünür kılmak istiyoruz."
     },
     {
       "q": "Bu kampanyanın arkasında kim var?",
-      "a": "Dilekçe Change.org'da başlatıldı — sivil katılım için açık bir platform. Medya bütünlüğünü savunan kararlı vatandaşlar."
+      "a": "Demokratik kamuoyu niteliğini ve medya etiğini savunan, Change.org üzerinden bir araya gelmiş sivil toplum gönüllüleri."
     }
   ],
   "facts": [
     {
       "emoji": "🎨",
-      "label": "Mavi",
-      "desc": "Gökyüzünün, barışın ve BM'nin rengi"
+      "label": "Mavinin Algısı",
+      "desc": "Sakinlik, ciddiyet ve uluslararası güvenilirlikle özdeşleşir"
     },
     {
       "emoji": "📺",
-      "label": "ARD, ZDF ve Diğer Medya",
-      "desc": "Grafiklerde AfD için mavi kullanıyor"
+      "label": "Haber Grafikleri",
+      "desc": "Çoğu zaman parti kimliklerini sorgulamadan benimser"
     },
     {
       "emoji": "🏛️",
-      "label": "Tarihsel",
-      "desc": "Kahverengi = aşırı sağ sembolü"
+      "label": "Tarihsel Bağlam",
+      "desc": "Kahverengi, faşist ve aşırı sağcı geleneği simgeler"
     },
     {
       "emoji": "⚖️",
-      "label": "Anayasa Koruma",
-      "desc": "AfD'nin bazı bölümleri kanıtlanmış aşırılıkçı olarak sınıflandırıldı"
+      "label": "Resmî Sınıflandırma",
+      "desc": "Partinin belirli teşkilatları mahkemece aşırı sağcı kabul edilmiştir"
     }
   ],
   "science": {
     "sectionH": "Bilimsel ve Medya Hukuku Arka Planı",
-    "sectionSub": "Bilgi Notu: Görsel Çerçeveleme ve Doğru Siyasi Renk Kodlaması Yükümlülüğü",
-    "part1H": "Bölüm 1: İletişim Bilimi ve Medya Etiği Temelleri",
+    "sectionSub": "Bilgi Notu: Siyasi Habercilikte Görsel Çerçeveleme ve Editoryal Özerklik",
+    "part1H": "Bölüm 1: İletişim Bilimi Temelleri",
     "foundations": [
       {
-        "title": "\"Görsel Çerçeveleme\"nin Psikolojik Boyutu (Halo Etkisi)",
+        "title": "«Görsel Çerçeveleme»nin (Visual Framing) Psikolojik Boyutu (Halo Etkisi)",
         "points": [
           {
-            "label": "Mavi Psikolojisi",
-            "text": "Açık camgöbeği ve mavi tonlar evrensel olarak güvenilirlik, itibarlılık ve kurumsal güvenilirlik gibi niteliklerle ilişkilendirilir."
+            "label": "Mavinin Renk Psikolojisi",
+            "text": "Deneysel çalışmalar, açık mavi tonlarının güven, ılımlılık ve kurumsal istikrar duygularını pekiştirdiğini göstermektedir; bu nedenle Birleşmiş Milletler ve uluslararası kuruluşlar bu rengi tercih eder."
           },
           {
-            "label": "Görsel Hafife Alma Tuzağı",
-            "text": "Resmi olarak kanıtlanmış aşırı sağcı aşırılıkçı olarak sınıflandırılan bir siyasi güç, haber grafiklerinde tutarlı bir şekilde bu sakinleştirici ana renkle tasvir edildiğinde, bilişsel bir çelişki ortaya çıkar."
+            "label": "Grafiklerde Bilişsel Çelişki",
+            "text": "Güvenlik makamlarınca aşırı sağcı olarak nitelendirilen bir aktör açık ve sakin bir maviyle sunulduğunda bir yumuşatma etkisi ortaya çıkar: Görsel ton, izleyicinin bu hareketin anayasal risklerini kavrama eşiğini düşürür."
           }
         ]
       },
       {
-        "title": "Editoryal Özerklik ve Gazetecilik Emsal Kararları",
+        "title": "Editoryal Özerklik ve Gazetecilik Pratiği",
         "points": [
           {
-            "label": "taz Emsal Kararı",
-            "text": "Federal seçim kampanyası sırasında taz gazetesi, AfD çubuğunu kasıtlı olarak mavi yerine kahverengi ile göstermeye karar verdi. Bu, Alman gazeteciliğinde bu tür bilinçli sapmaların zaten uygulandığını göstermektedir."
+            "label": "taz Gazetesi Emsali",
+            "text": "Federal seçim döneminde günlük gazete taz, AfD verilerini kendi yayın ilkeleri doğrultusunda farklı bir renkle sunmuştur. Bu durum, grafik tasarımın gazetecilik değerlendirmesinin meşru bir parçası olduğunu kanıtlamaktadır."
           },
           {
-            "label": "Yerleşik Renk Çeşitliliği",
-            "text": "Medya kuruluşları düzenli olarak resmi CI yönergelerinden sapma yapar. Renk kodlaması esnek bir gazetecilik tasarım aracıdır."
+            "label": "Yerleşik Renk Esnekliği",
+            "text": "Yazı işleri, haberin net anlaşılması adına partilerin kurumsal kılavuzlarından düzenli olarak ayrışır (örneğin Birlik partileri için turkuaz yerine siyah kullanılması). Renk seçimi bağımsız bir gazetecilik aracıdır."
           }
         ]
       }
     ],
-    "part2H": "Bölüm 2: Hukuki ve Stratejik İtirazların Sistematik Çürütülmesi",
+    "part2H": "Bölüm 2: Hukuki ve Mesleki Dayanaklar",
     "objections": [
       {
-        "title": "İtiraz 1: \"Medya hukuku tarafsızlık ilkesi yeniden renklendirmeyi yasaklıyor.\"",
+        "title": "İtiraz 1: «Tarafsızlık ilkesi mutlak şekli eşitliği zorunlu kılar.»",
         "rebuttals": [
           {
-            "label": "Mutlak Simetri Yükümlülüğü Yok",
-            "text": "Federal Anayasa Mahkemesi'nin tutarlı kararlarına göre, kademeli fırsat eşitliği ve adil erişim gereklidir — kör, salt biçimsel simetri değil."
+            "label": "Şekli Eşitlik Yerine Esasa Dayalı Değerlendirme",
+            "text": "Anayasa Mahkemesi içtihatları basının esasa dayalı ve bağlamsal bir bilgilendirme yapmasını öngörür. Gazetecilik etiği, siyasi aktörlerin anayasal düzene bağlılıklarındaki farkları net biçimde yansıtmayı gerektirir."
           },
           {
-            "label": "Referans Olarak Anayasa Koruma Ofisi",
-            "text": "Mahkeme tarafından teyit edilen «kanıtlanmış aşırı sağcı aşırılıkçı» sınıflandırması nesnel ve doğrulanmış bir bulgudur."
+            "label": "Anayasayı Koruma Teşkilatı Raporları",
+            "text": "Yargı denetiminden geçmiş resmî raporlar somut olguları temsil eder. Bu gerçekliği grafiklere taşımak, gerçeğe sadık habercilik ilkesinin doğrudan bir gereğidir."
           },
           {
-            "label": "Görsel Koruma Hakkı Yok",
-            "text": "Siyasi partilerin bağımsız medyanın öz-sunumlarını filtresiz benimsemesine dair anayasal bir hakkı yoktur."
+            "label": "Yayın Özgürlüğü",
+            "text": "Anayasa ile güvence altına alınan yayın özgürlüğü, haber merkezlerini siyasi partilerin halkla ilişkiler kurgularını mekanik olarak kopyalamaktan korur."
           }
         ]
       },
       {
-        "title": "İtiraz 2: \"Medya partilerin kurumsal kimliğini takip etmelidir.\"",
+        "title": "İtiraz 2: «Medya, partinin kendi kurumsal kimliğini benimsemek zorundadır.»",
         "rebuttals": [
           {
-            "label": "Gazetecilik Mesafesi vs. PR Benimsemesi",
-            "text": "Siyasi aktörlerin kurumsal kimliğini körü körüne benimsemek gazetecilik mesafe ilkesiyle çelişir."
+            "label": "Gazetecilik Mesafesi İlkesi",
+            "text": "Parti kimlikleri stratejik siyasi iletişim amacıyla oluşturulur. Mesleki mesafe, bu stratejilerin pasif bir ileticisi olmak yerine bağımsız yayın kriterlerini korumayı şart koşar."
           },
           {
-            "label": "Görev Olarak Görsel Gerçeklik",
-            "text": "Anayasa koruma kurumları anayasal sadakatte önemli farklılıklar belgelediğinde, tüm partilere eşit davranmak kamuoyunu yanıltır."
+            "label": "Kamuoyunu Doğru Bilgilendirme Görevi",
+            "text": "Grafiklerin temel amacı izleyiciye berrak bir yön sunmaktır. Radikal pozisyonları zararsız standart renklerin ardında gizlemek bu kamu görevine zarar verir."
           }
         ]
       },
       {
-        "title": "İtiraz 3: \"Yeniden renklendirme partinin mağdur anlatısına cephane sağlar.\"",
+        "title": "İtiraz 3: «Bu adım partinin mağduriyet söylemine zemin hazırlar.»",
         "rebuttals": [
           {
-            "label": "Proaktif Temel Strateji",
-            "text": "Aşırı sağ iletişim analizleri gösteriyor: «medya mağduru anlatısı» gerçek editoryal kararlardan bağımsız olarak inşa edilen proaktif bir yapısal stratejidir."
+            "label": "Önceden Kurgulanmış Siyasi Strateji",
+            "text": "İletişim analizleri, mağduriyet anlatısının medyanın biçimsel tercihlerinden bağımsız olarak popülist hareketler tarafından önceden üretilmiş yapısal bir taktik olduğunu göstermektedir."
           },
           {
-            "label": "Önleyici Boyun Eğme Yok",
-            "text": "Editoryal ekipler bir partinin tepkisinden korkarak gerekli etik ayarlamalardan vazgeçtiğinde, editoryal bağımsızlıklarını o partinin iletişim stratejisine bağımlı kılar."
+            "label": "Çekinmek Yerine Şeffaf Açıklama",
+            "text": "Gazetecilik kararları olası tepki korkusuyla ötelenmemelidir. Şeffaf ve bilimsel temellere dayalı gerekçelendirme, editoryal bağımsızlığın en sağlam kalkanıdır."
           }
         ]
       }
@@ -353,189 +353,189 @@
   "policyDangers": [
     {
       "id": "social",
-      "title": "Sosyal & Refah",
-      "metric": "Sadece en zengin %1 için fayda",
-      "description": "AfD'nin ekonomik ve sosyal politika planları, dar gelirlilerin, emeklilerin ve işçilerin gerçek çıkarlarına tamamen aykırıdır.",
+      "title": "Sosyal Politikalar ve Emek",
+      "metric": "Yalnızca en zengin %1'e fayda",
+      "description": "Ekonomik ve sosyal politika planları; düşük gelirlilerin, emeklilerin ve işçilerin haklarına doğrudan zarar vermektedir.",
       "points": [
-        "Asgari ücretin 12 €'ya çıkarılmasına karşı çıkıldı (bu durum düşük ücretli işçilere ve Doğu Almanya ekonomisine zarar vermektedir).",
-        "Sosyal yardım sisteminin (Bürgergeld) ağır kesintiler içeren bir sistemle (en fazla 6 ay) ve zorunlu, ücretsiz 'vatandaşlık çalışmasıyla' değiştirilmesi önerisi.",
-        "Neredeyse yalnızca nüfusun en zengin yüzde birinin yararına olacak şekilde varlık ve miras vergilerinin kaldırılmasını talep ediyor."
+        "Yasal asgari ücret artışlarının reddedilmesi, özellikle ekonomik olarak kırılgan bölgelerdeki çalışanları olumsuz etkilemektedir.",
+        "Temel sosyal yardımların kısıtlanarak karşılıksız mecburi kamu hizmetine dönüştürülmesi planı.",
+        "Veraset ve servet vergisinin kaldırılması talebi, neredeyse yalnızca en zengin kesimlerin vergi yükünü hafifletmektedir."
       ],
-      "citation": "Alman Ekonomik Araştırma Enstitüsü (DIW Berlin) — AfD Paradoksu (2023)",
+      "citation": "Alman Ekonomik Araştırmalar Enstitüsü (DIW Berlin) — AfD Paradoksu (2023)",
       "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
     },
     {
       "id": "economy",
-      "title": "Ekonomi & Refah",
-      "metric": "'Dexit' planlarıyla -%5,6 GSYİH",
-      "description": "Aşırı sağcı ekonomik milliyetçilik ve AB'den çıkış planları, Alman ekonomisinin refahı ve kapasitesi için büyük bir tehdit oluşturmaktadır.",
+      "title": "Ekonomi ve Refah",
+      "metric": "'Dexit' planları sebebiyle GSYİH'de -%5,6 düşüş",
+      "description": "Aşırı sağcı ekonomik milliyetçilik ve AB'den ayrılma hedefleri, ulusal üretim gücüne ve ekonomik refaha ağır darbe vuracaktır.",
       "points": [
-        "IW Hesaplaması (2024): Almanya'nın AB'den çıkışı ('Dexit') 5 yıl içinde reel GSYİH'de %5,6 (yaklaşık 690 milyar Euro) düşüşe yol açacaktır.",
-        "İş Gücü Açığı: Dışa kapalılık ve yabancı düşmanı söylemler, uluslararası uzmanları caydırarak kalifiye iş gücü açığını daha da derinleştirmektedir.",
-        "Devlet Bütçesi: Talep edilen vergi indirimleri (181 milyar €) ile geniş emeklilik vaatlerinin birleşimi kamu maliyesini tehlikeye atmaktadır."
+        "IW Modellemesi (2024): Almanya'nın AB'den çıkışı ('Dexit'), 5 yıl içinde reel GSYİH'de %5,6'lık (yaklaşık 690 milyar Euro) bir kayba yol açacaktır.",
+        "Yabancı düşmanı söylemlerin nitelikli uluslararası iş gücünü caydırması nedeniyle derinleşen uzman personel açığı.",
+        "Bütçe karşılığı bulunmayan vergi indirimi vaatleri, kamu maliyesinin ve belediye yatırımlarının sürdürülebilirliğini riske atmaktadır."
       ],
-      "citation": "Alman Ekonomi Enstitüsü (IW Köln) — AB'den Çıkışın Sonuçları (2024)",
+      "citation": "Alman Ekonomi Enstitüsü (IW Köln) — AB'den Ayrılmanın Sonuçları (2024)",
       "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
     },
     {
       "id": "press",
-      "title": "Basın & Yayın",
-      "metric": "Dışlamalar mahkeme kararıyla durduruldu",
-      "description": "Aşırı sağcı partiler özgür medyayı rakip olarak görür ve eleştirel haberleri sistematik olarak engellemeye veya kısıtlamaya çalışır.",
+      "title": "Basın ve Yayın Özgürlüğü",
+      "metric": "Gazetecilere yönelik yasaklar mahkemece durduruldu",
+      "description": "Bağımsız haberciliği engellemeye ve basın özgürlüğünü kısıtlamaya dönük belgelenmiş sistematik girişimler.",
       "points": [
-        "Bağımsız gazetecilerin (WDR, BR, Spiegel, Welt, taz) kongrelerden ve seçim etkinliklerinden dışlanması yönündeki mükerrer girişimler, mahkemelerce ihtiyati tedbirlerle durduruldu.",
-        "Kamu yayıncılığına karşı, kanalları parçalamayı ve finansmanını kurutmayı amaçlayan sistematik kampanya ('yalancı basın' söylemi).",
-        "Tarihsel karşılaştırma gösteriyor: Macaristan (KESMA tröstü) ve Polonya'daki (PiS dönemi) otokratik rejimler medya kontrolünü hızla ele geçirdi."
+        "Gazetecilerin parti kongreleri ve seçim gecelerinden dışlanması girişimleri mahkemelerin ihtiyati tedbir kararlarıyla durduruldu.",
+        "Kamu yayıncılığını itibarsızlaştırmaya ve finansman kaynaklarını kurutmaya yönelik sistematik kampanyalar.",
+        "Medya çeşitliliğinin geriletildiği otoriter rejim modellerinin tekrarlanma tehlikesi."
       ],
-      "citation": "Erfurt Bölge Mahkemesi / Münih Bölge Mahkemesi I (2024) — Basın özgürlüğüne ilişkin acil kararlar",
+      "citation": "Erfurt ve Münih I Eyalet Mahkemeleri (2024) — Basın Özgürlüğü İhtiyati Tedbir Kararları",
       "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
     },
     {
       "id": "culture",
-      "title": "Sanat, Kültür & Eğitim",
-      "metric": "Okul tiyatrosuna yönelik davalar reddedildi",
-      "description": "Kültür, bilim ve okulların bağımsızlığı, milliyetçi ve etnosentrik bir anlatı oluşturmak amacıyla hedef alınmaktadır.",
+      "title": "Eğitim, Sanat ve Kültür",
+      "metric": "Kültür projelerine açılan davalar reddedildi",
+      "description": "Özgür sanat, eğitim ve bilim kurumlarını ideolojik denetim altına alma teşebbüsleri.",
       "points": [
-        "AfD'yi eleştiren okul tiyatrosu oyunlarına yönelik davalar, oyunların sanat özgürlüğünün anayasal koruması altında olması nedeniyle başarısız oldu.",
-        "Eyalet parlamentolarında, kültürel fonların bir 'Alman kimliğine bağlılığa' bağlanması ve eleştirel tiyatro yönetmenlerinin kara listeye alınması talepleri.",
-        "Aşırı sağcılığı eleştirel bir şekilde tartışan öğretmenleri bildirmek için çevrimiçi ihbar portallarının ('Tarafsız Okul') oluşturulması."
+        "Eleştirel okul tiyatrolarına karşı açılan davalar, sanat özgürlüğünün anayasal güvencesi doğrultusunda mahkemelerce reddedildi.",
+        "Parlamentolarda kültürel ödeneklerin ideolojik sadakat koşullarına bağlanması yönündeki önergeler.",
+        "Demokrasi eğitimi veren öğretmenleri şikâyet etmeye yönelik çevrim içi ihbar portallarının kurulması."
       ],
-      "citation": "Hannover İdare Mahkemesi (2023) / Özgür Sahne Sanatları Federal Birliği",
+      "citation": "Hannover İdare Mahkemesi (2023) / Bağımsız Sahne Sanatları Federal Birliği",
       "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
     },
     {
       "id": "crime",
-      "title": "Güvenlik & Şiddet",
-      "metric": "Aşırı sağ suçlar açıkça baskın",
-      "description": "Federal Kriminal Dairesi (BKA) resmi istatistikleri, aşırı sağcı şiddet, suçlar ve internetteki nefret söylemlerinin miktar ve ağırlık bakımından baskın olduğunu kanıtlamaktadır.",
+      "title": "Güvenlik ve Şiddet",
+      "metric": "Aşırı sağ kaynaklı suçlar çoğunlukta",
+      "description": "Resmî emniyet istatistikleri, siyasi saikli suçlar ve şiddet olaylarında aşırı sağ kaynaklı eylemlerin belirgin üstünlüğünü ortaya koymaktadır.",
       "points": [
-        "Toplam Suçlar (2025): Sağ kaynaklı 42.544 suç (tüm vakaların yaklaşık %50'si) karşısında sol kaynaklı 13.490 suç.",
-        "Şiddet Eylemleri (2025): Sağ kaynaklı 1.598 şiddet suçu karşısında sol kaynaklı 1.087 şiddet suçu.",
-        "Nefret Gönderileri (2025): Sağ kaynaklı 4.870 internet nefret suçu karşısında sol kaynaklı 1.460 eylem."
+        "Toplam Suçlar (2025): Siyasi amaçlı suçların yaklaşık %50'si aşırı sağ kategorisinde kayda geçmiştir.",
+        "Fiziksel şiddet, saldırı ve tehdit suçlarında aşırı sağ kaynaklı vakaların orantısız fazlalığı.",
+        "Sivil toplum temsilcilerini hedef alan organize dijital nefret saldırılarının yüksek seviyesi."
       ],
-      "citation": "Federal Kriminal Dairesi (BKA) — 2025 Yılında Siyasi Güdümlü Suçlar (Haziran 2026)",
+      "citation": "Federal Kriminal Dairesi (BKA) — 2025 Yılı Siyasi Saikli Suçlar Raporu (Haziran 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
     },
     {
       "id": "alliances",
-      "title": "İttifaklar & Ağlar",
-      "metric": "AB Grup Eşbaşkanı: René Aust (AfD)",
-      "description": "AfD, Avrupa düzeyinde aşırı milliyetçilerle iş birliği yapmakta ve Rusya ile Çin gibi otoriter rejimler tarafından finanse edilip araçsallaştırılmaktan şüphelenilmektedir.",
+      "title": "Ağlar ve Uluslararası İlişkiler",
+      "metric": "Avrupa Parlamentosu Grup Eş Başkanlığı",
+      "description": "Avrupa genelindeki aşırı milliyetçi partilerle ortaklıklar ve otoriter rejimlerle kurulan şüpheli temaslara ilişkin adli soruşturmalar.",
       "points": [
-        "Egemen Uluslar Avrupası (ESN): Temmuz 2024'te AfD, Polonya'nın Konfederacja'sı ve Macaristan'ın Bizim Vatanımız gibi aşırı sağcı partilerle bu AB grubunu kurdu.",
-        "Rusya Finansmanı: Savcılık, AfD'li politikacılar Petr Bystron ve Maximilian Krah hakkında Rus yanlısı propaganda ağı 'Voice of Europe' ile bağlantılı yolsuzluk ve para aklama soruşturması yürütmektedir.",
-        "Çin Casusluğu: AfD'nin liste başı adayı Maximilian Krah'ın yakın bir çalışanı, Çin istihbarat servisi adına casusluk yaptığı şüphesiyle Nisan 2024'te tutuklandı."
+        "Avrupa Parlamentosu'nda aşırı milliyetçi ESN fraksiyonunun kurulmasında üstlenilen kurucu rol.",
+        "Rusya yanlısı propaganda ağlarıyla bağlantılı şüpheli para akışları ve yolsuzluk iddialarına ilişkin adli tahkikatlar.",
+        "Yabancı istihbarat servisleriyle gizli iş birliği şüphesi üzerine yürütülen resmî güvenlik soruşturmaları."
       ],
-      "citation": "Alman Federal Meclisi / Federal Başsavcılık / Münih Başsavcılığı (2024-2025)",
+      "citation": "Federal Meclis / Federal Başsavcılık / Münih Savcılığı (2024-2025)",
       "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
   "policyDangersUI": {
     "viewChart": "Grafik",
-    "viewText": "Detaylar",
-    "showTextBtn": "Detayları Göster",
+    "viewText": "Ayrıntılar",
+    "showTextBtn": "Ayrıntıları Göster",
     "showChartBtn": "Grafiği Göster",
     "rightWingLabel": "Aşırı Sağ / Sağ",
     "leftWingLabel": "Aşırı Sol / Sol",
-    "diwChartTitle": "Yıllık Net Gelir Değişimi (DIW Modellemesi)",
-    "gdpChartTitle": "Aşırı Sağ Popülizm Altında GSYİH Eğilimi (15 Yıl)",
-    "gdpControlLine": "Kontrol Grubu (Normal Eğilim)",
-    "gdpPopulistLine": "Popülizm Altında Ekonomik Eğilim",
-    "pressFreedomTitle": "Basın Özgürlüğü Endeksi (Sınır Tanımayan Gazeteciler)",
-    "courtDismissalTitle": "Sanat ve Eğitime Yönelik Siyasi Saldırıların Sonucu",
-    "courtDismissed": "Reddedildi / Başarısız",
-    "pmkChartTitle": "Siyasi Güdümlü Suçlar (BKA 2023)",
+    "diwChartTitle": "Yıllık Net Gelir Değişimi (DIW Simülasyonu)",
+    "gdpChartTitle": "Sağ Popülizm Altında GSYİH Eğilimi (15 Yıllık Dönem)",
+    "gdpControlLine": "Kontrol Grubu (Standart Eğilim)",
+    "gdpPopulistLine": "Popülist İdare Altında Eğilim",
+    "pressFreedomTitle": "Dünya Basın Özgürlüğü Endeksi (RSF)",
+    "courtDismissalTitle": "Eğitim ve Sanat Projelerine Yönelik İtirazların Akıbeti",
+    "courtDismissed": "Mahkemece Reddedildi",
+    "pmkChartTitle": "Siyasi Saikli Suçlar (BKA Resmî Verileri)",
     "pmkCrimes": "Toplam Suçlar",
     "pmkViolent": "Şiddet Eylemleri",
-    "pmkHate": "Nefret Gönderileri",
-    "nodeESN": "ESN Grubu (AB)",
-    "nodeRussia": "Rusya (Finansman)",
-    "nodeChina": "Çin (Casusluk)",
-    "mapHeadline": "Eyaletlere göre dağılım",
-    "mapSub": "Güncel bölgesel eğilimi görmek için bir eyalete tıklayın.",
+    "pmkHate": "İnternette Nefret Suçları",
+    "nodeESN": "ESN Grubu (AP)",
+    "nodeRussia": "Kremlin Yanlısı Finansman Ağları",
+    "nodeChina": "Casusluk İddiaları",
+    "mapHeadline": "Eyaletlere Göre Dağılım",
+    "mapSub": "Bölgesel parlamento eğilimlerini görmek için bir eyalete tıklayın.",
     "stateLabel": "Eyalet",
-    "nationalLabel": "Almanya (Bundestag)"
+    "nationalLabel": "Almanya (Federal Meclis)"
   },
   "wordsMeaning": [
     {
       "word": "Özgürlük",
-      "meaning": "İtaat & Boyun Eğme"
+      "meaning": "Kendi tabanı için kuralsızlık talep ederken farklı düşünenlere kısıtlama getirme arzusu"
     },
     {
       "word": "Barış",
-      "meaning": "Teslim Olma & Baskı"
+      "meaning": "Otoriter saldırganlığa boyun eğme ve demokratik savunma ittifaklarını zayıflatma çağrısı"
     },
     {
       "word": "Demokrasi",
-      "meaning": "Kendi Grubunun Diktatörlüğü & Dışlama"
+      "meaning": "Azınlık haklarını dışlayan kapalı bir etnik çoğunluk tahakkümü"
     },
     {
       "word": "Egemenlik",
-      "meaning": "İzolasyonizm & Güçlünün Hakkı"
+      "meaning": "Milliyetçi izolasyonizm ve uluslararası kurumsal ortaklıkları feshetme girişimi"
     },
     {
       "word": "Direniş",
-      "meaning": "Sistemi Yıkma & Kendi Diktatörlüğü"
+      "meaning": "Demokratik kurumların, anayasanın ve yargı bağımsızlığının gayrimeşru ilan edilmesi"
     },
     {
       "word": "İfade Özgürlüğü",
-      "meaning": "Başkaları için Sansür & Kendi Nefreti için Cezasızlık"
+      "meaning": "Kendi dezenformasyonunu sınırsızca yayarken bağımsız basını susturma çabası"
     },
     {
       "word": "Vatan",
-      "meaning": "Etno-milliyetçilik & Sürme (\"Yeniden Göç\")"
+      "meaning": "Etnik ayrımcılık ve kitlesel sınır dışı projeleri («tersine göç»)"
     },
     {
-      "word": "Aile Koruma",
-      "meaning": "Ataerkillik & LGBTİ+ Düşmanlığı"
+      "word": "Ailenin Korunması",
+      "meaning": "Farklı yaşam modellerinin reddi ve LGBTQ+ bireylerin temel haklarına karşıtlık"
     },
     {
       "word": "Adalet",
-      "meaning": "Sosyal Darwinizm"
+      "meaning": "Dar gelirlilerin sosyal güvencelerini kısarak zengin kesimleri vergi ayrıcalıklarıyla donatmak"
     },
     {
       "word": "Sağduyu",
-      "meaning": "Bilim Karşıtlığı & Komplo Teorileri"
+      "meaning": "Bilimsel verileri ve gerçekleri reddederek komplo teorilerini dolaşıma sokmak"
     },
     {
-      "word": "Vatanseverlik",
-      "meaning": "Yabancı Düşmanlığı & Dışlama"
+      "word": "Yurtseverlik",
+      "meaning": "Aşırı şovenizm ve çoğulcu, açık toplumları aşağılama refleksi"
     },
     {
       "word": "Normallik",
-      "meaning": "Her Sapmaya Karşı Ayrımcılık"
+      "meaning": "Toplumsal çeşitliliği ortadan kaldırarak tek tipçi kalıpları dayatmak"
     },
     {
       "word": "Gelenek",
-      "meaning": "Gerileme & Çeşitliliğin Yok Edilmesi"
+      "meaning": "Geçmişin gerçek dışı yüceltilmesi ve modern yurttaşlık kazanımlarının itibarsızlaştırılması"
     },
     {
-      "word": "Öz Yönetim",
-      "meaning": "Kendi İdeolojisinin Hâkimiyeti"
+      "word": "Kendi Kaderini Tayin",
+      "meaning": "Kimlikçi söylemlerle kamufle edilmiş güçlünün hukuku anlayışı"
     },
     {
       "word": "Güvenlik",
-      "meaning": "Gözetim, Baskı & Günah Keçisi Politikası"
+      "meaning": "Kırılgan grupların toptan suçlulaştırılması ve toplumsal baskının artırılması"
     },
     {
       "word": "Halkın İradesi",
-      "meaning": "Azınlıkların Marjinalleştirilmesi"
+      "meaning": "Radikal bir azınlığın kendisini toplumun yegâne meşru temsilcisi ilan etmesi"
     },
     {
       "word": "Reform",
-      "meaning": "Demokratik Yapıların Yıkılması"
+      "meaning": "Hukuk devleti mekanizmalarının ve denetleme mekanizmalarının aşamalı olarak tasfiyesi"
     },
     {
       "word": "Şeffaflık",
-      "meaning": "Seçici Açıklama & Dezenformasyon"
+      "meaning": "Kamuoyunda güvensizlik oluşturmak amacıyla tasarlanmış bilinçli dezenformasyon"
     },
     {
       "word": "Güç",
-      "meaning": "Otoriterlik & Yıldırma"
+      "meaning": "Demokratik uzlaşı yerine dayatmacı ve otoriter idare tarzı"
     },
     {
       "word": "Gerçek",
-      "meaning": "Kendi Gündemine Yönelik Propaganda"
+      "meaning": "Parti propagandası olarak kurgulanan anlatıların tartışılmaz doğru ilan edilmesi"
     }
   ]
 }

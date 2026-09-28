@@ -5,7 +5,7 @@
     "navRisks": "Risiken",
     "navScience": "Wissenschaft & Recht",
     "navLetter": "Offener Brief",
-    "navCulture": "Kulturerbe",
+    "navCulture": "Bedeutung von Blau",
     "navSign": "Jetzt unterzeichnen",
     "navShare": "Petition teilen",
     "shareTitle": "Petition teilen",
@@ -14,22 +14,22 @@
     "shareCopyLink": "Link kopieren",
     "shareLinkCopied": "Kopiert!",
     "shareClose": "Schließen",
-    "badge": "Visuelle Medienethik & Kulturpflege",
+    "badge": "Visuelle Medienethik & Verantwortung",
     "heroH1": "Blau retten.",
     "heroH1Alt": "Blau verteidigen.",
-    "heroSub": "Für eine treffende Farbwahl.",
+    "heroSub": "Für eine differenzierte politische Farbwahl.",
     "heroSubAlt": "Visuelle Verharmlosung stoppen.",
-    "heroBody": "Unsere Sprache und Farbsymbolik sind historisch verankert. Wir fordern von ARD, ZDF und den privaten Sendern die Richtigstellung politischer Farbcodes: Die AfD gehört in Diagrammen in Braun dargestellt, nicht Blau.",
+    "heroBody": "Farben transportieren unterbewusste Botschaften und Emotionen. Wir fordern von ARD, ZDF und privaten Medienhäusern eine kritische Überprüfung ihrer Farbkodierung: Rechtsextreme Strömungen dürfen in Nachrichtengrafiken nicht durch beruhigende, staatstragende Farbtöne visuell verharmlost werden.",
     "sigCount": "Bereits",
     "sigSupport": "Unterstützer",
     "sigLive": "Echtzeit-Daten",
     "sigFallback": "Stand lokal",
     "heroImgCaption": "Unser Kampagnen-Visual",
-    "heroImgSub": "Visuelle Wahrheit schaffen, das sprachliche Blau bewahren.",
+    "heroImgSub": "Kritische Medienstandards stärken, visuelle Verharmlosung abbauen.",
     "heroImgCta": "Auf Change.org unterzeichnen",
     "demoSandbox": "Sandbox-Modus",
     "demoH2": "Interaktiver Farbvergleich",
-    "demoDesc": "Klicke auf den Schalter oder den Balken, um den blauen Verharmlosungs-Code durch das historisch zutreffende Braun zu ersetzen.",
+    "demoDesc": "Klicke auf den Schalter oder den Balken, um den Effekt alternativer Farbcodierungen in Diagrammen nachzuvollziehen.",
     "demoSourceLabel": "Datengrundlage",
     "demoSourceLive": "Live aus Sonntagsfrage-API",
     "demoSourceFallback": "Lokaler Fallback-Wert",
@@ -42,44 +42,44 @@
     "demoSourceStand": "Stand",
     "demoSourceButton": "Quelle & Methode öffnen",
     "demoOption": "Visualisierungs-Option",
-    "demoQuestion": "Welche Farbwahl ist treffend und historisch ehrlich?",
-    "demoReset": "Traum beenden",
-    "demoSwitch": "Jetzt umfärben auf Braun",
+    "demoQuestion": "Welche Farbwahl bildet die politische Einordnung treffend ab?",
+    "demoReset": "Werte zurücksetzen",
+    "demoSwitch": "Braun-Darstellung testen",
     "dreamBanner": "Zukunftsvision — Was unsere Petition bewirken kann",
-    "dreamBody": "Mit jeder Unterschrift wächst der Druck auf die Medien. Dieses Szenario zeigt, wie eine Welt aussehen könnte, in der Wähler Faschismus durchschauen und sich abwenden.",
+    "dreamBody": "Mit jeder Unterschrift wächst das Bewusstsein für mediale Bildsprache und Framing. Eine reflektierte Berichterstattung trägt zu einer informierten demokratischen Debatte bei.",
     "comparisonToggle": "Mehrheit zeigen",
     "comparisonTitle": "AfD vs. Demokratische Mehrheit",
     "comparisonRatio": "× so viele Menschen wählen NICHT die AfD",
-    "comparisonMessage": "Die überwältigende Mehrheit steht für Demokratie.",
+    "comparisonMessage": "Die überwältigende Mehrheit steht für demokratische Grundwerte.",
     "allOthersLabel": "Alle Anderen",
-    "whyH2": "Die Hintergründe des Farb-Fasching",
-    "whyIntro": "Wissenschaftliche Frame-Forschung belegt: Die Wahrnehmung politischer Akteure wird maßgeblich von den visuellen Signalen bestimmt, mit denen sie in Sendungen wie dem ZDF heute-journal oder der ARD Tagesschau konfiguriert werden.",
+    "whyH2": "Die Mechanismen visueller Wahrnehmung",
+    "whyIntro": "Kommunikationswissenschaftliche Frame-Forschung belegt: Die Wahrnehmung politischer Akteure wird maßgeblich von visuellen Signalen geprägt, mit denen sie in Informationsformaten dargestellt werden.",
     "whyCard1H": "Die visuelle Verharmlosung",
-    "whyCard1": "Blau ist die Farbe des Himmels, des Meeres und der Friedenskräfte. Sie beruhigt, schafft Vertrauen und signalisiert Unbedenklichkeit. Diese emotionale Kodierung für eine völkisch-nationalistische und in Teilen verfassungsfeindliche Gruppierung zu verwenden, ist ein fataler medienethischer Fehler.",
+    "whyCard1": "Blau gilt in der Farbpsychologie als beruhigend, vertrauensbildend und sachlich. Es ist die Farbe multilateraler Friedensorganisationen und europäischer Institutionen. Diese unkritische Übernahme der Partei-Eigendarstellung erzeugt einen psychologischen Glättungseffekt gegenüber verfassungsfeindlichen Tendenzen.",
     "whyCard2H": "Die historische Zuordnung",
-    "whyCard2": "Die politische Farbe Braun ist im kollektiven Gedächtnis Deutschlands fest mit völkischem Nationalismus und Rechtsextremismus assoziiert. Eine ehrliche Grafikordnung muss Mut beweisen und diese historische Kontinuität visuell kenntlich machen.",
-    "cultureH": "Kulturelles Erbe retten",
-    "cultureSub": "Das ist das sprachliche Eigentum unserer Gemeinschaft.",
-    "tabLang": "Sprachschatz",
-    "tabSym": "Symbolik & Geschichte",
+    "whyCard2": "In der politischen Ikonografie Deutschlands steht Braun unmissverständlich für völkischen Nationalismus und Rechtsextremismus. Eine verantwortungsvolle Informationsgrafik sollte den Mut haben, inhaltliche Einstufungen auch visuell unmissverständlich einzuordnen.",
+    "cultureH": "Farbsemantik & Kulturgeschichte",
+    "cultureSub": "Wie Farben und Redewendungen unsere Wahrnehmung prägen.",
+    "tabLang": "Sprachgebrauch",
+    "tabSym": "Kultur & Geschichte",
     "letterH": "Der Offene Brief",
-    "letterSub": "Wähle die Zielgruppe aus, um zu sehen, wie wir die Redaktionen und Kontrollgremien in die Pflicht nehmen:",
+    "letterSub": "Wähle die Zielgruppe aus, um unsere medienethische Begründung an Redaktionen und Gremien zu lesen:",
     "targetPublic": "Öffentl.-Rechtliche",
     "targetPrivate": "Private Medien",
     "targetCouncil": "Rundfunkräte",
-    "ctaBanner": "Jetzt unterzeichnen und Blau retten!",
+    "ctaBanner": "Jetzt unterzeichnen für bewusstere Medien-Codes!",
     "ctaBodyPre": "Über",
-    "ctaBodyMid": "Menschen haben diese Petition bereits unterzeichnet. Zeige auch du, dass du für eine ehrliche visuelle Berichterstattung einstehst.",
+    "ctaBodyMid": "Menschen haben diese Petition bereits unterzeichnet. Setze ein Zeichen für reflektierten Journalismus und präzise Informationsgrafiken.",
     "ctaBodyLoading": "Aktuelle Unterzeichnerzahl wird von Change.org geladen.",
     "ctaBtn": "Jetzt auf Change.org unterzeichnen",
     "ctaBtnAlt": "Jetzt mit deiner Stimme unterstützen",
     "ctaExternalHint": "Du wirst zur Petition auf Change.org weitergeleitet.",
     "ctaInfo": "Kostenlos · Keine Werbung · Nur deine Stimme zählt",
-    "footerTagline": "Eine Kampagne für mediale Integrität und den Schutz des kulturellen Erbes der Farbe Blau.",
+    "footerTagline": "Eine Kampagne für medienethische Standards und die kritische Reflexion visueller Framing-Effekte.",
     "footerLink": "Zur Petition auf Change.org",
     "footerImprint": "Impressum",
     "alsoSupportH": "Weitere Petitionen unterstützen",
-    "alsoSupportSub": "Andere Petitionen, die für ein starkes demokratisches Deutschland kämpfen.",
+    "alsoSupportSub": "Weitere Initiativen für Demokratieförderung und Medienkompetenz.",
     "alsoSupportBtn": "Unterzeichnen",
     "sidebarSignatures": "Unterschriften",
     "sidebarGrowing": "und es werden täglich mehr!",
@@ -88,7 +88,7 @@
     "themeDark": "Dunkel",
     "langLabel": "Sprache",
     "faqTitle": "FAQ",
-    "faqSub": "Häufig gestellte Fragen rund um die Kampagne und unsere Forderungen.",
+    "faqSub": "Häufig gestellte Fragen rund um die Kampagne und unsere medienkritischen Forderungen.",
     "demoDreamReset": "Werte zurücksetzen",
     "demoDreamSwitch": "Beste Zukunft visualisieren",
     "newsBadge": "Pressebericht",
@@ -99,7 +99,7 @@
     "archiveSub": "Chronologische Übersicht über Berichte zu rechtsextremistischen AfD-Aktivitäten",
     "archiveExpand": "Archiv aufklappen",
     "archiveCollapse": "Archiv einklappen",
-    "archiveCollapsedHint": "Das Archiv ist eingeklappt, um die Seite kürzer und fokussierter zu halten.",
+    "archiveCollapsedHint": "Das Archiv ist eingeklappt, um die Seite übersichtlich zu halten.",
     "archiveShowingLabel": "Zeige",
     "archivePrevPage": "Zurück",
     "archiveNextPage": "Weiter",
@@ -132,82 +132,82 @@
     "roleWdrCouncil": "Vorsitzender des WDR-Rundfunkrats",
     "roleNdrCouncil": "Vorsitzender des NDR-Rundfunkrates",
     "roleZdfCouncil": "Vorsitzende des ZDF-Fernsehrates",
-    "heroImgText1": "PETITION: AfD IN MEDIEN BRAUN DARSTELLEN - BLAU SCHÜTZEN.",
-    "heroImgText2": "JETZT UNTERZEICHNEN: BLAU SCHÜTZEN!",
-    "heroImgText2Alt": "JETZT UNTERZEICHNEN: BLAU VERTEIDIGEN!",
-    "heroImageAlt": "Kampagnenmotiv der Aktion Rettet das Blau",
+    "heroImgText1": "PETITION: VISUELLE STANDARDS PRÜFEN - BLAU KRITISCH REFLEKTIEREN.",
+    "heroImgText2": "JETZT UNTERZEICHNEN: FÜR HISTORISCHE KLARHEIT!",
+    "heroImgText2Alt": "JETZT UNTERZEICHNEN: FÜR VERANTWORTUNGSVOLLE GRAFIKEN!",
+    "heroImageAlt": "Kampagnenmotiv zur Differenzierung visueller Farbcodes im Journalismus",
     "dangersTitle": "Risiken & Folgen rechtsextremer Politik",
-    "dangersSubtitle": "Wissenschaftlich belegt und empirisch untermauert: Wie ein Erstarken der AfD unsere Gesellschaft, Wirtschaft und Grundrechte bedroht.",
+    "dangersSubtitle": "Wissenschaftlich belegt und empirisch untermauert: Wie ein Erstarken der AfD demokratische Institutionen, Wirtschaft und Grundrechte belastet.",
     "dangersSourceLabel": "Quelle & Volltext",
     "dangersViewLabel": "Ansicht",
     "footerBrand": "Rettet das Blau",
-    "trustTitle": "Transparenz & Vertrauen",
-    "trustIntro": "Damit niemand diese Kampagne mit Desinformation oder Scam-Seiten verwechselt, legen wir offen, wer hinter der Seite steht, wie Daten gepflegt werden und wie Quellen ausgewählt werden.",
+    "trustTitle": "Transparenz & Selbstverständnis",
+    "trustIntro": "Wir legen offen, wer hinter dieser Medien-Initiative steht, wie Daten gepflegt werden und nach welchen Kriterien Quellen ausgewählt werden.",
     "trustWhoTitle": "Wer wir sind",
-    "trustWhoBody": "Die Petition ist zivilgesellschaftlich organisiert und auf Change.org gehostet. Kontakt- und Betreiberangaben findest du im Impressum.",
+    "trustWhoBody": "Die Petition ist eine zivilgesellschaftliche Initiative für mediale Genauigkeit und auf Change.org gehostet. Betreiberangaben und Kontakt finden sich im Impressum.",
     "trustWhoLink": "Impressum ansehen",
-    "trustDataTitle": "Daten & Aktualisierung",
-    "trustDataBody": "Umfragewerte stammen aus dokumentierten Quellen. Die Unterschriftenzahl ist ein Snapshot und wird regelmäßig aktualisiert, aber nicht in Echtzeit Sekunde für Sekunde.",
-    "trustSourceTitle": "Quellenprinzip",
-    "trustSourceBody": "Wir verlinken Originalquellen und, wenn sinnvoll, zusätzlich ein Archiv. Begriffe aus Extremismuskontexten werden dokumentarisch verwendet und nicht propagandistisch.",
+    "trustDataTitle": "Daten & Methodik",
+    "trustDataBody": "Umfragewerte stammen aus offiziell dokumentierten Erhebungen anerkannter Institute. Die Unterschriftenzahl wird regelmäßig per API bzw. Snapshot aktualisiert.",
+    "trustSourceTitle": "Quellenarbeit",
+    "trustSourceBody": "Wir verlinken Primärquellen und zitieren wissenschaftliche sowie behördliche Berichte. Extremistische Narrative werden ausschließlich analytisch-dokumentarisch thematisiert.",
     "trustSourceLink": "Methodik lesen",
-    "editorialPolicyTitle": "Quellen- und Redaktionsrichtlinie",
-    "editorialPolicyIntro": "Diese Seite verfolgt ein dokumentarisches Informationsziel. Für belastbare Nachvollziehbarkeit legen wir offen, nach welchen Regeln Quellen ausgewählt und Aussagen formuliert werden.",
-    "editorialPolicyRulesTitle": "So arbeiten wir",
-    "editorialPolicyRule1": "Primärquellen zuerst: Wenn möglich verlinken wir auf die Originalquelle (Behörden, Gerichte, Institute, Redaktionen).",
-    "editorialPolicyRule2": "Kontext statt Schlagwort: Aussagen werden mit Datum, Quelle und fachlichem Rahmen eingeordnet.",
-    "editorialPolicyRule3": "Archiv-Resilienz: Wo sinnvoll ergänzen wir eine Archivquelle, falls Artikel später verschoben oder geändert werden.",
-    "editorialPolicyRule4": "Keine Propaganda-Reproduktion: Begriffe aus Extremismus-Kontexten werden dokumentarisch und kritisch, nicht werbend verwendet.",
+    "editorialPolicyTitle": "Redaktionelle Richtlinien",
+    "editorialPolicyIntro": "Diese Seite verfolgt ein journalistisch-dokumentarisches Informationsziel. Für Nachvollziehbarkeit legen wir unsere Standards offen:",
+    "editorialPolicyRulesTitle": "Unsere Kriterien",
+    "editorialPolicyRule1": "Primärquellen zuerst: Wir verlinken direkt auf wissenschaftliche Studien, Behördenfeststellungen und Leitmedien.",
+    "editorialPolicyRule2": "Kontext vor Polarisierung: Sachverhalte werden mit Datum, institutioneller Einordnung und Kontextualisierung präsentiert.",
+    "editorialPolicyRule3": "Archiv-Resilienz: Relevante Presseberichte und Beschlüsse werden nach Möglichkeit archiviert nachgewiesen.",
+    "editorialPolicyRule4": "Analytische Distanz: Extremistische Rhetorik wird dekonstruiert, nicht ungefiltert reproduziert.",
     "editorialPolicyCorrectionsTitle": "Korrekturen & Kontakt",
-    "editorialPolicyCorrectionsBody": "Wenn du einen sachlichen Fehler findest, melde ihn bitte über die im Impressum genannten Kontaktwege. Belegbare Fehler werden zeitnah geprüft und korrigiert.",
-    "wordsMeaningTitle": "Wörter = Bedeutung",
-    "wordsMeaningSubtitle": "Rechte Rhetorik vs. Realität – Wörterbuch: Was rechtsextreme Akteure sagen und was sie meinen."
+    "editorialPolicyCorrectionsBody": "Bei sachlichen Hinweisen oder Korrekturbedarf bitten wir um eine Nachricht über die im Impressum angegebenen Kanäle. Belastbare Hinweise werden zeitnah geprüft.",
+    "wordsMeaningTitle": "Politische Rhetorik im Faktencheck",
+    "wordsMeaningSubtitle": "Rechtsextreme Begriffsmuster vs. tatsächliche Zielsetzungen: Eine begriffskritische Einordnung."
   },
   "sayings": {
     "sprache": [
       {
         "phrase": "Blau machen",
-        "origin": "Mittelalter / Färberhandwerk",
-        "desc": "Der Begriff stammt vom freien Montag der Färber. Während die Wolle an der Luft oxidierte und blau wurde, ruhte die Arbeit. Ein schönes deutsches Sinnbild für Erholung und Selbstfürsorge."
+        "origin": "Etymologie / Handwerksgeschichte",
+        "desc": "Geht sprachgeschichtlich auf die Trocken- und Oxidationsphasen im Färberhandwerk zurück, während derer nicht gearbeitet werden konnte. Ein historisches Zeugnis handwerklicher Arbeitsrhythmen."
       },
       {
-        "phrase": "Ins Blaue hinein",
-        "origin": "Naturromantik",
-        "desc": "Eine unbeschwerte Reise oder Tat ohne festes Ziel, getragen von purem Vertrauen, Neugierde und friedlicher Abenteuerlust."
+        "phrase": "Fahrt ins Blaue",
+        "origin": "Kultur- und Sprachgeschichte",
+        "desc": "Bezeichnet traditionell einen Ausflug ins Unbekannte oder ins Grüne/Offene – Sinnbild für Offenheit, Erkundungsfreude und Unbeschwertheit."
       },
       {
-        "phrase": "Das Blaue vom Himmel versprechen",
-        "origin": "Poetische Metaphorik",
-        "desc": "Blau steht hier für das unendliche, majestätische Himmelsgewölbe – ein wunderbares Bild voller Träume und Sehnsüchte."
+        "phrase": "Mit einem blauen Auge davonkommen",
+        "origin": "Umgangssprachliche Metaphorik",
+        "desc": "Bedeutet, einer drohenden größeren Gefahr knapp oder glimpflich entgangen zu sein – eine Metapher für Schadensbegrenzung und Entlastung."
       }
     ],
     "symbolik": [
       {
         "phrase": "Die blaue Blume",
         "origin": "Epoche der Romantik (Novalis)",
-        "desc": "Das wichtigste Symbol für Sehnsucht, Liebe, Erkenntnis und die Entfaltung des menschlichen Geistes. Ein unschätzbares Kulturgut."
+        "desc": "In der Literaturgeschichte das zentrale Motiv für Sehnsucht, Weltoffenheit, poetische Suche nach Erkenntnis und menschliche Verbindung."
       },
       {
         "phrase": "Blauhelme der Vereinten Nationen",
-        "origin": "Globale Friedensarbeit",
-        "desc": "Blau wurde von der UN gezielt gewählt, weil es universell für Neutralität, Deeskalation, Zuversicht und den Willen zum dauerhaften Frieden steht."
+        "origin": "Internationale Diplomatie",
+        "desc": "Blau wurde von den Vereinten Nationen bewusst als Signal für Neutralität, Konfliktdeeskalation und überparteiliche Friedenssicherung gewählt."
       },
       {
-        "phrase": "Königsblau & Ultramarin",
-        "origin": "Kunst- und Kulturgeschichte",
-        "desc": "Jahrhundertelang wertvoller als Gold (aus Lapislazuli). In der Renaissance war dieses kostbare Blau ausschließlich der Darstellung des Erhabensten vorbehalten."
+        "phrase": "Europäische Flagge",
+        "origin": "Europäische Einigung",
+        "desc": "Der blaue Fond symbolisiert den Kontinent im Sinne eines friedlichen, multilateralen Miteinanders und der Rechtsstaatlichkeit."
       }
     ]
   },
   "openLetters": {
     "oeffentlich": {
       "to": "AN: Chefredaktionen ARD-aktuell & ZDF-Hauptredaktion",
-      "subject": "Betreff: Visuelle Verzerrung & Frame-Verantwortung",
+      "subject": "Betreff: Visuelles Framing und journalistische Einordnungspflicht",
       "body": [
         "Sehr geehrte Damen und Herren,",
-        "als öffentlich-rechtliche Medienhäuser tragen Sie die gesetzliche Verantwortung für die objektive, historisch und analytisch einordnende Information der Bevölkerung.",
-        "Die Verwendung der Farbe Blau für Akteure, die in Teilen gerichtlich bestätigt als gesichert rechtsextremistisch bezeichnet und eingestuft werden dürfen, bildet eine visuelle Verharmlosung ab.",
-        "Wir fordern Sie auf: Beenden Sie diese verharmlosende Praxis und weichen Sie auf die historisch authentische Repräsentation der Farbe Braun in Ihren Berichten aus."
+        "öffentlich-rechtliche Medienanstalten tragen eine zentrale Verantwortung für eine unverzerrte, sachlich zutreffende Information der Öffentlichkeit.",
+        "Die unreflektierte Übernahme der Parteifarbe Blau für eine in Teilen gesichert rechtsextremistische und verfassungsfeindliche Organisation transportiert unterbewusst Assoziationen von Gemäßigtheit und staatstragender Normalität.",
+        "Wir bitten Sie daher, Ihre visuellen Leitlinien zu prüfen und in Diagrammen auf Darstellungsformen zurückzugreifen, die der gerichtlich dokumentierten Radikalität dieser Strömungen visuell Rechnung tragen."
       ]
     },
     "privat": {
@@ -215,136 +215,136 @@
       "subject": "Betreff: Standard-Farbwerte in der Infografik-Belieferung",
       "body": [
         "Sehr geehrte Damen und Herren,",
-        "über Ihre Nachrichtenportale und über die dpa-Meldungskanäle steuern Sie täglich die Wahrnehmung von Millionen von Menschen in Deutschland.",
-        "Durch die Wahl von Blau als Farbe für die AfD in Infografiken tragen Sie zur visuellen Verharmlosung einer in Teilen verfassungsfeindlichen Partei bei.",
-        "Wir fordern: Passen Sie Ihre redaktionellen Farbstandards an die historische Realität an und stellen Sie die Farbe Braun als Kürzel für die AfD in Grafiken ein."
+        "Ihre Nachrichtenkanäle und Agenturmeldungen prägen tagtäglich die Informationswahrnehmung von Millionen Leserinnen und Zuschauern.",
+        "Wenn Parteien, die von Verfassungsschutzbehörden beobachtet und als extremistisch eingestuft werden, im gleichen seriösen Blau wie internationale Bündnisse visualisiert werden, entsteht ein verharmlosender Framing-Effekt.",
+        "Wir regen an, redaktionelle Farbstandards kritisch zu evaluieren und sich nicht unhinterfragt an der Corporate Identity extremistischer Akteure zu orientieren."
       ]
     },
     "rundfunkrat": {
       "to": "AN: ARD-Rundfunkräte & ZDF-Fernsehrat",
-      "subject": "Betreff: Aufsichtspflicht bei visueller Frame-Setzung",
+      "subject": "Betreff: Programmaufsicht bezüglich visueller Framing-Effekte",
       "body": [
         "Sehr geehrte Damen und Herren,",
-        "als Kontrollgremien der öffentlich-rechtlichen Rundfunkanstalten sind Sie verpflichtet, die Einhaltung der journalistischen Grundsätze zu überwachen.",
-        "Die konsequente Verwendung der Farbe Blau für die AfD in allen grafischen Darstellungen verletzt den Grundsatz der unverfälschten Meinungsbildung.",
-        "Wir fordern Sie auf, Ihre Aufsichtspflicht wahrzunehmen und eine verbindliche Leitlinie für die historisch korrekte Farbzuordnung politischer Parteien einzuführen."
+        "als Kontrollgremien des öffentlich-rechtlichen Rundfunks tragen Sie Sorge für die Einhaltung publizistischer Qualitätsstandards und Ausgewogenheit.",
+        "Die visuelle Gestaltung in Nachrichtensendungen beeinflusst die Wahrnehmung des Publikums nachhaltig. Eine unkritische Symbolik, die Parteien im unbedenklichen Standardspektrum belässt, greift zu kurz.",
+        "Wir fordern Sie auf, die Diskussion um eine differenzierte, faktenbasierte Kennzeichnung politischer Randlagen auch in der grafischen Berichterstattung anzustoßen."
       ]
     }
   },
   "faqs": [
     {
-      "q": "Warum sollte Blau überhaupt problematisch sein?",
-      "a": "Blau ist die Selbstwahlfarbe der AfD, aber eben auch die Farbe des Friedens, des Himmels und der UN-Friedenstruppen. Durch die unkritische Übernahme dieser Selbstzuschreibung durch Medien wird die emotionale Unbedenklichkeits-Assoziation auf die Partei übertragen."
+      "q": "Warum sollte die Parteifarbe Blau problematisch sein?",
+      "a": "Farbpsychologisch steht Blau für Stabilität, Ruhe und Neutralität – es ist auch die Farbe der UN und der EU. Wenn Medien die Selbstwahlfarbe einer in Teilen rechtsextremen Partei unkritisch spiegeln, überträgt sich diese beruhigende Wahrnehmung unbewusst auf das Parteibild."
     },
     {
-      "q": "Ist das nicht Zensur oder politische Einflussnahme?",
-      "a": "Nein. Es geht um medienethische Standards und historische Ehrlichkeit. Medien entscheiden täglich über Darstellungsformen – die Forderung nach historisch korrekten Farbcodes ist eine legitime gesellschaftliche Debatte, keine Zensur."
+      "q": "Ist eine veränderte Farbgebung nicht ein Eingriff in die Neutralität?",
+      "a": "Nein. Journalistische Neutralität bedeutet nicht unkritische PR-Übernahme. Redaktionen wählen seit jeher Farben nach inhaltlichen Kriterien (z. B. Schwarz für die Union statt Türkis). Visuelle Einordnung gehört zum redaktionellen Gestaltungsauftrag."
     },
     {
-      "q": "Hat die Kampagne eine Chance auf Erfolg?",
-      "a": "Viele Menschen haben unterzeichnet. Medienhäuser reagieren auf gesellschaftlichen Druck. Jede Unterschrift zählt."
+      "q": "Welches Ziel verfolgt diese Initiative?",
+      "a": "Wir möchten eine medienethische Debatte über die Wirkung von Informationsgrafiken anstoßen. Ziel ist ein geschärftes Bewusstsein dafür, dass visuelle Entscheidungen nicht wertfrei sind."
     },
     {
       "q": "Wer steckt hinter dieser Kampagne?",
-      "a": "Die Petition wurde auf Change.org gestartet – einer offenen Plattform für bürgerschaftliches Engagement. Es sind engagierte Bürgerinnen und Bürger, die für mediale Integrität eintreten."
+      "a": "Eine zivilgesellschaftliche Initiative für Medienethik und demokratische Diskursqualität, initiiert über Change.org."
     }
   ],
   "facts": [
     {
       "emoji": "🎨",
-      "label": "Blau",
-      "desc": "Farbe des Himmels, des Friedens, der UN"
+      "label": "Farbwirkung Blau",
+      "desc": "Assoziiert mit Ruhe, Sachlichkeit und Internationalismus"
     },
     {
       "emoji": "📺",
-      "label": "ARD & ZDF & Andere Medien",
-      "desc": "Nutzen Blau für AfD-Grafiken"
+      "label": "Nachrichtengrafik",
+      "desc": "Übernimmt häufig unreflektiert Parteifarben"
     },
     {
       "emoji": "🏛️",
-      "label": "Historisch",
-      "desc": "Braun = Symbol des Rechtsextremismus"
+      "label": "Historischer Kontext",
+      "desc": "Braun kennzeichnet die faschistische Tradition"
     },
     {
       "emoji": "⚖️",
-      "label": "Verfassungsschutz",
-      "desc": "Teile der AfD als gesichert extremistisch eingestuft"
+      "label": "Behördliche Einstufung",
+      "desc": "Teile der AfD gerichtlich bestätigt rechtsextrem"
     }
   ],
   "science": {
     "sectionH": "Wissenschaftlicher & Medienrechtlicher Hintergrund",
-    "sectionSub": "Faktenblatt: Visuelles Framing und die Verpflichtung zur sachgetreuen politischen Farbkodierung",
-    "part1H": "Teil 1: Kommunikationswissenschaftliche und medienethische Grundlagen",
+    "sectionSub": "Faktenblatt: Visuelles Framing und redaktionelle Autonomie in der politischen Berichterstattung",
+    "part1H": "Teil 1: Kommunikationswissenschaftliche Grundlagen",
     "foundations": [
       {
         "title": "Die psychologische Dimension des „Visual Framing\" (Halo-Effekt)",
         "points": [
           {
             "label": "Farbpsychologie von Blau",
-            "text": "Helle Cyan- und Blautöne werden universell mit Attributen wie Seriosität, Sachlichkeit, Vertrauenswürdigkeit, Deeskalation und staatstragender Harmonie assoziiert – vergleichbar mit der Farbwahl der Vereinten Nationen oder der europäischen Institutionen."
+            "text": "Blautöne werden in empirischen Studien bevorzugt mit Seriosität, Deeskalation und Verlässlichkeit verbunden – weshalb Institutionen wie die Vereinten Nationen oder europäische Bündnisse diese Farbe nutzen."
           },
           {
-            "label": "Die visuelle Verharmlosungsfalle",
-            "text": "Wird eine politische Kraft, die vom Bundesamt für Verfassungsschutz (BfV) sowie mehreren Landesämtern offiziell als gesichert rechtsextremistisch eingestuft wird, in Nachrichtengrafiken konsequent in dieser beruhigenden Primärfarbe dargestellt, entsteht ein kognitiver Kontrast: Die visuelle Rahmung überdeckt die inhaltliche Radikalität der Akteure (Halo-Effekt)."
+            "label": "Kognitive Dissonanz in Diagrammen",
+            "text": "Wird eine Akteursgruppe, die von Sicherheitsbehörden als rechtsextrem eingestuft wird, in neutralem Cyan- oder Mittelblau visualisiert, entsteht ein Verharmlosungseffekt: Die beruhigende Farbwahl schwächt die Wahrnehmung verfassungsrechtlicher Gefahren ab."
           }
         ]
       },
       {
-        "title": "Redaktionelle Autonomie und journalistische Präzedenzfälle",
+        "title": "Redaktionelle Autonomie und journalistische Praxis",
         "points": [
           {
             "label": "Präzedenzfall taz",
-            "text": "Im Bundestagswahlkampf traf die taz die bewusste redaktionelle Entscheidung, den AfD-Balken in Diagrammen braun statt blau darzustellen. Dies belegt, dass Abweichungen von der Partei-Eigendarstellung im deutschen Journalismus bereits praktiziert und als legitimes Mittel der Einordnung anerkannt werden."
+            "text": "Bereits im Bundestagswahlkampf entschied sich die Redaktion der taz dafür, AfD-Ergebnisse abweichend darzustellen. Das unterstreicht, dass journalistische Einordnung auch die grafische Ebene umfassen kann."
           },
           {
-            "label": "Etablierte farbliche Varianz",
-            "text": "Medienhäuser weichen bei Visualisierungen regelmäßig von den offiziellen CI-Vorgaben ab. Das BSW wird je nach Redaktion lila oder orange-rot gezeigt, die Linke oft dunkelrot zur Abgrenzung von der SPD. Die CDU/CSU nutzt Türkis, wird aber konsequent in Schwarz dargestellt. Farbkodierung ist ein flexibles journalistisches Gestaltungsmittel."
+            "label": "Etablierte Farbkonventionen",
+            "text": "Redaktionen weichen regelmäßig von offiziellen CI-Farben ab, um visuelle Klarheit zu schaffen (z. B. Schwarz für die Union statt Türkis, Differenzierung zwischen SPD und Linke). Farbwahl ist ein eigenständiges journalistisches Gestaltungsmittel."
           }
         ]
       }
     ],
-    "part2H": "Teil 2: Systematische Entkräftung rechtlicher und strategischer Einwände",
+    "part2H": "Teil 2: Rechtliche und publizistische Leitplanken",
     "objections": [
       {
-        "title": "Einwand 1: „Das Neutralitätsgebot verbietet eine Umfärbung.\"",
+        "title": "Einwand 1: „Das Neutralitätsgebot erzwingt eine formale Gleichbehandlung.\"",
         "rebuttals": [
           {
-            "label": "Keine absolute Symmetriepflicht",
-            "text": "Nach ständiger Rechtsprechung des BVerfG gebietet Art. 21 Abs. 1 GG i.V.m. § 5 PartG eine abgestufte Chancengleichheit und fairen Zugang – keine blinde, rein formale Symmetrie. Journalismus darf und muss Unterschiede benennen, wenn objektive Gründe vorliegen."
+            "label": "Materielle statt rein formaler Ausgewogenheit",
+            "text": "Die Rechtsprechung des BVerfG verlangt von Medien eine sachgerechte Einordnung. Zur publizistischen Sorgfalt gehört es, Unterschiede in der Verfassungstreue von Parteien transparent zu benennen und darzustellen."
           },
           {
-            "label": "Verfassungsschutz als Sachlichkeitsmaßstab",
-            "text": "Die gerichtlich bestätigte Einstufung als „gesichert rechtsextremistisch\" ist ein objektiver, verifizierter Befund. Eine Visualisierung, die dies durch eine historisch etablierte Farbe abbildet, dient dem gesetzlichen Auftrag zur sachlichen, wahrheitsgemäßen Berichterstattung (vgl. Medienstaatsvertrag – MStV)."
+            "label": "Befunde des Verfassungsschutzes",
+            "text": "Die gerichtlich bestätigten Einstufungen durch Verfassungsschutzämter stellen objektive Fakten dar. Eine Grafik, die diese Realität abbildet, unterstützt den gesetzlichen Auftrag zu wahrhaftiger Berichterstattung."
           },
           {
-            "label": "Kein Recht auf visuelle Schonung",
-            "text": "Parteien haben keinen verfassungsrechtlichen Anspruch darauf, dass unabhängige Medien ihre Selbstdarstellung ungefiltert übernehmen. Die Programmautonomie der Sender (Rundfunkfreiheit nach Art. 5 Abs. 1 Satz 2 GG) umfasst das Recht, Grafiken nach sachgerechten journalistischen Kriterien zu gestalten."
+            "label": "Programmautonomie der Sender",
+            "text": "Die im Grundgesetz garantierte Rundfunkfreiheit (Art. 5 Abs. 1 Satz 2 GG) schützt Redaktionen davor, PR-Konzepte politischer Parteien ungefiltert übernehmen zu müssen."
           }
         ]
       },
       {
-        "title": "Einwand 2: „Medien müssen sich an der Corporate Identity (CI) der Parteien orientieren.\"",
+        "title": "Einwand 2: „Medien müssen das Parteidesign übernehmen.\"",
         "rebuttals": [
           {
-            "label": "Journalistisches Distanzgebot vs. PR-Übernahme",
-            "text": "Eine blinde Übernahme der CI politischer Akteure widerspricht dem journalistischen Distanzgebot. Parteien nutzen visuelles Branding als strategisches Kommunikationswerkzeug. Die ungeprüfte Reproduktion dieses Marketings macht Medienhäuser zu unfreiwilligen Multiplikatoren politischer Kommunikationsstrategien."
+            "label": "Journalistisches Distanzgebot",
+            "text": "Das Parteienmarketing dient strategischen Zwecken. Das Distanzgebot verlangt, redaktionelle Unabhängigkeit zu wahren, anstatt Image-Strategien unkritisch zu multiplizieren."
           },
           {
-            "label": "Visuelle Wahrheit als Auftrag",
-            "text": "Wenn Verfassungsschutzbehörden erhebliche Unterschiede in der Verfassungstreue der Akteure belegen, führt die Gleichbehandlung im unschuldigen „Standard-Blau\" das Publikum in die Irre. Visuelle Wahrheit erfordert eine Farbwahl, die den verfassungsrechtlichen Status widerspiegelt."
+            "label": "Aufklärung des Publikums",
+            "text": "Diagramme sollen Orientierung bieten. Ein Darstellungsmodus, der radikale Positionen hinter beruhigenden Farbcodes nivelliert, verfehlt diesen Informationsanspruch."
           }
         ]
       },
       {
-        "title": "Einwand 3: „Eine Umfärbung liefert der Partei eine Steilvorlage für ihr Opfer-Narrativ.\"",
+        "title": "Einwand 3: „Das nährt die Opfererzählung der Partei.\"",
         "rebuttals": [
           {
-            "label": "Proaktive Kernstrategie",
-            "text": "Analysen rechtsextremer Kommunikation (u. a. von Dr. Johannes Hillje) zeigen: Das „Medienopfer-Narrativ\" ist eine proaktive, strukturelle Kernstrategie, die vollkommen unabhängig von tatsächlichen redaktionellen Handlungen konstruiert und instrumentalisiert wird."
+            "label": "Strukturelle Selbstinszenierung",
+            "text": "Medienanalysen belegen, dass populistische Kräfte das Narrativ der Benachteiligung prinzipiell bedienen – unabhängig von konkreten redaktionellen Gestaltungsentscheidungen."
           },
           {
-            "label": "Kein vorauseilender Gehorsam",
-            "text": "Wenn Redaktionen notwendige medienethische Anpassungen aus Angst vor der Reaktion einer Partei unterlassen, unterwerfen sie ihre redaktionelle Unabhängigkeit deren Kommunikationsstrategie. Der wirksamste Schutz ist nicht Tatenlosigkeit, sondern eine transparente, wissenschaftlich und juristisch sauber begründete Offenlegung der redaktionellen Gestaltungsentscheidung."
+            "label": "Transparenz statt Zurückhaltung",
+            "text": "Journalistische Entscheidungen sollten nicht aus Sorge vor Kampagnen unterbleiben. Sachlich und wissenschaftlich begründete Maßstäbe sind die beste Basis für redaktionelle Glaubwürdigkeit."
           }
         ]
       }
@@ -355,11 +355,11 @@
       "id": "social",
       "title": "Soziales & Wohlfahrt",
       "metric": "Vorteile nur für das reichste 1%",
-      "description": "Die wirtschafts- und sozialpolitischen Pläne der AfD laufen den realen Interessen von Geringverdienern, Rentnern und Angestellten fundamental entgegen.",
+      "description": "Wirtschafts- und sozialpolitische Analysen zeigen erhebliche Nachteile für Geringverdiener, Rentner und Arbeitnehmer.",
       "points": [
-        "Erhöhung des gesetzlichen Mindestlohns auf 12 Euro blockiert und abgelehnt (was überproportional den Niedriglohnsektor und Ostdeutsche trifft).",
-        "Ersatz des Bürgergeldes durch ein extrem verkürztes System (max. 6 Monate) mit Zwang zur unbezahlten 'Bürgerarbeit'.",
-        "Forderung nach Abschaffung der Vermögen- und Erbschaftsteuer, wovon fast ausschließlich das reichste Prozent der Bevölkerung profitiert."
+        "Ablehnung des flächendeckenden gesetzlichen Mindestlohns, was strukturschwache Regionen besonders trifft.",
+        "Geplante drastische Reduktion von Grundsicherungsleistungen bei gleichzeitiger Einführung verpflichtender Arbeitsauflagen.",
+        "Forderung nach Abschaffung von Vermögen- und Erbschaftsteuer mit primärem Entlastungseffekt für Spitzenvermögen."
       ],
       "citation": "Deutsches Institut für Wirtschaftsforschung (DIW Berlin) — Das AfD-Paradox (2023)",
       "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
@@ -368,11 +368,11 @@
       "id": "economy",
       "title": "Wirtschaft & Wohlstand",
       "metric": "-5,6% BIP durch Dexit-Pläne",
-      "description": "Rechtsextremer Wirtschaftsnationalismus und ein EU-Austritt bedrohen den Wohlstand und die Handlungsfähigkeit der deutschen Volkswirtschaft massiv.",
+      "description": "Protektionismus und eine Abkehr von der europäischen Integration schwächen den Wirtschaftsstandort nachhaltig.",
       "points": [
-        "IW-Berechnung (2024): Ein Austritt Deutschlands aus der EU ('Dexit') würde innerhalb von 5 Jahren zu einem Rückgang des realen BIP um 5,6 % (ca. 690 Mrd. Euro) führen.",
-        "Demografische Lücke: Abschottung und ausländerfeindliche Rhetorik verschärfen den kritischen Fachkräftemangel durch Abschreckung internationaler Spezialisten.",
-        "Staatshaushalt: Die geforderten Steuersenkungen (181 Mrd. €) bei gleichzeitigen Rentenversprechen gefährden die Stabilität der öffentlichen Finanzen."
+        "IW-Berechnung (2024): Ein EU-Austritt Deutschlands ('Dexit') brächte binnen 5 Jahren einen BIP-Verlust von ca. 5,6 % (rund 690 Mrd. Euro) mit sich.",
+        "Verstärkung des Fachkräftemangels durch restriktive Zuwanderungspolitik und internationale Abschreckungseffekte.",
+        "Unfinanzierte Steuersenkungsforderungen gefährden die Haushalts- und Investitionsfähigkeit der Kommunen und Länder."
       ],
       "citation": "Institut der deutschen Wirtschaft (IW Köln) — Folgen eines EU-Austritts (2024)",
       "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
@@ -381,11 +381,11 @@
       "id": "press",
       "title": "Presse & Rundfunk",
       "metric": "Ausschlüsse per Gerichtsentscheid gestoppt",
-      "description": "Rechtsextreme Parteien betrachten freie Medien als Gegner und versuchen systematisch, kritische Berichterstattung zu unterbinden oder einzuschränken.",
+      "description": "Wiederholte Versuche, kritische Medienvertreter auszugrenzen und die Pressefreiheit einzuschränken.",
       "points": [
-        "Mehrfache Versuche, unliebsame Journalisten (u. a. von WDR, BR, Spiegel, Welt, taz) von Parteitagen und Wahlpartys auszuschließen, was Gerichte im Eilverfahren stoppen mussten.",
-        "Systematische Agitation gegen den öffentlich-rechtlichen Rundfunk ('Lügenpresse') mit dem Ziel der Zerschlagung und finanziellen Austrocknung.",
-        "Historischer Vergleich zeigt: Autokratische Regime in Ungarn (KESMA-Konglomerat) und Polen (unter PiS) übernahmen rasch die Medienkontrolle."
+        "Gerichtlich unterbundene Versuche, Journalistinnen und Journalisten von Parteitagen und Wahlabenden fernzuhalten.",
+        "Gezielte Kampagnen gegen den öffentlich-rechtlichen Rundfunk mit der Forderung nach dessen Marginalisierung.",
+        "Gefahr analoger Entwicklungen wie in autoritär geprägten Mediensystemen mit eingeschränkter Meinungsvielfalt."
       ],
       "citation": "Landgericht Erfurt / Landgericht München I (2024) — Eilentscheidungen zur Pressefreiheit",
       "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
@@ -393,12 +393,12 @@
     {
       "id": "culture",
       "title": "Kunst, Kultur & Schule",
-      "metric": "Klagen gegen Schultheater abgewiesen",
-      "description": "Die Unabhängigkeit von Kultur, Wissenschaft und Schule wird attackiert, um ein ideologisches, völkisch-nationales Narrativ zu etablieren.",
+      "metric": "Klagen gegen Kulturprojekte abgewiesen",
+      "description": "Versuche zur politischen Reglementierung freier Kultur-, Schul- und Bildungsinitiativen.",
       "points": [
-        "Gerichtliche Klagen gegen politisch-kritisches Schultheater ('Danke dafür, AfD') scheiterten, da die Darbietungen unter den Schutz der Kunstfreiheit fallen.",
-        "Forderung in Landesparlamenten, staatliche Kulturförderung an ein 'Bekenntnis zur deutschen Identität' zu knüpfen und kritisches Regietheater zu ächten.",
-        "Einrichtung von Online-Meldeportalen ('Neutrale Schule') zur Denunziation von Lehrkräften, die sich im Unterricht kritisch mit Rechtsextremismus befassen."
+        "Juristisch abgewehrte Angriffe auf Kunst- und Schultheaterprojekte mit Verweis auf das Grundrecht der Kunstfreiheit.",
+        "Versuche in Parlamenten, Fördermittelvergaben an ideologische Bekenntnisse zu koppeln.",
+        "Initiativen für Meldeportale zur Überwachung von Lehrkräften bei der Behandlung verfassungspolitischer Themen."
       ],
       "citation": "Verwaltungsgericht Hannover (2023) / Bundesverband Freie Darstellende Künste",
       "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
@@ -407,11 +407,11 @@
       "id": "crime",
       "title": "Sicherheit & Gewalt",
       "metric": "Rechtsextreme Straftaten dominieren",
-      "description": "Offizielle Statistiken des Bundeskriminalamts belegen, dass rechtsextreme Gewalt, Straftaten und internetbasierte Hasskommentare quantitativ und qualitativ dominieren.",
+      "description": "Offizielle Kriminalstatistiken zeigen ein dauerhaft hohes Bedrohungspotenzial durch politisch motivierte Kriminalität von rechts.",
       "points": [
-        "Straftaten (2025): 42.544 rechts motivierte Delikte (ca. 50 % aller Fälle) gegenüber 13.490 links motivierten Delikten.",
-        "Gewalttaten (2025): 1.598 rechts motivierte Gewaltdelikte gegenüber 1.087 links motivierten Gewaltdelikten.",
-        "Hasskommentare (2025): 4.870 rechtsextreme Hasspostings im Internet gegenüber 1.460 linksextremen Taten."
+        "Straftaten (2025): Rund die Hälfte aller politisch motivierten Delikte entfällt auf das rechtsextreme Spektrum.",
+        "Überproportional hohe Fallzahlen im Bereich gewaltsamer Übergriffe und Einschüchterungen.",
+        "Hohe Dynamik bei digital verbreiteten Hasspostings und Verunglimpfungen engagierter Bürgerinnen und Bürger."
       ],
       "citation": "Bundeskriminalamt (BKA) — Politisch motivierte Kriminalität im Jahr 2025 (Juni 2026)",
       "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
@@ -419,12 +419,12 @@
     {
       "id": "alliances",
       "title": "Netzwerke & Allianzen",
-      "metric": "EU-Fraktionsvorsitz: René Aust (AfD)",
-      "description": "Die AfD kooperiert auf europäischer Ebene mit extremen Nationalisten und steht im Verdacht, von autoritären Regimen wie Russland und China finanziert zu werden.",
+      "metric": "Europäische Fraktionsbildung",
+      "description": "Enge Verbindungen zu ultranationalistischen Parteien in Europa sowie Berichte über Verbindungen zu autoritären Drittstaaten.",
       "points": [
-        "Europa der Souveränen Nationen (ESN): Im Juli 2024 gründete die AfD diese Fraktion im Europaparlament u.a. mit der polnischen Konfederacja und der ungarischen Mi Hazánk.",
-        "Russland-Finanzierung: Ermittlungen der Staatsanwaltschaft gegen die AfD-Politiker Petr Bystron und Maximilian Krah wegen Korruption und Geldwäsche im Kontext des pro-russischen Propagandanetzwerks 'Voice of Europe'.",
-        "China-Spionage: Festnahme eines engen Mitarbeiters von Maximilian Krah im April 2024 wegen des dringenden Verdachts der Agententätigkeit für einen chinesischen Geheimdienst."
+        "Beteiligung an der Gründung der radikal-nationalistischen ESN-Fraktion im EU-Parlament.",
+        "Ermittlungen zu Finanzierungs- und Einflussstrukturen im Umfeld prorussischer Netzwerke.",
+        "Sicherheitsrelevante Ermittlungen wegen Verdachts auf nachrichtendienstliche Kooperationen."
       ],
       "citation": "Bundestag / Generalbundesanwalt / Münchner Staatsanwaltschaft (2024-2025)",
       "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
@@ -459,83 +459,83 @@
   "wordsMeaning": [
     {
       "word": "Freiheit",
-      "meaning": "Gehorsam & Unterwerfung"
+      "meaning": "Forderung nach Regellosigkeit für das eigene Klientel bei Einschränkung für Andersdenkende"
     },
     {
       "word": "Frieden",
-      "meaning": "Kapitulation & Repression"
+      "meaning": "Forderung nach Akzeptanz autoritärer Aggression und Schwächung westlicher Demokratien"
     },
     {
       "word": "Demokratie",
-      "meaning": "Diktatur der eigenen Gruppe & Ausschluss"
+      "meaning": "Reduktion auf eine vermeintliche Volksgemeinschaft unter Ausschluss von Minderheitenrechten"
     },
     {
       "word": "Souveränität",
-      "meaning": "Isolationismus & Recht des Stärkeren"
+      "meaning": "Nationalistische Isolation und Aufkündigung internationaler Partnerschaften"
     },
     {
       "word": "Widerstand",
-      "meaning": "Systemumsturz & eigene Diktatur"
+      "meaning": "Delegitimierung demokratischer Institutionen und Rechtsnormen"
     },
     {
       "word": "Meinungsfreiheit",
-      "meaning": "Zensur für Andere & Straffreiheit für eigenen Hass"
+      "meaning": "Grenzenlose Verbreitung von Falschinformationen bei gleichzeitiger Diskreditierung freier Medien"
     },
     {
       "word": "Heimat",
-      "meaning": "Ethnonationalismus & Vertreibung (\"Remigration\")"
+      "meaning": "Völkisch-ethnische Ausgrenzung und Vertreibungsideen ('Remigration')"
     },
     {
       "word": "Schutz der Familie",
-      "meaning": "Patriarchat & Queerfeindlichkeit"
+      "meaning": "Ablehnung pluraler Lebensentwürfe und queeren Menschenrechten"
     },
     {
       "word": "Gerechtigkeit",
-      "meaning": "Sozialdarwinismus"
+      "meaning": "Abbau von Sozialstandards zugunsten wohlhabenderer Klientel"
     },
     {
       "word": "Gesunder Menschenverstand",
-      "meaning": "Wissenschaftsfeindlichkeit & Verschwörungsmythen"
+      "meaning": "Ablehnung wissenschaftlicher Erkenntnisse und Fakten"
     },
     {
       "word": "Patriotismus",
-      "meaning": "Fremdenfeindlichkeit & Ausgrenzung"
+      "meaning": "Chauvinismus und Herabwürdigung anderer Gesellschaften"
     },
     {
       "word": "Normalität",
-      "meaning": "Diskriminierung aller Abweichungen"
+      "meaning": "Rückbau gesellschaftlicher Vielfalt auf ein starres Rollenbild"
     },
     {
       "word": "Tradition",
-      "meaning": "Rückschritt & Auslöschung von Diversität"
+      "meaning": "Historische Verklärung und Abwertung moderner Grundwerte"
     },
     {
       "word": "Selbstbestimmung",
-      "meaning": "Vorherrschaft der eigenen Ideologie"
+      "meaning": "Recht des Stärkeren im völkischen Sinne"
     },
     {
       "word": "Sicherheit",
-      "meaning": "Überwachung, Repression & Sündenbockpolitik"
+      "meaning": "Generalverdacht und Kriminalisierung vulnerabler Gruppen"
     },
     {
       "word": "Volkswille",
-      "meaning": "Ausgrenzung von Minderheiten"
+      "meaning": "Absolutsheitsanspruch einer Minderheit gegenüber der pluralistischen Mehrheit"
     },
     {
       "word": "Reform",
-      "meaning": "Abbau rechtsstaatlicher Strukturen"
+      "meaning": "Systematischer Rückbau rechtsstaatlicher Schutzmechanismen"
     },
     {
       "word": "Transparenz",
-      "meaning": "Selektive Offenlegung & Desinformation"
+      "meaning": "Gezielte Desinformation zur Verunsicherung der Öffentlichkeit"
     },
     {
       "word": "Stärke",
-      "meaning": "Autoritarismus & Einschüchterung"
+      "meaning": "Autoritärer Politikstil statt konsensualer Problemlösung"
     },
     {
       "word": "Wahrheit",
-      "meaning": "Propaganda der eigenen Agenda"
+      "meaning": "Etablierung parteieigener Desinformationsnarrative"
     }
   ]
 }
