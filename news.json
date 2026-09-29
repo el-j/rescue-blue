@@ -2,26 +2,26 @@
   {
     "title": {
       "de": "AfD-Verbot: SPD-Fraktionsvorsitzende fordern Prüfverfahren zu AfD-Verbot",
-      "en": "AfD ban: SPD parliamentary group leaders call for review procedures for the AfD ban",
-      "fr": "Interdiction de l'AfD : les dirigeants des groupes parlementaires du SPD demandent des procédures de révision de l'interdiction de l'AfD",
-      "es": "Prohibición de AfD: los líderes del grupo parlamentario del SPD piden procedimientos de revisión para la prohibición de AfD",
       "tr": "AfD yasağı: SPD parlamento grubu liderleri AfD yasağı için inceleme prosedürleri çağrısında bulundu",
-      "uk": "Заборона AfD: лідери парламентських груп СДПН закликають до перегляду процедур заборони AfD",
-      "pl": "Zakaz AfD: Liderzy grup parlamentarnych SPD wzywają do wprowadzenia procedur przeglądu zakazu AfD",
+      "ru": "Запрет АдГ: лидеры парламентской группы СДПГ призывают пересмотреть процедуры запрета АдГ",
+      "es": "Prohibición de AfD: los líderes del grupo parlamentario del SPD piden procedimientos de revisión para la prohibición de AfD",
       "it": "Divieto dell'AfD: i leader dei gruppi parlamentari della SPD chiedono procedure di revisione per il divieto dell'AfD",
-      "ru": "Запрет АдГ: лидеры парламентской группы СДПГ призывают пересмотреть процедуры запрета АдГ"
+      "uk": "Заборона AfD: лідери парламентських груп СДПН закликають до перегляду процедур заборони AfD",
+      "fr": "Interdiction de l'AfD : les dirigeants des groupes parlementaires du SPD demandent des procédures de révision de l'interdiction de l'AfD",
+      "pl": "Zakaz AfD: Liderzy grup parlamentarnych SPD wzywają do wprowadzenia procedur przeglądu zakazu AfD",
+      "en": "AfD ban: SPD parliamentary group leaders call for review procedures for the AfD ban"
     },
     "date": "2026-09-29",
     "excerpt": {
       "de": "Führende SPD-Politiker warnen, dass die AfD eine Gefahr für die Demokratie sei. Eine Bund-Länder-Gruppe solle noch in diesem Jahr ein Verbotsverfahren vorbereiten.",
-      "en": "Leading SPD politicians warn that the AfD is a danger to democracy. A federal-state group should prepare a ban procedure this year.",
-      "fr": "Des dirigeants politiques du SPD avertissent que l’AfD constitue un danger pour la démocratie. Un groupe fédéral et étatique devrait préparer cette année une procédure d'interdiction.",
-      "es": "Los principales políticos del SPD advierten que el AfD es un peligro para la democracia. Un grupo federal-estatal debería preparar un procedimiento de prohibición este año.",
       "tr": "Önde gelen SPD'li politikacılar AfD'nin demokrasi için bir tehlike olduğu konusunda uyarıyorlar. Bir federal eyalet grubunun bu yıl bir yasaklama prosedürü hazırlaması gerekiyor.",
-      "uk": "Провідні політики СДПН попереджають, що AfD є небезпекою для демократії. Федерально-земельна група має підготувати процедуру заборони цього року.",
-      "pl": "Czołowi politycy SPD ostrzegają, że AfD stanowi zagrożenie dla demokracji. Grupa stanowa powinna przygotować w tym roku procedurę zakazu.",
+      "ru": "Ведущие политики СДПГ предупреждают, что АдГ представляет опасность для демократии. В этом году группа федеральных земель должна подготовить процедуру запрета.",
+      "es": "Los principales políticos del SPD advierten que el AfD es un peligro para la democracia. Un grupo federal-estatal debería preparar un procedimiento de prohibición este año.",
       "it": "I principali politici dell’SPD avvertono che l’AfD rappresenta un pericolo per la democrazia. Quest’anno un gruppo federale dovrebbe elaborare una procedura di divieto.",
-      "ru": "Ведущие политики СДПГ предупреждают, что АдГ представляет опасность для демократии. В этом году группа федеральных земель должна подготовить процедуру запрета."
+      "uk": "Провідні політики СДПН попереджають, що AfD є небезпекою для демократії. Федерально-земельна група має підготувати процедуру заборони цього року.",
+      "fr": "Des dirigeants politiques du SPD avertissent que l’AfD constitue un danger pour la démocratie. Un groupe fédéral et étatique devrait préparer cette année une procédure d'interdiction.",
+      "pl": "Czołowi politycy SPD ostrzegają, że AfD stanowi zagrożenie dla demokracji. Grupa stanowa powinna przygotować w tym roku procedurę zakazu.",
+      "en": "Leading SPD politicians warn that the AfD is a danger to democracy. A federal-state group should prepare a ban procedure this year."
     },
     "sources": [
       {
@@ -31,32 +31,40 @@
       {
         "name": "Zeit Online (Archiv)",
         "url": "https://archive.ph/https://www.zeit.de/politik/deutschland/2026-09/afd-verbot-spd-pruefverfahren-rechtsextrem-gefahr-demokratie"
+      },
+      {
+        "name": "Zeit Online",
+        "url": "https://www.zeit.de/politik/deutschland/2026-09/afd-verbot-spd-pruefverfahren-rechtsextrem-gefahr-demokratie-gxe"
+      },
+      {
+        "name": "Zeit Online (Archiv)",
+        "url": "https://archive.ph/https://www.zeit.de/politik/deutschland/2026-09/afd-verbot-spd-pruefverfahren-rechtsextrem-gefahr-demokratie-gxe"
       }
     ]
   },
   {
     "title": {
-      "es": "AfD en Sajonia-Anhalt: la extrema derecha pronto tendrá su primer presidente en el parlamento estatal",
-      "it": "AfD in Sassonia-Anhalt: gli estremisti di destra avranno presto il loro primo presidente del parlamento regionale",
-      "uk": "AfD у Саксонії-Анхальті: праві екстремісти незабаром отримають свого першого президента земельного парламенту",
-      "en": "AfD in Saxony-Anhalt: Right-wing extremists will soon have their first state parliament president",
-      "fr": "AfD en Saxe-Anhalt : les extrémistes de droite auront bientôt leur premier président au Parlement du Land",
       "de": "AfD in Sachsen-Anhalt: Rechtsextreme haben bald ersten Landtagspräsidenten",
       "ru": "АдГ в Саксонии-Анхальт: у правых экстремистов скоро будет первый президент земельного парламента",
       "tr": "Saksonya-Anhalt'ta AfD: Aşırı sağcılar yakında ilk eyalet meclis başkanına sahip olacak",
-      "pl": "AfD w Saksonii-Anhalt: Prawicowi ekstremiści wkrótce będą mieli pierwszego przewodniczącego parlamentu krajowego"
+      "es": "AfD en Sajonia-Anhalt: la extrema derecha pronto tendrá su primer presidente en el parlamento estatal",
+      "it": "AfD in Sassonia-Anhalt: gli estremisti di destra avranno presto il loro primo presidente del parlamento regionale",
+      "uk": "AfD у Саксонії-Анхальті: праві екстремісти незабаром отримають свого першого президента земельного парламенту",
+      "fr": "AfD en Saxe-Anhalt : les extrémistes de droite auront bientôt leur premier président au Parlement du Land",
+      "pl": "AfD w Saksonii-Anhalt: Prawicowi ekstremiści wkrótce będą mieli pierwszego przewodniczącego parlamentu krajowego",
+      "en": "AfD in Saxony-Anhalt: Right-wing extremists will soon have their first state parliament president"
     },
     "date": "2026-09-28",
     "excerpt": {
-      "es": "Junto con Tobias Rausch, la AfD quiere nombrar presidente del parlamento estatal a alguien conocido por su nepotismo. La BSW no ve ningún problema. más...",
-      "it": "Con Tobias Rausch l'AfD vuole nominare presidente del parlamento regionale un personaggio noto per il nepotismo. Il BSW non vede alcun problema. Di più...",
-      "uk": "За допомогою Тобіаса Рауша AfD хоче призначити президентом парламенту штату когось, відомого кумівством. BSW не бачить проблеми. більше...",
-      "en": "With Tobias Rausch, the AfD wants to appoint someone known for nepotism as state parliament president. The BSW sees no problem. more...",
-      "fr": "Avec Tobias Rausch, l'AfD veut nommer à la présidence du parlement du Land un homme connu pour son népotisme. Le BSW n’y voit aucun problème. plus...",
       "de": "Mit Tobias Rausch will die AfD jemanden als Landtagspräsidenten aufstellen, der für Vetternwirtschaft bekannt ist. Das BSW sieht kein Problem. mehr...",
       "ru": "Вместе с Тобиасом Раушем АдГ хочет назначить президентом парламента штата человека, известного своим кумовством. BSW не видит проблем. более...",
       "tr": "AfD, Tobias Rausch ile birlikte adam kayırmacılığıyla bilinen birini eyalet parlamentosu başkanı olarak atamak istiyor. BSW herhangi bir sorun görmüyor. Daha...",
-      "pl": "AfD chce z Tobiasem Rauschem wybrać na przewodniczącego parlamentu stanowego osobę znaną z nepotyzmu. BSW nie widzi problemu. więcej..."
+      "es": "Junto con Tobias Rausch, la AfD quiere nombrar presidente del parlamento estatal a alguien conocido por su nepotismo. La BSW no ve ningún problema. más...",
+      "it": "Con Tobias Rausch l'AfD vuole nominare presidente del parlamento regionale un personaggio noto per il nepotismo. Il BSW non vede alcun problema. Di più...",
+      "uk": "За допомогою Тобіаса Рауша AfD хоче призначити президентом парламенту штату когось, відомого кумівством. BSW не бачить проблеми. більше...",
+      "fr": "Avec Tobias Rausch, l'AfD veut nommer à la présidence du parlement du Land un homme connu pour son népotisme. Le BSW n’y voit aucun problème. plus...",
+      "pl": "AfD chce z Tobiasem Rauschem wybrać na przewodniczącego parlamentu stanowego osobę znaną z nepotyzmu. BSW nie widzi problemu. więcej...",
+      "en": "With Tobias Rausch, the AfD wants to appoint someone known for nepotism as state parliament president. The BSW sees no problem. more..."
     },
     "sources": [
       {
@@ -102,27 +110,27 @@
   },
   {
     "title": {
-      "es": "Prohibición de AfD: ahora sólo falta esto",
-      "it": "Divieto dell'AfD: ora manca solo questa cosa",
-      "uk": "Заборона AfD: тепер бракує лише цього",
-      "en": "AfD ban: Now only this one thing is missing",
-      "fr": "Interdiction de l’AfD : il ne manque plus que cette seule chose",
       "de": "AfD-Verbot: Es fehlt jetzt nur noch diese eine Sache",
       "ru": "Запрет АдГ: теперь не хватает только этого",
       "tr": "AfD yasağı: Artık tek bir şey eksik",
-      "pl": "Zakaz AfD: Teraz brakuje tylko tej jednej rzeczy"
+      "es": "Prohibición de AfD: ahora sólo falta esto",
+      "it": "Divieto dell'AfD: ora manca solo questa cosa",
+      "uk": "Заборона AfD: тепер бракує лише цього",
+      "fr": "Interdiction de l’AfD : il ne manque plus que cette seule chose",
+      "pl": "Zakaz AfD: Teraz brakuje tylko tej jednej rzeczy",
+      "en": "AfD ban: Now only this one thing is missing"
     },
     "date": "2026-09-24",
     "excerpt": {
-      "es": "Si se inicia este proceso, será el principio del fin para AfD: siete primeros ministros están dispuestos a que los gobiernos federal y estatal examinen la prohibición de AfD. Esto significa que...",
-      "it": "Se questo processo venisse avviato, sarebbe l’inizio della fine per l’AfD: sette primi ministri sono pronti a far esaminare il divieto dell’AfD dai governi federale e statale. Ciò significa che...",
-      "uk": "Якщо цей процес розпочнеться, це стане початком кінця для AfD: сім прем’єр-міністрів готові до того, щоб заборона AfD була розглянута федеральними урядами та урядами штатів. Це означає, що...",
-      "en": "If this process is initiated, it will be the beginning of the end for the AfD: seven prime ministers are ready to have the AfD ban examined by the federal and state governments. This means that...",
-      "fr": "Si ce processus est engagé, ce sera le début de la fin pour l’AfD : sept premiers ministres sont prêts à faire examiner l’interdiction de l’AfD par le gouvernement fédéral et celui des Länder. Cela signifie que...",
       "de": "Wird dieser Prozess eingeleitet, ist das der Anfang vom Ende der AfD: Sieben Ministerpräsidenten sind bereit, das AfD-Verbot von Bund und Ländern prüfen zu lassen. Damit fehlt f...",
       "ru": "Если этот процесс будет начат, это станет началом конца для АдГ: семь премьер-министров готовы добиться рассмотрения запрета АдГ на федеральном уровне и правительствах штатов. Это означает, что...",
       "tr": "Bu sürecin başlatılması AfD için sonun başlangıcı olacak: Yedi başbakan, AfD yasağının federal ve eyalet hükümetleri tarafından incelenmesini sağlamaya hazır. Bu şu anlama geliyor...",
-      "pl": "Jeśli proces ten zostanie zainicjowany, będzie to początek końca AfD: siedmiu premierów jest gotowych, aby zakaz AfD został rozpatrzony przez rządy federalny i stanowy. Oznacza to, że..."
+      "es": "Si se inicia este proceso, será el principio del fin para AfD: siete primeros ministros están dispuestos a que los gobiernos federal y estatal examinen la prohibición de AfD. Esto significa que...",
+      "it": "Se questo processo venisse avviato, sarebbe l’inizio della fine per l’AfD: sette primi ministri sono pronti a far esaminare il divieto dell’AfD dai governi federale e statale. Ciò significa che...",
+      "uk": "Якщо цей процес розпочнеться, це стане початком кінця для AfD: сім прем’єр-міністрів готові до того, щоб заборона AfD була розглянута федеральними урядами та урядами штатів. Це означає, що...",
+      "fr": "Si ce processus est engagé, ce sera le début de la fin pour l’AfD : sept premiers ministres sont prêts à faire examiner l’interdiction de l’AfD par le gouvernement fédéral et celui des Länder. Cela signifie que...",
+      "pl": "Jeśli proces ten zostanie zainicjowany, będzie to początek końca AfD: siedmiu premierów jest gotowych, aby zakaz AfD został rozpatrzony przez rządy federalny i stanowy. Oznacza to, że...",
+      "en": "If this process is initiated, it will be the beginning of the end for the AfD: seven prime ministers are ready to have the AfD ban examined by the federal and state governments. This means that..."
     },
     "sources": [
       {
@@ -133,27 +141,27 @@
   },
   {
     "title": {
-      "es": "Los nuevos representantes de AfD en Mecklemburgo-Pomerania Occidental son tan étnicos",
-      "it": "I nuovi rappresentanti dell'AfD nel Meclemburgo-Pomerania Anteriore sono così etnici",
-      "uk": "Нові представники AfD у Мекленбурзі-Передній Померанії такі етнічні",
-      "en": "The new AfD representatives in Mecklenburg-Western Pomerania are so ethnic",
-      "fr": "Les nouveaux représentants de l'AfD en Mecklembourg-Poméranie occidentale sont si ethniques",
       "de": "So völkisch sind die neuen AfD-Abgeordneten in Mecklenburg-Vorpommern",
       "ru": "Новые представители АдГ в земле Мекленбург-Передняя Померания настолько этнические, что",
       "tr": "Mecklenburg-Batı Pomeranya'daki yeni AfD temsilcileri o kadar etnik ki",
-      "pl": "Nowi przedstawiciele AfD w Meklemburgii-Pomorzu Przednim są tacy etniczni"
+      "es": "Los nuevos representantes de AfD en Mecklemburgo-Pomerania Occidental son tan étnicos",
+      "it": "I nuovi rappresentanti dell'AfD nel Meclemburgo-Pomerania Anteriore sono così etnici",
+      "uk": "Нові представники AfD у Мекленбурзі-Передній Померанії такі етнічні",
+      "fr": "Les nouveaux représentants de l'AfD en Mecklembourg-Poméranie occidentale sont si ethniques",
+      "pl": "Nowi przedstawiciele AfD w Meklemburgii-Pomorzu Przednim są tacy etniczni",
+      "en": "The new AfD representatives in Mecklenburg-Western Pomerania are so ethnic"
     },
     "date": "2026-09-22",
     "excerpt": {
-      "es": "Fraternidades de derecha, neonazis e historias de conspiraciones: en el futuro 32 representantes de AfD entrarán en el parlamento federado de Schwerin. CORRECTIV presenta diez particularmente radicales...",
-      "it": "Fraternità di destra, neonazisti e storie di complotti: 32 rappresentanti dell'AfD entreranno in futuro nel parlamento regionale di Schwerin. CORRECTIVIV presenta dieci particolarmente radicali...",
-      "uk": "Праві братства, неонацисти та історії змови: 32 представники AfD у майбутньому увійдуть до парламенту землі Шверін. CORRECTIV представляє десять особливо радикальних...",
-      "en": "Right-wing fraternities, neo-Nazis and conspiracy stories: 32 AfD representatives will enter the Schwerin state parliament in the future. CORRECTIV presents ten particularly radical...",
-      "fr": "Fraternités de droite, néo-nazis et histoires de complot : 32 représentants de l'AfD entreront à l'avenir au Parlement du Land de Schwerin. CORRECTIV présente dix dix particulièrement radicales...",
       "de": "Rechte Burschenschaften, Neonazis und Verschwörungserzählungen: 32 AfD-Abgeordnete werden künftig in den Schweriner Landtag einziehen. CORRECTIV stellt zehn mit besonders radika...",
       "ru": "Правые братства, неонацисты и истории заговоров: 32 представителя АдГ войдут в парламент земли Шверин в будущем. CORRECTIV представляет десять особенно радикальных...",
       "tr": "Sağcı kardeşlikler, neo-Naziler ve komplo hikayeleri: Gelecekte 32 AfD temsilcisi Schwerin eyalet parlamentosuna girecek. CORRECTIV on özellikle radikal olanı sunuyor...",
-      "pl": "Prawicowe stowarzyszenia, neonaziści i historie spiskowe: w przyszłości do parlamentu kraju związkowego Schwerin wejdzie 32 przedstawicieli AfD. CORRECTIV przedstawia dziesięć szczególnie radykalnych..."
+      "es": "Fraternidades de derecha, neonazis e historias de conspiraciones: en el futuro 32 representantes de AfD entrarán en el parlamento federado de Schwerin. CORRECTIV presenta diez particularmente radicales...",
+      "it": "Fraternità di destra, neonazisti e storie di complotti: 32 rappresentanti dell'AfD entreranno in futuro nel parlamento regionale di Schwerin. CORRECTIVIV presenta dieci particolarmente radicali...",
+      "uk": "Праві братства, неонацисти та історії змови: 32 представники AfD у майбутньому увійдуть до парламенту землі Шверін. CORRECTIV представляє десять особливо радикальних...",
+      "fr": "Fraternités de droite, néo-nazis et histoires de complot : 32 représentants de l'AfD entreront à l'avenir au Parlement du Land de Schwerin. CORRECTIV présente dix dix particulièrement radicales...",
+      "pl": "Prawicowe stowarzyszenia, neonaziści i historie spiskowe: w przyszłości do parlamentu kraju związkowego Schwerin wejdzie 32 przedstawicieli AfD. CORRECTIV przedstawia dziesięć szczególnie radykalnych...",
+      "en": "Right-wing fraternities, neo-Nazis and conspiracy stories: 32 AfD representatives will enter the Schwerin state parliament in the future. CORRECTIV presents ten particularly radical..."
     },
     "sources": [
       {
@@ -164,27 +172,27 @@
   },
   {
     "title": {
-      "es": "¡Las conexiones terroristas neonazis del AfD en Mecklemburgo-Pomerania Occidental!",
-      "it": "Le connessioni terroristiche neonaziste dell'AfD Meclemburgo-Pomerania Occidentale!",
-      "uk": "Неонацистські терористичні зв'язки AfD Мекленбург-Передня Померанія!",
-      "en": "The neo-Nazi terror connections of the AfD Mecklenburg-Western Pomerania!",
-      "fr": "Les connexions terroristes néo-nazies de l’AfD Mecklembourg-Poméranie occidentale !",
       "de": "Die Neonazi-Terror-Verbindungen der AfD Mecklenburg-Vorpommern!",
       "ru": "Неонацистские террористические связи АдГ Мекленбург-Передняя Померания!",
       "tr": "AfD Mecklenburg-Batı Pomeranya'nın neo-Nazi terör bağlantıları!",
-      "pl": "Neonazistowskie powiązania terrorystyczne AfD Meklemburgia-Pomorze Przednie!"
+      "es": "¡Las conexiones terroristas neonazis del AfD en Mecklemburgo-Pomerania Occidental!",
+      "it": "Le connessioni terroristiche neonaziste dell'AfD Meclemburgo-Pomerania Occidentale!",
+      "uk": "Неонацистські терористичні зв'язки AfD Мекленбург-Передня Померанія!",
+      "fr": "Les connexions terroristes néo-nazies de l’AfD Mecklembourg-Poméranie occidentale !",
+      "pl": "Neonazistowskie powiązania terrorystyczne AfD Meklemburgia-Pomorze Przednie!",
+      "en": "The neo-Nazi terror connections of the AfD Mecklenburg-Western Pomerania!"
     },
     "date": "2026-09-18",
     "excerpt": {
-      "es": "¿Qué pasaría si le dijéramos que hubo y probablemente todavía hay un grupo terrorista en Mecklemburgo-Pomerania Occidental (MV) que tuvo acceso a armas, una lista de asesinatos con...",
-      "it": "E se vi dicessimo che nel Meclemburgo-Pomerania Anteriore (MV) esisteva e probabilmente esiste ancora un gruppo terroristico che aveva accesso ad armi, una lista di omicidi con...",
-      "uk": "Що, якби ми сказали вам, що в Мекленбурзі-Передній Померанії (MV) існувало і, ймовірно, досі існує терористичне угруповання, яке мало доступ до зброї, списку вбивств із...",
-      "en": "What if we told you that there was and probably still is a terrorist group in Mecklenburg-Western Pomerania (MV) that had access to weapons, a murder list with...",
-      "fr": "Et si nous vous disions qu'il y avait et qu'il y a probablement encore un groupe terroriste en Mecklembourg-Poméranie occidentale (MV) qui avait accès à des armes, une liste de meurtres avec...",
       "de": "Was wäre, wenn wir dir erzählen, dass es in Mecklenburg-Vorpommern (MV) eine Terrorgruppe gab und vermutlich immer noch gibt, die Zugang zu Waffen hatte, eine Mordliste mit poli...",
       "ru": "Что, если мы скажем вам, что в земле Мекленбург-Передняя Померания (МВ) существовала и, вероятно, до сих пор существует террористическая группа, которая имела доступ к оружию, списку убийств с...",
       "tr": "Peki ya size Mecklenburg-Batı Pomeranya'da (MV) silahlara erişimi olan ve bir cinayet listesi olan bir terörist grubun var olduğunu ve muhtemelen hâlâ da var olduğunu söylesek...",
-      "pl": "A gdybyśmy powiedzieli Wam, że w Meklemburgii-Pomorzu Przednim (MV) istniała i prawdopodobnie nadal istnieje grupa terrorystyczna, która miała dostęp do broni, listę morderstw zawierającą…"
+      "es": "¿Qué pasaría si le dijéramos que hubo y probablemente todavía hay un grupo terrorista en Mecklemburgo-Pomerania Occidental (MV) que tuvo acceso a armas, una lista de asesinatos con...",
+      "it": "E se vi dicessimo che nel Meclemburgo-Pomerania Anteriore (MV) esisteva e probabilmente esiste ancora un gruppo terroristico che aveva accesso ad armi, una lista di omicidi con...",
+      "uk": "Що, якби ми сказали вам, що в Мекленбурзі-Передній Померанії (MV) існувало і, ймовірно, досі існує терористичне угруповання, яке мало доступ до зброї, списку вбивств із...",
+      "fr": "Et si nous vous disions qu'il y avait et qu'il y a probablement encore un groupe terroriste en Mecklembourg-Poméranie occidentale (MV) qui avait accès à des armes, une liste de meurtres avec...",
+      "pl": "A gdybyśmy powiedzieli Wam, że w Meklemburgii-Pomorzu Przednim (MV) istniała i prawdopodobnie nadal istnieje grupa terrorystyczna, która miała dostęp do broni, listę morderstw zawierającą…",
+      "en": "What if we told you that there was and probably still is a terrorist group in Mecklenburg-Western Pomerania (MV) that had access to weapons, a murder list with..."
     },
     "sources": [
       {
@@ -195,27 +203,27 @@
   },
   {
     "title": {
-      "es": "El AfD se avergüenza en Gotinga, ¡¿y nadie se da cuenta?!",
-      "it": "L’AfD si mette in imbarazzo a Gottinga – e nessuno se ne accorge?!",
-      "uk": "AfD ганяє себе в Геттінгені – і ніхто цього не помічає?!",
-      "en": "The AfD is embarrassing itself in Göttingen – and no one notices?!",
-      "fr": "L’AfD se met dans l’embarras à Göttingen – et personne ne le remarque ?!",
       "de": "Die AfD blamiert sich in Göttingen – und keiner kriegt es mit?!",
       "ru": "АдГ ставит себя в неловкое положение в Геттингене – и никто этого не замечает?!",
       "tr": "AfD Göttingen'de kendini utandırıyor ve kimse bunun farkına varmıyor mu?",
-      "pl": "AfD ośmiesza się w Getyndze – i nikt tego nie zauważa?!"
+      "es": "El AfD se avergüenza en Gotinga, ¡¿y nadie se da cuenta?!",
+      "it": "L’AfD si mette in imbarazzo a Gottinga – e nessuno se ne accorge?!",
+      "uk": "AfD ганяє себе в Геттінгені – і ніхто цього не помічає?!",
+      "fr": "L’AfD se met dans l’embarras à Göttingen – et personne ne le remarque ?!",
+      "pl": "AfD ośmiesza się w Getyndze – i nikt tego nie zauważa?!",
+      "en": "The AfD is embarrassing itself in Göttingen – and no one notices?!"
     },
     "date": "2026-09-17",
     "excerpt": {
-      "es": "Un ridículo 1,8 por ciento. Realmente no hay nada más que saber sobre los resultados del partido de extrema derecha AfD en las elecciones municipales de Gotinga. Recién comenzado y aún más débil...",
-      "it": "Un ridicolo 1,8%. Non c'è proprio altro da sapere sui risultati del gruppo estremista di destra AfD alle elezioni del consiglio comunale di Gottinga. Appena iniziato e ancora più debole...",
-      "uk": "Смішні 1,8 відсотка. Насправді вам більше нічого не потрібно знати про результати правоекстремістської AfD на виборах до міської ради в Геттінгені. Щойно почав і ще слабший...",
-      "en": "A laughable 1.8 percent. There's really nothing more you need to know about the results of the right-wing extremist AfD in the city council elections in Göttingen. Newly started and still weaker...",
-      "fr": "Un ridicule 1,8 pour cent. Il n'y a vraiment rien d'autre à savoir sur les résultats de l'AfD, un parti d'extrême droite, aux élections municipales de Göttingen. Récemment démarré et encore plus faible...",
       "de": "Lachhafte 1,8 Prozent. Mehr muss man über das Ergebnis der rechtsextremen AfD bei der Stadtratswahl in Göttingen eigentlich nicht wissen. Neu angetreten und trotzdem schwächer a...",
       "ru": "Смешные 1,8 процента. На самом деле вам больше ничего не нужно знать о результатах правоэкстремистской АдГ на выборах в городской совет Геттингена. Недавно начавший и еще слабый...",
       "tr": "Gülünç bir yüzde 1,8. Aşırı sağcı AfD'nin Göttingen'deki belediye meclisi seçimlerindeki sonuçları hakkında bilmeniz gereken başka hiçbir şey yok. Yeni başladım ve hala zayıfım...",
-      "pl": "Śmieszne 1,8 proc. Naprawdę nic więcej nie musisz wiedzieć o wynikach prawicowej ekstremistycznej AfD w wyborach do rad miejskich w Getyndze. Nowo rozpoczęty i wciąż słabszy..."
+      "es": "Un ridículo 1,8 por ciento. Realmente no hay nada más que saber sobre los resultados del partido de extrema derecha AfD en las elecciones municipales de Gotinga. Recién comenzado y aún más débil...",
+      "it": "Un ridicolo 1,8%. Non c'è proprio altro da sapere sui risultati del gruppo estremista di destra AfD alle elezioni del consiglio comunale di Gottinga. Appena iniziato e ancora più debole...",
+      "uk": "Смішні 1,8 відсотка. Насправді вам більше нічого не потрібно знати про результати правоекстремістської AfD на виборах до міської ради в Геттінгені. Щойно почав і ще слабший...",
+      "fr": "Un ridicule 1,8 pour cent. Il n'y a vraiment rien d'autre à savoir sur les résultats de l'AfD, un parti d'extrême droite, aux élections municipales de Göttingen. Récemment démarré et encore plus faible...",
+      "pl": "Śmieszne 1,8 proc. Naprawdę nic więcej nie musisz wiedzieć o wynikach prawicowej ekstremistycznej AfD w wyborach do rad miejskich w Getyndze. Nowo rozpoczęty i wciąż słabszy...",
+      "en": "A laughable 1.8 percent. There's really nothing more you need to know about the results of the right-wing extremist AfD in the city council elections in Göttingen. Newly started and still weaker..."
     },
     "sources": [
       {
@@ -226,27 +234,27 @@
   },
   {
     "title": {
-      "es": "Sí, con una prohibición de AfD, los votantes de AfD desaparecerían",
-      "it": "Sì, con il divieto dell’AfD gli elettori dell’AfD scomparirebbero",
-      "uk": "Так, із забороною AfD виборці AfD зникнуть",
-      "en": "Yes, with an AfD ban, AfD voters would disappear",
-      "fr": "Oui, avec une interdiction de l’AfD, les électeurs de l’AfD disparaîtraient",
       "de": "Doch, mit einem AfD-Verbot würden die Wähler der AfD verschwinden",
       "ru": "Да, с запретом АдГ избиратели АдГ исчезнут",
       "tr": "Evet, AfD'nin yasaklanmasıyla AfD seçmenleri ortadan kaybolacak",
-      "pl": "Tak, wraz z zakazem AfD, wyborcy AfD zniknęliby"
+      "es": "Sí, con una prohibición de AfD, los votantes de AfD desaparecerían",
+      "it": "Sì, con il divieto dell’AfD gli elettori dell’AfD scomparirebbero",
+      "uk": "Так, із забороною AfD виборці AfD зникнуть",
+      "fr": "Oui, avec une interdiction de l’AfD, les électeurs de l’AfD disparaîtraient",
+      "pl": "Tak, wraz z zakazem AfD, wyborcy AfD zniknęliby",
+      "en": "Yes, with an AfD ban, AfD voters would disappear"
     },
     "date": "2026-09-15",
     "excerpt": {
-      "es": "Sí, si se prohibiera el AfD, muchos votantes del AfD desaparecerían. Quien realmente quiera combatir las causas del éxito del extremismo de derecha debería...",
-      "it": "Sì, se l’AfD venisse bandita, molti elettori dell’AfD scomparirebbero. Chiunque voglia davvero combattere le cause del successo dell’estremismo di destra dovrebbe...",
-      "uk": "Так, якби AfD була заборонена, багато виборців AfD зникли б. Кожен, хто дійсно хоче боротися з причинами успіху правого екстремізму, повинен...",
-      "en": "Yes, if the AfD were banned, many AfD voters would disappear. Anyone who really wants to combat the causes of the success of right-wing extremism should...",
-      "fr": "Oui, si l’AfD était interdite, de nombreux électeurs de l’AfD disparaîtraient. Quiconque souhaite réellement lutter contre les causes du succès de l’extrémisme de droite devrait...",
       "de": "Doch, bei einem AfD-Verbot würden sehr wohl sehr viele Wähler der AfD verschwinden. Wer die Ursachen des Erfolgs des Rechtsextremismus wirklich bekämpfen will, sollte das Verbot...",
       "ru": "Да, если бы АдГ запретили, многие избиратели АдГ исчезли бы. Тот, кто действительно хочет бороться с причинами успеха правого экстремизма, должен...",
       "tr": "Evet, AfD yasaklansaydı birçok AfD seçmeni ortadan kaybolurdu. Aşırı sağcılığın başarısının sebepleriyle gerçekten mücadele etmek isteyen herkes...",
-      "pl": "Tak, gdyby AfD została zdelegalizowana, wielu wyborców AfD zniknęłoby. Każdy, kto naprawdę chce walczyć z przyczynami sukcesu prawicowego ekstremizmu, powinien..."
+      "es": "Sí, si se prohibiera el AfD, muchos votantes del AfD desaparecerían. Quien realmente quiera combatir las causas del éxito del extremismo de derecha debería...",
+      "it": "Sì, se l’AfD venisse bandita, molti elettori dell’AfD scomparirebbero. Chiunque voglia davvero combattere le cause del successo dell’estremismo di destra dovrebbe...",
+      "uk": "Так, якби AfD була заборонена, багато виборців AfD зникли б. Кожен, хто дійсно хоче боротися з причинами успіху правого екстремізму, повинен...",
+      "fr": "Oui, si l’AfD était interdite, de nombreux électeurs de l’AfD disparaîtraient. Quiconque souhaite réellement lutter contre les causes du succès de l’extrémisme de droite devrait...",
+      "pl": "Tak, gdyby AfD została zdelegalizowana, wielu wyborców AfD zniknęłoby. Każdy, kto naprawdę chce walczyć z przyczynami sukcesu prawicowego ekstremizmu, powinien...",
+      "en": "Yes, if the AfD were banned, many AfD voters would disappear. Anyone who really wants to combat the causes of the success of right-wing extremism should..."
     },
     "sources": [
       {
@@ -257,27 +265,27 @@
   },
   {
     "title": {
-      "es": "Preparándose para una “ofensiva de remigración”: lo que exige el AfD y lo que hay detrás",
-      "it": "Armarsi per una “offensiva migratoria”: cosa chiede l’AfD – e cosa c’è dietro",
-      "uk": "Озброєння для «реміграційного наступу»: чого вимагає AfD – і що за цим стоїть",
-      "en": "Arming for a “remigration offensive”: What the AfD is demanding – and what’s behind it",
-      "fr": "S’armer pour une « offensive de remigration » : ce que réclame l’AfD – et ce qu’il y a derrière",
       "de": "Rüstung für „Remigrations-Offensive“: Was die AfD fordert – und was dahintersteckt",
       "ru": "Вооружение для «ремиграционного наступления»: чего требует АдГ – и что за этим стоит",
       "tr": "“Geri dönüş saldırısı” için silahlanma: AfD'nin talep ettiği şey ve bunun arkasında ne var?",
-      "pl": "Zbrojenie do „ofensywy remigracyjnej”: czego żąda AfD – i co za tym stoi"
+      "es": "Preparándose para una “ofensiva de remigración”: lo que exige el AfD y lo que hay detrás",
+      "it": "Armarsi per una “offensiva migratoria”: cosa chiede l’AfD – e cosa c’è dietro",
+      "uk": "Озброєння для «реміграційного наступу»: чого вимагає AfD – і що за цим стоїть",
+      "fr": "S’armer pour une « offensive de remigration » : ce que réclame l’AfD – et ce qu’il y a derrière",
+      "pl": "Zbrojenie do „ofensywy remigracyjnej”: czego żąda AfD – i co za tym stoi",
+      "en": "Arming for a “remigration offensive”: What the AfD is demanding – and what’s behind it"
     },
     "date": "2026-09-11",
     "excerpt": {
-      "es": "¿La fuerza de deportación estadounidense ICE como modelo a seguir?: El ganador de las elecciones de AfD, Ulrich Siegmund, está abierto a la producción de armas en Sajonia-Anhalt, a las “ofensivas de remigración” de AfD. Crema picante...",
-      "it": "La forza di deportazione statunitense ICE come modello?: il vincitore delle elezioni dell’AfD Ulrich Siegmund è aperto alla produzione di armi in Sassonia-Anhalt – alle “offensive di remigrazione” dell’AfD. Crostata piccante...",
-      "uk": "Сила депортації США ICE як зразок для наслідування?: переможець виборів від AfD Ульріх Зігмунд відкритий для виробництва зброї в Саксонії-Ангальт – до «наступу реміграції» від AfD. Пряний кр...",
-      "en": "US deportation force ICE as a role model?: AfD election winner Ulrich Siegmund is open to arms production in Saxony-Anhalt – to AfD “remigration offensives”. Spicy cr...",
-      "fr": "La force de déportation américaine ICE comme modèle ? : Ulrich Siegmund, vainqueur des élections de l'AfD, est ouvert à la production d'armes en Saxe-Anhalt – aux « offensives de remigration » de l'AfD. Crème épicée...",
       "de": "US-Abschiebetruppe ICE als Vorbild?: AfD-Wahlsieger Ulrich Siegmund zeigt sich offen für Rüstungsproduktion in Sachsen-Anhalt – für „Remigrations-Offensiven“ der AfD. Scharfe Kr...",
       "ru": "Депортационная сила США ICE как образец для подражания?: Победитель выборов АдГ Ульрих Зигмунд открыт для производства оружия в Саксонии-Анхальт – для «ремиграционного наступления» АдГ. Пряный кр...",
       "tr": "Bir rol model olarak ABD sınırdışı kuvveti ICE?: AfD seçim galibi Ulrich Siegmund, Saksonya-Anhalt'ta silah üretimine ve AfD'nin “geri dönüş saldırılarına” açık. Baharatlı kr...",
-      "pl": "Amerykańskie siły deportacyjne ICE wzorem do naśladowania?: Zwycięzca wyborów AfD Ulrich Siegmund jest otwarty na produkcję broni w Saksonii-Anhalt – na „ofensywy remigracyjne” AfD. Pikantne ciasto..."
+      "es": "¿La fuerza de deportación estadounidense ICE como modelo a seguir?: El ganador de las elecciones de AfD, Ulrich Siegmund, está abierto a la producción de armas en Sajonia-Anhalt, a las “ofensivas de remigración” de AfD. Crema picante...",
+      "it": "La forza di deportazione statunitense ICE come modello?: il vincitore delle elezioni dell’AfD Ulrich Siegmund è aperto alla produzione di armi in Sassonia-Anhalt – alle “offensive di remigrazione” dell’AfD. Crostata piccante...",
+      "uk": "Сила депортації США ICE як зразок для наслідування?: переможець виборів від AfD Ульріх Зігмунд відкритий для виробництва зброї в Саксонії-Ангальт – до «наступу реміграції» від AfD. Пряний кр...",
+      "fr": "La force de déportation américaine ICE comme modèle ? : Ulrich Siegmund, vainqueur des élections de l'AfD, est ouvert à la production d'armes en Saxe-Anhalt – aux « offensives de remigration » de l'AfD. Crème épicée...",
+      "pl": "Amerykańskie siły deportacyjne ICE wzorem do naśladowania?: Zwycięzca wyborów AfD Ulrich Siegmund jest otwarty na produkcję broni w Saksonii-Anhalt – na „ofensywy remigracyjne” AfD. Pikantne ciasto...",
+      "en": "US deportation force ICE as a role model?: AfD election winner Ulrich Siegmund is open to arms production in Saxony-Anhalt – to AfD “remigration offensives”. Spicy cr..."
     },
     "sources": [
       {
@@ -288,27 +296,27 @@
   },
   {
     "title": {
-      "es": "Merz ataca a AfD: “Remigración” significa limpieza étnica",
-      "it": "Merz attacca l’AfD: “Remigrazione” significa pulizia etnica",
-      "uk": "Мерц атакує AfD: «Реміграція» означає етнічну чистку",
-      "en": "Merz attacks AfD: “Remigration” means ethnic cleansing",
-      "fr": "Merz attaque l’AfD : « Remigration » signifie nettoyage ethnique",
       "de": "Merz attackiert AfD: „Remigration“ bedeute ethnische Säuberung",
       "ru": "Мерц нападает на АдГ: «Ремиграция» означает этническую чистку",
       "tr": "Merz AfD'ye saldırdı: \"Geri dönüş\" etnik temizlik anlamına geliyor",
-      "pl": "Merz atakuje AfD: „Remigracja” oznacza czystki etniczne"
+      "es": "Merz ataca a AfD: “Remigración” significa limpieza étnica",
+      "it": "Merz attacca l’AfD: “Remigrazione” significa pulizia etnica",
+      "uk": "Мерц атакує AfD: «Реміграція» означає етнічну чистку",
+      "fr": "Merz attaque l’AfD : « Remigration » signifie nettoyage ethnique",
+      "pl": "Merz atakuje AfD: „Remigracja” oznacza czystki etniczne",
+      "en": "Merz attacks AfD: “Remigration” means ethnic cleansing"
     },
     "date": "2026-09-09",
     "excerpt": {
-      "es": "En el debate general, el Canciller Merz atacó duramente al AfD: El término “remigración” es sinónimo de limpieza étnica. También hay resistencia contra el AfD...",
-      "it": "Nel dibattito generale il cancelliere Merz ha attaccato aspramente l’AfD: il termine “remigrazione” è sinonimo di pulizia etnica. C'è resistenza anche contro l'AfD...",
-      "uk": "У загальних дебатах канцлер Мерц різко атакував AfD: термін «реміграція» є синонімом етнічної чистки. Існує також опір проти AfD...",
-      "en": "In the general debate, Chancellor Merz sharply attacked the AfD: The term “remigration” is a synonym for ethnic cleansing. There is also resistance against the AfD...",
-      "fr": "Lors du débat général, le chancelier Merz a vivement attaqué l'AfD : le terme « remigration » est synonyme de nettoyage ethnique. Il y a aussi une résistance contre l’AfD…",
       "de": "In der Generaldebatte griff Bundeskanzler Merz die AfD scharf an: Der Begriff „Remigration“ sei ein Synonym für ethnische Säuberung. Auch in der AfD regt sich Widerstand gegen d...",
       "ru": "В ходе общих дебатов канцлер Мерц резко раскритиковал АдГ: Термин «ремиграция» является синонимом этнической чистки. Существует также сопротивление АдГ...",
       "tr": "Genel tartışmada Şansölye Merz, AfD'ye sert bir şekilde saldırdı: \"Geri dönüş\" terimi, etnik temizliğin eşanlamlısıdır. AfD'ye karşı da direniş var...",
-      "pl": "W debacie ogólnej kanclerz Merz ostro zaatakował AfD: Termin „remigracja” jest synonimem czystek etnicznych. Istnieje również opór wobec AfD..."
+      "es": "En el debate general, el Canciller Merz atacó duramente al AfD: El término “remigración” es sinónimo de limpieza étnica. También hay resistencia contra el AfD...",
+      "it": "Nel dibattito generale il cancelliere Merz ha attaccato aspramente l’AfD: il termine “remigrazione” è sinonimo di pulizia etnica. C'è resistenza anche contro l'AfD...",
+      "uk": "У загальних дебатах канцлер Мерц різко атакував AfD: термін «реміграція» є синонімом етнічної чистки. Існує також опір проти AfD...",
+      "fr": "Lors du débat général, le chancelier Merz a vivement attaqué l'AfD : le terme « remigration » est synonyme de nettoyage ethnique. Il y a aussi une résistance contre l’AfD…",
+      "pl": "W debacie ogólnej kanclerz Merz ostro zaatakował AfD: Termin „remigracja” jest synonimem czystek etnicznych. Istnieje również opór wobec AfD...",
+      "en": "In the general debate, Chancellor Merz sharply attacked the AfD: The term “remigration” is a synonym for ethnic cleansing. There is also resistance against the AfD..."
     },
     "sources": [
       {
@@ -319,27 +327,27 @@
   },
   {
     "title": {
-      "es": "Generación Alemania: grietas en el congreso juvenil de AfD",
-      "it": "Generazione Germania: crepe al congresso della gioventù dell'AfD",
-      "uk": "Generation Germany: тріщини на молодіжному конгресі AfD",
-      "en": "Generation Germany: Cracks at the AfD youth congress",
-      "fr": "Génération Allemagne : fissures au congrès de la jeunesse de l'AfD",
       "de": "Generation Deutschland: Risse beim Kongress der AfD-Jugend",
       "ru": "Поколение Германии: трещины на молодежном конгрессе АдГ",
       "tr": "Almanya Kuşağı: AfD gençlik kongresinde çatlaklar",
-      "pl": "Pokolenie Niemcy: Pęknięcia na kongresie młodzieży AfD"
+      "es": "Generación Alemania: grietas en el congreso juvenil de AfD",
+      "it": "Generazione Germania: crepe al congresso della gioventù dell'AfD",
+      "uk": "Generation Germany: тріщини на молодіжному конгресі AfD",
+      "fr": "Génération Allemagne : fissures au congrès de la jeunesse de l'AfD",
+      "pl": "Pokolenie Niemcy: Pęknięcia na kongresie młodzieży AfD",
+      "en": "Generation Germany: Cracks at the AfD youth congress"
     },
     "date": "2026-08-31",
     "excerpt": {
-      "es": "En el congreso “Generación Alemania” se revela el rostro de la organización juvenil AfD: étnico y vulgar. Pero cuando se trata del polémico término “remigración” y el euro, la inter...",
-      "it": "Al congresso “Generazione Germania” si svela il volto dell’organizzazione giovanile dell’AfD: etnico e volgare. Ma quando si tratta del termine conflittuale “remigrazione” e dell’euro, l’inter...",
-      "uk": "На конгресі «Покоління Німеччини» розкривається обличчя молодіжної організації AfD: етнічне та вульгарне. Але коли справа доходить до бойового терміну «реміграція» та євро, інтер...",
-      "en": "At the “Generation Germany” congress, the face of the AfD youth organization is revealed: ethnic and vulgar. But when it comes to the fighting term “remigration” and the euro, the inter...",
-      "fr": "Lors du congrès « Génération Allemagne », le visage de l'organisation de jeunesse AfD se dévoile : ethnique et vulgaire. Mais lorsqu’il s’agit du terme combatif de « remigration » et de l’euro, l’inter...",
       "de": "Beim Kongress der „Generation Deutschland“ zeigt sich das Gesicht der AfD-Jugendorganisation: völkisch und vulgär. Aber beim Kampfbegriff „Remigration“ und Euro werden die inter...",
       "ru": "На конгрессе «Поколение Германии» раскрывается лицо молодежной организации АдГ: этническое и вульгарное. Но когда дело доходит до боевого термина «ремиграция» и евро, меж...",
       "tr": "“Almanya Kuşağı” kongresinde AfD gençlik örgütünün etnik ve kaba yüzü ortaya çıkıyor. Ancak konu \"geri dönüş\" ve euro ile mücadele terimine gelince, uluslararası...",
-      "pl": "Na kongresie „Pokolenie Niemcy” zostaje ujawnione oblicze młodzieżowej organizacji AfD: etniczne i wulgarne. Ale jeśli chodzi o kontrowersyjny termin „remigracja” i euro, inter..."
+      "es": "En el congreso “Generación Alemania” se revela el rostro de la organización juvenil AfD: étnico y vulgar. Pero cuando se trata del polémico término “remigración” y el euro, la inter...",
+      "it": "Al congresso “Generazione Germania” si svela il volto dell’organizzazione giovanile dell’AfD: etnico e volgare. Ma quando si tratta del termine conflittuale “remigrazione” e dell’euro, l’inter...",
+      "uk": "На конгресі «Покоління Німеччини» розкривається обличчя молодіжної організації AfD: етнічне та вульгарне. Але коли справа доходить до бойового терміну «реміграція» та євро, інтер...",
+      "fr": "Lors du congrès « Génération Allemagne », le visage de l'organisation de jeunesse AfD se dévoile : ethnique et vulgaire. Mais lorsqu’il s’agit du terme combatif de « remigration » et de l’euro, l’inter...",
+      "pl": "Na kongresie „Pokolenie Niemcy” zostaje ujawnione oblicze młodzieżowej organizacji AfD: etniczne i wulgarne. Ale jeśli chodzi o kontrowersyjny termin „remigracja” i euro, inter...",
+      "en": "At the “Generation Germany” congress, the face of the AfD youth organization is revealed: ethnic and vulgar. But when it comes to the fighting term “remigration” and the euro, the inter..."
     },
     "sources": [
       {
@@ -350,27 +358,27 @@
   },
   {
     "title": {
-      "es": "“Artgemeinschaft”: Redada contra dos candidatos de AfD por asociación neonazi prohibida",
-      "it": "“Artgemeinschaft”: raid contro due candidati dell'AfD a causa del divieto di associazione neonazista",
-      "uk": "“Artgemeinschaft”: Облави на двох кандидатів від AfD через заборонене неонацистське об’єднання",
-      "en": "“Artgemeinschaft”: Raid on two AfD candidates because of banned neo-Nazi association",
-      "fr": "« Artgemeinschaft » : Raid contre deux candidats de l’AfD en raison d’une association néonazie interdite",
       "de": "„Artgemeinschaft“: Razzia bei zwei AfD-Kandidaten wegen verbotener Neonazi-Vereinigung",
       "ru": "«Артгемайншафт»: Обыск двух кандидатов от АдГ из-за запрещенной неонацистской ассоциации",
       "tr": "“Artgemeinschaft”: Yasaklanan neo-Nazi derneği nedeniyle iki AfD adayına baskın",
-      "pl": "„Artgemeinschaft”: Nalot na dwóch kandydatów AfD z powodu zakazanego stowarzyszenia neonazistowskiego"
+      "es": "“Artgemeinschaft”: Redada contra dos candidatos de AfD por asociación neonazi prohibida",
+      "it": "“Artgemeinschaft”: raid contro due candidati dell'AfD a causa del divieto di associazione neonazista",
+      "uk": "“Artgemeinschaft”: Облави на двох кандидатів від AfD через заборонене неонацистське об’єднання",
+      "fr": "« Artgemeinschaft » : Raid contre deux candidats de l’AfD en raison d’une association néonazie interdite",
+      "pl": "„Artgemeinschaft”: Nalot na dwóch kandydatów AfD z powodu zakazanego stowarzyszenia neonazistowskiego",
+      "en": "“Artgemeinschaft”: Raid on two AfD candidates because of banned neo-Nazi association"
     },
     "date": "2026-08-27",
     "excerpt": {
-      "es": "Los políticos del AfD, Sebastian Koch y Simon Lansmann, habrían participado en una celebración en el ámbito de la prohibida \"comunidad de especies\". Ambos quieren ir al país por el AfD...",
-      "it": "I politici dell’AfD Sebastian Koch e Simon Lansmann avrebbero preso parte ad una celebrazione nell’ambito della bandita “comunità delle specie”. Entrambi vogliono andare in campagna per l'AfD...",
-      "uk": "Кажуть, що політики AfD Себастьян Кох і Саймон Лансманн взяли участь у святкуванні на орбіті забороненої «спільноти видів». Обидва хочуть поїхати в країну для AfD...",
-      "en": "The AfD politicians Sebastian Koch and Simon Lansmann are said to have taken part in a celebration in the orbit of the banned “species community”. Both want to go to the country for the AfD...",
-      "fr": "Les hommes politiques de l’AfD, Sebastian Koch et Simon Lansmann, auraient participé à une célébration autour de la « communauté d’espèces » interdite. Tous deux veulent aller au pays pour l'AfD...",
       "de": "Die AfD-Politiker Sebastian Koch und Simon Lansmann sollen an einer Feier im Dunstkreis der verbotenen „Artgemeinschaft“ teilgenommen haben. Beide wollen für die AfD in den Land...",
       "ru": "Сообщается, что политики АдГ Себастьян Кох и Саймон Лансманн приняли участие в праздновании в орбите запрещенного «видового сообщества». Оба хотят поехать в страну ради АдГ...",
       "tr": "AfD'li politikacılar Sebastian Koch ve Simon Lansmann'ın yasaklı \"tür topluluğu\"nun yörüngesindeki kutlamaya katıldıkları söyleniyor. İkisi de AfD için ülkeye gitmek istiyor...",
-      "pl": "Mówi się, że politycy AfD Sebastian Koch i Simon Lansmann wzięli udział w uroczystościach w orbicie zakazanej „wspólnoty gatunków”. Obaj chcą wyjechać do kraju dla AfD..."
+      "es": "Los políticos del AfD, Sebastian Koch y Simon Lansmann, habrían participado en una celebración en el ámbito de la prohibida \"comunidad de especies\". Ambos quieren ir al país por el AfD...",
+      "it": "I politici dell’AfD Sebastian Koch e Simon Lansmann avrebbero preso parte ad una celebrazione nell’ambito della bandita “comunità delle specie”. Entrambi vogliono andare in campagna per l'AfD...",
+      "uk": "Кажуть, що політики AfD Себастьян Кох і Саймон Лансманн взяли участь у святкуванні на орбіті забороненої «спільноти видів». Обидва хочуть поїхати в країну для AfD...",
+      "fr": "Les hommes politiques de l’AfD, Sebastian Koch et Simon Lansmann, auraient participé à une célébration autour de la « communauté d’espèces » interdite. Tous deux veulent aller au pays pour l'AfD...",
+      "pl": "Mówi się, że politycy AfD Sebastian Koch i Simon Lansmann wzięli udział w uroczystościach w orbicie zakazanej „wspólnoty gatunków”. Obaj chcą wyjechać do kraju dla AfD...",
+      "en": "The AfD politicians Sebastian Koch and Simon Lansmann are said to have taken part in a celebration in the orbit of the banned “species community”. Both want to go to the country for the AfD..."
     },
     "sources": [
       {
