@@ -5,7 +5,7 @@
     "navRisks": "Risiken",
     "navScience": "Wissenschaft & Recht",
     "navLetter": "Offener Brief",
-    "navCulture": "Bedeutung von Blau",
+    "navCulture": "Visuelle Codes",
     "navSign": "Jetzt unterzeichnen",
     "navShare": "Petition teilen",
     "shareTitle": "Petition teilen",
@@ -56,12 +56,12 @@
     "whyIntro": "Kommunikationswissenschaftliche Frame-Forschung belegt: Die Wahrnehmung politischer Akteure wird maßgeblich von visuellen Signalen geprägt, mit denen sie in Informationsformaten dargestellt werden.",
     "whyCard1H": "Die visuelle Verharmlosung",
     "whyCard1": "Blau gilt in der Farbpsychologie als beruhigend, vertrauensbildend und sachlich. Es ist die Farbe multilateraler Friedensorganisationen und europäischer Institutionen. Diese unkritische Übernahme der Partei-Eigendarstellung erzeugt einen psychologischen Glättungseffekt gegenüber verfassungsfeindlichen Tendenzen.",
-    "whyCard2H": "Die historische Zuordnung",
-    "whyCard2": "In der politischen Ikonografie Deutschlands steht Braun unmissverständlich für völkischen Nationalismus und Rechtsextremismus. Eine verantwortungsvolle Informationsgrafik sollte den Mut haben, inhaltliche Einstufungen auch visuell unmissverständlich einzuordnen.",
-    "cultureH": "Farbsemantik & Kulturgeschichte",
-    "cultureSub": "Wie Farben und Redewendungen unsere Wahrnehmung prägen.",
-    "tabLang": "Sprachgebrauch",
-    "tabSym": "Kultur & Geschichte",
+    "whyCard2H": "Kontext statt PR-Übernahme",
+    "whyCard2": "In der politischen Ikonografie Deutschlands steht Braun für völkischen Nationalismus. Eine verantwortungsvolle Informationsgrafik darf Parteienwerbung nicht unkritisch spiegeln, sondern muss gerichtlich dokumentierte Verfassungsfeindlichkeit transparent machen.",
+    "cultureH": "Visuelle Codes & Politische Mimikry",
+    "cultureSub": "Wie demokratische Symbole gekapert werden und warum visuelle Einordnung unverzichtbar ist.",
+    "tabLang": "Tarnung & Mimikry",
+    "tabSym": "Demokratische Symbole",
     "letterH": "Der Offene Brief",
     "letterSub": "Wähle die Zielgruppe aus, um unsere medienethische Begründung an Redaktionen und Gremien zu lesen:",
     "targetPublic": "Öffentl.-Rechtliche",
@@ -166,114 +166,114 @@
   "sayings": {
     "sprache": [
       {
-        "phrase": "Blau machen",
-        "origin": "Etymologie / Handwerksgeschichte",
-        "desc": "Geht sprachgeschichtlich auf die Trocken- und Oxidationsphasen im Färberhandwerk zurück, während derer nicht gearbeitet werden konnte. Ein historisches Zeugnis handwerklicher Arbeitsrhythmen."
+        "phrase": "Gezielte visuelle Mimikry",
+        "origin": "Kommunikationswissenschaft & Frame-Analyse",
+        "desc": "Rechtsextreme Strömungen eignen sich gezielt bürgerliche, beruhigende Farbcodes an, um das eigene radikale Image zu glätten und in der Mitte der Gesellschaft Normalität und Seriosität vorzutäuschen."
       },
       {
-        "phrase": "Fahrt ins Blaue",
-        "origin": "Kultur- und Sprachgeschichte",
-        "desc": "Bezeichnet traditionell einen Ausflug ins Unbekannte oder ins Grüne/Offene – Sinnbild für Offenheit, Erkundungsfreude und Unbeschwertheit."
+        "phrase": "Die Verkehrung der Europa-Farbe",
+        "origin": "Europäische Nachkriegsordnung",
+        "desc": "Während das europäische Blau für Rechtsstaatlichkeit, Völkerverständigung und offene Grenzen steht, instrumentalisiert eine nationalistische Kraft dieselbe Farbe für völkische Abschottung und Dexit-Forderungen."
       },
       {
-        "phrase": "Mit einem blauen Auge davonkommen",
-        "origin": "Umgangssprachliche Metaphorik",
-        "desc": "Bedeutet, einer drohenden größeren Gefahr knapp oder glimpflich entgangen zu sein – eine Metapher für Schadensbegrenzung und Entlastung."
+        "phrase": "Biederkeit als Verharmlosungsstrategie",
+        "origin": "Extremismus- und Faschismusforschung",
+        "desc": "Hinter einer bieder-blauen Kulisse verbirgt sich eine Programmatik, die gerichtlich bestätigt gegen die Menschenwürde (Art. 1 GG) verstößt und rassistische Ausgrenzung als Politikmodell etabliert."
       }
     ],
     "symbolik": [
       {
-        "phrase": "Die blaue Blume",
-        "origin": "Epoche der Romantik (Novalis)",
-        "desc": "In der Literaturgeschichte das zentrale Motiv für Sehnsucht, Weltoffenheit, poetische Suche nach Erkenntnis und menschliche Verbindung."
+        "phrase": "Europäische Flagge",
+        "origin": "Europäische Einigung & Völkerrecht",
+        "desc": "Der blaue Grund symbolisiert die Einigung des Kontinents auf Basis von Rechtsstaatlichkeit, universellen Menschenrechten und der Überwindung von aggressivem Nationalismus."
       },
       {
         "phrase": "Blauhelme der Vereinten Nationen",
         "origin": "Internationale Diplomatie",
-        "desc": "Blau wurde von den Vereinten Nationen bewusst als Signal für Neutralität, Konfliktdeeskalation und überparteiliche Friedenssicherung gewählt."
+        "desc": "Blau wurde von den Vereinten Nationen als Signal für überparteiliche Friedenssicherung, Konfliktdeeskalation und den Schutz bedrohter Zivilisten gewählt."
       },
       {
-        "phrase": "Europäische Flagge",
-        "origin": "Europäische Einigung",
-        "desc": "Der blaue Fond symbolisiert den Kontinent im Sinne eines friedlichen, multilateralen Miteinanders und der Rechtsstaatlichkeit."
+        "phrase": "Die blaue Blume",
+        "origin": "Epoche der Romantik (Novalis)",
+        "desc": "In der Literaturgeschichte das universelle Sinnbild für Weltoffenheit, Erkenntnisdrang, geistige Freiheit und völkerverbindende Humanität."
       }
     ]
   },
   "openLetters": {
     "oeffentlich": {
       "to": "AN: Chefredaktionen ARD-aktuell & ZDF-Hauptredaktion",
-      "subject": "Betreff: Visuelles Framing und journalistische Einordnungspflicht",
+      "subject": "Betreff: Visuelles Framing, redaktionelle Einordnungspflicht und Neutralität",
       "body": [
         "Sehr geehrte Damen und Herren,",
-        "öffentlich-rechtliche Medienanstalten tragen eine zentrale Verantwortung für eine unverzerrte, sachlich zutreffende Information der Öffentlichkeit.",
-        "Die unreflektierte Übernahme der Parteifarbe Blau für eine in Teilen gesichert rechtsextremistische und verfassungsfeindliche Organisation transportiert unterbewusst Assoziationen von Gemäßigtheit und staatstragender Normalität.",
-        "Wir bitten Sie daher, Ihre visuellen Leitlinien zu prüfen und in Diagrammen auf Darstellungsformen zurückzugreifen, die der gerichtlich dokumentierten Radikalität dieser Strömungen visuell Rechnung tragen."
+        "öffentlich-rechtliche Medienanstalten tragen eine herausragende verfassungsrechtliche Verantwortung für eine wahrhaftige, ungeschminkte Information der Bevölkerung.",
+        "Wenn Parteien, deren Landesverbände gerichtlich bestätigt als gesichert rechtsextremistisch eingestuft sind und deren Bundesverband als Verdachtsfall geführt wird, in Wahlgrafiken im gleichen unkommentierten Blau wie demokratische Institutionen visualisiert werden, entsteht ein verharmlosender Normalisierungseffekt (Visual Framing).",
+        "Wir fordern Sie auf, Ihre publizistischen Leitlinien zu schärfen: Redaktionelle Neutralität bedeutet nicht unkritische PR-Übernahme. Diagramme und Berichte müssen der dokumentierten Verfassungsfeindlichkeit durch klare Kennzeichnungen, Warnhinweise und kontextualisierende Begleitinformationen visuell Rechnung tragen."
       ]
     },
     "privat": {
       "to": "AN: Chefredaktionen ProSiebenSat.1, RTL Group & dpa",
-      "subject": "Betreff: Standard-Farbwerte in der Infografik-Belieferung",
+      "subject": "Betreff: Standard-Farbwerte, Infografik-Belieferung und publizistische Distanz",
       "body": [
         "Sehr geehrte Damen und Herren,",
-        "Ihre Nachrichtenkanäle und Agenturmeldungen prägen tagtäglich die Informationswahrnehmung von Millionen Leserinnen und Zuschauern.",
-        "Wenn Parteien, die von Verfassungsschutzbehörden beobachtet und als extremistisch eingestuft werden, im gleichen seriösen Blau wie internationale Bündnisse visualisiert werden, entsteht ein verharmlosender Framing-Effekt.",
-        "Wir regen an, redaktionelle Farbstandards kritisch zu evaluieren und sich nicht unhinterfragt an der Corporate Identity extremistischer Akteure zu orientieren."
+        "Ihre Nachrichtenformate und Agenturmeldungen erreichen täglich Millionen Bürgerinnen und Bürger und prägen maßgeblich die politische Meinungsbildung.",
+        "Das unkommentierte Durchwinken beruhigender Selbstwahl-Farben für völkisch-nationalistische und rassistische Akteure nivelliert die Grenze zwischen demokratischem Pluralismus und autoritärem Extremismus.",
+        "Wir regen an, redaktionelle Farb- und Grafikstandards kritisch zu evaluieren und sich nicht unhinterfragt an den Corporate-Identity-Strategien verfassungsfeindlicher Kräfte zu orientieren, sondern auf klare visuelle Einordnung zu setzen."
       ]
     },
     "rundfunkrat": {
       "to": "AN: ARD-Rundfunkräte & ZDF-Fernsehrat",
-      "subject": "Betreff: Programmaufsicht bezüglich visueller Framing-Effekte",
+      "subject": "Betreff: Programmaufsicht bezüglich visueller Framing-Effekte und verfassungsrechtlicher Sorgfalt",
       "body": [
         "Sehr geehrte Damen und Herren,",
-        "als Kontrollgremien des öffentlich-rechtlichen Rundfunks tragen Sie Sorge für die Einhaltung publizistischer Qualitätsstandards und Ausgewogenheit.",
-        "Die visuelle Gestaltung in Nachrichtensendungen beeinflusst die Wahrnehmung des Publikums nachhaltig. Eine unkritische Symbolik, die Parteien im unbedenklichen Standardspektrum belässt, greift zu kurz.",
-        "Wir fordern Sie auf, die Diskussion um eine differenzierte, faktenbasierte Kennzeichnung politischer Randlagen auch in der grafischen Berichterstattung anzustoßen."
+        "als unabhängige Kontrollgremien des öffentlich-rechtlichen Rundfunks tragen Sie Sorge für die Einhaltung publizistischer Qualitätsstandards und die Verteidigung demokratischer Grundwerte.",
+        "Die visuelle Gestaltung in Nachrichtensendungen beeinflusst das Unterbewusstsein nachhaltig. Ein Darstellungsmodus, der radikale und rassistische Positionen im scheinbar harmlosen Standardspektrum belässt, widerspricht dem Auftrag zu aufklärender Berichterstattung.",
+        "Wir fordern Sie auf, die Diskussion über eine differenzierte, behördlich und gerichtlich belegte Kennzeichnung von Verfassungsfeinden auch in der grafischen Berichterstattung verbindlich einzufordern."
       ]
     }
   },
   "faqs": [
     {
       "q": "Warum sollte die Parteifarbe Blau problematisch sein?",
-      "a": "Farbpsychologisch steht Blau für Stabilität, Ruhe und Neutralität – es ist auch die Farbe der UN und der EU. Wenn Medien die Selbstwahlfarbe einer in Teilen rechtsextremen Partei unkritisch spiegeln, überträgt sich diese beruhigende Wahrnehmung unbewusst auf das Parteibild."
+      "a": "Farbpsychologisch steht Blau für Stabilität, Ruhe und Neutralität – es ist auch die Farbe der UN und der EU. Wenn Medien die Selbstwahlfarbe einer in Teilen gesichert rechtsextremen Partei unkritisch spiegeln, überträgt sich diese beruhigende Wahrnehmung unbewusst auf das Parteibild (Visual Framing). Das verharmlost verfassungsfeindliche und rassistische Positionen und verschleiert deren Bedrohung für Demokratie und Wohlstand."
     },
     {
       "q": "Ist eine veränderte Farbgebung nicht ein Eingriff in die Neutralität?",
-      "a": "Nein. Journalistische Neutralität bedeutet nicht unkritische PR-Übernahme. Redaktionen wählen seit jeher Farben nach inhaltlichen Kriterien (z. B. Schwarz für die Union statt Türkis). Visuelle Einordnung gehört zum redaktionellen Gestaltungsauftrag."
+      "a": "Nein. Journalistische Neutralität bedeutet sachliche Einordnung, nicht unkritische PR-Multiplikation. Das Bundesverfassungsgericht verlangt eine wahrhaftige Berichterstattung. Dazu gehört, gerichtlich bestätigte Verfassungsfeindlichkeit und rechtsextreme Einstufungen transparent kenntlich zu machen, statt Parteienmarketing unkommentiert durchzuwinken."
     },
     {
       "q": "Welches Ziel verfolgt diese Initiative?",
-      "a": "Wir möchten eine medienethische Debatte über die Wirkung von Informationsgrafiken anstoßen. Ziel ist ein geschärftes Bewusstsein dafür, dass visuelle Entscheidungen nicht wertfrei sind."
+      "a": "Wir wollen aufklären: Die AfD ist keine normale bürgerliche Partei, sondern eine völkisch-rassistische Kraft, die Politik für Superreiche und Konzerne auf Kosten der arbeitenden Mehrheit macht. Unsere Kampagne fordert Medien auf, diese Realität nicht hinter beruhigenden Farbcodes zu verstecken."
     },
     {
       "q": "Wer steckt hinter dieser Kampagne?",
-      "a": "Eine zivilgesellschaftliche Initiative für Medienethik und demokratische Diskursqualität, initiiert über Change.org."
+      "a": "Eine unabhängige zivilgesellschaftliche Initiative für demokratische Wachsamkeit, Medienethik und verfassungsrechtliche Aufklärung, initiiert über Change.org."
     }
   ],
   "facts": [
     {
       "emoji": "🎨",
-      "label": "Farbwirkung Blau",
-      "desc": "Assoziiert mit Ruhe, Sachlichkeit und Internationalismus"
+      "label": "Farbwirkung & Framing",
+      "desc": "Blau assoziiert Ruhe und Seriosität – wird gezielt zur Verharmlosung genutzt"
     },
     {
       "emoji": "📺",
-      "label": "Nachrichtengrafik",
-      "desc": "Übernimmt häufig unreflektiert Parteifarben"
+      "label": "Journalistische Pflicht",
+      "desc": "Medien müssen Fakten einordnen, statt PR-Codes unkritisch zu spiegeln"
     },
     {
       "emoji": "🏛️",
-      "label": "Historischer Kontext",
-      "desc": "Braun kennzeichnet die faschistische Tradition"
+      "label": "Völkischer Rassismus",
+      "desc": "Ethno-kulturelle Ausgrenzung verletzt den Kern der Menschenwürde (Art. 1 GG)"
     },
     {
       "emoji": "⚖️",
-      "label": "Behördliche Einstufung",
-      "desc": "Teile der AfD gerichtlich bestätigt rechtsextrem"
+      "label": "Gerichtlich bestätigt",
+      "desc": "Gesamtpartei Verdachtsfall (OVG Münster), drei Landesverbände gesichert rechtsextrem"
     }
   ],
   "science": {
     "sectionH": "Wissenschaftlicher & Medienrechtlicher Hintergrund",
-    "sectionSub": "Faktenblatt: Visuelles Framing und redaktionelle Autonomie in der politischen Berichterstattung",
+    "sectionSub": "Faktenblatt: Visuelles Framing, redaktionelle Einordnung und verfassungsrechtliche Realität",
     "part1H": "Teil 1: Kommunikationswissenschaftliche Grundlagen",
     "foundations": [
       {
@@ -284,21 +284,21 @@
             "text": "Blautöne werden in empirischen Studien bevorzugt mit Seriosität, Deeskalation und Verlässlichkeit verbunden – weshalb Institutionen wie die Vereinten Nationen oder europäische Bündnisse diese Farbe nutzen."
           },
           {
-            "label": "Kognitive Dissonanz in Diagrammen",
-            "text": "Wird eine Akteursgruppe, die von Sicherheitsbehörden als rechtsextrem eingestuft wird, in neutralem Cyan- oder Mittelblau visualisiert, entsteht ein Verharmlosungseffekt: Die beruhigende Farbwahl schwächt die Wahrnehmung verfassungsrechtlicher Gefahren ab."
+            "label": "Kognitive Dissonanz & Verharmlosung",
+            "text": "Wird eine Akteursgruppe, deren Landesverbände als gesichert rechtsextremistisch gelten, in beruhigendem Blau visualisiert, entsteht ein Verharmlosungseffekt: Die friedliche Ästhetik dämpft die Wachsamkeit gegenüber verfassungsrechtlichen und rassistischen Gefahren ab."
           }
         ]
       },
       {
-        "title": "Redaktionelle Autonomie und journalistische Praxis",
+        "title": "Redaktionelle Autonomie und journalistische Einordnung",
         "points": [
           {
-            "label": "Präzedenzfall taz",
-            "text": "Bereits im Bundestagswahlkampf entschied sich die Redaktion der taz dafür, AfD-Ergebnisse abweichend darzustellen. Das unterstreicht, dass journalistische Einordnung auch die grafische Ebene umfassen kann."
+            "label": "Präzedenzfall taz & freie Presse",
+            "text": "Die Entscheidung unabhängiger Redaktionen wie der taz, AfD-Ergebnisse farblich gesondert hervorzuheben, belegt: Visuelle Gestaltung ist Teil journalistischer Urteilskraft und kein passives Messinstrument."
           },
           {
-            "label": "Etablierte Farbkonventionen",
-            "text": "Redaktionen weichen regelmäßig von offiziellen CI-Farben ab, um visuelle Klarheit zu schaffen (z. B. Schwarz für die Union statt Türkis, Differenzierung zwischen SPD und Linke). Farbwahl ist ein eigenständiges journalistisches Gestaltungsmittel."
+            "label": "Verantwortungsvolle Einordnung",
+            "text": "Medien sind nicht zur PR-Multiplikation verpflichtet. Journalistische Sorgfalt erfordert, dass die Berichterstattung über verfassungsfeindliche Bestrebungen nicht durch verharmlosende Designroutinen nivelliert wird. Kennzeichnungspflichten und kontextualisierende Fußnoten sind etablierte redaktionelle Standards."
           }
         ]
       }
@@ -314,7 +314,7 @@
           },
           {
             "label": "Befunde des Verfassungsschutzes",
-            "text": "Die gerichtlich bestätigten Einstufungen durch Verfassungsschutzämter stellen objektive Fakten dar. Eine Grafik, die diese Realität abbildet, unterstützt den gesetzlichen Auftrag zu wahrhaftiger Berichterstattung."
+            "text": "Die gerichtlich bestätigten Einstufungen durch Verfassungsschutzbehörden (OVG Münster 2024) stellen objektive Tatsachen dar. Eine visuelle Kennzeichnung dieser Fakten unterstützt den gesetzlichen Auftrag zu wahrhaftiger Berichterstattung."
           },
           {
             "label": "Programmautonomie der Sender",
@@ -355,11 +355,11 @@
       "id": "social",
       "title": "Soziales & Wohlfahrt",
       "metric": "Vorteile nur für das reichste 1%",
-      "description": "Wirtschafts- und sozialpolitische Analysen zeigen erhebliche Nachteile für Geringverdiener, Rentner und Arbeitnehmer.",
+      "description": "Wirtschafts- und sozialpolitische Analysen belegen: Die AfD betreibt Klientelpolitik für Multimillionäre auf Kosten von Geringverdienern, Rentnern und Familien.",
       "points": [
-        "Ablehnung des flächendeckenden gesetzlichen Mindestlohns, was strukturschwache Regionen besonders trifft.",
-        "Geplante drastische Reduktion von Grundsicherungsleistungen bei gleichzeitiger Einführung verpflichtender Arbeitsauflagen.",
-        "Forderung nach Abschaffung von Vermögen- und Erbschaftsteuer mit primärem Entlastungseffekt für Spitzenvermögen."
+        "Das AfD-Paradox (DIW Berlin): Das Steuer- und Sozialprogramm entlastet das reichste Prozent der Haushalte massiv, während Gering- und Normalverdiener real verlieren.",
+        "Ablehnung und Aushöhlung des gesetzlichen Mindestlohns sowie Blockade von Tariftreuegesetzen, was insbesondere Beschäftigte in Ostdeutschland hart trifft.",
+        "Forderung nach Abschaffung der Vermögen- und Erbschaftsteuer für Superreiche bei gleichzeitiger Einführung von Zwangsarbeit ('Bürgerarbeit') für Hilfsbedürftige."
       ],
       "citation": "Deutsches Institut für Wirtschaftsforschung (DIW Berlin) — Das AfD-Paradox (2023)",
       "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
@@ -368,65 +368,65 @@
       "id": "economy",
       "title": "Wirtschaft & Wohlstand",
       "metric": "-5,6% BIP durch Dexit-Pläne",
-      "description": "Protektionismus und eine Abkehr von der europäischen Integration schwächen den Wirtschaftsstandort nachhaltig.",
+      "description": "Nationalistische Abschottung und ein EU-Austritt zerstören den deutschen Wirtschaftsstandort und Millionen Arbeitsplätze.",
       "points": [
-        "IW-Berechnung (2024): Ein EU-Austritt Deutschlands ('Dexit') brächte binnen 5 Jahren einen BIP-Verlust von ca. 5,6 % (rund 690 Mrd. Euro) mit sich.",
-        "Verstärkung des Fachkräftemangels durch restriktive Zuwanderungspolitik und internationale Abschreckungseffekte.",
-        "Unfinanzierte Steuersenkungsforderungen gefährden die Haushalts- und Investitionsfähigkeit der Kommunen und Länder."
+        "IW-Berechnung (2024): Ein EU-Austritt ('Dexit') brächte binnen 5 Jahren einen Wohlstandsverlust von ca. 5,6% des BIP (rund 690 Mrd. Euro) und vernichtet 2,5 Mio. Jobs.",
+        "Verschärfung des akuten Fachkräftemangels durch rassistische Stimmungsmache und internationale Abschreckung qualifizierter Arbeitskräfte.",
+        "Gefährdung der Exportindustrie, von der in Deutschland jeder vierte Arbeitsplatz direkt abhängt."
       ],
       "citation": "Institut der deutschen Wirtschaft (IW Köln) — Folgen eines EU-Austritts (2024)",
       "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
     },
     {
       "id": "press",
-      "title": "Presse & Rundfunk",
+      "title": "Presse & Rechtsstaat",
       "metric": "Ausschlüsse per Gerichtsentscheid gestoppt",
-      "description": "Wiederholte Versuche, kritische Medienvertreter auszugrenzen und die Pressefreiheit einzuschränken.",
+      "description": "Gezielte Angriffe auf freie Medien, Einschüchterung von Journalisten und Verächtlichmachung des Rechtsstaates.",
       "points": [
-        "Gerichtlich unterbundene Versuche, Journalistinnen und Journalisten von Parteitagen und Wahlabenden fernzuhalten.",
-        "Gezielte Kampagnen gegen den öffentlich-rechtlichen Rundfunk mit der Forderung nach dessen Marginalisierung.",
-        "Gefahr analoger Entwicklungen wie in autoritär geprägten Mediensystemen mit eingeschränkter Meinungsvielfalt."
+        "Gerichtlich unterbundene Versuche, Journalistinnen und Journalisten von Parteitagen und Wahlabenden fernzuhalten (LG Erfurt, LG München).",
+        "Systematische Hetzkampagnen gegen den öffentlich-rechtlichen Rundfunk mit dem Ziel seiner Zerschlagung zugunsten von Parteipropaganda.",
+        "Gefahr analoger Entwicklungen wie in autoritären Regimen mit gleichgeschalteten Medien und eingeschränkter Justiz."
       ],
-      "citation": "Landgericht Erfurt / Landgericht München I (2024) — Eilentscheidungen zur Pressefreiheit",
+      "citation": "Landgericht Erfurt / Landgericht München I — Eilentscheidungen zur Pressefreiheit",
       "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
     },
     {
       "id": "culture",
-      "title": "Kunst, Kultur & Schule",
-      "metric": "Klagen gegen Kulturprojekte abgewiesen",
-      "description": "Versuche zur politischen Reglementierung freier Kultur-, Schul- und Bildungsinitiativen.",
+      "title": "Verfassungsordnung & Institutionen",
+      "metric": "Gerichtlich bestätigte Verfassungsfeindlichkeit",
+      "description": "Obergerichtliche Urteile und Verfassungsschutzbefunde belegen den systematischen Kampf gegen Grundrechte und Pluralismus.",
       "points": [
-        "Juristisch abgewehrte Angriffe auf Kunst- und Schultheaterprojekte mit Verweis auf das Grundrecht der Kunstfreiheit.",
-        "Versuche in Parlamenten, Fördermittelvergaben an ideologische Bekenntnisse zu koppeln.",
-        "Initiativen für Meldeportale zur Überwachung von Lehrkräften bei der Behandlung verfassungspolitischer Themen."
+        "OVG Münster (Urteil Mai 2024): Einstufung der Gesamtpartei und der Jungen Alternative als rechtsextremistischer Verdachtsfall vollumfänglich bestätigt.",
+        "Landesverbände Thüringen, Sachsen und Sachsen-Anhalt behördlich als 'gesichert rechtsextremistische Bestrebung' eingestuft.",
+        "Björn Höcke mehrfach strafrechtlich verurteilt wegen vorsätzlicher Verwendung verbotener SA-Parolen des NS-Regimes (LG Halle 2024)."
       ],
-      "citation": "Verwaltungsgericht Hannover (2023) / Bundesverband Freie Darstellende Künste",
-      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+      "citation": "Oberverwaltungsgericht NRW (Az. 5 A 1218/22) / Landgericht Halle (2024)",
+      "citationUrl": "https://www.justiz.nrw.de"
     },
     {
       "id": "crime",
-      "title": "Sicherheit & Gewalt",
-      "metric": "Rechtsextreme Straftaten dominieren",
-      "description": "Offizielle Kriminalstatistiken zeigen ein dauerhaft hohes Bedrohungspotenzial durch politisch motivierte Kriminalität von rechts.",
+      "title": "Sicherheit & Rassismus",
+      "metric": "Potsdam-Plan & völkischer Nationalismus",
+      "description": "Deportationsfantasien gegen Millionen Bürger und Bedrohung der inneren Sicherheit durch rechtsextreme Netzwerke.",
       "points": [
-        "Straftaten (2025): Rund die Hälfte aller politisch motivierten Delikte entfällt auf das rechtsextreme Spektrum.",
-        "Überproportional hohe Fallzahlen im Bereich gewaltsamer Übergriffe und Einschüchterungen.",
-        "Hohe Dynamik bei digital verbreiteten Hasspostings und Verunglimpfungen engagierter Bürgerinnen und Bürger."
+        "Geheimtreffen in Potsdam (Correctiv): Pläne zur Vertreibung von Millionen Menschen ('Remigration'), explizit einschließlich deutscher Staatsbürger.",
+        "Verletzung der Menschenwürde (Art. 1 GG): Der völkische Volksbegriff der Partei degradiert Mitbürger mit Migrationsgeschichte zu Bürgern zweiter Klasse.",
+        "BKA-Kriminalstatistik: Politisch motivierte Kriminalität von rechts stellt die größte terroristische und gewaltsame Bedrohung dar."
       ],
-      "citation": "Bundeskriminalamt (BKA) — Politisch motivierte Kriminalität im Jahr 2025 (Juni 2026)",
-      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+      "citation": "Bundeskriminalamt (BKA) PMK / Bundesverfassungsgericht (BVerfGE 144, 20)",
+      "citationUrl": "https://www.bka.de"
     },
     {
       "id": "alliances",
-      "title": "Netzwerke & Allianzen",
-      "metric": "Europäische Fraktionsbildung",
-      "description": "Enge Verbindungen zu ultranationalistischen Parteien in Europa sowie Berichte über Verbindungen zu autoritären Drittstaaten.",
+      "title": "Geopolitik & Allianzen",
+      "metric": "Prorussische Netzwerke & Spionageverdacht",
+      "description": "Enge Verflechtungen mit autoritären Drittstaaten zur Destabilisierung der europäischen Sicherheitsordnung.",
       "points": [
-        "Beteiligung an der Gründung der radikal-nationalistischen ESN-Fraktion im EU-Parlament.",
-        "Ermittlungen zu Finanzierungs- und Einflussstrukturen im Umfeld prorussischer Netzwerke.",
-        "Sicherheitsrelevante Ermittlungen wegen Verdachts auf nachrichtendienstliche Kooperationen."
+        "Ermittlungen der Generalbundesanwaltschaft wegen Verdachts auf Bestechungsgelder und Agententätigkeit für Russland und China im AfD-Umfeld.",
+        "Führende Rolle bei der Gründung der radikal-nationalistischen ESN-Fraktion im EU-Parlament zur Schwächung westlicher Demokratien.",
+        "Forderung nach Aufkündigung internationaler Bündnisse bei gleichzeitiger Rechtfertigung autoritärer Angriffskriege."
       ],
-      "citation": "Bundestag / Generalbundesanwalt / Münchner Staatsanwaltschaft (2024-2025)",
+      "citation": "Bundestag / Generalbundesanwalt / Münchner Staatsanwaltschaft",
       "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
@@ -459,83 +459,83 @@
   "wordsMeaning": [
     {
       "word": "Freiheit",
-      "meaning": "Forderung nach Regellosigkeit für das eigene Klientel bei Einschränkung für Andersdenkende"
+      "meaning": "Privilegierte Regellosigkeit für Besserverdienende bei gleichzeitiger Entrechtung von Minderheiten"
     },
     {
       "word": "Frieden",
-      "meaning": "Forderung nach Akzeptanz autoritärer Aggression und Schwächung westlicher Demokratien"
+      "meaning": "Unterwerfung unter autoritäre Diktaturen und Zerschlagung westlicher Demokratienbündnisse"
     },
     {
       "word": "Demokratie",
-      "meaning": "Reduktion auf eine vermeintliche Volksgemeinschaft unter Ausschluss von Minderheitenrechten"
+      "meaning": "Völkische Mehrheitsdiktatur unter Missachtung von Grundrechten und Minderheitenschutz"
     },
     {
       "word": "Souveränität",
-      "meaning": "Nationalistische Isolation und Aufkündigung internationaler Partnerschaften"
+      "meaning": "Nationalistische Selbstisolation, Dexit und Zerstörung von Millionen Export-Arbeitsplätzen"
     },
     {
       "word": "Widerstand",
-      "meaning": "Delegitimierung demokratischer Institutionen und Rechtsnormen"
+      "meaning": "Gezielte Delegitimierung von Gerichten, Verfassungsschutz und demokratischen Institutionen"
     },
     {
       "word": "Meinungsfreiheit",
-      "meaning": "Grenzenlose Verbreitung von Falschinformationen bei gleichzeitiger Diskreditierung freier Medien"
+      "meaning": "Forderung nach Konsequenzlosigkeit für rassistische Hetze bei gleichzeitiger Verächtlichmachung freier Medien"
     },
     {
       "word": "Heimat",
-      "meaning": "Völkisch-ethnische Ausgrenzung und Vertreibungsideen ('Remigration')"
+      "meaning": "Völkisch-rassistisches Ausgrenzungskonzept und Vertreibung von Mitbürgern ('Remigration')"
     },
     {
       "word": "Schutz der Familie",
-      "meaning": "Ablehnung pluraler Lebensentwürfe und queeren Menschenrechten"
+      "meaning": "Ablehnung vielfältiger Lebensentwürfe, Frauenrechte und queerer Selbstbestimmung"
     },
     {
       "word": "Gerechtigkeit",
-      "meaning": "Abbau von Sozialstandards zugunsten wohlhabenderer Klientel"
+      "meaning": "Steuergeschenke für Milliardäre und radikaler Abbau sozialer Daseinsvorsorge"
     },
     {
       "word": "Gesunder Menschenverstand",
-      "meaning": "Ablehnung wissenschaftlicher Erkenntnisse und Fakten"
+      "meaning": "Wissenschaftsfeindlichkeit und Leugnung belegter ökologischer und ökonomischer Fakten"
     },
     {
       "word": "Patriotismus",
-      "meaning": "Chauvinismus und Herabwürdigung anderer Gesellschaften"
+      "meaning": "Chauvinistischer Nationalismus und Abwertung anderer Völker statt verfassungspatriotischer Verantwortung"
     },
     {
       "word": "Normalität",
-      "meaning": "Rückbau gesellschaftlicher Vielfalt auf ein starres Rollenbild"
+      "meaning": "Rückschritt in autoritäre Rollenmuster und Ausgrenzung gesellschaftlicher Vielfalt"
     },
     {
       "word": "Tradition",
-      "meaning": "Historische Verklärung und Abwertung moderner Grundwerte"
+      "meaning": "Geschichtsrevisionismus und Verklärung antidemokratischer Gesellschaftsepochen"
     },
     {
       "word": "Selbstbestimmung",
-      "meaning": "Recht des Stärkeren im völkischen Sinne"
+      "meaning": "Recht des Stärkeren im Sinne eines völkisch-nationalen Kollektivismus"
     },
     {
       "word": "Sicherheit",
-      "meaning": "Generalverdacht und Kriminalisierung vulnerabler Gruppen"
+      "meaning": "Kriminalisierung von Minderheiten und Abbau rechtsstaatlicher Kontrollmechanismen"
     },
     {
       "word": "Volkswille",
-      "meaning": "Absolutsheitsanspruch einer Minderheit gegenüber der pluralistischen Mehrheit"
+      "meaning": "Anmaßung eines autoritären Alleinvertretungsanspruchs gegen die pluralistische Mehrheit"
     },
     {
       "word": "Reform",
-      "meaning": "Systematischer Rückbau rechtsstaatlicher Schutzmechanismen"
+      "meaning": "Systematischer Abbau von Arbeitnehmerrechten, Mindestlöhnen und Sozialstandards"
     },
     {
       "word": "Transparenz",
-      "meaning": "Gezielte Desinformation zur Verunsicherung der Öffentlichkeit"
+      "meaning": "Gezielte Desinformationskampagnen zur Diskreditierung demokratischer Prozesse"
     },
     {
       "word": "Stärke",
-      "meaning": "Autoritärer Politikstil statt konsensualer Problemlösung"
+      "meaning": "Autoritärer Politikstil, Einschüchterung und Ablehnung demokratischer Kompromisse"
     },
     {
       "word": "Wahrheit",
-      "meaning": "Etablierung parteieigener Desinformationsnarrative"
+      "meaning": "Verbreitung verschwörungsideologischer Narrative zur Spaltung der Gesellschaft"
     }
   ]
 }

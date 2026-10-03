@@ -5,7 +5,7 @@
     "navRisks": "Riesgos",
     "navScience": "Ciencia y Derecho",
     "navLetter": "Carta abierta",
-    "navCulture": "Significado del azul",
+    "navCulture": "Códigos visuales",
     "navSign": "Firmar ahora",
     "navShare": "Compartir petición",
     "shareTitle": "Compartir petición",
@@ -56,12 +56,12 @@
     "whyIntro": "La investigación en comunicación y encuadre (framing) demuestra: la percepción pública de los actores políticos está profundamente condicionada por las señales visuales empleadas en los formatos informativos.",
     "whyCard1H": "La minimización visual",
     "whyCard1": "En psicología del color, el azul se asocia con serenidad, credibilidad y objetividad. Es el color distintivo de organismos de paz internacionales e instituciones europeas. Adoptar la autoimagen corporativa de un partido sin distancia crítica produce un efecto atenuador frente a posturas anticonstitucionales.",
-    "whyCard2H": "La asociación histórica",
-    "whyCard2": "En la iconografía política de Alemania, el marrón simboliza inequívocamente el nacionalismo völkisch y el extremismo de derecha. Un diseño infográfico responsable debe tener la determinación de reflejar visualmente las clasificaciones de fondo.",
-    "cultureH": "Semántica cromática e historia cultural",
-    "cultureSub": "Cómo los colores y los giros idiomáticos modelan nuestra percepción compartida.",
-    "tabLang": "Uso idiomático",
-    "tabSym": "Cultura e Historia",
+    "whyCard2H": "Contexto en lugar de adopción de relaciones públicas",
+    "whyCard2": "En la iconografía política, el marrón representa inequívocamente el nacionalismo völkisch y la extrema derecha. El diseño informativo responsable no debe replicar pasivamente la imagen partidista, sino contextualizar las clasificaciones anticonstitucionales.",
+    "cultureH": "Códigos visuales y mimetismo político",
+    "cultureSub": "Cómo se apropian de los símbolos democráticos y por qué la contextualización visual es indispensable.",
+    "tabLang": "Camuflaje y Mimetismo",
+    "tabSym": "Símbolos democráticos",
     "letterH": "La carta abierta",
     "letterSub": "Selecciona el grupo destinatario para consultar nuestra argumentación ético-periodística dirigida a redacciones y consejos consultivos:",
     "targetPublic": "Radiodifusores públicos",
@@ -160,191 +160,191 @@
     "editorialPolicyRule4": "Distancia analítica: La retórica radical se deconstruye críticamente en vez de ser reproducida sin filtro.",
     "editorialPolicyCorrectionsTitle": "Correcciones y contacto",
     "editorialPolicyCorrectionsBody": "Si detectas algún error factual, comunícalo mediante los canales señalados en el aviso legal. Toda indicación verificable será examinada a la brevedad.",
-    "wordsMeaningTitle": "La retórica política bajo lupa",
-    "wordsMeaningSubtitle": "Terminología de la ultraderecha vs. objetivos reales: una guía conceptual crítica."
+    "wordsMeaningTitle": "Verificación de la retórica política",
+    "wordsMeaningSubtitle": "Retórica de extrema derecha frente a objetivos reales: guía terminológica crítica."
   },
   "sayings": {
     "sprache": [
       {
-        "phrase": "«Blau machen» (Tomarse el día)",
-        "origin": "Etimología / Historia artesanal",
-        "desc": "Deriva históricamente de los tiempos de reposo y oxidación en el oficio de la tintorería, durante los cuales la producción debía detenerse forzosamente. Es reflejo del ritmo productivo artesanal antiguo."
+        "phrase": "Mimetismo visual estratégico",
+        "origin": "Ciencias de la comunicación y análisis de encuadre",
+        "desc": "Los movimientos de extrema derecha adoptan deliberadamente códigos cromáticos moderados e institucionales para suavizar su imagen radical y proyectar respetabilidad burguesa."
       },
       {
-        "phrase": "«Fahrt ins Blaue» (Viaje hacia lo azul)",
-        "origin": "Historia cultural e idiomática",
-        "desc": "Alude tradicionalmente a una excursión sin rumbo fijo en contacto con el entorno natural: símbolo de apertura mental, curiosidad y sosiego."
+        "phrase": "La distorsión del color europeo",
+        "origin": "Orden europeo de posguerra",
+        "desc": "Mientras que el azul europeo representa el Estado de derecho, la concordia internacional y las fronteras abiertas, un partido nacionalista explota este mismo color para promover el aislacionismo völkisch y el 'Dexit'."
       },
       {
-        "phrase": "«Mit einem blauen Auge davonkommen» (Salir con un ojo morado)",
-        "origin": "Metáfora coloquial",
-        "desc": "Describe escapar de un peligro inminente sufriendo únicamente consecuencias leves: una metáfora centrada en la contención de daños y la resolución de crisis."
+        "phrase": "Respetabilidad como camuflaje",
+        "origin": "Investigación sobre extremismo y fascismo",
+        "desc": "Detrás de una fachada azul tranquilizadora se oculta un programa confirmado por los tribunales como vulnerador de la dignidad humana (art. 1 de la Ley Fundamental) y normalizador de la exclusión racista."
       }
     ],
     "symbolik": [
       {
-        "phrase": "La flor azul",
-        "origin": "Época del Romanticismo (Novalis)",
-        "desc": "En la historia de la literatura representa la alegoría medular del anhelo, la apertura espiritual, la búsqueda estética de la verdad y la comunión humana."
+        "phrase": "La bandera europea",
+        "origin": "Integración europea y derecho internacional",
+        "desc": "El fondo azul simboliza la unidad continental cimentada en el Estado de derecho, los derechos humanos universales y la superación de los nacionalismos agresivos."
       },
       {
         "phrase": "Cascos Azules de la ONU",
-        "origin": "Diplomacia y mantenimiento de la paz",
-        "desc": "Color seleccionado formalmente por las Naciones Unidas para transmitir de manera universal imparcialidad, desescalada y compromiso con la resolución pacífica de conflictos."
+        "origin": "Diplomacia internacional",
+        "desc": "Elegido por las Naciones Unidas como emblema universal de neutralidad, desescalada de conflictos y protección desinteresada de la población civil."
       },
       {
-        "phrase": "Bandera de la Unión Europea",
-        "origin": "Integración europea",
-        "desc": "El paño azul representa la cohesión del continente sobre los principios del entendimiento multilateral pacífico, el Estado de derecho y la solidaridad democrática."
+        "phrase": "La flor azul",
+        "origin": "Romanticismo alemán (Novalis)",
+        "desc": "En la historia literaria, el símbolo universal del anhelo de verdad, apertura al mundo, libertad de pensamiento y fraternidad humana."
       }
     ]
   },
   "openLetters": {
     "oeffentlich": {
-      "to": "A: Redacciones de ARD-aktuell y ZDF",
-      "subject": "Asunto: Encuadre visual y deber periodístico de contextualización",
+      "to": "A LA ATENCIÓN DE: Direcciones de redacción de ARD-aktuell y ZDF",
+      "subject": "Asunto: Encuadre visual, deber deontológico de contextualización y neutralidad",
       "body": [
-        "Estimados señoras y señores,",
-        "Los medios públicos de radiodifusión ostentan la responsabilidad fundamental de proporcionar una información fidedigna, rigurosa y analíticamente equilibrada a la opinión pública.",
-        "La transposición no examinada del azul como color identificativo para una fuerza que en diversas instancias ha sido tipificada jurídicamente como de probada naturaleza extremista transmite subliminalmente una sensación de respetabilidad y mesura institucional.",
-        "Les solicitamos que evalúen sus directrices visuales e implementen en sus esquemas gráficos soluciones que reflejen de forma fidedigna la radicalidad documentada de estas organizaciones."
+        "Estimadas señoras, estimados señores:",
+        "Los medios públicos de radiodifusión ostentan una responsabilidad constitucional insustituible respecto a una información veraz, rigurosa y no edulcorada para la ciudadanía.",
+        "Cuando formaciones políticas cuyas federaciones territoriales están judicialmente confirmadas como de probada extrema derecha, y cuya dirección federal está bajo investigación por sospecha de extremismo, aparecen en los gráficos electorales con el mismo azul neutro que las instituciones democráticas, se consolida una normalización inconsciente (Visual Framing).",
+        "Les instamos a revisar sus criterios editoriales: la neutralidad periodística no equivale a reproducir pasivamente el marketing electoral. Los gráficos y reportajes deben visibilizar con claridad las calificaciones judiciales mediante avisos claros y notas de contexto."
       ]
     },
     "privat": {
-      "to": "A: Redacciones de ProSiebenSat.1, RTL Group y dpa",
-      "subject": "Asunto: Valores cromáticos estándar en la distribución infográfica",
+      "to": "A LA ATENCIÓN DE: Direcciones de informativos de ProSiebenSat.1, RTL Group y dpa",
+      "subject": "Asunto: Estándares infográficos y distancia periodística",
       "body": [
-        "Estimados señoras y señores,",
-        "A través de sus canales noticiosos y servicios de agencia condicionan permanentemente los esquemas perceptivos de millones de personas.",
-        "Representar a formaciones señaladas y bajo seguimiento formal por parte de los organismos de seguridad con el mismo azul corporativo que a instituciones multinacionales genera un encuadre suavizador indeseado.",
-        "Sugerimos someter a examen los estándares cromáticos empleados y eludir la reproducción pasiva de las identidades de marca concebidas por formaciones extremistas."
+        "Estimadas señoras, estimados señores:",
+        "Sus espacios informativos y servicios de teletipos configuran a diario el criterio de millones de espectadores y lectores.",
+        "Trasladar sin distancia crítica los colores corporativos apacibles de actores ultranacionalistas y racistas diluye la frontera democrática frente al extremismo autoritario.",
+        "Les animamos a evaluar críticamente sus normas gráficas y rechazar la asimilación acrítica de las identidades visuales de formaciones contrarias al orden constitucional."
       ]
     },
     "rundfunkrat": {
-      "to": "A: Consejos de Radiodifusión de ARD y Consejo de Televisión de ZDF",
-      "subject": "Asunto: Control programático respecto a los efectos del encuadre visual",
+      "to": "A LA ATENCIÓN DE: Consejos de supervisión de ARD y ZDF",
+      "subject": "Asunto: Supervisión de programación respecto al encuadre visual y el rigor democrático",
       "body": [
-        "Estimados señoras y señores,",
-        "Como órganos rectores y de supervisión del sector audiovisual público, tienen asignada la preservación de la pluralidad informativa y los estándares deontológicos.",
-        "La composición gráfica en las emisiones de noticias ejerce una influencia determinante sobre el público. Normalizar a corrientes extremistas en gamas visuales neutras no satisface dicha exigencia formativa.",
-        "Les instamos a promover un debate institucional sobre la adopción de criterios gráficos diferenciados y fundamentados en los hechos para las emisiones diarias."
+        "Estimadas señoras, estimados señores:",
+        "Como órganos independientes de supervisión de la radiotelevisión pública, tienen la encomienda de salvaguardar los estándares de calidad informativa y la defensa de los valores fundamentales.",
+        "La composición gráfica en los informativos tiene un profundo impacto subconsciente. Mantener a fuerzas radicales en un espectro gráfico inocuo contradice la misión de informar con claridad.",
+        "Les solicitamos que promuevan la implantación obligatoria de directrices que garanticen una clasificación visual inequívoca de las amenazas al orden constitucional en las coberturas electorales."
       ]
     }
   },
   "faqs": [
     {
-      "q": "¿Por qué resulta controvertida la asignación del azul?",
-      "a": "En la psicología del color, el azul transmite moderación, armonía y serenidad, siendo la enseña distintiva de entidades como la ONU o la UE. Si los medios asumen acríticamente la identidad visual elegida por un partido con elementos radicales acreditados, esa aura de estabilidad institucional se traspasa inadvertidamente a la formación."
+      "q": "Warum sollte die Parteifarbe Blau problematisch sein?",
+      "a": "Farbpsychologisch steht Blau für Stabilität, Ruhe und Neutralität – es también el color de la ONU y de la UE. Cuando los medios reproducen acríticamente el color corporativo de un partido con ramas de probada extrema derecha, esa percepción tranquilizadora se transmite al electorado (Visual Framing), enmascarando sus postulados inconstitucionales y su peligro real para la democracia."
     },
     {
-      "q": "¿Modificar la paleta gráfica no compromete la neutralidad?",
-      "a": "En absoluto. La imparcialidad informativa no radica en la copia literal del diseño corporativo partidista. Las mesas de edición determinan habitualmente pautas cromáticas de acuerdo con criterios analíticos (como el negro para la Unión en vez de turquesa). El tratamiento visual forma parte indispensable de la autonomía periodística."
+      "q": "Ist eine veränderte Farbgebung nicht ein Eingriff in die Neutralität?",
+      "a": "No. La neutralidad periodística exige reflejar fielmente la realidad, no multiplicar la publicidad de partido. El Tribunal Constitucional Federal estipula el deber de veracidad. Esto implica visibilizar las calificaciones judiciales por extremismo en lugar de convalidar el diseño propagandístico de las formaciones."
     },
     {
-      "q": "¿Cuál es el propósito concreto de esta campaña?",
-      "a": "Promover una deliberación deontológica sobre la repercusión de los soportes visuales en el periodismo informativo. Buscamos asentar la convicción de que las decisiones estéticas de una redacción comunican activamente y nunca son asépticas."
+      "q": "Welches Ziel verfolgt diese Initiative?",
+      "a": "Esclarecer que la AfD no es un partido conservador ordinario, sino una fuerza etnonacionalista que legisla para multimillonarios y grandes corporaciones a expensas de la clase trabajadora, pensionistas y rentas modestas. Nuestra petición exige que los medios no camuflen esta realidad tras una estética apacible."
     },
     {
-      "q": "¿Quién promueve esta iniciativa?",
-      "a": "Una iniciativa civil orientada a la ética mediática y la calidad del debate público articulada a través de Change.org."
+      "q": "Wer steckt hinter dieser Kampagne?",
+      "a": "Una iniciativa cívica independiente por la ética en los medios de comunicación, la vigilancia democrática y la defensa de los derechos constitucionales, promovida a través de Change.org."
     }
   ],
   "facts": [
     {
       "emoji": "🎨",
-      "label": "Psicología del azul",
-      "desc": "Connotaciones de sosiego, ecuanimidad y multilateralismo"
+      "label": "Psicología y Encuadre",
+      "desc": "El azul transmite calma y seriedad; se utiliza deliberadamente para normalizar el radicalismo"
     },
     {
       "emoji": "📺",
-      "label": "Gráficos de prensa",
-      "desc": "Frecuente asimilación rutinaria de la identidad de partido"
+      "label": "Deber periodístico",
+      "desc": "Los medios deben contextualizar con rigor en vez de amplificar acríticamente relaciones públicas"
     },
     {
       "emoji": "🏛️",
-      "label": "Significado histórico",
-      "desc": "El marrón designa formalmente la tradición fascista"
+      "label": "Nacionalismo völkisch",
+      "desc": "La exclusión etnonacional vulnera el núcleo inviolable de la dignidad humana (art. 1 GG)"
     },
     {
       "emoji": "⚖️",
-      "label": "Calificación jurídica",
-      "desc": "Sectores de la formación tipificados como extremistas"
+      "label": "Ratificado judicialmente",
+      "desc": "Partido federal catalogado como sospechoso de extremismo (OVG Münster); 3 ramas regionales de extrema derecha probada"
     }
   ],
   "science": {
-    "sectionH": "Fundamentos científicos y marco legal de los medios",
-    "sectionSub": "Ficha analítica: Encuadre visual y autonomía periodística en el diseño informativo",
-    "part1H": "Parte 1: Bases en ciencias de la comunicación",
+    "sectionH": "Fundamentos científicos y derecho de los medios",
+    "sectionSub": "Ficha informativa: encuadre visual, autonomía de redacción y marco constitucional",
+    "part1H": "Parte 1: Principios de ciencias de la comunicación",
     "foundations": [
       {
-        "title": "Dimensión psicológica del «encuadre visual» (efecto halo)",
+        "title": "La dimensión psicológica del «encuadre visual» (efecto halo)",
         "points": [
           {
-            "label": "Psicología cromática del azul",
-            "text": "Los estudios experimentales revelan que las tonalidades azules suscitan valoraciones de seriedad, templanza y solvencia, motivo central por el que organizaciones globales y tratados supranacionales recurren a ellas."
+            "label": "Psicología del color azul",
+            "text": "Los estudios empíricos constatan que el azul genera sensaciones de credibilidad, distensión y equilibrio, motivo por el cual lo eligen entidades como la ONU o la Unión Europea."
           },
           {
-            "label": "Disonancia cognitiva en infografías",
-            "text": "Presentar a un colectivo clasificado formalmente como extremista bajo un azul apacible produce un fenómeno de asimilación benevolente: el tono visual mitiga la percepción pública de su incompatibilidad con el marco constitucional."
+            "label": "Disonancia cognitiva y blanqueamiento",
+            "text": "Representar en azul institucional a un actor con facciones judicialmente declaradas de extrema derecha relaja la alerta colectiva frente a amenazas racistas y anticonstitucionales."
           }
         ]
       },
       {
-        "title": "Autonomía de edición y antecedentes profesionales",
+        "title": "Autonomía de redacción y contextualización periodística",
         "points": [
           {
-            "label": "El caso de referencia del diario taz",
-            "text": "En coberturas electorales previas, el rotativo taz optó de forma meditada por emplear gamas diferenciadas para la formación. Ello evidencia que el ejercicio interpretativo del periodismo abarca legítimamente la vertiente gráfica."
+            "label": "El precedente de la taz y la prensa libre",
+            "text": "La decisión de redacciones independientes como la taz de diferenciar visualmente los resultados de la AfD confirma que la infografía es fruto del criterio profesional y no un instrumento pasivo."
           },
           {
-            "label": "Flexibilidad gráfica consolidada",
-            "text": "Las salas de prensa modifican de manera regular los manuales corporativos de los partidos en beneficio de la inteligibilidad (v. gr. negro para la Unión frente al turquesa). La asignación del color opera como herramienta editorial propia."
+            "label": "Contextualización responsable",
+            "text": "Los medios no tienen la obligación de propagar la imagen de marca de los partidos. La diligencia periodística exige acompañar a los grupos bajo vigilancia de advertencias visibles y notas al pie."
           }
         ]
       }
     ],
-    "part2H": "Parte 2: Pautas jurídicas y deontológicas",
+    "part2H": "Parte 2: Criterios jurídicos y deontológicos",
     "objections": [
       {
-        "title": "Objeción 1: «El principio de neutralidad obliga a una simetría gráfica absoluta».",
+        "title": "Objeción 1: «El principio de neutralidad exige un trato formalmente idéntico.»",
         "rebuttals": [
           {
-            "label": "Ponderación material vs. formalismo ciego",
-            "text": "La jurisprudencia constitucional señala que los operadores informativos deben ofrecer análisis contextualmente fundados. La minuciosidad periodística comprende evidenciar con nitidez los grados de lealtad constitucional de cada actor."
+            "label": "Equilibrio material frente a mera igualdad formal",
+            "text": "La doctrina constitucional obliga a ponderar los hechos sustantivos. Identificar el grado de lealtad a la Ley Fundamental forma parte esencial de la misión informativa."
           },
           {
-            "label": "Resoluciones de organismos institucionales",
-            "text": "Los dictámenes formalizados por las agencias de protección constitucional constituyen datos de hecho comprobados. Adecuar los gráficos a tales constataciones cumple el mandato de información veraz."
+            "label": "Resoluciones de los servicios de protección como hechos objetivos",
+            "text": "Los fallos judiciales que avalan la vigilancia por extremismo (OVG Münster 2024) son hechos comprobados. Reflejarlos en los gráficos cumple el deber legal de veracidad."
           },
           {
-            "label": "Soberanía en la emisión programática",
-            "text": "La libertad de prensa y radiodifusión ampara a las redacciones frente a la exigencia de plasmar las estrategias promocionales elaboradas por los gabinetes de comunicación partidistas."
+            "label": "Autonomía de programación amparada por la Constitución",
+            "text": "La libertad de radiodifusión (art. 5.1 GG) garantiza que las redacciones no estén sometidas a las directrices de marketing de las fuerzas políticas."
           }
         ]
       },
       {
-        "title": "Objeción 2: «Los medios tienen la obligación de adoptar el diseño de marca oficial».",
+        "title": "Objeción 2: «Los medios deben ajustarse a la imagen corporativa del partido.»",
         "rebuttals": [
           {
-            "label": "Deber deontológico de distancia crítica",
-            "text": "El diseño de marca responde a intereses proselitistas. La distancia profesional impone salvaguardar la propia independencia de criterio en lugar de actuar como altavoz pasivo de relaciones públicas."
+            "label": "Deber de distanciamiento periodístico",
+            "text": "La estrategia de imagen de un partido responde a fines electorales. La ética periodística impone preservar la independencia y no ser altavoz de maniobras de lavado de cara."
           },
           {
-            "label": "Claridad y orientación hacia la ciudadanía",
-            "text": "Las representaciones gráficas persiguen orientar al lector. Un proceder que difumine plataformas radicales tras paletas inocuas contraviene este cometido cívico fundamental."
+            "label": "Función orientadora para la sociedad",
+            "text": "Un diagrama debe ayudar a comprender la realidad. Encubrir posturas extremistas bajo tonos apacibles desvirtúa este mandato formativo."
           }
         ]
       },
       {
-        "title": "Objeción 3: «Esta medida incentiva el discurso de victimización del partido».",
+        "title": "Objeción 3: «Esto alimenta el victimismo del partido.»",
         "rebuttals": [
           {
-            "label": "Discurso táctico preexistente",
-            "text": "Los análisis de medios constatan que las fuerzas populistas instrumentalizan el victimismo como táctica invariable y sistemática, con total independencia de las elecciones de estilo que tome la prensa."
+            "label": "Victimismo estructural",
+            "text": "Los estudios de comunicación acreditan que las fuerzas populistas recurren al agravio como estrategia sistemática, con independencia del diseño gráfico empleado."
           },
           {
-            "label": "Argumentación metódica frente a la cautela",
-            "text": "Las definiciones editoriales no deben verse condicionadas por el temor a represalias mediáticas. Una fundamentación transparente e informada es la mayor garantía de integridad institucional."
+            "label": "Prevalencia de la transparencia",
+            "text": "Las decisiones informativas no deben arredrarse por temor a campañas partidistas; el rigor científico y fáctico es el mejor baluarte de la credibilidad."
           }
         ]
       }
@@ -353,80 +353,80 @@
   "policyDangers": [
     {
       "id": "social",
-      "title": "Políticas sociales y empleo",
-      "metric": "Beneficios concentrados en el 1% de mayores rentas",
-      "description": "Los modelos económicos proyectados lesionan estructuralmente la estabilidad de las rentas bajas, asalariados y pensionistas.",
+      "title": "Políticas sociales y bienestar",
+      "metric": "Privilegios exclusivos para el 1 % más acaudalado",
+      "description": "Los análisis económicos independientes lo demuestran: la AfD practica un lobby a favor de grandes patrimonios y castiga a trabajadores de rentas bajas, pensionistas y familias.",
       "points": [
-        "Negativa a la elevación del salario mínimo interprofesional, lo que perjudica en mayor medida a las comarcas más desfavorecidas.",
-        "Planteamiento de recortes sustanciales en prestaciones asistenciales obligando a la prestación de labores comunitarias no remuneradas.",
-        "Reclamación de suprimir los tributos sobre el patrimonio y sucesiones, favoreciendo de forma casi unívoca a los tramos de máxima riqueza."
+        "La paradoja de la AfD (DIW Berlín): su reforma tributaria otorgaría exenciones de decenas de miles de euros a las mayores fortunas, perjudicando a las rentas modestas.",
+        "Rechazo reiterado a la actualización del salario mínimo legal y trabas a los convenios colectivos, dañando sobre todo a regiones con salarios deprimidos.",
+        "Exigencia de suprimir los impuestos de patrimonio y sucesiones para multimillonarios a la par que se plantea trabajo obligatorio para perceptores de ayudas sociales."
       ],
       "citation": "Instituto Alemán de Investigación Económica (DIW Berlín) — La paradoja de la AfD (2023)",
       "citationUrl": "https://www.diw.de/de/diw_01.c.879742.de/publikationen/wochenberichte/2023_32_1/das_afd-paradox__die_waehlerschaft_der_afd_profitiert_am_wenigsten_von_deren_politik.html"
     },
     {
       "id": "economy",
-      "title": "Economía y competitividad",
-      "metric": "-5,6% del PIB bajo escenarios de «Dexit»",
-      "description": "El proteccionismo económico y la desvinculación comunitaria comprometen severamente el tejido productivo y la solidez macroeconómica.",
+      "title": "Economía y prosperidad",
+      "metric": "-5,6 % del PIB por los planes de Dexit",
+      "description": "El aislacionismo nacionalista y la salida de la Unión Europea arruinarían el tejido industrial alemán y millones de puestos de trabajo.",
       "points": [
-        "Modelización del IW (2024): La ruptura con la Unión Europea acarrearía un retroceso del PIB de en torno al 5,6% (aprox. 690.000 millones de euros) en 5 años.",
-        "Agravamiento de la carestía de trabajadores especializados a causa de discursos de rechazo que disuaden al talento internacional.",
-        "Propuestas tributarias sin compensación presupuestaria que amenazan la sostenibilidad fiscal y la inversión de los municipios."
+        "Instituto de la Economía Alemana (IW Colonia, 2024): un 'Dexit' causaría una pérdida del 5,6 % del PIB en 5 años (unos 690.000 millones de euros) y 2,5 millones de empleos.",
+        "Agravamiento de la escasez crítica de mano de obra especializada por la hostilidad xenófoba que ahuyenta a profesionales extranjeros.",
+        "Riesgo crítico para la industria exportadora, de la que depende directamente uno de cada cuatro empleos en Alemania."
       ],
-      "citation": "Instituto de la Economía Alemana (IW Colonia) — Repercusiones de una hipotética salida de la UE (2024)",
+      "citation": "Instituto de la Economía Alemana (IW Colonia) — Consecuencias de una salida de la UE (2024)",
       "citationUrl": "https://www.iwkoeln.de/presse/pressemitteilungen/berthold-busch-was-ein-dexit-deutschland-kosten-wuerde.html"
     },
     {
       "id": "press",
-      "title": "Medios de comunicación y prensa",
-      "metric": "Vetualianzas informativas frenadas judicialmente",
-      "description": "Prácticas continuadas tendentes a menoscabar la cobertura informativa independiente y la libertad de prensa.",
+      "title": "Libertad de prensa y Estado de derecho",
+      "metric": "Vetos a periodistas frenados por mandatos judiciales",
+      "description": "Ataques constantes a los medios independientes, intimidación a periodistas y cuestionamiento sistemático de las instituciones judiciales.",
       "points": [
-        "Intentos reiterados de excluir a profesionales acreditados de congresos partidistas, anulados por medidas cautelares de los tribunales.",
-        "Acciones sistemáticas encaminadas a deslegitimar los entes públicos audiovisuales y cercenar sus fuentes de financiación.",
-        "Riesgos de replicar dinámicas de restricción informativa presentes en regímenes donde se ha erosionado el pluralismo mediático."
+        "Medidas cautelares dictadas por tribunales para impedir la exclusión arbitraria de periodistas de asambleas y noches electorales (Erfurt y Múnich).",
+        "Campañas de desprestigio dirigidas a recortar y desmantelar los medios públicos para sustituirlos por órganos de propaganda afines.",
+        "Riesgo evidente de derivas iliberales observadas en regímenes autoritarios que intervinieron los medios y anularon la independencia judicial."
       ],
-      "citation": "Audiencias de Erfurt y Múnich I (2024) — Pronunciamientos de urgencia en materia de libertad de prensa",
+      "citation": "Audiencias Provinciales de Erfurt y Múnich I — Resoluciones de urgencia sobre libertad de prensa",
       "citationUrl": "https://www.tagesschau.de/inland/regional/thueringen/afd-journalisten-wahlparty-erfurt-100.html"
     },
     {
       "id": "culture",
-      "title": "Educación, creación artística y cultura",
-      "metric": "Denuncias contra proyectos culturales rechazadas",
-      "description": "Acciones dirigidas a instrumentalizar ideológicamente o fiscalizar iniciativas académicas, pedagógicas y teatrales.",
+      "title": "Orden constitucional e instituciones",
+      "metric": "Extremismo anticonstitucional corroborado en vía judicial",
+      "description": "Sentencias de tribunales superiores e informes de seguridad acreditan una ofensiva planificada contra los derechos fundamentales.",
       "points": [
-        "Desestimación judicial de requerimientos contra representaciones pedagógicas críticas, en amparo del derecho fundamental a la creación artística.",
-        "Propuestas parlamentarias para condicionar las subvenciones del sector a compromisos con doctrinas identitarias cerradas.",
-        "Incentivación de herramientas de delación digital destinadas a fiscalizar la labor docente en materias relativas al orden democrático."
+        "Tribunal Superior de lo Contencioso-Administrativo de Münster (mayo 2024): ratificación íntegra de la catalogación del partido federal y sus juventudes como caso sospechoso de extremismo.",
+        "Federaciones territoriales de Turingia, Sajonia y Sajonia-Anhalt declaradas de manera oficial como 'organizaciones de confirmada extrema derecha'.",
+        "Björn Höcke condenado penalmente en reiteradas ocasiones por proclamar intencionadamente lemas nazis prohibidos de las SA (Tribunal de Halle 2024)."
       ],
-      "citation": "Tribunal Administrativo de Hannover (2023) / Federación de Profesionales de Artes Escénicas",
-      "citationUrl": "https://www.zeit.de/news/2023-11-20/gericht-schultheaterstueck-ueber-afd-ist-von-kunstfreiheit-gedeckt"
+      "citation": "Tribunal Superior de Münster (Caso 5 A 1218/22) / Tribunal de Halle (2024)",
+      "citationUrl": "https://www.justiz.nrw.de"
     },
     {
       "id": "crime",
-      "title": "Seguridad pública y criminalidad",
-      "metric": "Prevalencia de ilícitos imputables a la extrema derecha",
-      "description": "El cómputo policial confirma una incidencia cuantitativa y cualitativa dominante de conductas delictivas de signo ultraderechista.",
+      "title": "Seguridad y racismo",
+      "metric": "Plan secreto de Potsdam y doctrina etnonacionalista",
+      "description": "Fantasías de deportación masiva contra millones de residentes y auge de redes violentas de ultraderecha.",
       "points": [
-        "Infracciones (2025): Prácticamente el 50% de los incidentes motivados políticamente corresponden al espectro de la extrema derecha.",
-        "Niveles proporcionalmente superiores en agresiones físicas, coacciones y atentados a la integridad.",
-        "Alta concentración de acciones concertadas de intimidación y expresiones de odio dirigidas contra personas comprometidas en el ámbito cívico."
+        "Reunión conspirativa de Potsdam (investigación Correctiv): proyecto articulado de expulsión forzosa ('remigración'), que abarca a ciudadanos alemanes con raíces migratorias.",
+        "Atentado a la dignidad humana (art. 1 GG): la doctrina etnicista del partido degrada a ciudadanos de pleno derecho a categorías subalternas.",
+        "Estadísticas policiales federales (BKA): los delitos cometidos por el extremismo de derechas representan la mayor amenaza para la seguridad ciudadana."
       ],
-      "citation": "Oficina Federal de Investigación Criminal (BKA) — Criminalidad de Motivación Política en 2025 (junio de 2026)",
-      "citationUrl": "https://www.bka.de/DE/Presse/Pressemitteilungen/Presse2026/260609_PMK2025.html"
+      "citation": "Oficina Federal de Investigación Criminal (BKA) / Tribunal Constitucional Federal (BVerfGE 144, 20)",
+      "citationUrl": "https://www.bka.de"
     },
     {
       "id": "alliances",
-      "title": "Conexiones y cooperación internacional",
-      "metric": "Copresidencia de grupo parlamentario europeo",
-      "description": "Articulación de vínculos con fuerzas radicales transnacionales y actuaciones judiciales por presuntas connivencias con potencias autoritarias.",
+      "title": "Geopolítica y alianzas",
+      "metric": "Vínculos prorrusos e investigaciones por espionaje",
+      "description": "Estrecha sintonía con autocracias extranjeras orientada a fracturar la seguridad democrática europea.",
       "points": [
-        "Papel impulsor en la constitución de la fracción ultranacionalista ESN en el seno de la Eurocámara.",
-        "Diligencias penales abiertas en torno a esquemas de financiación e injerencia vinculados a canales pro-Kremlin.",
-        "Investigaciones de seguridad en relación con presuntos contactos con agencias de inteligencia extranjeras."
+        "Investigaciones de la Fiscalía General Federal por presunta recepción de sobornos y actividades de inteligencia a favor de Rusia y China en el entorno del partido.",
+        "Papel protagonista en la constitución del grupo ultranacionalista ESN en el Parlamento Europeo para debilitar la cohesión comunitaria.",
+        "Reivindicación de ruptura con las alianzas defensivas occidentales a la par que se justifican agresiones bélicas contrarias al derecho internacional."
       ],
-      "citation": "Bundestag / Fiscalía General Federal / Fiscalía de Múnich (2024-2025)",
+      "citation": "Bundestag alemán / Fiscalía General Federal (Diligencias 2024)",
       "citationUrl": "https://www.bundestag.de/dokumente/textarchiv/2024/kw20-de-immunitat-1004388"
     }
   ],
@@ -459,83 +459,83 @@
   "wordsMeaning": [
     {
       "word": "Libertad",
-      "meaning": "Exigencia de desregulación para afines junto a medidas punitivas contra la disidencia"
+      "meaning": "Privilegios ilimitados para las élites económicas mientras se recortan los derechos esenciales de las minorías"
     },
     {
       "word": "Paz",
-      "meaning": "Petición de claudicación ante agresiones autoritarias y debilitamiento del consenso defensivo democrático"
+      "meaning": "Sumisión ante regímenes autocráticos y ruptura de las alianzas democráticas defensivas"
     },
     {
       "word": "Democracia",
-      "meaning": "Reducción a una supuesta comunidad etnocultural con supresión de las salvaguardas para minorías"
+      "meaning": "Tiranía de una mayoría identitaria con vulneración de los derechos fundamentales y de las minorías"
     },
     {
       "word": "Soberanía",
-      "meaning": "Aislamiento nacionalista y ruptura concertada de acuerdos multilaterales"
+      "meaning": "Aislamiento nacionalista, Dexit y destrucción de millones de empleos dependientes de la exportación"
     },
     {
       "word": "Resistencia",
-      "meaning": "Deslegitimación sistemática del orden constitucional y de la judicatura"
+      "meaning": "Deslegitimación calculada de los tribunales de justicia, de las instituciones democráticas y del Estado de derecho"
     },
     {
       "word": "Libertad de expresión",
-      "meaning": "Difusión ilimitada de desinformación acompañada de señalamientos a medios independientes"
+      "meaning": "Exigencia de impunidad para el odio racista junto al descrédito deliberado de los medios de comunicación libres"
     },
     {
       "word": "Patria",
-      "meaning": "Exclusión con base etnonacionalista y planes de deportación masiva («remigración»)"
+      "meaning": "Concepto de exclusión etnorracial y proyectos de expulsión forzada de conciudadanos ('remigración')"
     },
     {
-      "word": "Protección familiar",
-      "meaning": "Desconocimiento de modelos de convivencia plurales y hostilidad hacia los derechos de personas LGBTIQ+"
+      "word": "Protección de la familia",
+      "meaning": "Rechazo de los derechos de la mujer, de la diversidad familiar y de la autodeterminación LGTBIQ+"
     },
     {
       "word": "Justicia",
-      "meaning": "Desarticulación del escudo asistencial en favor de los estratos socioeconómicos de mayores ingresos"
+      "meaning": "Exenciones tributarias para multimillonarios y recorte salvaje de las coberturas sociales básicas"
     },
     {
       "word": "Sentido común",
-      "meaning": "Negacionismo de evidencias científicas y promoción de relatos conspirativos"
+      "meaning": "Desprecio por la evidencia científica y negación sistemática de las realidades climáticas y económicas"
     },
     {
       "word": "Patriotismo",
-      "meaning": "Chovinismo y descalificación sistemática de sociedades abiertas y plurales"
+      "meaning": "Chovinismo agresivo y desprecio hacia otras naciones en lugar de patriotismo constitucional"
     },
     {
       "word": "Normalidad",
-      "meaning": "Involución social encaminada a revertir la diversidad en favor de patrones uniformes"
+      "meaning": "Regresión a jerarquías patriarcales autoritarias y rechazo de la pluralidad ciudadana"
     },
     {
       "word": "Tradición",
-      "meaning": "Idealización acrítica del pasado y menosprecio de las conquistas civiles modernas"
+      "meaning": "Revisionismo histórico y ensalzamiento acrítico de épocas pretéritas de signo autoritario"
     },
     {
       "word": "Autodeterminación",
-      "meaning": "Imposición del principio del más fuerte bajo terminología identitaria"
+      "meaning": "Prepotencia del más fuerte disfrazada de uniformidad nacional colectivista"
     },
     {
       "word": "Seguridad",
-      "meaning": "Estigmatización colectiva e intensificación punitiva sobre colectivos vulnerables"
+      "meaning": "Criminalización indiscriminada de colectivos vulnerables y erosión de las garantías jurídicas"
     },
     {
-      "word": "Voluntad popular",
-      "meaning": "Atribución exclusiva de representatividad por parte de minorías radicalizadas frente a la mayoría cívica"
+      "word": "Voluntad del pueblo",
+      "meaning": "Pretensión autoritaria de monopolizar la representatividad frente a la mayoría plural"
     },
     {
       "word": "Reforma",
-      "meaning": "Desmantelamiento programado de los contrapesos judiciales e institucionales"
+      "meaning": "Desmantelamiento sistemático de las garantías laborales, del salario mínimo y del bienestar social"
     },
     {
       "word": "Transparencia",
-      "meaning": "Difusión premeditada de contenidos falsos para erosionar la confianza institucional"
+      "meaning": "Campañas planificadas de desinformación destinadas a menoscabar la confianza institucional"
     },
     {
-      "word": "Firmeza",
-      "meaning": "Modo de gobierno autoritario en sustitución de los mecanismos de concertación democrática"
+      "word": "Fuerza",
+      "meaning": "Liderazgo de corte autoritario, intimidación y desprecio por el acuerdo democrático dialogado"
     },
     {
       "word": "Verdad",
-      "meaning": "Consagración de los constructos propagandísticos de la organización"
+      "meaning": "Propaganda conspiranoica concebida para sembrar polarización y hostilidad social"
     }
   ]
 }
