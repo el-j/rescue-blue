@@ -38,19 +38,6 @@ export function MascotSection({ lang }: MascotSectionProps) {
                 className="w-full h-auto object-cover max-h-[460px] transition-transform duration-500 group-hover:scale-[1.02]"
                 loading="lazy"
               />
-
-              {/* Floating Badge Overlay */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-2 p-3 bg-[var(--bg-primary)]/90 backdrop-blur-md border border-[var(--border)] shadow-md text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="font-bold text-[var(--text-primary)]">
-                    {selectedPhoto === 'stickers'
-                      ? (isDe ? 'Echte Sticker & Patches auf Schneidematte' : 'Real stickers & patches')
-                      : (isDe ? 'Bestickte Aufnäher mit Kettelrand' : 'Embroidered patches with merrowed border')}
-                  </span>
-                </div>
-                <span className="text-[var(--text-muted)] text-[11px] hidden sm:inline">100% Handfest</span>
-              </div>
             </div>
 
             {/* Photo Switcher Buttons */}

@@ -93,7 +93,7 @@ export function HeroSection({
                     »Nook nook, bluu!« 🏳️‍🌈
                   </p>
                   <p className="text-[10px] text-[var(--text-muted)] font-medium">
-                    Maskottchen & Soli-Patch
+                    {t.heroMascotBadge || 'Maskottchen & Soli-Patch'}
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export function HeroSection({
                   href="#maskottchen"
                   className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider"
                 >
-                  <span>Sticker & Patches ansehen</span>
+                  <span>{t.heroMascotLink || 'Sticker & Patches ansehen'}</span>
                   <ArrowUpRight size={13} />
                 </a>
               </div>
