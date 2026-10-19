@@ -1,26 +1,26 @@
-import { useEffect } from 'react'
-import { Check, Copy, Download, X } from 'lucide-react'
-import { useClipboard } from '../hooks/useClipboard'
-import type { Translation } from '../i18n'
+import { useEffect } from "react";
+import { Check, Copy, Download, X } from "lucide-react";
+import { useClipboard } from "../hooks/useClipboard";
+import type { Translation } from "../i18n";
 
-const QR_CODE_URL = `${import.meta.env.BASE_URL}petition-qrcode.png`
-const SHARE_LINK = 'https://change.org/rette-blau'
+const QR_CODE_URL = `${import.meta.env.BASE_URL}petition-qrcode.png`;
+const SHARE_LINK = "https://change.org/rette-blau";
 
 interface ShareModalProps {
-  t: Translation
-  onClose: () => void
+  t: Translation;
+  onClose: () => void;
 }
 
 export function ShareModal({ t, onClose }: ShareModalProps) {
-  const { isCopied, copy } = useClipboard()
+  const { isCopied, copy } = useClipboard();
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') onClose()
+      if (e.key === "Escape") onClose();
     }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [onClose])
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
 
   return (
     <div
@@ -40,8 +40,12 @@ export function ShareModal({ t, onClose }: ShareModalProps) {
           <X size={18} />
         </button>
 
-        <h2 className="mb-1 text-center text-lg font-bold text-white">{t.shareTitle}</h2>
-        <p className="mb-4 text-center text-xs text-neutral-400">{t.shareSubtitle}</p>
+        <h2 className="mb-1 text-center text-lg font-bold text-white">
+          {t.shareTitle}
+        </h2>
+        <p className="mb-4 text-center text-xs text-neutral-400">
+          {t.shareSubtitle}
+        </p>
 
         <img
           src={QR_CODE_URL}
@@ -50,14 +54,20 @@ export function ShareModal({ t, onClose }: ShareModalProps) {
         />
 
         <div className="mt-4 flex items-center gap-2 rounded-lg bg-neutral-800 px-3 py-2">
-          <span className="flex-1 truncate text-sm text-blue-400">{SHARE_LINK}</span>
+          <span className="flex-1 truncate text-sm text-blue-400">
+            {SHARE_LINK}
+          </span>
           <button
             onClick={() => copy(SHARE_LINK)}
             className="shrink-0 rounded p-1 text-neutral-400 transition-colors hover:text-white"
             aria-label={t.shareCopyLink}
             type="button"
           >
-            {isCopied ? <Check size={15} className="text-emerald-400" /> : <Copy size={15} />}
+            {isCopied ? (
+              <Check size={15} className="text-emerald-400" />
+            ) : (
+              <Copy size={15} />
+            )}
           </button>
         </div>
 
@@ -71,5 +81,5 @@ export function ShareModal({ t, onClose }: ShareModalProps) {
         </a>
       </div>
     </div>
-  )
+  );
 }

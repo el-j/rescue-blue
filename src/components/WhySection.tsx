@@ -1,4 +1,4 @@
-import type { Translation } from '../i18n'
+import type { Translation } from "../i18n";
 
 export function WhySection({ t }: { t: Translation }) {
   return (
@@ -22,7 +22,9 @@ export function WhySection({ t }: { t: Translation }) {
         <article className="p-6 md:p-8 flex flex-col justify-between">
           <div>
             <div className="flex items-baseline justify-between gap-4 mb-4 border-b border-[var(--border)] pb-3">
-              <span className="font-mono text-3xl font-black text-rose-600 dark:text-rose-400">01</span>
+              <span className="font-mono text-3xl font-black text-rose-600 dark:text-rose-400">
+                01
+              </span>
               <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
                 {t.whyCol1Tag}
               </span>
@@ -43,7 +45,9 @@ export function WhySection({ t }: { t: Translation }) {
         <article className="p-6 md:p-8 flex flex-col justify-between bg-[var(--bg-secondary)]">
           <div>
             <div className="flex items-baseline justify-between gap-4 mb-4 border-b border-[var(--border)] pb-3">
-              <span className="font-mono text-3xl font-black text-amber-600 dark:text-amber-400">02</span>
+              <span className="font-mono text-3xl font-black text-amber-600 dark:text-amber-400">
+                02
+              </span>
               <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
                 {t.whyCol2Tag}
               </span>
@@ -61,5 +65,5 @@ export function WhySection({ t }: { t: Translation }) {
         </article>
       </div>
     </section>
-  )
+  );
 }

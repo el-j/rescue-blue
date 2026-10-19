@@ -1,9 +1,9 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef } from "react";
 import {
   POLLING_API_DOCS_URL,
   POLLING_LOCKED_INSTITUTE,
   getDefaultPollingBars,
-} from './polling'
+} from "./polling";
 import {
   AlsoSupportSection,
   BottomCta,
@@ -24,7 +24,7 @@ import {
   NewsArchiveSection,
   PolicyDangersSection,
   MascotSection,
-} from './components'
+} from "./components";
 import {
   getTranslation,
   getSayings,
@@ -35,17 +35,17 @@ import {
   getLocaleCode,
   getWordsMeaning,
   type Locale,
-} from './i18n'
-import { useAppState } from './hooks/useAppState'
-import { useAbVariant } from './hooks/useAbVariant'
-import { formatDisplayDate, formatDisplayDateTime } from './utils/format'
-import { trackConversionEvent } from './utils/analytics'
+} from "./i18n";
+import { useAppState } from "./hooks/useAppState";
+import { useAbVariant } from "./hooks/useAbVariant";
+import { formatDisplayDate, formatDisplayDateTime } from "./utils/format";
+import { trackConversionEvent } from "./utils/analytics";
 
 // Base path (no extension) — HeroSection builds responsive srcset variants from this
-const HERO_IMAGE_BASE = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text`
+const HERO_IMAGE_BASE = `${import.meta.env.BASE_URL}hero-image-rescue-blue-no-text`;
 
 interface AppProps {
-  initialLang?: Locale
+  initialLang?: Locale;
 }
 
 export default function App({ initialLang }: AppProps = {}) {
@@ -72,140 +72,163 @@ export default function App({ initialLang }: AppProps = {}) {
     handleChangeLanguage,
     handleToggleTheme,
     news,
-  } = useAppState({ initialLang })
+  } = useAppState({ initialLang });
 
-  const t = getTranslation(lang)
-  const abVariant = useAbVariant()
-  const seenFunnelSteps = useRef(new Set<string>())
-  const science = getScienceContent(lang)
-  const sayings = getSayings(lang)
-  const letters = getOpenLetters(lang)
-  const faqs = getFaqs(lang)
-  const facts = getFacts(lang)
-  const wordsMeaning = getWordsMeaning(lang)
-  const activeSnapshot = pollingSnapshot?.[selectedStateId] ?? pollingSnapshot?.['0'] ?? null
-  const pollingBars = activeSnapshot?.bars ?? getDefaultPollingBars()
-  const formattedSignatureCount = signatureCount?.toLocaleString(getLocaleCode(lang))
+  const t = getTranslation(lang);
+  const abVariant = useAbVariant();
+  const seenFunnelSteps = useRef(new Set<string>());
+  const science = getScienceContent(lang);
+  const sayings = getSayings(lang);
+  const letters = getOpenLetters(lang);
+  const faqs = getFaqs(lang);
+  const facts = getFacts(lang);
+  const wordsMeaning = getWordsMeaning(lang);
+  const activeSnapshot =
+    pollingSnapshot?.[selectedStateId] ?? pollingSnapshot?.["0"] ?? null;
+  const pollingBars = activeSnapshot?.bars ?? getDefaultPollingBars();
+  const formattedSignatureCount = signatureCount?.toLocaleString(
+    getLocaleCode(lang),
+  );
   const ctaBody = formattedSignatureCount
     ? `${t.ctaBodyPre} ${formattedSignatureCount} ${t.ctaBodyMid}`
-    : t.ctaBodyLoading
+    : t.ctaBodyLoading;
 
   const pollSourceInfo = useMemo(() => {
     if (!activeSnapshot) {
-      return `${t.demoSourceApi} · ${t.demoSourceInstitute}: ${POLLING_LOCKED_INSTITUTE}`
+      return `${t.demoSourceApi} · ${t.demoSourceInstitute}: ${POLLING_LOCKED_INSTITUTE}`;
     }
 
-    const stateName = lang === 'de' ? activeSnapshot.nameDe : activeSnapshot.nameEn
-    const sourcePrefix = stateName ? `${t.demoSourceApi} (${stateName})` : t.demoSourceApi
+    const stateName =
+      lang === "de" ? activeSnapshot.nameDe : activeSnapshot.nameEn;
+    const sourcePrefix = stateName
+      ? `${t.demoSourceApi} (${stateName})`
+      : t.demoSourceApi;
 
     const segments = [
       sourcePrefix,
       `${t.demoSourceInstitute}: ${activeSnapshot.instituteName}`,
       `${t.demoSourceDate}: ${formatDisplayDate(activeSnapshot.surveyDate, lang)}`,
-    ]
+    ];
 
-    if (activeSnapshot.surveyPeriod?.start && activeSnapshot.surveyPeriod?.end) {
+    if (
+      activeSnapshot.surveyPeriod?.start &&
+      activeSnapshot.surveyPeriod?.end
+    ) {
       segments.push(
         `${t.demoSourceFieldwork}: ${formatDisplayDate(activeSnapshot.surveyPeriod.start, lang)} - ${formatDisplayDate(activeSnapshot.surveyPeriod.end, lang)}`,
-      )
+      );
     }
 
     if (activeSnapshot.surveyedPersons) {
-      segments.push(`${t.demoSourceSample}: n=${Math.round(activeSnapshot.surveyedPersons)}`)
+      segments.push(
+        `${t.demoSourceSample}: n=${Math.round(activeSnapshot.surveyedPersons)}`,
+      );
     }
 
     if (activeSnapshot.methodName) {
-      segments.push(`${t.demoSourceMethod}: ${activeSnapshot.methodName}`)
+      segments.push(`${t.demoSourceMethod}: ${activeSnapshot.methodName}`);
     }
 
-    return segments.join(' · ')
-  }, [lang, activeSnapshot, t.demoSourceApi, t.demoSourceDate, t.demoSourceFieldwork, t.demoSourceInstitute, t.demoSourceMethod, t.demoSourceSample])
+    return segments.join(" · ");
+  }, [
+    lang,
+    activeSnapshot,
+    t.demoSourceApi,
+    t.demoSourceDate,
+    t.demoSourceFieldwork,
+    t.demoSourceInstitute,
+    t.demoSourceMethod,
+    t.demoSourceSample,
+  ]);
 
   const pollingStandInfo = activeSnapshot?.apiUpdatedAt
     ? formatDisplayDateTime(activeSnapshot.apiUpdatedAt, lang)
-    : t.demoSourceFallback
+    : t.demoSourceFallback;
 
-  const heroHeadline = abVariant === 'B' ? t.heroH1Alt : t.heroH1
-  const heroSubline = abVariant === 'B' ? t.heroSubAlt : t.heroSub
-  const heroCtaLabel = abVariant === 'B' ? t.heroImgText2Alt : t.heroImgText2
-  const ctaButtonLabel = abVariant === 'B' ? t.ctaBtnAlt : t.ctaBtn
+  const heroHeadline = abVariant === "B" ? t.heroH1Alt : t.heroH1;
+  const heroSubline = abVariant === "B" ? t.heroSubAlt : t.heroSub;
+  const heroCtaLabel = abVariant === "B" ? t.heroImgText2Alt : t.heroImgText2;
+  const ctaButtonLabel = abVariant === "B" ? t.ctaBtnAlt : t.ctaBtn;
 
   useEffect(() => {
-    trackConversionEvent('page_view', {
+    trackConversionEvent("page_view", {
       lang,
       variant: abVariant,
-      path: typeof window !== 'undefined' ? window.location.pathname : '/',
-    })
-    trackConversionEvent('ab_impression', {
-      experiment: 'hero-cta-copy-v1',
+      path: typeof window !== "undefined" ? window.location.pathname : "/",
+    });
+    trackConversionEvent("ab_impression", {
+      experiment: "hero-cta-copy-v1",
       variant: abVariant,
-    })
-  }, [lang, abVariant])
+    });
+  }, [lang, abVariant]);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || typeof document === 'undefined') {
-      return
+    if (typeof window === "undefined" || typeof document === "undefined") {
+      return;
     }
-    if (typeof window.IntersectionObserver === 'undefined') {
-      return
+    if (typeof window.IntersectionObserver === "undefined") {
+      return;
     }
 
     const tracked: Array<[string, string]> = [
-      ['header.hero-fullscreen', 'hero_visible'],
-      ['#transparenz', 'trust_visible'],
-      ['#editorial-policy', 'editorial_policy_visible'],
-      ['#warum', 'why_visible'],
-      ['#risiken', 'risks_visible'],
-      ['#hintergrund', 'science_visible'],
-      ['#brief', 'open_letter_visible'],
-      ['#faq', 'faq_visible'],
-      ['#kultur', 'culture_visible'],
-    ]
+      ["header.hero-fullscreen", "hero_visible"],
+      ["#transparenz", "trust_visible"],
+      ["#editorial-policy", "editorial_policy_visible"],
+      ["#warum", "why_visible"],
+      ["#risiken", "risks_visible"],
+      ["#hintergrund", "science_visible"],
+      ["#brief", "open_letter_visible"],
+      ["#faq", "faq_visible"],
+      ["#kultur", "culture_visible"],
+    ];
 
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (!entry.isIntersecting) continue
-          const step = entry.target.getAttribute('data-funnel-step')
-          if (!step || seenFunnelSteps.current.has(step)) continue
-          seenFunnelSteps.current.add(step)
-          trackConversionEvent('funnel_step', { step, variant: abVariant, lang })
+          if (!entry.isIntersecting) continue;
+          const step = entry.target.getAttribute("data-funnel-step");
+          if (!step || seenFunnelSteps.current.has(step)) continue;
+          seenFunnelSteps.current.add(step);
+          trackConversionEvent("funnel_step", {
+            step,
+            variant: abVariant,
+            lang,
+          });
         }
       },
       { threshold: 0.35 },
-    )
+    );
 
     for (const [selector, step] of tracked) {
-      const element = document.querySelector(selector)
+      const element = document.querySelector(selector);
       if (element) {
-        element.setAttribute('data-funnel-step', step)
-        observer.observe(element)
+        element.setAttribute("data-funnel-step", step);
+        observer.observe(element);
       }
     }
 
-    return () => observer.disconnect()
-  }, [abVariant, lang])
+    return () => observer.disconnect();
+  }, [abVariant, lang]);
 
   const handleTrackedLanguageChange = (newLang: Locale) => {
-    trackConversionEvent('language_change', {
+    trackConversionEvent("language_change", {
       from: lang,
       to: newLang,
       variant: abVariant,
-    })
-    handleChangeLanguage(newLang)
-  }
+    });
+    handleChangeLanguage(newLang);
+  };
 
   const handleTrackedCtaClick = (surface: string) => {
-    trackConversionEvent('cta_click', {
+    trackConversionEvent("cta_click", {
       surface,
       variant: abVariant,
       lang,
-    })
-  }
+    });
+  };
 
   return (
     <div className="min-h-screen overflow-x-clip bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-blue-500/20 selection:text-blue-500">
-
       <SiteHeader
         lang={lang}
         t={t}
@@ -213,7 +236,7 @@ export default function App({ initialLang }: AppProps = {}) {
         theme={theme}
         onChangeLanguage={handleTrackedLanguageChange}
         onToggleTheme={handleToggleTheme}
-        onSignCtaClick={() => handleTrackedCtaClick('header_nav')}
+        onSignCtaClick={() => handleTrackedCtaClick("header_nav")}
       />
       <HeroSection
         t={t}
@@ -224,11 +247,11 @@ export default function App({ initialLang }: AppProps = {}) {
         formattedSignatureCount={formattedSignatureCount}
         isLoadingSignatures={isLoadingSignatures}
         isLive={isLive}
-        onCtaClick={() => handleTrackedCtaClick('hero')}
+        onCtaClick={() => handleTrackedCtaClick("hero")}
       />
 
       <NewsSpotlightSection lang={lang} t={t} news={news} />
-      
+
       <main className="mx-auto mt-6 grid max-w-6xl grid-cols-1 gap-8 px-4 pb-16 md:px-6 lg:mt-8 lg:grid-cols-12">
         <div className="space-y-12 lg:col-span-8">
           <WhySection t={t} />
@@ -240,15 +263,17 @@ export default function App({ initialLang }: AppProps = {}) {
             sourceInfo={pollSourceInfo}
             isLivePollData={isLivePollingData}
             standInfo={pollingStandInfo}
-            sourceUrl={activeSnapshot?.sourceUrl ?? 'https://dawum.de/Bundestag/'}
+            sourceUrl={
+              activeSnapshot?.sourceUrl ?? "https://dawum.de/Bundestag/"
+            }
             sourceMethodUrl={POLLING_API_DOCS_URL}
             sandboxState={sandboxState}
             onCycleSandboxState={() => {
               setSandboxState((current) => {
-                if (current === 'default') return 'brown'
-                if (current === 'brown') return 'dream'
-                return 'default'
-              })
+                if (current === "default") return "brown";
+                if (current === "brown") return "dream";
+                return "default";
+              });
             }}
             onSetSandboxState={setSandboxState}
             selectedStateId={selectedStateId}
@@ -264,8 +289,6 @@ export default function App({ initialLang }: AppProps = {}) {
             onToggleObjection={setOpenObjection}
           />
 
-
-
           <CultureSection
             t={t}
             sayings={sayings}
@@ -273,14 +296,9 @@ export default function App({ initialLang }: AppProps = {}) {
             onChangeTab={setActiveTab}
           />
 
-          <RhetoricalDictionarySection t={t} entries={wordsMeaning} />    
-          
+          <RhetoricalDictionarySection t={t} entries={wordsMeaning} />
 
-          <NewsArchiveSection
-            lang={lang}
-            news={news.slice(4)}
-          />
-
+          <NewsArchiveSection lang={lang} news={news.slice(4)} />
 
           <OpenLetterSection
             t={t}
@@ -295,7 +313,6 @@ export default function App({ initialLang }: AppProps = {}) {
             openFaq={openFaq}
             onToggleFaq={setOpenFaq}
           />
-
         </div>
 
         <SidebarPanels
@@ -305,7 +322,7 @@ export default function App({ initialLang }: AppProps = {}) {
           formattedSignatureCount={formattedSignatureCount}
           isLoadingSignatures={isLoadingSignatures}
           facts={facts}
-          onCtaClick={() => handleTrackedCtaClick('sidebar')}
+          onCtaClick={() => handleTrackedCtaClick("sidebar")}
         />
       </main>
 
@@ -313,8 +330,13 @@ export default function App({ initialLang }: AppProps = {}) {
       <EditorialPolicySection t={t} />
       <MascotSection lang={lang} t={t} />
       <AlsoSupportSection lang={lang} t={t} />
-      <BottomCta t={t} ctaBody={ctaBody} ctaLabel={ctaButtonLabel} onCtaClick={() => handleTrackedCtaClick('bottom')} />
+      <BottomCta
+        t={t}
+        ctaBody={ctaBody}
+        ctaLabel={ctaButtonLabel}
+        onCtaClick={() => handleTrackedCtaClick("bottom")}
+      />
       <SiteFooter t={t} />
     </div>
-  )
+  );
 }

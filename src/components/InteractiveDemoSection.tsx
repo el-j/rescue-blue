@@ -1,25 +1,25 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
-import { Paintbrush, BarChart2, ShieldAlert, Sparkles } from 'lucide-react'
-import type { PollBar, ParliamentsSnapshot } from '../polling'
-import type { Locale, Translation } from '../i18n'
-import { DemoSourceInfo } from './demo/DemoSourceInfo'
-import { GermanyMap } from './demo/GermanyMap'
+import { useState, useEffect, useRef, useCallback } from "react";
+import { Paintbrush, BarChart2, ShieldAlert, Sparkles } from "lucide-react";
+import type { PollBar, ParliamentsSnapshot } from "../polling";
+import type { Locale, Translation } from "../i18n";
+import { DemoSourceInfo } from "./demo/DemoSourceInfo";
+import { GermanyMap } from "./demo/GermanyMap";
 
 interface DemoProps {
-  lang: Locale
-  t: Translation
-  bars: PollBar[]
-  sourceInfo: string
-  isLivePollData: boolean
-  standInfo: string
-  sourceUrl: string
-  sourceMethodUrl: string
-  sandboxState: 'default' | 'brown' | 'dream'
-  onCycleSandboxState: () => void
-  onSetSandboxState?: (state: 'default' | 'brown' | 'dream') => void
-  selectedStateId: string
-  onSelectStateId: (id: string) => void
-  pollingSnapshot: ParliamentsSnapshot | null
+  lang: Locale;
+  t: Translation;
+  bars: PollBar[];
+  sourceInfo: string;
+  isLivePollData: boolean;
+  standInfo: string;
+  sourceUrl: string;
+  sourceMethodUrl: string;
+  sandboxState: "default" | "brown" | "dream";
+  onCycleSandboxState: () => void;
+  onSetSandboxState?: (state: "default" | "brown" | "dream") => void;
+  selectedStateId: string;
+  onSelectStateId: (id: string) => void;
+  pollingSnapshot: ParliamentsSnapshot | null;
 }
 
 export function InteractiveDemoSection({
@@ -38,178 +38,190 @@ export function InteractiveDemoSection({
   onSelectStateId,
   pollingSnapshot,
 }: DemoProps) {
-  const isBrownActive = sandboxState === 'brown' || sandboxState === 'dream'
-  const isDreamActive = sandboxState === 'dream'
-  const [showComparison, setShowComparison] = useState(false)
-  const [dreamProgress, setDreamProgress] = useState<number | null>(null)
-  const hasStartedDreamRef = useRef(false)
-  const sandboxRef = useRef<HTMLDivElement>(null)
-  const [isSandboxInView, setIsSandboxInView] = useState(true)
-  const [toastMessage, setToastMessage] = useState<string | null>(null)
+  const isBrownActive = sandboxState === "brown" || sandboxState === "dream";
+  const isDreamActive = sandboxState === "dream";
+  const [showComparison, setShowComparison] = useState(false);
+  const [dreamProgress, setDreamProgress] = useState<number | null>(null);
+  const hasStartedDreamRef = useRef(false);
+  const sandboxRef = useRef<HTMLDivElement>(null);
+  const [isSandboxInView, setIsSandboxInView] = useState(true);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
-      return
+    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
+      return;
     }
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsSandboxInView(entry.isIntersecting)
+        setIsSandboxInView(entry.isIntersecting);
       },
-      { threshold: 0.1 }
-    )
+      { threshold: 0.1 },
+    );
     if (sandboxRef.current) {
-      observer.observe(sandboxRef.current)
+      observer.observe(sandboxRef.current);
     }
-    return () => observer.disconnect()
-  }, [])
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (toastMessage) {
       const timer = setTimeout(() => {
-        setToastMessage(null)
-      }, 4500)
-      return () => clearTimeout(timer)
+        setToastMessage(null);
+      }, 4500);
+      return () => clearTimeout(timer);
     }
-  }, [toastMessage])
+  }, [toastMessage]);
 
   const handleCycleSandboxState = () => {
-    let msg: string
-    if (sandboxState === 'default') {
-      msg = t.demoToastPlurality
-    } else if (sandboxState === 'brown') {
-      msg = t.demoToastDream
+    let msg: string;
+    if (sandboxState === "default") {
+      msg = t.demoToastPlurality;
+    } else if (sandboxState === "brown") {
+      msg = t.demoToastDream;
     } else {
-      msg = t.demoToastDefault
+      msg = t.demoToastDefault;
     }
-    onCycleSandboxState()
-    setToastMessage(msg)
-  }
+    onCycleSandboxState();
+    setToastMessage(msg);
+  };
 
-  const handleSelectState = (state: 'default' | 'brown' | 'dream') => {
-    if (state === sandboxState) return
-    let msg: string
-    if (state === 'brown') {
-      msg = t.demoToastPlurality
-    } else if (state === 'dream') {
-      msg = t.demoToastDream
+  const handleSelectState = (state: "default" | "brown" | "dream") => {
+    if (state === sandboxState) return;
+    let msg: string;
+    if (state === "brown") {
+      msg = t.demoToastPlurality;
+    } else if (state === "dream") {
+      msg = t.demoToastDream;
     } else {
-      msg = t.demoToastDefault
+      msg = t.demoToastDefault;
     }
 
     if (onSetSandboxState) {
-      onSetSandboxState(state)
+      onSetSandboxState(state);
     } else {
-      onCycleSandboxState()
+      onCycleSandboxState();
     }
-    setToastMessage(msg)
-  }
+    setToastMessage(msg);
+  };
 
-  const afdBar = bars.find((bar) => bar.isAfd)
-  const originalAfdPct = afdBar?.pct ?? 0
+  const afdBar = bars.find((bar) => bar.isAfd);
+  const originalAfdPct = afdBar?.pct ?? 0;
 
-  const cduBar = bars.find((bar) => bar.key === 'cdu')
-  const originalCduPct = cduBar?.pct ?? 0
+  const cduBar = bars.find((bar) => bar.key === "cdu");
+  const originalCduPct = cduBar?.pct ?? 0;
 
-  const totalDuration = 60000 // 60 seconds (1 minute) in milliseconds
+  const totalDuration = 60000; // 60 seconds (1 minute) in milliseconds
 
   // When dream state is activated, start a requestAnimationFrame loop that updates progress based on system time
   useEffect(() => {
-    let animationFrameId: number | null = null
-    let startDelayId: ReturnType<typeof setTimeout> | null = null
+    let animationFrameId: number | null = null;
+    let startDelayId: ReturnType<typeof setTimeout> | null = null;
 
     if (isDreamActive && !hasStartedDreamRef.current) {
-      hasStartedDreamRef.current = true
-      setDreamProgress(0)
+      hasStartedDreamRef.current = true;
+      setDreamProgress(0);
 
       // Small delay before starting the drain for dramatic effect
       startDelayId = setTimeout(() => {
-        const startTime = Date.now()
+        const startTime = Date.now();
 
         const tick = () => {
-          const elapsed = Date.now() - startTime
-          const progress = Math.min(elapsed / totalDuration, 1)
-          setDreamProgress(progress)
+          const elapsed = Date.now() - startTime;
+          const progress = Math.min(elapsed / totalDuration, 1);
+          setDreamProgress(progress);
 
           if (progress < 1) {
-            animationFrameId = requestAnimationFrame(tick)
+            animationFrameId = requestAnimationFrame(tick);
           }
-        }
-        animationFrameId = requestAnimationFrame(tick)
-      }, 600)
+        };
+        animationFrameId = requestAnimationFrame(tick);
+      }, 600);
     }
 
     return () => {
-      if (startDelayId) clearTimeout(startDelayId)
-      if (animationFrameId) cancelAnimationFrame(animationFrameId)
+      if (startDelayId) clearTimeout(startDelayId);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
 
       if (!isDreamActive) {
-        hasStartedDreamRef.current = false
-        setDreamProgress(null)
+        hasStartedDreamRef.current = false;
+        setDreamProgress(null);
       }
-    }
-  }, [isDreamActive])
+    };
+  }, [isDreamActive]);
 
   // Compute the displayed percentages
-  let displayBarsRaw = bars.map((bar) => ({ ...bar }))
+  let displayBarsRaw = bars.map((bar) => ({ ...bar }));
 
   if (isDreamActive && dreamProgress !== null) {
-    const progress = dreamProgress
+    const progress = dreamProgress;
 
     if (progress < 0.8) {
       // Normal drain transition logic up to progress 0.8
-      const displayAfdPct = originalAfdPct - (originalAfdPct - 0.5) * progress
-      let displayCduPct = originalCduPct
+      const displayAfdPct = originalAfdPct - (originalAfdPct - 0.5) * progress;
+      let displayCduPct = originalCduPct;
       if (originalCduPct > 20) {
-        displayCduPct = originalCduPct - (originalCduPct - 20) * progress
+        displayCduPct = originalCduPct - (originalCduPct - 20) * progress;
       }
 
-      const drainedPoints = (originalAfdPct - displayAfdPct) + (originalCduPct - displayCduPct)
-      const recipientKeys = new Set(['spd', 'greens', 'left', 'others'])
+      const drainedPoints =
+        originalAfdPct - displayAfdPct + (originalCduPct - displayCduPct);
+      const recipientKeys = new Set(["spd", "greens", "left", "others"]);
       const recipientTotal = bars
         .filter((bar) => recipientKeys.has(bar.key))
-        .reduce((sum, bar) => sum + bar.pct, 0)
+        .reduce((sum, bar) => sum + bar.pct, 0);
 
       displayBarsRaw = bars.map((bar) => {
         if (bar.isAfd) {
-          return { ...bar, pct: displayAfdPct }
+          return { ...bar, pct: displayAfdPct };
         }
-        if (bar.key === 'cdu') {
-          return { ...bar, pct: displayCduPct }
+        if (bar.key === "cdu") {
+          return { ...bar, pct: displayCduPct };
         }
-        if (drainedPoints > 0 && recipientKeys.has(bar.key) && recipientTotal > 0) {
-          const share = bar.pct / recipientTotal
-          return { ...bar, pct: bar.pct + drainedPoints * share }
+        if (
+          drainedPoints > 0 &&
+          recipientKeys.has(bar.key) &&
+          recipientTotal > 0
+        ) {
+          const share = bar.pct / recipientTotal;
+          return { ...bar, pct: bar.pct + drainedPoints * share };
         }
-        return { ...bar }
-      })
+        return { ...bar };
+      });
     } else {
       // Transition from progress 0.8 state to final target state at progress 1.0
       // 1. Calculate Phase 1 state at progress = 0.8
-      const displayAfdPctAt08 = originalAfdPct - (originalAfdPct - 0.5) * 0.8
-      let displayCduPctAt08 = originalCduPct
+      const displayAfdPctAt08 = originalAfdPct - (originalAfdPct - 0.5) * 0.8;
+      let displayCduPctAt08 = originalCduPct;
       if (originalCduPct > 20) {
-        displayCduPctAt08 = originalCduPct - (originalCduPct - 20) * 0.8
+        displayCduPctAt08 = originalCduPct - (originalCduPct - 20) * 0.8;
       }
 
-      const drainedPointsAt08 = (originalAfdPct - displayAfdPctAt08) + (originalCduPct - displayCduPctAt08)
-      const recipientKeys = new Set(['spd', 'greens', 'left', 'others'])
+      const drainedPointsAt08 =
+        originalAfdPct -
+        displayAfdPctAt08 +
+        (originalCduPct - displayCduPctAt08);
+      const recipientKeys = new Set(["spd", "greens", "left", "others"]);
       const recipientTotal = bars
         .filter((bar) => recipientKeys.has(bar.key))
-        .reduce((sum, bar) => sum + bar.pct, 0)
+        .reduce((sum, bar) => sum + bar.pct, 0);
 
       const p1Bars = bars.map((bar) => {
         if (bar.isAfd) {
-          return { ...bar, pct: displayAfdPctAt08 }
+          return { ...bar, pct: displayAfdPctAt08 };
         }
-        if (bar.key === 'cdu') {
-          return { ...bar, pct: displayCduPctAt08 }
+        if (bar.key === "cdu") {
+          return { ...bar, pct: displayCduPctAt08 };
         }
-        if (drainedPointsAt08 > 0 && recipientKeys.has(bar.key) && recipientTotal > 0) {
-          const share = bar.pct / recipientTotal
-          return { ...bar, pct: bar.pct + drainedPointsAt08 * share }
+        if (
+          drainedPointsAt08 > 0 &&
+          recipientKeys.has(bar.key) &&
+          recipientTotal > 0
+        ) {
+          const share = bar.pct / recipientTotal;
+          return { ...bar, pct: bar.pct + drainedPointsAt08 * share };
         }
-        return { ...bar }
-      })
+        return { ...bar };
+      });
 
       // 2. Define target percentages at progress = 1.0 (CDU at 10%, SPD at 10%, Greens & Left at 35% each, Others at 10%)
       const targetMap: Record<string, number> = {
@@ -219,59 +231,66 @@ export function InteractiveDemoSection({
         greens: 35.0,
         left: 35.0,
         others: 10.0,
-      }
+      };
 
       // 3. Interpolate between p1Bars and targetMap
-      const p2 = (progress - 0.8) / 0.2 // goes from 0.0 to 1.0
+      const p2 = (progress - 0.8) / 0.2; // goes from 0.0 to 1.0
       displayBarsRaw = p1Bars.map((bar) => {
-        const startVal = bar.pct
-        const endVal = targetMap[bar.key] ?? bar.pct
+        const startVal = bar.pct;
+        const endVal = targetMap[bar.key] ?? bar.pct;
         return {
           ...bar,
           pct: startVal + (endVal - startVal) * p2,
-        }
-      })
+        };
+      });
     }
   }
 
-  const displayAfdPct = displayBarsRaw.find((b) => b.isAfd)?.pct ?? originalAfdPct
-  const cduBrownFactor = isDreamActive ? Math.min(Math.max((5.0 - displayAfdPct) / 5.0, 0), 1) : 0
+  const displayAfdPct =
+    displayBarsRaw.find((b) => b.isAfd)?.pct ?? originalAfdPct;
+  const cduBrownFactor = isDreamActive
+    ? Math.min(Math.max((5.0 - displayAfdPct) / 5.0, 0), 1)
+    : 0;
 
   // Round values to 1 decimal place
   const displayBarsAll = displayBarsRaw.map((bar) => {
-    return { ...bar, pct: Math.round(bar.pct * 10) / 10 }
-  })
+    return { ...bar, pct: Math.round(bar.pct * 10) / 10 };
+  });
 
   // Adjust for rounding errors to ensure the sum of displayBarsAll matches targetSum exactly
-  const currentSum = Math.round(displayBarsAll.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
-  const targetSum = Math.round(bars.reduce((sum, b) => sum + b.pct, 0) * 10) / 10
-  const diff = Math.round((targetSum - currentSum) * 10) / 10
+  const currentSum =
+    Math.round(displayBarsAll.reduce((sum, b) => sum + b.pct, 0) * 10) / 10;
+  const targetSum =
+    Math.round(bars.reduce((sum, b) => sum + b.pct, 0) * 10) / 10;
+  const diff = Math.round((targetSum - currentSum) * 10) / 10;
 
   if (diff !== 0) {
-    const othersBar = displayBarsAll.find((b) => b.key === 'others')
+    const othersBar = displayBarsAll.find((b) => b.key === "others");
     if (othersBar) {
-      othersBar.pct = Math.round((othersBar.pct + diff) * 10) / 10
+      othersBar.pct = Math.round((othersBar.pct + diff) * 10) / 10;
     }
   }
 
   // Filter out parties if their percentage is 0 (at the end of dream state, keeping others)
-  const displayBars = displayBarsAll.filter((bar) => !(bar.pct <= 0 && bar.key !== 'others'))
+  const displayBars = displayBarsAll.filter(
+    (bar) => !(bar.pct <= 0 && bar.key !== "others"),
+  );
 
-  const maxPct = Math.max(...displayBars.map((bar) => bar.pct), 1)
+  const maxPct = Math.max(...displayBars.map((bar) => bar.pct), 1);
 
   // Compute "all others" combined percentage (from display bars, so it includes redistributed values)
   const othersCombinedPct = displayBars
     .filter((bar) => !bar.isAfd)
-    .reduce((sum, bar) => sum + bar.pct, 0)
+    .reduce((sum, bar) => sum + bar.pct, 0);
 
   // For the comparison view, the max needs to account for the combined bar
-  const comparisonMax = Math.max(othersCombinedPct, displayAfdPct, 1)
+  const comparisonMax = Math.max(othersCombinedPct, displayAfdPct, 1);
 
-  const isAfdBrown = isBrownActive || isDreamActive
+  const isAfdBrown = isBrownActive || isDreamActive;
 
   const toggleComparison = useCallback(() => {
-    setShowComparison((prev) => !prev)
-  }, [])
+    setShowComparison((prev) => !prev);
+  }, []);
 
   return (
     <section ref={sandboxRef} className="p-6 md:p-8 space-y-6">
@@ -280,12 +299,17 @@ export function InteractiveDemoSection({
           <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400">
             <span>02 / INTERAKTIVE ANALYSE</span>
           </div>
-          <span className="text-[10px] text-[var(--text-muted)]">{t.demoSandbox}</span>
+          <span className="text-[10px] text-[var(--text-muted)]">
+            {t.demoSandbox}
+          </span>
         </div>
         <h2 className="mb-2 flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
-          <Paintbrush size={22} className="text-blue-600 dark:text-blue-400" /> {t.demoH2}
+          <Paintbrush size={22} className="text-blue-600 dark:text-blue-400" />{" "}
+          {t.demoH2}
         </h2>
-        <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{t.demoDesc}</p>
+        <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+          {t.demoDesc}
+        </p>
       </div>
       <DemoSourceInfo
         t={t}
@@ -297,7 +321,6 @@ export function InteractiveDemoSection({
       />
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:items-stretch mt-4">
-        
         {/* Left Column: Germany Map & state details */}
         <div className="md:col-span-5 flex flex-col items-center gap-4 h-full">
           <div className="text-center md:text-left w-full space-y-1">
@@ -323,7 +346,6 @@ export function InteractiveDemoSection({
 
         {/* Right Column: Bar Chart & Controls */}
         <div className="md:col-span-7 flex flex-col h-full justify-between space-y-6 md:border-l md:border-[var(--border)] md:pl-6">
-          
           {/* Interactive Sandbox Controls (Hero Section Toolbar over Chart) */}
           <div className="flex flex-col gap-3 border border-[var(--border)] bg-[var(--bg-secondary)] p-3 md:p-4">
             <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
@@ -339,14 +361,25 @@ export function InteractiveDemoSection({
                 type="button"
               >
                 <span>
-                  {sandboxState === 'default'
+                  {sandboxState === "default"
                     ? t.demoModeDefault
-                    : sandboxState === 'brown'
-                    ? t.demoModeWarning
-                    : t.demoModeDream}
+                    : sandboxState === "brown"
+                      ? t.demoModeWarning
+                      : t.demoModeDream}
                 </span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
-                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="animate-pulse"
+                >
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
                 </svg>
               </button>
             </div>
@@ -355,11 +388,11 @@ export function InteractiveDemoSection({
               {/* Sandbox Modes Selector */}
               <div className="flex-grow grid grid-cols-3 gap-1 bg-[var(--bg-primary)] p-1 border border-[var(--border)]">
                 <button
-                  onClick={() => handleSelectState('default')}
+                  onClick={() => handleSelectState("default")}
                   className={`py-2 px-1 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer ${
-                    sandboxState === 'default'
-                      ? 'bg-blue-600/15 text-blue-500 font-extrabold border border-blue-500/40'
-                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
+                    sandboxState === "default"
+                      ? "bg-blue-600/15 text-blue-500 font-extrabold border border-blue-500/40"
+                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent"
                   }`}
                   title={t.demoModeDefault}
                   aria-label={t.demoModeDefault}
@@ -368,11 +401,11 @@ export function InteractiveDemoSection({
                   <BarChart2 size={16} />
                 </button>
                 <button
-                  onClick={() => handleSelectState('brown')}
+                  onClick={() => handleSelectState("brown")}
                   className={`py-2 px-1 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer ${
-                    sandboxState === 'brown'
-                      ? 'bg-amber-600/15 text-amber-500 font-extrabold border border-amber-500/40'
-                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
+                    sandboxState === "brown"
+                      ? "bg-amber-600/15 text-amber-500 font-extrabold border border-amber-500/40"
+                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent"
                   }`}
                   title={t.demoModeWarning}
                   aria-label={t.demoModeWarning}
@@ -381,11 +414,11 @@ export function InteractiveDemoSection({
                   <ShieldAlert size={16} />
                 </button>
                 <button
-                  onClick={() => handleSelectState('dream')}
+                  onClick={() => handleSelectState("dream")}
                   className={`py-2 px-1 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer ${
-                    sandboxState === 'dream'
-                      ? 'bg-emerald-600/15 text-emerald-500 font-extrabold border border-emerald-500/40'
-                      : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
+                    sandboxState === "dream"
+                      ? "bg-emerald-600/15 text-emerald-500 font-extrabold border border-emerald-500/40"
+                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent"
                   }`}
                   title={t.demoModeDream}
                   aria-label={t.demoModeDream}
@@ -400,14 +433,25 @@ export function InteractiveDemoSection({
                 onClick={toggleComparison}
                 className={`py-2 px-3 flex items-center justify-center gap-2 border text-xs font-bold transition-colors cursor-pointer whitespace-nowrap ${
                   showComparison
-                    ? 'bg-purple-600/15 border-purple-500/40 text-purple-400 font-extrabold'
-                    : 'bg-[var(--bg-primary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                    ? "bg-purple-600/15 border-purple-500/40 text-purple-400 font-extrabold"
+                    : "bg-[var(--bg-primary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                 }`}
                 title={t.demoToggleMajorityAria}
                 aria-label={t.demoToggleMajorityAria}
                 type="button"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={showComparison ? 'animate-pulse' : ''}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={showComparison ? "animate-pulse" : ""}
+                >
                   <rect x="5" y="4" width="4" height="16" rx="1" />
                   <rect x="15" y="10" width="4" height="10" rx="1" />
                 </svg>
@@ -433,23 +477,40 @@ export function InteractiveDemoSection({
               {showComparison ? (
                 <>
                   {/* AfD Column */}
-                  <div className="flex flex-col items-center justify-end h-full transition-all duration-500 animate-in" style={{ width: '40%' }}>
-                    <span className="mb-2 text-xs font-bold text-[var(--text-primary)]">{(displayAfdPct > 0 ? displayAfdPct : 0).toFixed(1)} %</span>
+                  <div
+                    className="flex flex-col items-center justify-end h-full transition-all duration-500 animate-in"
+                    style={{ width: "40%" }}
+                  >
+                    <span className="mb-2 text-xs font-bold text-[var(--text-primary)]">
+                      {(displayAfdPct > 0 ? displayAfdPct : 0).toFixed(1)} %
+                    </span>
                     <div
-                      className={`w-16 rounded-t-md transition-all duration-700 ${isAfdBrown ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40' : 'bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20'}`}
-                      style={{ height: `${((displayAfdPct > 0 ? displayAfdPct : 0) / comparisonMax) * 85}%` }}
+                      className={`w-16 rounded-t-md transition-all duration-700 ${isAfdBrown ? "bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40" : "bg-cyan-500 border-t-2 border-cyan-400 shadow-lg shadow-cyan-500/20"}`}
+                      style={{
+                        height: `${((displayAfdPct > 0 ? displayAfdPct : 0) / comparisonMax) * 85}%`,
+                      }}
                     />
-                    <span className={`mt-2 text-[10px] font-black tracking-wide md:text-xs ${isAfdBrown ? 'text-amber-500' : 'text-cyan-400'}`}>
+                    <span
+                      className={`mt-2 text-[10px] font-black tracking-wide md:text-xs ${isAfdBrown ? "text-amber-500" : "text-cyan-400"}`}
+                    >
                       AfD
                     </span>
                   </div>
 
                   {/* All Others Column */}
-                  <div className="flex flex-col items-center justify-end h-full transition-all duration-500 animate-in" style={{ width: '40%' }}>
-                    <span className="mb-2 text-xs font-bold text-[var(--text-primary)]">{othersCombinedPct.toFixed(1)} %</span>
+                  <div
+                    className="flex flex-col items-center justify-end h-full transition-all duration-500 animate-in"
+                    style={{ width: "40%" }}
+                  >
+                    <span className="mb-2 text-xs font-bold text-[var(--text-primary)]">
+                      {othersCombinedPct.toFixed(1)} %
+                    </span>
                     <div
                       className="w-16 rounded-t-md transition-all duration-700 rainbow-bar shadow-lg"
-                      style={{ height: `${(othersCombinedPct / comparisonMax) * 85}%`, borderTop: '2px solid rgba(255,255,255,0.5)' }}
+                      style={{
+                        height: `${(othersCombinedPct / comparisonMax) * 85}%`,
+                        borderTop: "2px solid rgba(255,255,255,0.5)",
+                      }}
                     />
                     <span className="mt-2 text-[10px] font-black tracking-wide md:text-xs rainbow-text">
                       {t.allOthersLabel}
@@ -459,25 +520,47 @@ export function InteractiveDemoSection({
               ) : (
                 displayBars.map((bar, index) => {
                   const barColor = bar.isAfd
-                    ? (isAfdBrown
-                        ? 'bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40'
-                        : bar.defaultColor)
-                    : bar.defaultColor
-                  const label = lang === 'de' ? bar.labelDe : bar.labelEn
-                  const pctLabel = Number.isInteger(bar.pct) ? String(bar.pct) : bar.pct.toFixed(1)
+                    ? isAfdBrown
+                      ? "bg-amber-900 border-t-2 border-amber-800 shadow-lg shadow-amber-950/40"
+                      : bar.defaultColor
+                    : bar.defaultColor;
+                  const label = lang === "de" ? bar.labelDe : bar.labelEn;
+                  const pctLabel = Number.isInteger(bar.pct)
+                    ? String(bar.pct)
+                    : bar.pct.toFixed(1);
 
                   return (
-                    <div key={index} className="flex flex-col items-center justify-end h-full transition-all duration-500" style={{ width: `${100 / displayBars.length}%` }}>
-                      <span className={`mb-2 text-xs font-bold ${bar.isAfd ? 'font-black text-[var(--text-primary)]' : 'text-neutral-400'}`}>{pctLabel} %</span>
+                    <div
+                      key={index}
+                      className="flex flex-col items-center justify-end h-full transition-all duration-500"
+                      style={{ width: `${100 / displayBars.length}%` }}
+                    >
+                      <span
+                        className={`mb-2 text-xs font-bold ${bar.isAfd ? "font-black text-[var(--text-primary)]" : "text-neutral-400"}`}
+                      >
+                        {pctLabel} %
+                      </span>
                       <button
-                        onClick={bar.isAfd ? () => handleCycleSandboxState() : undefined}
-                        className={`relative w-full rounded-t-md overflow-hidden transition-all duration-700 ${barColor} ${bar.isAfd ? 'cursor-pointer hover:opacity-90' : ''} ${bar.key === 'cdu' ? 'cdu-bar' : ''}`}
+                        onClick={
+                          bar.isAfd
+                            ? () => handleCycleSandboxState()
+                            : undefined
+                        }
+                        className={`relative w-full rounded-t-md overflow-hidden transition-all duration-700 ${barColor} ${bar.isAfd ? "cursor-pointer hover:opacity-90" : ""} ${bar.key === "cdu" ? "cdu-bar" : ""}`}
                         style={{ height: `${(bar.pct / maxPct) * 85}%` }}
-                        aria-label={bar.isAfd ? (sandboxState === 'default' ? t.demoSwitch : sandboxState === 'brown' ? t.demoDreamSwitch : t.demoReset) : label}
+                        aria-label={
+                          bar.isAfd
+                            ? sandboxState === "default"
+                              ? t.demoSwitch
+                              : sandboxState === "brown"
+                                ? t.demoDreamSwitch
+                                : t.demoReset
+                            : label
+                        }
                         disabled={!bar.isAfd}
                         type="button"
                       >
-                        {bar.key === 'cdu' && isDreamActive && (
+                        {bar.key === "cdu" && isDreamActive && (
                           <>
                             <div
                               className="absolute inset-0 bg-[linear-gradient(to_top,#140b02,#2a180a)] pointer-events-none"
@@ -490,11 +573,13 @@ export function InteractiveDemoSection({
                           </>
                         )}
                       </button>
-                      <span className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs text-center ${bar.isAfd ? (isAfdBrown ? 'font-black text-amber-500' : 'font-black text-cyan-400') : 'text-[var(--text-muted)]'}`}>
+                      <span
+                        className={`mt-2 text-[10px] font-semibold transition-colors duration-500 md:text-xs text-center ${bar.isAfd ? (isAfdBrown ? "font-black text-amber-500" : "font-black text-cyan-400") : "text-[var(--text-muted)]"}`}
+                      >
                         {label}
                       </span>
                     </div>
-                  )
+                  );
                 })
               )}
             </div>
@@ -503,7 +588,10 @@ export function InteractiveDemoSection({
             {showComparison && (
               <div className="mt-4 rounded-lg border border-emerald-500/20 bg-emerald-950/20 px-4 py-2 text-center animate-in">
                 <p className="text-xs font-bold text-emerald-300">
-                  {(othersCombinedPct / Math.max(displayAfdPct, 0.1)).toFixed(1)}{t.comparisonRatio}
+                  {(othersCombinedPct / Math.max(displayAfdPct, 0.1)).toFixed(
+                    1,
+                  )}
+                  {t.comparisonRatio}
                 </p>
                 <p className="mt-0.5 text-[10px] text-emerald-400/70">
                   {t.comparisonMessage}
@@ -511,16 +599,17 @@ export function InteractiveDemoSection({
               </div>
             )}
           </div>
-
         </div>
       </div>
 
       {/* Floating Toast Notification */}
       {toastMessage && isSandboxInView && (
         <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 shadow-2xl text-center flex items-center justify-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-300">
-          <span className="text-xs font-semibold text-[var(--text-primary)] leading-normal">{toastMessage}</span>
+          <span className="text-xs font-semibold text-[var(--text-primary)] leading-normal">
+            {toastMessage}
+          </span>
         </div>
       )}
     </section>
-  )
+  );
 }

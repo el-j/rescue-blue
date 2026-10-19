@@ -1,14 +1,19 @@
-import { BookOpen } from 'lucide-react'
-import type { ContentTab, Sayings, Translation } from '../i18n'
+import { BookOpen } from "lucide-react";
+import type { ContentTab, Sayings, Translation } from "../i18n";
 
 interface CultureProps {
-  t: Translation
-  sayings: Sayings
-  activeTab: ContentTab
-  onChangeTab: (tab: ContentTab) => void
+  t: Translation;
+  sayings: Sayings;
+  activeTab: ContentTab;
+  onChangeTab: (tab: ContentTab) => void;
 }
 
-export function CultureSection({ t, sayings, activeTab, onChangeTab }: CultureProps) {
+export function CultureSection({
+  t,
+  sayings,
+  activeTab,
+  onChangeTab,
+}: CultureProps) {
   return (
     <section id="kultur" className="">
       {/* Section Header with Tabs */}
@@ -21,28 +26,30 @@ export function CultureSection({ t, sayings, activeTab, onChangeTab }: CulturePr
             <BookOpen size={22} className="text-blue-600 dark:text-blue-400" />
             {t.cultureH}
           </h3>
-          <p className="mt-1 text-sm text-[var(--text-secondary)]">{t.cultureSub}</p>
+          <p className="mt-1 text-sm text-[var(--text-secondary)]">
+            {t.cultureSub}
+          </p>
         </div>
 
         {/* Tab Switcher */}
         <div className="flex p-0.5 font-mono text-xs">
           <button
-            onClick={() => onChangeTab('sprache')}
+            onClick={() => onChangeTab("sprache")}
             className={`px-4 py-1.5 font-bold uppercase tracking-wider transition-colors cursor-pointer ${
-              activeTab === 'sprache'
-                ? 'bg-blue-600 text-white'
-                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              activeTab === "sprache"
+                ? "bg-blue-600 text-white"
+                : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
             }`}
             type="button"
           >
             {t.tabLang}
           </button>
           <button
-            onClick={() => onChangeTab('symbolik')}
+            onClick={() => onChangeTab("symbolik")}
             className={`px-4 py-1.5 font-bold uppercase tracking-wider transition-colors cursor-pointer ${
-              activeTab === 'symbolik'
-                ? 'bg-blue-600 text-white'
-                : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              activeTab === "symbolik"
+                ? "bg-blue-600 text-white"
+                : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
             }`}
             type="button"
           >
@@ -75,5 +82,5 @@ export function CultureSection({ t, sayings, activeTab, onChangeTab }: CulturePr
         </div>
       </div>
     </section>
-  )
+  );
 }

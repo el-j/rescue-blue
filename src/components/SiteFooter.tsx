@@ -1,15 +1,15 @@
-import { ExternalLink } from 'lucide-react'
-import { PETITION_URL } from '../petition'
-import type { Translation } from '../i18n'
+import { ExternalLink } from "lucide-react";
+import { PETITION_URL } from "../petition";
+import type { Translation } from "../i18n";
 
-const IMPRINT_URL = `${import.meta.env.BASE_URL}imprint.html`
+const IMPRINT_URL = `${import.meta.env.BASE_URL}imprint.html`;
 
 interface FooterProps {
-  t: Translation
+  t: Translation;
 }
 
 export function SiteFooter({ t }: FooterProps) {
-  const brand = t.footerBrand
+  const brand = t.footerBrand;
 
   return (
     <footer className="border-t border-[var(--border)] bg-[var(--bg-primary)] px-4 py-10 text-center md:px-6">
@@ -19,7 +19,9 @@ export function SiteFooter({ t }: FooterProps) {
             <span className="h-2 w-2 rounded-full bg-blue-600 dark:bg-blue-500" />
             {brand}
           </p>
-          <p className="mt-1 text-xs text-[var(--text-muted)]">{t.footerTagline}</p>
+          <p className="mt-1 text-xs text-[var(--text-muted)]">
+            {t.footerTagline}
+          </p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-6 md:justify-end">
           <a
@@ -39,5 +41,5 @@ export function SiteFooter({ t }: FooterProps) {
         </div>
       </div>
     </footer>
-  )
+  );
 }

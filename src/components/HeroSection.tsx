@@ -1,31 +1,31 @@
-import { ArrowUpRight, AlertCircle, CheckCircle2 } from 'lucide-react'
-import { PETITION_URL } from '../petition'
-import type { Translation } from '../i18n'
+import { ArrowUpRight, AlertCircle, CheckCircle2 } from "lucide-react";
+import { PETITION_URL } from "../petition";
+import type { Translation } from "../i18n";
 
 export interface NewsSource {
-  name: string
-  url: string
+  name: string;
+  url: string;
 }
 
 export interface NewsArticle {
-  title: string | Record<string, string>
-  source?: string
-  url?: string
-  date: string
-  excerpt: string | Record<string, string>
-  sources?: NewsSource[]
+  title: string | Record<string, string>;
+  source?: string;
+  url?: string;
+  date: string;
+  excerpt: string | Record<string, string>;
+  sources?: NewsSource[];
 }
 
 interface HeroProps {
-  t: Translation
-  headline: string
-  subline: string
-  ctaLabel: string
-  heroImageBase: string
-  formattedSignatureCount: string | undefined
-  isLoadingSignatures: boolean
-  isLive: boolean
-  onCtaClick: () => void
+  t: Translation;
+  headline: string;
+  subline: string;
+  ctaLabel: string;
+  heroImageBase: string;
+  formattedSignatureCount: string | undefined;
+  isLoadingSignatures: boolean;
+  isLive: boolean;
+  onCtaClick: () => void;
 }
 
 export function HeroSection({
@@ -65,9 +65,7 @@ export function HeroSection({
               {subline}
             </p>
 
-            <p className="editorial-lead max-w-3xl pt-2">
-              {t.heroBody}
-            </p>
+            <p className="editorial-lead max-w-3xl pt-2">{t.heroBody}</p>
           </div>
 
           {/* Antifa Peng Landing Mascot Emblem */}
@@ -75,7 +73,7 @@ export function HeroSection({
             <div className="relative group max-w-[240px] sm:max-w-[260px] lg:max-w-[280px]">
               {/* Subtle ambient back glow */}
               <div className="absolute inset-0 rounded-full bg-blue-500/15 blur-2xl group-hover:bg-blue-500/25 transition-all pointer-events-none" />
-              
+
               {/* Sticker / Patch Graphic */}
               <div className="relative transform -rotate-2 group-hover:rotate-0 transition-transform duration-300 ease-out">
                 <img
@@ -93,7 +91,7 @@ export function HeroSection({
                     »Nook nook, bluu!« 🏳️‍🌈
                   </p>
                   <p className="text-[10px] text-[var(--text-muted)] font-medium">
-                    {t.heroMascotBadge || 'Maskottchen & Soli-Patch'}
+                    {t.heroMascotBadge || "Maskottchen & Soli-Patch"}
                   </p>
                 </div>
               </div>
@@ -104,7 +102,7 @@ export function HeroSection({
                   href="#maskottchen"
                   className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider"
                 >
-                  <span>{t.heroMascotLink || 'Sticker & Patches ansehen'}</span>
+                  <span>{t.heroMascotLink || "Sticker & Patches ansehen"}</span>
                   <ArrowUpRight size={13} />
                 </a>
               </div>
@@ -121,15 +119,17 @@ export function HeroSection({
                 <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
                   {t.heroStatusQuoBadge}
                 </span>
-                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">{t.heroStatusQuoTag}</span>
+                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">
+                  {t.heroStatusQuoTag}
+                </span>
               </div>
-              
+
               <div className="h-2 w-16 bg-blue-600 mb-4" />
-              
+
               <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
                 {t.heroStatusQuoH2}
               </h2>
-              
+
               <p className="text-sm leading-relaxed text-slate-800 dark:text-[var(--text-secondary)]">
                 {t.heroStatusQuoDesc}
               </p>
@@ -148,15 +148,17 @@ export function HeroSection({
                 <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-[#4a2608] dark:text-[#f3b584]">
                   {t.heroDemandBadge}
                 </span>
-                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">{t.heroDemandTag}</span>
+                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">
+                  {t.heroDemandTag}
+                </span>
               </div>
-              
+
               <div className="h-2 w-16 bg-[#54331a] mb-4" />
-              
+
               <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
                 {t.heroDemandH2}
               </h2>
-              
+
               <p className="text-sm leading-relaxed text-slate-800 dark:text-[var(--text-secondary)]">
                 {t.heroDemandDesc}
               </p>
@@ -176,15 +178,17 @@ export function HeroSection({
               {isLoadingSignatures ? (
                 <span className="inline-block h-12 w-28 animate-pulse bg-[var(--border)]" />
               ) : (
-                formattedSignatureCount ?? '93'
+                (formattedSignatureCount ?? "93")
               )}
             </span>
             <div className="space-y-0.5">
               <p className="font-mono text-xs font-bold uppercase tracking-widest text-[var(--text-primary)]">
-                {t.sidebarSignatures || 'Unterschriften'} {t.sidebarGrowing ? `· ${t.sidebarGrowing}` : ''}
+                {t.sidebarSignatures || "Unterschriften"}{" "}
+                {t.sidebarGrowing ? `· ${t.sidebarGrowing}` : ""}
               </p>
               <p className="text-xs text-[var(--text-muted)]">
-                {t.sigCount} {formattedSignatureCount ?? '93'} {t.sigSupport} ({isLive ? t.sigLive : t.sigFallback})
+                {t.sigCount} {formattedSignatureCount ?? "93"} {t.sigSupport} (
+                {isLive ? t.sigLive : t.sigFallback})
               </p>
             </div>
           </div>
@@ -207,6 +211,5 @@ export function HeroSection({
         </div>
       </div>
     </header>
-  )
+  );
 }
-

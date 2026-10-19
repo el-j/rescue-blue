@@ -1,52 +1,73 @@
-import { useEffect, useMemo, useState } from 'react'
-import { ChevronLeft, ChevronRight, ExternalLink, Radio } from 'lucide-react'
-import type { Locale, Translation } from '../i18n'
-import type { NewsArticle } from './HeroSection'
-import { deduplicateSources, getOriginSources, getPrimaryArticleUrl } from '../utils/news'
+import { useEffect, useMemo, useState } from "react";
+import { ChevronLeft, ChevronRight, ExternalLink, Radio } from "lucide-react";
+import type { Locale, Translation } from "../i18n";
+import type { NewsArticle } from "./HeroSection";
+import {
+  deduplicateSources,
+  getOriginSources,
+  getPrimaryArticleUrl,
+} from "../utils/news";
 
 interface NewsSpotlightSectionProps {
-  lang: Locale
-  t: Translation
-  news: NewsArticle[]
+  lang: Locale;
+  t: Translation;
+  news: NewsArticle[];
 }
 
-function getLocalizedText(lang: Locale, field: string | Record<string, string> | undefined) {
-  if (!field) return ''
-  if (typeof field === 'string') return field
-  return field[lang] ?? field.de ?? ''
+function getLocalizedText(
+  lang: Locale,
+  field: string | Record<string, string> | undefined,
+) {
+  if (!field) return "";
+  if (typeof field === "string") return field;
+  return field[lang] ?? field.de ?? "";
 }
 
-export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProps) {
-  const items = useMemo(() => news.slice(0, 4), [news])
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isAutoSlideStopped, setIsAutoSlideStopped] = useState(false)
-  const [isHovered, setIsHovered] = useState(false)
+export function NewsSpotlightSection({
+  lang,
+  t,
+  news,
+}: NewsSpotlightSectionProps) {
+  const items = useMemo(() => news.slice(0, 4), [news]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoSlideStopped, setIsAutoSlideStopped] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleTouchDown = () => {
-    setIsAutoSlideStopped(true)
-  }
+    setIsAutoSlideStopped(true);
+  };
 
   useEffect(() => {
-    if (items.length <= 1 || isAutoSlideStopped || isHovered) return
+    if (items.length <= 1 || isAutoSlideStopped || isHovered) return;
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % items.length)
-    }, 8000)
-    return () => clearInterval(timer)
-  }, [items.length, isAutoSlideStopped, isHovered])
+      setCurrentIndex((prev) => (prev + 1) % items.length);
+    }, 8000);
+    return () => clearInterval(timer);
+  }, [items.length, isAutoSlideStopped, isHovered]);
 
-  const activeIndex = items.length > 0 ? currentIndex % items.length : 0
-  const active = items[activeIndex]
+  const activeIndex = items.length > 0 ? currentIndex % items.length : 0;
+  const active = items[activeIndex];
 
   const cleanSources = useMemo(() => {
-    if (!active) return []
-    return deduplicateSources(active.sources, active.url, active.source || t.readMore)
-  }, [active, t.readMore])
+    if (!active) return [];
+    return deduplicateSources(
+      active.sources,
+      active.url,
+      active.source || t.readMore,
+    );
+  }, [active, t.readMore]);
 
-  const originSources = useMemo(() => getOriginSources(cleanSources), [cleanSources])
-  const primaryUrl = useMemo(() => (active ? getPrimaryArticleUrl(active) : undefined), [active])
+  const originSources = useMemo(
+    () => getOriginSources(cleanSources),
+    [cleanSources],
+  );
+  const primaryUrl = useMemo(
+    () => (active ? getPrimaryArticleUrl(active) : undefined),
+    [active],
+  );
 
   if (items.length === 0 || !active) {
-    return null
+    return null;
   }
 
   return (
@@ -54,8 +75,8 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
       className="border-b border-[var(--border)] bg-[var(--bg-secondary)] py-6"
       onTouchStart={handleTouchDown}
       onPointerDown={(e) => {
-        if (e.pointerType === 'touch') {
-          handleTouchDown()
+        if (e.pointerType === "touch") {
+          handleTouchDown();
         }
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -84,7 +105,11 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
               </span>
               <button
                 type="button"
-                onClick={() => setCurrentIndex((prev) => (prev - 1 + items.length) % items.length)}
+                onClick={() =>
+                  setCurrentIndex(
+                    (prev) => (prev - 1 + items.length) % items.length,
+                  )
+                }
                 className="flex h-7 w-7 items-center justify-center text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
                 aria-label={t.newsPrevLabel}
               >
@@ -92,7 +117,9 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
               </button>
               <button
                 type="button"
-                onClick={() => setCurrentIndex((prev) => (prev + 1) % items.length)}
+                onClick={() =>
+                  setCurrentIndex((prev) => (prev + 1) % items.length)
+                }
                 className="flex h-7 w-7 items-center justify-center text-[var(--text-secondary)] transition-colors hover:border-[var(--text-primary)] hover:text-[var(--text-primary)]"
                 aria-label={t.newsNextLabel}
               >
@@ -108,8 +135,15 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
             <div className="flex flex-wrap items-center gap-1.5 font-bold uppercase tracking-wide">
               {originSources.length > 0 ? (
                 originSources.map((src, idx) => (
-                  <span key={src.url || idx} className="inline-flex items-center gap-1.5">
-                    {idx > 0 && <span className="text-[var(--text-muted)] select-none">·</span>}
+                  <span
+                    key={src.url || idx}
+                    className="inline-flex items-center gap-1.5"
+                  >
+                    {idx > 0 && (
+                      <span className="text-[var(--text-muted)] select-none">
+                        ·
+                      </span>
+                    )}
                     <a
                       href={src.url}
                       target="_blank"
@@ -131,14 +165,14 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
                     {active.source}
                   </a>
                 ) : (
-                  <span className="text-blue-600 dark:text-blue-400">{active.source}</span>
+                  <span className="text-blue-600 dark:text-blue-400">
+                    {active.source}
+                  </span>
                 )
               ) : null}
             </div>
             {active.date && (
-              <span className="text-[var(--text-muted)]">
-                {active.date}
-              </span>
+              <span className="text-[var(--text-muted)]">{active.date}</span>
             )}
           </div>
 
@@ -189,7 +223,9 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
                     onClick={() => setCurrentIndex(idx)}
                     aria-label={`${t.newsSlideLabel} ${idx + 1}`}
                     className={`h-1.5 transition-all cursor-pointer ${
-                      idx === activeIndex ? 'w-6 bg-blue-600' : 'w-2 bg-[var(--border)] hover:bg-[var(--text-muted)]'
+                      idx === activeIndex
+                        ? "w-6 bg-blue-600"
+                        : "w-2 bg-[var(--border)] hover:bg-[var(--text-muted)]"
                     }`}
                   />
                 ))}
@@ -199,5 +235,5 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
         </div>
       </div>
     </section>
-  )
+  );
 }

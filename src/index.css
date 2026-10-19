@@ -6,62 +6,62 @@
 
 /* Inter (Body Font) */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./assets/fonts/inter-latin-400-normal.woff2') format('woff2');
+  src: url("./assets/fonts/inter-latin-400-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('./assets/fonts/inter-latin-600-normal.woff2') format('woff2');
+  src: url("./assets/fonts/inter-latin-600-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('./assets/fonts/inter-latin-700-normal.woff2') format('woff2');
+  src: url("./assets/fonts/inter-latin-700-normal.woff2") format("woff2");
 }
 
 /* Outfit (Headlines Font) */
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./assets/fonts/outfit-latin-400-normal.woff2') format('woff2');
+  src: url("./assets/fonts/outfit-latin-400-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('./assets/fonts/outfit-latin-600-normal.woff2') format('woff2');
+  src: url("./assets/fonts/outfit-latin-600-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('./assets/fonts/outfit-latin-700-normal.woff2') format('woff2');
+  src: url("./assets/fonts/outfit-latin-700-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('./assets/fonts/outfit-latin-800-normal.woff2') format('woff2');
+  src: url("./assets/fonts/outfit-latin-800-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url('./assets/fonts/outfit-latin-900-normal.woff2') format('woff2');
+  src: url("./assets/fonts/outfit-latin-900-normal.woff2") format("woff2");
 }
 
 /* ── Editorial Design System Tokens ── */
@@ -69,7 +69,13 @@
 @layer base {
   :root {
     color-scheme: dark;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
 
     /* Dark Mode: Refined Midnight Ink & Slate */
     --bg-primary: #090d16;
@@ -99,8 +105,10 @@
     --color-historical-brown: #54331a;
     --color-historical-brown-light: #9a5b2d;
 
-    --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.25);
-    --card-shadow-hover: 0 10px 30px -4px rgba(0, 0, 0, 0.5), 0 4px 12px -2px rgba(0, 0, 0, 0.35);
+    --card-shadow:
+      0 4px 20px -2px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.25);
+    --card-shadow-hover:
+      0 10px 30px -4px rgba(0, 0, 0, 0.5), 0 4px 12px -2px rgba(0, 0, 0, 0.35);
   }
 
   .light-theme {
@@ -134,8 +142,12 @@
     --color-historical-brown: #54331a;
     --color-historical-brown-light: #7c441f;
 
-    --card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 1px 4px -1px rgba(15, 23, 42, 0.04);
-    --card-shadow-hover: 0 12px 32px -4px rgba(15, 23, 42, 0.1), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+    --card-shadow:
+      0 4px 20px -2px rgba(15, 23, 42, 0.06),
+      0 1px 4px -1px rgba(15, 23, 42, 0.04);
+    --card-shadow-hover:
+      0 12px 32px -4px rgba(15, 23, 42, 0.1),
+      0 4px 12px -2px rgba(15, 23, 42, 0.06);
   }
 
   * {
@@ -158,8 +170,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Outfit", "Inter", system-ui, sans-serif;
     letter-spacing: -0.025em;
   }
 
@@ -192,37 +209,93 @@
 }
 
 /* ── Light-theme compatibility aliases ── */
-.light-theme .bg-neutral-950 { background-color: var(--bg-card); }
-.light-theme .bg-neutral-900 { background-color: var(--bg-secondary); }
-.light-theme .bg-neutral-900\/80 { background-color: rgba(243, 245, 249, 0.85); }
-.light-theme .bg-neutral-900\/70 { background-color: rgba(243, 245, 249, 0.75); }
-.light-theme .bg-neutral-900\/60 { background-color: rgba(243, 245, 249, 0.65); }
-.light-theme .bg-neutral-900\/50 { background-color: rgba(243, 245, 249, 0.55); }
-.light-theme .bg-neutral-900\/30 { background-color: rgba(243, 245, 249, 0.6); }
-.light-theme .bg-neutral-900\/20 { background-color: rgba(243, 245, 249, 0.8); }
-.light-theme .bg-neutral-900\/10 { background-color: rgba(243, 245, 249, 0.9); }
-.light-theme .bg-neutral-900\/40 { background-color: rgba(255, 255, 255, 0.95); }
-.light-theme .bg-neutral-800 { background-color: #e2e8f0; }
-.light-theme .bg-neutral-950\/80 { background-color: rgba(255, 255, 255, 0.9); }
-.light-theme .bg-neutral-950\/85 { background-color: rgba(255, 255, 255, 0.92); }
-.light-theme .bg-neutral-950\/90 { background-color: rgba(255, 255, 255, 0.95); }
+.light-theme .bg-neutral-950 {
+  background-color: var(--bg-card);
+}
+.light-theme .bg-neutral-900 {
+  background-color: var(--bg-secondary);
+}
+.light-theme .bg-neutral-900\/80 {
+  background-color: rgba(243, 245, 249, 0.85);
+}
+.light-theme .bg-neutral-900\/70 {
+  background-color: rgba(243, 245, 249, 0.75);
+}
+.light-theme .bg-neutral-900\/60 {
+  background-color: rgba(243, 245, 249, 0.65);
+}
+.light-theme .bg-neutral-900\/50 {
+  background-color: rgba(243, 245, 249, 0.55);
+}
+.light-theme .bg-neutral-900\/30 {
+  background-color: rgba(243, 245, 249, 0.6);
+}
+.light-theme .bg-neutral-900\/20 {
+  background-color: rgba(243, 245, 249, 0.8);
+}
+.light-theme .bg-neutral-900\/10 {
+  background-color: rgba(243, 245, 249, 0.9);
+}
+.light-theme .bg-neutral-900\/40 {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.light-theme .bg-neutral-800 {
+  background-color: #e2e8f0;
+}
+.light-theme .bg-neutral-950\/80 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.light-theme .bg-neutral-950\/85 {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.light-theme .bg-neutral-950\/90 {
+  background-color: rgba(255, 255, 255, 0.95);
+}
 
-.light-theme .text-white { color: #090d16; }
-.light-theme .text-neutral-100 { color: #090d16; }
-.light-theme .text-neutral-200 { color: #1e293b; }
-.light-theme .text-neutral-300 { color: #334155; }
-.light-theme .text-neutral-400 { color: #475569; }
-.light-theme .text-neutral-500 { color: #64748b; }
-.light-theme .text-neutral-600 { color: #94a3b8; }
+.light-theme .text-white {
+  color: #090d16;
+}
+.light-theme .text-neutral-100 {
+  color: #090d16;
+}
+.light-theme .text-neutral-200 {
+  color: #1e293b;
+}
+.light-theme .text-neutral-300 {
+  color: #334155;
+}
+.light-theme .text-neutral-400 {
+  color: #475569;
+}
+.light-theme .text-neutral-500 {
+  color: #64748b;
+}
+.light-theme .text-neutral-600 {
+  color: #94a3b8;
+}
 
-.light-theme .border-neutral-700 { border-color: #cbd5e1; }
-.light-theme .border-neutral-800 { border-color: #e2e8f0; }
-.light-theme .border-neutral-800\/80 { border-color: rgba(226, 232, 240, 0.85); }
-.light-theme .border-neutral-800\/60 { border-color: rgba(226, 232, 240, 0.65); }
-.light-theme .border-neutral-800\/30 { border-color: rgba(226, 232, 240, 0.4); }
+.light-theme .border-neutral-700 {
+  border-color: #cbd5e1;
+}
+.light-theme .border-neutral-800 {
+  border-color: #e2e8f0;
+}
+.light-theme .border-neutral-800\/80 {
+  border-color: rgba(226, 232, 240, 0.85);
+}
+.light-theme .border-neutral-800\/60 {
+  border-color: rgba(226, 232, 240, 0.65);
+}
+.light-theme .border-neutral-800\/30 {
+  border-color: rgba(226, 232, 240, 0.4);
+}
 
-.light-theme .text-blue-300 { color: #2563eb; }
-.light-theme .text-blue-400 { color: #1d4ed8; }
+.light-theme .text-blue-300 {
+  color: #2563eb;
+}
+.light-theme .text-blue-400 {
+  color: #1d4ed8;
+}
 .light-theme .bg-blue-600,
 .light-theme .bg-blue-600 *,
 .light-theme .bg-blue-600.text-white,
@@ -240,12 +313,22 @@
 
 /* Dream Scenario Banner */
 .dream-banner {
-  background: linear-gradient(90deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.04) 50%, rgba(16, 185, 129, 0.08) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 185, 129, 0.08) 0%,
+    rgba(16, 185, 129, 0.04) 50%,
+    rgba(16, 185, 129, 0.08) 100%
+  );
   border-color: rgba(16, 185, 129, 0.3) !important;
 }
 
 .light-theme .dream-banner {
-  background: linear-gradient(90deg, rgba(217, 119, 6, 0.08) 0%, rgba(217, 119, 6, 0.04) 50%, rgba(217, 119, 6, 0.08) 100%) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(217, 119, 6, 0.08) 0%,
+    rgba(217, 119, 6, 0.04) 50%,
+    rgba(217, 119, 6, 0.08) 100%
+  ) !important;
   border-color: rgba(217, 119, 6, 0.25) !important;
 }
 
@@ -259,9 +342,15 @@
 
 /* ── Interactive Bar Chart Rainbow & Animations ── */
 @keyframes rainbowShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes slideInUp {
@@ -352,18 +441,42 @@
 }
 
 /* SVG Chart Typography & Fills */
-.svg-text-primary { fill: var(--text-primary) !important; }
-.svg-text-secondary { fill: var(--text-secondary) !important; }
-.svg-text-muted { fill: var(--text-muted) !important; }
-.svg-text-red { fill: #f87171; }
-.light-theme .svg-text-red { fill: #b91c1c !important; }
-.svg-text-amber { fill: #fbbf24; }
-.light-theme .svg-text-amber { fill: #b45309 !important; }
+.svg-text-primary {
+  fill: var(--text-primary) !important;
+}
+.svg-text-secondary {
+  fill: var(--text-secondary) !important;
+}
+.svg-text-muted {
+  fill: var(--text-muted) !important;
+}
+.svg-text-red {
+  fill: #f87171;
+}
+.light-theme .svg-text-red {
+  fill: #b91c1c !important;
+}
+.svg-text-amber {
+  fill: #fbbf24;
+}
+.light-theme .svg-text-amber {
+  fill: #b45309 !important;
+}
 
-.svg-bg-red-pill { fill: rgba(127, 29, 29, 0.9); stroke: rgba(239, 68, 68, 0.3); }
-.light-theme .svg-bg-red-pill { fill: rgba(239, 68, 68, 0.12) !important; stroke: rgba(239, 68, 68, 0.3) !important; }
-.light-theme svg line[stroke="#1f2937"] { stroke: #cbd5e1 !important; }
-.light-theme svg line[stroke="#374151"] { stroke: #e2e8f0 !important; }
+.svg-bg-red-pill {
+  fill: rgba(127, 29, 29, 0.9);
+  stroke: rgba(239, 68, 68, 0.3);
+}
+.light-theme .svg-bg-red-pill {
+  fill: rgba(239, 68, 68, 0.12) !important;
+  stroke: rgba(239, 68, 68, 0.3) !important;
+}
+.light-theme svg line[stroke="#1f2937"] {
+  stroke: #cbd5e1 !important;
+}
+.light-theme svg line[stroke="#374151"] {
+  stroke: #e2e8f0 !important;
+}
 
 /* ── Custom Swiss / Broadsheet Editorial Architecture ── */
 
@@ -395,7 +508,11 @@
 }
 
 .editorial-headline {
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Outfit",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 0.95;
@@ -403,7 +520,11 @@
 }
 
 .editorial-lead {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text-secondary);
@@ -414,7 +535,10 @@
 }
 
 .editorial-numeral {
-  font-family: 'Outfit', -apple-system, sans-serif;
+  font-family:
+    "Outfit",
+    -apple-system,
+    sans-serif;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -454,4 +578,3 @@
   border: 1px solid var(--border);
   border-radius: 2px;
 }
-

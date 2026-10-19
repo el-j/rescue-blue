@@ -1,24 +1,24 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from "react";
 
 export function useScrollVisibility(threshold = 60): boolean {
-  const [isVisible, setIsVisible] = useState(true)
-  const lastScrollY = useRef(0)
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     function onScroll() {
-      const y = window.scrollY
+      const y = window.scrollY;
       if (y < threshold) {
-        setIsVisible(true)
+        setIsVisible(true);
       } else if (y > lastScrollY.current) {
-        setIsVisible(false)
+        setIsVisible(false);
       } else {
-        setIsVisible(true)
+        setIsVisible(true);
       }
-      lastScrollY.current = y
+      lastScrollY.current = y;
     }
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [threshold])
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [threshold]);
 
-  return isVisible
+  return isVisible;
 }

@@ -1,12 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "react",
-    "unicorn",
-    "typescript",
-    "oxc",
-    "vitest"
-  ],
+  "plugins": ["react", "unicorn", "typescript", "oxc", "vitest"],
   "categories": {
     "correctness": "error"
   },
@@ -19,10 +13,5 @@
     "browser": true,
     "builtin": true
   },
-  "ignorePatterns": [
-    "dist",
-    "dist-ssr",
-    "coverage",
-    "node_modules"
-  ]
+  "ignorePatterns": ["dist", "dist-ssr", "coverage", "node_modules"]
 }

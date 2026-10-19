@@ -1,11 +1,11 @@
-import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react'
-import type { Faqs, Translation } from '../i18n'
+import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
+import type { Faqs, Translation } from "../i18n";
 
 interface FaqProps {
-  t: Translation
-  faqs: Faqs
-  openFaq: number | null
-  onToggleFaq: (index: number | null) => void
+  t: Translation;
+  faqs: Faqs;
+  openFaq: number | null;
+  onToggleFaq: (index: number | null) => void;
 }
 
 export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
@@ -16,7 +16,8 @@ export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
           <span>{t.faqSectionTag}</span>
         </div>
         <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
-          <HelpCircle size={22} className="text-blue-600 dark:text-blue-400" /> {t.faqTitle || 'FAQ'}
+          <HelpCircle size={22} className="text-blue-600 dark:text-blue-400" />{" "}
+          {t.faqTitle || "FAQ"}
         </h2>
         {t.faqSub && (
           <p className="mt-1.5 text-sm leading-relaxed text-[var(--text-secondary)] max-w-3xl">
@@ -28,7 +29,7 @@ export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
       <div className="p-6 md:p-8">
         <div className="border border-[var(--border)] divide-y divide-[var(--border)]">
           {faqs.map((faq, index) => {
-            const isOpen = openFaq === index
+            const isOpen = openFaq === index;
             return (
               <div key={index} className="bg-[var(--bg-primary)]">
                 <button
@@ -39,9 +40,15 @@ export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp size={16} className="shrink-0 text-blue-600 dark:text-blue-400" />
+                    <ChevronUp
+                      size={16}
+                      className="shrink-0 text-blue-600 dark:text-blue-400"
+                    />
                   ) : (
-                    <ChevronDown size={16} className="shrink-0 text-[var(--text-muted)]" />
+                    <ChevronDown
+                      size={16}
+                      className="shrink-0 text-[var(--text-muted)]"
+                    />
                   )}
                 </button>
                 {isOpen && (
@@ -50,10 +57,10 @@ export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
                   </div>
                 )}
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

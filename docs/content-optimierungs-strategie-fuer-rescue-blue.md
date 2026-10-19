@@ -8,11 +8,14 @@
 ## 1. Ausgangslage & Strategiewechsel
 
 ### Das bisherige Dilemma
-Die bisherige Konzeption von *Rescue Blue* konzentrierte sich stark auf die **ästhetisch-kulturelle Ebene**:
-- *„Blau ist eine friedliche, schöne Farbe (siehe Redewendungen wie ‚Blau machen‘), die AfD beschmutzt sie, ARD/ZDF müssen die AfD braun färben.“*
+
+Die bisherige Konzeption von _Rescue Blue_ konzentrierte sich stark auf die **ästhetisch-kulturelle Ebene**:
+
+- _„Blau ist eine friedliche, schöne Farbe (siehe Redewendungen wie ‚Blau machen‘), die AfD beschmutzt sie, ARD/ZDF müssen die AfD braun färben.“_
 
 Wie die Kritik von Fabian A. treffend aufzeigt, hat dieser Ansatz drei gravierende Schwächen:
-1. **Linguistische Angreifbarkeit:** Redewendungen wie *„Blau machen“* (Faulenzen/Schwänzen) oder *„Blaues Auge“* (Körperverletzung) eignen sich denkbar schlecht, um die Erhabenheit der Farbe Blau zu belegen. Kritiker können das Projekt leicht als naiv oder „blauäugig“ ins Lächerliche ziehen.
+
+1. **Linguistische Angreifbarkeit:** Redewendungen wie _„Blau machen“_ (Faulenzen/Schwänzen) oder _„Blaues Auge“_ (Körperverletzung) eignen sich denkbar schlecht, um die Erhabenheit der Farbe Blau zu belegen. Kritiker können das Projekt leicht als naiv oder „blauäugig“ ins Lächerliche ziehen.
 2. **Medienrechtliche Sackgasse:** Der öffentlich-rechtliche Rundfunk (ÖRR) kann und darf aufgrund gesetzlicher Neutralitäts- und Kontinuitätsvorgaben (§ 26 Medienstaatsvertrag, BVerfG zur Chancengleichheit) Balkengrafiken nicht willkürlich braun einfärben. Ein Offener Brief mit dieser Maximalforderung wird von Chefredaktionen nicht ernst genommen.
 3. **Verfehlen des Hauptziels:** Das eigentliche Ziel lautet: **Menschen vor Augen zu führen, dass die AfD eine gesichert rechtsextreme, rassistische Partei ist, die Umverteilung von unten nach oben zugunsten von Superreichen betreibt.** Dieser Kern ging in der Debatte um Farbpaletten und Sprichwörter verloren.
 
@@ -26,7 +29,7 @@ Wir transformieren die Kampagne von einer scheinbaren „Farbenretter-Romantik�
 graph TD
     A[Alte Ausrichtung] -->|Angreifbar durch Folklore| B(Farbsemantik & Redewendungen)
     A -->|Unrealistisch für ÖRR| C(Forderung nach Pflicht zu Braun)
-    
+
     D[Neue Ausrichtung] -->|Wissenschaftlich fundiert| E(Visuelles Framing & Normalisierungseffekt)
     D -->|Juristisch stichhaltig| F(Verfassungsschutz-Kennzeichnung in Grafiken)
     D -->|Politischer Hebel| G(Demaskierung: Rassismus & Politik für Superreiche)
@@ -39,10 +42,13 @@ graph TD
 ### 3.1 Sektion „Farbsemantik & Kultur“ (CultureSection & `sayings` in `de.json`)
 
 #### Bisheriger Stand (Fehlerhaft / Angreifbar):
-- Nennung von *„Blau machen“*, *„Fahrt ins Blaue“* und *„Mit einem blauen Auge davonkommen“*.
+
+- Nennung von _„Blau machen“_, _„Fahrt ins Blaue“_ und _„Mit einem blauen Auge davonkommen“_.
 
 #### Neuer Ansatz: „Politische Mimikry & Missbrauch demokratischer Symbole“
+
 Die Sektion wird umgestellt auf die historische und kommunikationswissenschaftliche Einordnung:
+
 - **Symbolik der Friedensordnung:** Wie Blau zur Erkennungsfarbe der Nachkriegsordnung, der Vereinten Nationen (Blauhelme) und der Europäischen Einigung (Europaflagge) wurde.
 - **Strategische Mimikry (Tarnung):** Wie extremistische Kräfte gezielt etablierte bürgerliche Codes kapern, um einen Eindruck von Biederkeit und Bürgerlichkeit zu erwecken (historische Parallele: Aneignung nationaler oder sozialer Begriffe durch radikale Ränder).
 - **Das Paradoxon:** Warum eine anti-europäische, nationalistische Partei ausgerechnet in der Farbe des europäischen Friedensprojekts auftritt.
@@ -52,11 +58,14 @@ Die Sektion wird umgestellt auf die historische und kommunikationswissenschaftli
 ### 3.2 Sektion „Offener Brief“ (OpenLetterSection & `openLetters`)
 
 #### Bisheriger Stand:
+
 - Geforderter Eingriff in Balkenfarben (Forderung, AfD in Grafiken braun zu färben).
 
 #### Neuer Ansatz: „Kontextualisierung & Kennzeichnungspflicht“
+
 Forderung an Chefredaktionen von ARD, ZDF und privaten Medien:
-1. **Keine visuelle Gleichmacherei:** In Wahldiagrammen und Infokästen muss transparent gemacht werden, wenn ein Landesverband oder eine Gruppierung von Sicherheitsbehörden als *gesichert rechtsextremistisch* eingestuft ist (z. B. durch optische Kennzeichnung / Asterisk mit Behördennachweis).
+
+1. **Keine visuelle Gleichmacherei:** In Wahldiagrammen und Infokästen muss transparent gemacht werden, wenn ein Landesverband oder eine Gruppierung von Sicherheitsbehörden als _gesichert rechtsextremistisch_ eingestuft ist (z. B. durch optische Kennzeichnung / Asterisk mit Behördennachweis).
 2. **Kritische Distanz bei Studiobildern:** Keine unkommentierte Übernahme von Wahlkampf-Slogans oder verharmlosenden Parteidesigns in der redaktionellen Berichterstattung.
 3. **Kontext vor Balken-Ästhetik:** Verpflichtung, Zahlenwerte immer mit den verfassungsrechtlichen Einordnungen des Verfassungsschutzes und den Urteilen der Obergerichte (OVG Münster) zu verknüpfen.
 
@@ -82,6 +91,7 @@ Diese Sektion ist der **wirkungsvollste Hebel der gesamten Seite** und muss an o
 ## 4. Konkrete Textvorschläge für `src/i18n/locales/de.json`
 
 ### A. Ersatz für `sayings.sprache`:
+
 ```json
 "sprache": [
   {
@@ -103,6 +113,7 @@ Diese Sektion ist der **wirkungsvollste Hebel der gesamten Seite** und muss an o
 ```
 
 ### B. Überarbeitung von `science.foundations[1].points[1]` (Etablierte Farbkonventionen):
+
 ```json
 {
   "label": "Verantwortungsvolle Einordnung",
@@ -115,6 +126,7 @@ Diese Sektion ist der **wirkungsvollste Hebel der gesamten Seite** und muss an o
 ## 5. Fazit
 
 Mit diesen Anpassungen entkräften wir die berechtigten Kritikpunkte von Fabian A. vollständig:
+
 - Die unpassenden Redewendungen verschwinden.
 - Die Medienforderungen werden juristisch und publizistisch wasserdicht.
 - Das eigentliche Hauptziel des Nutzers – **die unmissverständliche, faktenbasierte Demaskierung der AfD als rechtsextreme, rassistische und unsoziale Partei** – wird ins uneingeschränkte Zentrum gerückt.

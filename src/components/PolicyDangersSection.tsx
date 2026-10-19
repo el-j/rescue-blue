@@ -1,145 +1,145 @@
-import { useState } from 'react'
-import { 
-  Users, 
-  TrendingDown, 
-  Newspaper, 
-  Palette, 
-  ExternalLink, 
+import { useState } from "react";
+import {
+  Users,
+  TrendingDown,
+  Newspaper,
+  Palette,
+  ExternalLink,
   ShieldAlert,
   ArrowRight,
   Bookmark,
-  Globe
-} from 'lucide-react'
-import { getPolicyDangers, getPolicyDangersUI } from '../i18n'
-import type { Locale, Translation } from '../i18n'
-import { SocialChart } from './charts/SocialChart'
-import { EconomyChart } from './charts/EconomyChart'
-import { PressChart } from './charts/PressChart'
-import { CultureChart } from './charts/CultureChart'
-import { CrimeChart } from './charts/CrimeChart'
-import { AlliancesChart } from './charts/AlliancesChart'
+  Globe,
+} from "lucide-react";
+import { getPolicyDangers, getPolicyDangersUI } from "../i18n";
+import type { Locale, Translation } from "../i18n";
+import { SocialChart } from "./charts/SocialChart";
+import { EconomyChart } from "./charts/EconomyChart";
+import { PressChart } from "./charts/PressChart";
+import { CultureChart } from "./charts/CultureChart";
+import { CrimeChart } from "./charts/CrimeChart";
+import { AlliancesChart } from "./charts/AlliancesChart";
 
 interface PolicyDangersSectionProps {
-  lang: Locale
-  t: Translation
+  lang: Locale;
+  t: Translation;
 }
 
 const normalizeCitationUrl = (url: string) => {
   try {
-    const parsed = new URL(url)
-    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
-      return null
+    const parsed = new URL(url);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
+      return null;
     }
-    return parsed.toString()
+    return parsed.toString();
   } catch {
-    return null
+    return null;
   }
-}
+};
 
 export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
-  const data = getPolicyDangers(lang)
-  const ui = getPolicyDangersUI(lang)
-  const [activeTab, setActiveTab] = useState(data[0]?.id || 'social')
-  const [viewMode, setViewMode] = useState<'chart' | 'text'>('chart')
-  const [crimeToggle, setCrimeToggle] = useState<'all' | 'violent' | 'hate'>('all')
+  const data = getPolicyDangers(lang);
+  const ui = getPolicyDangersUI(lang);
+  const [activeTab, setActiveTab] = useState(data[0]?.id || "social");
+  const [viewMode, setViewMode] = useState<"chart" | "text">("chart");
+  const [crimeToggle, setCrimeToggle] = useState<"all" | "violent" | "hate">(
+    "all",
+  );
 
-  const title = t.dangersTitle
-  const subtitle = t.dangersSubtitle
-  const sourceLabel = t.dangersSourceLabel
-  const viewLabel = t.dangersViewLabel
-  const activeData = data.find((item) => item.id === activeTab) || data[0]
-  const safeCitationUrl = normalizeCitationUrl(activeData.citationUrl)
+  const title = t.dangersTitle;
+  const subtitle = t.dangersSubtitle;
+  const sourceLabel = t.dangersSourceLabel;
+  const viewLabel = t.dangersViewLabel;
+  const activeData = data.find((item) => item.id === activeTab) || data[0];
+  const safeCitationUrl = normalizeCitationUrl(activeData.citationUrl);
   const archiveCitationUrl = safeCitationUrl
     ? `https://archive.ph/${encodeURIComponent(safeCitationUrl)}`
-    : null
+    : null;
 
   const handlePrevSlide = () => {
-    const currentIndex = data.findIndex((item) => item.id === activeTab)
-    const prevIndex = (currentIndex - 1 + data.length) % data.length
-    setActiveTab(data[prevIndex].id)
-    setViewMode('chart')
-  }
+    const currentIndex = data.findIndex((item) => item.id === activeTab);
+    const prevIndex = (currentIndex - 1 + data.length) % data.length;
+    setActiveTab(data[prevIndex].id);
+    setViewMode("chart");
+  };
 
   const handleNextSlide = () => {
-    const currentIndex = data.findIndex((item) => item.id === activeTab)
-    const nextIndex = (currentIndex + 1) % data.length
-    setActiveTab(data[nextIndex].id)
-    setViewMode('chart')
-  }
+    const currentIndex = data.findIndex((item) => item.id === activeTab);
+    const nextIndex = (currentIndex + 1) % data.length;
+    setActiveTab(data[nextIndex].id);
+    setViewMode("chart");
+  };
 
-  const [touchStart, setTouchStart] = useState<number | null>(null)
-  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchEnd(null)
-    setTouchStart(e.targetTouches[0].clientX)
-  }
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX)
-  }
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
 
   const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return
-    const distance = touchStart - touchEnd
-    const minSwipeDistance = 50
-    const isLeftSwipe = distance > minSwipeDistance
-    const isRightSwipe = distance < -minSwipeDistance
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const minSwipeDistance = 50;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
     if (isLeftSwipe) {
-      handleNextSlide()
+      handleNextSlide();
     } else if (isRightSwipe) {
-      handlePrevSlide()
+      handlePrevSlide();
     }
-  }
-
-
+  };
 
   // Mapping tab IDs to appropriate Lucide Icons
   const getTabIcon = (id: string, size = 18) => {
     switch (id) {
-      case 'social':
-        return <Users size={size} />
-      case 'economy':
-        return <TrendingDown size={size} />
-      case 'press':
-        return <Newspaper size={size} />
-      case 'culture':
-        return <Palette size={size} />
-      case 'crime':
-        return <ShieldAlert size={size} />
-      case 'alliances':
-        return <Globe size={size} />
+      case "social":
+        return <Users size={size} />;
+      case "economy":
+        return <TrendingDown size={size} />;
+      case "press":
+        return <Newspaper size={size} />;
+      case "culture":
+        return <Palette size={size} />;
+      case "crime":
+        return <ShieldAlert size={size} />;
+      case "alliances":
+        return <Globe size={size} />;
       default:
-        return <ShieldAlert size={size} />
+        return <ShieldAlert size={size} />;
     }
-  }
+  };
 
   // Custom SVG Graphic Renderers for each category
   const renderChart = () => {
     switch (activeTab) {
-      case 'social':
-        return <SocialChart ui={ui} />
-      case 'economy':
-        return <EconomyChart ui={ui} />
-      case 'press':
-        return <PressChart ui={ui} />
-      case 'culture':
-        return <CultureChart ui={ui} />
-      case 'crime':
+      case "social":
+        return <SocialChart ui={ui} />;
+      case "economy":
+        return <EconomyChart ui={ui} />;
+      case "press":
+        return <PressChart ui={ui} />;
+      case "culture":
+        return <CultureChart ui={ui} />;
+      case "crime":
         return (
-          <CrimeChart 
-            ui={ui} 
-            lang={lang} 
-            crimeToggle={crimeToggle} 
-            setCrimeToggle={setCrimeToggle} 
+          <CrimeChart
+            ui={ui}
+            lang={lang}
+            crimeToggle={crimeToggle}
+            setCrimeToggle={setCrimeToggle}
           />
-        )
-      case 'alliances':
-        return <AlliancesChart ui={ui} lang={lang} />
+        );
+      case "alliances":
+        return <AlliancesChart ui={ui} lang={lang} />;
       default:
-        return null
+        return null;
     }
-  }
+  };
 
   return (
     <section id="risiken" className="p-6 md:p-8 space-y-6">
@@ -162,38 +162,38 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
 
         {/* Desktop Tab Layout Grid */}
         <div className="hidden lg:grid grid-cols-1 gap-6 lg:grid-cols-12">
-          
           {/* Subnavigation (Left Panel) */}
           <div className="lg:col-span-4 flex flex-col gap-1 shrink-0 border-r border-[var(--border)] pr-4">
             {data.map((item) => {
-              const isActive = item.id === activeTab
+              const isActive = item.id === activeTab;
               return (
                 <button
                   key={item.id}
                   onClick={() => {
-                    setActiveTab(item.id)
-                    setViewMode('chart')
+                    setActiveTab(item.id);
+                    setViewMode("chart");
                   }}
                   className={`flex items-center gap-3 px-3.5 py-2.5 text-sm font-semibold transition-colors shrink-0 text-left cursor-pointer border ${
-                    isActive 
-                      ? 'bg-rose-500/10 border-rose-500/40 text-rose-500 font-bold' 
-                      : 'bg-transparent border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]'
+                    isActive
+                      ? "bg-rose-500/10 border-rose-500/40 text-rose-500 font-bold"
+                      : "bg-transparent border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)]"
                   }`}
                   type="button"
                 >
-                  <span className={`p-1 ${isActive ? 'text-rose-500' : 'text-[var(--text-muted)]'}`}>
+                  <span
+                    className={`p-1 ${isActive ? "text-rose-500" : "text-[var(--text-muted)]"}`}
+                  >
                     {getTabIcon(item.id, 16)}
                   </span>
                   <span className="truncate">{item.title}</span>
                 </button>
-              )
+              );
             })}
           </div>
 
           {/* Details Content (Right Panel) */}
           <div className="lg:col-span-8 space-y-6 min-h-[360px] flex flex-col justify-between">
             <div className="space-y-4">
-              
               {/* Header inside Panel: Title & Segmented Control */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[var(--border)] pb-4">
                 <div className="space-y-1">
@@ -211,21 +211,21 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                 {/* View Mode Toggle Switch */}
                 <div className="inline-flex border border-[var(--border)] bg-[var(--bg-secondary)] p-0.5 shrink-0 font-mono text-xs">
                   <button
-                    onClick={() => setViewMode('chart')}
+                    onClick={() => setViewMode("chart")}
                     className={`px-3 py-1 font-bold transition-colors cursor-pointer ${
-                      viewMode === 'chart'
-                        ? 'bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]'
-                        : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
+                      viewMode === "chart"
+                        ? "bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]"
+                        : "text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent"
                     }`}
                   >
                     {ui.viewChart}
                   </button>
                   <button
-                    onClick={() => setViewMode('text')}
+                    onClick={() => setViewMode("text")}
                     className={`px-3 py-1 font-bold transition-colors cursor-pointer ${
-                      viewMode === 'text'
-                        ? 'bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]'
-                        : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
+                      viewMode === "text"
+                        ? "bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]"
+                        : "text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent"
                     }`}
                   >
                     {ui.viewText}
@@ -235,7 +235,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
 
               {/* Toggle Content rendering */}
               <div className="min-h-[220px] flex items-center justify-center">
-                {viewMode === 'chart' ? (
+                {viewMode === "chart" ? (
                   renderChart()
                 ) : (
                   <div className="space-y-4 w-full">
@@ -244,7 +244,10 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     </p>
                     <ul className="space-y-3 pt-2">
                       {activeData.points.map((point, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                        <li
+                          key={idx}
+                          className="flex items-start gap-3 text-sm leading-relaxed text-[var(--text-secondary)]"
+                        >
                           <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center text-rose-500 font-bold">
                             <ArrowRight size={12} />
                           </span>
@@ -255,7 +258,6 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                   </div>
                 )}
               </div>
-
             </div>
 
             {/* Source & Citation Footer Card */}
@@ -273,7 +275,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                   </p>
                 </div>
               </div>
-              
+
               <div className="inline-flex items-center gap-2 shrink-0 text-xs">
                 {safeCitationUrl && (
                   <a
@@ -304,7 +306,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
 
         {/* Mobile Carousel Layout (visible on mobile/tablet, hidden on desktop) */}
         <div className="block lg:hidden space-y-4">
-          <div 
+          <div
             className="flex flex-col justify-between min-h-[420px] touch-pan-y"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
@@ -335,21 +337,21 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
               </span>
               <div className="inline-flex border border-[var(--border)] bg-[var(--bg-secondary)] p-0.5 shrink-0 font-mono text-xs">
                 <button
-                  onClick={() => setViewMode('chart')}
+                  onClick={() => setViewMode("chart")}
                   className={`px-3 py-1 font-bold transition-colors cursor-pointer ${
-                    viewMode === 'chart'
-                      ? 'bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]'
-                      : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
+                    viewMode === "chart"
+                      ? "bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]"
+                      : "text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent"
                   }`}
                 >
                   {ui.viewChart}
                 </button>
                 <button
-                  onClick={() => setViewMode('text')}
+                  onClick={() => setViewMode("text")}
                   className={`px-3 py-1 font-bold transition-colors cursor-pointer ${
-                    viewMode === 'text'
-                      ? 'bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]'
-                      : 'text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent'
+                    viewMode === "text"
+                      ? "bg-[var(--bg-primary)] text-rose-500 border border-[var(--border)]"
+                      : "text-[var(--text-muted)] hover:text-[var(--text-primary)] border border-transparent"
                   }`}
                 >
                   {ui.viewText}
@@ -359,7 +361,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
 
             {/* Interactive Chart/Text Area */}
             <div className="py-4 flex-grow flex items-center justify-center min-h-[220px]">
-              {viewMode === 'chart' ? (
+              {viewMode === "chart" ? (
                 renderChart()
               ) : (
                 <div className="space-y-4 w-full">
@@ -368,7 +370,10 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                   </p>
                   <ul className="space-y-2.5 pt-1">
                     {activeData.points.map((point, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5 text-xs leading-relaxed text-[var(--text-secondary)]">
+                      <li
+                        key={idx}
+                        className="flex items-start gap-2.5 text-xs leading-relaxed text-[var(--text-secondary)]"
+                      >
                         <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center text-rose-500 font-bold">
                           <ArrowRight size={10} />
                         </span>
@@ -395,7 +400,9 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                   </p>
                 </div>
               </div>
-              <div className={`grid w-full gap-2 ${safeCitationUrl && archiveCitationUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
+              <div
+                className={`grid w-full gap-2 ${safeCitationUrl && archiveCitationUrl ? "grid-cols-2" : "grid-cols-1"}`}
+              >
                 {safeCitationUrl && (
                   <a
                     href={safeCitationUrl}
@@ -433,20 +440,22 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
 
               <div className="flex gap-2">
                 {data.map((item, idx) => {
-                  const isActive = item.id === activeTab
+                  const isActive = item.id === activeTab;
                   return (
                     <button
                       key={`dot-${item.id}`}
                       onClick={() => {
-                        setActiveTab(item.id)
-                        setViewMode('chart')
+                        setActiveTab(item.id);
+                        setViewMode("chart");
                       }}
                       className={`h-1.5 transition-all duration-300 cursor-pointer ${
-                        isActive ? 'w-6 bg-rose-500' : 'w-2 bg-[var(--border)] hover:bg-[var(--text-muted)]'
+                        isActive
+                          ? "w-6 bg-rose-500"
+                          : "w-2 bg-[var(--border)] hover:bg-[var(--text-muted)]"
                       }`}
                       aria-label={`Go to danger slide ${idx + 1}`}
                     />
-                  )
+                  );
                 })}
               </div>
 
@@ -460,8 +469,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
             </div>
           </div>
         </div>
-
       </div>
     </section>
-  )
+  );
 }

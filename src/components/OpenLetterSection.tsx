@@ -1,16 +1,21 @@
-import { MessageSquare, Users } from 'lucide-react'
-import type { LetterTarget, Letters, Translation } from '../i18n'
-import { DECISION_MAKERS } from './decisionMakers'
+import { MessageSquare, Users } from "lucide-react";
+import type { LetterTarget, Letters, Translation } from "../i18n";
+import { DECISION_MAKERS } from "./decisionMakers";
 
 interface LetterProps {
-  t: Translation
-  letters: Letters
-  activeLetterTarget: LetterTarget
-  onChangeTarget: (target: LetterTarget) => void
+  t: Translation;
+  letters: Letters;
+  activeLetterTarget: LetterTarget;
+  onChangeTarget: (target: LetterTarget) => void;
 }
 
-export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarget }: LetterProps) {
-  const activeMakers = DECISION_MAKERS[activeLetterTarget] || []
+export function OpenLetterSection({
+  t,
+  letters,
+  activeLetterTarget,
+  onChangeTarget,
+}: LetterProps) {
+  const activeMakers = DECISION_MAKERS[activeLetterTarget] || [];
 
   return (
     <section id="brief" className="">
@@ -20,27 +25,36 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
           <span>{t.letterSectionTag}</span>
         </div>
         <h3 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
-          <MessageSquare size={22} className="text-blue-600 dark:text-blue-400" />
+          <MessageSquare
+            size={22}
+            className="text-blue-600 dark:text-blue-400"
+          />
           {t.letterH}
         </h3>
-        <p className="mt-1.5 text-sm text-[var(--text-secondary)] max-w-3xl">{t.letterSub}</p>
+        <p className="mt-1.5 text-sm text-[var(--text-secondary)] max-w-3xl">
+          {t.letterSub}
+        </p>
       </div>
 
       <div className="p-6 md:p-8 space-y-6">
         {/* Target Category Tabs */}
         <div className="grid grid-cols-3 gap-1 border border-[var(--border)] bg-[var(--bg-secondary)] p-1 font-mono text-xs">
-          {(['oeffentlich', 'privat', 'rundfunkrat'] as const).map((key) => (
+          {(["oeffentlich", "privat", "rundfunkrat"] as const).map((key) => (
             <button
               key={key}
               onClick={() => onChangeTarget(key)}
               className={`py-2 px-2 text-center font-bold uppercase tracking-wider transition-colors cursor-pointer ${
                 activeLetterTarget === key
-                  ? 'bg-blue-600 text-white'
-                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  ? "bg-blue-600 text-white"
+                  : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
               type="button"
             >
-              {key === 'oeffentlich' ? t.targetPublic : key === 'privat' ? t.targetPrivate : t.targetCouncil}
+              {key === "oeffentlich"
+                ? t.targetPublic
+                : key === "privat"
+                  ? t.targetPrivate
+                  : t.targetCouncil}
             </button>
           ))}
         </div>
@@ -51,7 +65,9 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
             <span>{t.letterOfficialLabel}</span>
             <span>{t.letterStatusLabel}</span>
           </div>
-          <p className="font-bold text-[var(--text-primary)]">{letters[activeLetterTarget].to}</p>
+          <p className="font-bold text-[var(--text-primary)]">
+            {letters[activeLetterTarget].to}
+          </p>
           <p className="font-semibold text-blue-600 dark:text-blue-400 border-t border-[var(--border)] pt-3">
             {letters[activeLetterTarget].subject}
           </p>
@@ -64,7 +80,10 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
         <div className="border-t border-[var(--border)] pt-6 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-4">
             <h4 className="flex items-center gap-2 text-base font-bold text-[var(--text-primary)] uppercase tracking-tight">
-              <Users size={18} className="text-blue-600 dark:text-blue-400 shrink-0" />
+              <Users
+                size={18}
+                className="text-blue-600 dark:text-blue-400 shrink-0"
+              />
               <span>{t.recipientsHeader}</span>
             </h4>
             <span className="font-mono text-xs text-[var(--text-muted)] shrink-0">
@@ -76,28 +95,30 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
           <div className="border border-[var(--border)] divide-y divide-[var(--border)]">
             {activeMakers.map((maker, idx) => {
               const translatedRole =
-                (t as Record<string, string>)[maker.roleKey] || maker.roleKey || ''
+                (t as Record<string, string>)[maker.roleKey] ||
+                maker.roleKey ||
+                "";
 
               const statusText =
-                maker.status === 'supported'
+                maker.status === "supported"
                   ? t.status_supported
-                  : maker.status === 'opposed'
+                  : maker.status === "opposed"
                     ? t.status_opposed
-                    : t.status_no_answer
+                    : t.status_no_answer;
 
               const statusColor =
-                maker.status === 'supported'
-                  ? 'text-emerald-600 dark:text-emerald-400'
-                  : maker.status === 'opposed'
-                    ? 'text-rose-600 dark:text-rose-400'
-                    : 'text-[var(--text-muted)]'
+                maker.status === "supported"
+                  ? "text-emerald-600 dark:text-emerald-400"
+                  : maker.status === "opposed"
+                    ? "text-rose-600 dark:text-rose-400"
+                    : "text-[var(--text-muted)]";
 
               const dotColor =
-                maker.status === 'supported'
-                  ? 'bg-emerald-500'
-                  : maker.status === 'opposed'
-                    ? 'bg-rose-500'
-                    : 'bg-[var(--text-muted)]'
+                maker.status === "supported"
+                  ? "bg-emerald-500"
+                  : maker.status === "opposed"
+                    ? "bg-rose-500"
+                    : "bg-[var(--text-muted)]";
 
               return (
                 <div
@@ -106,23 +127,33 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
                 >
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-baseline gap-2 mb-0.5">
-                      <span className="font-bold text-sm text-[var(--text-primary)]">{maker.name}</span>
-                      <span className="text-[11px] text-[var(--text-muted)] font-mono truncate">{maker.email}</span>
+                      <span className="font-bold text-sm text-[var(--text-primary)]">
+                        {maker.name}
+                      </span>
+                      <span className="text-[11px] text-[var(--text-muted)] font-mono truncate">
+                        {maker.email}
+                      </span>
                     </div>
-                    <p className="text-xs text-[var(--text-secondary)] leading-tight">{translatedRole}</p>
+                    <p className="text-xs text-[var(--text-secondary)] leading-tight">
+                      {translatedRole}
+                    </p>
                   </div>
                   <div className="shrink-0">
-                    <span className={`inline-flex items-center gap-1.5 font-mono text-[11px] font-bold uppercase tracking-wider ${statusColor}`}>
-                      <span className={`h-1.5 w-1.5 rounded-full ${dotColor}`} />
+                    <span
+                      className={`inline-flex items-center gap-1.5 font-mono text-[11px] font-bold uppercase tracking-wider ${statusColor}`}
+                    >
+                      <span
+                        className={`h-1.5 w-1.5 rounded-full ${dotColor}`}
+                      />
                       {statusText}
                     </span>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

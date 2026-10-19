@@ -1,17 +1,17 @@
-import { BookMarked, ArrowRight } from 'lucide-react'
-import type { Translation, WordsMeaning } from '../i18n'
+import { BookMarked, ArrowRight } from "lucide-react";
+import type { Translation, WordsMeaning } from "../i18n";
 
 interface RhetoricalDictionaryProps {
-  t: Translation
-  entries: WordsMeaning
+  t: Translation;
+  entries: WordsMeaning;
 }
 
-export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionaryProps) {
+export function RhetoricalDictionarySection({
+  t,
+  entries,
+}: RhetoricalDictionaryProps) {
   return (
-    <section
-      id="woerter-bedeutung"
-      className=""
-    >
+    <section id="woerter-bedeutung" className="">
       <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
           <span>{t.wordsMeaningTag}</span>
@@ -38,7 +38,10 @@ export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionary
                 </span>
               </div>
               <div className="flex items-start gap-2.5 md:w-2/3">
-                <ArrowRight size={15} className="text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" />
+                <ArrowRight
+                  size={15}
+                  className="text-rose-600 dark:text-rose-400 shrink-0 mt-0.5"
+                />
                 <span className="text-sm leading-relaxed text-[var(--text-secondary)]">
                   {entry.meaning}
                 </span>
@@ -48,5 +51,5 @@ export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionary
         </div>
       </div>
     </section>
-  )
+  );
 }

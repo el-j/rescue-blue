@@ -1,7 +1,7 @@
-import type { PolicyDangersUI } from '../../i18n'
+import type { PolicyDangersUI } from "../../i18n";
 
 interface PressChartProps {
-  ui: PolicyDangersUI
+  ui: PolicyDangersUI;
 }
 
 export function PressChart({ ui }: PressChartProps) {
@@ -14,35 +14,133 @@ export function PressChart({ ui }: PressChartProps) {
         <svg className="w-full h-full" viewBox="0 0 400 180">
           {/* Horizontal axis grid */}
           <line x1="90" y1="20" x2="90" y2="160" stroke="#94a3b8" />
-          <line x1="180" y1="20" x2="180" y2="160" stroke="#cbd5e1" strokeDasharray="3 3" />
-          <line x1="270" y1="20" x2="270" y2="160" stroke="#cbd5e1" strokeDasharray="3 3" />
-          <line x1="360" y1="20" x2="360" y2="160" stroke="#cbd5e1" strokeDasharray="3 3" />
+          <line
+            x1="180"
+            y1="20"
+            x2="180"
+            y2="160"
+            stroke="#cbd5e1"
+            strokeDasharray="3 3"
+          />
+          <line
+            x1="270"
+            y1="20"
+            x2="270"
+            y2="160"
+            stroke="#cbd5e1"
+            strokeDasharray="3 3"
+          />
+          <line
+            x1="360"
+            y1="20"
+            x2="360"
+            y2="160"
+            stroke="#cbd5e1"
+            strokeDasharray="3 3"
+          />
 
           {/* X axis labels */}
-          <text x="90" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold">0</text>
-          <text x="180" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold">50</text>
-          <text x="270" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold">75</text>
-          <text x="360" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold">100</text>
+          <text
+            x="90"
+            y="172"
+            textAnchor="middle"
+            className="text-[8px] svg-text-muted font-bold"
+          >
+            0
+          </text>
+          <text
+            x="180"
+            y="172"
+            textAnchor="middle"
+            className="text-[8px] svg-text-muted font-bold"
+          >
+            50
+          </text>
+          <text
+            x="270"
+            y="172"
+            textAnchor="middle"
+            className="text-[8px] svg-text-muted font-bold"
+          >
+            75
+          </text>
+          <text
+            x="360"
+            y="172"
+            textAnchor="middle"
+            className="text-[8px] svg-text-muted font-bold"
+          >
+            100
+          </text>
 
           {/* Germany Bar */}
-          <text x="80" y="47" textAnchor="end" className="text-[10px] svg-text-secondary font-bold">{ui.pressCountryDe}</text>
-          <rect x="90" y="35" width="221" height="20" className="fill-blue-600 dark:fill-neutral-600" />
-          <text x="320" y="49" className="text-[10px] svg-text-secondary font-bold">82 / 100</text>
+          <text
+            x="80"
+            y="47"
+            textAnchor="end"
+            className="text-[10px] svg-text-secondary font-bold"
+          >
+            {ui.pressCountryDe}
+          </text>
+          <rect
+            x="90"
+            y="35"
+            width="221"
+            height="20"
+            className="fill-blue-600 dark:fill-neutral-600"
+          />
+          <text
+            x="320"
+            y="49"
+            className="text-[10px] svg-text-secondary font-bold"
+          >
+            82 / 100
+          </text>
 
           {/* Poland under PiS Bar */}
-          <text x="80" y="97" textAnchor="end" className="text-[10px] svg-text-secondary font-bold">{ui.pressCountryPl}</text>
-          <rect x="90" y="85" width="148" height="20" className="fill-red-500/70 dark:fill-red-500/50" />
-          <text x="245" y="99" className="text-[10px] svg-text-red font-bold">55 / 100</text>
+          <text
+            x="80"
+            y="97"
+            textAnchor="end"
+            className="text-[10px] svg-text-secondary font-bold"
+          >
+            {ui.pressCountryPl}
+          </text>
+          <rect
+            x="90"
+            y="85"
+            width="148"
+            height="20"
+            className="fill-red-500/70 dark:fill-red-500/50"
+          />
+          <text x="245" y="99" className="text-[10px] svg-text-red font-bold">
+            55 / 100
+          </text>
 
           {/* Hungary under Fidesz Bar */}
-          <text x="80" y="147" textAnchor="end" className="text-[10px] svg-text-red font-bold">{ui.pressCountryHu}</text>
-          <rect x="90" y="135" width="113" height="20" className="fill-red-600" />
-          <text x="210" y="149" className="text-[10px] svg-text-red font-bold">42 / 100</text>
+          <text
+            x="80"
+            y="147"
+            textAnchor="end"
+            className="text-[10px] svg-text-red font-bold"
+          >
+            {ui.pressCountryHu}
+          </text>
+          <rect
+            x="90"
+            y="135"
+            width="113"
+            height="20"
+            className="fill-red-600"
+          />
+          <text x="210" y="149" className="text-[10px] svg-text-red font-bold">
+            42 / 100
+          </text>
         </svg>
       </div>
       <p className="text-[10px] text-[var(--text-muted)] leading-relaxed text-center">
         {ui.pressScoreNote}
       </p>
     </div>
-  )
+  );
 }

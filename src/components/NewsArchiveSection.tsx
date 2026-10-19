@@ -1,56 +1,66 @@
-import { ExternalLink, Newspaper, Calendar } from 'lucide-react'
-import { useMemo, useState } from 'react'
-import { getTranslation, type Locale } from '../i18n'
-import type { NewsArticle } from './HeroSection'
-import { deduplicateSources, getOriginSources } from '../utils/news'
+import { ExternalLink, Newspaper, Calendar } from "lucide-react";
+import { useMemo, useState } from "react";
+import { getTranslation, type Locale } from "../i18n";
+import type { NewsArticle } from "./HeroSection";
+import { deduplicateSources, getOriginSources } from "../utils/news";
 
 interface NewsArchiveSectionProps {
-  lang: Locale
-  news: NewsArticle[]
+  lang: Locale;
+  news: NewsArticle[];
 }
 
-
 export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
-  const t = getTranslation(lang)
-  const [isExpanded, setIsExpanded] = useState(false)
-  const [page, setPage] = useState(1)
-  const pageSize = 10
+  const t = getTranslation(lang);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [page, setPage] = useState(1);
+  const pageSize = 10;
 
-  const totalPages = Math.max(1, Math.ceil(news.length / pageSize))
-  const currentPage = Math.min(page, totalPages)
+  const totalPages = Math.max(1, Math.ceil(news.length / pageSize));
+  const currentPage = Math.min(page, totalPages);
 
   const pageItems = useMemo(() => {
-    const start = (currentPage - 1) * pageSize
-    return news.slice(start, start + pageSize)
-  }, [news, currentPage])
+    const start = (currentPage - 1) * pageSize;
+    return news.slice(start, start + pageSize);
+  }, [news, currentPage]);
 
-  const getLocalizedText = (field: string | Record<string, string> | undefined) => {
-    if (!field) return ''
-    if (typeof field === 'string') return field
-    return field[lang] ?? field['de'] ?? ''
-  }
+  const getLocalizedText = (
+    field: string | Record<string, string> | undefined,
+  ) => {
+    if (!field) return "";
+    if (typeof field === "string") return field;
+    return field[lang] ?? field["de"] ?? "";
+  };
 
   // Group current page by date
-  const groupedByDate = pageItems.reduce<Record<string, NewsArticle[]>>((acc, item) => {
-    const d = item.date
-    if (!acc[d]) {
-      acc[d] = []
-    }
-    acc[d].push(item)
-    return acc
-  }, {})
+  const groupedByDate = pageItems.reduce<Record<string, NewsArticle[]>>(
+    (acc, item) => {
+      const d = item.date;
+      if (!acc[d]) {
+        acc[d] = [];
+      }
+      acc[d].push(item);
+      return acc;
+    },
+    {},
+  );
 
   // Get sorted unique dates (newest first) for this page
-  const sortedDates = Object.keys(groupedByDate).sort((a, b) => b.localeCompare(a))
+  const sortedDates = Object.keys(groupedByDate).sort((a, b) =>
+    b.localeCompare(a),
+  );
 
-  const pageStart = news.length === 0 ? 0 : (currentPage - 1) * pageSize + 1
-  const pageEnd = Math.min(currentPage * pageSize, news.length)
+  const pageStart = news.length === 0 ? 0 : (currentPage - 1) * pageSize + 1;
+  const pageEnd = Math.min(currentPage * pageSize, news.length);
 
   const getPrimarySource = (item: NewsArticle) => {
-    const deduped = deduplicateSources(item.sources, item.url, item.source || t.readMore)
-    const origins = getOriginSources(deduped)
-    return origins[0] || deduped[0] || null
-  }
+    const deduped = deduplicateSources(
+      item.sources,
+      item.url,
+      item.source || t.readMore,
+    );
+    const origins = getOriginSources(deduped);
+    return origins[0] || deduped[0] || null;
+  };
 
   return (
     <section className="">
@@ -61,7 +71,10 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
             <span>{t.archiveSectionTag}</span>
           </div>
           <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
-            <Newspaper className="text-blue-600 dark:text-blue-400 shrink-0" size={24} />
+            <Newspaper
+              className="text-blue-600 dark:text-blue-400 shrink-0"
+              size={24}
+            />
             {t.archiveTitle}
           </h2>
           <p className="mt-1 text-sm text-[var(--text-secondary)] font-medium">
@@ -71,13 +84,14 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
         <div className="shrink-0 flex items-center gap-3">
           <div className="flex items-center gap-2 font-mono text-xs text-[var(--text-muted)] uppercase">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
-            {news.length} {news.length === 1 ? t.archiveEntry : t.archiveEntries}
+            {news.length}{" "}
+            {news.length === 1 ? t.archiveEntry : t.archiveEntries}
           </div>
           <button
             type="button"
             onClick={() => {
-              setIsExpanded((prev) => !prev)
-              if (!isExpanded) setPage(1)
+              setIsExpanded((prev) => !prev);
+              if (!isExpanded) setPage(1);
             }}
             className="px-3.5 py-1.5 font-mono text-xs font-bold text-[var(--text-primary)] uppercase tracking-wider transition-colors hover:border-blue-600 cursor-pointer"
           >
@@ -95,13 +109,18 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
         ) : !isExpanded ? (
           <div className="space-y-3">
             <div className="border border-[var(--border)] bg-[var(--bg-secondary)]/30 px-4 py-3 text-center">
-              <p className="text-xs font-mono text-[var(--text-secondary)]">{t.archiveCollapsedHint}</p>
+              <p className="text-xs font-mono text-[var(--text-secondary)]">
+                {t.archiveCollapsedHint}
+              </p>
             </div>
             <div className="max-h-96 overflow-y-auto border border-[var(--border)] divide-y divide-[var(--border)]">
               {news.map((item, idx) => {
-                const primarySource = getPrimarySource(item)
+                const primarySource = getPrimarySource(item);
                 return (
-                  <div key={idx} className="p-4 transition-colors hover:bg-[var(--bg-secondary)]/40">
+                  <div
+                    key={idx}
+                    className="p-4 transition-colors hover:bg-[var(--bg-secondary)]/40"
+                  >
                     <div className="mb-1.5 flex flex-wrap items-center gap-2 font-mono text-xs">
                       <span className="font-bold text-blue-600 dark:text-blue-400">
                         {item.date}
@@ -122,7 +141,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                       {getLocalizedText(item.title)}
                     </p>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -138,11 +157,15 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                 {/* List of articles for this date */}
                 <div className="divide-y divide-[var(--border)]">
                   {groupedByDate[dateStr].map((item, idx) => {
-                    const cleanSources = deduplicateSources(item.sources, item.url, item.source || t.readMore)
-                    const originSources = getOriginSources(cleanSources)
+                    const cleanSources = deduplicateSources(
+                      item.sources,
+                      item.url,
+                      item.source || t.readMore,
+                    );
+                    const originSources = getOriginSources(cleanSources);
                     return (
-                      <div 
-                        key={idx} 
+                      <div
+                        key={idx}
                         className="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-[var(--bg-secondary)]/40 transition-colors"
                       >
                         {/* Left: Source Badges & Title */}
@@ -150,8 +173,8 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                           <div className="flex flex-wrap gap-2">
                             {originSources.length > 0 ? (
                               originSources.map((src, sIdx) => (
-                                <span 
-                                  key={sIdx} 
+                                <span
+                                  key={sIdx}
                                   className="font-mono text-[10px] font-bold tracking-wide uppercase text-blue-600 dark:text-blue-400"
                                 >
                                   {src.name}
@@ -179,12 +202,15 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                               className="inline-flex items-center gap-1.5 text-[var(--text-secondary)] hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors border border-[var(--border)] bg-[var(--bg-secondary)] px-2.5 py-1"
                             >
                               <span>{src.name}</span>
-                              <ExternalLink size={10} className="shrink-0 text-[var(--text-muted)]" />
+                              <ExternalLink
+                                size={10}
+                                className="shrink-0 text-[var(--text-muted)]"
+                              />
                             </a>
                           ))}
                         </div>
                       </div>
-                    )
+                    );
                   })}
                 </div>
               </div>
@@ -222,5 +248,5 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
         )}
       </div>
     </section>
-  )
+  );
 }

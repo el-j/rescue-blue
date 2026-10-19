@@ -1,54 +1,65 @@
-import { useState, useMemo } from 'react'
-import { ArrowUpRight, HeartHandshake, Megaphone, Flag, Users, FileText } from 'lucide-react'
-import { RELATED_PETITIONS, type RelatedPetition } from '../related-petitions'
-import type { Locale, Translation } from '../i18n'
+import { useState, useMemo } from "react";
+import {
+  ArrowUpRight,
+  HeartHandshake,
+  Megaphone,
+  Users,
+  FileText,
+} from "lucide-react";
+import { RELATED_PETITIONS, type RelatedPetition } from "../related-petitions";
+import type { Locale, Translation } from "../i18n";
 
 interface AlsoSupportProps {
-  lang: Locale
-  t: Translation
+  lang: Locale;
+  t: Translation;
 }
 
-type FilterType = 'all' | 'demo' | 'alliance' | 'petition'
+type FilterType = "all" | "demo" | "alliance" | "petition";
 
 export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
-  const [activeFilter, setActiveFilter] = useState<FilterType>('all')
+  const [activeFilter, setActiveFilter] = useState<FilterType>("all");
 
   const filteredPetitions = useMemo(() => {
-    if (activeFilter === 'all') return RELATED_PETITIONS
-    if (activeFilter === 'alliance') {
-      return RELATED_PETITIONS.filter((p) => p.type === 'alliance' || p.type === 'youth')
+    if (activeFilter === "all") return RELATED_PETITIONS;
+    if (activeFilter === "alliance") {
+      return RELATED_PETITIONS.filter(
+        (p) => p.type === "alliance" || p.type === "youth",
+      );
     }
-    return RELATED_PETITIONS.filter((p) => p.type === activeFilter)
-  }, [activeFilter])
+    return RELATED_PETITIONS.filter((p) => p.type === activeFilter);
+  }, [activeFilter]);
 
   const counts = useMemo(() => {
     return {
       all: RELATED_PETITIONS.length,
-      demo: RELATED_PETITIONS.filter((p) => p.type === 'demo').length,
-      alliance: RELATED_PETITIONS.filter((p) => p.type === 'alliance' || p.type === 'youth').length,
-      petition: RELATED_PETITIONS.filter((p) => p.type === 'petition').length,
-    }
-  }, [])
+      demo: RELATED_PETITIONS.filter((p) => p.type === "demo").length,
+      alliance: RELATED_PETITIONS.filter(
+        (p) => p.type === "alliance" || p.type === "youth",
+      ).length,
+      petition: RELATED_PETITIONS.filter((p) => p.type === "petition").length,
+    };
+  }, []);
 
-  const getBadgeStyle = (type?: RelatedPetition['type']) => {
+  const getBadgeStyle = (type?: RelatedPetition["type"]) => {
     switch (type) {
-      case 'demo':
-        return 'text-rose-600 dark:text-rose-400 border-rose-500/20 bg-rose-500/10'
-      case 'alliance':
-      case 'youth':
-        return 'text-amber-600 dark:text-amber-400 border-amber-500/20 bg-amber-500/10'
-      case 'petition':
-        return 'text-blue-600 dark:text-blue-400 border-blue-500/20 bg-blue-500/10'
+      case "demo":
+        return "text-rose-600 dark:text-rose-400 border-rose-500/20 bg-rose-500/10";
+      case "alliance":
+      case "youth":
+        return "text-amber-600 dark:text-amber-400 border-amber-500/20 bg-amber-500/10";
+      case "petition":
+        return "text-blue-600 dark:text-blue-400 border-blue-500/20 bg-blue-500/10";
       default:
-        return 'text-[var(--text-muted)] border-[var(--border)] bg-[var(--bg-secondary)]'
+        return "text-[var(--text-muted)] border-[var(--border)] bg-[var(--bg-secondary)]";
     }
-  }
+  };
 
-  const getActionLabel = (type?: RelatedPetition['type']) => {
-    if (type === 'demo') return t.alsoSupportActionDemo
-    if (type === 'alliance' || type === 'youth') return t.alsoSupportActionAlliance
-    return t.alsoSupportBtn || 'Unterzeichnen'
-  }
+  const getActionLabel = (type?: RelatedPetition["type"]) => {
+    if (type === "demo") return t.alsoSupportActionDemo;
+    if (type === "alliance" || type === "youth")
+      return t.alsoSupportActionAlliance;
+    return t.alsoSupportBtn || "Unterzeichnen";
+  };
 
   return (
     <section className="border-t border-[var(--border)] px-4 py-16 md:px-6 bg-[var(--bg-secondary)]/30">
@@ -77,22 +88,22 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
           <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
             <button
               type="button"
-              onClick={() => setActiveFilter('all')}
+              onClick={() => setActiveFilter("all")}
               className={`px-3 py-1.5 border transition-all cursor-pointer font-bold ${
-                activeFilter === 'all'
-                  ? 'border-blue-600 bg-blue-600 text-white shadow-sm'
-                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                activeFilter === "all"
+                  ? "border-blue-600 bg-blue-600 text-white shadow-sm"
+                  : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
             >
               {t.alsoSupportFilterAll} ({counts.all})
             </button>
             <button
               type="button"
-              onClick={() => setActiveFilter('demo')}
+              onClick={() => setActiveFilter("demo")}
               className={`inline-flex items-center gap-1.5 px-3 py-1.5 border transition-all cursor-pointer font-bold ${
-                activeFilter === 'demo'
-                  ? 'border-rose-600 bg-rose-600 text-white shadow-sm'
-                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                activeFilter === "demo"
+                  ? "border-rose-600 bg-rose-600 text-white shadow-sm"
+                  : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
             >
               <Megaphone size={12} />
@@ -100,11 +111,11 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
             </button>
             <button
               type="button"
-              onClick={() => setActiveFilter('alliance')}
+              onClick={() => setActiveFilter("alliance")}
               className={`inline-flex items-center gap-1.5 px-3 py-1.5 border transition-all cursor-pointer font-bold ${
-                activeFilter === 'alliance'
-                  ? 'border-amber-600 bg-amber-600 text-white shadow-sm'
-                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                activeFilter === "alliance"
+                  ? "border-amber-600 bg-amber-600 text-white shadow-sm"
+                  : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
             >
               <Users size={12} />
@@ -112,11 +123,11 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
             </button>
             <button
               type="button"
-              onClick={() => setActiveFilter('petition')}
+              onClick={() => setActiveFilter("petition")}
               className={`inline-flex items-center gap-1.5 px-3 py-1.5 border transition-all cursor-pointer font-bold ${
-                activeFilter === 'petition'
-                  ? 'border-blue-600 bg-blue-600 text-white shadow-sm'
-                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                activeFilter === "petition"
+                  ? "border-blue-600 bg-blue-600 text-white shadow-sm"
+                  : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
             >
               <FileText size={12} />
@@ -128,9 +139,12 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
         {/* Links Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
           {filteredPetitions.map((petition) => {
-            const title = lang === 'de' ? petition.titleDe : petition.titleEn
-            const desc = lang === 'de' ? petition.descDe : petition.descEn
-            const category = lang === 'de' ? (petition.categoryDe ?? 'Initiative') : (petition.categoryEn ?? 'Initiative')
+            const title = lang === "de" ? petition.titleDe : petition.titleEn;
+            const desc = lang === "de" ? petition.descDe : petition.descEn;
+            const category =
+              lang === "de"
+                ? (petition.categoryDe ?? "Initiative")
+                : (petition.categoryEn ?? "Initiative");
 
             return (
               <a
@@ -173,14 +187,14 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
                     {getActionLabel(petition.type)}
                   </span>
                   <span className="text-[11px] text-[var(--text-muted)] truncate max-w-[120px]">
-                    {new URL(petition.url).hostname.replace(/^www\./, '')}
+                    {new URL(petition.url).hostname.replace(/^www\./, "")}
                   </span>
                 </div>
               </a>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

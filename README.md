@@ -41,4 +41,4 @@ Every push to `main` triggers the **GitHub Actions** workflow (`.github/workflow
 3. Builds the site (`npm run build`)
 4. Deploys the `dist/` folder to **GitHub Pages**
 
-Make sure GitHub Pages is configured to use **GitHub Actions** as the source in your repository settings (*Settings → Pages → Source → GitHub Actions*).
+Make sure GitHub Pages is configured to use **GitHub Actions** as the source in your repository settings (_Settings → Pages → Source → GitHub Actions_).

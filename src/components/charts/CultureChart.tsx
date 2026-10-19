@@ -1,7 +1,7 @@
-import type { PolicyDangersUI } from '../../i18n'
+import type { PolicyDangersUI } from "../../i18n";
 
 interface CultureChartProps {
-  ui: PolicyDangersUI
+  ui: PolicyDangersUI;
 }
 
 export function CultureChart({ ui }: CultureChartProps) {
@@ -13,25 +13,44 @@ export function CultureChart({ ui }: CultureChartProps) {
       <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col items-center justify-center">
         <svg className="w-40 h-40" viewBox="0 0 120 120">
           {/* Background Ring */}
-          <circle cx="60" cy="60" r="45" fill="none" stroke="#1f2937" strokeWidth="9" />
-          
+          <circle
+            cx="60"
+            cy="60"
+            r="45"
+            fill="none"
+            stroke="#1f2937"
+            strokeWidth="9"
+          />
+
           {/* Progress Ring representing 100% */}
-          <circle 
-            cx="60" 
-            cy="60" 
-            r="45" 
-            fill="none" 
-            stroke="#ef4444" 
-            strokeWidth="9" 
-            strokeDasharray="282.7" 
+          <circle
+            cx="60"
+            cy="60"
+            r="45"
+            fill="none"
+            stroke="#ef4444"
+            strokeWidth="9"
+            strokeDasharray="282.7"
             strokeDashoffset="0"
-            strokeLinecap="round" 
+            strokeLinecap="round"
             className="origin-center -rotate-90"
           />
 
           {/* Middle Text info */}
-          <text x="60" y="58" textAnchor="middle" className="text-[18px] svg-text-primary font-black">100%</text>
-          <text x="60" y="74" textAnchor="middle" className="text-[8px] svg-text-red font-extrabold uppercase tracking-wide">
+          <text
+            x="60"
+            y="58"
+            textAnchor="middle"
+            className="text-[18px] svg-text-primary font-black"
+          >
+            100%
+          </text>
+          <text
+            x="60"
+            y="74"
+            textAnchor="middle"
+            className="text-[8px] svg-text-red font-extrabold uppercase tracking-wide"
+          >
             {ui.courtDismissed}
           </text>
         </svg>
@@ -45,5 +64,5 @@ export function CultureChart({ ui }: CultureChartProps) {
         {ui.cultureCourtDesc}
       </p>
     </div>
-  )
+  );
 }

@@ -1,133 +1,157 @@
 export interface RelatedPetition {
-  url: string
-  titleDe: string
-  titleEn: string
-  descDe: string
-  descEn: string
-  categoryDe?: string
-  categoryEn?: string
-  type?: 'demo' | 'petition' | 'alliance' | 'youth'
+  url: string;
+  titleDe: string;
+  titleEn: string;
+  descDe: string;
+  descEn: string;
+  categoryDe?: string;
+  categoryEn?: string;
+  type?: "demo" | "petition" | "alliance" | "youth";
 }
 
 export const RELATED_PETITIONS: RelatedPetition[] = [
   {
-    url: 'https://pruef-demos.de/',
-    titleDe: 'PRÜF-Demos: Prüfung Rettet Übrigens Freiheit!',
-    titleEn: 'PRÜF-Demos: Protests for Constitutional Party Ban Review',
-    descDe: 'Bundesweite Demos an jedem 2. Samstag im Monat für ein AfD-Prüf- und Verbotsverfahren vor dem Bundesverfassungsgericht (Initiative von Nico Semsrott).',
-    descEn: 'Nationwide protests on the 2nd Saturday of each month demanding constitutional party ban review against the AfD.',
-    categoryDe: 'Demonstrationen & Kampagne',
-    categoryEn: 'Protests & Campaign',
-    type: 'demo',
+    url: "https://pruef-demos.de/",
+    titleDe: "PRÜF-Demos: Prüfung Rettet Übrigens Freiheit!",
+    titleEn: "PRÜF-Demos: Protests for Constitutional Party Ban Review",
+    descDe:
+      "Bundesweite Demos an jedem 2. Samstag im Monat für ein AfD-Prüf- und Verbotsverfahren vor dem Bundesverfassungsgericht (Initiative von Nico Semsrott).",
+    descEn:
+      "Nationwide protests on the 2nd Saturday of each month demanding constitutional party ban review against the AfD.",
+    categoryDe: "Demonstrationen & Kampagne",
+    categoryEn: "Protests & Campaign",
+    type: "demo",
   },
   {
-    url: 'https://zusammen-gegen-rechts.org/',
-    titleDe: 'Zusammen gegen Rechts',
-    titleEn: 'Together Against the Right',
-    descDe: 'Bundesweites Bündnis von über 1.000 Organisationen der Zivilgesellschaft für Demonstrationen, Kundgebungen und Aktionen gegen Rechtsextremismus.',
-    descEn: 'Nationwide network of over 1,000 civil society organizations coordinating protests, rallies, and actions against far-right extremism.',
-    categoryDe: 'Demo-Netzwerk',
-    categoryEn: 'Protest Network',
-    type: 'demo',
+    url: "https://zusammen-gegen-rechts.org/",
+    titleDe: "Zusammen gegen Rechts",
+    titleEn: "Together Against the Right",
+    descDe:
+      "Bundesweites Bündnis von über 1.000 Organisationen der Zivilgesellschaft für Demonstrationen, Kundgebungen und Aktionen gegen Rechtsextremismus.",
+    descEn:
+      "Nationwide network of over 1,000 civil society organizations coordinating protests, rallies, and actions against far-right extremism.",
+    categoryDe: "Demo-Netzwerk",
+    categoryEn: "Protest Network",
+    type: "demo",
   },
   {
-    url: 'https://widersetzen.com/',
-    titleDe: 'Widersetzen!',
-    titleEn: 'Widersetzen! Mass Protests',
-    descDe: 'Zivilgesellschaftliches Bündnis für massenhaften Protest und gewaltfreien Widerstand gegen rechtsextreme Parteitage und Treffen.',
-    descEn: 'Civil society action alliance organizing mass non-violent resistance and blockades against far-right party congresses.',
-    categoryDe: 'Aktionsbündnis',
-    categoryEn: 'Action Alliance',
-    type: 'alliance',
+    url: "https://widersetzen.com/",
+    titleDe: "Widersetzen!",
+    titleEn: "Widersetzen! Mass Protests",
+    descDe:
+      "Zivilgesellschaftliches Bündnis für massenhaften Protest und gewaltfreien Widerstand gegen rechtsextreme Parteitage und Treffen.",
+    descEn:
+      "Civil society action alliance organizing mass non-violent resistance and blockades against far-right party congresses.",
+    categoryDe: "Aktionsbündnis",
+    categoryEn: "Action Alliance",
+    type: "alliance",
   },
   {
-    url: 'https://aufstehen-gegen-rassismus.de/',
-    titleDe: 'Aufstehen gegen Rassismus',
-    titleEn: 'Stand Up Against Racism',
-    descDe: 'Bundesweites Bündnis gegen die AfD mit Demos, Gegenprotesten und praxisnahen „Stammtischkämpfer*innen“-Trainings.',
-    descEn: 'Broad alliance actively countering the AfD through local activism, counter-protests, and anti-racist debate workshops.',
-    categoryDe: 'Aktionsbündnis & Bildung',
-    categoryEn: 'Alliance & Workshops',
-    type: 'alliance',
+    url: "https://aufstehen-gegen-rassismus.de/",
+    titleDe: "Aufstehen gegen Rassismus",
+    titleEn: "Stand Up Against Racism",
+    descDe:
+      "Bundesweites Bündnis gegen die AfD mit Demos, Gegenprotesten und praxisnahen „Stammtischkämpfer*innen“-Trainings.",
+    descEn:
+      "Broad alliance actively countering the AfD through local activism, counter-protests, and anti-racist debate workshops.",
+    categoryDe: "Aktionsbündnis & Bildung",
+    categoryEn: "Alliance & Workshops",
+    type: "alliance",
   },
   {
-    url: 'https://kein-bock-auf-nazis.de/',
-    titleDe: 'Kein Bock auf Nazis',
-    titleEn: 'Kein Bock auf Nazis (Youth Campaign)',
-    descDe: 'Größte unabhängige Jugend- und Musikkampagne gegen Rechtsextremismus und Rassismus mit kostenlosem Infomaterial, Flyern & Festival-Präsenz.',
-    descEn: 'Largest independent youth and music festival campaign against far-right extremism, offering free materials and concert actions.',
-    categoryDe: 'Jugendkultur & Musik',
-    categoryEn: 'Youth Culture & Music',
-    type: 'youth',
+    url: "https://kein-bock-auf-nazis.de/",
+    titleDe: "Kein Bock auf Nazis",
+    titleEn: "Kein Bock auf Nazis (Youth Campaign)",
+    descDe:
+      "Größte unabhängige Jugend- und Musikkampagne gegen Rechtsextremismus und Rassismus mit kostenlosem Infomaterial, Flyern & Festival-Präsenz.",
+    descEn:
+      "Largest independent youth and music festival campaign against far-right extremism, offering free materials and concert actions.",
+    categoryDe: "Jugendkultur & Musik",
+    categoryEn: "Youth Culture & Music",
+    type: "youth",
   },
   {
-    url: 'https://omasgegenrechts.de/',
-    titleDe: 'OMAS GEGEN RECHTS',
-    titleEn: 'Grannies Against the Right',
-    descDe: 'Bundesweite zivilgesellschaftliche Bewegung für den Erhalt der parlamentarischen Demokratie und unermüdlichen Protest auf der Straße.',
-    descEn: 'Nationwide grassroots civil society movement standing up for democratic rights, anti-racism, and civil courage.',
-    categoryDe: 'Bürgerbewegung',
-    categoryEn: 'Civic Movement',
-    type: 'alliance',
+    url: "https://omasgegenrechts.de/",
+    titleDe: "OMAS GEGEN RECHTS",
+    titleEn: "Grannies Against the Right",
+    descDe:
+      "Bundesweite zivilgesellschaftliche Bewegung für den Erhalt der parlamentarischen Demokratie und unermüdlichen Protest auf der Straße.",
+    descEn:
+      "Nationwide grassroots civil society movement standing up for democratic rights, anti-racism, and civil courage.",
+    categoryDe: "Bürgerbewegung",
+    categoryEn: "Civic Movement",
+    type: "alliance",
   },
   {
-    url: 'https://rechtsextremismus-stoppen.de/',
-    titleDe: 'Rechtsextremismus stoppen – Demokratie verteidigen',
-    titleEn: 'Stop Right-Wing Extremism – Defend Democracy',
-    descDe: 'Breites Bündnis aus Gewerkschaften, Umweltverbänden, Wohlfahrtsorganisationen und Kirchen für bundesweite Großdemonstrationen.',
-    descEn: 'Broad alliance of trade unions, environmental organizations, and churches mobilizing mass rallies across Germany.',
-    categoryDe: 'Großdemo-Bündnis',
-    categoryEn: 'Protest Alliance',
-    type: 'demo',
+    url: "https://rechtsextremismus-stoppen.de/",
+    titleDe: "Rechtsextremismus stoppen – Demokratie verteidigen",
+    titleEn: "Stop Right-Wing Extremism – Defend Democracy",
+    descDe:
+      "Breites Bündnis aus Gewerkschaften, Umweltverbänden, Wohlfahrtsorganisationen und Kirchen für bundesweite Großdemonstrationen.",
+    descEn:
+      "Broad alliance of trade unions, environmental organizations, and churches mobilizing mass rallies across Germany.",
+    categoryDe: "Großdemo-Bündnis",
+    categoryEn: "Protest Alliance",
+    type: "demo",
   },
   {
-    url: 'https://afd-verbot.de',
-    titleDe: 'Zentrum für Politische Schönheit: AfD-Verbot.de',
-    titleEn: 'Center for Political Beauty: AfD-Verbot.de',
-    descDe: 'Dokumentation von verfassungsfeindlichen Vorfällen der AfD und Kampagne zur Unterstützung eines Verbotsantrags.',
-    descEn: 'Documentation of unconstitutional extremist incidents and campaign for an official party ban application.',
-    categoryDe: 'Recherche & Kampagne',
-    categoryEn: 'Research & Campaign',
-    type: 'alliance',
+    url: "https://afd-verbot.de",
+    titleDe: "Zentrum für Politische Schönheit: AfD-Verbot.de",
+    titleEn: "Center for Political Beauty: AfD-Verbot.de",
+    descDe:
+      "Dokumentation von verfassungsfeindlichen Vorfällen der AfD und Kampagne zur Unterstützung eines Verbotsantrags.",
+    descEn:
+      "Documentation of unconstitutional extremist incidents and campaign for an official party ban application.",
+    categoryDe: "Recherche & Kampagne",
+    categoryEn: "Research & Campaign",
+    type: "alliance",
   },
   {
-    url: 'https://innn.it/afdverbot',
-    titleDe: 'innn.it: AfD-Verbot jetzt!',
-    titleEn: 'innn.it: Ban AfD Now!',
-    descDe: 'Große zivilgesellschaftliche Petitionskampagne auf innn.it zur Einleitung des Parteiverbotsverfahrens.',
-    descEn: 'Major grassroots petition campaign on innn.it demanding the initiation of constitutional party ban proceedings.',
-    categoryDe: 'Petition',
-    categoryEn: 'Petition',
-    type: 'petition',
+    url: "https://innn.it/afdverbot",
+    titleDe: "innn.it: AfD-Verbot jetzt!",
+    titleEn: "innn.it: Ban AfD Now!",
+    descDe:
+      "Große zivilgesellschaftliche Petitionskampagne auf innn.it zur Einleitung des Parteiverbotsverfahrens.",
+    descEn:
+      "Major grassroots petition campaign on innn.it demanding the initiation of constitutional party ban proceedings.",
+    categoryDe: "Petition",
+    categoryEn: "Petition",
+    type: "petition",
   },
   {
-    url: 'https://www.change.org/p/afd-verbot-jetzt',
-    titleDe: 'Change.org: AfD-Verbot JETZT!',
-    titleEn: 'Change.org: AfD Ban NOW!',
-    descDe: 'Mit über 800.000 Unterschriften eine der größten Bürgerpetitionen an den Bundesrat zur Einleitung des Verbotsverfahrens.',
-    descEn: 'With over 800,000 signatures, one of the largest civic petitions urging the Bundesrat to file for a party ban.',
-    categoryDe: 'Bürgerpetition',
-    categoryEn: 'Civic Petition',
-    type: 'petition',
+    url: "https://www.change.org/p/afd-verbot-jetzt",
+    titleDe: "Change.org: AfD-Verbot JETZT!",
+    titleEn: "Change.org: AfD Ban NOW!",
+    descDe:
+      "Mit über 800.000 Unterschriften eine der größten Bürgerpetitionen an den Bundesrat zur Einleitung des Verbotsverfahrens.",
+    descEn:
+      "With over 800,000 signatures, one of the largest civic petitions urging the Bundesrat to file for a party ban.",
+    categoryDe: "Bürgerpetition",
+    categoryEn: "Civic Petition",
+    type: "petition",
   },
   {
-    url: 'https://www.amadeu-antonio-stiftung.de/',
-    titleDe: 'Amadeu Antonio Stiftung',
-    titleEn: 'Amadeu Antonio Foundation',
-    descDe: 'Stärkt demokratische Zivilgesellschaft, schützt Betroffene von rechter Gewalt und klärt über Rechtsextremismus und Rassismus auf.',
-    descEn: 'Strengthens democratic civil society, supports victims of hate crime, and provides monitoring of right-wing extremism.',
-    categoryDe: 'Zivilgesellschaft & Monitoring',
-    categoryEn: 'Civil Society & Monitoring',
-    type: 'alliance',
+    url: "https://www.amadeu-antonio-stiftung.de/",
+    titleDe: "Amadeu Antonio Stiftung",
+    titleEn: "Amadeu Antonio Foundation",
+    descDe:
+      "Stärkt demokratische Zivilgesellschaft, schützt Betroffene von rechter Gewalt und klärt über Rechtsextremismus und Rassismus auf.",
+    descEn:
+      "Strengthens democratic civil society, supports victims of hate crime, and provides monitoring of right-wing extremism.",
+    categoryDe: "Zivilgesellschaft & Monitoring",
+    categoryEn: "Civil Society & Monitoring",
+    type: "alliance",
   },
   {
-    url: 'https://www.change.org/p/einleitung-eines-verbotsverfahrens-gegen-die-afd-gem%C3%A4%C3%9F-artikel-21-absatz-2-gg',
-    titleDe: 'Verbotsverfahren gemäß Art. 21 GG',
-    titleEn: 'Ban Proceedings Under Art. 21 GG',
-    descDe: 'Petition zur Einleitung eines verfassungsrechtlichen Verbotsverfahrens nach Artikel 21 Absatz 2 des Grundgesetzes.',
-    descEn: 'Petition to initiate constitutional ban proceedings under Article 21(2) of the German Basic Law.',
-    categoryDe: 'Petition',
-    categoryEn: 'Petition',
-    type: 'petition',
+    url: "https://www.change.org/p/einleitung-eines-verbotsverfahrens-gegen-die-afd-gem%C3%A4%C3%9F-artikel-21-absatz-2-gg",
+    titleDe: "Verbotsverfahren gemäß Art. 21 GG",
+    titleEn: "Ban Proceedings Under Art. 21 GG",
+    descDe:
+      "Petition zur Einleitung eines verfassungsrechtlichen Verbotsverfahrens nach Artikel 21 Absatz 2 des Grundgesetzes.",
+    descEn:
+      "Petition to initiate constitutional ban proceedings under Article 21(2) of the German Basic Law.",
+    categoryDe: "Petition",
+    categoryEn: "Petition",
+    type: "petition",
   },
-]
+];

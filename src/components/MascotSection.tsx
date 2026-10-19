@@ -1,19 +1,32 @@
-import { useState } from 'react'
-import { Download, Sparkles, Layers, ShieldCheck, ArrowRight, Heart, Mail } from 'lucide-react'
-import type { Locale, Translation } from '../i18n'
+import { useState } from "react";
+import {
+  Download,
+  Sparkles,
+  Layers,
+  ShieldCheck,
+  ArrowRight,
+  Heart,
+  Mail,
+} from "lucide-react";
+import type { Locale, Translation } from "../i18n";
 
 interface MascotSectionProps {
-  lang?: Locale
-  t: Translation
+  lang?: Locale;
+  t: Translation;
 }
 
 export function MascotSection({ t }: MascotSectionProps) {
-  const [selectedPhoto, setSelectedPhoto] = useState<'stickers' | 'patches'>('stickers')
+  const [selectedPhoto, setSelectedPhoto] = useState<"stickers" | "patches">(
+    "stickers",
+  );
 
-  const baseUrl = import.meta.env.BASE_URL
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
-    <section id="maskottchen" className="border-t border-[var(--border)] bg-[var(--bg-secondary)]/50 py-16 px-4 md:px-6">
+    <section
+      id="maskottchen"
+      className="border-t border-[var(--border)] bg-[var(--bg-secondary)]/50 py-16 px-4 md:px-6"
+    >
       <div className="mx-auto max-w-6xl">
         {/* Header Tag */}
         <div className="mb-3 flex items-center gap-2">
@@ -29,7 +42,11 @@ export function MascotSection({ t }: MascotSectionProps) {
           <div className="lg:col-span-6 space-y-3">
             <div className="relative overflow-hidden border border-[var(--border)] bg-[var(--bg-primary)] shadow-xl group">
               <img
-                src={selectedPhoto === 'stickers' ? `${baseUrl}antifa-peng-stickers.jpg` : `${baseUrl}antifa-peng-patches.jpg`}
+                src={
+                  selectedPhoto === "stickers"
+                    ? `${baseUrl}antifa-peng-stickers.jpg`
+                    : `${baseUrl}antifa-peng-patches.jpg`
+                }
                 alt={t.mascotAlt}
                 width={1080}
                 height={952}
@@ -40,25 +57,27 @@ export function MascotSection({ t }: MascotSectionProps) {
 
             {/* Photo Switcher Buttons */}
             <div className="flex items-center gap-2 font-mono text-xs">
-              <span className="text-[var(--text-muted)] mr-1">{t.mascotViewLabel}</span>
+              <span className="text-[var(--text-muted)] mr-1">
+                {t.mascotViewLabel}
+              </span>
               <button
                 type="button"
-                onClick={() => setSelectedPhoto('stickers')}
+                onClick={() => setSelectedPhoto("stickers")}
                 className={`px-3 py-1 border transition-colors cursor-pointer ${
-                  selectedPhoto === 'stickers'
-                    ? 'border-blue-600 bg-blue-600 text-white font-bold'
-                    : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  selectedPhoto === "stickers"
+                    ? "border-blue-600 bg-blue-600 text-white font-bold"
+                    : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                 }`}
               >
                 {t.mascotTabStickers}
               </button>
               <button
                 type="button"
-                onClick={() => setSelectedPhoto('patches')}
+                onClick={() => setSelectedPhoto("patches")}
                 className={`px-3 py-1 border transition-colors cursor-pointer ${
-                  selectedPhoto === 'patches'
-                    ? 'border-blue-600 bg-blue-600 text-white font-bold'
-                    : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                  selectedPhoto === "patches"
+                    ? "border-blue-600 bg-blue-600 text-white font-bold"
+                    : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                 }`}
               >
                 {t.mascotTabPatches}
@@ -138,7 +157,7 @@ export function MascotSection({ t }: MascotSectionProps) {
                 <Mail size={15} />
               </div>
               <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
-                <span>{t.mascotPatchEmailHint}{' '}</span>
+                <span>{t.mascotPatchEmailHint} </span>
                 <a
                   href="mailto:bluearc.in.sky@gmail.com?subject=Antifa%20Peng%20Patch"
                   className="font-mono font-bold text-blue-600 dark:text-blue-400 underline decoration-blue-500/40 underline-offset-2 hover:decoration-blue-500 hover:text-blue-500 transition-colors"
@@ -151,5 +170,5 @@ export function MascotSection({ t }: MascotSectionProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }
