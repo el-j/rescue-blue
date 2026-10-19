@@ -227,7 +227,8 @@
     "demoSwitchCycleAria": "Переключить режим визуализации",
     "demoToggleMajorityAria": "Переключить график большинства",
     "demoVizOptions": "Параметры визуализации",
-    "demoMapFederal": "🇩🇪 Федеральный уровень (Германия)"
+    "demoMapFederal": "🇩🇪 Федеральный уровень (Германия)",
+    "mascotPatchEmailHint": "Интересует нашивка? Напишите на почту"
   },
   "sayings": {
     "sprache": [

@@ -31,5 +31,10 @@ describe('MascotSection', () => {
 
     const img = screen.getByRole('img', { name: /Echte gestickte Antifa Peng Patches/i })
     expect(img).toHaveAttribute('src', expect.stringContaining('antifa-peng-patches.jpg'))
+
+    // Check patch email contact link
+    const mailLink = screen.getByRole('link', { name: /bluearc\.in\.sky@gmail\.com/i })
+    expect(mailLink).toBeInTheDocument()
+    expect(mailLink).toHaveAttribute('href', expect.stringContaining('mailto:bluearc.in.sky@gmail.com'))
   })
 })

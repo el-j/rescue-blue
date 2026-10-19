@@ -227,7 +227,8 @@
     "demoSwitchCycleAria": "Görselleştirme seçeneğini değiştir",
     "demoToggleMajorityAria": "Çoğunluk grafiğini aç/kapat",
     "demoVizOptions": "Görselleştirme Seçenekleri",
-    "demoMapFederal": "🇩🇪 Federal (Almanya)"
+    "demoMapFederal": "🇩🇪 Federal (Almanya)",
+    "mascotPatchEmailHint": "Yama ile ilgileniyor musunuz? Şu adrese bir e-posta gönderin:"
   },
   "sayings": {
     "sprache": [

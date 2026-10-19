@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Download, Sparkles, Layers, ShieldCheck, ArrowRight, Heart } from 'lucide-react'
+import { Download, Sparkles, Layers, ShieldCheck, ArrowRight, Heart, Mail } from 'lucide-react'
 import type { Locale, Translation } from '../i18n'
 
 interface MascotSectionProps {
@@ -129,6 +129,22 @@ export function MascotSection({ t }: MascotSectionProps) {
               <p className="text-[11px] font-mono text-[var(--text-muted)] flex items-center gap-1.5">
                 <ArrowRight size={12} />
                 {t.mascotUsageHint}
+              </p>
+            </div>
+
+            {/* Patch Email Contact Callout */}
+            <div className="p-3.5 border border-dashed border-[var(--border)] bg-[var(--bg-primary)] flex items-center gap-3">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center border border-blue-500/30 bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                <Mail size={15} />
+              </div>
+              <p className="text-xs leading-relaxed text-[var(--text-secondary)]">
+                <span>{t.mascotPatchEmailHint}{' '}</span>
+                <a
+                  href="mailto:bluearc.in.sky@gmail.com?subject=Antifa%20Peng%20Patch"
+                  className="font-mono font-bold text-blue-600 dark:text-blue-400 underline decoration-blue-500/40 underline-offset-2 hover:decoration-blue-500 hover:text-blue-500 transition-colors"
+                >
+                  bluearc.in.sky@gmail.com
+                </a>
               </p>
             </div>
           </div>

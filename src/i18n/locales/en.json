@@ -227,7 +227,8 @@
     "demoSwitchCycleAria": "Switch visualization mode",
     "demoToggleMajorityAria": "Toggle majority chart",
     "demoVizOptions": "Visualization Options",
-    "demoMapFederal": "🇩🇪 Federal (Germany)"
+    "demoMapFederal": "🇩🇪 Federal (Germany)",
+    "mascotPatchEmailHint": "Interested in a patch? Write an email to"
   },
   "sayings": {
     "sprache": [
