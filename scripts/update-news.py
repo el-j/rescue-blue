@@ -401,18 +401,58 @@ def combine_articles(articles):
             
     return combined
             
+PAYWALL_DOMAINS = ["zeit.de", "spiegel.de", "sueddeutsche.de", "welt.de", "faz.net", "focus.de", "tagesspiegel.de", "handelsblatt.com", "nzz.ch"]
+
+def extract_direct_url(url):
+    parts = re.split(r"(?=https?://)", url)
+    http_parts = [p for p in parts if p.startswith("http")]
+    if len(http_parts) > 1:
+        for p in reversed(http_parts):
+            if not re.search(r"archive\.(?:ph|today|is|li|vn|md)|web\.archive\.org", p, re.IGNORECASE):
+                return p
+    return url
+
+def is_paywall_url(url):
+    direct = extract_direct_url(url)
+    try:
+        p = urllib.parse.urlparse(direct)
+        domain = p.netloc.lower()
+        return any(pw in domain for pw in PAYWALL_DOMAINS)
+    except:
+        return False
+
+def expand_sources_for_paywalls(sources):
+    expanded = []
+    for src in sources:
+        u = src.get("url", "")
+        name = src.get("name", "")
+        if not u or not name:
+            continue
+        direct_url = extract_direct_url(u)
+        is_archive = "(archiv" in name.lower() or "archive.ph" in u.lower()
+        base_name = re.sub(r"\s*\((archiv|archive)\)", "", name, flags=re.IGNORECASE).strip()
+
+        if is_paywall_url(u) or (is_archive and is_paywall_url(direct_url)):
+            expanded.append({"name": base_name, "url": direct_url})
+            expanded.append({"name": f"{base_name} (Archiv)", "url": f"https://archive.ph/{direct_url}"})
+        else:
+            expanded.append(src)
+
+    dedup = []
+    seen_u = set()
+    seen_n = set()
+    for s in expanded:
+        norm_u = normalize_url(s["url"])
+        norm_n = s["name"].strip().lower()
+        if norm_u not in seen_u and norm_n not in seen_n:
+            dedup.append(s)
+            seen_u.add(norm_u)
+            seen_n.add(norm_n)
+    return dedup
+
 def make_sources_list(source_name, url):
-    paywall_domains = ["zeit.de", "spiegel.de", "sueddeutsche.de", "welt.de", "faz.net", "focus.de", "tagesspiegel.de", "handelsblatt.com", "nzz.ch"]
-    parsed = urllib.parse.urlparse(url)
-    domain = parsed.netloc.lower()
-    
     sources = [{"name": source_name, "url": url}]
-    if any(pw in domain for pw in paywall_domains):
-        sources.append({
-            "name": f"{source_name} (Archiv)",
-            "url": f"https://archive.ph/{url}"
-        })
-    return sources
+    return expand_sources_for_paywalls(sources)
 
 def main():
     output_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
@@ -435,6 +475,7 @@ def main():
                     item["sources"] = [{"name": item.get("source", "Unknown"), "url": item.get("url", "")}]
                     if "source" in item: del item["source"]
                     if "url" in item: del item["url"]
+                item["sources"] = expand_sources_for_paywalls(item["sources"])
                 
                 # Upgrade title & excerpt to dictionary if they are single strings
                 if isinstance(item.get("title"), str):

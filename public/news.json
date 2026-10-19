@@ -87,6 +87,10 @@
     },
     "sources": [
       {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/deutschland/gesellschaft-fuer-freiheitsrechte-haelt-afd-verbot-fuer-erfolgversprechend-a-2a4c11b8-7a5f-460d-85fa-eaef28b7e382"
+      },
+      {
         "name": "Spiegel (Archiv)",
         "url": "https://archive.ph/https://www.spiegel.de/politik/deutschland/gesellschaft-fuer-freiheitsrechte-haelt-afd-verbot-fuer-erfolgversprechend-a-2a4c11b8-7a5f-460d-85fa-eaef28b7e382"
       }
@@ -120,6 +124,10 @@
       {
         "name": "Zeit Online",
         "url": "https://www.zeit.de/politik/deutschland/2026-06/martin-reichardt-afd-hitlergruss-foto-gxe"
+      },
+      {
+        "name": "Zeit Online (Archiv)",
+        "url": "https://archive.ph/https://www.zeit.de/politik/deutschland/2026-06/martin-reichardt-afd-hitlergruss-foto-gxe"
       }
     ]
   },
@@ -246,8 +254,16 @@
         "url": "https://www.spiegel.de/politik/deutschland/martin-reichardt-afd-politiker-soll-hitlergruss-gezeigt-haben-a-c9538f92-5ff3-4650-9566-7e23b77d6f97#ref=rss"
       },
       {
+        "name": "Spiegel (Archiv)",
+        "url": "https://archive.ph/https://www.spiegel.de/politik/deutschland/martin-reichardt-afd-politiker-soll-hitlergruss-gezeigt-haben-a-c9538f92-5ff3-4650-9566-7e23b77d6f97#ref=rss"
+      },
+      {
         "name": "Süddeutsche Zeitung",
         "url": "https://www.sueddeutsche.de/politik/afd-politiker-reichardt-hitlergruss-vorwurf-sachsen-anhalt-li.3504701"
+      },
+      {
+        "name": "Süddeutsche Zeitung (Archiv)",
+        "url": "https://archive.ph/https://www.sueddeutsche.de/politik/afd-politiker-reichardt-hitlergruss-vorwurf-sachsen-anhalt-li.3504701"
       }
     ]
   },
@@ -525,8 +541,16 @@
     },
     "sources": [
       {
+        "name": "Welt",
+        "url": "https://www.welt.de/politik/deutschland/article253272990/AfD-scheitert-mit-Ausschluss-von-Journalisten-von-Thueringer-Wahlparty.html"
+      },
+      {
         "name": "Welt (Archiv)",
         "url": "https://archive.ph/https://www.welt.de/politik/deutschland/article253272990/AfD-scheitert-mit-Ausschluss-von-Journalisten-von-Thueringer-Wahlparty.html"
+      },
+      {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/politik/deutschland/thueringen-afd-scheitert-vor-gericht-mit-ausschluss-von-journalisten-von-wahlparty-a-514d9b4b-9721-4fa3-b6d8-ee1bfb972e38"
       },
       {
         "name": "Spiegel (Archiv)",
@@ -657,6 +681,10 @@
     },
     "sources": [
       {
+        "name": "Spiegel",
+        "url": "https://www.spiegel.de/kultur/afd-scheitert-mit-klage-gegen-schultheaterstueck-danke-dafuer-afd-a-40a232f7-bc3f-4e09-b461-9c606e1cc84c"
+      },
+      {
         "name": "Spiegel (Archiv)",
         "url": "https://archive.ph/https://www.spiegel.de/kultur/afd-scheitert-mit-klage-gegen-schultheaterstueck-danke-dafuer-afd-a-40a232f7-bc3f-4e09-b461-9c606e1cc84c"
       },
@@ -753,6 +781,10 @@
       "ru": "АдГ в Саксонии-Анхальт требует связать государственное финансирование культуры с приверженностью немецкой культуре. Критики предупреждают о цензуре и политическом влиянии."
     },
     "sources": [
+      {
+        "name": "Welt",
+        "url": "https://www.welt.de/kultur/article193498877/Kulturpolitik-AfD-will-Kulturfoerderung-an-deutsches-Kulturbewusstsein-koppeln.html"
+      },
       {
         "name": "Welt (Archiv)",
         "url": "https://archive.ph/https://www.welt.de/kultur/article193498877/Kulturpolitik-AfD-will-Kulturfoerderung-an-deutsches-Kulturbewusstsein-koppeln.html"

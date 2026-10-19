@@ -65,6 +65,34 @@ describe('NewsSpotlightSection', () => {
     expect(headlineLink).toHaveAttribute('href', 'https://www.zeit.de/politik/schutzschild')
   })
 
+  it('renders both normal page and archive page links for paywalled articles like Spiegel', () => {
+    const spiegelNews: NewsArticle[] = [
+      {
+        title: 'Rechtsgutachten der GFF',
+        date: '2026-06-25',
+        excerpt: 'Ein 1.500-seitiges Gutachten stuft die AfD als verfassungswidrig ein.',
+        sources: [
+          {
+            name: 'Spiegel (Archiv)',
+            url: 'https://archive.ph/https://www.spiegel.de/politik/deutschland/artikel-gff',
+          },
+        ],
+      },
+    ]
+
+    render(<NewsSpotlightSection lang="de" t={t} news={spiegelNews} />)
+
+    // Top origin notice should show "Spiegel" (direct link)
+    const originLinks = screen.getAllByRole('link', { name: 'Spiegel' })
+    expect(originLinks.length).toBe(2) // 1 in origin notice, 1 in bottom buttons
+    expect(originLinks[0]).toHaveAttribute('href', 'https://www.spiegel.de/politik/deutschland/artikel-gff')
+
+    // Bottom buttons should contain both normal Spiegel and Spiegel (Archiv)
+    const archiveLink = screen.getByRole('link', { name: 'Spiegel (Archiv)' })
+    expect(archiveLink).toBeInTheDocument()
+    expect(archiveLink).toHaveAttribute('href', 'https://archive.ph/https://www.spiegel.de/politik/deutschland/artikel-gff')
+  })
+
   it('auto-slides after 8 seconds by default', () => {
     render(<NewsSpotlightSection lang="de" t={t} news={sampleNews} />)
 
