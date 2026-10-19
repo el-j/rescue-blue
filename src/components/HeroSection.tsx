@@ -54,19 +54,62 @@ export function HeroSection({
           </div>
         </div> */}
 
-        {/* Main Typographic Manifesto Header */}
-        <div className="space-y-4 max-w-5xl">
-          <h1 className="editorial-headline text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-[var(--text-primary)]">
-            {headline}
-          </h1>
+        {/* Main Typographic Manifesto Header with Antifa Peng Mascot Landing Emblem */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div className="space-y-4 lg:col-span-8">
+            <h1 className="editorial-headline text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-[var(--text-primary)]">
+              {headline}
+            </h1>
 
-          <p className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-blue-600 dark:text-blue-400 max-w-4xl">
-            {subline}
-          </p>
+            <p className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-blue-600 dark:text-blue-400 max-w-4xl">
+              {subline}
+            </p>
 
-          <p className="editorial-lead max-w-3xl pt-2">
-            {t.heroBody}
-          </p>
+            <p className="editorial-lead max-w-3xl pt-2">
+              {t.heroBody}
+            </p>
+          </div>
+
+          {/* Antifa Peng Landing Mascot Emblem */}
+          <div className="lg:col-span-4 flex flex-col items-center sm:items-start lg:items-center">
+            <div className="relative group max-w-[240px] sm:max-w-[260px] lg:max-w-[280px]">
+              {/* Subtle ambient back glow */}
+              <div className="absolute inset-0 rounded-full bg-blue-500/15 blur-2xl group-hover:bg-blue-500/25 transition-all pointer-events-none" />
+              
+              {/* Sticker / Patch Graphic */}
+              <div className="relative transform -rotate-2 group-hover:rotate-0 transition-transform duration-300 ease-out">
+                <img
+                  src={`${import.meta.env.BASE_URL}antifa-peng.png`}
+                  alt="Antifa Peng - Offizielles Kampagnen-Maskottchen von rette-blau.de"
+                  width={280}
+                  height={280}
+                  className="w-full h-auto drop-shadow-[0_12px_24px_rgba(0,0,0,0.18)] dark:drop-shadow-[0_12px_28px_rgba(0,0,0,0.5)] select-none"
+                  loading="eager"
+                />
+
+                {/* Speech Bubble / Badge */}
+                <div className="absolute -bottom-3 -right-2 sm:-right-4 bg-[var(--bg-primary)] border border-[var(--border)] px-3 py-1.5 shadow-lg rounded-xl text-left transform rotate-2">
+                  <p className="font-mono text-[11px] font-extrabold text-[var(--text-primary)] tracking-wide">
+                    »Nook nook, bluu!« 🏳️‍🌈
+                  </p>
+                  <p className="text-[10px] text-[var(--text-muted)] font-medium">
+                    Maskottchen & Soli-Patch
+                  </p>
+                </div>
+              </div>
+
+              {/* Caption link below */}
+              <div className="mt-5 text-center w-full">
+                <a
+                  href="#maskottchen"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider"
+                >
+                  <span>Sticker & Patches ansehen</span>
+                  <ArrowUpRight size={13} />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Chromatic Confrontation: Democratic Blue vs Historical Brown Split Broadsheet */}

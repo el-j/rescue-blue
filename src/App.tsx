@@ -23,6 +23,7 @@ import {
   FaqSection,
   NewsArchiveSection,
   PolicyDangersSection,
+  MascotSection,
 } from './components'
 import {
   getTranslation,
@@ -307,9 +308,9 @@ export default function App({ initialLang }: AppProps = {}) {
         />
       </main>
 
-<TrustSection t={t} />
-          <EditorialPolicySection t={t} />
-
+      <TrustSection t={t} />
+      <EditorialPolicySection t={t} />
+      <MascotSection lang={lang} t={t} />
       <AlsoSupportSection lang={lang} t={t} />
       <BottomCta t={t} ctaBody={ctaBody} ctaLabel={ctaButtonLabel} onCtaClick={() => handleTrackedCtaClick('bottom')} />
       <SiteFooter t={t} />

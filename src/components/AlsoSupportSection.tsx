@@ -1,5 +1,6 @@
-import { ArrowUpRight, HeartHandshake } from 'lucide-react'
-import { RELATED_PETITIONS } from '../related-petitions'
+import { useState, useMemo } from 'react'
+import { ArrowUpRight, HeartHandshake, Megaphone, Flag, Users, FileText } from 'lucide-react'
+import { RELATED_PETITIONS, type RelatedPetition } from '../related-petitions'
 import type { Locale, Translation } from '../i18n'
 
 interface AlsoSupportProps {
@@ -7,43 +8,184 @@ interface AlsoSupportProps {
   t: Translation
 }
 
+type FilterType = 'all' | 'demo' | 'alliance' | 'petition'
+
 export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
+  const [activeFilter, setActiveFilter] = useState<FilterType>('all')
+
+  const filteredPetitions = useMemo(() => {
+    if (activeFilter === 'all') return RELATED_PETITIONS
+    if (activeFilter === 'alliance') {
+      return RELATED_PETITIONS.filter((p) => p.type === 'alliance' || p.type === 'youth')
+    }
+    return RELATED_PETITIONS.filter((p) => p.type === activeFilter)
+  }, [activeFilter])
+
+  const counts = useMemo(() => {
+    return {
+      all: RELATED_PETITIONS.length,
+      demo: RELATED_PETITIONS.filter((p) => p.type === 'demo').length,
+      alliance: RELATED_PETITIONS.filter((p) => p.type === 'alliance' || p.type === 'youth').length,
+      petition: RELATED_PETITIONS.filter((p) => p.type === 'petition').length,
+    }
+  }, [])
+
+  const getBadgeStyle = (type?: RelatedPetition['type']) => {
+    switch (type) {
+      case 'demo':
+        return 'text-rose-600 dark:text-rose-400 border-rose-500/20 bg-rose-500/10'
+      case 'alliance':
+      case 'youth':
+        return 'text-amber-600 dark:text-amber-400 border-amber-500/20 bg-amber-500/10'
+      case 'petition':
+        return 'text-blue-600 dark:text-blue-400 border-blue-500/20 bg-blue-500/10'
+      default:
+        return 'text-[var(--text-muted)] border-[var(--border)] bg-[var(--bg-secondary)]'
+    }
+  }
+
+  const getActionLabel = (type?: RelatedPetition['type']) => {
+    if (lang === 'de') {
+      if (type === 'demo') return 'Demos & Termine'
+      if (type === 'alliance' || type === 'youth') return 'Mitmachen & Vernetzen'
+      return t.alsoSupportBtn || 'Unterzeichnen'
+    }
+    if (type === 'demo') return 'Protests & Dates'
+    if (type === 'alliance' || type === 'youth') return 'Join & Connect'
+    return 'Sign Petition'
+  }
+
   return (
-    <section className="border-t border-[var(--border)] px-4 py-14 md:px-6 bg-[var(--bg-secondary)]/40">
+    <section className="border-t border-[var(--border)] px-4 py-16 md:px-6 bg-[var(--bg-secondary)]/30">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-2 flex items-center gap-2">
+        {/* Section Tag */}
+        <div className="mb-3 flex items-center gap-2">
           <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase flex items-center gap-1.5">
-            <HeartHandshake size={14} />
-            SOLIDARISCHES NETZWERK
+            <HeartHandshake size={15} />
+            SOLIDARISCHES NETZWERK · DEMOS & INITIATIVEN
           </span>
-          <span className="h-px w-16 bg-[var(--border)]" />
+          <span className="h-px flex-1 max-w-xs bg-[var(--border)]" />
         </div>
-        <h2 className="mb-2 text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
-          {t.alsoSupportH}
-        </h2>
-        <p className="mb-8 text-sm text-[var(--text-secondary)] max-w-2xl">{t.alsoSupportSub}</p>
-        <div className="divide-y sm:divide-y-0 sm:divide-x divide-[var(--border)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-[var(--bg-primary)]">
-          {RELATED_PETITIONS.map((petition) => (
-            <a
-              key={petition.url}
-              href={petition.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group border border-[var(--border)] p-5 md:p-6 flex flex-col justify-between transition-colors hover:bg-[var(--bg-secondary)]/60"
+
+        {/* Section Title & Subtitle */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
+              {lang === 'de' ? 'Demos, Bündnisse & Petitionen unterstützen' : t.alsoSupportH}
+            </h2>
+            <p className="mt-2 text-sm text-[var(--text-secondary)] max-w-2xl leading-relaxed">
+              {lang === 'de'
+                ? 'Zivilgesellschaftlicher Widerstand gegen Rechtsextremismus, Rassismus und AfD auf der Straße, im Bundestag und vor dem Verfassungsgericht.'
+                : t.alsoSupportSub}
+            </p>
+          </div>
+
+          {/* Filter Pills */}
+          <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
+            <button
+              type="button"
+              onClick={() => setActiveFilter('all')}
+              className={`px-3 py-1.5 border transition-all cursor-pointer font-bold ${
+                activeFilter === 'all'
+                  ? 'border-blue-600 bg-blue-600 text-white shadow-sm'
+                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`}
             >
-              <div>
-                <p className="mb-2 text-sm font-bold leading-snug text-[var(--text-primary)] group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                  {lang === 'de' ? petition.titleDe : petition.titleEn}
-                </p>
-                <p className="mb-4 text-xs leading-relaxed text-[var(--text-muted)]">
-                  {lang === 'de' ? petition.descDe : petition.descEn}
-                </p>
-              </div>
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 dark:text-blue-400 font-mono uppercase tracking-wider">
-                {t.alsoSupportBtn} <ArrowUpRight size={13} />
-              </span>
-            </a>
-          ))}
+              {lang === 'de' ? 'Alle' : 'All'} ({counts.all})
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveFilter('demo')}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 border transition-all cursor-pointer font-bold ${
+                activeFilter === 'demo'
+                  ? 'border-rose-600 bg-rose-600 text-white shadow-sm'
+                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`}
+            >
+              <Megaphone size={12} />
+              {lang === 'de' ? 'Demos & Aktionen' : 'Protests'} ({counts.demo})
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveFilter('alliance')}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 border transition-all cursor-pointer font-bold ${
+                activeFilter === 'alliance'
+                  ? 'border-amber-600 bg-amber-600 text-white shadow-sm'
+                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`}
+            >
+              <Users size={12} />
+              {lang === 'de' ? 'Bündnisse' : 'Alliances'} ({counts.alliance})
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveFilter('petition')}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 border transition-all cursor-pointer font-bold ${
+                activeFilter === 'petition'
+                  ? 'border-blue-600 bg-blue-600 text-white shadow-sm'
+                  : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`}
+            >
+              <FileText size={12} />
+              {lang === 'de' ? 'Petitionen' : 'Petitions'} ({counts.petition})
+            </button>
+          </div>
+        </div>
+
+        {/* Links Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
+          {filteredPetitions.map((petition) => {
+            const title = lang === 'de' ? petition.titleDe : petition.titleEn
+            const desc = lang === 'de' ? petition.descDe : petition.descEn
+            const category = lang === 'de' ? (petition.categoryDe ?? 'Initiative') : (petition.categoryEn ?? 'Initiative')
+
+            return (
+              <a
+                key={petition.url}
+                href={petition.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-[var(--bg-primary)] p-5 md:p-6 flex flex-col justify-between transition-colors hover:bg-[var(--bg-secondary)]/70 relative"
+              >
+                <div>
+                  {/* Category Pill */}
+                  <div className="mb-3 flex items-center justify-between gap-2">
+                    <span
+                      className={`font-mono text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 border ${getBadgeStyle(
+                        petition.type,
+                      )}`}
+                    >
+                      {category}
+                    </span>
+                    <ArrowUpRight
+                      size={14}
+                      className="text-[var(--text-muted)] group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
+                    />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="mb-2 text-base font-bold leading-snug text-[var(--text-primary)] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="mb-5 text-xs leading-relaxed text-[var(--text-secondary)]">
+                    {desc}
+                  </p>
+                </div>
+
+                {/* Footer Action Link */}
+                <div className="pt-3 border-t border-[var(--border)]/60 flex items-center justify-between font-mono text-xs">
+                  <span className="font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide group-hover:underline">
+                    {getActionLabel(petition.type)}
+                  </span>
+                  <span className="text-[11px] text-[var(--text-muted)] truncate max-w-[120px]">
+                    {new URL(petition.url).hostname.replace(/^www\./, '')}
+                  </span>
+                </div>
+              </a>
+            )
+          })}
         </div>
       </div>
     </section>

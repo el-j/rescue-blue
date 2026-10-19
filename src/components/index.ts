@@ -16,4 +16,5 @@ export { PolicyDangersSection } from './PolicyDangersSection'
 export { TrustSection } from './TrustSection'
 export { EditorialPolicySection } from './EditorialPolicySection'
 export { RhetoricalDictionarySection } from './RhetoricalDictionarySection'
+export { MascotSection } from './MascotSection'
 
