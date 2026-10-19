@@ -58,7 +58,7 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[var(--border)] p-6 md:p-8">
         <div>
           <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-            <span>DOKUMENTEN-ARCHIV</span>
+            <span>{t.archiveSectionTag}</span>
           </div>
           <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
             <Newspaper className="text-blue-600 dark:text-blue-400 shrink-0" size={24} />

@@ -75,17 +75,11 @@ export function InteractiveDemoSection({
   const handleCycleSandboxState = () => {
     let msg: string
     if (sandboxState === 'default') {
-      msg = lang === 'de'
-        ? '⚠️ Mehrheits-Check: Farbige Markierung der Bundesländer nach der jeweils stärksten Kraft (AfD-Mehrheiten in Braun).'
-        : '⚠️ Plurality Check: States colored by their current majority party (AfD pluralities in Brown).'
+      msg = t.demoToastPlurality
     } else if (sandboxState === 'brown') {
-      msg = lang === 'de'
-        ? '✨ Traum-Vision: Ein demokratisches, progressives Ergebnis (Grüne und Linke gleichauf bei 26%) ohne Rechtsextremismus.'
-        : '✨ Progressive Dream: A democratic progressive majority (Greens and Left equal at 26%) without right-wing extremism.'
+      msg = t.demoToastDream
     } else {
-      msg = lang === 'de'
-        ? '🇩🇪 Standard-Modus: Aktuelle offizielle Umfrageergebnisse der Wahlforschungsinstitute.'
-        : '🇩🇪 Default Mode: Current official polling results from research institutes.'
+      msg = t.demoToastDefault
     }
     onCycleSandboxState()
     setToastMessage(msg)
@@ -95,17 +89,11 @@ export function InteractiveDemoSection({
     if (state === sandboxState) return
     let msg: string
     if (state === 'brown') {
-      msg = lang === 'de'
-        ? '⚠️ Mehrheits-Check: Farbige Markierung der Bundesländer nach der jeweils stärksten Kraft (AfD-Mehrheiten in Braun).'
-        : '⚠️ Plurality Check: States colored by their current majority party (AfD pluralities in Brown).'
+      msg = t.demoToastPlurality
     } else if (state === 'dream') {
-      msg = lang === 'de'
-        ? '✨ Traum-Vision: Ein demokratisches, progressives Ergebnis (Grüne und Linke gleichauf bei 26%) ohne Rechtsextremismus.'
-        : '✨ Progressive Dream: A democratic progressive majority (Greens and Left equal at 26%) without right-wing extremism.'
+      msg = t.demoToastDream
     } else {
-      msg = lang === 'de'
-        ? '🇩🇪 Standard-Modus: Aktuelle offizielle Umfrageergebnisse der Wahlforschungsinstitute.'
-        : '🇩🇪 Default Mode: Current official polling results from research institutes.'
+      msg = t.demoToastDefault
     }
 
     if (onSetSandboxState) {
@@ -329,6 +317,7 @@ export function InteractiveDemoSection({
             sandboxState={sandboxState}
             dreamProgress={dreamProgress}
             lang={lang}
+            federalLabel={t.demoMapFederal}
           />
         </div>
 
@@ -340,21 +329,21 @@ export function InteractiveDemoSection({
             <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
               <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-muted)] flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
-                {lang === 'de' ? 'Visualisierungs-Optionen' : 'Visualization Options'}
+                {t.demoVizOptions}
               </span>
               <button
                 onClick={handleCycleSandboxState}
                 className="text-[10px] font-mono font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] flex items-center gap-1 cursor-pointer transition-colors"
-                title={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
-                aria-label={lang === 'de' ? 'Visualisierungs-Option wechseln' : 'Switch visualization mode'}
+                title={t.demoSwitchCycleAria}
+                aria-label={t.demoSwitchCycleAria}
                 type="button"
               >
                 <span>
                   {sandboxState === 'default'
-                    ? (lang === 'de' ? 'Standard' : 'Default')
+                    ? t.demoModeDefault
                     : sandboxState === 'brown'
-                    ? (lang === 'de' ? 'Warnung' : 'Warning')
-                    : (lang === 'de' ? 'Traum' : 'Dream')}
+                    ? t.demoModeWarning
+                    : t.demoModeDream}
                 </span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse">
                   <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
@@ -372,8 +361,8 @@ export function InteractiveDemoSection({
                       ? 'bg-blue-600/15 text-blue-500 font-extrabold border border-blue-500/40'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
                   }`}
-                  title={lang === 'de' ? 'Standard-Modus' : 'Default Mode'}
-                  aria-label={lang === 'de' ? 'Standard-Modus' : 'Default Mode'}
+                  title={t.demoModeDefault}
+                  aria-label={t.demoModeDefault}
                   type="button"
                 >
                   <BarChart2 size={16} />
@@ -385,8 +374,8 @@ export function InteractiveDemoSection({
                       ? 'bg-amber-600/15 text-amber-500 font-extrabold border border-amber-500/40'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
                   }`}
-                  title={lang === 'de' ? 'Mehrheits-Modus' : 'Majority Mode'}
-                  aria-label={lang === 'de' ? 'Mehrheits-Modus' : 'Majority Mode'}
+                  title={t.demoModeWarning}
+                  aria-label={t.demoModeWarning}
                   type="button"
                 >
                   <ShieldAlert size={16} />
@@ -398,8 +387,8 @@ export function InteractiveDemoSection({
                       ? 'bg-emerald-600/15 text-emerald-500 font-extrabold border border-emerald-500/40'
                       : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-transparent'
                   }`}
-                  title={lang === 'de' ? 'Traum-Vision' : 'Dream Vision'}
-                  aria-label={lang === 'de' ? 'Traum-Vision' : 'Dream Vision'}
+                  title={t.demoModeDream}
+                  aria-label={t.demoModeDream}
                   type="button"
                 >
                   <Sparkles size={16} />
@@ -414,15 +403,15 @@ export function InteractiveDemoSection({
                     ? 'bg-purple-600/15 border-purple-500/40 text-purple-400 font-extrabold'
                     : 'bg-[var(--bg-primary)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                 }`}
-                title={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
-                aria-label={lang === 'de' ? 'Mehrheit umschalten' : 'Toggle majority chart'}
+                title={t.demoToggleMajorityAria}
+                aria-label={t.demoToggleMajorityAria}
                 type="button"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={showComparison ? 'animate-pulse' : ''}>
                   <rect x="5" y="4" width="4" height="16" rx="1" />
                   <rect x="15" y="10" width="4" height="10" rx="1" />
                 </svg>
-                <span>{lang === 'de' ? 'Mehrheits-Vergleich' : 'Majority Check'}</span>
+                <span>{t.demoModeMajority}</span>
               </button>
             </div>
           </div>

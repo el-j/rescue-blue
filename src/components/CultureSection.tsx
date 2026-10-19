@@ -15,7 +15,7 @@ export function CultureSection({ t, sayings, activeTab, onChangeTab }: CulturePr
       <div className="border-b border-[var(--border)] p-6 md:p-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-            <span>05 / KULTURERBE</span>
+            <span>{t.cultureSectionTag}</span>
           </div>
           <h3 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
             <BookOpen size={22} className="text-blue-600 dark:text-blue-400" />

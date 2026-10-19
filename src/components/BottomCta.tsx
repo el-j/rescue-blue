@@ -14,7 +14,7 @@ export function BottomCta({ t, ctaBody, ctaLabel, onCtaClick }: BottomCtaProps) 
     <div className="border-t border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-20 text-center md:px-6">
       <div className="mx-auto max-w-4xl space-y-6">
         <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-          JETZT HANDELN · BLAU RETTEN
+          {t.bottomCtaTag}
         </span>
         <h2 className="editorial-headline text-4xl sm:text-6xl md:text-7xl text-[var(--text-primary)]">
           {t.ctaBanner}
@@ -34,7 +34,7 @@ export function BottomCta({ t, ctaBody, ctaLabel, onCtaClick }: BottomCtaProps) 
             <ArrowUpRight size={20} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
-        <p className="text-xs text-[var(--text-muted)] font-mono uppercase tracking-wider">{t.ctaExternalHint} · Kostenlos & unabhängig</p>
+        <p className="text-xs text-[var(--text-muted)] font-mono uppercase tracking-wider">{t.ctaExternalHint} · {t.bottomCtaFreeHint}</p>
       </div>
     </div>
   )

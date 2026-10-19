@@ -45,14 +45,9 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
   }
 
   const getActionLabel = (type?: RelatedPetition['type']) => {
-    if (lang === 'de') {
-      if (type === 'demo') return 'Demos & Termine'
-      if (type === 'alliance' || type === 'youth') return 'Mitmachen & Vernetzen'
-      return t.alsoSupportBtn || 'Unterzeichnen'
-    }
-    if (type === 'demo') return 'Protests & Dates'
-    if (type === 'alliance' || type === 'youth') return 'Join & Connect'
-    return 'Sign Petition'
+    if (type === 'demo') return t.alsoSupportActionDemo
+    if (type === 'alliance' || type === 'youth') return t.alsoSupportActionAlliance
+    return t.alsoSupportBtn || 'Unterzeichnen'
   }
 
   return (
@@ -62,7 +57,7 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
         <div className="mb-3 flex items-center gap-2">
           <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase flex items-center gap-1.5">
             <HeartHandshake size={15} />
-            SOLIDARISCHES NETZWERK · DEMOS & INITIATIVEN
+            {t.alsoSupportTag}
           </span>
           <span className="h-px flex-1 max-w-xs bg-[var(--border)]" />
         </div>
@@ -71,12 +66,10 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
-              {lang === 'de' ? 'Demos, Bündnisse & Petitionen unterstützen' : t.alsoSupportH}
+              {t.alsoSupportH}
             </h2>
             <p className="mt-2 text-sm text-[var(--text-secondary)] max-w-2xl leading-relaxed">
-              {lang === 'de'
-                ? 'Zivilgesellschaftlicher Widerstand gegen Rechtsextremismus, Rassismus und AfD auf der Straße, im Bundestag und vor dem Verfassungsgericht.'
-                : t.alsoSupportSub}
+              {t.alsoSupportSub}
             </p>
           </div>
 
@@ -91,7 +84,7 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
                   : 'border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
               }`}
             >
-              {lang === 'de' ? 'Alle' : 'All'} ({counts.all})
+              {t.alsoSupportFilterAll} ({counts.all})
             </button>
             <button
               type="button"
@@ -103,7 +96,7 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
               }`}
             >
               <Megaphone size={12} />
-              {lang === 'de' ? 'Demos & Aktionen' : 'Protests'} ({counts.demo})
+              {t.alsoSupportFilterDemo} ({counts.demo})
             </button>
             <button
               type="button"
@@ -115,7 +108,7 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
               }`}
             >
               <Users size={12} />
-              {lang === 'de' ? 'Bündnisse' : 'Alliances'} ({counts.alliance})
+              {t.alsoSupportFilterAlliance} ({counts.alliance})
             </button>
             <button
               type="button"
@@ -127,7 +120,7 @@ export function AlsoSupportSection({ lang, t }: AlsoSupportProps) {
               }`}
             >
               <FileText size={12} />
-              {lang === 'de' ? 'Petitionen' : 'Petitions'} ({counts.petition})
+              {t.alsoSupportFilterPetition} ({counts.petition})
             </button>
           </div>
         </div>

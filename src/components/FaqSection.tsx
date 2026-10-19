@@ -13,7 +13,7 @@ export function FaqSection({ t, faqs, openFaq, onToggleFaq }: FaqProps) {
     <section id="faq" className="">
       <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-          <span>08 / FRAGEN & ANTWORTEN</span>
+          <span>{t.faqSectionTag}</span>
         </div>
         <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           <HelpCircle size={22} className="text-blue-600 dark:text-blue-400" /> {t.faqTitle || 'FAQ'}

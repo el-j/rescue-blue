@@ -25,23 +25,23 @@ export function PressChart({ ui }: PressChartProps) {
           <text x="360" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold">100</text>
 
           {/* Germany Bar */}
-          <text x="80" y="47" textAnchor="end" className="text-[10px] svg-text-secondary font-bold">Deutschland</text>
+          <text x="80" y="47" textAnchor="end" className="text-[10px] svg-text-secondary font-bold">{ui.pressCountryDe}</text>
           <rect x="90" y="35" width="221" height="20" className="fill-blue-600 dark:fill-neutral-600" />
           <text x="320" y="49" className="text-[10px] svg-text-secondary font-bold">82 / 100</text>
 
           {/* Poland under PiS Bar */}
-          <text x="80" y="97" textAnchor="end" className="text-[10px] svg-text-secondary font-bold">Polen (PiS)</text>
+          <text x="80" y="97" textAnchor="end" className="text-[10px] svg-text-secondary font-bold">{ui.pressCountryPl}</text>
           <rect x="90" y="85" width="148" height="20" className="fill-red-500/70 dark:fill-red-500/50" />
           <text x="245" y="99" className="text-[10px] svg-text-red font-bold">55 / 100</text>
 
           {/* Hungary under Fidesz Bar */}
-          <text x="80" y="147" textAnchor="end" className="text-[10px] svg-text-red font-bold">Ungarn</text>
+          <text x="80" y="147" textAnchor="end" className="text-[10px] svg-text-red font-bold">{ui.pressCountryHu}</text>
           <rect x="90" y="135" width="113" height="20" className="fill-red-600" />
           <text x="210" y="149" className="text-[10px] svg-text-red font-bold">42 / 100</text>
         </svg>
       </div>
       <p className="text-[10px] text-[var(--text-muted)] leading-relaxed text-center">
-        * Score-Vergleich zeigt die Erosion der Medienfreiheit nach der autokratischen Übernahme öffentlicher Rundfunkanstalten in Polen (Führungswechsel) und Ungarn (Einschränkung ausländischer Eigner).
+        {ui.pressScoreNote}
       </p>
     </div>
   )

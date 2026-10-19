@@ -149,7 +149,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
           <div className="flex items-center gap-2 mb-1">
             <span className="font-mono text-xs font-bold text-rose-600 dark:text-rose-400 tracking-widest uppercase flex items-center gap-1.5">
               <ShieldAlert size={14} />
-              03 / FOKUSBERICHT & EMPIRISCHE ANALYSE
+              {t.dangersSectionTag}
             </span>
           </div>
           <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase leading-tight">
@@ -282,7 +282,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-1.5 font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors px-3 py-1"
                   >
-                    <span>Original</span>
+                    <span>{ui.dangersOriginalLink}</span>
                     <ExternalLink size={10} />
                   </a>
                 )}
@@ -293,7 +293,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-1.5 font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors px-3 py-1"
                   >
-                    <span>Archive</span>
+                    <span>{ui.dangersArchiveLink}</span>
                     <ExternalLink size={10} />
                   </a>
                 )}
@@ -403,7 +403,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors py-1.5"
                   >
-                    <span>Original</span>
+                    <span>{ui.dangersOriginalLink}</span>
                     <ExternalLink size={10} />
                   </a>
                 )}
@@ -414,7 +414,7 @@ export function PolicyDangersSection({ lang, t }: PolicyDangersSectionProps) {
                     rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center gap-1.5 text-xs font-bold text-[var(--text-primary)] hover:text-rose-500 transition-colors py-1.5"
                   >
-                    <span>Archive</span>
+                    <span>{ui.dangersArchiveLink}</span>
                     <ExternalLink size={10} />
                   </a>
                 )}

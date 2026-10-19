@@ -14,7 +14,7 @@ export function RhetoricalDictionarySection({ t, entries }: RhetoricalDictionary
     >
       <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-          <span>06 / GLOSSAR & SPRACHKRITIK</span>
+          <span>{t.wordsMeaningTag}</span>
         </div>
         <h2 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           <BookMarked size={22} className="text-blue-600 dark:text-blue-400" />

@@ -1,19 +1,20 @@
 import { BookOpen, ChevronDown, ChevronUp, Shield } from 'lucide-react'
-import type { ScienceContent } from '../i18n'
+import type { ScienceContent, Translation } from '../i18n'
 
 interface ScienceProps {
+  t?: Translation
   science: ScienceContent
   openObjection: number | null
   onToggleObjection: (index: number) => void
 }
 
-export function ScientificBackgroundSection({ science, openObjection, onToggleObjection }: ScienceProps) {
+export function ScientificBackgroundSection({ t, science, openObjection, onToggleObjection }: ScienceProps) {
   return (
     <section id="hintergrund" className="">
       {/* Dossier Header */}
       <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-          <span>04 / WISSENSCHAFTLICHE GRUNDLAGEN</span>
+          <span>{t?.scienceSectionTag || '04 / WISSENSCHAFTLICHE GRUNDLAGEN'}</span>
         </div>
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           {science.sectionH}

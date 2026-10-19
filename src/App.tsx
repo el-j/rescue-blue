@@ -258,6 +258,7 @@ export default function App({ initialLang }: AppProps = {}) {
 
           <PolicyDangersSection lang={lang} t={t} />
           <ScientificBackgroundSection
+            t={t}
             science={science}
             openObjection={openObjection}
             onToggleObjection={setOpenObjection}

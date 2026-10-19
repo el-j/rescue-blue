@@ -37,12 +37,12 @@ export function CultureChart({ ui }: CultureChartProps) {
         </svg>
         <div className="text-center mt-2">
           <span className="inline-flex items-center gap-1 text-[11px] font-bold text-neutral-300">
-            Verwaltungsgericht Hannover (2023) / Schulbehörden
+            {ui.cultureCourtLabel}
           </span>
         </div>
       </div>
       <p className="text-[10px] text-neutral-500 leading-relaxed text-center">
-        Rechtsextreme Angriffe auf freie Kunst, kritisches Schultheater und Lehrkräfte scheiterten ausnahmslos vor deutschen Gerichten, da die verfassungsrechtliche Kunstfreiheit und das Neutralitätsgebot politischen Druck untersagen.
+        {ui.cultureCourtDesc}
       </p>
     </div>
   )

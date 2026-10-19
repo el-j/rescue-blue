@@ -56,7 +56,7 @@ export function SiteHeader({ lang, t, ctaLabel, theme, onChangeLanguage, onToggl
           <div className="flex items-center gap-2 font-mono text-xs font-bold tracking-widest uppercase shrink-0 min-w-0">
             <span className="h-2 w-2 rounded-full bg-blue-600 animate-pulse shrink-0" />
             <a href="https://change.org/rette-blau" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap">
-              <span className="sm:hidden text-xs font-black tracking-wider text-[var(--text-primary)] uppercase">Rette Blau</span>
+              <span className="sm:hidden text-xs font-black tracking-wider text-[var(--text-primary)] uppercase">{t.footerBrand}</span>
               <span className="hidden sm:inline text-xs md:text-sm font-black tracking-wider text-[var(--text-primary)] uppercase">{t.navCampaign}</span>
             </a>
           </div>

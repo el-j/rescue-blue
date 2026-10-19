@@ -119,25 +119,25 @@ export function HeroSection({
             <div>
               <div className="flex items-center justify-between gap-2 mb-4 border-b border-blue-200 dark:border-blue-500/20 pb-2">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
-                  01 / Status Quo in ARD & ZDF
+                  {t.heroStatusQuoBadge}
                 </span>
-                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">Medien-Praxis</span>
+                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">{t.heroStatusQuoTag}</span>
               </div>
               
               <div className="h-2 w-16 bg-blue-600 mb-4" />
               
               <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
-                AfD als friedliches „Blau“
+                {t.heroStatusQuoH2}
               </h2>
               
               <p className="text-sm leading-relaxed text-slate-800 dark:text-[var(--text-secondary)]">
-                Blau signalisiert Ruhe, Vernunft, Europa und Seriosität. Durch diese unkritische Farbwahl wird eine in Teilen gesichert rechtsextreme Ideologie visuell verharmlost und normalisiert.
+                {t.heroStatusQuoDesc}
               </p>
             </div>
 
             <div className="mt-8 pt-4 border-t border-blue-200 dark:border-blue-500/20 flex items-center gap-2 text-xs font-bold text-red-700 dark:text-rose-400 uppercase tracking-wide">
               <AlertCircle size={15} />
-              <span>Fatale psychologische Verharmlosung</span>
+              <span>{t.heroStatusQuoAlert}</span>
             </div>
           </div>
 
@@ -146,25 +146,25 @@ export function HeroSection({
             <div>
               <div className="flex items-center justify-between gap-2 mb-4 border-b border-[#ddcdbe] dark:border-amber-600/20 pb-2">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-[#4a2608] dark:text-[#f3b584]">
-                  02 / {t.heroImgText1 || 'Historische Richtigkeit'}
+                  {t.heroDemandBadge}
                 </span>
-                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">Forderung</span>
+                <span className="font-mono text-[10px] uppercase font-bold text-slate-600 dark:text-[var(--text-muted)]">{t.heroDemandTag}</span>
               </div>
               
               <div className="h-2 w-16 bg-[#54331a] mb-4" />
               
               <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
-                Braun für völkischen Nationalismus
+                {t.heroDemandH2}
               </h2>
               
               <p className="text-sm leading-relaxed text-slate-800 dark:text-[var(--text-secondary)]">
-                Braun ist im kollektiven Gedächtnis die unmissverständliche Farbe des Rechtsextremismus. Grafische Diagramme der Leitmedien müssen die politische Realität ehrlich benennen.
+                {t.heroDemandDesc}
               </p>
             </div>
 
             <div className="mt-8 pt-4 border-t border-[#ddcdbe] dark:border-amber-600/20 flex items-center gap-2 text-xs font-bold text-emerald-800 dark:text-emerald-400 uppercase tracking-wide">
               <CheckCircle2 size={15} />
-              <span>Visuelle Medienethik & historische Klarheit</span>
+              <span>{t.heroDemandAlert}</span>
             </div>
           </div>
         </div>
@@ -201,7 +201,7 @@ export function HeroSection({
               <ArrowUpRight size={18} />
             </a>
             <span className="text-[11px] text-[var(--text-muted)]">
-              {t.ctaExternalHint} · 100% unabhängig
+              {t.ctaExternalHint} · {t.heroIndependentHint}
             </span>
           </div>
         </div>

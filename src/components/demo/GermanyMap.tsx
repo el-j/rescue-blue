@@ -8,6 +8,7 @@ interface GermanyMapProps {
   sandboxState: 'default' | 'brown' | 'dream'
   dreamProgress: number | null
   lang: 'de' | 'en' | string
+  federalLabel?: string
 }
 
 export function GermanyMap({
@@ -17,6 +18,7 @@ export function GermanyMap({
   sandboxState,
   dreamProgress,
   lang,
+  federalLabel,
 }: GermanyMapProps) {
   // Helper to extract AfD percentage from a state snapshot (with reliable fallback for Bund)
   const getAfdPct = (stateId: string): number => {
@@ -136,7 +138,7 @@ export function GermanyMap({
             }`}
           >
             <option value="0" className="bg-[var(--bg-card)] text-[var(--text-primary)]">
-              {lang === 'de' ? '🇩🇪 Bund (Deutschland)' : '🇩🇪 Federal (Germany)'}
+              {federalLabel || (lang === 'de' ? '🇩🇪 Bund (Deutschland)' : '🇩🇪 Federal (Germany)')}
               {` — ${(() => {
                 const originalPct = getAfdPct('0')
                 const pct = (sandboxState === 'dream' && dreamProgress !== null)

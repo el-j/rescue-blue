@@ -17,7 +17,7 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
       {/* Dossier Header */}
       <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-          <span>07 / BÜRGERBRIEF</span>
+          <span>{t.letterSectionTag}</span>
         </div>
         <h3 className="flex items-center gap-2.5 text-xl md:text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           <MessageSquare size={22} className="text-blue-600 dark:text-blue-400" />
@@ -48,8 +48,8 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
         {/* Formal Civic Letterhead View */}
         <div className="max-h-80 space-y-4 overflow-y-auto border border-[var(--border)] bg-[var(--bg-secondary)]/30 p-5 font-mono text-xs md:text-sm leading-relaxed text-[var(--text-secondary)]">
           <div className="flex items-center justify-between border-b border-[var(--border)] pb-3 text-xs text-[var(--text-muted)]">
-            <span>OFFIZIELLES SCHREIBEN</span>
-            <span>STATUS: EINGEREICHT</span>
+            <span>{t.letterOfficialLabel}</span>
+            <span>{t.letterStatusLabel}</span>
           </div>
           <p className="font-bold text-[var(--text-primary)]">{letters[activeLetterTarget].to}</p>
           <p className="font-semibold text-blue-600 dark:text-blue-400 border-t border-[var(--border)] pt-3">
@@ -68,7 +68,7 @@ export function OpenLetterSection({ t, letters, activeLetterTarget, onChangeTarg
               <span>{t.recipientsHeader}</span>
             </h4>
             <span className="font-mono text-xs text-[var(--text-muted)] shrink-0">
-              {activeMakers.length} Entscheidungsträger
+              {activeMakers.length} {t.letterDecisionMakersLabel}
             </span>
           </div>
 

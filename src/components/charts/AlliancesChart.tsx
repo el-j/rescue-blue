@@ -5,12 +5,11 @@ interface AlliancesChartProps {
   lang: Locale
 }
 
-export function AlliancesChart({ ui, lang }: AlliancesChartProps) {
-  const chartTitle = lang === 'de' ? 'Netzwerk & Verbindungen der AfD' : 'AfD Network & Connections'
+export function AlliancesChart({ ui }: AlliancesChartProps) {
   return (
     <div className="space-y-4 w-full">
       <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 text-center">
-        {chartTitle}
+        {ui.alliancesChartTitle}
       </h4>
       <div className="relative w-full h-[220px] rounded-xl border border-neutral-900 p-4 flex flex-col justify-between">
         <svg className="w-full h-full" viewBox="0 0 400 180">
@@ -51,10 +50,7 @@ export function AlliancesChart({ ui, lang }: AlliancesChartProps) {
         </svg>
       </div>
       <p className="text-[10px] text-neutral-500 leading-relaxed text-center">
-        {lang === 'de'
-          ? "* Verbindungen: Die AfD bildet im Europaparlament mit extremen EU-Gegnern die ESN-Fraktion. Ermittlungsbehörden führen Razzien und Spionage-Untersuchungen im Kontext russischer Zahlungsnetzwerke (Voice of Europe) und chinesischer Geheimdienste durch."
-          : "* Connections: The AfD leads the far-right ESN group in the European Parliament. Authorities are investigating corrupt funding networks linked to Russia (Voice of Europe) and espionage files connected to Chinese intelligence agencies."
-        }
+        {ui.alliancesDesc}
       </p>
     </div>
   )

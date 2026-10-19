@@ -13,7 +13,7 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
   let maxScale = 45000
   let formattedRight = "42.544"
   let formattedLeft = "13.490"
-  let labelSuffix = lang === 'de' ? 'Gesamt' : 'Total'
+  let labelSuffix = ui.crimeSuffixTotal
 
   if (crimeToggle === 'violent') {
     valRight = 1598
@@ -21,14 +21,14 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
     maxScale = 2000
     formattedRight = "1.598"
     formattedLeft = "1.087"
-    labelSuffix = lang === 'de' ? 'Gewalt' : 'Violent'
+    labelSuffix = ui.crimeSuffixViolent
   } else if (crimeToggle === 'hate') {
     valRight = 4870
     valLeft = 1460
     maxScale = 5000
     formattedRight = "4.870"
     formattedLeft = "1.460"
-    labelSuffix = lang === 'de' ? 'Hass' : 'Hate'
+    labelSuffix = ui.crimeSuffixHate
   }
   
   const rightHeight = (valRight / maxScale) * 140
@@ -108,7 +108,7 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
             {formattedRight}
           </text>
           <text x="125" y="174" textAnchor="middle" className="text-[9px] svg-text-secondary font-bold uppercase">
-            {lang === 'de' ? 'Rechts' : 'Right'} ({labelSuffix})
+            {ui.crimeRight} ({labelSuffix})
           </text>
 
           {/* Bar 2: Left-wing PMK */}
@@ -128,23 +128,17 @@ export function CrimeChart({ ui, lang, crimeToggle, setCrimeToggle }: CrimeChart
             {formattedLeft}
           </text>
           <text x="275" y="174" textAnchor="middle" className="text-[9px] svg-text-secondary font-bold uppercase">
-            {lang === 'de' ? 'Links' : 'Left'} ({labelSuffix})
+            {ui.crimeLeft} ({labelSuffix})
           </text>
         </svg>
       </div>
       
       <p className="text-[10px] text-[var(--text-muted)] leading-relaxed text-center">
         {crimeToggle === 'violent'
-          ? (lang === 'de' 
-              ? "* Gewalttaten (2025): Rechts motivierte Gewaltdelikte lagen bei 1.598 Delikten, das ist 1,47-mal so häufig wie linksextrem motivierte Gewalttaten (1.087 Delikte)."
-              : "* Violent Crimes (2025): Right-wing violent crimes stood at 1,598, which is 1.47 times more frequent than left-wing violent crimes (1,087).")
+          ? ui.crimeViolentNote
           : (crimeToggle === 'hate'
-              ? (lang === 'de' 
-                  ? "* Hasskommentare (2025): Mit 4.870 Fällen im Internet ist die rechts motivierte Hasskriminalität 3,33-mal so hoch wie die links motivierte Hasskriminalität (1.460 Delikte)."
-                  : "* Hate Postings (2025): Right-wing politically motivated hate postings on the internet stood at 4,870, which is 3.33 times more frequent than left-wing postings (1,460).")
-              : (lang === 'de' 
-                  ? "* Gesamtstraftaten (2025): Mit 42.544 Delikten ist die rechts motivierte politische Kriminalität 3,15-mal so hoch wie die links motivierte Kriminalität (13.490 Delikte)."
-                  : "* Total Offences (2025): Right-wing politically motivated crime stood at 42,544, which is 3.15 times more frequent than left-wing crime (13,490)."))
+              ? ui.crimeHateNote
+              : ui.crimeTotalNote)
         }
       </p>
     </div>

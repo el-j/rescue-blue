@@ -24,10 +24,10 @@ export function EconomyChart({ ui }: EconomyChartProps) {
 
           {/* X Axis Timeline Markers */}
           <line x1="50" y1="130" x2="360" y2="130" stroke="#374151" />
-          <text x="50" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">Year 0</text>
-          <text x="153" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">Year 5</text>
-          <text x="256" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">Year 10</text>
-          <text x="360" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">Year 15</text>
+          <text x="50" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">{ui.economyYear} 0</text>
+          <text x="153" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">{ui.economyYear} 5</text>
+          <text x="256" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">{ui.economyYear} 10</text>
+          <text x="360" y="148" textAnchor="middle" className="text-[8px] svg-text-muted font-semibold">{ui.economyYear} 15</text>
 
           {/* Line 1: Synthetic Control (Normal progression) */}
           <path 

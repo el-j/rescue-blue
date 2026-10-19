@@ -6,7 +6,7 @@ export function WhySection({ t }: { t: Translation }) {
       {/* Section Masthead */}
       <div className="border-b border-[var(--border)] p-6 md:p-8">
         <div className="flex items-center gap-2 mb-2 font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-widest uppercase">
-          <span>01 / DOKUMENTATION</span>
+          <span>{t.whySectionTag}</span>
         </div>
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
           {t.whyH2}
@@ -24,7 +24,7 @@ export function WhySection({ t }: { t: Translation }) {
             <div className="flex items-baseline justify-between gap-4 mb-4 border-b border-[var(--border)] pb-3">
               <span className="font-mono text-3xl font-black text-rose-600 dark:text-rose-400">01</span>
               <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
-                Visuelle Verharmlosung
+                {t.whyCol1Tag}
               </span>
             </div>
             <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3 leading-snug">
@@ -35,7 +35,7 @@ export function WhySection({ t }: { t: Translation }) {
             </p>
           </div>
           <div className="mt-8 pt-4 border-t border-[var(--border)] text-[11px] font-mono text-[var(--text-muted)] uppercase tracking-wider">
-            Visuelle Psychologie & Framing
+            {t.whyCol1Footer}
           </div>
         </article>
 
@@ -45,7 +45,7 @@ export function WhySection({ t }: { t: Translation }) {
             <div className="flex items-baseline justify-between gap-4 mb-4 border-b border-[var(--border)] pb-3">
               <span className="font-mono text-3xl font-black text-amber-600 dark:text-amber-400">02</span>
               <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
-                Historische Zuordnung
+                {t.whyCol2Tag}
               </span>
             </div>
             <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3 leading-snug">
@@ -56,7 +56,7 @@ export function WhySection({ t }: { t: Translation }) {
             </p>
           </div>
           <div className="mt-8 pt-4 border-t border-[var(--border)] text-[11px] font-mono text-[var(--text-muted)] uppercase tracking-wider">
-            Historische Kontinuität & Ethik
+            {t.whyCol2Footer}
           </div>
         </article>
       </div>

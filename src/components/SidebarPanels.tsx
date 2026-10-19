@@ -20,7 +20,7 @@ export function SidebarPanels({ t, ctaLabel, ctaBody, formattedSignatureCount, i
         <div className="flex items-center justify-between gap-2 mb-3">
           <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
             <ShieldCheck size={14} />
-            Bürgerinitiative
+            {t.sidebarInitiativeTag}
           </span>
           <span className="text-[10px] font-mono text-[var(--text-muted)]">WeAct / Campact</span>
         </div>

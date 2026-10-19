@@ -41,14 +41,14 @@ export function SocialChart({ ui }: SocialChartProps) {
           <text x="335" y="22" textAnchor="middle" className="text-[11px] svg-text-red font-black">+12.0%</text>
 
           {/* X Axis Labels */}
-          <text x="65" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold uppercase">Gering</text>
-          <text x="155" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold uppercase">Mittel</text>
-          <text x="245" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold uppercase">Hoch</text>
-          <text x="335" y="172" textAnchor="middle" className="text-[8px] svg-text-red font-bold uppercase">Top 1%</text>
+          <text x="65" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold uppercase">{ui.socialLow}</text>
+          <text x="155" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold uppercase">{ui.socialMid}</text>
+          <text x="245" y="172" textAnchor="middle" className="text-[8px] svg-text-muted font-bold uppercase">{ui.socialHigh}</text>
+          <text x="335" y="172" textAnchor="middle" className="text-[8px] svg-text-red font-bold uppercase">{ui.socialTop1}</text>
         </svg>
       </div>
       <p className="text-[10px] text-neutral-500 leading-relaxed text-center">
-        * Gering & Mittel erhalten kaum Entlastung oder erleiden reale Verluste durch gekürzte soziale Infrastruktur. Die Spitzensteuererleichterungen fließen einseitig an das oberste 1%.
+        {ui.socialNote}
       </p>
     </div>
   )

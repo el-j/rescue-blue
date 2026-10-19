@@ -13,7 +13,7 @@ export function TrustSection({ t }: TrustSectionProps) {
     <section id="transparenz" className="border-t border-[var(--border)] px-4 py-12 md:px-6 bg-[var(--bg-secondary)]/50">
       <div className="mx-auto max-w-6xl">
         <div className="mb-2 flex items-center gap-2">
-          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">STANDARDS & TRANSPARENZ</span>
+          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase">{t.trustSectionTag}</span>
           <span className="h-px w-16 bg-[var(--border)]" />
         </div>
         <h2 className="text-2xl font-extrabold tracking-tight text-[var(--text-primary)] uppercase">
