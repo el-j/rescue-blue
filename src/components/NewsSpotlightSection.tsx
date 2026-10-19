@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { ChevronLeft, ChevronRight, ExternalLink, Radio } from 'lucide-react'
 import type { Locale, Translation } from '../i18n'
 import type { NewsArticle } from './HeroSection'
+import { deduplicateSources, getOriginSources, getPrimaryArticleUrl } from '../utils/news'
 
 interface NewsSpotlightSectionProps {
   lang: Locale
@@ -18,24 +19,50 @@ function getLocalizedText(lang: Locale, field: string | Record<string, string> |
 export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProps) {
   const items = useMemo(() => news.slice(0, 4), [news])
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isAutoSlideStopped, setIsAutoSlideStopped] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleTouchDown = () => {
+    setIsAutoSlideStopped(true)
+  }
 
   useEffect(() => {
-    if (items.length <= 1) return
+    if (items.length <= 1 || isAutoSlideStopped || isHovered) return
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % items.length)
     }, 8000)
     return () => clearInterval(timer)
-  }, [items.length])
+  }, [items.length, isAutoSlideStopped, isHovered])
 
-  if (items.length === 0) {
+  const activeIndex = items.length > 0 ? currentIndex % items.length : 0
+  const active = items[activeIndex]
+
+  const cleanSources = useMemo(() => {
+    if (!active) return []
+    return deduplicateSources(active.sources, active.url, active.source || t.readMore)
+  }, [active, t.readMore])
+
+  const originSources = useMemo(() => getOriginSources(cleanSources), [cleanSources])
+  const primaryUrl = useMemo(() => (active ? getPrimaryArticleUrl(active) : undefined), [active])
+
+  if (items.length === 0 || !active) {
     return null
   }
 
-  const activeIndex = currentIndex % items.length
-  const active = items[activeIndex]
-
   return (
-    <section className="border-b border-[var(--border)] bg-[var(--bg-secondary)] py-6">
+    <section
+      className="border-b border-[var(--border)] bg-[var(--bg-secondary)] py-6"
+      onTouchStart={handleTouchDown}
+      onPointerDown={(e) => {
+        if (e.pointerType === 'touch') {
+          handleTouchDown()
+        }
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onFocusCapture={() => setIsHovered(true)}
+      onBlurCapture={() => setIsHovered(false)}
+    >
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         {/* Header bar: Live Wire Badge + Carousel Controls */}
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-[var(--border)] pb-3">
@@ -77,12 +104,37 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
 
         {/* Article Body */}
         <div className="flex min-h-0 flex-col">
-          <div className="flex items-center gap-3 mb-2 font-mono text-xs">
-            <span className="font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide">
-              {active.sources && active.sources.length > 0
-                ? active.sources.map((s) => s.name).join(' · ')
-                : active.source}
-            </span>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-2 font-mono text-xs">
+            <div className="flex flex-wrap items-center gap-1.5 font-bold uppercase tracking-wide">
+              {originSources.length > 0 ? (
+                originSources.map((src, idx) => (
+                  <span key={src.url || idx} className="inline-flex items-center gap-1.5">
+                    {idx > 0 && <span className="text-[var(--text-muted)] select-none">·</span>}
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline transition-colors focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
+                    >
+                      {src.name}
+                    </a>
+                  </span>
+                ))
+              ) : active.source ? (
+                active.url ? (
+                  <a
+                    href={active.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:underline transition-colors focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
+                  >
+                    {active.source}
+                  </a>
+                ) : (
+                  <span className="text-blue-600 dark:text-blue-400">{active.source}</span>
+                )
+              ) : null}
+            </div>
             {active.date && (
               <span className="text-[var(--text-muted)]">
                 {active.date}
@@ -91,7 +143,18 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
           </div>
 
           <h3 className="mb-2 text-lg md:text-xl font-bold leading-snug text-[var(--text-primary)]">
-            {getLocalizedText(lang, active.title)}
+            {primaryUrl ? (
+              <a
+                href={primaryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none focus:ring-1 focus:ring-blue-500 rounded"
+              >
+                {getLocalizedText(lang, active.title)}
+              </a>
+            ) : (
+              getLocalizedText(lang, active.title)
+            )}
           </h3>
 
           <p className="text-sm leading-relaxed text-[var(--text-secondary)] max-w-4xl">
@@ -99,9 +162,9 @@ export function NewsSpotlightSection({ lang, t, news }: NewsSpotlightSectionProp
           </p>
 
           <div className="mt-4 flex min-h-8 flex-wrap gap-2 pt-2 border-t border-[var(--border)]">
-            {(active.sources && active.sources.length > 0 ? active.sources : active.url ? [{ name: t.readMore, url: active.url }] : []).map((src, idx) => (
+            {cleanSources.map((src, idx) => (
               <a
-                key={idx}
+                key={src.url || idx}
                 href={src.url}
                 target="_blank"
                 rel="noopener noreferrer"

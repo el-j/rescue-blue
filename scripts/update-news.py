@@ -338,6 +338,20 @@ def merge_field(existing_val, new_val):
                 merged[lang] = ""
     return merged
 
+def normalize_url(url):
+    """Normalize URL by lowering netloc, removing www., and stripping trailing slashes."""
+    if not url:
+        return ""
+    try:
+        parsed = urllib.parse.urlparse(url)
+        netloc = parsed.netloc.lower()
+        if netloc.startswith("www."):
+            netloc = netloc[4:]
+        path = parsed.path.rstrip("/")
+        return f"{netloc}{path}"
+    except Exception:
+        return url.strip().rstrip("/")
+
 def combine_articles(articles):
     """Merge similar items into a single entry with multiple sources."""
     combined = []
@@ -355,10 +369,15 @@ def combine_articles(articles):
         for c_item in combined:
             if are_similar(c_item, item):
                 # Merge sources
-                existing_urls = {src["url"] for src in c_item["sources"]}
+                existing_urls = {normalize_url(src["url"]) for src in c_item["sources"]}
+                existing_names = {src["name"].strip().lower() for src in c_item["sources"]}
                 for src in item["sources"]:
-                    if src["url"] not in existing_urls:
+                    norm_u = normalize_url(src["url"])
+                    norm_n = src["name"].strip().lower()
+                    if norm_u not in existing_urls and norm_n not in existing_names:
                         c_item["sources"].append(src)
+                        existing_urls.add(norm_u)
+                        existing_names.add(norm_n)
                 # Keep the longer title and excerpt for detail completeness, preserving translations
                 c_item["title"] = merge_field(c_item["title"], item["title"])
                 c_item["excerpt"] = merge_field(c_item["excerpt"], item["excerpt"])
@@ -366,6 +385,18 @@ def combine_articles(articles):
                 break
                 
         if not found:
+            # Deduplicate within item["sources"] itself
+            dedup_sources = []
+            seen_u = set()
+            seen_n = set()
+            for src in item["sources"]:
+                norm_u = normalize_url(src["url"])
+                norm_n = src["name"].strip().lower()
+                if norm_u not in seen_u and norm_n not in seen_n:
+                    dedup_sources.append(src)
+                    seen_u.add(norm_u)
+                    seen_n.add(norm_n)
+            item["sources"] = dedup_sources
             combined.append(item)
             
     return combined

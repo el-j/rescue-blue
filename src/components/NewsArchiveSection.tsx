@@ -2,6 +2,7 @@ import { ExternalLink, Newspaper, Calendar } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { getTranslation, type Locale } from '../i18n'
 import type { NewsArticle } from './HeroSection'
+import { deduplicateSources, getOriginSources } from '../utils/news'
 
 interface NewsArchiveSectionProps {
   lang: Locale
@@ -46,16 +47,9 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
   const pageEnd = Math.min(currentPage * pageSize, news.length)
 
   const getPrimarySource = (item: NewsArticle) => {
-    if (item.sources && item.sources.length > 0) {
-      return item.sources[0]
-    }
-    if (item.url) {
-      return {
-        name: item.source || t.readMore,
-        url: item.url,
-      }
-    }
-    return null
+    const deduped = deduplicateSources(item.sources, item.url, item.source || t.readMore)
+    const origins = getOriginSources(deduped)
+    return origins[0] || deduped[0] || null
   }
 
   return (
@@ -143,38 +137,40 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                 </div>
                 {/* List of articles for this date */}
                 <div className="divide-y divide-[var(--border)]">
-                  {groupedByDate[dateStr].map((item, idx) => (
-                    <div 
-                      key={idx} 
-                      className="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-[var(--bg-secondary)]/40 transition-colors"
-                    >
-                      {/* Left: Source Badges & Title */}
-                      <div className="space-y-1.5 flex-1">
-                        <div className="flex flex-wrap gap-2">
-                          {item.sources && item.sources.length > 0 ? (
-                            item.sources.map((src, sIdx) => (
-                              <span 
-                                key={sIdx} 
-                                className="font-mono text-[10px] font-bold tracking-wide uppercase text-blue-600 dark:text-blue-400"
-                              >
-                                {src.name}
+                  {groupedByDate[dateStr].map((item, idx) => {
+                    const cleanSources = deduplicateSources(item.sources, item.url, item.source || t.readMore)
+                    const originSources = getOriginSources(cleanSources)
+                    return (
+                      <div 
+                        key={idx} 
+                        className="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-[var(--bg-secondary)]/40 transition-colors"
+                      >
+                        {/* Left: Source Badges & Title */}
+                        <div className="space-y-1.5 flex-1">
+                          <div className="flex flex-wrap gap-2">
+                            {originSources.length > 0 ? (
+                              originSources.map((src, sIdx) => (
+                                <span 
+                                  key={sIdx} 
+                                  className="font-mono text-[10px] font-bold tracking-wide uppercase text-blue-600 dark:text-blue-400"
+                                >
+                                  {src.name}
+                                </span>
+                              ))
+                            ) : (
+                              <span className="font-mono text-[10px] font-bold tracking-wide uppercase text-blue-600 dark:text-blue-400">
+                                {item.source}
                               </span>
-                            ))
-                          ) : (
-                            <span className="font-mono text-[10px] font-bold tracking-wide uppercase text-blue-600 dark:text-blue-400">
-                              {item.source}
-                            </span>
-                          )}
+                            )}
+                          </div>
+                          <h4 className="text-sm font-bold text-[var(--text-primary)] leading-snug">
+                            {getLocalizedText(item.title)}
+                          </h4>
                         </div>
-                        <h4 className="text-sm font-bold text-[var(--text-primary)] leading-snug">
-                          {getLocalizedText(item.title)}
-                        </h4>
-                      </div>
 
-                      {/* Right: Named outbound links */}
-                      <div className="flex flex-wrap gap-x-2 gap-y-1 shrink-0 text-xs mt-1 sm:mt-0 font-mono">
-                        {item.sources && item.sources.length > 0 ? (
-                          item.sources.map((src, sIdx) => (
+                        {/* Right: Named outbound links */}
+                        <div className="flex flex-wrap gap-x-2 gap-y-1 shrink-0 text-xs mt-1 sm:mt-0 font-mono">
+                          {cleanSources.map((src, sIdx) => (
                             <a
                               key={sIdx}
                               href={src.url}
@@ -185,21 +181,11 @@ export function NewsArchiveSection({ lang, news }: NewsArchiveSectionProps) {
                               <span>{src.name}</span>
                               <ExternalLink size={10} className="shrink-0 text-[var(--text-muted)]" />
                             </a>
-                          ))
-                        ) : (
-                          <a
-                            href={item.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 text-[var(--text-secondary)] hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors border border-[var(--border)] bg-[var(--bg-secondary)] px-2.5 py-1"
-                          >
-                            <span>{t.readMore}</span>
-                            <ExternalLink size={10} className="shrink-0 text-[var(--text-muted)]" />
-                          </a>
-                        )}
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
             ))}
