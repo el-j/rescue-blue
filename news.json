@@ -1,27 +1,62 @@
 [
   {
     "title": {
-      "es": "Una pregunta: ¿Debería presentar argumentos contra los votantes de AfD?",
+      "de": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "en": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "fr": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "es": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "tr": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "uk": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "pl": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "it": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an",
+      "ru": "Parteispenden: Staatsanwaltschaft klagt niedersächsischen AfD-Chef Ansgar Schledde an"
+    },
+    "date": "2026-10-21",
+    "excerpt": {
+      "de": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "en": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "fr": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "es": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "tr": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "uk": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "pl": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "it": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor.",
+      "ru": "Der AfD-Politiker Ansgar Schledde soll Zahlungen von fast 45.000 Euro verschleiert haben. Die Staatsanwaltschaft wirft ihm einen Verstoß gegen das Parteiengesetz vor."
+    },
+    "sources": [
+      {
+        "name": "Zeit Online",
+        "url": "https://www.zeit.de/politik/deutschland/2026-10/ansgar-schledde-afd-niedersachsen-anklage-spendenzahlungen-gxe"
+      },
+      {
+        "name": "Zeit Online (Archiv)",
+        "url": "https://archive.ph/https://www.zeit.de/politik/deutschland/2026-10/ansgar-schledde-afd-niedersachsen-anklage-spendenzahlungen-gxe"
+      }
+    ]
+  },
+  {
+    "title": {
+      "pl": "Jedno pytanie: czy należy przedstawiać argumenty przeciwko wyborcom AfD?",
+      "en": "One question: Should you present arguments against AfD voters?",
       "fr": "Une question : faut-il présenter des arguments contre les électeurs de l’AfD ?",
       "de": "Die eine Frage: Soll man AfD-Wählern Argumente entgegenhalten?",
-      "ru": "Один вопрос: стоит ли вам приводить аргументы против избирателей АдГ?",
-      "tr": "Bir soru: AfD seçmenlerine karşı argümanlar sunmalı mısınız?",
-      "en": "One question: Should you present arguments against AfD voters?",
       "it": "Una domanda: dovreste presentare argomenti contro gli elettori dell’AfD?",
-      "pl": "Jedno pytanie: czy należy przedstawiać argumenty przeciwko wyborcom AfD?",
-      "uk": "Одне запитання: чи варто наводити аргументи проти виборців AfD?"
+      "uk": "Одне запитання: чи варто наводити аргументи проти виборців AfD?",
+      "tr": "Bir soru: AfD seçmenlerine karşı argümanlar sunmalı mısınız?",
+      "es": "Una pregunta: ¿Debería presentar argumentos contra los votantes de AfD?",
+      "ru": "Один вопрос: стоит ли вам приводить аргументы против избирателей АдГ?"
     },
     "date": "2026-10-20",
     "excerpt": {
-      "es": "Winfried Kretschmann exige que, en lugar de ignorarlos o excluirlos, se debe entrar en una disputa de argumentos con los populistas de derecha. ¿Pero cómo? más...",
+      "pl": "Winfried Kretschmann domaga się, aby zamiast ignorować lub wykluczać, należy podjąć dyskusję na temat argumentów z prawicowymi populistami. Ale jak? więcej...",
+      "en": "Winfried Kretschmann demands that one must enter into a dispute of arguments with right-wing populists instead of ignoring or excluding them. But how? more...",
       "fr": "Winfried Kretschmann exige qu'il faille entrer en conflit avec les populistes de droite au lieu de les ignorer ou de les exclure. Mais comment ? plus...",
       "de": "Man müsse mit Rechtspopulisten in einen Streit der Argumente treten, statt sie zu ignorieren oder auszugrenzen, fordert Winfried Kretschmann. Nur wie? mehr...",
-      "ru": "Винфрид Кречманн требует, чтобы с правыми популистами вступали в спор аргументов, а не игнорировали или исключали их. Но как? более...",
-      "tr": "Winfried Kretschmann, sağcı popülistleri görmezden gelmek ya da dışlamak yerine onlarla tartışmaya girmeyi talep ediyor. Ama nasıl? Daha...",
-      "en": "Winfried Kretschmann demands that one must enter into a dispute of arguments with right-wing populists instead of ignoring or excluding them. But how? more...",
       "it": "Winfried Kretschmann chiede che si debba entrare in conflitto con i populisti di destra invece di ignorarli o escluderli. Ma come? Di più...",
-      "pl": "Winfried Kretschmann domaga się, aby zamiast ignorować lub wykluczać, należy podjąć dyskusję na temat argumentów z prawicowymi populistami. Ale jak? więcej...",
-      "uk": "Вінфрід Кречманн вимагає вступати в суперечку аргументів із правими популістами замість того, щоб ігнорувати чи виключати їх. Але як? більше..."
+      "uk": "Вінфрід Кречманн вимагає вступати в суперечку аргументів із правими популістами замість того, щоб ігнорувати чи виключати їх. Але як? більше...",
+      "tr": "Winfried Kretschmann, sağcı popülistleri görmezden gelmek ya da dışlamak yerine onlarla tartışmaya girmeyi talep ediyor. Ama nasıl? Daha...",
+      "es": "Winfried Kretschmann exige que, en lugar de ignorarlos o excluirlos, se debe entrar en una disputa de argumentos con los populistas de derecha. ¿Pero cómo? más...",
+      "ru": "Винфрид Кречманн требует, чтобы с правыми популистами вступали в спор аргументов, а не игнорировали или исключали их. Но как? более..."
     },
     "sources": [
       {
@@ -32,27 +67,27 @@
   },
   {
     "title": {
-      "es": "Redes de odio de AfD en X: el fiscal investiga al troll de derecha Patrick Kolek",
+      "pl": "Sieci nienawiści AfD w X: Prokurator prowadzi śledztwo w sprawie prawicowego trolla Patricka Kolka",
+      "en": "AfD hate networks on X: Public prosecutor is investigating right-wing troll Patrick Kolek",
       "fr": "Réseaux haineux de l'AfD sur X : le procureur enquête sur le troll de droite Patrick Kolek",
       "de": "AfD-Hassnetzwerke auf X: Staatsanwalt ermittelt gegen rechten Troll Patrick Kolek",
-      "ru": "Сети ненависти АдГ на X: Прокурор расследует дело правого тролля Патрика Колека",
-      "tr": "AfD'nin X'teki nefret ağları: Savcı sağcı trol Patrick Kolek'i soruşturuyor",
-      "en": "AfD hate networks on X: Public prosecutor is investigating right-wing troll Patrick Kolek",
       "it": "Reti di odio dell'AfD su X: il pubblico ministero sta indagando sul troll di destra Patrick Kolek",
-      "pl": "Sieci nienawiści AfD w X: Prokurator prowadzi śledztwo w sprawie prawicowego trolla Patricka Kolka",
-      "uk": "Мережі ненависті AfD на X: прокуратура розслідує праворадикального троля Патріка Колека"
+      "uk": "Мережі ненависті AfD на X: прокуратура розслідує праворадикального троля Патріка Колека",
+      "tr": "AfD'nin X'teki nefret ağları: Savcı sağcı trol Patrick Kolek'i soruşturuyor",
+      "es": "Redes de odio de AfD en X: el fiscal investiga al troll de derecha Patrick Kolek",
+      "ru": "Сети ненависти АдГ на X: Прокурор расследует дело правого тролля Патрика Колека"
     },
     "date": "2026-10-19",
     "excerpt": {
-      "es": "Doxxing, swatting, odiando: el activista Patrick Kolek organiza campañas online de extrema derecha. Su burbuja se extiende hasta la AfD. La Fiscalía General ahora está investigando. a mí...",
+      "pl": "Doxxing, swatting, hejtowanie: aktywista Patrick Kolek organizuje skrajnie prawicowe kampanie internetowe. Jego bańka sięga aż do AfD. Sprawę prowadzi obecnie Prokuratura Generalna. Ja...",
+      "en": "Doxxing, swatting, hating: activist Patrick Kolek orchestrates extreme right-wing online campaigns. His bubble extends to the AfD. The Attorney General’s Office is now investigating. me...",
       "fr": "Doxxing, swatting, hating : le militant Patrick Kolek orchestre des campagnes en ligne d'extrême droite. Sa bulle s’étend à l’AfD. Le bureau du procureur général enquête actuellement. moi...",
       "de": "Doxxen, swatten, hassen: Der Aktivist Patrick Kolek orchestriert extrem rechte Online-Kampagnen. Seine Bubble reicht bis zur AfD. Nun ermittelt die Generalstaatsanwaltschaft. me...",
-      "ru": "Доксинг, шлепки, ненависть: активист Патрик Колек организует крайне правые онлайн-кампании. Его пузырь распространяется и на АдГ. Сейчас Генпрокуратура проводит расследование. мне...",
-      "tr": "Kişisel bilgileri ifşa etmek, saldırmak, nefret etmek: Aktivist Patrick Kolek aşırı sağcı çevrimiçi kampanyalar düzenliyor. Balonu AfD'ye kadar uzanıyor. Şimdi Başsavcılık soruşturma yürütüyor. Ben...",
-      "en": "Doxxing, swatting, hating: activist Patrick Kolek orchestrates extreme right-wing online campaigns. His bubble extends to the AfD. The Attorney General’s Office is now investigating. me...",
       "it": "Doxxing, schiacciamento, odio: l'attivista Patrick Kolek orchestra campagne online di estrema destra. La sua bolla si estende all’AfD. Ora la Procura Generale sta indagando. Me...",
-      "pl": "Doxxing, swatting, hejtowanie: aktywista Patrick Kolek organizuje skrajnie prawicowe kampanie internetowe. Jego bańka sięga aż do AfD. Sprawę prowadzi obecnie Prokuratura Generalna. Ja...",
-      "uk": "Доксинг, удари, ненависть: активіст Патрік Колек організовує крайні праві онлайн-кампанії. Його бульбашка поширюється на AfD. Зараз Генпрокуратура проводить розслідування. я..."
+      "uk": "Доксинг, удари, ненависть: активіст Патрік Колек організовує крайні праві онлайн-кампанії. Його бульбашка поширюється на AfD. Зараз Генпрокуратура проводить розслідування. я...",
+      "tr": "Kişisel bilgileri ifşa etmek, saldırmak, nefret etmek: Aktivist Patrick Kolek aşırı sağcı çevrimiçi kampanyalar düzenliyor. Balonu AfD'ye kadar uzanıyor. Şimdi Başsavcılık soruşturma yürütüyor. Ben...",
+      "es": "Doxxing, swatting, odiando: el activista Patrick Kolek organiza campañas online de extrema derecha. Su burbuja se extiende hasta la AfD. La Fiscalía General ahora está investigando. a mí...",
+      "ru": "Доксинг, шлепки, ненависть: активист Патрик Колек организует крайне правые онлайн-кампании. Его пузырь распространяется и на АдГ. Сейчас Генпрокуратура проводит расследование. мне..."
     },
     "sources": [
       {
@@ -63,27 +98,27 @@
   },
   {
     "title": {
-      "es": "Kevin Dorow: la fiscalía acusa a un político del AfD de utilizar lemas nazis",
+      "pl": "Kevin Dorow: Prokuratura oskarża polityka AfD o nazistowskie hasła",
+      "en": "Kevin Dorow: Public prosecutor's office charges AfD politician with Nazi slogans",
       "fr": "Kevin Dorow : le parquet accuse un homme politique de l'AfD de slogans nazis",
       "de": "Kevin Dorow: Staatsanwaltschaft klagt AfD-Politiker wegen NS-Parole an",
-      "ru": "Кевин Дороу: Прокуратура обвиняет политика АдГ в нацистских лозунгах",
-      "tr": "Kevin Dorow: Savcılık AfD'li siyasetçiyi Nazi sloganlarıyla suçluyor",
-      "en": "Kevin Dorow: Public prosecutor's office charges AfD politician with Nazi slogans",
       "it": "Kevin Dorow: la Procura accusa il politico dell'AfD di slogan nazisti",
-      "pl": "Kevin Dorow: Prokuratura oskarża polityka AfD o nazistowskie hasła",
-      "uk": "Кевін Дороу: Прокуратура звинувачує політика AfD у нацистських гаслах"
+      "uk": "Кевін Дороу: Прокуратура звинувачує політика AfD у нацистських гаслах",
+      "tr": "Kevin Dorow: Savcılık AfD'li siyasetçiyi Nazi sloganlarıyla suçluyor",
+      "es": "Kevin Dorow: la fiscalía acusa a un político del AfD de utilizar lemas nazis",
+      "ru": "Кевин Дороу: Прокуратура обвиняет политика АдГ в нацистских лозунгах"
     },
     "date": "2026-10-19",
     "excerpt": {
-      "es": "Se dice que Kevin Dorow utilizó eslóganes propagandísticos de las Juventudes Hitlerianas en la reunión fundacional de la organización juvenil AfD. La fiscalía de Giessen ha presentado cargos. Si...",
+      "pl": "Mówi się, że Kevin Dorow posługiwał się hasłami propagandowymi Hitlerjugend na spotkaniu założycielskim młodzieżowej organizacji AfD. Prokuratura w Giessen postawiła zarzuty. Czy...",
+      "en": "Kevin Dorow is said to have used Hitler Youth propaganda slogans at the founding meeting of the AfD youth organization. The Giessen public prosecutor's office has filed charges. Whether...",
       "fr": "Kevin Dorow aurait utilisé des slogans de propagande des Jeunesses hitlériennes lors de la réunion fondatrice de l'organisation de jeunesse de l'AfD. Le parquet de Giessen a porté plainte. Si...",
       "de": "Kevin Dorow soll bei der Gründungsversammlung der AfD-Jugendorganisation Propagandaparole der Hitlerjugend verwendet haben. Die Staatsanwaltschaft Gießen hat Anklage erhoben. Ob...",
-      "ru": "Сообщается, что Кевин Дороу использовал пропагандистские лозунги Гитлерюгенда на учредительном собрании молодежной организации АдГ. Прокуратура Гиссена предъявила обвинения. Ли...",
-      "tr": "Kevin Dorow'un AfD gençlik örgütünün kuruluş toplantısında Hitler Gençliği propaganda sloganlarını kullandığı söyleniyor. Giessen savcılığı suç duyurusunda bulundu. İkisinden biri...",
-      "en": "Kevin Dorow is said to have used Hitler Youth propaganda slogans at the founding meeting of the AfD youth organization. The Giessen public prosecutor's office has filed charges. Whether...",
       "it": "Si dice che Kevin Dorow abbia usato slogan propagandistici della Gioventù hitleriana durante la riunione di fondazione dell'organizzazione giovanile dell'AfD. La procura di Giessen ha sporto denuncia. Se...",
-      "pl": "Mówi się, że Kevin Dorow posługiwał się hasłami propagandowymi Hitlerjugend na spotkaniu założycielskim młodzieżowej organizacji AfD. Prokuratura w Giessen postawiła zarzuty. Czy...",
-      "uk": "Кажуть, що Кевін Дороу використовував пропагандистські гасла «Гітлерюгенд» на установчих зборах молодіжної організації AfD. Прокуратура Гіссена висунула звинувачення. чи..."
+      "uk": "Кажуть, що Кевін Дороу використовував пропагандистські гасла «Гітлерюгенд» на установчих зборах молодіжної організації AfD. Прокуратура Гіссена висунула звинувачення. чи...",
+      "tr": "Kevin Dorow'un AfD gençlik örgütünün kuruluş toplantısında Hitler Gençliği propaganda sloganlarını kullandığı söyleniyor. Giessen savcılığı suç duyurusunda bulundu. İkisinden biri...",
+      "es": "Se dice que Kevin Dorow utilizó eslóganes propagandísticos de las Juventudes Hitlerianas en la reunión fundacional de la organización juvenil AfD. La fiscalía de Giessen ha presentado cargos. Si...",
+      "ru": "Сообщается, что Кевин Дороу использовал пропагандистские лозунги Гитлерюгенда на учредительном собрании молодежной организации АдГ. Прокуратура Гиссена предъявила обвинения. Ли..."
     },
     "sources": [
       {
@@ -129,27 +164,27 @@
   },
   {
     "title": {
-      "es": "“Agresivo-combativo”: no es necesaria la violencia del AfD para lograr una prohibición exitosa del AfD",
+      "pl": "„Agresywno-bojowy”: Do skutecznego wprowadzenia zakazu AfD nie jest potrzebna przemoc",
+      "en": "“Aggressive-combative”: There is no need for AfD violence for a successful AfD ban",
       "fr": "« Agressif-combat » : la violence de l'AfD n'est pas nécessaire pour réussir l'interdiction de l'AfD",
       "de": "“Aggressiv-kämpferisch”: Es braucht keine AfD-Gewalt für ein erfolgreiches AfD-Verbot",
-      "ru": "«Агрессивно-боевой»: для успешного запрета АдГ нет необходимости в насилии",
-      "tr": "“Agresif-kavgacı”: Başarılı bir AfD yasağı için AfD şiddetine gerek yok",
-      "en": "“Aggressive-combative”: There is no need for AfD violence for a successful AfD ban",
       "it": "“Aggressivo-combattivo”: non è necessaria la violenza dell’AfD per mettere al bando l’AfD con successo",
-      "pl": "„Agresywno-bojowy”: Do skutecznego wprowadzenia zakazu AfD nie jest potrzebna przemoc",
-      "uk": "«Агресивно-бойовий»: для успішної заборони AfD немає потреби в насильстві"
+      "uk": "«Агресивно-бойовий»: для успішної заборони AfD немає потреби в насильстві",
+      "tr": "“Agresif-kavgacı”: Başarılı bir AfD yasağı için AfD şiddetine gerek yok",
+      "es": "“Agresivo-combativo”: no es necesaria la violencia del AfD para lograr una prohibición exitosa del AfD",
+      "ru": "«Агрессивно-боевой»: для успешного запрета АдГ нет необходимости в насилии"
     },
     "date": "2026-10-16",
     "excerpt": {
-      "es": "Merz, Dobrindt y el Ministerio del Interior afirman que una posible prohibición del AfD fracasaría debido a la falta de una “actitud activamente combativa y agresiva”. El problema: este obstáculo tiene...",
+      "pl": "Merz, Dobrindt i MSW twierdzą, że ewentualny zakaz AfD nie powiedzie się ze względu na brak „aktywnie bojowej, agresywnej postawy”. Problem: ta przeszkoda ma...",
+      "en": "Merz, Dobrindt and the Interior Ministry claim that a possible AfD ban would fail due to the lack of an “actively combative, aggressive attitude”. The problem: This hurdle has...",
       "fr": "Merz, Dobrindt et le ministère de l’Intérieur affirment qu’une éventuelle interdiction de l’AfD échouerait en raison de l’absence d’une « attitude activement combative et agressive ». Le problème : cet obstacle a...",
       "de": "Merz, Dobrindt und das Innenministerium behaupten, ein mögliches AfD-Verbot scheitere an der fehlenden “aktiv kämpferischen, aggressiven Haltung”. Das Problem: Diese Hürde hat d...",
-      "ru": "Мерц, Добриндт и МВД заявляют, что возможный запрет АдГ провалится из-за отсутствия «активно-боевого, агрессивного подхода». Проблема: Это препятствие имеет...",
-      "tr": "Merz, Dobrindt ve İçişleri Bakanlığı, olası bir AfD yasağının \"aktif mücadeleci, saldırgan tutum\" eksikliği nedeniyle başarısızlıkla sonuçlanacağını iddia ediyor. Sorun: Bu engelin...",
-      "en": "Merz, Dobrindt and the Interior Ministry claim that a possible AfD ban would fail due to the lack of an “actively combative, aggressive attitude”. The problem: This hurdle has...",
       "it": "Merz, Dobrindt e il Ministero dell’Interno sostengono che un eventuale divieto dell’AfD fallirebbe a causa della mancanza di un “atteggiamento attivamente combattivo e aggressivo”. Il problema: questo ostacolo ha...",
-      "pl": "Merz, Dobrindt i MSW twierdzą, że ewentualny zakaz AfD nie powiedzie się ze względu na brak „aktywnie bojowej, agresywnej postawy”. Problem: ta przeszkoda ma...",
-      "uk": "Мерц, Добріндт і Міністерство внутрішніх справ стверджують, що можлива заборона AfD зазнає невдачі через відсутність «активної бойової, агресивної позиції». Проблема: ця перешкода..."
+      "uk": "Мерц, Добріндт і Міністерство внутрішніх справ стверджують, що можлива заборона AfD зазнає невдачі через відсутність «активної бойової, агресивної позиції». Проблема: ця перешкода...",
+      "tr": "Merz, Dobrindt ve İçişleri Bakanlığı, olası bir AfD yasağının \"aktif mücadeleci, saldırgan tutum\" eksikliği nedeniyle başarısızlıkla sonuçlanacağını iddia ediyor. Sorun: Bu engelin...",
+      "es": "Merz, Dobrindt y el Ministerio del Interior afirman que una posible prohibición del AfD fracasaría debido a la falta de una “actitud activamente combativa y agresiva”. El problema: este obstáculo tiene...",
+      "ru": "Мерц, Добриндт и МВД заявляют, что возможный запрет АдГ провалится из-за отсутствия «активно-боевого, агрессивного подхода». Проблема: Это препятствие имеет..."
     },
     "sources": [
       {
@@ -160,27 +195,27 @@
   },
   {
     "title": {
-      "es": "¡Extraño! AfD Cloppenburg reduce a la mitad el número de sus escaños por culpa propia",
+      "pl": "Niezręczny! AfD Cloppenburg z własnej winy zmniejsza o połowę liczbę mandatów",
+      "en": "Awkward! AfD Cloppenburg halves the number of its seats through its own fault",
       "fr": "Maladroit! L'AfD Cloppenburg réduit de moitié le nombre de ses sièges par sa propre faute",
       "de": "Peinlich! AfD Cloppenburg halbiert selbstverschuldet die Anzahl ihrer Sitze",
-      "ru": "Неуклюжий! АдГ Клоппенбург вдвое сократила число своих мандатов по своей вине",
-      "tr": "Garip! AfD Cloppenburg kendi hatası nedeniyle koltuk sayısını yarıya indirdi",
-      "en": "Awkward! AfD Cloppenburg halves the number of its seats through its own fault",
       "it": "Imbarazzante! L’AfD Cloppenburg dimezza il numero dei seggi per sua colpa",
-      "pl": "Niezręczny! AfD Cloppenburg z własnej winy zmniejsza o połowę liczbę mandatów",
-      "uk": "Незручно! AfD Cloppenburg удвічі скорочує кількість місць зі своєї вини"
+      "uk": "Незручно! AfD Cloppenburg удвічі скорочує кількість місць зі своєї вини",
+      "tr": "Garip! AfD Cloppenburg kendi hatası nedeniyle koltuk sayısını yarıya indirdi",
+      "es": "¡Extraño! AfD Cloppenburg reduce a la mitad el número de sus escaños por culpa propia",
+      "ru": "Неуклюжий! АдГ Клоппенбург вдвое сократила число своих мандатов по своей вине"
     },
     "date": "2026-10-16",
     "excerpt": {
-      "es": "El partido de extrema derecha AfD obtuvo el 13 de septiembre en las elecciones municipales de Cloppenburg, Baja Sajonia, un 22,29 por ciento de votos. Según la ciudad, son 9.913 votos y serían...",
+      "pl": "13 września w wyborach do rady miejskiej w Cloppenburgu w Dolnej Saksonii zdecydowanie prawicowa ekstremistyczna AfD zdobyła 22,29%. Według miasta jest to 9913 głosów i byłoby...",
+      "en": "The firmly right-wing extremist AfD won 22.29 percent in the city council election in Cloppenburg, Lower Saxony, on September 13th. According to the city, that's 9,913 votes and would be...",
       "fr": "L'AfD, parti d'extrême droite, a remporté 22,29 pour cent aux élections municipales de Cloppenburg, en Basse-Saxe, le 13 septembre. Selon la ville, cela fait 9 913 voix et serait...",
       "de": "Die gesichert rechtsextreme AfD hat bei der Stadtratswahl im niedersächsischen Cloppenburg am 13. September 22,29 Prozent geholt. Das sind laut Stadt 9.913 Stimmen und wären eig...",
-      "ru": "13 сентября на выборах в городской совет Клоппенбурга, Нижняя Саксония, решительно правая экстремистская партия АдГ набрала 22,29 процента голосов. По данным города, это 9 913 голосов и будет...",
-      "tr": "Aşırı sağcı AfD, 13 Eylül'de Aşağı Saksonya'nın Cloppenburg kentinde yapılan belediye meclisi seçimlerini yüzde 22,29 kazandı. Şehre göre bu 9.913 oy anlamına geliyor ve...",
-      "en": "The firmly right-wing extremist AfD won 22.29 percent in the city council election in Cloppenburg, Lower Saxony, on September 13th. According to the city, that's 9,913 votes and would be...",
       "it": "L'AfD, estremista di estrema destra, ha vinto il 13 settembre alle elezioni del consiglio comunale di Cloppenburg, in Bassa Sassonia, con il 22,29%. Secondo la città sono 9.913 voti e sarebbero...",
-      "pl": "13 września w wyborach do rady miejskiej w Cloppenburgu w Dolnej Saksonii zdecydowanie prawicowa ekstremistyczna AfD zdobyła 22,29%. Według miasta jest to 9913 głosów i byłoby...",
-      "uk": "Права екстремістська AfD отримала 22,29 відсотка на виборах до міської ради в Клоппенбурзі, Нижня Саксонія, 13 вересня. Згідно з даними міста, це 9913 голосів і буде..."
+      "uk": "Права екстремістська AfD отримала 22,29 відсотка на виборах до міської ради в Клоппенбурзі, Нижня Саксонія, 13 вересня. Згідно з даними міста, це 9913 голосів і буде...",
+      "tr": "Aşırı sağcı AfD, 13 Eylül'de Aşağı Saksonya'nın Cloppenburg kentinde yapılan belediye meclisi seçimlerini yüzde 22,29 kazandı. Şehre göre bu 9.913 oy anlamına geliyor ve...",
+      "es": "El partido de extrema derecha AfD obtuvo el 13 de septiembre en las elecciones municipales de Cloppenburg, Baja Sajonia, un 22,29 por ciento de votos. Según la ciudad, son 9.913 votos y serían...",
+      "ru": "13 сентября на выборах в городской совет Клоппенбурга, Нижняя Саксония, решительно правая экстремистская партия АдГ набрала 22,29 процента голосов. По данным города, это 9 913 голосов и будет..."
     },
     "sources": [
       {
@@ -191,27 +226,27 @@
   },
   {
     "title": {
-      "es": "McRib falso: ¡AfD se avergüenza con el socialismo de cerdo!",
+      "pl": "Fałszywy McRib: AfD ośmiesza się wieprzowym socjalizmem!",
+      "en": "McRib fake: AfD embarrasses itself with pork socialism!",
       "fr": "Faux McRib : l’AfD s’embarrasse de socialisme porcin !",
       "de": "McRib-Fake: AfD blamiert sich mit Schweinefleisch-Sozialismus!",
-      "ru": "Фейк МакРиба: АдГ ставит себя в неловкое положение со свиным социализмом!",
-      "tr": "McRib sahte: AfD domuz sosyalizmiyle kendini utandırıyor!",
-      "en": "McRib fake: AfD embarrasses itself with pork socialism!",
       "it": "Falso McRib: l'AfD si mette in imbarazzo con il socialismo porco!",
-      "pl": "Fałszywy McRib: AfD ośmiesza się wieprzowym socjalizmem!",
-      "uk": "Фейк McRib: AfD бентежить себе свинячим соціалізмом!"
+      "uk": "Фейк McRib: AfD бентежить себе свинячим соціалізмом!",
+      "tr": "McRib sahte: AfD domuz sosyalizmiyle kendini utandırıyor!",
+      "es": "McRib falso: ¡AfD se avergüenza con el socialismo de cerdo!",
+      "ru": "Фейк МакРиба: АдГ ставит себя в неловкое положение со свиным социализмом!"
     },
     "date": "2026-10-15",
     "excerpt": {
-      "es": "Mientras los partidos democráticos discuten sobre alquileres, salarios o leyes climáticas que se supone que mejorarán la vida real, la burbuja de la extrema derecha se vuelve loca por una hamburguesa...",
+      "pl": "Podczas gdy partie demokratyczne kłócą się o czynsze, płace czy przepisy klimatyczne, które mają poprawić Twoje prawdziwe życie, prawicowa bańka ekstremistyczna szaleje na punkcie burgera…",
+      "en": "While democratic parties argue about rent, wages or climate laws that are supposed to improve your real life, the right-wing extremist bubble is going crazy over a burger...",
       "fr": "Pendant que les partis démocrates débattent des loyers, des salaires ou des lois climatiques censées améliorer la vie réelle, la bulle d'extrême droite s'affole autour d'un hamburger...",
       "de": "Während demokratische Parteien über Gesetze für Mieten, Löhne oder Klima streiten, die dein echtes Leben verbessern sollen, dreht die rechtsextreme Blase wegen eines Burgers dur...",
-      "ru": "Пока демократические партии спорят об аренде, заработной плате или климатических законах, которые должны улучшить вашу реальную жизнь, правый экстремистский пузырь сходит с ума из-за гамбургера...",
-      "tr": "Demokrat partiler gerçek hayatınızı iyileştirmesi beklenen kira, ücretler veya iklim yasalarını tartışırken, aşırı sağcı balon bir hamburger için çıldırıyor...",
-      "en": "While democratic parties argue about rent, wages or climate laws that are supposed to improve your real life, the right-wing extremist bubble is going crazy over a burger...",
       "it": "Mentre i partiti democratici discutono sull'affitto, sui salari o sulle leggi sul clima che dovrebbero migliorare la vita reale, la bolla estremista di destra impazzisce per un hamburger...",
-      "pl": "Podczas gdy partie demokratyczne kłócą się o czynsze, płace czy przepisy klimatyczne, które mają poprawić Twoje prawdziwe życie, prawicowa bańka ekstremistyczna szaleje na punkcie burgera…",
-      "uk": "Поки демократичні партії сперечаються про орендну плату, заробітну плату чи кліматичні закони, які мають покращити ваше реальне життя, праві екстремісти божеволіють від гамбургера..."
+      "uk": "Поки демократичні партії сперечаються про орендну плату, заробітну плату чи кліматичні закони, які мають покращити ваше реальне життя, праві екстремісти божеволіють від гамбургера...",
+      "tr": "Demokrat partiler gerçek hayatınızı iyileştirmesi beklenen kira, ücretler veya iklim yasalarını tartışırken, aşırı sağcı balon bir hamburger için çıldırıyor...",
+      "es": "Mientras los partidos democráticos discuten sobre alquileres, salarios o leyes climáticas que se supone que mejorarán la vida real, la burbuja de la extrema derecha se vuelve loca por una hamburguesa...",
+      "ru": "Пока демократические партии спорят об аренде, заработной плате или климатических законах, которые должны улучшить вашу реальную жизнь, правый экстремистский пузырь сходит с ума из-за гамбургера..."
     },
     "sources": [
       {
@@ -222,27 +257,27 @@
   },
   {
     "title": {
-      "es": "El AfD sólo puede PERDER el procedimiento de prohibición, y lo sabe",
+      "pl": "AfD może jedynie PRZEGRAĆ postępowanie w sprawie zakazu – i oni o tym wiedzą",
+      "en": "The AfD can only LOSE the ban proceedings – and they know it",
       "fr": "L’AfD ne peut que PERDRE la procédure d’interdiction – et elle le sait",
       "de": "Die AfD kann das Verbotsverfahren nur VERLIEREN – und sie weiß es",
-      "ru": "АдГ может только ПРОИГРАТЬ процедуру запрета – и они это знают",
-      "tr": "AfD sadece yasaklama sürecini KAYBEDER - ve bunu biliyorlar",
-      "en": "The AfD can only LOSE the ban proceedings – and they know it",
       "it": "L’AfD può solo PERDERE la procedura di divieto – e lo sa",
-      "pl": "AfD może jedynie PRZEGRAĆ postępowanie w sprawie zakazu – i oni o tym wiedzą",
-      "uk": "AfD може лише ПРОГРАТИ процедуру заборони – і вони це знають"
+      "uk": "AfD може лише ПРОГРАТИ процедуру заборони – і вони це знають",
+      "tr": "AfD sadece yasaklama sürecini KAYBEDER - ve bunu biliyorlar",
+      "es": "El AfD sólo puede PERDER el procedimiento de prohibición, y lo sabe",
+      "ru": "АдГ может только ПРОИГРАТЬ процедуру запрета – и они это знают"
     },
     "date": "2026-10-09",
     "excerpt": {
-      "es": "Mucha gente duda en prohibir el AfD porque no están seguros de si tendrá éxito. Las posibilidades son buenas: el informe del GFF de 1.500 páginas, una declaración de 18...",
+      "pl": "Wiele osób waha się przed zdelegalizowaniem AfD ze względu na niepewność, czy odniesie ona sukces. Szanse są duże: 1500-stronicowy raport GFF, oświadczenie 18...",
+      "en": "Many people hesitate to ban the AfD because they are not sure whether it would be successful. The chances are good: the 1,500-page GFF report, a statement from 18...",
       "fr": "Beaucoup hésitent à interdire l’AfD parce qu’ils ne sont pas sûrs de son succès. Les chances sont bonnes : le rapport du GFF de 1 500 pages, une déclaration du 18...",
       "de": "Viele zögern beim AfD-Verbotsverfahren, weil sie nicht sicher sind, ob es Erfolg hätte. Dabei stehen die Chancen gut: Das 1.500-seitige GFF-Gutachten, eine Stellungnahme von 18 ...",
-      "ru": "Многие люди не решаются запретить АдГ, потому что не уверены, будет ли она успешной. Шансы хорошие: 1500-страничный отчет GFF, заявление 18...",
-      "tr": "Pek çok kişi AfD'yi yasaklamakta tereddüt ediyor çünkü başarılı olup olmayacağından emin değiller. Şans yüksek: 1.500 sayfalık GFF raporu, 18'den bir açıklama...",
-      "en": "Many people hesitate to ban the AfD because they are not sure whether it would be successful. The chances are good: the 1,500-page GFF report, a statement from 18...",
       "it": "Molte persone esitano a mettere al bando l’AfD perché non sono sicuri che possa avere successo. Le probabilità sono buone: il report GFF di 1.500 pagine, un comunicato di 18...",
-      "pl": "Wiele osób waha się przed zdelegalizowaniem AfD ze względu na niepewność, czy odniesie ona sukces. Szanse są duże: 1500-stronicowy raport GFF, oświadczenie 18...",
-      "uk": "Багато людей вагаються щодо заборони AfD, тому що вони не впевнені, що це буде успішним. Шанси хороші: 1500-сторінковий звіт GFF, заява 18..."
+      "uk": "Багато людей вагаються щодо заборони AfD, тому що вони не впевнені, що це буде успішним. Шанси хороші: 1500-сторінковий звіт GFF, заява 18...",
+      "tr": "Pek çok kişi AfD'yi yasaklamakta tereddüt ediyor çünkü başarılı olup olmayacağından emin değiller. Şans yüksek: 1.500 sayfalık GFF raporu, 18'den bir açıklama...",
+      "es": "Mucha gente duda en prohibir el AfD porque no están seguros de si tendrá éxito. Las posibilidades son buenas: el informe del GFF de 1.500 páginas, una declaración de 18...",
+      "ru": "Многие люди не решаются запретить АдГ, потому что не уверены, будет ли она успешной. Шансы хорошие: 1500-страничный отчет GFF, заявление 18..."
     },
     "sources": [
       {
@@ -253,27 +288,27 @@
   },
   {
     "title": {
-      "es": "La AfD no está a favor del “pequeño hombre”: ¡quiere deportarlo!",
+      "pl": "AfD nie jest dla „małego człowieka” – chce go deportować!",
+      "en": "The AfD is not for the “little man” – it wants to deport him!",
       "fr": "L’AfD n’est pas pour le « petit homme » – elle veut l’expulser !",
       "de": "Die AfD ist nicht für den „Kleinen Mann“ – Sie will ihn abschieben!",
-      "ru": "АдГ не для «маленьких людей» – она хочет его депортировать!",
-      "tr": "AfD “küçük adama” göre değil, onu sınır dışı etmek istiyor!",
-      "en": "The AfD is not for the “little man” – it wants to deport him!",
       "it": "L’AfD non è per il “piccolo uomo”: vuole deportarlo!",
-      "pl": "AfD nie jest dla „małego człowieka” – chce go deportować!",
-      "uk": "AfD не для «маленької людини» – вона хоче її депортувати!"
+      "uk": "AfD не для «маленької людини» – вона хоче її депортувати!",
+      "tr": "AfD “küçük adama” göre değil, onu sınır dışı etmek istiyor!",
+      "es": "La AfD no está a favor del “pequeño hombre”: ¡quiere deportarlo!",
+      "ru": "АдГ не для «маленьких людей» – она хочет его депортировать!"
     },
     "date": "2026-10-08",
     "excerpt": {
-      "es": "El partido de extrema derecha AfD se autodenomina el “partido del hombre pequeño”. Pero en profesiones como la construcción, la enfermería o la fábrica de carne, la “gente pequeña” de origen migrante...",
+      "pl": "Prawicowa ekstremistyczna AfD nazywa siebie „partią małego człowieka”. Ale w zawodach takich jak budownictwo, pielęgniarstwo czy fabryka mięsa „mali ludzie” ze środowisk migracyjnych…",
+      "en": "The right-wing extremist AfD calls itself the “little man’s party”. But in professions such as construction, nursing or the meat factory, the “little people” with migrant backgrounds...",
       "fr": "L’AfD, un parti d’extrême droite, se définit lui-même comme le « parti du petit homme ». Mais dans des métiers comme le bâtiment, les soins infirmiers ou l'usine de viande, les « petites gens » issus de l'immigration...",
       "de": "Die rechtsextreme AfD nennt sich „Partei des kleinen Mannes“. Aber in Berufen wie auf dem Bau, in der Pflege oder in der Fleischfabrik sind die „kleinen Leute“ mit Migrationshin...",
-      "ru": "Правая экстремистская АдГ называет себя «партией маленького человека». Но в таких профессиях, как строительство, медсестра или мясокомбинат, «маленькие люди» с мигрантским прошлым…",
-      "tr": "Aşırı sağcı AfD kendisini “küçük adamın partisi” olarak adlandırıyor. Ama inşaat, hemşirelik, et fabrikası gibi mesleklerde göçmen kökenli “küçük insanlar”...",
-      "en": "The right-wing extremist AfD calls itself the “little man’s party”. But in professions such as construction, nursing or the meat factory, the “little people” with migrant backgrounds...",
       "it": "L’estremista di destra AfD si autodefinisce il “partito dei piccoli uomini”. Ma in professioni come l’edilizia, l’assistenza infermieristica o la fabbrica di carne, le “piccole persone” con un background migratorio...",
-      "pl": "Prawicowa ekstremistyczna AfD nazywa siebie „partią małego człowieka”. Ale w zawodach takich jak budownictwo, pielęgniarstwo czy fabryka mięsa „mali ludzie” ze środowisk migracyjnych…",
-      "uk": "Права екстремістська AfD називає себе «партією маленької людини». Але в таких професіях, як будівництво, медсестра чи м’ясна фабрика, «маленькі люди» з мігрантським походженням..."
+      "uk": "Права екстремістська AfD називає себе «партією маленької людини». Але в таких професіях, як будівництво, медсестра чи м’ясна фабрика, «маленькі люди» з мігрантським походженням...",
+      "tr": "Aşırı sağcı AfD kendisini “küçük adamın partisi” olarak adlandırıyor. Ama inşaat, hemşirelik, et fabrikası gibi mesleklerde göçmen kökenli “küçük insanlar”...",
+      "es": "El partido de extrema derecha AfD se autodenomina el “partido del hombre pequeño”. Pero en profesiones como la construcción, la enfermería o la fábrica de carne, la “gente pequeña” de origen migrante...",
+      "ru": "Правая экстремистская АдГ называет себя «партией маленького человека». Но в таких профессиях, как строительство, медсестра или мясокомбинат, «маленькие люди» с мигрантским прошлым…"
     },
     "sources": [
       {
@@ -284,27 +319,27 @@
   },
   {
     "title": {
-      "es": "Comparación de la UE: por qué los partidos de derecha se están distanciando del AfD",
+      "pl": "Porównanie UE: Dlaczego partie prawicowe dystansują się od AfD",
+      "en": "EU comparison: Why right-wing parties are distancing themselves from the AfD",
       "fr": "Comparaison avec l’UE : pourquoi les partis de droite se distancient de l’AfD",
       "de": "EU-Vergleich: Warum Rechtsaußen-Parteien auf Distanz zur AfD gehen",
-      "ru": "Сравнение ЕС: почему правые партии дистанцируются от АдГ",
-      "tr": "AB karşılaştırması: Sağ partiler neden AfD'den uzaklaşıyor?",
-      "en": "EU comparison: Why right-wing parties are distancing themselves from the AfD",
       "it": "Confronto con l’UE: perché i partiti di destra prendono le distanze dall’AfD",
-      "pl": "Porównanie UE: Dlaczego partie prawicowe dystansują się od AfD",
-      "uk": "Порівняння з ЄС: чому праві партії дистанціюються від AfD"
+      "uk": "Порівняння з ЄС: чому праві партії дистанціюються від AfD",
+      "tr": "AB karşılaştırması: Sağ partiler neden AfD'den uzaklaşıyor?",
+      "es": "Comparación de la UE: por qué los partidos de derecha se están distanciando del AfD",
+      "ru": "Сравнение ЕС: почему правые партии дистанцируются от АдГ"
     },
     "date": "2026-10-07",
     "excerpt": {
-      "es": "Los partidos populistas europeos de derecha quieren tener cada vez menos que ver con el AfD. Partidos de extrema derecha en una comparación europea.",
+      "pl": "Prawicowe, populistyczne partie europejskie chcą mieć coraz mniej wspólnego z AfD. Prawicowe partie ekstremistyczne w porównaniu z Europą.",
+      "en": "Right-wing populist European parties want to have less and less to do with the AfD. Right-wing extremist parties in a European comparison.",
       "fr": "Les partis populistes européens de droite veulent de moins en moins avoir affaire à l’AfD. Les partis d’extrême droite dans une comparaison européenne.",
       "de": "Rechtspopulistische europäische Parteien wollen immer weniger mit der AfD zu tun haben. Rechtsextreme Parteien im europäischen Vergleich.",
-      "ru": "Правые популистские европейские партии хотят иметь всё меньше и меньше общего с АдГ. Правые экстремистские партии в сравнении с Европой.",
-      "tr": "Sağcı popülist Avrupa partileri AfD ile giderek daha az iş yapmak istiyor. Avrupa karşılaştırmasında aşırı sağcı partiler.",
-      "en": "Right-wing populist European parties want to have less and less to do with the AfD. Right-wing extremist parties in a European comparison.",
       "it": "I partiti populisti europei di destra vogliono avere sempre meno a che fare con l’AfD. I partiti estremisti di destra nel confronto europeo.",
-      "pl": "Prawicowe, populistyczne partie europejskie chcą mieć coraz mniej wspólnego z AfD. Prawicowe partie ekstremistyczne w porównaniu z Europą.",
-      "uk": "Правопопулістські європейські партії хочуть мати все менше спільного з AfD. Правоекстремістські партії в європейському порівнянні."
+      "uk": "Правопопулістські європейські партії хочуть мати все менше спільного з AfD. Правоекстремістські партії в європейському порівнянні.",
+      "tr": "Sağcı popülist Avrupa partileri AfD ile giderek daha az iş yapmak istiyor. Avrupa karşılaştırmasında aşırı sağcı partiler.",
+      "es": "Los partidos populistas europeos de derecha quieren tener cada vez menos que ver con el AfD. Partidos de extrema derecha en una comparación europea.",
+      "ru": "Правые популистские европейские партии хотят иметь всё меньше и меньше общего с АдГ. Правые экстремистские партии в сравнении с Европой."
     },
     "sources": [
       {
