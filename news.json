@@ -1,27 +1,27 @@
 [
   {
     "title": {
-      "uk": "Юрист щодо витоку AfD: «Раніше ми не мали такого погляду зсередини»",
-      "ru": "Юрист об утечке информации из АдГ: «Раньше у нас не было такого взгляда изнутри»",
+      "tr": "Avukat AfD sızıntısıyla ilgili: \"Bunu daha önce içeriden görmemiştik\"",
       "es": "Abogado sobre la filtración de AfD: \"Nunca antes habíamos tenido esta visión interna\"",
-      "de": "Rechtsanwalt über AfD-Leak: „Diese Innenansicht hatten wir bisher nicht“",
-      "en": "Lawyer about AfD leak: “We haven’t had this inside view before”",
       "fr": "Avocat sur la fuite de l’AfD : « Nous n’avons jamais eu ce point de vue intérieur auparavant »",
       "pl": "Prawnik o wycieku AfD: „Nie widzieliśmy tego wcześniej”",
-      "tr": "Avukat AfD sızıntısıyla ilgili: \"Bunu daha önce içeriden görmemiştik\"",
-      "it": "Avvocato sulla fuga di notizie dall'AfD: \"Non abbiamo mai avuto questa visione dall'interno prima\""
+      "ru": "Юрист об утечке информации из АдГ: «Раньше у нас не было такого взгляда изнутри»",
+      "it": "Avvocato sulla fuga di notizie dall'AfD: \"Non abbiamo mai avuto questa visione dall'interno prima\"",
+      "de": "Rechtsanwalt über AfD-Leak: „Diese Innenansicht hatten wir bisher nicht“",
+      "uk": "Юрист щодо витоку AfD: «Раніше ми не мали такого погляду зсередини»",
+      "en": "Lawyer about AfD leak: “We haven’t had this inside view before”"
     },
     "date": "2026-10-23",
     "excerpt": {
-      "uk": "Юрист Чан-Джо Цзюнь, який спеціалізується на ІТ, вважає, що витік AfD може «змінити правила гри». Це та частина головоломки, якої не вистачає для заборони? більше...",
-      "ru": "Юрист Чан Чжо Джун, специализирующийся на информационных технологиях, считает, что утечка информации из АдГ может «изменить правила игры». Это недостающая часть головоломки для запрета? более...",
+      "tr": "Bilişim teknolojileri alanında uzman avukat Chan-jo Jun, AfD sızıntısının olası bir \"oyun değiştirici\" olduğunu düşünüyor. Yasaklamanın eksik parçası bu mu? Daha...",
       "es": "El abogado Chan-jo Jun, especializado en TI, considera que la filtración de AfD es un posible \"cambio de juego\". ¿Es ésta la pieza que falta en el rompecabezas de la prohibición? más...",
-      "de": "Der auf IT spezialisierte Rechtsanwalt Chan-jo Jun hält den AfD-Leak für einen möglichen „Gamechanger“. Steckt darin das fehlende Puzzlestück für ein Verbot? mehr...",
-      "en": "Lawyer Chan-jo Jun, who specializes in IT, considers the AfD leak to be a possible “game changer”. Is this the missing piece of the puzzle for a ban? more...",
       "fr": "L’avocat Chan-jo Jun, spécialisé en informatique, considère la fuite de l’AfD comme un possible « game changer ». Est-ce la pièce manquante du puzzle pour une interdiction ? plus...",
       "pl": "Prawnik Chan-jo Jun, który specjalizuje się w IT, uważa wyciek AfD za możliwą „zmianę zasad gry”. Czy to brakujący element układanki powodujący zakaz? więcej...",
-      "tr": "Bilişim teknolojileri alanında uzman avukat Chan-jo Jun, AfD sızıntısının olası bir \"oyun değiştirici\" olduğunu düşünüyor. Yasaklamanın eksik parçası bu mu? Daha...",
-      "it": "L’avvocato Chan-jo Jun, specializzato in informatica, considera la fuga di notizie dell’AfD un possibile “punto di svolta”. È questo il pezzo mancante del puzzle per un divieto? Di più..."
+      "ru": "Юрист Чан Чжо Джун, специализирующийся на информационных технологиях, считает, что утечка информации из АдГ может «изменить правила игры». Это недостающая часть головоломки для запрета? более...",
+      "it": "L’avvocato Chan-jo Jun, specializzato in informatica, considera la fuga di notizie dell’AfD un possibile “punto di svolta”. È questo il pezzo mancante del puzzle per un divieto? Di più...",
+      "de": "Der auf IT spezialisierte Rechtsanwalt Chan-jo Jun hält den AfD-Leak für einen möglichen „Gamechanger“. Steckt darin das fehlende Puzzlestück für ein Verbot? mehr...",
+      "uk": "Юрист Чан-Джо Цзюнь, який спеціалізується на ІТ, вважає, що витік AfD може «змінити правила гри». Це та частина головоломки, якої не вистачає для заборони? більше...",
+      "en": "Lawyer Chan-jo Jun, who specializes in IT, considers the AfD leak to be a possible “game changer”. Is this the missing piece of the puzzle for a ban? more..."
     },
     "sources": [
       {
@@ -67,27 +67,27 @@
   },
   {
     "title": {
-      "uk": "Витоки AfD: цього достатньо для процедури заборони AfD",
-      "ru": "Утечки из АдГ: этого достаточно для процедуры запрета АдГ",
+      "tr": "AfD sızıntıları: AfD'nin yasaklanması için bu yeterli",
       "es": "Filtraciones de AfD: basta con un procedimiento de prohibición de AfD",
-      "de": "AfD-Leaks: Es reicht für ein AfD-Verbotsverfahren",
-      "en": "AfD leaks: It's enough for an AfD ban procedure",
       "fr": "Fuites de l'AfD : une procédure d'interdiction de l'AfD suffit",
       "pl": "Przecieki AfD: Wystarczy procedura zakazu AfD",
-      "tr": "AfD sızıntıları: AfD'nin yasaklanması için bu yeterli",
-      "it": "Fughe di notizie dall'AfD: basta una procedura di divieto dell'AfD"
+      "ru": "Утечки из АдГ: этого достаточно для процедуры запрета АдГ",
+      "it": "Fughe di notizie dall'AfD: basta una procedura di divieto dell'AfD",
+      "de": "AfD-Leaks: Es reicht für ein AfD-Verbotsverfahren",
+      "uk": "Витоки AfD: цього достатньо для процедури заборони AfD",
+      "en": "AfD leaks: It's enough for an AfD ban procedure"
     },
     "date": "2026-10-23",
     "excerpt": {
-      "uk": "Дані з витоку AfD можуть містити деталі, які виправдовують заборону. Того, що відомо наразі, достатньо. більше...",
-      "ru": "Данные из утечки АдГ могут содержать детали, оправдывающие запрет. Того, что известно на данный момент, достаточно. более...",
+      "tr": "AfD sızıntısından elde edilen veriler, yasağı haklı çıkaracak ayrıntılar sağlayabilir. Şu ana kadar bilinenler yeterlidir. Daha...",
       "es": "Los datos de la filtración de AfD pueden proporcionar detalles que justifiquen una prohibición. Lo que se sabe hasta ahora es suficiente. más...",
-      "de": "Möglicherweise liefern die Daten aus dem AfD-Leak Details, die ein Verbotsverfahren rechtfertigen. Dabei genügt schon das, was bislang bekannt ist. mehr...",
-      "en": "The data from the AfD leak may provide details that justify a ban. What is known so far is enough. more...",
       "fr": "Les données de la fuite de l’AfD peuvent fournir des détails justifiant une interdiction. Ce que l’on sait jusqu’à présent suffit. plus...",
       "pl": "Dane z wycieku AfD mogą dostarczyć szczegółów uzasadniających zakaz. To, co dotychczas wiadomo, wystarczy. więcej...",
-      "tr": "AfD sızıntısından elde edilen veriler, yasağı haklı çıkaracak ayrıntılar sağlayabilir. Şu ana kadar bilinenler yeterlidir. Daha...",
-      "it": "I dati della fuga di notizie dell’AfD potrebbero fornire dettagli che giustificano un divieto. Ciò che sappiamo finora è sufficiente. Di più..."
+      "ru": "Данные из утечки АдГ могут содержать детали, оправдывающие запрет. Того, что известно на данный момент, достаточно. более...",
+      "it": "I dati della fuga di notizie dell’AfD potrebbero fornire dettagli che giustificano un divieto. Ciò che sappiamo finora è sufficiente. Di più...",
+      "de": "Möglicherweise liefern die Daten aus dem AfD-Leak Details, die ein Verbotsverfahren rechtfertigen. Dabei genügt schon das, was bislang bekannt ist. mehr...",
+      "uk": "Дані з витоку AfD можуть містити деталі, які виправдовують заборону. Того, що відомо наразі, достатньо. більше...",
+      "en": "The data from the AfD leak may provide details that justify a ban. What is known so far is enough. more..."
     },
     "sources": [
       {
@@ -98,27 +98,27 @@
   },
   {
     "title": {
-      "ru": "Утечка данных АдГ может изменить правила игры в процедуре запрета",
       "tr": "AfD veri sızıntısı yasaklama sürecinde oyunun kurallarını değiştirebilir",
       "es": "La filtración de datos de AfD puede cambiar las reglas del juego en el proceso de prohibición",
-      "en": "AfD data leak can be a game changer in the ban proceedings",
-      "de": "AfD-Datenleak kann zum Gamechanger im Verbotsverfahren werden",
-      "uk": "Витік даних AfD може змінити правила процесу заборони",
       "pl": "Wyciek danych AfD może zmienić zasady gry w postępowaniu w sprawie zakazu",
       "fr": "La fuite de données de l’AfD peut changer la donne dans la procédure d’interdiction",
-      "it": "La fuga di dati dell’AfD può rappresentare un punto di svolta nella procedura di divieto"
+      "ru": "Утечка данных АдГ может изменить правила игры в процедуре запрета",
+      "it": "La fuga di dati dell’AfD può rappresentare un punto di svolta nella procedura di divieto",
+      "de": "AfD-Datenleak kann zum Gamechanger im Verbotsverfahren werden",
+      "uk": "Витік даних AfD може змінити правила процесу заборони",
+      "en": "AfD data leak can be a game changer in the ban proceedings"
     },
     "date": "2026-10-23",
     "excerpt": {
-      "ru": "Когда в феврале Административный суд Кёльна временно приостановил модернизацию АдГ, ему не хватало только одного: доказательств внутри партии. Федеральное конституционное управление...",
       "tr": "Köln İdare Mahkemesi Şubat ayında AfD'nin yükseltmesini geçici olarak durdurduğunda tek bir şey eksikti: parti içinden gelen kanıtlar. Federal Anayasa Dairesi...",
       "es": "Cuando el Tribunal Administrativo de Colonia detuvo temporalmente la mejora de AfD en febrero, sólo le faltaba una cosa: pruebas dentro del partido. La Oficina Constitucional Federal...",
-      "en": "When the Cologne Administrative Court temporarily stopped the AfD's upgrade in February, it was only missing one thing: evidence from within the party. The Federal Constitutional Office...",
-      "de": "Als das Verwaltungsgericht Köln im Februar die Hochstufung der AfD vorläufig stoppte, fehlte ihm nur eine Sache: Belege aus dem Inneren der Partei. Das Bundesamt für Verfassungs...",
-      "uk": "Коли в лютому адміністративний суд Кельна тимчасово зупинив оновлення AfD, йому не вистачало лише одного: доказів зсередини партії. Федеральне конституційне відомство...",
       "pl": "Kiedy w lutym Sąd Administracyjny w Kolonii tymczasowo wstrzymał awans AfD, brakowało jej tylko jednego: dowodów pochodzących z wewnątrz partii. Federalne Biuro Konstytucyjne...",
       "fr": "Lorsque le tribunal administratif de Cologne a temporairement stoppé la modernisation de l'AfD en février, il ne lui manquait qu'une chose : des preuves provenant de l'intérieur du parti. L'Office constitutionnel fédéral...",
-      "it": "Quando a febbraio il Tribunale amministrativo di Colonia ha temporaneamente bloccato il potenziamento dell'AfD, mancava solo una cosa: le prove interne al partito. L'Ufficio costituzionale federale..."
+      "ru": "Когда в феврале Административный суд Кёльна временно приостановил модернизацию АдГ, ему не хватало только одного: доказательств внутри партии. Федеральное конституционное управление...",
+      "it": "Quando a febbraio il Tribunale amministrativo di Colonia ha temporaneamente bloccato il potenziamento dell'AfD, mancava solo una cosa: le prove interne al partito. L'Ufficio costituzionale federale...",
+      "de": "Als das Verwaltungsgericht Köln im Februar die Hochstufung der AfD vorläufig stoppte, fehlte ihm nur eine Sache: Belege aus dem Inneren der Partei. Das Bundesamt für Verfassungs...",
+      "uk": "Коли в лютому адміністративний суд Кельна тимчасово зупинив оновлення AfD, йому не вистачало лише одного: доказів зсередини партії. Федеральне конституційне відомство...",
+      "en": "When the Cologne Administrative Court temporarily stopped the AfD's upgrade in February, it was only missing one thing: evidence from within the party. The Federal Constitutional Office..."
     },
     "sources": [
       {
@@ -199,27 +199,27 @@
   },
   {
     "title": {
-      "uk": "До чого може призвести витік AfD: заборона партії змінить правила гри?",
-      "ru": "К чему может привести утечка информации из АдГ: что изменит правила игры в отношении запрета партии?",
+      "tr": "AfD sızıntısı nelere yol açabilir: parti yasağı açısından oyun değiştirici mi?",
       "es": "¿A qué puede conducir la filtración de AfD: un cambio de juego para una prohibición de partido?",
-      "de": "Wozu das AfD-Leak führen kann: Gamechanger für ein Parteiverbot?",
-      "en": "What the AfD leak can lead to: game changer for a party ban?",
       "fr": "À quoi peut conduire la fuite de l’AfD : changer la donne pour une interdiction des partis ?",
       "pl": "Do czego może doprowadzić wyciek AfD: zmiana zasad gry w zakresie zakazu partii?",
-      "tr": "AfD sızıntısı nelere yol açabilir: parti yasağı açısından oyun değiştirici mi?",
-      "it": "A cosa può portare la fuga di notizie dell’AfD: un punto di svolta per il divieto dei partiti?"
+      "ru": "К чему может привести утечка информации из АдГ: что изменит правила игры в отношении запрета партии?",
+      "it": "A cosa può portare la fuga di notizie dell’AfD: un punto di svolta per il divieto dei partiti?",
+      "de": "Wozu das AfD-Leak führen kann: Gamechanger für ein Parteiverbot?",
+      "uk": "До чого може призвести витік AfD: заборона партії змінить правила гри?",
+      "en": "What the AfD leak can lead to: game changer for a party ban?"
     },
     "date": "2026-10-22",
     "excerpt": {
-      "uk": "Електронні листи AfD можуть стати доказом у процесі заборони, каже адвокат Чан-джо Джун. Як партія впоралася з інцидентами правих екстремістів? більше...",
-      "ru": "Электронные письма АдГ могут стать доказательством в процессе запрета, говорит адвокат Чан Чжо Джун. Как партия справлялась с инцидентами, связанными с правыми экстремистами? более...",
+      "tr": "Avukat Chan-jo Jun, AfD'nin e-postalarının yasaklama sürecinde delil olabileceğini söylüyor. Parti aşırı sağcı olaylarla nasıl başa çıktı? Daha...",
       "es": "Los correos electrónicos de AfD pueden convertirse en pruebas en un proceso de prohibición, afirma el abogado Chan-jo Jun. ¿Cómo afrontó el partido los incidentes de extrema derecha? más...",
-      "de": "Die AfD-Mails können Belege in einem Verbotsverfahren werden, sagt Rechtsanwalt Chan-jo Jun. Wie ist die Partei mit rechtsextremen Vorfällen umgegangen? mehr...",
-      "en": "The AfD emails can become evidence in a banning process, says lawyer Chan-jo Jun. How did the party deal with right-wing extremist incidents? more...",
       "fr": "Selon l'avocat Chan-jo Jun, les courriels de l'AfD peuvent devenir des preuves dans le cadre d'une procédure d'interdiction. Comment le parti a-t-il géré les incidents d'extrême droite ? plus...",
       "pl": "E-maile AfD mogą stać się dowodem w procesie dotyczącym wydania zakazu, mówi prawnik Chan-jo Jun. Jak partia poradziła sobie z incydentami prawicowego ekstremizmu? więcej...",
-      "tr": "Avukat Chan-jo Jun, AfD'nin e-postalarının yasaklama sürecinde delil olabileceğini söylüyor. Parti aşırı sağcı olaylarla nasıl başa çıktı? Daha...",
-      "it": "Le e-mail dell'AfD possono diventare prove in un processo di divieto, afferma l'avvocato Chan-jo Jun. Come ha affrontato il partito gli incidenti legati all'estremismo di destra? Di più..."
+      "ru": "Электронные письма АдГ могут стать доказательством в процессе запрета, говорит адвокат Чан Чжо Джун. Как партия справлялась с инцидентами, связанными с правыми экстремистами? более...",
+      "it": "Le e-mail dell'AfD possono diventare prove in un processo di divieto, afferma l'avvocato Chan-jo Jun. Come ha affrontato il partito gli incidenti legati all'estremismo di destra? Di più...",
+      "de": "Die AfD-Mails können Belege in einem Verbotsverfahren werden, sagt Rechtsanwalt Chan-jo Jun. Wie ist die Partei mit rechtsextremen Vorfällen umgegangen? mehr...",
+      "uk": "Електронні листи AfD можуть стати доказом у процесі заборони, каже адвокат Чан-джо Джун. Як партія впоралася з інцидентами правих екстремістів? більше...",
+      "en": "The AfD emails can become evidence in a banning process, says lawyer Chan-jo Jun. How did the party deal with right-wing extremist incidents? more..."
     },
     "sources": [
       {
@@ -230,27 +230,27 @@
   },
   {
     "title": {
-      "uk": "Плани AfD для Європи: програма подрібнення правих екстремістів",
-      "ru": "Планы АдГ в Европе: программа уничтожения правых экстремистов",
+      "tr": "AfD'nin Avrupa planları: Aşırı sağcı parçalama programı",
       "es": "Planes de AfD para Europa: programa de destrucción de la extrema derecha",
-      "de": "AfD-Pläne für Europa: Rechtsextremes Schredderprogramm",
-      "en": "AfD plans for Europe: Right-wing extremist shredding program",
       "fr": "Projets de l’AfD pour l’Europe : programme de déchiquetage de l’extrême droite",
       "pl": "Plany AfD dla Europy: program niszczenia prawicowych ekstremistów",
-      "tr": "AfD'nin Avrupa planları: Aşırı sağcı parçalama programı",
-      "it": "Piani AfD per l’Europa: programma di distruzione degli estremisti di destra"
+      "ru": "Планы АдГ в Европе: программа уничтожения правых экстремистов",
+      "it": "Piani AfD per l’Europa: programma di distruzione degli estremisti di destra",
+      "de": "AfD-Pläne für Europa: Rechtsextremes Schredderprogramm",
+      "uk": "Плани AfD для Європи: програма подрібнення правих екстремістів",
+      "en": "AfD plans for Europe: Right-wing extremist shredding program"
     },
     "date": "2026-10-22",
     "excerpt": {
-      "uk": "Лідер AfD Вайдель хоче радикально позбавити повноважень європейські інституції. Про вихід з ЄС і євро вже не йдеться. більше...",
-      "ru": "Лидер АдГ Вайдель хочет радикально лишить власти европейские институты. О выходе из ЕС и евро уже не идет речь. более...",
+      "tr": "AfD lideri Weidel, Avrupa kurumlarının yetkisini kökten ortadan kaldırmak istiyor. Artık AB'den ve Euro'dan ayrılma söz konusu değil. Daha...",
       "es": "El líder de AfD, Weidel, quiere restar poder radicalmente a las instituciones europeas. Ya no se habla de abandonar la UE y el euro. más...",
-      "de": "AfD-Chefin Weidel will die europäischen Institutionen radikal entmachten. Von einem Austritt aus der EU und dem Euro ist indes nicht mehr die Rede. mehr...",
-      "en": "AfD leader Weidel wants to radically disempower the European institutions. There is no longer any talk of leaving the EU and the euro. more...",
       "fr": "Le leader de l’AfD, Weidel, veut radicalement priver les institutions européennes de leur pouvoir. Il n’est plus question de quitter l’UE et l’euro. plus...",
       "pl": "Lider AfD Weidel chce radykalnie pozbawić instytucji europejskich władzy. Nie ma już mowy o wyjściu z UE i euro. więcej...",
-      "tr": "AfD lideri Weidel, Avrupa kurumlarının yetkisini kökten ortadan kaldırmak istiyor. Artık AB'den ve Euro'dan ayrılma söz konusu değil. Daha...",
-      "it": "Il leader dell’AfD Weidel vuole privare radicalmente il potere delle istituzioni europee. Non si parla più di lasciare l’UE e l’euro. Di più..."
+      "ru": "Лидер АдГ Вайдель хочет радикально лишить власти европейские институты. О выходе из ЕС и евро уже не идет речь. более...",
+      "it": "Il leader dell’AfD Weidel vuole privare radicalmente il potere delle istituzioni europee. Non si parla più di lasciare l’UE e l’euro. Di più...",
+      "de": "AfD-Chefin Weidel will die europäischen Institutionen radikal entmachten. Von einem Austritt aus der EU und dem Euro ist indes nicht mehr die Rede. mehr...",
+      "uk": "Лідер AfD Вайдель хоче радикально позбавити повноважень європейські інституції. Про вихід з ЄС і євро вже не йдеться. більше...",
+      "en": "AfD leader Weidel wants to radically disempower the European institutions. There is no longer any talk of leaving the EU and the euro. more..."
     },
     "sources": [
       {
@@ -261,27 +261,27 @@
   },
   {
     "title": {
-      "uk": "Правове значення витоків AfD: аналіз буде тривалим і трудомістким",
-      "ru": "Юридическое значение утечек АдГ: анализ будет долгим и кропотливым",
+      "tr": "AfD sızıntılarının hukuki önemi: Analiz uzun ve zahmetli olacak",
       "es": "Importancia jurídica de las filtraciones de AfD: el análisis será largo y laborioso",
-      "de": "Rechtliche Bedeutung der AfD-Leaks: Die Analyse wird langwierig und mühselig",
-      "en": "Legal significance of the AfD leaks: The analysis will be lengthy and laborious",
       "fr": "Importance juridique des fuites de l’AfD : l’analyse sera longue et laborieuse",
       "pl": "Znaczenie prawne przecieków AfD: Analiza będzie długa i pracochłonna",
-      "tr": "AfD sızıntılarının hukuki önemi: Analiz uzun ve zahmetli olacak",
-      "it": "Importanza giuridica delle fughe di notizie dell'AfD: l'analisi sarà lunga e laboriosa"
+      "ru": "Юридическое значение утечек АдГ: анализ будет долгим и кропотливым",
+      "it": "Importanza giuridica delle fughe di notizie dell'AfD: l'analisi sarà lunga e laboriosa",
+      "de": "Rechtliche Bedeutung der AfD-Leaks: Die Analyse wird langwierig und mühselig",
+      "uk": "Правове значення витоків AfD: аналіз буде тривалим і трудомістким",
+      "en": "Legal significance of the AfD leaks: The analysis will be lengthy and laborious"
     },
     "date": "2026-10-22",
     "excerpt": {
-      "uk": "Досі абсолютно незрозуміло, чи є приблизно 420 000 витоку електронних листів з акаунтів AfD матеріалом для заборони AfD. Але вони, напевно, були б придатні для використання. більше...",
-      "ru": "До сих пор совершенно неясно, дают ли примерно 420 000 утекших электронных писем со счетов АдГ материал для запрета АдГ. Но их, вероятно, можно будет использовать. более...",
+      "tr": "AfD hesaplarından sızdırılan yaklaşık 420.000 e-postanın AfD'nin yasaklanması için malzeme sağlayıp sağlamadığı hala tam olarak belli değil. Ama muhtemelen kullanılabilirler. Daha...",
       "es": "Aún no está del todo claro si los aproximadamente 420.000 correos electrónicos filtrados de cuentas de AfD proporcionan material para una prohibición de AfD. Pero probablemente serían utilizables. más...",
-      "de": "Ob die geleakten rund 420.000 E-Mails aus AfD-Konten Material für ein AfD-Verbot liefern, ist noch völlig offen. Sie wären aber wohl verwertbar. mehr...",
-      "en": "It is still completely unclear whether the approximately 420,000 leaked emails from AfD accounts provide material for an AfD ban. But they would probably be usable. more...",
       "fr": "Il n’est toujours pas clair si les quelque 420 000 e-mails divulgués à partir de comptes de l’AfD constituent des éléments justifiant une interdiction de l’AfD. Mais ils seraient probablement utilisables. plus...",
       "pl": "Nadal nie jest całkowicie jasne, czy około 420 000 e-maili, które wyciekły z kont AfD, zawiera materiał do wprowadzenia zakazu AfD. Ale pewnie by się przydały. więcej...",
-      "tr": "AfD hesaplarından sızdırılan yaklaşık 420.000 e-postanın AfD'nin yasaklanması için malzeme sağlayıp sağlamadığı hala tam olarak belli değil. Ama muhtemelen kullanılabilirler. Daha...",
-      "it": "Non è ancora del tutto chiaro se le circa 420.000 e-mail trapelate dagli account AfD forniscano materiale per un divieto dell’AfD. Ma probabilmente sarebbero utilizzabili. Di più..."
+      "ru": "До сих пор совершенно неясно, дают ли примерно 420 000 утекших электронных писем со счетов АдГ материал для запрета АдГ. Но их, вероятно, можно будет использовать. более...",
+      "it": "Non è ancora del tutto chiaro se le circa 420.000 e-mail trapelate dagli account AfD forniscano materiale per un divieto dell’AfD. Ma probabilmente sarebbero utilizzabili. Di più...",
+      "de": "Ob die geleakten rund 420.000 E-Mails aus AfD-Konten Material für ein AfD-Verbot liefern, ist noch völlig offen. Sie wären aber wohl verwertbar. mehr...",
+      "uk": "Досі абсолютно незрозуміло, чи є приблизно 420 000 витоку електронних листів з акаунтів AfD матеріалом для заборони AfD. Але вони, напевно, були б придатні для використання. більше...",
+      "en": "It is still completely unclear whether the approximately 420,000 leaked emails from AfD accounts provide material for an AfD ban. But they would probably be usable. more..."
     },
     "sources": [
       {
@@ -292,27 +292,27 @@
   },
   {
     "title": {
-      "ru": "Утечка из АдГ: Ваш правый экстремизм реален, но ЭТИ электронные письма — нет",
       "tr": "AfD Sızıntısı: Aşırı sağcılığınız gerçek, ancak BU e-postalar değil",
       "es": "Fuga de AfD: su extremismo de derecha es real, pero ESTOS correos electrónicos no lo son",
-      "en": "AfD Leak: Your right-wing extremism is real, but THESE emails are not",
-      "de": "AfD-Leak: Ihr Rechtsextremismus ist echt, DIESE Mails aber nicht",
-      "uk": "Витік AfD: Ваш правий екстремізм реальний, але ЦІ електронні листи – ні",
       "pl": "AfD Leak: Twój prawicowy ekstremizm jest prawdziwy, ale TE e-maile nie są",
       "fr": "AfD Leak : votre extrémisme de droite est réel, mais CES e-mails ne le sont pas",
-      "it": "AfD Leak: Il vostro estremismo di destra è reale, ma QUESTE email non lo sono"
+      "ru": "Утечка из АдГ: Ваш правый экстремизм реален, но ЭТИ электронные письма — нет",
+      "it": "AfD Leak: Il vostro estremismo di destra è reale, ma QUESTE email non lo sono",
+      "de": "AfD-Leak: Ihr Rechtsextremismus ist echt, DIESE Mails aber nicht",
+      "uk": "Витік AfD: Ваш правий екстремізм реальний, але ЦІ електронні листи – ні",
+      "en": "AfD Leak: Your right-wing extremism is real, but THESE emails are not"
     },
     "date": "2026-10-22",
     "excerpt": {
-      "ru": "С понедельника сотни тысяч внутренних электронных писем АдГ стали общедоступными. Хакеры получили их от собственного поставщика услуг партии, и АдГ подтвердила атаку. Также как...",
       "tr": "Yüzbinlerce dahili AfD e-postası Pazartesi gününden bu yana halka açık. Bilgisayar korsanları bunları bir partinin kendi hizmet sağlayıcısından aldı ve AfD saldırıyı doğruladı. Ayrıca ...",
       "es": "Desde el lunes se han hecho públicos cientos de miles de correos electrónicos internos de AfD. Los piratas informáticos los recogieron del propio proveedor de servicios del partido y el AfD confirmó el ataque. También como...",
-      "en": "Hundreds of thousands of internal AfD emails have been public since Monday. Hackers picked them up from a party's own service provider, and the AfD has confirmed the attack. Also like...",
-      "de": "Hunderttausende interne Mails der AfD sind seit Montag öffentlich. Hacker haben sie bei einem parteieigenen Dienstleister abgegriffen, die AfD hat den Angriff bestätigt. Auch wi...",
-      "uk": "Сотні тисяч внутрішніх електронних листів AfD стали публічними з понеділка. Хакери підібрали їх від власного постачальника послуг партії, і AfD підтвердила атаку. Також як...",
       "pl": "Od poniedziałku opublikowano setki tysięcy wewnętrznych e-maili AfD. Hakerzy przejęli je od usługodawcy należącego do partii, a AfD potwierdziła atak. Również jak...",
       "fr": "Des centaines de milliers de courriels internes à l’AfD ont été rendus publics depuis lundi. Des pirates informatiques les ont récupérés auprès du propre fournisseur de services d'un parti et l'AfD a confirmé l'attaque. J'aime aussi...",
-      "it": "Da lunedì sono diventate pubbliche centinaia di migliaia di e-mail interne dell’AfD. Gli hacker li hanno prelevati dal fornitore di servizi di un partito e l'AfD ha confermato l'attacco. Piace anche..."
+      "ru": "С понедельника сотни тысяч внутренних электронных писем АдГ стали общедоступными. Хакеры получили их от собственного поставщика услуг партии, и АдГ подтвердила атаку. Также как...",
+      "it": "Da lunedì sono diventate pubbliche centinaia di migliaia di e-mail interne dell’AfD. Gli hacker li hanno prelevati dal fornitore di servizi di un partito e l'AfD ha confermato l'attacco. Piace anche...",
+      "de": "Hunderttausende interne Mails der AfD sind seit Montag öffentlich. Hacker haben sie bei einem parteieigenen Dienstleister abgegriffen, die AfD hat den Angriff bestätigt. Auch wi...",
+      "uk": "Сотні тисяч внутрішніх електронних листів AfD стали публічними з понеділка. Хакери підібрали їх від власного постачальника послуг партії, і AfD підтвердила атаку. Також як...",
+      "en": "Hundreds of thousands of internal AfD emails have been public since Monday. Hackers picked them up from a party's own service provider, and the AfD has confirmed the attack. Also like..."
     },
     "sources": [
       {
@@ -560,27 +560,27 @@
   },
   {
     "title": {
-      "uk": "«Агресивно-бойовий»: для успішної заборони AfD немає потреби в насильстві",
-      "ru": "«Агрессивно-боевой»: для успешного запрета АдГ нет необходимости в насилии",
+      "tr": "“Agresif-kavgacı”: Başarılı bir AfD yasağı için AfD şiddetine gerek yok",
       "es": "“Agresivo-combativo”: no es necesaria la violencia del AfD para lograr una prohibición exitosa del AfD",
-      "de": "“Aggressiv-kämpferisch”: Es braucht keine AfD-Gewalt für ein erfolgreiches AfD-Verbot",
-      "en": "“Aggressive-combative”: There is no need for AfD violence for a successful AfD ban",
       "fr": "« Agressif-combat » : la violence de l'AfD n'est pas nécessaire pour réussir l'interdiction de l'AfD",
       "pl": "„Agresywno-bojowy”: Do skutecznego wprowadzenia zakazu AfD nie jest potrzebna przemoc",
-      "tr": "“Agresif-kavgacı”: Başarılı bir AfD yasağı için AfD şiddetine gerek yok",
-      "it": "“Aggressivo-combattivo”: non è necessaria la violenza dell’AfD per mettere al bando l’AfD con successo"
+      "ru": "«Агрессивно-боевой»: для успешного запрета АдГ нет необходимости в насилии",
+      "it": "“Aggressivo-combattivo”: non è necessaria la violenza dell’AfD per mettere al bando l’AfD con successo",
+      "de": "“Aggressiv-kämpferisch”: Es braucht keine AfD-Gewalt für ein erfolgreiches AfD-Verbot",
+      "uk": "«Агресивно-бойовий»: для успішної заборони AfD немає потреби в насильстві",
+      "en": "“Aggressive-combative”: There is no need for AfD violence for a successful AfD ban"
     },
     "date": "2026-10-16",
     "excerpt": {
-      "uk": "Мерц, Добріндт і Міністерство внутрішніх справ стверджують, що можлива заборона AfD зазнає невдачі через відсутність «активної бойової, агресивної позиції». Проблема: ця перешкода...",
-      "ru": "Мерц, Добриндт и МВД заявляют, что возможный запрет АдГ провалится из-за отсутствия «активно-боевого, агрессивного подхода». Проблема: Это препятствие имеет...",
+      "tr": "Merz, Dobrindt ve İçişleri Bakanlığı, olası bir AfD yasağının \"aktif mücadeleci, saldırgan tutum\" eksikliği nedeniyle başarısızlıkla sonuçlanacağını iddia ediyor. Sorun: Bu engelin...",
       "es": "Merz, Dobrindt y el Ministerio del Interior afirman que una posible prohibición del AfD fracasaría debido a la falta de una “actitud activamente combativa y agresiva”. El problema: este obstáculo tiene...",
-      "de": "Merz, Dobrindt und das Innenministerium behaupten, ein mögliches AfD-Verbot scheitere an der fehlenden “aktiv kämpferischen, aggressiven Haltung”. Das Problem: Diese Hürde hat d...",
-      "en": "Merz, Dobrindt and the Interior Ministry claim that a possible AfD ban would fail due to the lack of an “actively combative, aggressive attitude”. The problem: This hurdle has...",
       "fr": "Merz, Dobrindt et le ministère de l’Intérieur affirment qu’une éventuelle interdiction de l’AfD échouerait en raison de l’absence d’une « attitude activement combative et agressive ». Le problème : cet obstacle a...",
       "pl": "Merz, Dobrindt i MSW twierdzą, że ewentualny zakaz AfD nie powiedzie się ze względu na brak „aktywnie bojowej, agresywnej postawy”. Problem: ta przeszkoda ma...",
-      "tr": "Merz, Dobrindt ve İçişleri Bakanlığı, olası bir AfD yasağının \"aktif mücadeleci, saldırgan tutum\" eksikliği nedeniyle başarısızlıkla sonuçlanacağını iddia ediyor. Sorun: Bu engelin...",
-      "it": "Merz, Dobrindt e il Ministero dell’Interno sostengono che un eventuale divieto dell’AfD fallirebbe a causa della mancanza di un “atteggiamento attivamente combattivo e aggressivo”. Il problema: questo ostacolo ha..."
+      "ru": "Мерц, Добриндт и МВД заявляют, что возможный запрет АдГ провалится из-за отсутствия «активно-боевого, агрессивного подхода». Проблема: Это препятствие имеет...",
+      "it": "Merz, Dobrindt e il Ministero dell’Interno sostengono che un eventuale divieto dell’AfD fallirebbe a causa della mancanza di un “atteggiamento attivamente combattivo e aggressivo”. Il problema: questo ostacolo ha...",
+      "de": "Merz, Dobrindt und das Innenministerium behaupten, ein mögliches AfD-Verbot scheitere an der fehlenden “aktiv kämpferischen, aggressiven Haltung”. Das Problem: Diese Hürde hat d...",
+      "uk": "Мерц, Добріндт і Міністерство внутрішніх справ стверджують, що можлива заборона AfD зазнає невдачі через відсутність «активної бойової, агресивної позиції». Проблема: ця перешкода...",
+      "en": "Merz, Dobrindt and the Interior Ministry claim that a possible AfD ban would fail due to the lack of an “actively combative, aggressive attitude”. The problem: This hurdle has..."
     },
     "sources": [
       {
@@ -591,27 +591,27 @@
   },
   {
     "title": {
-      "uk": "Незручно! AfD Cloppenburg удвічі скорочує кількість місць зі своєї вини",
-      "ru": "Неуклюжий! АдГ Клоппенбург вдвое сократила число своих мандатов по своей вине",
+      "tr": "Garip! AfD Cloppenburg kendi hatası nedeniyle koltuk sayısını yarıya indirdi",
       "es": "¡Extraño! AfD Cloppenburg reduce a la mitad el número de sus escaños por culpa propia",
-      "de": "Peinlich! AfD Cloppenburg halbiert selbstverschuldet die Anzahl ihrer Sitze",
-      "en": "Awkward! AfD Cloppenburg halves the number of its seats through its own fault",
       "fr": "Maladroit! L'AfD Cloppenburg réduit de moitié le nombre de ses sièges par sa propre faute",
       "pl": "Niezręczny! AfD Cloppenburg z własnej winy zmniejsza o połowę liczbę mandatów",
-      "tr": "Garip! AfD Cloppenburg kendi hatası nedeniyle koltuk sayısını yarıya indirdi",
-      "it": "Imbarazzante! L’AfD Cloppenburg dimezza il numero dei seggi per sua colpa"
+      "ru": "Неуклюжий! АдГ Клоппенбург вдвое сократила число своих мандатов по своей вине",
+      "it": "Imbarazzante! L’AfD Cloppenburg dimezza il numero dei seggi per sua colpa",
+      "de": "Peinlich! AfD Cloppenburg halbiert selbstverschuldet die Anzahl ihrer Sitze",
+      "uk": "Незручно! AfD Cloppenburg удвічі скорочує кількість місць зі своєї вини",
+      "en": "Awkward! AfD Cloppenburg halves the number of its seats through its own fault"
     },
     "date": "2026-10-16",
     "excerpt": {
-      "uk": "Права екстремістська AfD отримала 22,29 відсотка на виборах до міської ради в Клоппенбурзі, Нижня Саксонія, 13 вересня. Згідно з даними міста, це 9913 голосів і буде...",
-      "ru": "13 сентября на выборах в городской совет Клоппенбурга, Нижняя Саксония, решительно правая экстремистская партия АдГ набрала 22,29 процента голосов. По данным города, это 9 913 голосов и будет...",
+      "tr": "Aşırı sağcı AfD, 13 Eylül'de Aşağı Saksonya'nın Cloppenburg kentinde yapılan belediye meclisi seçimlerini yüzde 22,29 kazandı. Şehre göre bu 9.913 oy anlamına geliyor ve...",
       "es": "El partido de extrema derecha AfD obtuvo el 13 de septiembre en las elecciones municipales de Cloppenburg, Baja Sajonia, un 22,29 por ciento de votos. Según la ciudad, son 9.913 votos y serían...",
-      "de": "Die gesichert rechtsextreme AfD hat bei der Stadtratswahl im niedersächsischen Cloppenburg am 13. September 22,29 Prozent geholt. Das sind laut Stadt 9.913 Stimmen und wären eig...",
-      "en": "The firmly right-wing extremist AfD won 22.29 percent in the city council election in Cloppenburg, Lower Saxony, on September 13th. According to the city, that's 9,913 votes and would be...",
       "fr": "L'AfD, parti d'extrême droite, a remporté 22,29 pour cent aux élections municipales de Cloppenburg, en Basse-Saxe, le 13 septembre. Selon la ville, cela fait 9 913 voix et serait...",
       "pl": "13 września w wyborach do rady miejskiej w Cloppenburgu w Dolnej Saksonii zdecydowanie prawicowa ekstremistyczna AfD zdobyła 22,29%. Według miasta jest to 9913 głosów i byłoby...",
-      "tr": "Aşırı sağcı AfD, 13 Eylül'de Aşağı Saksonya'nın Cloppenburg kentinde yapılan belediye meclisi seçimlerini yüzde 22,29 kazandı. Şehre göre bu 9.913 oy anlamına geliyor ve...",
-      "it": "L'AfD, estremista di estrema destra, ha vinto il 13 settembre alle elezioni del consiglio comunale di Cloppenburg, in Bassa Sassonia, con il 22,29%. Secondo la città sono 9.913 voti e sarebbero..."
+      "ru": "13 сентября на выборах в городской совет Клоппенбурга, Нижняя Саксония, решительно правая экстремистская партия АдГ набрала 22,29 процента голосов. По данным города, это 9 913 голосов и будет...",
+      "it": "L'AfD, estremista di estrema destra, ha vinto il 13 settembre alle elezioni del consiglio comunale di Cloppenburg, in Bassa Sassonia, con il 22,29%. Secondo la città sono 9.913 voti e sarebbero...",
+      "de": "Die gesichert rechtsextreme AfD hat bei der Stadtratswahl im niedersächsischen Cloppenburg am 13. September 22,29 Prozent geholt. Das sind laut Stadt 9.913 Stimmen und wären eig...",
+      "uk": "Права екстремістська AfD отримала 22,29 відсотка на виборах до міської ради в Клоппенбурзі, Нижня Саксонія, 13 вересня. Згідно з даними міста, це 9913 голосів і буде...",
+      "en": "The firmly right-wing extremist AfD won 22.29 percent in the city council election in Cloppenburg, Lower Saxony, on September 13th. According to the city, that's 9,913 votes and would be..."
     },
     "sources": [
       {
@@ -622,27 +622,27 @@
   },
   {
     "title": {
-      "uk": "Фейк McRib: AfD бентежить себе свинячим соціалізмом!",
-      "ru": "Фейк МакРиба: АдГ ставит себя в неловкое положение со свиным социализмом!",
+      "tr": "McRib sahte: AfD domuz sosyalizmiyle kendini utandırıyor!",
       "es": "McRib falso: ¡AfD se avergüenza con el socialismo de cerdo!",
-      "de": "McRib-Fake: AfD blamiert sich mit Schweinefleisch-Sozialismus!",
-      "en": "McRib fake: AfD embarrasses itself with pork socialism!",
       "fr": "Faux McRib : l’AfD s’embarrasse de socialisme porcin !",
       "pl": "Fałszywy McRib: AfD ośmiesza się wieprzowym socjalizmem!",
-      "tr": "McRib sahte: AfD domuz sosyalizmiyle kendini utandırıyor!",
-      "it": "Falso McRib: l'AfD si mette in imbarazzo con il socialismo porco!"
+      "ru": "Фейк МакРиба: АдГ ставит себя в неловкое положение со свиным социализмом!",
+      "it": "Falso McRib: l'AfD si mette in imbarazzo con il socialismo porco!",
+      "de": "McRib-Fake: AfD blamiert sich mit Schweinefleisch-Sozialismus!",
+      "uk": "Фейк McRib: AfD бентежить себе свинячим соціалізмом!",
+      "en": "McRib fake: AfD embarrasses itself with pork socialism!"
     },
     "date": "2026-10-15",
     "excerpt": {
-      "uk": "Поки демократичні партії сперечаються про орендну плату, заробітну плату чи кліматичні закони, які мають покращити ваше реальне життя, праві екстремісти божеволіють від гамбургера...",
-      "ru": "Пока демократические партии спорят об аренде, заработной плате или климатических законах, которые должны улучшить вашу реальную жизнь, правый экстремистский пузырь сходит с ума из-за гамбургера...",
+      "tr": "Demokrat partiler gerçek hayatınızı iyileştirmesi beklenen kira, ücretler veya iklim yasalarını tartışırken, aşırı sağcı balon bir hamburger için çıldırıyor...",
       "es": "Mientras los partidos democráticos discuten sobre alquileres, salarios o leyes climáticas que se supone que mejorarán la vida real, la burbuja de la extrema derecha se vuelve loca por una hamburguesa...",
-      "de": "Während demokratische Parteien über Gesetze für Mieten, Löhne oder Klima streiten, die dein echtes Leben verbessern sollen, dreht die rechtsextreme Blase wegen eines Burgers dur...",
-      "en": "While democratic parties argue about rent, wages or climate laws that are supposed to improve your real life, the right-wing extremist bubble is going crazy over a burger...",
       "fr": "Pendant que les partis démocrates débattent des loyers, des salaires ou des lois climatiques censées améliorer la vie réelle, la bulle d'extrême droite s'affole autour d'un hamburger...",
       "pl": "Podczas gdy partie demokratyczne kłócą się o czynsze, płace czy przepisy klimatyczne, które mają poprawić Twoje prawdziwe życie, prawicowa bańka ekstremistyczna szaleje na punkcie burgera…",
-      "tr": "Demokrat partiler gerçek hayatınızı iyileştirmesi beklenen kira, ücretler veya iklim yasalarını tartışırken, aşırı sağcı balon bir hamburger için çıldırıyor...",
-      "it": "Mentre i partiti democratici discutono sull'affitto, sui salari o sulle leggi sul clima che dovrebbero migliorare la vita reale, la bolla estremista di destra impazzisce per un hamburger..."
+      "ru": "Пока демократические партии спорят об аренде, заработной плате или климатических законах, которые должны улучшить вашу реальную жизнь, правый экстремистский пузырь сходит с ума из-за гамбургера...",
+      "it": "Mentre i partiti democratici discutono sull'affitto, sui salari o sulle leggi sul clima che dovrebbero migliorare la vita reale, la bolla estremista di destra impazzisce per un hamburger...",
+      "de": "Während demokratische Parteien über Gesetze für Mieten, Löhne oder Klima streiten, die dein echtes Leben verbessern sollen, dreht die rechtsextreme Blase wegen eines Burgers dur...",
+      "uk": "Поки демократичні партії сперечаються про орендну плату, заробітну плату чи кліматичні закони, які мають покращити ваше реальне життя, праві екстремісти божеволіють від гамбургера...",
+      "en": "While democratic parties argue about rent, wages or climate laws that are supposed to improve your real life, the right-wing extremist bubble is going crazy over a burger..."
     },
     "sources": [
       {
@@ -777,27 +777,27 @@
   },
   {
     "title": {
-      "uk": "З Хапе Керкелінгом і Гансом-Георгом Маассеном: парламент землі Тюрінгія обговорює процедуру заборони AfD",
-      "ru": "С Хапе Керкелингом и Хансом-Георгом Маассеном: парламент Тюрингии обсуждает процедуру запрета АдГ",
+      "tr": "Hape Kerkeling ve Hans-Georg Maaßen ile: Thüringen eyalet parlamentosu AfD'nin yasaklanma prosedürünü tartışıyor",
       "es": "Con Hape Kerkeling y Hans-Georg Maaßen: el parlamento estatal de Turingia debate el procedimiento de prohibición de AfD",
-      "de": "Mit Hape Kerkeling und Hans-Georg Maaßen: Thüringer Landtag debattiert über AfD-Verbotsverfahren",
-      "en": "With Hape Kerkeling and Hans-Georg Maaßen: Thuringian state parliament debates AfD ban procedure",
       "fr": "Avec Hape Kerkeling et Hans-Georg Maaßen : le Parlement du Land de Thuringe débat de la procédure d'interdiction de l'AfD",
       "pl": "Z Hape Kerkelingiem i Hansem-Georgiem Maaßenem: Parlament Turyngii debatuje nad procedurą zakazu AfD",
-      "tr": "Hape Kerkeling ve Hans-Georg Maaßen ile: Thüringen eyalet parlamentosu AfD'nin yasaklanma prosedürünü tartışıyor",
-      "it": "Con Hape Kerkeling e Hans-Georg Maaßen: il parlamento regionale della Turingia discute la procedura di divieto dell'AfD"
+      "ru": "С Хапе Керкелингом и Хансом-Георгом Маассеном: парламент Тюрингии обсуждает процедуру запрета АдГ",
+      "it": "Con Hape Kerkeling e Hans-Georg Maaßen: il parlamento regionale della Turingia discute la procedura di divieto dell'AfD",
+      "de": "Mit Hape Kerkeling und Hans-Georg Maaßen: Thüringer Landtag debattiert über AfD-Verbotsverfahren",
+      "uk": "З Хапе Керкелінгом і Гансом-Георгом Маассеном: парламент землі Тюрінгія обговорює процедуру заборони AfD",
+      "en": "With Hape Kerkeling and Hans-Georg Maaßen: Thuringian state parliament debates AfD ban procedure"
     },
     "date": "2026-10-01",
     "excerpt": {
-      "uk": "Дев'ять експертів і зустріч незадовго до півночі: парламент землі Тюрінгія обговорював у середу, чи підтримає уряд землі заборону AfD...",
-      "ru": "Девять экспертов и встреча незадолго до полуночи: парламент земли Тюрингия обсудил в среду, поддержит ли правительство земли запрет АдГ...",
+      "tr": "Dokuz uzman ve gece yarısına kadar bir toplantı: Thüringen eyalet parlamentosu Çarşamba günü eyalet hükümetinin AfD yasağını destekleyip desteklemeyeceğini tartıştı...",
       "es": "Nueve expertos y una reunión hasta poco antes de medianoche: el parlamento estatal de Turingia debatió el miércoles si el gobierno estatal apoyaría una prohibición de AfD...",
-      "de": "Neun Sachverständige und eine Sitzung bis kurz vor Mitternacht: Im Thüringer Landtag wurde am Mittwoch diskutiert, ob sich die Landesregierung für ein AfD-Verbotsverfahren einse...",
-      "en": "Nine experts and a meeting until shortly before midnight: The Thuringian state parliament discussed on Wednesday whether the state government would support an AfD ban...",
       "fr": "Neuf experts et une réunion jusqu'à peu avant minuit : le Parlement du Land de Thuringe a discuté mercredi de la question de savoir si le gouvernement du Land soutiendrait une interdiction de l'AfD...",
       "pl": "Dziewięciu ekspertów i spotkanie tuż przed północą: w środę parlament kraju związkowego Turyngii omawiał, czy rząd stanowy poprze zakaz AfD...",
-      "tr": "Dokuz uzman ve gece yarısına kadar bir toplantı: Thüringen eyalet parlamentosu Çarşamba günü eyalet hükümetinin AfD yasağını destekleyip desteklemeyeceğini tartıştı...",
-      "it": "Nove esperti e un incontro fino a poco prima di mezzanotte: mercoledì il parlamento regionale della Turingia ha discusso se il governo regionale sosterrà un divieto dell'AfD..."
+      "ru": "Девять экспертов и встреча незадолго до полуночи: парламент земли Тюрингия обсудил в среду, поддержит ли правительство земли запрет АдГ...",
+      "it": "Nove esperti e un incontro fino a poco prima di mezzanotte: mercoledì il parlamento regionale della Turingia ha discusso se il governo regionale sosterrà un divieto dell'AfD...",
+      "de": "Neun Sachverständige und eine Sitzung bis kurz vor Mitternacht: Im Thüringer Landtag wurde am Mittwoch diskutiert, ob sich die Landesregierung für ein AfD-Verbotsverfahren einse...",
+      "uk": "Дев'ять експертів і зустріч незадовго до півночі: парламент землі Тюрінгія обговорював у середу, чи підтримає уряд землі заборону AfD...",
+      "en": "Nine experts and a meeting until shortly before midnight: The Thuringian state parliament discussed on Wednesday whether the state government would support an AfD ban..."
     },
     "sources": [
       {
@@ -839,27 +839,27 @@
   },
   {
     "title": {
-      "uk": "Нові представники AfD у Мекленбурзі-Передній Померанії такі етнічні",
-      "ru": "Новые представители АдГ в земле Мекленбург-Передняя Померания настолько этнические, что",
+      "tr": "Mecklenburg-Batı Pomeranya'daki yeni AfD temsilcileri o kadar etnik ki",
       "es": "Los nuevos representantes de AfD en Mecklemburgo-Pomerania Occidental son tan étnicos",
-      "de": "So völkisch sind die neuen AfD-Abgeordneten in Mecklenburg-Vorpommern",
-      "en": "The new AfD representatives in Mecklenburg-Western Pomerania are so ethnic",
       "fr": "Les nouveaux représentants de l'AfD en Mecklembourg-Poméranie occidentale sont si ethniques",
       "pl": "Nowi przedstawiciele AfD w Meklemburgii-Pomorzu Przednim są tacy etniczni",
-      "tr": "Mecklenburg-Batı Pomeranya'daki yeni AfD temsilcileri o kadar etnik ki",
-      "it": "I nuovi rappresentanti dell'AfD nel Meclemburgo-Pomerania Anteriore sono così etnici"
+      "ru": "Новые представители АдГ в земле Мекленбург-Передняя Померания настолько этнические, что",
+      "it": "I nuovi rappresentanti dell'AfD nel Meclemburgo-Pomerania Anteriore sono così etnici",
+      "de": "So völkisch sind die neuen AfD-Abgeordneten in Mecklenburg-Vorpommern",
+      "uk": "Нові представники AfD у Мекленбурзі-Передній Померанії такі етнічні",
+      "en": "The new AfD representatives in Mecklenburg-Western Pomerania are so ethnic"
     },
     "date": "2026-09-22",
     "excerpt": {
-      "uk": "Праві братства, неонацисти та історії змови: 32 представники AfD у майбутньому перейдуть до парламенту землі Шверін. CORRECTIV представляє десять особливо радикальних...",
-      "ru": "Правые братства, неонацисты и истории заговоров: 32 представителя АдГ в будущем перейдут в парламент земли Шверин. CORRECTIV представляет десять особенно радикальных...",
+      "tr": "Sağcı kardeşlikler, neo-Naziler ve komplo hikayeleri: Gelecekte 32 AfD temsilcisi Schwerin eyalet parlamentosuna taşınacak. CORRECTIV on özellikle radikal olanı sunuyor...",
       "es": "Fraternidades de derecha, neonazis e historias de conspiraciones: en el futuro 32 representantes de AfD se trasladarán al parlamento federado de Schwerin. CORRECTIV presenta diez particularmente radicales...",
-      "de": "Rechte Burschenschaften, Neonazis und Verschwörungserzählungen: 32 AfD-Abgeordnete werden künftig in den Schweriner Landtag einziehen. CORRECTIV stellt zehn mit besonders radika...",
-      "en": "Right-wing fraternities, neo-Nazis and conspiracy stories: 32 AfD representatives will move into the Schwerin state parliament in the future. CORRECTIV presents ten particularly radical...",
       "fr": "Fraternités de droite, néo-nazis et histoires de complot : 32 représentants de l'AfD entreront à l'avenir au Parlement du Land de Schwerin. CORRECTIV présente dix dix particulièrement radicales...",
       "pl": "Prawicowe stowarzyszenia, neonaziści i historie spiskowe: w przyszłości do parlamentu kraju związkowego Schwerin wejdzie 32 przedstawicieli AfD. CORRECTIV przedstawia dziesięć szczególnie radykalnych...",
-      "tr": "Sağcı kardeşlikler, neo-Naziler ve komplo hikayeleri: Gelecekte 32 AfD temsilcisi Schwerin eyalet parlamentosuna taşınacak. CORRECTIV on özellikle radikal olanı sunuyor...",
-      "it": "Fraternità di destra, neonazisti e storie di complotti: in futuro 32 rappresentanti dell'AfD entreranno nel parlamento regionale di Schwerin. CORRECTIVIV presenta dieci particolarmente radicali..."
+      "ru": "Правые братства, неонацисты и истории заговоров: 32 представителя АдГ в будущем перейдут в парламент земли Шверин. CORRECTIV представляет десять особенно радикальных...",
+      "it": "Fraternità di destra, neonazisti e storie di complotti: in futuro 32 rappresentanti dell'AfD entreranno nel parlamento regionale di Schwerin. CORRECTIVIV presenta dieci particolarmente radicali...",
+      "de": "Rechte Burschenschaften, Neonazis und Verschwörungserzählungen: 32 AfD-Abgeordnete werden künftig in den Schweriner Landtag einziehen. CORRECTIV stellt zehn mit besonders radika...",
+      "uk": "Праві братства, неонацисти та історії змови: 32 представники AfD у майбутньому перейдуть до парламенту землі Шверін. CORRECTIV представляє десять особливо радикальних...",
+      "en": "Right-wing fraternities, neo-Nazis and conspiracy stories: 32 AfD representatives will move into the Schwerin state parliament in the future. CORRECTIV presents ten particularly radical..."
     },
     "sources": [
       {
@@ -870,27 +870,27 @@
   },
   {
     "title": {
-      "uk": "Озброєння для «реміграційного наступу»: чого вимагає AfD – і що за цим стоїть",
-      "ru": "Вооружение для «ремиграционного наступления»: чего требует АдГ – и что за этим стоит",
+      "tr": "“Geri dönüş saldırısı” için silahlanma: AfD'nin talep ettiği şey ve bunun arkasında ne var?",
       "es": "Preparándose para una “ofensiva de remigración”: lo que exige el AfD y lo que hay detrás",
-      "de": "Rüstung für „Remigrations-Offensive“: Was die AfD fordert – und was dahintersteckt",
-      "en": "Arming for a “remigration offensive”: What the AfD is demanding – and what’s behind it",
       "fr": "S’armer pour une « offensive de remigration » : ce que réclame l’AfD – et ce qu’il y a derrière",
       "pl": "Zbrojenie do „ofensywy remigracyjnej”: czego żąda AfD – i co za tym stoi",
-      "tr": "“Geri dönüş saldırısı” için silahlanma: AfD'nin talep ettiği şey ve bunun arkasında ne var?",
-      "it": "Armarsi per una “offensiva migratoria”: cosa chiede l’AfD – e cosa c’è dietro"
+      "ru": "Вооружение для «ремиграционного наступления»: чего требует АдГ – и что за этим стоит",
+      "it": "Armarsi per una “offensiva migratoria”: cosa chiede l’AfD – e cosa c’è dietro",
+      "de": "Rüstung für „Remigrations-Offensive“: Was die AfD fordert – und was dahintersteckt",
+      "uk": "Озброєння для «реміграційного наступу»: чого вимагає AfD – і що за цим стоїть",
+      "en": "Arming for a “remigration offensive”: What the AfD is demanding – and what’s behind it"
     },
     "date": "2026-09-11",
     "excerpt": {
-      "uk": "Сила депортації США ICE як зразок для наслідування?: переможець виборів від AfD Ульріх Зігмунд відкритий для виробництва зброї в Саксонії-Ангальт – до «наступу реміграції» від AfD. Пряний кр...",
-      "ru": "Депортационная сила США ICE как образец для подражания?: Победитель выборов АдГ Ульрих Зигмунд открыт для производства оружия в Саксонии-Анхальт – для «ремиграционного наступления» АдГ. Пряный кр...",
+      "tr": "Bir rol model olarak ABD sınırdışı kuvveti ICE?: AfD seçim galibi Ulrich Siegmund, Saksonya-Anhalt'ta silah üretimine ve AfD'nin “geri dönüş saldırılarına” açık. Baharatlı kr...",
       "es": "¿La fuerza de deportación estadounidense ICE como modelo a seguir?: El ganador de las elecciones de AfD, Ulrich Siegmund, está abierto a la producción de armas en Sajonia-Anhalt, a las “ofensivas de remigración” de AfD. Crema picante...",
-      "de": "US-Abschiebetruppe ICE als Vorbild?: AfD-Wahlsieger Ulrich Siegmund zeigt sich offen für Rüstungsproduktion in Sachsen-Anhalt – für „Remigrations-Offensiven“ der AfD. Scharfe Kr...",
-      "en": "US deportation force ICE as a role model?: AfD election winner Ulrich Siegmund is open to arms production in Saxony-Anhalt – to AfD “remigration offensives”. Spicy cr...",
       "fr": "La force de déportation américaine ICE comme modèle ? : Ulrich Siegmund, vainqueur des élections de l'AfD, est ouvert à la production d'armes en Saxe-Anhalt – aux « offensives de remigration » de l'AfD. Crème épicée...",
       "pl": "Amerykańskie siły deportacyjne ICE wzorem do naśladowania?: Zwycięzca wyborów AfD Ulrich Siegmund jest otwarty na produkcję broni w Saksonii-Anhalt – na „ofensywy remigracyjne” AfD. Pikantne ciasto...",
-      "tr": "Bir rol model olarak ABD sınırdışı kuvveti ICE?: AfD seçim galibi Ulrich Siegmund, Saksonya-Anhalt'ta silah üretimine ve AfD'nin “geri dönüş saldırılarına” açık. Baharatlı kr...",
-      "it": "La forza di deportazione statunitense ICE come modello?: il vincitore delle elezioni dell’AfD Ulrich Siegmund è aperto alla produzione di armi in Sassonia-Anhalt – alle “offensive di remigrazione” dell’AfD. Crostata piccante..."
+      "ru": "Депортационная сила США ICE как образец для подражания?: Победитель выборов АдГ Ульрих Зигмунд открыт для производства оружия в Саксонии-Анхальт – для «ремиграционного наступления» АдГ. Пряный кр...",
+      "it": "La forza di deportazione statunitense ICE come modello?: il vincitore delle elezioni dell’AfD Ulrich Siegmund è aperto alla produzione di armi in Sassonia-Anhalt – alle “offensive di remigrazione” dell’AfD. Crostata piccante...",
+      "de": "US-Abschiebetruppe ICE als Vorbild?: AfD-Wahlsieger Ulrich Siegmund zeigt sich offen für Rüstungsproduktion in Sachsen-Anhalt – für „Remigrations-Offensiven“ der AfD. Scharfe Kr...",
+      "uk": "Сила депортації США ICE як зразок для наслідування?: переможець виборів від AfD Ульріх Зігмунд відкритий для виробництва зброї в Саксонії-Ангальт – до «наступу реміграції» від AfD. Пряний кр...",
+      "en": "US deportation force ICE as a role model?: AfD election winner Ulrich Siegmund is open to arms production in Saxony-Anhalt – to AfD “remigration offensives”. Spicy cr..."
     },
     "sources": [
       {
@@ -901,27 +901,27 @@
   },
   {
     "title": {
-      "uk": "Мерц атакує AfD: «Реміграція» означає етнічну чистку",
-      "ru": "Мерц нападает на АдГ: «Ремиграция» означает этническую чистку",
+      "tr": "Merz AfD'ye saldırdı: \"Geri dönüş\" etnik temizlik anlamına geliyor",
       "es": "Merz ataca a AfD: “Remigración” significa limpieza étnica",
-      "de": "Merz attackiert AfD: „Remigration“ bedeute ethnische Säuberung",
-      "en": "Merz attacks AfD: “Remigration” means ethnic cleansing",
       "fr": "Merz attaque l’AfD : « Remigration » signifie nettoyage ethnique",
       "pl": "Merz atakuje AfD: „Remigracja” oznacza czystki etniczne",
-      "tr": "Merz AfD'ye saldırdı: \"Geri dönüş\" etnik temizlik anlamına geliyor",
-      "it": "Merz attacca l’AfD: “Remigrazione” significa pulizia etnica"
+      "ru": "Мерц нападает на АдГ: «Ремиграция» означает этническую чистку",
+      "it": "Merz attacca l’AfD: “Remigrazione” significa pulizia etnica",
+      "de": "Merz attackiert AfD: „Remigration“ bedeute ethnische Säuberung",
+      "uk": "Мерц атакує AfD: «Реміграція» означає етнічну чистку",
+      "en": "Merz attacks AfD: “Remigration” means ethnic cleansing"
     },
     "date": "2026-09-09",
     "excerpt": {
-      "uk": "У загальних дебатах канцлер Мерц різко атакував AfD: термін «реміграція» є синонімом етнічної чистки. Існує також опір проти AfD...",
-      "ru": "В ходе общих дебатов канцлер Мерц резко раскритиковал АдГ: Термин «ремиграция» является синонимом этнической чистки. Существует также сопротивление АдГ...",
+      "tr": "Genel tartışmada Şansölye Merz, AfD'ye sert bir şekilde saldırdı: \"Geri dönüş\" terimi, etnik temizliğin eşanlamlısıdır. AfD'ye karşı da direniş var...",
       "es": "En el debate general, el Canciller Merz atacó duramente al AfD: El término “remigración” es sinónimo de limpieza étnica. También hay resistencia contra el AfD...",
-      "de": "In der Generaldebatte griff Bundeskanzler Merz die AfD scharf an: Der Begriff „Remigration“ sei ein Synonym für ethnische Säuberung. Auch in der AfD regt sich Widerstand gegen d...",
-      "en": "In the general debate, Chancellor Merz sharply attacked the AfD: The term “remigration” is a synonym for ethnic cleansing. There is also resistance against the AfD...",
       "fr": "Lors du débat général, le chancelier Merz a vivement attaqué l'AfD : le terme « remigration » est synonyme de nettoyage ethnique. Il y a aussi une résistance contre l’AfD…",
       "pl": "W debacie ogólnej kanclerz Merz ostro zaatakował AfD: Termin „remigracja” jest synonimem czystek etnicznych. Istnieje również opór wobec AfD...",
-      "tr": "Genel tartışmada Şansölye Merz, AfD'ye sert bir şekilde saldırdı: \"Geri dönüş\" terimi, etnik temizliğin eşanlamlısıdır. AfD'ye karşı da direniş var...",
-      "it": "Nel dibattito generale il cancelliere Merz ha attaccato aspramente l’AfD: il termine “remigrazione” è sinonimo di pulizia etnica. C'è resistenza anche contro l'AfD..."
+      "ru": "В ходе общих дебатов канцлер Мерц резко раскритиковал АдГ: Термин «ремиграция» является синонимом этнической чистки. Существует также сопротивление АдГ...",
+      "it": "Nel dibattito generale il cancelliere Merz ha attaccato aspramente l’AfD: il termine “remigrazione” è sinonimo di pulizia etnica. C'è resistenza anche contro l'AfD...",
+      "de": "In der Generaldebatte griff Bundeskanzler Merz die AfD scharf an: Der Begriff „Remigration“ sei ein Synonym für ethnische Säuberung. Auch in der AfD regt sich Widerstand gegen d...",
+      "uk": "У загальних дебатах канцлер Мерц різко атакував AfD: термін «реміграція» є синонімом етнічної чистки. Існує також опір проти AfD...",
+      "en": "In the general debate, Chancellor Merz sharply attacked the AfD: The term “remigration” is a synonym for ethnic cleansing. There is also resistance against the AfD..."
     },
     "sources": [
       {
