@@ -75,3 +75,4 @@ Um die nächsten Schritte verbindlich festzulegen, sollte das Kernteam folgende 
 
 4. **Nächste technische Schritte:**
    - Sobald Einigkeit über die Prioritäten herrscht, können wir die bestehende React/Vite/Tailwind-Architektur modular und leichtgewichtig auf die neuen Sektionen anpassen.
+

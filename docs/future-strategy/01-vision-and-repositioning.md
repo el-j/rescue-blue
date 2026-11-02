@@ -83,3 +83,4 @@ Um konkreten Nutzen zu stiften, muss die Plattform für unterschiedliche Lebensr
 2. **Parteipolitisch unabhängig, gesellschaftlich parteiisch:** Wir werben nicht für Parteien, sondern für Grundrechte, das Grundgesetz, sozialen Ausgleich und planetare Überlebensfähigkeit.
 3. **Selbstwirksamkeit vor Verzweiflung:** Die Seite soll nicht deprimieren („Alles wird schlimmer“), sondern ermächtigen („Das kannst du heute tun“).
 4. **Kombination aus Digital & Real:** Ein Sticker an der Bushaltestelle oder ein Patch an der Jacke wiegt oft mehr als 1.000 Likes im Internet.
+

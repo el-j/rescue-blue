@@ -102,3 +102,4 @@ Rechtsextreme leben von Angst, Frustration und Hass. Reine Abwehrreaktionen reic
 2. **Gleiche Rechte & Freiheit für alle:** Eine Gesellschaft, in der niemand wegen Herkunft, Geschlecht, sexueller Identität oder Handicap zurückbleibt.
 3. **Ökologischer Wohlstand:** Saubere Luft, intakte Natur, bezahlbare Mobilität und gesunde Lebensmittel als Gemeingüter statt Profitobjekte.
 4. **Lebendige Demokratie:** Mehr Bürgerbeteiligung, starke Zivilgesellschaft und Null Toleranz gegen Feinde der Menschenwürde.
+

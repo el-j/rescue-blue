@@ -75,3 +75,4 @@ Um Menschen zu schützen, etablieren wir klare Schutzprinzipien auf der Plattfor
 - **Keine persönlichen Daten im Klartext:** Auf der Website werden keine Privatadressen von Einzelpersonen gelistet, sondern ausschließlich offizielle Bündnis- oder Vereinsadressen.
 - **Tipp für Aktive vor Ort:** Niemals allein nachts plakatieren oder stickern; immer in Zweierteams unterwegs sein; verdächtige Aktivitäten rechtsextremer Gruppen sofort den lokalen Opferberatungsstellen melden.
 - **Digitale Hygiene:** Anleitungen auf der Website zur sicheren Smartphone-Nutzung bei Demonstrationen (Sperrbildschirm mit Code statt Face-ID, Deaktivierung von Biometrie, verschlüsselte Messenger).
+

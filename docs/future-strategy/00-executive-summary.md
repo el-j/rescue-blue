@@ -56,9 +56,12 @@ Dieses Zukunftspaket gliedert sich in folgende modulare Ausarbeitungen:
 | [**02. Plattform-Module & Features**](./02-platform-features-and-tools.md) | Konkrete Website-Konzepte: Aktions-Radar (Vernetzung), Antifa-Alltags-Toolkit, Planet-Rescue-Schnittstelle, Sticker-/Patch-Hub. |
 | [**03. Community & Straßenpräsenz**](./03-community-and-action-strategy.md) | Wie verbinden wir Menschen in der Realität? Dezentrale Vernetzung, Signal/Fediverse, lokale Bündnisse, Sticker-Aktionen, Sicherheitskonzepte. |
 | [**04. Roadmap & Entscheidungsmatrix**](./04-roadmap-and-decision-matrix.md) | Phasenplan (Phase 1: Quick-Wins bis Phase 3: Vollwertige Plattform), Aufwands-/Nutzen-Matrix und konkrete Leitfragen zur Team-Entscheidung. |
+| [**05. Epics & User Stories (Backlog)**](./05-implementation-epics-and-user-stories.md) | Vollständiges agiles Backlog: 6 Epics, granulare User Stories, Akzeptanzkriterien, Tasks und Story Points. |
+| [**06. Sprint-Planung & Architektur**](./06-sprint-backlog-and-architecture.md) | Technische Komponenten-Hierarchie (React 19 / Tailwind v4), Datenmodelle in TypeScript, 4 Sprints à 2 Wochen sowie Definition of Ready (DoR) und Done (DoD). |
 
 ---
 
 ## 4. Die Kern-Idee in einem Satz
 
 > **„Rette Blau“ verwandelt sich von einer Petition gegen eine Parteifarbe in eine bundesweite Plattform für den Schutz unseres blauen Planeten, die Verteidigung einer offenen, antifaschistischen Gesellschaft und die solidarische Vernetzung von Menschen, die nicht aufgeben.**
+
