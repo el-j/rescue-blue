@@ -141,3 +141,4 @@ flowchart TD
    - Playwright E2E-Tests (`npm run test:e2e`) für kritische Workflows (Bestellmodal, Fact-Card Filter).
 5. **SSG-Validierung:** Das SSG-Prerendering (`npm run ssg`) erzeugt sauberes HTML ohne Hydration-Mismatches.
 6. **Barrierefreiheit:** Tastaturnavigierbarkeit (Focus-States, ARIA-Labels) und Screenreader-Tauglichkeit.
+

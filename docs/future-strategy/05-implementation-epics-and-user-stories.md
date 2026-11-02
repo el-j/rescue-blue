@@ -229,3 +229,4 @@ Sichere, abhör- und zensurresistente Kommunikationswege für Aktive bereitstell
 #### Tasks:
 1. `src/components/community/ConnectChannelsSection.tsx` umsetzen.
 2. Icons für Signal, Bluesky und Mastodon via Lucide/SVG einbinden.
+
