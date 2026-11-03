@@ -60,15 +60,16 @@ src/
 ## 2. TypeScript-Datenstrukturen (`src/data/`)
 
 ### 2.1 Fact-Cards (`factCards.ts`)
+
 ```typescript
 export interface FactCard {
   id: string;
-  category: 'social' | 'climate' | 'migration' | 'democracy';
-  claim: string;           // Die rechtsextreme Schutzbehauptung
-  reality: string;         // Die nachweisbare Faktenlage
-  counterSnippet: string;  // 10-Sekunden-Kontersatz für den Familientisch/Betrieb
+  category: "social" | "climate" | "migration" | "democracy";
+  claim: string; // Die rechtsextreme Schutzbehauptung
+  reality: string; // Die nachweisbare Faktenlage
+  counterSnippet: string; // 10-Sekunden-Kontersatz für den Familientisch/Betrieb
   source: {
-    title: string;         // z.B. "Deutsches Institut für Wirtschaftsforschung (DIW)"
+    title: string; // z.B. "Deutsches Institut für Wirtschaftsforschung (DIW)"
     url: string;
   };
   shareableImage?: string; // Optionaler Pfad zu fertiger Social-Grafik
@@ -76,12 +77,30 @@ export interface FactCard {
 ```
 
 ### 2.2 Initiativen & Bündnisse (`initiativesDirectory.ts`)
+
 ```typescript
 export interface Initiative {
   id: string;
   name: string;
-  state: 'BW' | 'BY' | 'BE' | 'BB' | 'HB' | 'HH' | 'HE' | 'MV' | 'NI' | 'NW' | 'RP' | 'SL' | 'SN' | 'ST' | 'SH' | 'TH' | 'federal';
-  category: 'counseling' | 'alliance' | 'climate' | 'youth';
+  state:
+    | "BW"
+    | "BY"
+    | "BE"
+    | "BB"
+    | "HB"
+    | "HH"
+    | "HE"
+    | "MV"
+    | "NI"
+    | "NW"
+    | "RP"
+    | "SL"
+    | "SN"
+    | "ST"
+    | "SH"
+    | "TH"
+    | "federal";
+  category: "counseling" | "alliance" | "climate" | "youth";
   description: string;
   website: string;
   emergencyContact?: string; // z.B. Telefonnummer der Opferberatungsstelle
@@ -127,12 +146,14 @@ flowchart TD
 ## 4. Definition of Ready (DoR) & Definition of Done (DoD)
 
 ### Definition of Ready (DoR) – Wann darf eine Story begonnen werden?
+
 1. Die Story hat ein eindeutiges User-Story-Format mit klar formuliertem Mehrwert.
 2. Akzeptanzkriterien sind vollständig und testbar definiert.
 3. Texte liegen für beide Sprachen (`de` und `en`) vor oder sind im Team abgestimmt.
 4. Benötigte Bild-Assets (Patches, Sticker, PDFs) liegen in optimierter Form vor.
 
 ### Definition of Done (DoD) – Wann gilt eine Story als fertig?
+
 1. **TypeScript-Strict:** Keine `any`-Typen, `npm run build` kompiliert ohne Fehler.
 2. **Linting & Format:** `npm run lint` (oxlint) und `prettier` laufen ohne Fehler durch.
 3. **i18n-Konsistenz:** `npm run i18n:check` bestätigt Parität zwischen `de.json` und `en.json`.
@@ -141,4 +162,3 @@ flowchart TD
    - Playwright E2E-Tests (`npm run test:e2e`) für kritische Workflows (Bestellmodal, Fact-Card Filter).
 5. **SSG-Validierung:** Das SSG-Prerendering (`npm run ssg`) erzeugt sauberes HTML ohne Hydration-Mismatches.
 6. **Barrierefreiheit:** Tastaturnavigierbarkeit (Focus-States, ARIA-Labels) und Screenreader-Tauglichkeit.
-

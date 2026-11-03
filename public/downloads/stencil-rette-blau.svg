@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#ffffff" stroke="#0f172a" stroke-width="8" stroke-dasharray="16,12" />
+  <circle cx="400" cy="240" r="130" fill="none" stroke="#0f172a" stroke-width="18" stroke-dasharray="120,24" />
+  <path d="M400 180 C370 140 310 150 310 205 C310 255 400 310 400 325 C400 310 490 255 490 205 C490 150 430 140 400 180 Z" fill="#0f172a" />
+  <text x="400" y="450" text-anchor="middle" fill="#0f172a" font-family="system-ui, sans-serif" font-size="54" font-weight="900" letter-spacing="6">RETTE BLAU</text>
+  <text x="400" y="510" text-anchor="middle" fill="#334155" font-family="monospace" font-size="22" font-weight="700">FRIEDEN · FREIHEIT · PLANET · MITEINANDER</text>
+  <text x="400" y="560" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="14">Schablonen-Vorlage für abwaschbare Straßenkreide / Fensterbilder · rette-blau.de</text>
+</svg>
+

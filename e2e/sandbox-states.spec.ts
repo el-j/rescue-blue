@@ -11,11 +11,16 @@ test.describe("Sandbox state machine", () => {
 
   test("page loads with default state — German language", async ({ page }) => {
     await expect(
-      page.getByRole("heading", { name: /Blau retten/i, level: 1 }),
+      page.getByRole("heading", {
+        name: /Blau retten|Blau verteidigen/i,
+        level: 1,
+      }),
     ).toBeVisible();
     // Default AfD bar label
     await expect(
-      page.getByRole("button", { name: "Jetzt umfärben auf Braun" }),
+      page.getByRole("button", {
+        name: /Braun-Darstellung testen|Jetzt umfärben auf Braun/i,
+      }),
     ).toBeVisible();
   });
 
@@ -41,7 +46,7 @@ test.describe("Sandbox state machine", () => {
     await btn.click();
     await btn.click();
     await expect(
-      page.getByRole("button", { name: "Traum beenden" }),
+      page.getByRole("button", { name: /Werte zurücksetzen|Traum beenden/i }),
     ).toBeVisible();
   });
 
@@ -76,7 +81,9 @@ test.describe("Sandbox state machine", () => {
     await btn.click();
     await btn.click();
     await expect(
-      page.getByRole("button", { name: "Jetzt umfärben auf Braun" }),
+      page.getByRole("button", {
+        name: /Braun-Darstellung testen|Jetzt umfärben auf Braun/i,
+      }),
     ).toBeVisible();
   });
 

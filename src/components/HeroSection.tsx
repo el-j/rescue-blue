@@ -1,4 +1,11 @@
-import { ArrowUpRight, AlertCircle, CheckCircle2 } from "lucide-react";
+import {
+  ArrowUpRight,
+  AlertCircle,
+  CheckCircle2,
+  Sparkles,
+  MessageSquareHeart,
+  HeartHandshake,
+} from "lucide-react";
 import { PETITION_URL } from "../petition";
 import type { Translation } from "../i18n";
 
@@ -39,20 +46,29 @@ export function HeroSection({
   onCtaClick,
 }: HeroProps) {
   return (
-    <header className="hero-fullscreen relative w-full pt-24 pb-16 md:pt-32 md:pb-24 border-b border-[var(--border)] bg-[var(--bg-primary)]">
+    <header className="hero-fullscreen relative w-full pt-28 pb-16 md:pt-36 md:pb-24 border-b border-[var(--border)] bg-[var(--bg-primary)]">
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
-        {/* Editorial Masthead Folio Top Bar */}
-        {/* <div className="flex flex-wrap items-center justify-between gap-y-2 border-b border-[var(--border)] pb-3 mb-10 text-[11px] font-mono tracking-widest text-[var(--text-muted)] uppercase">
-          <div className="flex items-center gap-3">
-            <span className="font-bold text-[var(--text-primary)]">RETTE-BLAU.DE</span>
-            <span className="text-[var(--border-strong)]">/</span>
-            <span>{t.badge}</span>
+        {/* Movement Vision Top Pill Bar */}
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-[var(--border)] pb-4">
+          <span className="inline-flex items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">
+            <span className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
+            {t.heroMovementTag}
+          </span>
+          <div className="flex flex-wrap items-center gap-2 font-mono text-[11px] font-semibold text-[var(--text-secondary)]">
+            <span className="px-2.5 py-0.5 border border-[var(--border)] bg-[var(--bg-secondary)]">
+              {t.heroPillarPlanet}
+            </span>
+            <span className="px-2.5 py-0.5 border border-[var(--border)] bg-[var(--bg-secondary)]">
+              {t.heroPillarFreedom}
+            </span>
+            <span className="px-2.5 py-0.5 border border-[var(--border)] bg-[var(--bg-secondary)]">
+              {t.heroPillarHarmony}
+            </span>
+            <span className="px-2.5 py-0.5 border border-[var(--border)] bg-[var(--bg-secondary)]">
+              {t.heroPillarRibbon}
+            </span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-2 w-2 rounded-full ${isLive ? 'bg-blue-600 animate-pulse' : 'bg-emerald-500'}`} />
-            <span>{isLive ? 'KAMPAGNE AKTIV · CHANGE.ORG' : 'OFFIZIELLES DOKUMENT'}</span>
-          </div>
-        </div> */}
+        </div>
 
         {/* Main Typographic Manifesto Header with Antifa Peng Mascot Landing Emblem */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
@@ -66,6 +82,35 @@ export function HeroSection({
             </p>
 
             <p className="editorial-lead max-w-3xl pt-2">{t.heroBody}</p>
+
+            <p className="text-sm md:text-base leading-relaxed text-[var(--text-secondary)] max-w-3xl border-l-2 border-blue-500 pl-4 py-1">
+              {t.heroMovementIntro}
+            </p>
+
+            {/* Multi-CTA Action Hub Bar (Epic 1.1) */}
+            <div className="pt-3 flex flex-wrap items-center gap-3">
+              <a
+                href="#street-team"
+                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 font-mono text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
+              >
+                <Sparkles size={15} />
+                <span>{t.heroCtaStreetTeam}</span>
+              </a>
+              <a
+                href="#toolkit"
+                className="inline-flex items-center gap-2 border border-blue-500/40 bg-blue-500/10 hover:bg-blue-500/20 text-blue-700 dark:text-blue-300 px-5 py-3 font-mono text-xs font-bold uppercase tracking-wider transition-colors"
+              >
+                <MessageSquareHeart size={15} />
+                <span>{t.heroCtaToolkit}</span>
+              </a>
+              <a
+                href="#radar"
+                className="inline-flex items-center gap-2 border border-[var(--border)] bg-[var(--bg-secondary)] hover:border-[var(--text-primary)] text-[var(--text-primary)] px-5 py-3 font-mono text-xs font-bold uppercase tracking-wider transition-colors"
+              >
+                <HeartHandshake size={15} />
+                <span>{t.heroCtaRadar}</span>
+              </a>
+            </div>
           </div>
 
           {/* Antifa Peng Landing Mascot Emblem */}

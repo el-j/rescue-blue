@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1130" width="800" height="1130">
+  <rect width="800" height="1130" fill="#f8fafc" />
+  <rect x="40" y="40" width="720" height="780" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" rx="12" />
+  <rect x="40" y="40" width="720" height="140" fill="#1d4ed8" rx="12" />
+  <text x="400" y="105" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900">SCHÖN, DASS DU HIER BIST 💙</text>
+  <text x="400" y="150" text-anchor="middle" fill="#dbeafe" font-family="system-ui, sans-serif" font-size="20" font-weight="600">Nachbarschaft · Zusammenhalt · Offener Dialog</text>
+  <text x="400" y="260" text-anchor="middle" fill="#0f172a" font-family="system-ui, sans-serif" font-size="28" font-weight="800">Gemeinsam für ein friedliches &amp; faires Miteinander</text>
+  <text x="400" y="330" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="20">In unserer Nachbarschaft ist Platz für alle Menschen,</text>
+  <text x="400" y="365" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="20">die Respekt, Hilfsbereitschaft und Freiheit schätzen.</text>
+  <text x="400" y="440" text-anchor="middle" fill="#1e40af" font-family="system-ui, sans-serif" font-size="22" font-weight="700">✓ Fakten &amp; Gesprächsimpulse auf Augenhöhe</text>
+  <text x="400" y="485" text-anchor="middle" fill="#1e40af" font-family="system-ui, sans-serif" font-size="22" font-weight="700">✓ Lokale Initiativen &amp; Beratungsstellen finden</text>
+  <text x="400" y="530" text-anchor="middle" fill="#1e40af" font-family="system-ui, sans-serif" font-size="22" font-weight="700">✓ Kostenlose Sticker, Patches &amp; Nachbarschafts-Ideen</text>
+  <text x="400" y="650" text-anchor="middle" fill="#0f172a" font-family="monospace" font-size="26" font-weight="800">🌐 www.rette-blau.de</text>
+  <text x="400" y="760" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="16">Nimm dir gerne einen Abriss-Zettel mit oder teile ihn mit Nachbar:innen:</text>
+  <line x1="40" y1="840" x2="760" y2="840" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8,8" />
+  <g font-family="monospace" font-size="16" font-weight="700" fill="#1e3a8a">
+    <rect x="40" y="850" width="144" height="240" fill="#eff6ff" stroke="#93c5fd" />
+    <text x="112" y="970" text-anchor="middle" transform="rotate(-90 112 970)">rette-blau.de 💙</text>
+    <rect x="184" y="850" width="144" height="240" fill="#eff6ff" stroke="#93c5fd" />
+    <text x="256" y="970" text-anchor="middle" transform="rotate(-90 256 970)">rette-blau.de 💙</text>
+    <rect x="328" y="850" width="144" height="240" fill="#eff6ff" stroke="#93c5fd" />
+    <text x="400" y="970" text-anchor="middle" transform="rotate(-90 400 970)">rette-blau.de 💙</text>
+    <rect x="472" y="850" width="144" height="240" fill="#eff6ff" stroke="#93c5fd" />
+    <text x="544" y="970" text-anchor="middle" transform="rotate(-90 544 970)">rette-blau.de 💙</text>
+    <rect x="616" y="850" width="144" height="240" fill="#eff6ff" stroke="#93c5fd" />
+    <text x="688" y="970" text-anchor="middle" transform="rotate(-90 688 970)">rette-blau.de 💙</text>
+  </g>
+</svg>
+

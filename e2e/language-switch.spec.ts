@@ -7,7 +7,10 @@ test.describe("Language switching", () => {
 
   test("page loads in German by default", async ({ page }) => {
     await expect(
-      page.getByRole("heading", { name: /Blau retten/i, level: 1 }),
+      page.getByRole("heading", {
+        name: /Blau retten\.|Blau verteidigen\./i,
+        level: 1,
+      }),
     ).toBeVisible();
   });
 
@@ -15,7 +18,10 @@ test.describe("Language switching", () => {
     await page.getByRole("button", { name: "Sprache" }).click();
     await page.getByRole("button", { name: /en\s*English/i }).click();
     await expect(
-      page.getByRole("heading", { name: "Rescue Blue.", level: 1 }),
+      page.getByRole("heading", {
+        name: /Rescue Blue\.|Defend Blue\./i,
+        level: 1,
+      }),
     ).toBeVisible();
   });
 
@@ -45,7 +51,10 @@ test.describe("Language switching", () => {
     await page.getByRole("button", { name: /en\s*English/i }).click();
     await page.reload();
     await expect(
-      page.getByRole("heading", { name: "Rescue Blue.", level: 1 }),
+      page.getByRole("heading", {
+        name: /Rescue Blue\.|Defend Blue\./i,
+        level: 1,
+      }),
     ).toBeVisible();
   });
 

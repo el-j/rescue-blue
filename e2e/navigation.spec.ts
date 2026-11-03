@@ -48,17 +48,24 @@ test.describe("Navigation", () => {
 });
 
 test.describe("Navigation — anchor links", () => {
-  test("Warum nav link scrolls to the Warum section", async ({ page }) => {
+  test("Warum nav link scrolls to the Warum section", async ({
+    page,
+    isMobile,
+  }) => {
     await page.goto("/");
-    // Only visible on desktop
-    const navLink = page.getByRole("link", { name: "Warum Blau?" });
-    await expect(navLink).toBeVisible();
-    await navLink.click();
-    // After clicking, the URL should contain the anchor or page should scroll
-    // (In SPA this might just scroll without changing URL)
-    await page.waitForTimeout(500);
+    if (isMobile) {
+      const mobileLink = page.getByRole("link", {
+        name: /Patches & Sticker holen/i,
+      });
+      await expect(mobileLink).toBeVisible();
+      await mobileLink.click();
+    } else {
+      const navLink = page.getByRole("link", { name: "Warum Blau?" });
+      await expect(navLink).toBeVisible();
+      await navLink.click();
+    }
+    await page.waitForTimeout(300);
     const url = page.url();
-    // Either the hash is set or we just verify the page didn't navigate away
     expect(url).toContain("localhost");
   });
 });

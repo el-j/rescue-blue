@@ -24,6 +24,11 @@ import {
   NewsArchiveSection,
   PolicyDangersSection,
   MascotSection,
+  MerchSection,
+  FactCardsSection,
+  BluePlanetSection,
+  SolidarityRadarSection,
+  ConnectChannelsSection,
 } from "./components";
 import {
   getTranslation,
@@ -329,6 +334,11 @@ export default function App({ initialLang }: AppProps = {}) {
       <TrustSection t={t} />
       <EditorialPolicySection t={t} />
       <MascotSection lang={lang} t={t} />
+      <MerchSection lang={lang} t={t} />
+      <FactCardsSection lang={lang} t={t} />
+      <BluePlanetSection t={t} />
+      <SolidarityRadarSection lang={lang} t={t} />
+      <ConnectChannelsSection t={t} />
       <AlsoSupportSection lang={lang} t={t} />
       <BottomCta
         t={t}

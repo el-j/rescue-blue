@@ -12,23 +12,27 @@ test.describe("FAQ section", () => {
   test("FAQ items are collapsed by default", async ({ page }) => {
     // First FAQ question should be visible as a button
     const firstFaq = page.getByRole("button", {
-      name: /Warum sollte Blau überhaupt problematisch sein/i,
+      name: /Warum sollte (die Parteifarbe )?Blau (überhaupt )?problematisch sein/i,
     });
     await expect(firstFaq).toBeVisible();
     // Answer text should not be visible
     await expect(
-      page.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
+      page.getByText(
+        /Farbpsychologisch steht Blau für Stabilität|Blau ist die Selbstwahlfarbe der AfD/i,
+      ),
     ).not.toBeVisible();
   });
 
   test("clicking an FAQ question expands its answer", async ({ page }) => {
     await page
       .getByRole("button", {
-        name: /Warum sollte Blau überhaupt problematisch sein/i,
+        name: /Warum sollte (die Parteifarbe )?Blau (überhaupt )?problematisch sein/i,
       })
       .click();
     await expect(
-      page.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
+      page.getByText(
+        /Farbpsychologisch steht Blau für Stabilität|Blau ist die Selbstwahlfarbe der AfD/i,
+      ),
     ).toBeVisible();
   });
 
@@ -36,15 +40,19 @@ test.describe("FAQ section", () => {
     page,
   }) => {
     const faqBtn = page.getByRole("button", {
-      name: /Warum sollte Blau überhaupt problematisch sein/i,
+      name: /Warum sollte (die Parteifarbe )?Blau (überhaupt )?problematisch sein/i,
     });
     await faqBtn.click();
     await expect(
-      page.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
+      page.getByText(
+        /Farbpsychologisch steht Blau für Stabilität|Blau ist die Selbstwahlfarbe der AfD/i,
+      ),
     ).toBeVisible();
     await faqBtn.click();
     await expect(
-      page.getByText(/Blau ist die Selbstwahlfarbe der AfD/i),
+      page.getByText(
+        /Farbpsychologisch steht Blau für Stabilität|Blau ist die Selbstwahlfarbe der AfD/i,
+      ),
     ).not.toBeVisible();
   });
 

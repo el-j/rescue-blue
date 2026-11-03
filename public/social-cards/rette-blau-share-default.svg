@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#0f172a" />
+  <rect x="60" y="60" width="960" height="960" rx="24" fill="#1e293b" stroke="#3b82f6" stroke-width="4" />
+  <text x="120" y="160" fill="#60a5fa" font-family="monospace" font-size="28" font-weight="700">RETTE-BLAU.DE · FAKTEN FÜR DAS MITEINANDER</text>
+  <text x="120" y="300" fill="#ffffff" font-family="system-ui, sans-serif" font-size="56" font-weight="900">Brücken bauen</text>
+  <text x="120" y="370" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="48" font-weight="800">mit Fakten &amp; Empathie</text>
+  <text x="120" y="500" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="32">Für eine faire, freie und friedliche Gesellschaft,</text>
+  <text x="120" y="550" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="32">in der niemand zurückgelassen wird.</text>
+  <rect x="120" y="840" width="420" height="80" rx="12" fill="#2563eb" />
+  <text x="330" y="892" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="30" font-weight="700">rette-blau.de 💙</text>
+</svg>
+
