@@ -40,11 +40,7 @@ export function SolidarityRadarSection({
   const filteredInitiatives = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     return allInitiatives.filter((item) => {
-      if (
-        selectedState !== "all" &&
-        item.state !== selectedState &&
-        item.state !== "federal"
-      ) {
+      if (selectedState !== "all" && item.state !== selectedState) {
         return false;
       }
       if (selectedCategory !== "all" && item.category !== selectedCategory) {

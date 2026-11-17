@@ -8,8 +8,7 @@ export interface MerchPackage {
   subtitle: string;
   stickerCount: number;
   patchCount: number;
-  baseCostEur: number;
-  suggestedSoliEur: number;
+  suggestedDonationText?: string;
   badge?: string;
   features: string[];
 }
@@ -34,11 +33,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Für Rucksack, Jacke & Freundeskreis",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× gewebter Antifa-Peng-Patch (Ø 75 mm, zum Aufnähen oder Aufbügeln)",
-        "10× wetterfeste Outdoor-Sticker (85 × 85 mm, UV-beständig)",
+        "1× gewebter Antifa-Peng-Patch (7 × 7 cm, zum Aufnähen oder Aufbügeln)",
+        "10× wetterfeste Outdoor-Sticker (5 × 5 cm, UV-beständig)",
         "Inkl. kleiner Grußkarte mit Ideen für ein herzliches Miteinander",
       ],
     },
@@ -48,8 +45,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Zum Teilen im Verein, Betrieb oder Hausflur",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Beliebt für Gruppen",
       features: [
         "3× gewebte Antifa-Peng-Patches für dich und zwei Herzensmenschen",
@@ -63,8 +58,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Für Stadtfeste, Schulprojekte & lokale Initiativen",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Frei wählbare Anzahl an Patches und Stickern nach eurem Bedarf",
         "Ideal für Infostände, Jugendzentren, Sportvereine und Nachbarschaftsfeste",
@@ -79,11 +72,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "For your backpack, jacket & close friends",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× woven Antifa Peng patch (Ø 75 mm, iron-on or sew-on)",
-        "10× weatherproof outdoor stickers (85 × 85 mm, UV-resistant)",
+        "1× woven Antifa Peng patch (7 × 7 cm, iron-on or sew-on)",
+        "10× weatherproof outdoor stickers (5 × 5 cm, UV-resistant)",
         "Includes a friendly greeting card with ideas for community dialogue",
       ],
     },
@@ -93,8 +84,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "To share at work, sports clubs, or in your community",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Popular for Groups",
       features: [
         "3× woven Antifa Peng patches for you and two friends",
@@ -108,8 +97,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "For street festivals, schools & local alliances",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Flexible quantity of patches and stickers tailored to your project",
         "Ideal for info booths, youth centers, clubs, and neighborhood gatherings",
@@ -124,11 +111,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Pour sac à dos, veste et amis proches",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× écusson tissé Antifa Peng (Ø 75 mm, thermocollant ou à coudre)",
-        "10× autocollants résistants aux intempéries (85 × 85 mm, anti-UV)",
+        "1× écusson tissé Antifa Peng (7 × 7 cm, thermocollant ou à coudre)",
+        "10× autocollants résistants aux intempéries (5 × 5 cm, anti-UV)",
         "Inclut une carte conviviale avec des idées pour le dialogue citoyen",
       ],
     },
@@ -138,8 +123,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "À partager dans votre association, travail ou quartier",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Populaire",
       features: [
         "3× écussons tissés Antifa Peng pour vous et vos proches",
@@ -153,8 +136,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Pour fêtes de quartier, écoles et initiatives locales",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Quantité libre d'écussons et d'autocollants selon vos besoins",
         "Idéal pour stands d'information, centres de jeunesse et rencontres locales",
@@ -169,11 +150,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Para mochila, chaqueta y amistades",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× parche tejido Antifa Peng (Ø 75 mm, para planchar o coser)",
-        "10× pegatinas resistentes al clima (85 × 85 mm, protección UV)",
+        "1× parche tejido Antifa Peng (7 × 7 cm, para planchar o coser)",
+        "10× pegatinas resistentes al clima (5 × 5 cm, protección UV)",
         "Incluye tarjeta con ideas para el diálogo y la convivencia vecinal",
       ],
     },
@@ -183,8 +162,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Para compartir en el barrio, trabajo o asociación",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Popular en grupos",
       features: [
         "3× parches tejidos Antifa Peng para ti y dos personas más",
@@ -198,8 +175,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Para festivales locales, escuelas e iniciativas",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Cantidad flexible de parches y pegatinas según vuestra iniciativa",
         "Ideal para mesas informativas, centros juveniles y encuentros vecinales",
@@ -214,11 +189,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Sırt çantası, ceket ve yakın dostlar için",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× dokuma Antifa Peng arma (Ø 75 mm, ütüyle veya dikerek uygulanır)",
-        "10× hava koşullarına dayanıklı çıkartma (85 × 85 mm, UV korumalı)",
+        "1× dokuma Antifa Peng arma (7 × 7 cm, ütüyle veya dikerek uygulanır)",
+        "10× hava koşullarına dayanıklı çıkartma (5 × 5 cm, UV korumalı)",
         "Samimi diyalog ve dayanışma fikirleri içeren kart dahildir",
       ],
     },
@@ -228,8 +201,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Dernekte, iş yerinde veya mahallede paylaşmak için",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Gruplar İçin Popüler",
       features: [
         "Kendiniz ve iki dostunuz için 3× dokuma Antifa Peng arma",
@@ -243,8 +214,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Şenlikler, okul projeleri ve yerel girişimler için",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "İhtiyacınıza göre esnek sayıda arma ve çıkartma seçimi",
         "Bilgi stantları, gençlik merkezleri ve komşuluk buluşmaları için ideal",
@@ -259,11 +228,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Для рюкзака, куртки та друзів",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× тканий шеврон Antifa Peng (Ø 75 мм, на праску або пришивання)",
-        "10× водостійких стікерів (85 × 85 мм, захист від УФ)",
+        "1× тканий шеврон Antifa Peng (Ø 7 × 7 см, на праску або пришивання)",
+        "10× водостійких стікерів (5 × 5 см, захист від УФ)",
         "Вітальна листівка з ідеями для добросусідського діалогу",
       ],
     },
@@ -273,8 +240,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Для спільноти, колег та культурних просторів",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Популярний вибір",
       features: [
         "3× ткані шеврони Antifa Peng для вас і друзів",
@@ -288,8 +253,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Для фестивалів, шкільних проєктів та місцевих спільнот",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Довільна кількість шевронів та стікерів за вашою потребою",
         "Ідеально для інфостендів, молодіжних центрів та локальних зустрічей",
@@ -304,11 +267,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Na plecak, kurtkę i dla przyjaciół",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× tkana naszywka Antifa Peng (Ø 75 mm, do naprasowania lub przyszycia)",
-        "10× odpornych na pogodę naklejek (85 × 85 mm, odporne na UV)",
+        "1× tkana naszywka Antifa Peng (7 × 7 cm, do naprasowania lub przyszycia)",
+        "10× odpornych na pogodę naklejek (5 × 5 cm, odporne na UV)",
         "Kartka z pomysłami na budowanie życzliwego sąsiedztwa",
       ],
     },
@@ -318,8 +279,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Do podziału w pracy, klubie lub na osiedlu",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Popularny dla grup",
       features: [
         "3× tkane naszywki Antifa Peng dla Ciebie i bliskich osób",
@@ -333,8 +292,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Na festyny, projekty szkolne i lokalne inicjatywy",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Dowolna liczba naszywek i naklejek dopasowana do Waszych potrzeb",
         "Idealny na stoiska informacyjne, dla domów kultury i spotkań sąsiedzkich",
@@ -349,11 +306,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Per zaino, giacca e amici",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× toppa tessuta Antifa Peng (Ø 75 mm, termoadesiva o da cucire)",
-        "10× adesivi resistenti alle intemperie (85 × 85 mm, anti-UV)",
+        "1× toppa tessuta Antifa Peng (7 × 7 cm, termoadesiva o da cucire)",
+        "10× adesivi resistenti alle intemperie (5 × 5 cm, anti-UV)",
         "Include biglietto con spunti per il dialogo e la convivenza",
       ],
     },
@@ -363,8 +318,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Da condividere in associazione, al lavoro o nel vicinato",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Scelto dai gruppi",
       features: [
         "3× toppe tessute Antifa Peng per te e due amici",
@@ -378,8 +331,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Per feste di quartiere, scuole e iniziative locali",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Quantità flessibile di toppe e adesivi in base alle vostre esigenze",
         "Ideale per banchetti informativi, centri giovanili e incontri locali",
@@ -394,11 +345,9 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Для рюкзака, куртки и друзей",
       stickerCount: 10,
       patchCount: 1,
-      baseCostEur: 3,
-      suggestedSoliEur: 6,
       features: [
-        "1× тканый шеврон Antifa Peng (Ø 75 мм, термоклеевой или пришивной)",
-        "10× влагостойких стикеров (85 × 85 мм, защита от УФ)",
+        "1× тканый шеврон Antifa Peng (Ø 7 × 7 см, термоклеевой или пришивной)",
+        "10× влагостойких стикеров (5 × 5 см, защита от УФ)",
         "Открытка с идеями для добрососедского диалога и взаимопомощи",
       ],
     },
@@ -408,8 +357,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Для обмена с коллегами, соседями и друзьями",
       stickerCount: 50,
       patchCount: 3,
-      baseCostEur: 9,
-      suggestedSoliEur: 15,
       badge: "Популярно для групп",
       features: [
         "3× тканых шеврона Antifa Peng для вас и близких",
@@ -423,8 +370,6 @@ const MERCH_PACKAGES_BY_LOCALE: Record<Locale, MerchPackage[]> = {
       subtitle: "Для городских праздников, школ и местных инициатив",
       stickerCount: 100,
       patchCount: 5,
-      baseCostEur: 15,
-      suggestedSoliEur: 25,
       features: [
         "Свободный выбор количества шевронов и стикеров под ваш проект",
         "Идеально для инфостендов, молодежных клубов и соседских встреч",

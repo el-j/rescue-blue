@@ -74,12 +74,12 @@ export function MerchSection({ lang, t }: MerchSectionProps) {
                     {pkg.subtitle}
                   </p>
 
-                  <div className="mb-5 flex items-baseline gap-2 border-y border-[var(--border)] py-3">
-                    <span className="text-3xl font-extrabold text-[var(--text-primary)]">
-                      {pkg.suggestedSoliEur} €
+                  <div className="mb-5 flex items-center justify-between border-y border-[var(--border)] py-3">
+                    <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+                      {t.streetDonationBadge || "Gegen freie Spende / Kostenfrei"}
                     </span>
                     <span className="font-mono text-[11px] text-[var(--text-muted)]">
-                      Soli-Empfehlung (Selbstkosten: {pkg.baseCostEur} €)
+                      {pkg.patchCount}× Patch (7×7 cm) · {pkg.stickerCount}× Sticker (5×5 cm)
                     </span>
                   </div>
 
@@ -151,7 +151,7 @@ export function MerchSection({ lang, t }: MerchSectionProps) {
           t={t}
           packages={packages}
           initialPackageId={activePackage.id}
-          initialSoliEur={activePackage.suggestedSoliEur}
+          
           onClose={() => setIsOrderModalOpen(false)}
         />
       )}

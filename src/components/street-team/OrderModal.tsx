@@ -7,7 +7,7 @@ interface OrderModalProps {
   t: Translation;
   packages: MerchPackage[];
   initialPackageId: MerchPackageId;
-  initialSoliEur: number;
+  initialSoliEur?: number;
   onClose: () => void;
 }
 
@@ -15,12 +15,11 @@ export function OrderModal({
   t,
   packages,
   initialPackageId,
-  initialSoliEur,
   onClose,
 }: OrderModalProps) {
   const [selectedPkgId, setSelectedPkgId] =
     useState<MerchPackageId>(initialPackageId);
-  const [soliAmount, setSoliAmount] = useState<number>(initialSoliEur);
+  const [donationOption, setDonationOption] = useState<string>("free");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [zip, setZip] = useState("");
@@ -64,10 +63,15 @@ export function OrderModal({
     setIsSubmitted(true);
   };
 
+  const donationNote =
+    donationOption === "free"
+      ? "Kostenfrei aus Solidaritäts-Topf"
+      : "Freiwillige Spende nach Erhalt / Absprache";
+
   const mailtoHref = `mailto:bluearc.in.sky@gmail.com?subject=${encodeURIComponent(
     `Rette Blau Street-Team: ${selectedPkg.name}`,
   )}&body=${encodeURIComponent(
-    `Hallo Rette-Blau-Team,\n\nich möchte gerne folgendes Paket bestellen:\n- Paket: ${selectedPkg.name} (${selectedPkg.stickerCount} Sticker, ${selectedPkg.patchCount} Patches)\n- Soli-Beitrag: ${soliAmount} EUR\n\nVersandadresse:\n${name}\n${cityStreet}\n${zip}\nE-Mail: ${email}\n\nNachricht:\n${message || "—"}`,
+    `Hallo Rette-Blau-Team,\n\nich möchte gerne folgendes Paket anfragen:\n- Paket: ${selectedPkg.name} (${selectedPkg.stickerCount} Sticker [5×5cm], ${selectedPkg.patchCount} Patches [7×7cm])\n- Spenden-Wunsch: ${donationNote}\n\nVersandadresse:\n${name}\n${cityStreet}\n${zip}\nE-Mail: ${email}\n\nNachricht:\n${message || "—"}`,
   )}`;
 
   return (
@@ -103,7 +107,7 @@ export function OrderModal({
             </p>
             <div className="p-4 border border-[var(--border)] bg-[var(--bg-secondary)] text-left font-mono text-xs space-y-1">
               <p className="font-bold text-[var(--text-primary)]">
-                {selectedPkg.name} · {soliAmount} €
+                {selectedPkg.name} · {donationOption === "free" ? "Kostenfrei (Soli-Topf)" : "Mit freiwilliger Spende"}
               </p>
               <p className="text-[var(--text-secondary)]">
                 {name} · {zip} {cityStreet}
@@ -164,7 +168,6 @@ export function OrderModal({
                     type="button"
                     onClick={() => {
                       setSelectedPkgId(pkg.id);
-                      setSoliAmount(pkg.suggestedSoliEur);
                     }}
                     className={`p-2.5 border text-left transition-colors cursor-pointer ${
                       selectedPkgId === pkg.id
@@ -174,39 +177,37 @@ export function OrderModal({
                   >
                     <p className="font-mono text-xs font-bold">{pkg.name}</p>
                     <p className="text-[11px] text-[var(--text-muted)]">
-                      {pkg.stickerCount} Sticker · {pkg.patchCount} Patch
+                      {pkg.stickerCount} Sticker (5×5cm) · {pkg.patchCount} Patch (7×7cm)
                     </p>
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* Soli Contribution Selector */}
+            {/* Freiwillige Spende Selector (Rein spendenbasiert, kein Verkauf) */}
             <div>
               <span className="block font-mono text-xs font-bold uppercase text-[var(--text-primary)] mb-1.5">
-                {t.orderSoliAmountLabel}:{" "}
-                <strong className="text-blue-600 dark:text-blue-400">
-                  {soliAmount} €
-                </strong>
+                {t.orderSoliAmountLabel}
               </span>
+              <p className="text-[11px] text-[var(--text-muted)] mb-2">
+                Kein Verkauf: Alle Materialien werden ehrenamtlich und auf Wunsch kostenfrei weitergegeben. Wer kann, unterstützt uns mit einer freiwilligen Spende für Porto & Nachproduktion.
+              </p>
               <div className="flex flex-wrap items-center gap-2">
                 {[
-                  0,
-                  selectedPkg.baseCostEur,
-                  selectedPkg.suggestedSoliEur,
-                  20,
-                ].map((amt) => (
+                  { id: "free", label: "0 € · Kostenfrei (Solidaritäts-Topf)" },
+                  { id: "support", label: "Freiwillige Spende (via Überweisung / PayPal)" },
+                ].map((opt) => (
                   <button
-                    key={amt}
+                    key={opt.id}
                     type="button"
-                    onClick={() => setSoliAmount(amt)}
+                    onClick={() => setDonationOption(opt.id)}
                     className={`px-3 py-1.5 font-mono text-xs font-bold border transition-colors cursor-pointer ${
-                      soliAmount === amt
+                      donationOption === opt.id
                         ? "border-blue-600 bg-blue-600 text-white"
                         : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)]"
                     }`}
                   >
-                    {amt === 0 ? "0 € (Soli-Topf)" : `${amt} €`}
+                    {opt.label}
                   </button>
                 ))}
               </div>
